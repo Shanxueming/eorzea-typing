@@ -1,0 +1,836 @@
+{
+ "category": "weather",
+ "label": "天气",
+ "count": 92,
+ "source": "thewakingsands/ffxiv-datamining-cn",
+ "entries": [
+  {
+   "id": "wth_00001",
+   "text": "光天",
+   "typeText": "光天",
+   "reading": "guang tian",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00002",
+   "text": "兽雷",
+   "typeText": "兽雷",
+   "reading": "shou lei",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00003",
+   "text": "决战",
+   "typeText": "决战",
+   "reading": "jue zhan",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00004",
+   "text": "地震",
+   "typeText": "地震",
+   "reading": "di zhen",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00005",
+   "text": "妖梦",
+   "typeText": "妖梦",
+   "reading": "yao meng",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00006",
+   "text": "妖雾",
+   "typeText": "妖雾",
+   "reading": "yao wu",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00007",
+   "text": "小雨",
+   "typeText": "小雨",
+   "reading": "xiao yu",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00008",
+   "text": "小雪",
+   "typeText": "小雪",
+   "reading": "xiao xue",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00009",
+   "text": "平衡",
+   "typeText": "平衡",
+   "reading": "ping heng",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00010",
+   "text": "幻妖",
+   "typeText": "幻妖",
+   "reading": "huan yao",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00011",
+   "text": "幻怪",
+   "typeText": "幻怪",
+   "reading": "huan guai",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00012",
+   "text": "幻想",
+   "typeText": "幻想",
+   "reading": "huan xiang",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00013",
+   "text": "强风",
+   "typeText": "强风",
+   "reading": "qiang feng",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00014",
+   "text": "微风",
+   "typeText": "微风",
+   "reading": "wei feng",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00015",
+   "text": "战云",
+   "typeText": "战云",
+   "reading": "zhan yun",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00016",
+   "text": "打雷",
+   "typeText": "打雷",
+   "reading": "da lei",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00017",
+   "text": "扬沙",
+   "typeText": "扬沙",
+   "reading": "yang sha",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00018",
+   "text": "时光",
+   "typeText": "时光",
+   "reading": "shi guang",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00019",
+   "text": "星灵",
+   "typeText": "星灵",
+   "reading": "xing ling",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00020",
+   "text": "晴朗",
+   "typeText": "晴朗",
+   "reading": "qing lang",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00021",
+   "text": "暴雨",
+   "typeText": "暴雨",
+   "reading": "bao yu",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00022",
+   "text": "暴雪",
+   "typeText": "暴雪",
+   "reading": "bao xue",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00023",
+   "text": "暴风",
+   "typeText": "暴风",
+   "reading": "bao feng",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00024",
+   "text": "月夜",
+   "typeText": "月夜",
+   "reading": "yue ye",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00025",
+   "text": "月尘",
+   "typeText": "月尘",
+   "reading": "yue chen",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00026",
+   "text": "末日",
+   "typeText": "末日",
+   "reading": "mo ri",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00027",
+   "text": "朱炎",
+   "typeText": "朱炎",
+   "reading": "zhu yan",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00028",
+   "text": "极乐",
+   "typeText": "极乐",
+   "reading": "ji le",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00029",
+   "text": "极光",
+   "typeText": "极光",
+   "reading": "ji guang",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00030",
+   "text": "次元",
+   "typeText": "次元",
+   "reading": "ci yuan",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00031",
+   "text": "死气",
+   "typeText": "死气",
+   "reading": "si qi",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00032",
+   "text": "海啸",
+   "typeText": "海啸",
+   "reading": "hai xiao",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00033",
+   "text": "滩云",
+   "typeText": "滩云",
+   "reading": "tan yun",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00034",
+   "text": "灵电",
+   "typeText": "灵电",
+   "reading": "ling dian",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00035",
+   "text": "灵风",
+   "typeText": "灵风",
+   "reading": "ling feng",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00036",
+   "text": "烈焰",
+   "typeText": "烈焰",
+   "reading": "lie yan",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00037",
+   "text": "烟武",
+   "typeText": "烟武",
+   "reading": "yan wu",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00038",
+   "text": "烟雾",
+   "typeText": "烟雾",
+   "reading": "yan wu",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00039",
+   "text": "热浪",
+   "typeText": "热浪",
+   "reading": "re lang",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00040",
+   "text": "碧空",
+   "typeText": "碧空",
+   "reading": "bi kong",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00041",
+   "text": "磁暴",
+   "typeText": "磁暴",
+   "reading": "ci bao",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00042",
+   "text": "神域",
+   "typeText": "神域",
+   "reading": "shen yu",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00043",
+   "text": "神意",
+   "typeText": "神意",
+   "reading": "shen yi",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00044",
+   "text": "神秘",
+   "typeText": "神秘",
+   "reading": "shen mi",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00045",
+   "text": "终极",
+   "typeText": "终极",
+   "reading": "zhong ji",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00046",
+   "text": "绝命",
+   "typeText": "绝命",
+   "reading": "jue ming",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00047",
+   "text": "绝望",
+   "typeText": "绝望",
+   "reading": "jue wang",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00048",
+   "text": "薄雾",
+   "typeText": "薄雾",
+   "reading": "bo wu",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00049",
+   "text": "虚拟",
+   "typeText": "虚拟",
+   "reading": "xu ni",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00050",
+   "text": "虚无",
+   "typeText": "虚无",
+   "reading": "xu wu",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00051",
+   "text": "蜃景",
+   "typeText": "蜃景",
+   "reading": "shen jing",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00052",
+   "text": "记忆",
+   "typeText": "记忆",
+   "reading": "ji yi",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00053",
+   "text": "诗想",
+   "typeText": "诗想",
+   "reading": "shi xiang",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00054",
+   "text": "豪雨",
+   "typeText": "豪雨",
+   "reading": "hao yu",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00055",
+   "text": "辉核",
+   "typeText": "辉核",
+   "reading": "hui he",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00056",
+   "text": "迅雷",
+   "typeText": "迅雷",
+   "reading": "xun lei",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00057",
+   "text": "邪天",
+   "typeText": "邪天",
+   "reading": "xie tian",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00058",
+   "text": "阈限",
+   "typeText": "阈限",
+   "reading": "yu xian",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00059",
+   "text": "阴云",
+   "typeText": "阴云",
+   "reading": "yin yun",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00060",
+   "text": "阴沉",
+   "typeText": "阴沉",
+   "reading": "yin chen",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00061",
+   "text": "雷云",
+   "typeText": "雷云",
+   "reading": "lei yun",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00062",
+   "text": "雷波",
+   "typeText": "雷波",
+   "reading": "lei bo",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00063",
+   "text": "雷雨",
+   "typeText": "雷雨",
+   "reading": "lei yu",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00064",
+   "text": "青空",
+   "typeText": "青空",
+   "reading": "qing kong",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00065",
+   "text": "高温",
+   "typeText": "高温",
+   "reading": "gao wen",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00066",
+   "text": "鬼气",
+   "typeText": "鬼气",
+   "reading": "gui qi",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00067",
+   "text": "魔尘",
+   "typeText": "魔尘",
+   "reading": "mo chen",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00068",
+   "text": "黑暗",
+   "typeText": "黑暗",
+   "reading": "hei an",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00069",
+   "text": "龙威",
+   "typeText": "龙威",
+   "reading": "long wei",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00070",
+   "text": "万魔殿",
+   "typeText": "万魔殿",
+   "reading": "wan mo dian",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00071",
+   "text": "乱灵流",
+   "typeText": "乱灵流",
+   "reading": "luan ling liu",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00072",
+   "text": "孢子雾",
+   "typeText": "孢子雾",
+   "reading": "bao zi wu",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00073",
+   "text": "幻极光",
+   "typeText": "幻极光",
+   "reading": "huan ji guang",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00074",
+   "text": "幻海流",
+   "typeText": "幻海流",
+   "reading": "huan hai liu",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00075",
+   "text": "幻花风",
+   "typeText": "幻花风",
+   "reading": "huan hua feng",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00076",
+   "text": "无尽光",
+   "typeText": "无尽光",
+   "reading": "wu jin guang",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00077",
+   "text": "暴风雨",
+   "typeText": "暴风雨",
+   "reading": "bao feng yu",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00078",
+   "text": "沙尘暴",
+   "typeText": "沙尘暴",
+   "reading": "sha chen bao",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00079",
+   "text": "流星雨",
+   "typeText": "流星雨",
+   "reading": "liu xing yu",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00080",
+   "text": "火风暴",
+   "typeText": "火风暴",
+   "reading": "huo feng bao",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00081",
+   "text": "灵烈火",
+   "typeText": "灵烈火",
+   "reading": "ling lie huo",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00082",
+   "text": "灵罡风",
+   "typeText": "灵罡风",
+   "reading": "ling gang feng",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00083",
+   "text": "灵飘尘",
+   "typeText": "灵飘尘",
+   "reading": "ling piao chen",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00084",
+   "text": "灵飞电",
+   "typeText": "灵飞电",
+   "reading": "ling fei dian",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00085",
+   "text": "玻璃雨",
+   "typeText": "玻璃雨",
+   "reading": "bo li yu",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00086",
+   "text": "白旋风",
+   "typeText": "白旋风",
+   "reading": "bai xuan feng",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00087",
+   "text": "红月下",
+   "typeText": "红月下",
+   "reading": "hong yue xia",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00088",
+   "text": "龙卷风",
+   "typeText": "龙卷风",
+   "reading": "long juan feng",
+   "category": "weather",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wth_00089",
+   "text": "寒冷气流",
+   "typeText": "寒冷气流",
+   "reading": "han leng qi liu",
+   "category": "weather",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wth_00090",
+   "text": "水泡风暴",
+   "typeText": "水泡风暴",
+   "reading": "shui pao feng bao",
+   "category": "weather",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wth_00091",
+   "text": "记忆乱流",
+   "typeText": "记忆乱流",
+   "reading": "ji yi luan liu",
+   "category": "weather",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wth_00092",
+   "text": "重力紊乱",
+   "typeText": "重力紊乱",
+   "reading": "zhong li wen luan",
+   "category": "weather",
+   "difficulty": 2,
+   "pure": true
+  }
+ ]
+}

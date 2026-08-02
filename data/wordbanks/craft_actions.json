@@ -1,0 +1,629 @@
+{
+ "category": "craft_actions",
+ "label": "生产技能",
+ "count": 69,
+ "source": "thewakingsands/ffxiv-datamining-cn",
+ "entries": [
+  {
+   "id": "cft_00001",
+   "text": "仓促",
+   "typeText": "仓促",
+   "reading": "cang cu",
+   "category": "craft_actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "cft_00002",
+   "text": "冒进",
+   "typeText": "冒进",
+   "reading": "mao jin",
+   "category": "craft_actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "cft_00003",
+   "text": "制作",
+   "typeText": "制作",
+   "reading": "zhi zuo",
+   "category": "craft_actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "cft_00004",
+   "text": "加工",
+   "typeText": "加工",
+   "reading": "jia gong",
+   "category": "craft_actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "cft_00005",
+   "text": "坚信",
+   "typeText": "坚信",
+   "reading": "jian xin",
+   "category": "craft_actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "cft_00006",
+   "text": "收尾",
+   "typeText": "收尾",
+   "reading": "shou wei",
+   "category": "craft_actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "cft_00007",
+   "text": "渐进",
+   "typeText": "渐进",
+   "reading": "jian jin",
+   "category": "craft_actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "cft_00008",
+   "text": "秘诀",
+   "typeText": "秘诀",
+   "reading": "mi jue",
+   "category": "craft_actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "cft_00009",
+   "text": "称心",
+   "typeText": "称心",
+   "reading": "chen xin",
+   "category": "craft_actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "cft_00010",
+   "text": "精修",
+   "typeText": "精修",
+   "reading": "jing xiu",
+   "category": "craft_actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "cft_00011",
+   "text": "观察",
+   "typeText": "观察",
+   "reading": "guan cha",
+   "category": "craft_actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "cft_00012",
+   "text": "闲静",
+   "typeText": "闲静",
+   "reading": "xian jing",
+   "category": "craft_actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "cft_00013",
+   "text": "革新",
+   "typeText": "革新",
+   "reading": "ge xin",
+   "category": "craft_actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "cft_00014",
+   "text": "上级加工",
+   "typeText": "上级加工",
+   "reading": "shang ji jia gong",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00015",
+   "text": "专心加工",
+   "typeText": "专心加工",
+   "reading": "zhuan xin jia gong",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00016",
+   "text": "专心致志",
+   "typeText": "专心致志",
+   "reading": "zhuan xin zhi zhi",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00017",
+   "text": "中级制作",
+   "typeText": "中级制作",
+   "reading": "zhong ji zhi zuo",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00018",
+   "text": "中级加工",
+   "typeText": "中级加工",
+   "reading": "zhong ji jia gong",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00019",
+   "text": "仓促II",
+   "typeText": "仓促II",
+   "reading": "cang cu II",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "cft_00020",
+   "text": "俭约制作",
+   "typeText": "俭约制作",
+   "reading": "jian yue zhi zuo",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00021",
+   "text": "俭约加工",
+   "typeText": "俭约加工",
+   "reading": "jian yue jia gong",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00022",
+   "text": "冰之印记",
+   "typeText": "冰之印记",
+   "reading": "bing zhi yin ji",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00023",
+   "text": "匠心独具",
+   "typeText": "匠心独具",
+   "reading": "jiang xin du ju",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00024",
+   "text": "土之印记",
+   "typeText": "土之印记",
+   "reading": "tu zhi yin ji",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00025",
+   "text": "坚实制作",
+   "typeText": "坚实制作",
+   "reading": "jian shi zhi zuo",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00026",
+   "text": "坯料制作",
+   "typeText": "坯料制作",
+   "reading": "pi liao zhi zuo",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00027",
+   "text": "坯料加工",
+   "typeText": "坯料加工",
+   "reading": "pi liao jia gong",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00028",
+   "text": "工作小调",
+   "typeText": "工作小调",
+   "reading": "gong zuo xiao diao",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00029",
+   "text": "巧夺天工",
+   "typeText": "巧夺天工",
+   "reading": "qiao duo tian gong",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00030",
+   "text": "快速改革",
+   "typeText": "快速改革",
+   "reading": "kuai su gai ge",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00031",
+   "text": "模范制作",
+   "typeText": "模范制作",
+   "reading": "mo fan zhi zuo",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00032",
+   "text": "水之印记",
+   "typeText": "水之印记",
+   "reading": "shui zhi yin ji",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00033",
+   "text": "注视制作",
+   "typeText": "注视制作",
+   "reading": "zhu shi zhi zuo",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00034",
+   "text": "注视加工",
+   "typeText": "注视加工",
+   "reading": "zhu shi jia gong",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00035",
+   "text": "火之印记",
+   "typeText": "火之印记",
+   "reading": "huo zhi yin ji",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00036",
+   "text": "精修II",
+   "typeText": "精修II",
+   "reading": "jing xiu II",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "cft_00037",
+   "text": "精密制作",
+   "typeText": "精密制作",
+   "reading": "jing mi zhi zuo",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00038",
+   "text": "精炼加工",
+   "typeText": "精炼加工",
+   "reading": "jing lian jia gong",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00039",
+   "text": "设计变动",
+   "typeText": "设计变动",
+   "reading": "she ji bian dong",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00040",
+   "text": "起始准备",
+   "typeText": "起始准备",
+   "reading": "qi shi zhun bei",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00041",
+   "text": "集中制作",
+   "typeText": "集中制作",
+   "reading": "ji zhong zhi zuo",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00042",
+   "text": "集中加工",
+   "typeText": "集中加工",
+   "reading": "ji zhong jia gong",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00043",
+   "text": "雷之印记",
+   "typeText": "雷之印记",
+   "reading": "lei zhi yin ji",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00044",
+   "text": "风之印记",
+   "typeText": "风之印记",
+   "reading": "feng zhi yin ji",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00045",
+   "text": "高速制作",
+   "typeText": "高速制作",
+   "reading": "gao su zhi zuo",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00046",
+   "text": "元素之印记",
+   "typeText": "元素之印记",
+   "reading": "yuan su zhi yin ji",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00047",
+   "text": "制革匠之魂",
+   "typeText": "制革匠之魂",
+   "reading": "zhi ge jiang zhi hun",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00048",
+   "text": "刻木匠之魂",
+   "typeText": "刻木匠之魂",
+   "reading": "ke mu jiang zhi hun",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00049",
+   "text": "坚实的心得",
+   "typeText": "坚实的心得",
+   "reading": "jian shi de xin de",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00050",
+   "text": "工匠的神技",
+   "typeText": "工匠的神技",
+   "reading": "gong jiang de shen ji",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00051",
+   "text": "工匠的绝技",
+   "typeText": "工匠的绝技",
+   "reading": "gong jiang de jue ji",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00052",
+   "text": "工匠的苦行",
+   "typeText": "工匠的苦行",
+   "reading": "gong jiang de ku xing",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00053",
+   "text": "烹调师之魂",
+   "typeText": "烹调师之魂",
+   "reading": "peng tiao shi zhi hun",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00054",
+   "text": "裁衣匠之魂",
+   "typeText": "裁衣匠之魂",
+   "reading": "cai yi jiang zhi hun",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00055",
+   "text": "铸甲匠之魂",
+   "typeText": "铸甲匠之魂",
+   "reading": "zhu jia jiang zhi hun",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00056",
+   "text": "锻铁匠之魂",
+   "typeText": "锻铁匠之魂",
+   "reading": "duan tie jiang zhi hun",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00057",
+   "text": "雕金匠之魂",
+   "typeText": "雕金匠之魂",
+   "reading": "diao jin jiang zhi hun",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00058",
+   "text": "专精绝技：安稳",
+   "typeText": "专精绝技安稳",
+   "reading": "zhuan jing jue ji an wen",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "cft_00059",
+   "text": "专精绝技：巩固",
+   "typeText": "专精绝技巩固",
+   "reading": "zhuan jing jue ji gong gu",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "cft_00060",
+   "text": "专精绝技：闲静",
+   "typeText": "专精绝技闲静",
+   "reading": "zhuan jing jue ji xian jing",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "cft_00061",
+   "text": "妮美雅的纺车",
+   "typeText": "妮美雅的纺车",
+   "reading": "ni mei ya de fang che",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00062",
+   "text": "模范制作II",
+   "typeText": "模范制作II",
+   "reading": "mo fan zhi zuo II",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "cft_00063",
+   "text": "比尔格的奇迹",
+   "typeText": "比尔格的奇迹",
+   "reading": "bi er ge de qi ji",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00064",
+   "text": "比尔格的技巧",
+   "typeText": "比尔格的技巧",
+   "reading": "bi er ge de ji qiao",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00065",
+   "text": "比尔格的祝福",
+   "typeText": "比尔格的祝福",
+   "reading": "bi er ge de zhu fu",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00066",
+   "text": "炼金术士之魂",
+   "typeText": "炼金术士之魂",
+   "reading": "lian jin shu shi zhi hun",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "cft_00067",
+   "text": "高速制作II",
+   "typeText": "高速制作II",
+   "reading": "gao su zhi zuo II",
+   "category": "craft_actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "cft_00068",
+   "text": "工匠的神速技巧",
+   "typeText": "工匠的神速技巧",
+   "reading": "gong jiang de shen su ji qiao",
+   "category": "craft_actions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "cft_00069",
+   "text": "高速制作III",
+   "typeText": "高速制作III",
+   "reading": "gao su zhi zuo III",
+   "category": "craft_actions",
+   "difficulty": 3,
+   "pure": false
+  }
+ ]
+}

@@ -1,0 +1,6344 @@
+{
+ "category": "duties",
+ "label": "副本与挑战",
+ "count": 704,
+ "source": "thewakingsands/ffxiv-datamining-cn",
+ "entries": [
+  {
+   "id": "dut_00001",
+   "text": "陪葬",
+   "typeText": "陪葬",
+   "reading": "pei zang",
+   "category": "duties",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "dut_00002",
+   "text": "出道战",
+   "typeText": "出道战",
+   "reading": "chu dao zhan",
+   "category": "duties",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "dut_00003",
+   "text": "影之国",
+   "typeText": "影之国",
+   "reading": "ying zhi guo",
+   "category": "duties",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "dut_00004",
+   "text": "暗杀道",
+   "typeText": "暗杀道",
+   "reading": "an sha dao",
+   "category": "duties",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "dut_00005",
+   "text": "楔石洞",
+   "typeText": "楔石洞",
+   "reading": "xie shi dong",
+   "category": "duties",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "dut_00006",
+   "text": "那达慕",
+   "typeText": "那达慕",
+   "reading": "na da mu",
+   "category": "duties",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "dut_00007",
+   "text": "为了更强",
+   "typeText": "为了更强",
+   "reading": "wei le geng qiang",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00008",
+   "text": "九霄云上",
+   "typeText": "九霄云上",
+   "reading": "jiu xiao yun shang",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00009",
+   "text": "休兵书库",
+   "typeText": "休兵书库",
+   "reading": "xiu bing shu ku",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00010",
+   "text": "再次相见",
+   "typeText": "再次相见",
+   "reading": "zai ci xiang jian",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00011",
+   "text": "出海垂钓",
+   "typeText": "出海垂钓",
+   "reading": "chu hai chui diao",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00012",
+   "text": "友之试炼",
+   "typeText": "友之试炼",
+   "reading": "you zhi shi lian",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00013",
+   "text": "大会开始",
+   "typeText": "大会开始",
+   "reading": "da hui kai shi",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00014",
+   "text": "女王古殿",
+   "typeText": "女王古殿",
+   "reading": "nv wang gu dian",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00015",
+   "text": "巡梦金库",
+   "typeText": "巡梦金库",
+   "reading": "xun meng jin ku",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00016",
+   "text": "布丁拼盘",
+   "typeText": "布丁拼盘",
+   "reading": "bu ding pin pan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00017",
+   "text": "我心依旧",
+   "typeText": "我心依旧",
+   "reading": "wo xin yi jiu",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00018",
+   "text": "抗争之力",
+   "typeText": "抗争之力",
+   "reading": "kang zheng zhi li",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00019",
+   "text": "无尽寒夜",
+   "typeText": "无尽寒夜",
+   "reading": "wu jin han ye",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00020",
+   "text": "最终训练",
+   "typeText": "最终训练",
+   "reading": "zui zhong xun lian",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00021",
+   "text": "未来之路",
+   "typeText": "未来之路",
+   "reading": "wei lai zhi lu",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00022",
+   "text": "机关大殿",
+   "typeText": "机关大殿",
+   "reading": "ji guan da dian",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00023",
+   "text": "梦羽宝境",
+   "typeText": "梦羽宝境",
+   "reading": "meng yu bao jing",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00024",
+   "text": "梦羽宝殿",
+   "typeText": "梦羽宝殿",
+   "reading": "meng yu bao dian",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00025",
+   "text": "海岸斗场",
+   "typeText": "海岸斗场",
+   "reading": "hai an dou chang",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00026",
+   "text": "火山之心",
+   "typeText": "火山之心",
+   "reading": "huo shan zhi xin",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00027",
+   "text": "爆前速攻",
+   "typeText": "爆前速攻",
+   "reading": "bao qian su gong",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00028",
+   "text": "爆破死斗",
+   "typeText": "爆破死斗",
+   "reading": "bao po si dou",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00029",
+   "text": "神佑女王",
+   "typeText": "神佑女王",
+   "reading": "shen you nv wang",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00030",
+   "text": "终极之战",
+   "typeText": "终极之战",
+   "reading": "zhong ji zhi zhan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00031",
+   "text": "终结之战",
+   "typeText": "终结之战",
+   "reading": "zhong jie zhi zhan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00032",
+   "text": "良缘仪式",
+   "typeText": "良缘仪式",
+   "reading": "liang yuan yi shi",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00033",
+   "text": "英雄归来",
+   "typeText": "英雄归来",
+   "reading": "ying xiong gui lai",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00034",
+   "text": "英雄挽歌",
+   "typeText": "英雄挽歌",
+   "reading": "ying xiong wan ge",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00035",
+   "text": "英魂安息",
+   "typeText": "英魂安息",
+   "reading": "ying hun an xi",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00036",
+   "text": "角力学校",
+   "typeText": "角力学校",
+   "reading": "jue li xue xiao",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00037",
+   "text": "赤土红沙",
+   "typeText": "赤土红沙",
+   "reading": "chi tu hong sha",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00038",
+   "text": "踏破风雪",
+   "typeText": "踏破风雪",
+   "reading": "ta po feng xue",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00039",
+   "text": "铁鹰战士",
+   "typeText": "铁鹰战士",
+   "reading": "tie ying zhan shi",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00040",
+   "text": "风之使者",
+   "typeText": "风之使者",
+   "reading": "feng zhi shi zhe",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00041",
+   "text": "魔光键影",
+   "typeText": "魔光键影",
+   "reading": "mo guang jian ying",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00042",
+   "text": "鱼道现身！",
+   "typeText": "鱼道现身",
+   "reading": "yu dao xian shen",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "dut_00043",
+   "text": "保镖歼灭战",
+   "typeText": "保镖歼灭战",
+   "reading": "bao biao jian mie zhan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00044",
+   "text": "决战龟甲岛",
+   "typeText": "决战龟甲岛",
+   "reading": "jue zhan gui jia dao",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00045",
+   "text": "勇敢的猎人",
+   "typeText": "勇敢的猎人",
+   "reading": "yong gan de lie ren",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00046",
+   "text": "原初的战士",
+   "typeText": "原初的战士",
+   "reading": "yuan chu de zhan shi",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00047",
+   "text": "大镰的意义",
+   "typeText": "大镰的意义",
+   "reading": "da lian de yi yi",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00048",
+   "text": "失传的力量",
+   "typeText": "失传的力量",
+   "reading": "shi chuan de li liang",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00049",
+   "text": "奥丁歼灭战",
+   "typeText": "奥丁歼灭战",
+   "reading": "ao ding jian mie zhan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00050",
+   "text": "家人的温暖",
+   "typeText": "家人的温暖",
+   "reading": "jia ren de wen nuan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00051",
+   "text": "希瓦歼殛战",
+   "typeText": "希瓦歼殛战",
+   "reading": "xi wa jian ji zhan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00052",
+   "text": "希瓦歼灭战",
+   "typeText": "希瓦歼灭战",
+   "reading": "xi wa jian mie zhan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00053",
+   "text": "异闻六根山",
+   "typeText": "异闻六根山",
+   "reading": "yi wen liu gen shan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00054",
+   "text": "影隐忍法贴",
+   "typeText": "影隐忍法贴",
+   "reading": "ying yin ren fa tie",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00055",
+   "text": "恩欧歼殛战",
+   "typeText": "恩欧歼殛战",
+   "reading": "en ou jian ji zhan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00056",
+   "text": "恩欧歼灭战",
+   "typeText": "恩欧歼灭战",
+   "reading": "en ou jian mie zhan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00057",
+   "text": "惊奇百宝城",
+   "typeText": "惊奇百宝城",
+   "reading": "jing qi bai bao cheng",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00058",
+   "text": "扩散的末日",
+   "typeText": "扩散的末日",
+   "reading": "kuo san de mo ri",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00059",
+   "text": "拂晓的少年",
+   "typeText": "拂晓的少年",
+   "reading": "fu xiao de shao nian",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00060",
+   "text": "拉姆歼殛战",
+   "typeText": "拉姆歼殛战",
+   "reading": "la mu jian ji zhan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00061",
+   "text": "拉姆歼灭战",
+   "typeText": "拉姆歼灭战",
+   "reading": "la mu jian mie zhan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00062",
+   "text": "捕获金币龟！",
+   "typeText": "捕获金币龟",
+   "reading": "bu huo jin bi gui",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "dut_00063",
+   "text": "摇摆的天平",
+   "typeText": "摇摆的天平",
+   "reading": "yao bai de tian ping",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00064",
+   "text": "晓月之终途",
+   "typeText": "晓月之终途",
+   "reading": "xiao yue zhi zhong tu",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00065",
+   "text": "月读歼灭战",
+   "typeText": "月读歼灭战",
+   "reading": "yue du jian mie zhan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00066",
+   "text": "朱雀诗魂战",
+   "typeText": "朱雀诗魂战",
+   "reading": "zhu que shi hun zhan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00067",
+   "text": "朱雀镇魂战",
+   "typeText": "朱雀镇魂战",
+   "reading": "zhu que zhen hun zhan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00068",
+   "text": "死斗至黎明",
+   "typeText": "死斗至黎明",
+   "reading": "si dou zhi li ming",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00069",
+   "text": "水与火之歌",
+   "typeText": "水与火之歌",
+   "reading": "shui yu huo zhi ge",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00070",
+   "text": "水城宝物库",
+   "typeText": "水城宝物库",
+   "reading": "shui cheng bao wu ku",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00071",
+   "text": "泰坦歼殛战",
+   "typeText": "泰坦歼殛战",
+   "reading": "tai tan jian ji zhan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00072",
+   "text": "泰坦歼灭战",
+   "typeText": "泰坦歼灭战",
+   "reading": "tai tan jian mie zhan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00073",
+   "text": "泰坦讨伐战",
+   "typeText": "泰坦讨伐战",
+   "reading": "tai tan tao fa zhan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00074",
+   "text": "活动挑战2",
+   "typeText": "活动挑战2",
+   "reading": "huo dong tiao zhan 2",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "dut_00075",
+   "text": "活动挑战3",
+   "typeText": "活动挑战3",
+   "reading": "huo dong tiao zhan 3",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "dut_00076",
+   "text": "漆黑的巨龙",
+   "typeText": "漆黑的巨龙",
+   "reading": "qi hei de ju long",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00077",
+   "text": "火龙狩猎战",
+   "typeText": "火龙狩猎战",
+   "reading": "huo long shou lie zhan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00078",
+   "text": "燃烧吧高吉",
+   "typeText": "燃烧吧高吉",
+   "reading": "ran shao ba gao ji",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00079",
+   "text": "白虎诗魂战",
+   "typeText": "白虎诗魂战",
+   "reading": "bai hu shi hun zhan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00080",
+   "text": "白虎镇魂战",
+   "typeText": "白虎镇魂战",
+   "reading": "bai hu zhen hun zhan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00081",
+   "text": "神龙幻巧战",
+   "typeText": "神龙幻巧战",
+   "reading": "shen long huan qiao zhan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00082",
+   "text": "神龙歼灭战",
+   "typeText": "神龙歼灭战",
+   "reading": "shen long jian mie zhan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00083",
+   "text": "绅士与硬汉",
+   "typeText": "绅士与硬汉",
+   "reading": "shen shi yu ying han",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00084",
+   "text": "褪色的记忆",
+   "typeText": "褪色的记忆",
+   "reading": "tui shai de ji yi",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00085",
+   "text": "贤者的短杖",
+   "typeText": "贤者的短杖",
+   "reading": "xian zhe de duan zhang",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00086",
+   "text": "运河宝物库",
+   "typeText": "运河宝物库",
+   "reading": "yun he bao wu ku",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00087",
+   "text": "遥远的憧憬",
+   "typeText": "遥远的憧憬",
+   "reading": "yao yuan de chong jing",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00088",
+   "text": "金币龟兄弟",
+   "typeText": "金币龟兄弟",
+   "reading": "jin bi gui xiong di",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00089",
+   "text": "隐塞（机动战）",
+   "typeText": "隐塞机动战",
+   "reading": "yin sai ji dong zhan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "dut_00090",
+   "text": "青龙诗魂战",
+   "typeText": "青龙诗魂战",
+   "reading": "qing long shi hun zhan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00091",
+   "text": "青龙镇魂战",
+   "typeText": "青龙镇魂战",
+   "reading": "qing long zhen hun zhan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00092",
+   "text": "人偶军事基地",
+   "typeText": "人偶军事基地",
+   "reading": "ren ou jun shi ji di",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00093",
+   "text": "佐拉加歼殛战",
+   "typeText": "佐拉加歼殛战",
+   "reading": "zuo la jia jian ji zhan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00094",
+   "text": "佐拉加歼灭战",
+   "typeText": "佐拉加歼灭战",
+   "reading": "zuo la jia jian mie zhan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00095",
+   "text": "俾斯麦歼殛战",
+   "typeText": "俾斯麦歼殛战",
+   "reading": "bi si mai jian ji zhan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00096",
+   "text": "俾斯麦歼灭战",
+   "typeText": "俾斯麦歼灭战",
+   "reading": "bi si mai jian mie zhan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00097",
+   "text": "加加财富天坑",
+   "typeText": "加加财富天坑",
+   "reading": "jia jia cai fu tian keng",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00098",
+   "text": "哈迪斯歼灭战",
+   "typeText": "哈迪斯歼灭战",
+   "reading": "ha di si jian mie zhan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00099",
+   "text": "四国联合军演",
+   "typeText": "四国联合军演",
+   "reading": "si guo lian he jun yan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00100",
+   "text": "处理各种攻击",
+   "typeText": "处理各种攻击",
+   "reading": "chu li ge zhong gong ji",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00101",
+   "text": "复制工厂废墟",
+   "typeText": "复制工厂废墟",
+   "reading": "fu zhi gong chang fei xu",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00102",
+   "text": "大桥上的决斗",
+   "typeText": "大桥上的决斗",
+   "reading": "da qiao shang de jue dou",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00103",
+   "text": "希望之炮台：“塔”",
+   "typeText": "希望之炮台塔",
+   "reading": "xi wang zhi pao tai ta",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "dut_00104",
+   "text": "异闻商客奇谭",
+   "typeText": "异闻商客奇谭",
+   "reading": "yi wen shang ke qi tan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00105",
+   "text": "扎杜诺尔高原",
+   "typeText": "扎杜诺尔高原",
+   "reading": "zha du nuo er gao yuan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00106",
+   "text": "掌握仇恨连击",
+   "typeText": "掌握仇恨连击",
+   "reading": "zhang wo chou hen lian ji",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00107",
+   "text": "无限城的死斗",
+   "typeText": "无限城的死斗",
+   "reading": "wu xian cheng de si dou",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00108",
+   "text": "时空狭缝外缘",
+   "typeText": "时空狭缝外缘",
+   "reading": "shi kong xia feng wai yuan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00109",
+   "text": "朱诺：第一巡行",
+   "typeText": "朱诺第一巡行",
+   "reading": "zhu nuo di yi xun xing",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "dut_00110",
+   "text": "松叶门外之变",
+   "typeText": "松叶门外之变",
+   "reading": "song ye men wai zhi bian",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00111",
+   "text": "极恶之人木枯",
+   "typeText": "极恶之人木枯",
+   "reading": "ji e zhi ren mu ku",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00112",
+   "text": "治疗小队队员",
+   "typeText": "治疗小队队员",
+   "reading": "zhi liao xiao dui dui yuan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00113",
+   "text": "治疗防护职业",
+   "typeText": "治疗防护职业",
+   "reading": "zhi liao fang hu zhi ye",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00114",
+   "text": "海德拉讨伐战",
+   "typeText": "海德拉讨伐战",
+   "reading": "hai de la tao fa zhan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00115",
+   "text": "海德林歼灭战",
+   "typeText": "海德林歼灭战",
+   "reading": "hai de lin jian mie zhan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00116",
+   "text": "涅尔瓦的帝国",
+   "typeText": "涅尔瓦的帝国",
+   "reading": "nie er wa de di guo",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00117",
+   "text": "深读商客奇谭",
+   "typeText": "深读商客奇谭",
+   "reading": "shen du shang ke qi tan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00118",
+   "text": "目送生者前行",
+   "typeText": "目送生者前行",
+   "reading": "mu song sheng zhe qian xing",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00119",
+   "text": "祖尔宛歼殛战",
+   "typeText": "祖尔宛歼殛战",
+   "reading": "zu er wan jian ji zhan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00120",
+   "text": "祖尔宛歼灭战",
+   "typeText": "祖尔宛歼灭战",
+   "reading": "zu er wan jian mie zhan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00121",
+   "text": "禁忌城邦玛哈",
+   "typeText": "禁忌城邦玛哈",
+   "reading": "jin ji cheng bang ma ha",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00122",
+   "text": "粘液怪合唱团",
+   "typeText": "粘液怪合唱团",
+   "reading": "nian ye guai he chang tuan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00123",
+   "text": "索菲娅歼殛战",
+   "typeText": "索菲娅歼殛战",
+   "reading": "suo fei ya jian ji zhan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00124",
+   "text": "索菲娅歼灭战",
+   "typeText": "索菲娅歼灭战",
+   "reading": "suo fei ya jian mie zhan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00125",
+   "text": "红血之龙骑士",
+   "typeText": "红血之龙骑士",
+   "reading": "hong xue zhi long qi shi",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00126",
+   "text": "罗波那歼殛战",
+   "typeText": "罗波那歼殛战",
+   "reading": "luo bo na jian ji zhan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00127",
+   "text": "罗波那歼灭战",
+   "typeText": "罗波那歼灭战",
+   "reading": "luo bo na jian mie zhan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00128",
+   "text": "英雄无法安息",
+   "typeText": "英雄无法安息",
+   "reading": "ying xiong wu fa an xi",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00129",
+   "text": "荣誉野（碎冰战）",
+   "typeText": "荣誉野碎冰战",
+   "reading": "rong yu ye sui bing zhan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "dut_00130",
+   "text": "讨伐彷徨死灵！",
+   "typeText": "讨伐彷徨死灵",
+   "reading": "tao fa pang huang si ling",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "dut_00131",
+   "text": "躲避范围攻击",
+   "typeText": "躲避范围攻击",
+   "reading": "duo bi fan wei gong ji",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00132",
+   "text": "迦楼罗歼殛战",
+   "typeText": "迦楼罗歼殛战",
+   "reading": "jia lou luo jian ji zhan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00133",
+   "text": "迦楼罗歼灭战",
+   "typeText": "迦楼罗歼灭战",
+   "reading": "jia lou luo jian mie zhan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00134",
+   "text": "迦楼罗讨伐战",
+   "typeText": "迦楼罗讨伐战",
+   "reading": "jia lou luo tao fa zhan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00135",
+   "text": "金碟巨豆中心",
+   "typeText": "金碟巨豆中心",
+   "reading": "jin die ju dou zhong xin",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00136",
+   "text": "阿修罗歼灭战",
+   "typeText": "阿修罗歼灭战",
+   "reading": "a xiu luo jian mie zhan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00137",
+   "text": "零式女王古殿",
+   "typeText": "零式女王古殿",
+   "reading": "ling shi nv wang gu dian",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00138",
+   "text": "青之牙、红之牙",
+   "typeText": "青之牙红之牙",
+   "reading": "qing zhi ya hong zhi ya",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "dut_00139",
+   "text": "驱除剧毒妖花！",
+   "typeText": "驱除剧毒妖花",
+   "reading": "qu chu ju du yao hua",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "dut_00140",
+   "text": "高贝扎歼殛战",
+   "typeText": "高贝扎歼殛战",
+   "reading": "gao bei zha jian ji zhan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00141",
+   "text": "高贝扎歼灭战",
+   "typeText": "高贝扎歼灭战",
+   "reading": "gao bei zha jian mie zhan",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00142",
+   "text": "鼻息爆破死斗",
+   "typeText": "鼻息爆破死斗",
+   "reading": "bi xi bao po si dou",
+   "category": "duties",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "dut_00143",
+   "text": "一块面包的交易",
+   "typeText": "一块面包的交易",
+   "reading": "yi kuai mian bao de jiao yi",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00144",
+   "text": "为守护笑容而战",
+   "typeText": "为守护笑容而战",
+   "reading": "wei shou hu xiao rong er zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00145",
+   "text": "乐园都市笑笑镇",
+   "typeText": "乐园都市笑笑镇",
+   "reading": "le yuan du shi xiao xiao zhen",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00146",
+   "text": "于里昂热的秘策",
+   "typeText": "于里昂热的秘策",
+   "reading": "yu li ang re de mi ce",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00147",
+   "text": "亚历山大绝境战",
+   "typeText": "亚历山大绝境战",
+   "reading": "ya li shan da jue jing zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00148",
+   "text": "伊弗利特歼殛战",
+   "typeText": "伊弗利特歼殛战",
+   "reading": "yi fu li te jian ji zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00149",
+   "text": "伊弗利特歼灭战",
+   "typeText": "伊弗利特歼灭战",
+   "reading": "yi fu li te jian mie zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00150",
+   "text": "伊弗利特讨伐战",
+   "typeText": "伊弗利特讨伐战",
+   "reading": "yi fu li te tao fa zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00151",
+   "text": "佐迪亚克歼灭战",
+   "typeText": "佐迪亚克歼灭战",
+   "reading": "zuo di ya ke jian mie zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00152",
+   "text": "修行古刹星导寺",
+   "typeText": "修行古刹星导寺",
+   "reading": "xiu xing gu cha xing dao si",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00153",
+   "text": "充满活力的父子",
+   "typeText": "充满活力的父子",
+   "reading": "chong man huo li de fu zi",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00154",
+   "text": "光之战士歼灭战",
+   "typeText": "光之战士歼灭战",
+   "reading": "guang zhi zhan shi jian mie zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00155",
+   "text": "光暗未来绝境战",
+   "typeText": "光暗未来绝境战",
+   "reading": "guang an wei lai jue jing zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00156",
+   "text": "冰雪废堡暮卫塔",
+   "typeText": "冰雪废堡暮卫塔",
+   "reading": "bing xue fei bao mu wei ta",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00157",
+   "text": "决战！佐戈永结桥",
+   "typeText": "决战佐戈永结桥",
+   "reading": "jue zhan zuo ge yong jie qiao",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00158",
+   "text": "利维亚桑歼殛战",
+   "typeText": "利维亚桑歼殛战",
+   "reading": "li wei ya sang jian ji zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00159",
+   "text": "利维亚桑歼灭战",
+   "typeText": "利维亚桑歼灭战",
+   "reading": "li wei ya sang jian mie zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00160",
+   "text": "前哨基地先锋营",
+   "typeText": "前哨基地先锋营",
+   "reading": "qian shao ji di xian feng ying",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00161",
+   "text": "南方博兹雅战线",
+   "typeText": "南方博兹雅战线",
+   "reading": "nan fang bo zi ya zhan xian",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00162",
+   "text": "卢比坎特歼殛战",
+   "typeText": "卢比坎特歼殛战",
+   "reading": "lu bi kan te jian ji zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00163",
+   "text": "卢比坎特歼灭战",
+   "typeText": "卢比坎特歼灭战",
+   "reading": "lu bi kan te jian mie zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00164",
+   "text": "古代大再生魔法",
+   "typeText": "古代大再生魔法",
+   "reading": "gu dai da zai sheng mo fa",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00165",
+   "text": "吉祥天女歼殛战",
+   "typeText": "吉祥天女歼殛战",
+   "reading": "ji xiang tian nv jian ji zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00166",
+   "text": "吉祥天女歼灭战",
+   "typeText": "吉祥天女歼灭战",
+   "reading": "ji xiang tian nv jian mie zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00167",
+   "text": "图拉尔威爪猎手",
+   "typeText": "图拉尔威爪猎手",
+   "reading": "tu la er wei zhao lie shou",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00168",
+   "text": "圆桌骑士歼灭战",
+   "typeText": "圆桌骑士歼灭战",
+   "reading": "yuan zhuo qi shi jian mie zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00169",
+   "text": "多变迷宫六根山",
+   "typeText": "多变迷宫六根山",
+   "reading": "duo bian mi gong liu gen shan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00170",
+   "text": "天龙宫殿忆罪宫",
+   "typeText": "天龙宫殿忆罪宫",
+   "reading": "tian long gong dian yi zui gong",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00171",
+   "text": "奈贝尔特的后悔",
+   "typeText": "奈贝尔特的后悔",
+   "reading": "nai bei er te de hou hui",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00172",
+   "text": "妖星乱舞绝境战",
+   "typeText": "妖星乱舞绝境战",
+   "reading": "yao xing luan wu jue jing zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00173",
+   "text": "完成集团战训练！",
+   "typeText": "完成集团战训练",
+   "reading": "wan cheng ji tuan zhan xun lian",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00174",
+   "text": "寄生植物——火花草",
+   "typeText": "寄生植物火花草",
+   "reading": "ji sheng zhi wu huo hua cao",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00175",
+   "text": "对龙城塞石卫塔",
+   "typeText": "对龙城塞石卫塔",
+   "reading": "dui long cheng sai shi wei ta",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00176",
+   "text": "尘封秘岩（争夺战）",
+   "typeText": "尘封秘岩争夺战",
+   "reading": "chen feng mi yan zheng duo zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00177",
+   "text": "尼德霍格征龙战",
+   "typeText": "尼德霍格征龙战",
+   "reading": "ni de huo ge zheng long zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00178",
+   "text": "巴哈姆特绝境战",
+   "typeText": "巴哈姆特绝境战",
+   "reading": "ba ha mu te jue jing zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00179",
+   "text": "幻想龙诗绝境战",
+   "typeText": "幻想龙诗绝境战",
+   "reading": "huan xiang long shi jue jing zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00180",
+   "text": "废都拿巴示艾兰",
+   "typeText": "废都拿巴示艾兰",
+   "reading": "fei dou na ba shi ai lan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00181",
+   "text": "异形楼阁佐特塔",
+   "typeText": "异形楼阁佐特塔",
+   "reading": "yi xing lou ge zuo te ta",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00182",
+   "text": "异闻阿罗阿罗岛",
+   "typeText": "异闻阿罗阿罗岛",
+   "reading": "yi wen a luo a luo dao",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00183",
+   "text": "恶党孤城黄金阁",
+   "typeText": "恶党孤城黄金阁",
+   "reading": "e dang gu cheng huang jin ge",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00184",
+   "text": "打倒增援的敌人",
+   "typeText": "打倒增援的敌人",
+   "reading": "da dao zeng yuan de di ren",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00185",
+   "text": "护锁刃龙狩猎战",
+   "typeText": "护锁刃龙狩猎战",
+   "reading": "hu suo ren long shou lie zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00186",
+   "text": "控制敌人的仇恨",
+   "typeText": "控制敌人的仇恨",
+   "reading": "kong zhi di ren de chou hen",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00187",
+   "text": "无可指摘的猎人",
+   "typeText": "无可指摘的猎人",
+   "reading": "wu ke zhi zhai de lie ren",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00188",
+   "text": "无瑕灵君歼殛战",
+   "typeText": "无瑕灵君歼殛战",
+   "reading": "wu xia ling jun jian ji zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00189",
+   "text": "无瑕灵君歼灭战",
+   "typeText": "无瑕灵君歼灭战",
+   "reading": "wu xia ling jun jian mie zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00190",
+   "text": "星海空间颠倒塔",
+   "typeText": "星海空间颠倒塔",
+   "reading": "xing hai kong jian dian dao ta",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00191",
+   "text": "暗黑之云诛灭战",
+   "typeText": "暗黑之云诛灭战",
+   "reading": "an hei zhi yun zhu mie zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00192",
+   "text": "月读幽夜歼灭战",
+   "typeText": "月读幽夜歼灭战",
+   "reading": "yue du you ye jian mie zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00193",
+   "text": "毒雾洞窟黄金谷",
+   "typeText": "毒雾洞窟黄金谷",
+   "reading": "du wu dong ku huang jin gu",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00194",
+   "text": "水晶塔暗之世界",
+   "typeText": "水晶塔暗之世界",
+   "reading": "shui jing ta an zhi shi jie",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00195",
+   "text": "永恒女王歼灭战",
+   "typeText": "永恒女王歼灭战",
+   "reading": "yong heng nv wang jian mie zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00196",
+   "text": "永远之暗歼灭战",
+   "typeText": "永远之暗歼灭战",
+   "reading": "yong yuan zhi an jian mie zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00197",
+   "text": "沃刻其特（演习战）",
+   "typeText": "沃刻其特演习战",
+   "reading": "wo ke qi te yan xi zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00198",
+   "text": "泽罗姆斯歼殛战",
+   "typeText": "泽罗姆斯歼殛战",
+   "reading": "ze luo mu si jian ji zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00199",
+   "text": "泽罗姆斯歼灭战",
+   "typeText": "泽罗姆斯歼灭战",
+   "reading": "ze luo mu si jian mie zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00200",
+   "text": "泽莲尼娅歼殛战",
+   "typeText": "泽莲尼娅歼殛战",
+   "reading": "ze lian ni ya jian ji zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00201",
+   "text": "泽莲尼娅歼灭战",
+   "typeText": "泽莲尼娅歼灭战",
+   "reading": "ze lian ni ya jian mie zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00202",
+   "text": "流沙迷宫樵鸣洞",
+   "typeText": "流沙迷宫樵鸣洞",
+   "reading": "liu sha mi gong qiao ming dong",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00203",
+   "text": "海底宫殿紫水宫",
+   "typeText": "海底宫殿紫水宫",
+   "reading": "hai di gong dian zi shui gong",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00204",
+   "text": "海都路人身首异",
+   "typeText": "海都路人身首异",
+   "reading": "hai dou lu ren shen shou yi",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00205",
+   "text": "温达斯：第三巡行",
+   "typeText": "温达斯第三巡行",
+   "reading": "wen da si di san xun xing",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00206",
+   "text": "漂流海域妖歌海",
+   "typeText": "漂流海域妖歌海",
+   "reading": "piao liu hai yu yao ge hai",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00207",
+   "text": "激战城塞石卫塔",
+   "typeText": "激战城塞石卫塔",
+   "reading": "ji zhan cheng sai shi wei ta",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00208",
+   "text": "火龙上位狩猎战",
+   "typeText": "火龙上位狩猎战",
+   "reading": "huo long shang wei shou lie zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00209",
+   "text": "瓦伦提昂蛋糕店",
+   "typeText": "瓦伦提昂蛋糕店",
+   "reading": "wa lun ti ang dan gao dian",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00210",
+   "text": "留心增援的敌人",
+   "typeText": "留心增援的敌人",
+   "reading": "liu xin zeng yuan de di ren",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00211",
+   "text": "神龙梦幻歼灭战",
+   "typeText": "神龙梦幻歼灭战",
+   "reading": "shen long meng huan jian mie zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00212",
+   "text": "祭器创造的假象",
+   "typeText": "祭器创造的假象",
+   "reading": "ji qi chuang zao de jia xiang",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00213",
+   "text": "究极神兵绝境战",
+   "typeText": "究极神兵绝境战",
+   "reading": "jiu ji shen bing jue jing zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00214",
+   "text": "空中神域不获岛",
+   "typeText": "空中神域不获岛",
+   "reading": "kong zhong shen yu bu huo dao",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00215",
+   "text": "空军装甲驾驶员",
+   "typeText": "空军装甲驾驶员",
+   "reading": "kong jun zhuang jia jia shi yuan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00216",
+   "text": "穿越时空的夙愿",
+   "typeText": "穿越时空的夙愿",
+   "reading": "chuan yue shi kong de su yuan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00217",
+   "text": "第12关：打砖块",
+   "typeText": "第12关打砖块",
+   "reading": "di 12 guan da zhuan kuai",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00218",
+   "text": "第1关：新手教学",
+   "typeText": "第1关新手教学",
+   "reading": "di 1 guan xin shou jiao xue",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00219",
+   "text": "第4关：小小巨兽",
+   "typeText": "第4关小小巨兽",
+   "reading": "di 4 guan xiao xiao ju shou",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00220",
+   "text": "第5关：站住别跑",
+   "typeText": "第5关站住别跑",
+   "reading": "di 5 guan zhan zhu bie pao",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00221",
+   "text": "第5关：蛮族叛乱",
+   "typeText": "第5关蛮族叛乱",
+   "reading": "di 5 guan man zu pan luan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00222",
+   "text": "第7关：劲敌共斗",
+   "typeText": "第7关劲敌共斗",
+   "reading": "di 7 guan jing di gong dou",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00223",
+   "text": "第9关：体力之战",
+   "typeText": "第9关体力之战",
+   "reading": "di 9 guan ti li zhi zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00224",
+   "text": "第9关：铜山爆破",
+   "typeText": "第9关铜山爆破",
+   "reading": "di 9 guan tong shan bao po",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00225",
+   "text": "纠缠不清的宿命",
+   "typeText": "纠缠不清的宿命",
+   "reading": "jiu chan bu qing de su ming",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00226",
+   "text": "红玉火山狱之盖",
+   "typeText": "红玉火山狱之盖",
+   "reading": "hong yu huo shan yu zhi gai",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00227",
+   "text": "绝妙傀儡师——都灵",
+   "typeText": "绝妙傀儡师都灵",
+   "reading": "jue miao kui lei shi dou ling",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00228",
+   "text": "缇坦妮雅歼殛战",
+   "typeText": "缇坦妮雅歼殛战",
+   "reading": "ti tan ni ya jian ji zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00229",
+   "text": "缇坦妮雅歼灭战",
+   "typeText": "缇坦妮雅歼灭战",
+   "reading": "ti tan ni ya jian mie zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00230",
+   "text": "艳翼蛇鸟歼殛战",
+   "typeText": "艳翼蛇鸟歼殛战",
+   "reading": "yan yi she niao jian ji zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00231",
+   "text": "艳翼蛇鸟歼灭战",
+   "typeText": "艳翼蛇鸟歼灭战",
+   "reading": "yan yi she niao jian mie zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00232",
+   "text": "荣华神域塔利亚",
+   "typeText": "荣华神域塔利亚",
+   "reading": "rong hua shen yu ta li ya",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00233",
+   "text": "萨菲洛特歼殛战",
+   "typeText": "萨菲洛特歼殛战",
+   "reading": "sa fei luo te jian ji zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00234",
+   "text": "萨菲洛特歼灭战",
+   "typeText": "萨菲洛特歼灭战",
+   "reading": "sa fei luo te jian mie zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00235",
+   "text": "蝰蛇剑士的使命",
+   "typeText": "蝰蛇剑士的使命",
+   "reading": "kui she jian shi de shi ming",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00236",
+   "text": "财宝传说破舰岛",
+   "typeText": "财宝传说破舰岛",
+   "reading": "cai bao chuan shuo po jian dao",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00237",
+   "text": "运河宝物库深层",
+   "typeText": "运河宝物库深层",
+   "reading": "yun he bao wu ku shen ceng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00238",
+   "text": "运河宝物库神殿",
+   "typeText": "运河宝物库神殿",
+   "reading": "yun he bao wu ku shen dian",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00239",
+   "text": "遇袭集落水滩村",
+   "typeText": "遇袭集落水滩村",
+   "reading": "yu xi ji luo shui tan cun",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00240",
+   "text": "遗忘行路雾之迹",
+   "typeText": "遗忘行路雾之迹",
+   "reading": "yi wang xing lu wu zhi ji",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00241",
+   "text": "里塔提恩强攻战",
+   "typeText": "里塔提恩强攻战",
+   "reading": "li ta ti en qiang gong zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00242",
+   "text": "间歇灵泉哈姆岛",
+   "typeText": "间歇灵泉哈姆岛",
+   "reading": "jian xie ling quan ha mu dao",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00243",
+   "text": "零式异闻六根山",
+   "typeText": "零式异闻六根山",
+   "reading": "ling shi yi wen liu gen shan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00244",
+   "text": "须佐之男歼殛战",
+   "typeText": "须佐之男歼殛战",
+   "reading": "xu zuo zhi nan jian ji zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00245",
+   "text": "须佐之男歼灭战",
+   "typeText": "须佐之男歼灭战",
+   "reading": "xu zuo zhi nan jian mie zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00246",
+   "text": "风水灵庙岩燕庙",
+   "typeText": "风水灵庙岩燕庙",
+   "reading": "feng shui ling miao yan yan miao",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00247",
+   "text": "驶向融合的巨轮",
+   "typeText": "驶向融合的巨轮",
+   "reading": "shi xiang rong he de ju lun",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00248",
+   "text": "魔导神门巴别塔",
+   "typeText": "魔导神门巴别塔",
+   "reading": "mo dao shen men ba bie ta",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00249",
+   "text": "魔法宫殿宇宙宫",
+   "typeText": "魔法宫殿宇宙宫",
+   "reading": "mo fa gong dian yu zhou gong",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00250",
+   "text": "魔航船虚无方舟",
+   "typeText": "魔航船虚无方舟",
+   "reading": "mo hang chuan xu wu fang zhou",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00251",
+   "text": "黄金斗士——金德尔",
+   "typeText": "黄金斗士金德尔",
+   "reading": "huang jin dou shi jin de er",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00252",
+   "text": "黑涡传说破舰岛",
+   "typeText": "黑涡传说破舰岛",
+   "reading": "hei wo chuan shuo po jian dao",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00253",
+   "text": "一位国王，一位父亲",
+   "typeText": "一位国王一位父亲",
+   "reading": "yi wei guo wang yi wei fu qin",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00254",
+   "text": "七彩甜点——棉花软糖",
+   "typeText": "七彩甜点棉花软糖",
+   "reading": "qi cai tian dian mian hua ruan tang",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00255",
+   "text": "万魔殿炼净之狱1",
+   "typeText": "万魔殿炼净之狱1",
+   "reading": "wan mo dian lian jing zhi yu 1",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00256",
+   "text": "万魔殿炼净之狱2",
+   "typeText": "万魔殿炼净之狱2",
+   "reading": "wan mo dian lian jing zhi yu 2",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00257",
+   "text": "万魔殿炼净之狱3",
+   "typeText": "万魔殿炼净之狱3",
+   "reading": "wan mo dian lian jing zhi yu 3",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00258",
+   "text": "万魔殿炼净之狱4",
+   "typeText": "万魔殿炼净之狱4",
+   "reading": "wan mo dian lian jing zhi yu 4",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00259",
+   "text": "万魔殿荒天之狱1",
+   "typeText": "万魔殿荒天之狱1",
+   "reading": "wan mo dian huang tian zhi yu 1",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00260",
+   "text": "万魔殿荒天之狱2",
+   "typeText": "万魔殿荒天之狱2",
+   "reading": "wan mo dian huang tian zhi yu 2",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00261",
+   "text": "万魔殿荒天之狱3",
+   "typeText": "万魔殿荒天之狱3",
+   "reading": "wan mo dian huang tian zhi yu 3",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00262",
+   "text": "万魔殿荒天之狱4",
+   "typeText": "万魔殿荒天之狱4",
+   "reading": "wan mo dian huang tian zhi yu 4",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00263",
+   "text": "万魔殿边境之狱1",
+   "typeText": "万魔殿边境之狱1",
+   "reading": "wan mo dian bian jing zhi yu 1",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00264",
+   "text": "万魔殿边境之狱2",
+   "typeText": "万魔殿边境之狱2",
+   "reading": "wan mo dian bian jing zhi yu 2",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00265",
+   "text": "万魔殿边境之狱3",
+   "typeText": "万魔殿边境之狱3",
+   "reading": "wan mo dian bian jing zhi yu 3",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00266",
+   "text": "万魔殿边境之狱4",
+   "typeText": "万魔殿边境之狱4",
+   "reading": "wan mo dian bian jing zhi yu 4",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00267",
+   "text": "不论酣睡还是无眠",
+   "typeText": "不论酣睡还是无眠",
+   "reading": "bu lun han shui hai shi wu mian",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00268",
+   "text": "丛林竞流生息河岸",
+   "typeText": "丛林竞流生息河岸",
+   "reading": "cong lin jing liu sheng xi he an",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00269",
+   "text": "云冠群岛夜晚探索",
+   "typeText": "云冠群岛夜晚探索",
+   "reading": "yun guan qun dao ye wan tan suo",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00270",
+   "text": "云冠群岛白昼探索",
+   "typeText": "云冠群岛白昼探索",
+   "reading": "yun guan qun dao bai zhou tan suo",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00271",
+   "text": "云冠群岛黄昏探索",
+   "typeText": "云冠群岛黄昏探索",
+   "reading": "yun guan qun dao huang hun tan suo",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00272",
+   "text": "亡灵府邸闹鬼庄园",
+   "typeText": "亡灵府邸闹鬼庄园",
+   "reading": "wang ling fu di nao gui zhuang yuan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00273",
+   "text": "仰望苍穹，不断迈进",
+   "typeText": "仰望苍穹不断迈进",
+   "reading": "yang wang cang qiong bu duan mai jin",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00274",
+   "text": "卓异的悲寂歼灭战",
+   "typeText": "卓异的悲寂歼灭战",
+   "reading": "zhuo yi de bei ji jian mie zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00275",
+   "text": "卓异的悲寂深想战",
+   "typeText": "卓异的悲寂深想战",
+   "reading": "zhuo yi de bei ji shen xiang zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00276",
+   "text": "博兹雅堡垒追忆战",
+   "typeText": "博兹雅堡垒追忆战",
+   "reading": "bo zi ya bao lei zhui yi zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00277",
+   "text": "博物战舰无限回廊",
+   "typeText": "博物战舰无限回廊",
+   "reading": "bo wu zhan jian wu xian hui lang",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00278",
+   "text": "厄尔庇斯育体宝殿",
+   "typeText": "厄尔庇斯育体宝殿",
+   "reading": "e er bi si yu ti bao dian",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00279",
+   "text": "名门府邸静语庄园",
+   "typeText": "名门府邸静语庄园",
+   "reading": "ming men fu di jing yu zhuang yuan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00280",
+   "text": "周边遗迹群（阵地战）",
+   "typeText": "周边遗迹群阵地战",
+   "reading": "zhou bian yi ji qun zhen di zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00281",
+   "text": "哈迪斯孤念歼灭战",
+   "typeText": "哈迪斯孤念歼灭战",
+   "reading": "ha di si gu nian jian mie zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00282",
+   "text": "噩梦乐园迷途鬼区",
+   "typeText": "噩梦乐园迷途鬼区",
+   "reading": "e meng le yuan mi tu gui qu",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00283",
+   "text": "多变迷宫商客奇谭",
+   "typeText": "多变迷宫商客奇谭",
+   "reading": "duo bian mi gong shang ke qi tan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00284",
+   "text": "天上福地云冠群岛",
+   "typeText": "天上福地云冠群岛",
+   "reading": "tian shang fu di yun guan qun dao",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00285",
+   "text": "天之御柱1～10层",
+   "typeText": "天之御柱110层",
+   "reading": "tian zhi yu zhu 110 ceng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00286",
+   "text": "守护者还是毁灭者",
+   "typeText": "守护者还是毁灭者",
+   "reading": "shou hu zhe hai shi hui mie zhe",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00287",
+   "text": "封锁坑道铜铃铜山",
+   "typeText": "封锁坑道铜铃铜山",
+   "reading": "feng suo keng dao tong ling tong shan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00288",
+   "text": "幻龙残骸密约之塔",
+   "typeText": "幻龙残骸密约之塔",
+   "reading": "huan long can hai mi yue zhi ta",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00289",
+   "text": "异闻希拉狄哈水道",
+   "typeText": "异闻希拉狄哈水道",
+   "reading": "yi wen xi la di ha shui dao",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00290",
+   "text": "怪力兽王——迪克巴朗",
+   "typeText": "怪力兽王迪克巴朗",
+   "reading": "guai li shou wang di ke ba lang",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00291",
+   "text": "恶灵府邸静语庄园",
+   "typeText": "恶灵府邸静语庄园",
+   "reading": "e ling fu di jing yu zhuang yuan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00292",
+   "text": "拉哈布雷亚讨伐战",
+   "typeText": "拉哈布雷亚讨伐战",
+   "reading": "la ha bu lei ya tao fa zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00293",
+   "text": "昂萨哈凯尔（竞争战）",
+   "typeText": "昂萨哈凯尔竞争战",
+   "reading": "ang sa ha kai er jing zheng zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00294",
+   "text": "暗影决战诺弗兰特",
+   "typeText": "暗影决战诺弗兰特",
+   "reading": "an ying jue zhan nuo fu lan te",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00295",
+   "text": "最终幻想末世终迹",
+   "typeText": "最终幻想末世终迹",
+   "reading": "zui zhong huan xiang mo shi zhong ji",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00296",
+   "text": "末日树海万相森国",
+   "typeText": "末日树海万相森国",
+   "reading": "mo ri shu hai wan xiang sen guo",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00297",
+   "text": "桑多利亚：第二巡行",
+   "typeText": "桑多利亚第二巡行",
+   "reading": "sang duo li ya di er xun xing",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00298",
+   "text": "欧米茄绝境验证战",
+   "typeText": "欧米茄绝境验证战",
+   "reading": "ou mi jia jue jing yan zheng zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00299",
+   "text": "死亡大地终末焦土",
+   "typeText": "死亡大地终末焦土",
+   "reading": "si wang da di zhong mo jiao tu",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00300",
+   "text": "死化奇美拉讨伐战",
+   "typeText": "死化奇美拉讨伐战",
+   "reading": "si hua qi mei la tao fa zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00301",
+   "text": "水晶塔古代人迷宫",
+   "typeText": "水晶塔古代人迷宫",
+   "reading": "shui jing ta gu dai ren mi gong",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00302",
+   "text": "水晶塔希尔科斯塔",
+   "typeText": "水晶塔希尔科斯塔",
+   "reading": "shui jing ta xi er ke si ta",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00303",
+   "text": "永久幽界中央终端",
+   "typeText": "永久幽界中央终端",
+   "reading": "yong jiu you jie zhong yang zhong duan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00304",
+   "text": "海德林晖光歼灭战",
+   "typeText": "海德林晖光歼灭战",
+   "reading": "hai de lin hui guang jian mie zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00305",
+   "text": "滑稽灵殿闹鬼盛宴",
+   "typeText": "滑稽灵殿闹鬼盛宴",
+   "reading": "hua ji ling dian nao gui sheng yan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00306",
+   "text": "灵活运用场地机关",
+   "typeText": "灵活运用场地机关",
+   "reading": "ling huo yun yong chang di ji guan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00307",
+   "text": "灾厄重现军事演习",
+   "typeText": "灾厄重现军事演习",
+   "reading": "zai e chong xian jun shi yan xi",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00308",
+   "text": "灿烂神域阿格莱亚",
+   "typeText": "灿烂神域阿格莱亚",
+   "reading": "can lan shen yu a ge lai ya",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00309",
+   "text": "爆炸湮灭——爆弹之祖",
+   "typeText": "爆炸湮灭爆弹之祖",
+   "reading": "bao zha yan mie bao dan zhi zu",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00310",
+   "text": "猩红死妖姬——卡蜜拉",
+   "typeText": "猩红死妖姬卡蜜拉",
+   "reading": "xing hong si yao ji ka mi la",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00311",
+   "text": "王城古迹永护塔底",
+   "typeText": "王城古迹永护塔底",
+   "reading": "wang cheng gu ji yong hu ta di",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00312",
+   "text": "王者骑士——幽黑曲偶",
+   "typeText": "王者骑士幽黑曲偶",
+   "reading": "wang zhe qi shi you hei qu ou",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00313",
+   "text": "生命瞬逝，术道恒久",
+   "typeText": "生命瞬逝术道恒久",
+   "reading": "sheng ming shun shi shu dao heng jiu",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00314",
+   "text": "疯狂战舰无限回廊",
+   "typeText": "疯狂战舰无限回廊",
+   "reading": "feng kuang zhan jian wu xian hui lang",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00315",
+   "text": "神圣禁地深空天坑",
+   "typeText": "神圣禁地深空天坑",
+   "reading": "shen sheng jin di shen kong tian keng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00316",
+   "text": "究极神兵假想作战",
+   "typeText": "究极神兵假想作战",
+   "reading": "jiu ji shen bing jia xiang zuo zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00317",
+   "text": "究极神兵破坏作战",
+   "typeText": "究极神兵破坏作战",
+   "reading": "jiu ji shen bing po huai zuo zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00318",
+   "text": "第11关：全速冲刺",
+   "typeText": "第11关全速冲刺",
+   "reading": "di 11 guan quan su chong ci",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00319",
+   "text": "第14关：硬如坚果",
+   "typeText": "第14关硬如坚果",
+   "reading": "di 14 guan ying ru jian guo",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00320",
+   "text": "第3关：万事开头难",
+   "typeText": "第3关万事开头难",
+   "reading": "di 3 guan wan shi kai tou nan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00321",
+   "text": "第6关：恐怖的墓园",
+   "typeText": "第6关恐怖的墓园",
+   "reading": "di 6 guan kong bu de mu yuan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00322",
+   "text": "第7关：梦幻的结界",
+   "typeText": "第7关梦幻的结界",
+   "reading": "di 7 guan meng huan de jie jie",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00323",
+   "text": "纯白誓约、漆黑密约",
+   "typeText": "纯白誓约漆黑密约",
+   "reading": "chun bai shi yue qi hei mi yue",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00324",
+   "text": "纵使前路狱火焰毒",
+   "typeText": "纵使前路狱火焰毒",
+   "reading": "zong shi qian lu yu huo yan du",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00325",
+   "text": "荒野秘境仙人刺谷",
+   "typeText": "荒野秘境仙人刺谷",
+   "reading": "huang ye mi jing xian ren ci gu",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00326",
+   "text": "莫古力贤王歼殛战",
+   "typeText": "莫古力贤王歼殛战",
+   "reading": "mo gu li xian wang jian ji zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00327",
+   "text": "莫古力贤王歼灭战",
+   "typeText": "莫古力贤王歼灭战",
+   "reading": "mo gu li xian wang jian mie zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00328",
+   "text": "虚景跳跳乐大挑战",
+   "typeText": "虚景跳跳乐大挑战",
+   "reading": "xu jing tiao tiao le da tiao zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00329",
+   "text": "解放决战多玛王城",
+   "typeText": "解放决战多玛王城",
+   "reading": "jie fang jue zhan duo ma wang cheng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00330",
+   "text": "讨伐爆弹怪的女王！",
+   "typeText": "讨伐爆弹怪的女王",
+   "reading": "tao fa bao dan guai de nv wang",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00331",
+   "text": "距骨研究所（机动战）",
+   "typeText": "距骨研究所机动战",
+   "reading": "ju gu yan jiu suo ji dong zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00332",
+   "text": "那双眼中映出的是",
+   "typeText": "那双眼中映出的是",
+   "reading": "na shuang yan zhong ying chu de shi",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00333",
+   "text": "邪龙王座龙巢神殿",
+   "typeText": "邪龙王座龙巢神殿",
+   "reading": "xie long wang zuo long chao shen dian",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00334",
+   "text": "鏖战红莲阿拉米格",
+   "typeText": "鏖战红莲阿拉米格",
+   "reading": "ao zhan hong lian a la mi ge",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00335",
+   "text": "钻石神兵捕获作战",
+   "typeText": "钻石神兵捕获作战",
+   "reading": "zuan shi shen bing bu huo zuo zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00336",
+   "text": "钻石神兵狂想作战",
+   "typeText": "钻石神兵狂想作战",
+   "reading": "zuan shi shen bing kuang xiang zuo zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00337",
+   "text": "雪山奥窟冥魂石洞",
+   "typeText": "雪山奥窟冥魂石洞",
+   "reading": "xue shan ao ku ming hun shi dong",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00338",
+   "text": "骚乱坑道铜铃铜山",
+   "typeText": "骚乱坑道铜铃铜山",
+   "reading": "sao luan keng dao tong ling tong shan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00339",
+   "text": "魂魄工厂创生设施",
+   "typeText": "魂魄工厂创生设施",
+   "reading": "hun po gong chang chuang sheng she shi",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00340",
+   "text": "上一任阿谢姆的教导",
+   "typeText": "上一任阿谢姆的教导",
+   "reading": "shang yi ren a xie mu de jiao dao",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00341",
+   "text": "九宫幻卡：官方锦标赛",
+   "typeText": "九宫幻卡官方锦标赛",
+   "reading": "jiu gong huan ka guan fang jin biao sai",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00342",
+   "text": "九宫幻卡：幻卡对局室",
+   "typeText": "九宫幻卡幻卡对局室",
+   "reading": "jiu gong huan ka huan ka dui ju shi",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00343",
+   "text": "云冠群岛丰饶神福地",
+   "typeText": "云冠群岛丰饶神福地",
+   "reading": "yun guan qun dao feng rao shen fu di",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00344",
+   "text": "云冠群岛战争神猎场",
+   "typeText": "云冠群岛战争神猎场",
+   "reading": "yun guan qun dao zhan zheng shen lie chang",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00345",
+   "text": "伪造天界格鲁格火山",
+   "typeText": "伪造天界格鲁格火山",
+   "reading": "wei zao tian jie ge lu ge huo shan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00346",
+   "text": "佐迪亚克暝暗歼灭战",
+   "typeText": "佐迪亚克暝暗歼灭战",
+   "reading": "zuo di ya ke ming an jian mie zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00347",
+   "text": "光之战士幻耀歼灭战",
+   "typeText": "光之战士幻耀歼灭战",
+   "reading": "guang zhi zhan shi huan yao jian mie zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00348",
+   "text": "凛冽洞天披雪大冰壁",
+   "typeText": "凛冽洞天披雪大冰壁",
+   "reading": "lin lie dong tian pi xue da bing bi",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00349",
+   "text": "击溃哥布林炸弹军团！",
+   "typeText": "击溃哥布林炸弹军团",
+   "reading": "ji kui ge bu lin zha dan jun tuan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00350",
+   "text": "创造环境极北造物院",
+   "typeText": "创造环境极北造物院",
+   "reading": "chuang zao huan jing ji bei zao wu yuan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00351",
+   "text": "加尔提诺平原遭遇战",
+   "typeText": "加尔提诺平原遭遇战",
+   "reading": "jia er ti nuo ping yuan zao yu zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00352",
+   "text": "博兹雅堡垒蒸发事件",
+   "typeText": "博兹雅堡垒蒸发事件",
+   "reading": "bo zi ya bao lei zheng fa shi jian",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00353",
+   "text": "喜悦神域欧芙洛绪涅",
+   "typeText": "喜悦神域欧芙洛绪涅",
+   "reading": "xi yue shen yu ou fu luo xu nie",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00354",
+   "text": "圆桌骑士幻想歼灭战",
+   "typeText": "圆桌骑士幻想歼灭战",
+   "reading": "yuan zhuo qi shi huan xiang jian mie zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00355",
+   "text": "地脉灵灯天狼星灯塔",
+   "typeText": "地脉灵灯天狼星灯塔",
+   "reading": "di mai ling deng tian lang xing deng ta",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00356",
+   "text": "坚牢铁壁巴埃萨长城",
+   "typeText": "坚牢铁壁巴埃萨长城",
+   "reading": "jian lao tie bi ba ai sa chang cheng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00357",
+   "text": "处理显示标记的攻击",
+   "typeText": "处理显示标记的攻击",
+   "reading": "chu li xian shi biao ji de gong ji",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00358",
+   "text": "多变迷宫阿罗阿罗岛",
+   "typeText": "多变迷宫阿罗阿罗岛",
+   "reading": "duo bian mi gong a luo a luo dao",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00359",
+   "text": "天之御柱11～20层",
+   "typeText": "天之御柱1120层",
+   "reading": "tian zhi yu zhu 1120 ceng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00360",
+   "text": "天之御柱21～30层",
+   "typeText": "天之御柱2130层",
+   "reading": "tian zhi yu zhu 2130 ceng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00361",
+   "text": "天之御柱31～40层",
+   "typeText": "天之御柱3140层",
+   "reading": "tian zhi yu zhu 3140 ceng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00362",
+   "text": "天之御柱41～50层",
+   "typeText": "天之御柱4150层",
+   "reading": "tian zhi yu zhu 4150 ceng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00363",
+   "text": "天之御柱51～60层",
+   "typeText": "天之御柱5160层",
+   "reading": "tian zhi yu zhu 5160 ceng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00364",
+   "text": "天之御柱61～70层",
+   "typeText": "天之御柱6170层",
+   "reading": "tian zhi yu zhu 6170 ceng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00365",
+   "text": "天之御柱71～80层",
+   "typeText": "天之御柱7180层",
+   "reading": "tian zhi yu zhu 7180 ceng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00366",
+   "text": "天之御柱81～90层",
+   "typeText": "天之御柱8190层",
+   "reading": "tian zhi yu zhu 8190 ceng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00367",
+   "text": "失落之都拉巴纳斯塔",
+   "typeText": "失落之都拉巴纳斯塔",
+   "reading": "shi luo zhi dou la ba na si ta",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00368",
+   "text": "威尔布兰德扬帆起航",
+   "typeText": "威尔布兰德扬帆起航",
+   "reading": "wei er bu lan de yang fan qi hang",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00369",
+   "text": "尼德霍格传奇征龙战",
+   "typeText": "尼德霍格传奇征龙战",
+   "reading": "ni de huo ge chuan qi zheng long zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00370",
+   "text": "山中战线泽梅尔要塞",
+   "typeText": "山中战线泽梅尔要塞",
+   "reading": "shan zhong zhan xian ze mei er yao sai",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00371",
+   "text": "巨炮要塞帝国白山堡",
+   "typeText": "巨炮要塞帝国白山堡",
+   "reading": "ju pao yao sai di guo bai shan bao",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00372",
+   "text": "巴尔巴莉希娅歼殛战",
+   "typeText": "巴尔巴莉希娅歼殛战",
+   "reading": "ba er ba li xi ya jian ji zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00373",
+   "text": "巴尔巴莉希娅歼灭战",
+   "typeText": "巴尔巴莉希娅歼灭战",
+   "reading": "ba er ba li xi ya jian mie zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00374",
+   "text": "异形人偶师——艾匹罗基",
+   "typeText": "异形人偶师艾匹罗基",
+   "reading": "yi xing ren ou shi ai pi luo ji",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00375",
+   "text": "异界孤城特罗亚宫廷",
+   "typeText": "异界孤城特罗亚宫廷",
+   "reading": "yi jie gu cheng te luo ya gong ting",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00376",
+   "text": "怪力铁巨人——克利俄斯",
+   "typeText": "怪力铁巨人克利俄斯",
+   "reading": "guai li tie ju ren ke li e si",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00377",
+   "text": "护锁刃龙上位狩猎战",
+   "typeText": "护锁刃龙上位狩猎战",
+   "reading": "hu suo ren long shang wei shou lie zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00378",
+   "text": "控制多个敌人的仇恨",
+   "typeText": "控制多个敌人的仇恨",
+   "reading": "kong zhi duo ge di ren de chou hen",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00379",
+   "text": "控制远处敌人的仇恨",
+   "typeText": "控制远处敌人的仇恨",
+   "reading": "kong zhi yuan chu di ren de chou hen",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00380",
+   "text": "旅行画家的幻想旅程",
+   "typeText": "旅行画家的幻想旅程",
+   "reading": "lv xing hua jia de huan xiang lv cheng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00381",
+   "text": "旅行画家的森都旅程",
+   "typeText": "旅行画家的森都旅程",
+   "reading": "lv xing hua jia de sen dou lv cheng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00382",
+   "text": "星海深幽寻因星晶镜",
+   "typeText": "星海深幽寻因星晶镜",
+   "reading": "xing hai shen you xun yin xing jing jing",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00383",
+   "text": "最初的岩壁——希帕克纳",
+   "typeText": "最初的岩壁希帕克纳",
+   "reading": "zui chu de yan bi xi pa ke na",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00384",
+   "text": "最终决战天幕魔导城",
+   "typeText": "最终决战天幕魔导城",
+   "reading": "zui zhong jue zhan tian mu mo dao cheng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00385",
+   "text": "末日暗影亚马乌罗提",
+   "typeText": "末日暗影亚马乌罗提",
+   "reading": "mo ri an ying ya ma wu luo ti",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00386",
+   "text": "机关、诅咒、剧毒与……",
+   "typeText": "机关诅咒剧毒与……",
+   "reading": "ji guan zu zhou ju du yu ……",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00387",
+   "text": "格莱杨拉波尔歼殛战",
+   "typeText": "格莱杨拉波尔歼殛战",
+   "reading": "ge lai yang la bo er jian ji zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00388",
+   "text": "格莱杨拉波尔歼灭战",
+   "typeText": "格莱杨拉波尔歼灭战",
+   "reading": "ge lai yang la bo er jian mie zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00389",
+   "text": "梦想造就风花遍地的",
+   "typeText": "梦想造就风花遍地的",
+   "reading": "meng xiang zao jiu feng hua bian di de",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00390",
+   "text": "歼灭特殊阵型的妖异！",
+   "typeText": "歼灭特殊阵型的妖异",
+   "reading": "jian mie te shu zhen xing de yao yi",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00391",
+   "text": "永恒女王忆想歼灭战",
+   "typeText": "永恒女王忆想歼灭战",
+   "reading": "yong heng nv wang yi xiang jian mie zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00392",
+   "text": "永远之暗悲惶歼灭战",
+   "typeText": "永远之暗悲惶歼灭战",
+   "reading": "yong yuan zhi an bei huang jian mie zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00393",
+   "text": "沉没神殿斯卡拉遗迹",
+   "typeText": "沉没神殿斯卡拉遗迹",
+   "reading": "chen mo shen dian si ka la yi ji",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00394",
+   "text": "电脑梦境斯提格玛四",
+   "typeText": "电脑梦境斯提格玛四",
+   "reading": "dian nao meng jing si ti ge ma si",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00395",
+   "text": "皇都伊修加德保卫战",
+   "typeText": "皇都伊修加德保卫战",
+   "reading": "huang dou yi xiu jia de bao wei zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00396",
+   "text": "神兵要塞帝国南方堡",
+   "typeText": "神兵要塞帝国南方堡",
+   "reading": "shen bing yao sai di guo nan fang bao",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00397",
+   "text": "禁地优雷卡丰水之地",
+   "typeText": "禁地优雷卡丰水之地",
+   "reading": "jin di you lei ka feng shui zhi di",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00398",
+   "text": "禁地优雷卡常风之地",
+   "typeText": "禁地优雷卡常风之地",
+   "reading": "jin di you lei ka chang feng zhi di",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00399",
+   "text": "禁地优雷卡恒冰之地",
+   "typeText": "禁地优雷卡恒冰之地",
+   "reading": "jin di you lei ka heng bing zhi di",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00400",
+   "text": "禁地优雷卡涌火之地",
+   "typeText": "禁地优雷卡涌火之地",
+   "reading": "jin di you lei ka yong huo zhi di",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00401",
+   "text": "第10关：蔓德拉之子",
+   "typeText": "第10关蔓德拉之子",
+   "reading": "di 10 guan man de la zhi zi",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00402",
+   "text": "第13关：首席机械师",
+   "typeText": "第13关首席机械师",
+   "reading": "di 13 guan shou xi ji xie shi",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00403",
+   "text": "第17关：披雪小冰壁",
+   "typeText": "第17关披雪小冰壁",
+   "reading": "di 17 guan pi xue xiao bing bi",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00404",
+   "text": "第18关：小怪物狩猎",
+   "typeText": "第18关小怪物狩猎",
+   "reading": "di 18 guan xiao guai wu shou lie",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00405",
+   "text": "第1关：抢占内圈赛道",
+   "typeText": "第1关抢占内圈赛道",
+   "reading": "di 1 guan qiang zhan nei quan sai dao",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00406",
+   "text": "第21关：贤人的试炼",
+   "typeText": "第21关贤人的试炼",
+   "reading": "di 21 guan xian ren de shi lian",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00407",
+   "text": "第22关：暗淡的世界",
+   "typeText": "第22关暗淡的世界",
+   "reading": "di 22 guan an dan de shi jie",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00408",
+   "text": "第2关：躲避范围攻击",
+   "typeText": "第2关躲避范围攻击",
+   "reading": "di 2 guan duo bi fan wei gong ji",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00409",
+   "text": "第4关：沉重的竞赛（上）",
+   "typeText": "第4关沉重的竞赛上",
+   "reading": "di 4 guan chen zhong de jing sai shang",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00410",
+   "text": "第6关：打击竞争对手",
+   "typeText": "第6关打击竞争对手",
+   "reading": "di 6 guan da ji jing zheng dui shou",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00411",
+   "text": "红宝石神兵狂想作战",
+   "typeText": "红宝石神兵狂想作战",
+   "reading": "hong bao shi shen bing kuang xiang zuo zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00412",
+   "text": "红宝石神兵破坏作战",
+   "typeText": "红宝石神兵破坏作战",
+   "reading": "hong bao shi shen bing po huai zuo zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00413",
+   "text": "绿宝石神兵狂想作战",
+   "typeText": "绿宝石神兵狂想作战",
+   "reading": "lv bao shi shen bing kuang xiang zuo zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00414",
+   "text": "绿宝石神兵破坏作战",
+   "typeText": "绿宝石神兵破坏作战",
+   "reading": "lv bao shi shen bing po huai zuo zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00415",
+   "text": "讨伐污染源头魔界花！",
+   "typeText": "讨伐污染源头魔界花",
+   "reading": "tao fa wu ran yuan tou mo jie hua",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00416",
+   "text": "通天绝壁沃刻佐莫山",
+   "typeText": "通天绝壁沃刻佐莫山",
+   "reading": "tong tian jue bi wo ke zuo mo shan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00417",
+   "text": "避暑离宫马利卡大井",
+   "typeText": "避暑离宫马利卡大井",
+   "reading": "bi shu li gong ma li ka da jing",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00418",
+   "text": "那布里亚勒斯讨伐战",
+   "typeText": "那布里亚勒斯讨伐战",
+   "reading": "na bu li ya lei si tao fa zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00419",
+   "text": "邪念妖地无限城古堡",
+   "typeText": "邪念妖地无限城古堡",
+   "reading": "xie nian yao di wu xian cheng gu bao",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00420",
+   "text": "邪恶青魔法师——启示者",
+   "typeText": "邪恶青魔法师启示者",
+   "reading": "xie e qing mo fa shi qi shi zhe",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00421",
+   "text": "邪教驻地无限城古堡",
+   "typeText": "邪教驻地无限城古堡",
+   "reading": "xie jiao zhu di wu xian cheng gu bao",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00422",
+   "text": "陆行鸟竞赛：太阳海岸",
+   "typeText": "陆行鸟竞赛太阳海岸",
+   "reading": "lu xing niao jing sai tai yang hai an",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00423",
+   "text": "陆行鸟竞赛：恬静小路",
+   "typeText": "陆行鸟竞赛恬静小路",
+   "reading": "lu xing niao jing sai tian jing xiao lu",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00424",
+   "text": "陆行鸟竞赛：竞赛教学",
+   "typeText": "陆行鸟竞赛竞赛教学",
+   "reading": "lu xing niao jing sai jing sai jiao xue",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00425",
+   "text": "陆行鸟竞赛：荒野大道",
+   "typeText": "陆行鸟竞赛荒野大道",
+   "reading": "lu xing niao jing sai huang ye da dao",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00426",
+   "text": "零式异闻阿罗阿罗岛",
+   "typeText": "零式异闻阿罗阿罗岛",
+   "reading": "ling shi yi wen a luo a luo dao",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00427",
+   "text": "领航明灯天狼星灯塔",
+   "typeText": "领航明灯天狼星灯塔",
+   "reading": "ling hang ming deng tian lang xing deng ta",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00428",
+   "text": "飞翔吧，前往维尔利特！",
+   "typeText": "飞翔吧前往维尔利特",
+   "reading": "fei xiang ba qian wang wei er li te",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00429",
+   "text": "黄金头巾——模仿师格格",
+   "typeText": "黄金头巾模仿师格格",
+   "reading": "huang jin tou jin mo fang shi ge ge",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00430",
+   "text": "乐欲之所瓯博讷修道院",
+   "typeText": "乐欲之所瓯博讷修道院",
+   "reading": "le yu zhi suo ou bo ne xiu dao yuan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00431",
+   "text": "九宫幻卡：锦标赛对局室",
+   "typeText": "九宫幻卡锦标赛对局室",
+   "reading": "jiu gong huan ka jin biao sai dui ju shi",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00432",
+   "text": "刚柔铁巨人——克利俄斯改",
+   "typeText": "刚柔铁巨人克利俄斯改",
+   "reading": "gang rou tie ju ren ke li e si gai",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00433",
+   "text": "创造机构阿尼德罗学院",
+   "typeText": "创造机构阿尼德罗学院",
+   "reading": "chuang zao ji gou a ni de luo xue yuan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00434",
+   "text": "剑斗领域日影地修炼所",
+   "typeText": "剑斗领域日影地修炼所",
+   "reading": "jian dou ling yu ri ying di xiu lian suo",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00435",
+   "text": "剧毒与康复的巅峰对决",
+   "typeText": "剧毒与康复的巅峰对决",
+   "reading": "ju du yu kang fu de dian feng dui jue",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00436",
+   "text": "古代遗迹喀恩埋没圣堂",
+   "typeText": "古代遗迹喀恩埋没圣堂",
+   "reading": "gu dai yi ji ka en mai mo sheng tang",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00437",
+   "text": "国境防线基姆利特暗区",
+   "typeText": "国境防线基姆利特暗区",
+   "reading": "guo jing fang xian ji mu li te an qu",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00438",
+   "text": "地下灵殿塔姆·塔拉墓园",
+   "typeText": "地下灵殿塔姆塔拉墓园",
+   "reading": "di xia ling dian ta mu ta la mu yuan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00439",
+   "text": "多变迷宫希拉狄哈水道",
+   "typeText": "多变迷宫希拉狄哈水道",
+   "reading": "duo bian mi gong xi la di ha shui dao",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00440",
+   "text": "天之御柱91～100层",
+   "typeText": "天之御柱91100层",
+   "reading": "tian zhi yu zhu 91100 ceng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00441",
+   "text": "天山深境索姆阿尔灵峰",
+   "typeText": "天山深境索姆阿尔灵峰",
+   "reading": "tian shan shen jing suo mu a er ling feng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00442",
+   "text": "天山绝顶索姆阿尔灵峰",
+   "typeText": "天山绝顶索姆阿尔灵峰",
+   "reading": "tian shan jue ding suo mu a er ling feng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00443",
+   "text": "天然要害沙斯塔夏溶洞",
+   "typeText": "天然要害沙斯塔夏溶洞",
+   "reading": "tian ran yao hai sha si ta xia rong dong",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00444",
+   "text": "异界深渊月面地下溪谷",
+   "typeText": "异界深渊月面地下溪谷",
+   "reading": "yi jie shen yuan yue mian di xia xi gu",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00445",
+   "text": "强大的老爹——洪巴巴之父",
+   "typeText": "强大的老爹洪巴巴之父",
+   "reading": "qiang da de lao die hong ba ba zhi fu",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00446",
+   "text": "忆中金曦亚历山德里亚",
+   "typeText": "忆中金曦亚历山德里亚",
+   "reading": "yi zhong jin xi ya li shan de li ya",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00447",
+   "text": "惨剧灵殿塔姆·塔拉墓园",
+   "typeText": "惨剧灵殿塔姆塔拉墓园",
+   "reading": "can ju ling dian ta mu ta la mu yuan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00448",
+   "text": "愤怒合成兽——阿帕德马克",
+   "typeText": "愤怒合成兽阿帕德马克",
+   "reading": "fen nu he cheng shou a pa de ma ke",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00449",
+   "text": "打倒！沙尔托菲特盗贼团！",
+   "typeText": "打倒沙尔托菲特盗贼团",
+   "reading": "da dao sha er tuo fei te dao zei tuan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00450",
+   "text": "文明古迹奇坦那神影洞",
+   "typeText": "文明古迹奇坦那神影洞",
+   "reading": "wen ming gu ji qi tan na shen ying dong",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00451",
+   "text": "武装圣域放浪神古神殿",
+   "typeText": "武装圣域放浪神古神殿",
+   "reading": "wu zhuang sheng yu fang lang shen gu shen dian",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00452",
+   "text": "死者宫殿地下1～10层",
+   "typeText": "死者宫殿地下110层",
+   "reading": "si zhe gong dian di xia 110 ceng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00453",
+   "text": "水妖幻园多恩美格禁园",
+   "typeText": "水妖幻园多恩美格禁园",
+   "reading": "shui yao huan yuan duo en mei ge jin yuan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00454",
+   "text": "消灭恶徒团伙寄生蜂团！",
+   "typeText": "消灭恶徒团伙寄生蜂团",
+   "reading": "xiao mie e tu tuan huo ji sheng feng tuan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00455",
+   "text": "监狱废墟托托·拉克千狱",
+   "typeText": "监狱废墟托托拉克千狱",
+   "reading": "jian yu fei xu tuo tuo la ke qian yu",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00456",
+   "text": "神灵圣域放浪神古神殿",
+   "typeText": "神灵圣域放浪神古神殿",
+   "reading": "shen ling sheng yu fang lang shen gu shen dian",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00457",
+   "text": "第11关：女王陛下万岁！",
+   "typeText": "第11关女王陛下万岁",
+   "reading": "di 11 guan nv wang bi xia wan sui",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00458",
+   "text": "第12关：活用竞赛能力",
+   "typeText": "第12关活用竞赛能力",
+   "reading": "di 12 guan huo yong jing sai neng li",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00459",
+   "text": "第14关：沉重的竞赛（下）",
+   "typeText": "第14关沉重的竞赛下",
+   "reading": "di 14 guan chen zhong de jing sai xia",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00460",
+   "text": "第16关：陆行鸟大进军",
+   "typeText": "第16关陆行鸟大进军",
+   "reading": "di 16 guan lu xing niao da jin jun",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00461",
+   "text": "第19关：小桥上的决斗",
+   "typeText": "第19关小桥上的决斗",
+   "reading": "di 19 guan xiao qiao shang de jue dou",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00462",
+   "text": "第2关：到处都是巧儿鸟",
+   "typeText": "第2关到处都是巧儿鸟",
+   "reading": "di 2 guan dao chu dou shi qiao er niao",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00463",
+   "text": "第3关：能力不是万能的",
+   "typeText": "第3关能力不是万能的",
+   "reading": "di 3 guan neng li bu shi wan neng de",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00464",
+   "text": "第8关：光暗之界乃拂晓",
+   "typeText": "第8关光暗之界乃拂晓",
+   "reading": "di 8 guan guang an zhi jie nai fu xiao",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00465",
+   "text": "苏醒遗迹喀恩埋没圣堂",
+   "typeText": "苏醒遗迹喀恩埋没圣堂",
+   "reading": "su xing yi ji ka en mai mo sheng tang",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00466",
+   "text": "萌宠之王：歼殛级单人战",
+   "typeText": "萌宠之王歼殛级单人战",
+   "reading": "meng chong zhi wang jian ji ji dan ren zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00467",
+   "text": "萌宠之王：歼灭级单人战",
+   "typeText": "萌宠之王歼灭级单人战",
+   "reading": "meng chong zhi wang jian mie ji dan ren zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00468",
+   "text": "萌宠之王：讨伐级单人战",
+   "typeText": "萌宠之王讨伐级单人战",
+   "reading": "meng chong zhi wang tao fa ji dan ren zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00469",
+   "text": "血战苍穹魔科学研究所",
+   "typeText": "血战苍穹魔科学研究所",
+   "reading": "xue zhan cang qiong mo ke xue yan jiu suo",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00470",
+   "text": "讨伐坑道中出现的妖异！",
+   "typeText": "讨伐坑道中出现的妖异",
+   "reading": "tao fa keng dao zhong chu xian de yao yi",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00471",
+   "text": "讨伐梦幻之布拉奇希奥！",
+   "typeText": "讨伐梦幻之布拉奇希奥",
+   "reading": "tao fa meng huan zhi bu la qi xi ao",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00472",
+   "text": "试炼行路巴儿达木霸道",
+   "typeText": "试炼行路巴儿达木霸道",
+   "reading": "shi lian xing lu ba er da mu ba dao",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00473",
+   "text": "逆转要害沙斯塔夏溶洞",
+   "typeText": "逆转要害沙斯塔夏溶洞",
+   "reading": "ni zhuan yao hai sha si ta xia rong dong",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00474",
+   "text": "零式万魔殿炼净之狱1",
+   "typeText": "零式万魔殿炼净之狱1",
+   "reading": "ling shi wan mo dian lian jing zhi yu 1",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00475",
+   "text": "零式万魔殿炼净之狱2",
+   "typeText": "零式万魔殿炼净之狱2",
+   "reading": "ling shi wan mo dian lian jing zhi yu 2",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00476",
+   "text": "零式万魔殿炼净之狱3",
+   "typeText": "零式万魔殿炼净之狱3",
+   "reading": "ling shi wan mo dian lian jing zhi yu 3",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00477",
+   "text": "零式万魔殿炼净之狱4",
+   "typeText": "零式万魔殿炼净之狱4",
+   "reading": "ling shi wan mo dian lian jing zhi yu 4",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00478",
+   "text": "零式万魔殿荒天之狱1",
+   "typeText": "零式万魔殿荒天之狱1",
+   "reading": "ling shi wan mo dian huang tian zhi yu 1",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00479",
+   "text": "零式万魔殿荒天之狱2",
+   "typeText": "零式万魔殿荒天之狱2",
+   "reading": "ling shi wan mo dian huang tian zhi yu 2",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00480",
+   "text": "零式万魔殿荒天之狱3",
+   "typeText": "零式万魔殿荒天之狱3",
+   "reading": "ling shi wan mo dian huang tian zhi yu 3",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00481",
+   "text": "零式万魔殿荒天之狱4",
+   "typeText": "零式万魔殿荒天之狱4",
+   "reading": "ling shi wan mo dian huang tian zhi yu 4",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00482",
+   "text": "零式万魔殿边境之狱1",
+   "typeText": "零式万魔殿边境之狱1",
+   "reading": "ling shi wan mo dian bian jing zhi yu 1",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00483",
+   "text": "零式万魔殿边境之狱2",
+   "typeText": "零式万魔殿边境之狱2",
+   "reading": "ling shi wan mo dian bian jing zhi yu 2",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00484",
+   "text": "零式万魔殿边境之狱3",
+   "typeText": "零式万魔殿边境之狱3",
+   "reading": "ling shi wan mo dian bian jing zhi yu 3",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00485",
+   "text": "零式万魔殿边境之狱4",
+   "typeText": "零式万魔殿边境之狱4",
+   "reading": "ling shi wan mo dian bian jing zhi yu 4",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00486",
+   "text": "零式异闻希拉狄哈水道",
+   "typeText": "零式异闻希拉狄哈水道",
+   "reading": "ling shi yi wen xi la di ha shui dao",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00487",
+   "text": "雷古拉·范·休著斯追击战",
+   "typeText": "雷古拉范休著斯追击战",
+   "reading": "lei gu la fan xiu zhu si zhui ji zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00488",
+   "text": "魔兽领域日影地修炼所",
+   "typeText": "魔兽领域日影地修炼所",
+   "reading": "mo shou ling yu ri ying di xiu lian suo",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00489",
+   "text": "魔术工房玛托雅工作室",
+   "typeText": "魔术工房玛托雅工作室",
+   "reading": "mo shu gong fang ma tuo ya gong zuo shi",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00490",
+   "text": "黄金平原帕戈尔赞草原",
+   "typeText": "黄金平原帕戈尔赞草原",
+   "reading": "huang jin ping yuan pa ge er zan cao yuan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00491",
+   "text": "世界第一剑士——齐格弗里德",
+   "typeText": "世界第一剑士齐格弗里德",
+   "reading": "shi jie di yi jian shi qi ge fu li de",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00492",
+   "text": "伊甸希望乐园共鸣之章1",
+   "typeText": "伊甸希望乐园共鸣之章1",
+   "reading": "yi dian xi wang le yuan gong ming zhi zhang 1",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00493",
+   "text": "伊甸希望乐园共鸣之章2",
+   "typeText": "伊甸希望乐园共鸣之章2",
+   "reading": "yi dian xi wang le yuan gong ming zhi zhang 2",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00494",
+   "text": "伊甸希望乐园共鸣之章3",
+   "typeText": "伊甸希望乐园共鸣之章3",
+   "reading": "yi dian xi wang le yuan gong ming zhi zhang 3",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00495",
+   "text": "伊甸希望乐园共鸣之章4",
+   "typeText": "伊甸希望乐园共鸣之章4",
+   "reading": "yi dian xi wang le yuan gong ming zhi zhang 4",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00496",
+   "text": "伊甸希望乐园再生之章1",
+   "typeText": "伊甸希望乐园再生之章1",
+   "reading": "yi dian xi wang le yuan zai sheng zhi zhang 1",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00497",
+   "text": "伊甸希望乐园再生之章2",
+   "typeText": "伊甸希望乐园再生之章2",
+   "reading": "yi dian xi wang le yuan zai sheng zhi zhang 2",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00498",
+   "text": "伊甸希望乐园再生之章3",
+   "typeText": "伊甸希望乐园再生之章3",
+   "reading": "yi dian xi wang le yuan zai sheng zhi zhang 3",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00499",
+   "text": "伊甸希望乐园再生之章4",
+   "typeText": "伊甸希望乐园再生之章4",
+   "reading": "yi dian xi wang le yuan zai sheng zhi zhang 4",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00500",
+   "text": "伊甸希望乐园觉醒之章1",
+   "typeText": "伊甸希望乐园觉醒之章1",
+   "reading": "yi dian xi wang le yuan jue xing zhi zhang 1",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00501",
+   "text": "伊甸希望乐园觉醒之章2",
+   "typeText": "伊甸希望乐园觉醒之章2",
+   "reading": "yi dian xi wang le yuan jue xing zhi zhang 2",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00502",
+   "text": "伊甸希望乐园觉醒之章3",
+   "typeText": "伊甸希望乐园觉醒之章3",
+   "reading": "yi dian xi wang le yuan jue xing zhi zhang 3",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00503",
+   "text": "伊甸希望乐园觉醒之章4",
+   "typeText": "伊甸希望乐园觉醒之章4",
+   "reading": "yi dian xi wang le yuan jue xing zhi zhang 4",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00504",
+   "text": "圣教中枢伊修加德教皇厅",
+   "typeText": "圣教中枢伊修加德教皇厅",
+   "reading": "sheng jiao zhong shu yi xiu jia de jiao huang ting",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00505",
+   "text": "实战控制多个敌人的仇恨",
+   "typeText": "实战控制多个敌人的仇恨",
+   "reading": "shi zhan kong zhi duo ge di ren de chou hen",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00506",
+   "text": "封闭圣塔黎铎拉纳大灯塔",
+   "typeText": "封闭圣塔黎铎拉纳大灯塔",
+   "reading": "feng bi sheng ta li duo la na da deng ta",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00507",
+   "text": "异界遗构希尔科斯孪晶塔",
+   "typeText": "异界遗构希尔科斯孪晶塔",
+   "reading": "yi jie yi gou xi er ke si luan jing ta",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00508",
+   "text": "正统优雷卡地下1～10层",
+   "typeText": "正统优雷卡地下110层",
+   "reading": "zheng tong you lei ka di xia 110 ceng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00509",
+   "text": "死者宫殿地下11～20层",
+   "typeText": "死者宫殿地下1120层",
+   "reading": "si zhe gong dian di xia 1120 ceng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00510",
+   "text": "死者宫殿地下21～30层",
+   "typeText": "死者宫殿地下2130层",
+   "reading": "si zhe gong dian di xia 2130 ceng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00511",
+   "text": "死者宫殿地下31～40层",
+   "typeText": "死者宫殿地下3140层",
+   "reading": "si zhe gong dian di xia 3140 ceng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00512",
+   "text": "死者宫殿地下41～50层",
+   "typeText": "死者宫殿地下4150层",
+   "reading": "si zhe gong dian di xia 4150 ceng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00513",
+   "text": "死者宫殿地下51～60层",
+   "typeText": "死者宫殿地下5160层",
+   "reading": "si zhe gong dian di xia 5160 ceng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00514",
+   "text": "死者宫殿地下61～70层",
+   "typeText": "死者宫殿地下6170层",
+   "reading": "si zhe gong dian di xia 6170 ceng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00515",
+   "text": "死者宫殿地下71～80层",
+   "typeText": "死者宫殿地下7180层",
+   "reading": "si zhe gong dian di xia 7180 ceng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00516",
+   "text": "死者宫殿地下81～90层",
+   "typeText": "死者宫殿地下8190层",
+   "reading": "si zhe gong dian di xia 8190 ceng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00517",
+   "text": "水晶冲突（九霄云上：自定赛）",
+   "typeText": "水晶冲突九霄云上自定赛",
+   "reading": "shui jing chong tu jiu xiao yun shang zi ding sai",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00518",
+   "text": "水晶冲突（休兵书库：自定赛）",
+   "typeText": "水晶冲突休兵书库自定赛",
+   "reading": "shui jing chong tu xiu bing shu ku zi ding sai",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00519",
+   "text": "水晶冲突（机关大殿：自定赛）",
+   "typeText": "水晶冲突机关大殿自定赛",
+   "reading": "shui jing chong tu ji guan da dian zi ding sai",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00520",
+   "text": "水晶冲突（海岸斗场：自定赛）",
+   "typeText": "水晶冲突海岸斗场自定赛",
+   "reading": "shui jing chong tu hai an dou chang zi ding sai",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00521",
+   "text": "水晶冲突（火山之心：自定赛）",
+   "typeText": "水晶冲突火山之心自定赛",
+   "reading": "shui jing chong tu huo shan zhi xin zi ding sai",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00522",
+   "text": "水晶冲突（角力学校：自定赛）",
+   "typeText": "水晶冲突角力学校自定赛",
+   "reading": "shui jing chong tu jue li xue xiao zi ding sai",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00523",
+   "text": "水晶冲突（赤土红沙：自定赛）",
+   "typeText": "水晶冲突赤土红沙自定赛",
+   "reading": "shui jing chong tu chi tu hong sha zi ding sai",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00524",
+   "text": "污染庭园圣茉夏娜植物园",
+   "typeText": "污染庭园圣茉夏娜植物园",
+   "reading": "wu ran ting yuan sheng mo xia na zhi wu yuan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00525",
+   "text": "神圣遗迹无限城市街古迹",
+   "typeText": "神圣遗迹无限城市街古迹",
+   "reading": "shen sheng yi ji wu xian cheng shi jie gu ji",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00526",
+   "text": "第10关：逃亡者和追赶者",
+   "typeText": "第10关逃亡者和追赶者",
+   "reading": "di 10 guan tao wang zhe he zhui gan zhe",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00527",
+   "text": "第13关：突破对手的协作",
+   "typeText": "第13关突破对手的协作",
+   "reading": "di 13 guan tu po dui shou de xie zuo",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00528",
+   "text": "第15关：小小斗神讨伐战",
+   "typeText": "第15关小小斗神讨伐战",
+   "reading": "di 15 guan xiao xiao dou shen tao fa zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00529",
+   "text": "第15关：究极陆行鸟竞赛",
+   "typeText": "第15关究极陆行鸟竞赛",
+   "reading": "di 15 guan jiu ji lu xing niao jing sai",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00530",
+   "text": "第8关：鹬蚌相争渔翁得利",
+   "typeText": "第8关鹬蚌相争渔翁得利",
+   "reading": "di 8 guan yu bang xiang zheng yu weng de li",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00531",
+   "text": "腐坏遗迹无限城市街古迹",
+   "typeText": "腐坏遗迹无限城市街古迹",
+   "reading": "fu huai yi ji wu xian cheng shi jie gu ji",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00532",
+   "text": "艾玛吉娜杯斗技大会决赛",
+   "typeText": "艾玛吉娜杯斗技大会决赛",
+   "reading": "ai ma ji na bei dou ji da hui jue sai",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00533",
+   "text": "草木庭园圣茉夏娜植物园",
+   "typeText": "草木庭园圣茉夏娜植物园",
+   "reading": "cao mu ting yuan sheng mo xia na zhi wu yuan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00534",
+   "text": "萌宠之王：玩家对战（绩点赛）",
+   "typeText": "萌宠之王玩家对战绩点赛",
+   "reading": "meng chong zhi wang wan jia dui zhan ji dian sai",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00535",
+   "text": "蜃景幻界新月岛北征之章",
+   "typeText": "蜃景幻界新月岛北征之章",
+   "reading": "shen jing huan jie xin yue dao bei zheng zhi zhang",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00536",
+   "text": "蜃景幻界新月岛南征之章",
+   "typeText": "蜃景幻界新月岛南征之章",
+   "reading": "shen jing huan jie xin yue dao nan zheng zhi zhang",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00537",
+   "text": "险峻峡谷塞尔法特尔溪谷",
+   "typeText": "险峻峡谷塞尔法特尔溪谷",
+   "reading": "xian jun xia gu sai er fa te er xi gu",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00538",
+   "text": "魅惑芳香——反射魔花瑞贝卡",
+   "typeText": "魅惑芳香反射魔花瑞贝卡",
+   "reading": "mei huo fang xiang fan she mo hua rui bei ka",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00539",
+   "text": "魔兽皇太子——贝希摩斯太子",
+   "typeText": "魔兽皇太子贝希摩斯太子",
+   "reading": "mo shou huang tai zi bei xi mo si tai zi",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00540",
+   "text": "黑风海底阿尼德罗追忆馆",
+   "typeText": "黑风海底阿尼德罗追忆馆",
+   "reading": "hei feng hai di a ni de luo zhui yi guan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00541",
+   "text": "云冠群岛白昼探索（狩猎专用）",
+   "typeText": "云冠群岛白昼探索狩猎专用",
+   "reading": "yun guan qun dao bai zhou tan suo shou lie zhuan yong",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00542",
+   "text": "云冠群岛黄昏探索（狩猎专用）",
+   "typeText": "云冠群岛黄昏探索狩猎专用",
+   "reading": "yun guan qun dao huang hun tan suo shou lie zhuan yong",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00543",
+   "text": "亚历山大机神城启动之章1",
+   "typeText": "亚历山大机神城启动之章1",
+   "reading": "ya li shan da ji shen cheng qi dong zhi zhang 1",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00544",
+   "text": "亚历山大机神城启动之章2",
+   "typeText": "亚历山大机神城启动之章2",
+   "reading": "ya li shan da ji shen cheng qi dong zhi zhang 2",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00545",
+   "text": "亚历山大机神城启动之章3",
+   "typeText": "亚历山大机神城启动之章3",
+   "reading": "ya li shan da ji shen cheng qi dong zhi zhang 3",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00546",
+   "text": "亚历山大机神城启动之章4",
+   "typeText": "亚历山大机神城启动之章4",
+   "reading": "ya li shan da ji shen cheng qi dong zhi zhang 4",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00547",
+   "text": "亚历山大机神城天动之章1",
+   "typeText": "亚历山大机神城天动之章1",
+   "reading": "ya li shan da ji shen cheng tian dong zhi zhang 1",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00548",
+   "text": "亚历山大机神城天动之章2",
+   "typeText": "亚历山大机神城天动之章2",
+   "reading": "ya li shan da ji shen cheng tian dong zhi zhang 2",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00549",
+   "text": "亚历山大机神城天动之章3",
+   "typeText": "亚历山大机神城天动之章3",
+   "reading": "ya li shan da ji shen cheng tian dong zhi zhang 3",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00550",
+   "text": "亚历山大机神城天动之章4",
+   "typeText": "亚历山大机神城天动之章4",
+   "reading": "ya li shan da ji shen cheng tian dong zhi zhang 4",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00551",
+   "text": "亚历山大机神城律动之章1",
+   "typeText": "亚历山大机神城律动之章1",
+   "reading": "ya li shan da ji shen cheng lv dong zhi zhang 1",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00552",
+   "text": "亚历山大机神城律动之章2",
+   "typeText": "亚历山大机神城律动之章2",
+   "reading": "ya li shan da ji shen cheng lv dong zhi zhang 2",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00553",
+   "text": "亚历山大机神城律动之章3",
+   "typeText": "亚历山大机神城律动之章3",
+   "reading": "ya li shan da ji shen cheng lv dong zhi zhang 3",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00554",
+   "text": "亚历山大机神城律动之章4",
+   "typeText": "亚历山大机神城律动之章4",
+   "reading": "ya li shan da ji shen cheng lv dong zhi zhang 4",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00555",
+   "text": "处理在地面显示预兆的攻击",
+   "typeText": "处理在地面显示预兆的攻击",
+   "reading": "chu li zai di mian xian shi yu zhao de gong ji",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00556",
+   "text": "学识宝库迦巴勒幻想图书馆",
+   "typeText": "学识宝库迦巴勒幻想图书馆",
+   "reading": "xue shi bao ku jia ba lei huan xiang tu shu guan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00557",
+   "text": "巴哈姆特大迷宫入侵之章1",
+   "typeText": "巴哈姆特大迷宫入侵之章1",
+   "reading": "ba ha mu te da mi gong ru qin zhi zhang 1",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00558",
+   "text": "巴哈姆特大迷宫入侵之章2",
+   "typeText": "巴哈姆特大迷宫入侵之章2",
+   "reading": "ba ha mu te da mi gong ru qin zhi zhang 2",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00559",
+   "text": "巴哈姆特大迷宫入侵之章3",
+   "typeText": "巴哈姆特大迷宫入侵之章3",
+   "reading": "ba ha mu te da mi gong ru qin zhi zhang 3",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00560",
+   "text": "巴哈姆特大迷宫入侵之章4",
+   "typeText": "巴哈姆特大迷宫入侵之章4",
+   "reading": "ba ha mu te da mi gong ru qin zhi zhang 4",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00561",
+   "text": "巴哈姆特大迷宫真源之章1",
+   "typeText": "巴哈姆特大迷宫真源之章1",
+   "reading": "ba ha mu te da mi gong zhen yuan zhi zhang 1",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00562",
+   "text": "巴哈姆特大迷宫真源之章2",
+   "typeText": "巴哈姆特大迷宫真源之章2",
+   "reading": "ba ha mu te da mi gong zhen yuan zhi zhang 2",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00563",
+   "text": "巴哈姆特大迷宫真源之章3",
+   "typeText": "巴哈姆特大迷宫真源之章3",
+   "reading": "ba ha mu te da mi gong zhen yuan zhi zhang 3",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00564",
+   "text": "巴哈姆特大迷宫真源之章4",
+   "typeText": "巴哈姆特大迷宫真源之章4",
+   "reading": "ba ha mu te da mi gong zhen yuan zhi zhang 4",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00565",
+   "text": "巴哈姆特大迷宫邂逅之章1",
+   "typeText": "巴哈姆特大迷宫邂逅之章1",
+   "reading": "ba ha mu te da mi gong xie hou zhi zhang 1",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00566",
+   "text": "巴哈姆特大迷宫邂逅之章2",
+   "typeText": "巴哈姆特大迷宫邂逅之章2",
+   "reading": "ba ha mu te da mi gong xie hou zhi zhang 2",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00567",
+   "text": "巴哈姆特大迷宫邂逅之章3",
+   "typeText": "巴哈姆特大迷宫邂逅之章3",
+   "reading": "ba ha mu te da mi gong xie hou zhi zhang 3",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00568",
+   "text": "巴哈姆特大迷宫邂逅之章4",
+   "typeText": "巴哈姆特大迷宫邂逅之章4",
+   "reading": "ba ha mu te da mi gong xie hou zhi zhang 4",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00569",
+   "text": "巴哈姆特大迷宫邂逅之章5",
+   "typeText": "巴哈姆特大迷宫邂逅之章5",
+   "reading": "ba ha mu te da mi gong xie hou zhi zhang 5",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00570",
+   "text": "废弃据点玉韦亚瓦塔实验站",
+   "typeText": "废弃据点玉韦亚瓦塔实验站",
+   "reading": "fei qi ju dian yu wei ya wa ta shi yan zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00571",
+   "text": "朝圣交错路第1～10朝圣路",
+   "typeText": "朝圣交错路第110朝圣路",
+   "reading": "chao sheng jiao cuo lu di 110 chao sheng lu",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00572",
+   "text": "来自亚拉戈的威胁——斗兽系统",
+   "typeText": "来自亚拉戈的威胁斗兽系统",
+   "reading": "lai zi ya la ge de wei xie dou shou xi tong",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00573",
+   "text": "正统优雷卡地下11～20层",
+   "typeText": "正统优雷卡地下1120层",
+   "reading": "zheng tong you lei ka di xia 1120 ceng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00574",
+   "text": "正统优雷卡地下21～30层",
+   "typeText": "正统优雷卡地下2130层",
+   "reading": "zheng tong you lei ka di xia 2130 ceng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00575",
+   "text": "正统优雷卡地下31～40层",
+   "typeText": "正统优雷卡地下3140层",
+   "reading": "zheng tong you lei ka di xia 3140 ceng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00576",
+   "text": "正统优雷卡地下41～50层",
+   "typeText": "正统优雷卡地下4150层",
+   "reading": "zheng tong you lei ka di xia 4150 ceng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00577",
+   "text": "正统优雷卡地下51～60层",
+   "typeText": "正统优雷卡地下5160层",
+   "reading": "zheng tong you lei ka di xia 5160 ceng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00578",
+   "text": "正统优雷卡地下61～70层",
+   "typeText": "正统优雷卡地下6170层",
+   "reading": "zheng tong you lei ka di xia 6170 ceng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00579",
+   "text": "正统优雷卡地下71～80层",
+   "typeText": "正统优雷卡地下7180层",
+   "reading": "zheng tong you lei ka di xia 7180 ceng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00580",
+   "text": "正统优雷卡地下81～90层",
+   "typeText": "正统优雷卡地下8190层",
+   "reading": "zheng tong you lei ka di xia 8190 ceng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00581",
+   "text": "死者宫殿地下91～100层",
+   "typeText": "死者宫殿地下91100层",
+   "reading": "si zhe gong dian di xia 91100 ceng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00582",
+   "text": "秘本宝库迦巴勒幻想图书馆",
+   "typeText": "秘本宝库迦巴勒幻想图书馆",
+   "reading": "mi ben bao ku jia ba lei huan xiang tu shu guan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00583",
+   "text": "第20关：愿水晶给予你指引",
+   "typeText": "第20关愿水晶给予你指引",
+   "reading": "di 20 guan yuan shui jing ji yu ni zhi yin",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00584",
+   "text": "萌宠之王：大赛对战（人机对战）",
+   "typeText": "萌宠之王大赛对战人机对战",
+   "reading": "meng chong zhi wang da sai dui zhan ren ji dui zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00585",
+   "text": "萌宠之王：大赛对战（玩家对战）",
+   "typeText": "萌宠之王大赛对战玩家对战",
+   "reading": "meng chong zhi wang da sai dui zhan wan jia dui zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00586",
+   "text": "萌宠之王：玩家对战（无绩点赛）",
+   "typeText": "萌宠之王玩家对战无绩点赛",
+   "reading": "meng chong zhi wang wan jia dui zhan wu ji dian sai",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00587",
+   "text": "著名组合——奥尔特罗斯&提丰",
+   "typeText": "著名组合奥尔特罗斯&提丰",
+   "reading": "zhu ming zu he ao er te luo si & ti feng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00588",
+   "text": "配合防护职业打倒单个敌人",
+   "typeText": "配合防护职业打倒单个敌人",
+   "reading": "pei he fang hu zhi ye da dao dan ge di ren",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00589",
+   "text": "配合防护职业打倒多个敌人",
+   "typeText": "配合防护职业打倒多个敌人",
+   "reading": "pei he fang hu zhi ye da dao duo ge di ren",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00590",
+   "text": "伊甸零式希望乐园共鸣之章1",
+   "typeText": "伊甸零式希望乐园共鸣之章1",
+   "reading": "yi dian ling shi xi wang le yuan gong ming zhi zhang 1",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00591",
+   "text": "伊甸零式希望乐园共鸣之章2",
+   "typeText": "伊甸零式希望乐园共鸣之章2",
+   "reading": "yi dian ling shi xi wang le yuan gong ming zhi zhang 2",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00592",
+   "text": "伊甸零式希望乐园共鸣之章3",
+   "typeText": "伊甸零式希望乐园共鸣之章3",
+   "reading": "yi dian ling shi xi wang le yuan gong ming zhi zhang 3",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00593",
+   "text": "伊甸零式希望乐园共鸣之章4",
+   "typeText": "伊甸零式希望乐园共鸣之章4",
+   "reading": "yi dian ling shi xi wang le yuan gong ming zhi zhang 4",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00594",
+   "text": "伊甸零式希望乐园再生之章1",
+   "typeText": "伊甸零式希望乐园再生之章1",
+   "reading": "yi dian ling shi xi wang le yuan zai sheng zhi zhang 1",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00595",
+   "text": "伊甸零式希望乐园再生之章2",
+   "typeText": "伊甸零式希望乐园再生之章2",
+   "reading": "yi dian ling shi xi wang le yuan zai sheng zhi zhang 2",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00596",
+   "text": "伊甸零式希望乐园再生之章3",
+   "typeText": "伊甸零式希望乐园再生之章3",
+   "reading": "yi dian ling shi xi wang le yuan zai sheng zhi zhang 3",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00597",
+   "text": "伊甸零式希望乐园再生之章4",
+   "typeText": "伊甸零式希望乐园再生之章4",
+   "reading": "yi dian ling shi xi wang le yuan zai sheng zhi zhang 4",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00598",
+   "text": "伊甸零式希望乐园觉醒之章1",
+   "typeText": "伊甸零式希望乐园觉醒之章1",
+   "reading": "yi dian ling shi xi wang le yuan jue xing zhi zhang 1",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00599",
+   "text": "伊甸零式希望乐园觉醒之章2",
+   "typeText": "伊甸零式希望乐园觉醒之章2",
+   "reading": "yi dian ling shi xi wang le yuan jue xing zhi zhang 2",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00600",
+   "text": "伊甸零式希望乐园觉醒之章3",
+   "typeText": "伊甸零式希望乐园觉醒之章3",
+   "reading": "yi dian ling shi xi wang le yuan jue xing zhi zhang 3",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00601",
+   "text": "伊甸零式希望乐园觉醒之章4",
+   "typeText": "伊甸零式希望乐园觉醒之章4",
+   "reading": "yi dian ling shi xi wang le yuan jue xing zhi zhang 4",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00602",
+   "text": "休养胜地布雷福洛克斯野营地",
+   "typeText": "休养胜地布雷福洛克斯野营地",
+   "reading": "xiu yang sheng di bu lei fu luo ke si ye ying di",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00603",
+   "text": "军工要地克吕提俄斯魔导工厂",
+   "typeText": "军工要地克吕提俄斯魔导工厂",
+   "reading": "jun gong yao di ke lv ti e si mo dao gong chang",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00604",
+   "text": "朝圣交错路第11～20朝圣路",
+   "typeText": "朝圣交错路第1120朝圣路",
+   "reading": "chao sheng jiao cuo lu di 1120 chao sheng lu",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00605",
+   "text": "朝圣交错路第21～30朝圣路",
+   "typeText": "朝圣交错路第2130朝圣路",
+   "reading": "chao sheng jiao cuo lu di 2130 chao sheng lu",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00606",
+   "text": "朝圣交错路第31～40朝圣路",
+   "typeText": "朝圣交错路第3140朝圣路",
+   "reading": "chao sheng jiao cuo lu di 3140 chao sheng lu",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00607",
+   "text": "朝圣交错路第41～50朝圣路",
+   "typeText": "朝圣交错路第4150朝圣路",
+   "reading": "chao sheng jiao cuo lu di 4150 chao sheng lu",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00608",
+   "text": "朝圣交错路第51～60朝圣路",
+   "typeText": "朝圣交错路第5160朝圣路",
+   "reading": "chao sheng jiao cuo lu di 5160 chao sheng lu",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00609",
+   "text": "朝圣交错路第61～70朝圣路",
+   "typeText": "朝圣交错路第6170朝圣路",
+   "reading": "chao sheng jiao cuo lu di 6170 chao sheng lu",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00610",
+   "text": "朝圣交错路第71～80朝圣路",
+   "typeText": "朝圣交错路第7180朝圣路",
+   "reading": "chao sheng jiao cuo lu di 7180 chao sheng lu",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00611",
+   "text": "朝圣交错路第81～90朝圣路",
+   "typeText": "朝圣交错路第8190朝圣路",
+   "reading": "chao sheng jiao cuo lu di 8190 chao sheng lu",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00612",
+   "text": "欧米茄时空狭缝德尔塔幻境1",
+   "typeText": "欧米茄时空狭缝德尔塔幻境1",
+   "reading": "ou mi jia shi kong xia feng de er ta huan jing 1",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00613",
+   "text": "欧米茄时空狭缝德尔塔幻境2",
+   "typeText": "欧米茄时空狭缝德尔塔幻境2",
+   "reading": "ou mi jia shi kong xia feng de er ta huan jing 2",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00614",
+   "text": "欧米茄时空狭缝德尔塔幻境3",
+   "typeText": "欧米茄时空狭缝德尔塔幻境3",
+   "reading": "ou mi jia shi kong xia feng de er ta huan jing 3",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00615",
+   "text": "欧米茄时空狭缝德尔塔幻境4",
+   "typeText": "欧米茄时空狭缝德尔塔幻境4",
+   "reading": "ou mi jia shi kong xia feng de er ta huan jing 4",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00616",
+   "text": "欧米茄时空狭缝西格玛幻境1",
+   "typeText": "欧米茄时空狭缝西格玛幻境1",
+   "reading": "ou mi jia shi kong xia feng xi ge ma huan jing 1",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00617",
+   "text": "欧米茄时空狭缝西格玛幻境2",
+   "typeText": "欧米茄时空狭缝西格玛幻境2",
+   "reading": "ou mi jia shi kong xia feng xi ge ma huan jing 2",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00618",
+   "text": "欧米茄时空狭缝西格玛幻境3",
+   "typeText": "欧米茄时空狭缝西格玛幻境3",
+   "reading": "ou mi jia shi kong xia feng xi ge ma huan jing 3",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00619",
+   "text": "欧米茄时空狭缝西格玛幻境4",
+   "typeText": "欧米茄时空狭缝西格玛幻境4",
+   "reading": "ou mi jia shi kong xia feng xi ge ma huan jing 4",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00620",
+   "text": "欧米茄时空狭缝阿尔法幻境1",
+   "typeText": "欧米茄时空狭缝阿尔法幻境1",
+   "reading": "ou mi jia shi kong xia feng a er fa huan jing 1",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00621",
+   "text": "欧米茄时空狭缝阿尔法幻境2",
+   "typeText": "欧米茄时空狭缝阿尔法幻境2",
+   "reading": "ou mi jia shi kong xia feng a er fa huan jing 2",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00622",
+   "text": "欧米茄时空狭缝阿尔法幻境3",
+   "typeText": "欧米茄时空狭缝阿尔法幻境3",
+   "reading": "ou mi jia shi kong xia feng a er fa huan jing 3",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00623",
+   "text": "欧米茄时空狭缝阿尔法幻境4",
+   "typeText": "欧米茄时空狭缝阿尔法幻境4",
+   "reading": "ou mi jia shi kong xia feng a er fa huan jing 4",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00624",
+   "text": "正统优雷卡地下91～100层",
+   "typeText": "正统优雷卡地下91100层",
+   "reading": "zheng tong you lei ka di xia 91100 ceng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00625",
+   "text": "死者宫殿地下101～110层",
+   "typeText": "死者宫殿地下101110层",
+   "reading": "si zhe gong dian di xia 101110 ceng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00626",
+   "text": "死者宫殿地下111～120层",
+   "typeText": "死者宫殿地下111120层",
+   "reading": "si zhe gong dian di xia 111120 ceng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00627",
+   "text": "死者宫殿地下121～130层",
+   "typeText": "死者宫殿地下121130层",
+   "reading": "si zhe gong dian di xia 121130 ceng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00628",
+   "text": "死者宫殿地下131～140层",
+   "typeText": "死者宫殿地下131140层",
+   "reading": "si zhe gong dian di xia 131140 ceng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00629",
+   "text": "死者宫殿地下141～150层",
+   "typeText": "死者宫殿地下141150层",
+   "reading": "si zhe gong dian di xia 141150 ceng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00630",
+   "text": "死者宫殿地下151～160层",
+   "typeText": "死者宫殿地下151160层",
+   "reading": "si zhe gong dian di xia 151160 ceng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00631",
+   "text": "死者宫殿地下161～170层",
+   "typeText": "死者宫殿地下161170层",
+   "reading": "si zhe gong dian di xia 161170 ceng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00632",
+   "text": "死者宫殿地下171～180层",
+   "typeText": "死者宫殿地下171180层",
+   "reading": "si zhe gong dian di xia 171180 ceng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00633",
+   "text": "死者宫殿地下181～190层",
+   "typeText": "死者宫殿地下181190层",
+   "reading": "si zhe gong dian di xia 181190 ceng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00634",
+   "text": "死者宫殿地下191～200层",
+   "typeText": "死者宫殿地下191200层",
+   "reading": "si zhe gong dian di xia 191200 ceng",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00635",
+   "text": "注意无敌的眷属，讨伐大型妖异！",
+   "typeText": "注意无敌的眷属讨伐大型妖异",
+   "reading": "zhu yi wu di de juan shu tao fa da xing yao yi",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00636",
+   "text": "纷争要地布雷福洛克斯野营地",
+   "typeText": "纷争要地布雷福洛克斯野营地",
+   "reading": "fen zheng yao di bu lei fu luo ke si ye ying di",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00637",
+   "text": "躲避范围攻击的同时进行战斗",
+   "typeText": "躲避范围攻击的同时进行战斗",
+   "reading": "duo bi fan wei gong ji de tong shi jin xing zhan dou",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00638",
+   "text": "阿卡狄亚登天斗技场中量级1",
+   "typeText": "阿卡狄亚登天斗技场中量级1",
+   "reading": "a ka di ya deng tian dou ji chang zhong liang ji 1",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00639",
+   "text": "阿卡狄亚登天斗技场中量级2",
+   "typeText": "阿卡狄亚登天斗技场中量级2",
+   "reading": "a ka di ya deng tian dou ji chang zhong liang ji 2",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00640",
+   "text": "阿卡狄亚登天斗技场中量级3",
+   "typeText": "阿卡狄亚登天斗技场中量级3",
+   "reading": "a ka di ya deng tian dou ji chang zhong liang ji 3",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00641",
+   "text": "阿卡狄亚登天斗技场中量级4",
+   "typeText": "阿卡狄亚登天斗技场中量级4",
+   "reading": "a ka di ya deng tian dou ji chang zhong liang ji 4",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00642",
+   "text": "阿卡狄亚登天斗技场轻量级1",
+   "typeText": "阿卡狄亚登天斗技场轻量级1",
+   "reading": "a ka di ya deng tian dou ji chang qing liang ji 1",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00643",
+   "text": "阿卡狄亚登天斗技场轻量级2",
+   "typeText": "阿卡狄亚登天斗技场轻量级2",
+   "reading": "a ka di ya deng tian dou ji chang qing liang ji 2",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00644",
+   "text": "阿卡狄亚登天斗技场轻量级3",
+   "typeText": "阿卡狄亚登天斗技场轻量级3",
+   "reading": "a ka di ya deng tian dou ji chang qing liang ji 3",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00645",
+   "text": "阿卡狄亚登天斗技场轻量级4",
+   "typeText": "阿卡狄亚登天斗技场轻量级4",
+   "reading": "a ka di ya deng tian dou ji chang qing liang ji 4",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00646",
+   "text": "阿卡狄亚登天斗技场重量级1",
+   "typeText": "阿卡狄亚登天斗技场重量级1",
+   "reading": "a ka di ya deng tian dou ji chang zhong liang ji 1",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00647",
+   "text": "阿卡狄亚登天斗技场重量级2",
+   "typeText": "阿卡狄亚登天斗技场重量级2",
+   "reading": "a ka di ya deng tian dou ji chang zhong liang ji 2",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00648",
+   "text": "阿卡狄亚登天斗技场重量级3",
+   "typeText": "阿卡狄亚登天斗技场重量级3",
+   "reading": "a ka di ya deng tian dou ji chang zhong liang ji 3",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00649",
+   "text": "阿卡狄亚登天斗技场重量级4",
+   "typeText": "阿卡狄亚登天斗技场重量级4",
+   "reading": "a ka di ya deng tian dou ji chang zhong liang ji 4",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00650",
+   "text": "亚历山大零式机神城启动之章1",
+   "typeText": "亚历山大零式机神城启动之章1",
+   "reading": "ya li shan da ling shi ji shen cheng qi dong zhi zhang 1",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00651",
+   "text": "亚历山大零式机神城启动之章2",
+   "typeText": "亚历山大零式机神城启动之章2",
+   "reading": "ya li shan da ling shi ji shen cheng qi dong zhi zhang 2",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00652",
+   "text": "亚历山大零式机神城启动之章3",
+   "typeText": "亚历山大零式机神城启动之章3",
+   "reading": "ya li shan da ling shi ji shen cheng qi dong zhi zhang 3",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00653",
+   "text": "亚历山大零式机神城启动之章4",
+   "typeText": "亚历山大零式机神城启动之章4",
+   "reading": "ya li shan da ling shi ji shen cheng qi dong zhi zhang 4",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00654",
+   "text": "亚历山大零式机神城天动之章1",
+   "typeText": "亚历山大零式机神城天动之章1",
+   "reading": "ya li shan da ling shi ji shen cheng tian dong zhi zhang 1",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00655",
+   "text": "亚历山大零式机神城天动之章2",
+   "typeText": "亚历山大零式机神城天动之章2",
+   "reading": "ya li shan da ling shi ji shen cheng tian dong zhi zhang 2",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00656",
+   "text": "亚历山大零式机神城天动之章3",
+   "typeText": "亚历山大零式机神城天动之章3",
+   "reading": "ya li shan da ling shi ji shen cheng tian dong zhi zhang 3",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00657",
+   "text": "亚历山大零式机神城天动之章4",
+   "typeText": "亚历山大零式机神城天动之章4",
+   "reading": "ya li shan da ling shi ji shen cheng tian dong zhi zhang 4",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00658",
+   "text": "亚历山大零式机神城律动之章1",
+   "typeText": "亚历山大零式机神城律动之章1",
+   "reading": "ya li shan da ling shi ji shen cheng lv dong zhi zhang 1",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00659",
+   "text": "亚历山大零式机神城律动之章2",
+   "typeText": "亚历山大零式机神城律动之章2",
+   "reading": "ya li shan da ling shi ji shen cheng lv dong zhi zhang 2",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00660",
+   "text": "亚历山大零式机神城律动之章3",
+   "typeText": "亚历山大零式机神城律动之章3",
+   "reading": "ya li shan da ling shi ji shen cheng lv dong zhi zhang 3",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00661",
+   "text": "亚历山大零式机神城律动之章4",
+   "typeText": "亚历山大零式机神城律动之章4",
+   "reading": "ya li shan da ling shi ji shen cheng lv dong zhi zhang 4",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00662",
+   "text": "制止三方混战的巨人族，守住遗物！",
+   "typeText": "制止三方混战的巨人族守住遗物",
+   "reading": "zhi zhi san fang hun zhan de ju ren zu shou zhu yi wu",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00663",
+   "text": "多玛方城战：东风战一般桌（段位战）",
+   "typeText": "多玛方城战东风战一般桌段位战",
+   "reading": "duo ma fang cheng zhan dong feng zhan yi ban zhuo duan wei zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00664",
+   "text": "多玛方城战：东风战有段桌（段位战）",
+   "typeText": "多玛方城战东风战有段桌段位战",
+   "reading": "duo ma fang cheng zhan dong feng zhan you duan zhuo duan wei zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00665",
+   "text": "多玛方城战：半庄战一般桌（段位战）",
+   "typeText": "多玛方城战半庄战一般桌段位战",
+   "reading": "duo ma fang cheng zhan ban zhuang zhan yi ban zhuo duan wei zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00666",
+   "text": "多玛方城战：半庄战有段桌（段位战）",
+   "typeText": "多玛方城战半庄战有段桌段位战",
+   "reading": "duo ma fang cheng zhan ban zhuang zhan you duan zhuo duan wei zhan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00667",
+   "text": "巴哈姆特零式大迷宫入侵之章1",
+   "typeText": "巴哈姆特零式大迷宫入侵之章1",
+   "reading": "ba ha mu te ling shi da mi gong ru qin zhi zhang 1",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00668",
+   "text": "巴哈姆特零式大迷宫入侵之章2",
+   "typeText": "巴哈姆特零式大迷宫入侵之章2",
+   "reading": "ba ha mu te ling shi da mi gong ru qin zhi zhang 2",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00669",
+   "text": "巴哈姆特零式大迷宫入侵之章3",
+   "typeText": "巴哈姆特零式大迷宫入侵之章3",
+   "reading": "ba ha mu te ling shi da mi gong ru qin zhi zhang 3",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00670",
+   "text": "巴哈姆特零式大迷宫入侵之章4",
+   "typeText": "巴哈姆特零式大迷宫入侵之章4",
+   "reading": "ba ha mu te ling shi da mi gong ru qin zhi zhang 4",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00671",
+   "text": "朝圣交错路第91～100朝圣路",
+   "typeText": "朝圣交错路第91100朝圣路",
+   "reading": "chao sheng jiao cuo lu di 91100 chao sheng lu",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00672",
+   "text": "突破所有关门，讨伐最深处的敌人！",
+   "typeText": "突破所有关门讨伐最深处的敌人",
+   "reading": "tu po suo you guan men tao fa zui shen chu de di ren",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00673",
+   "text": "近东秘宝阿尔扎达尔海底遗迹群",
+   "typeText": "近东秘宝阿尔扎达尔海底遗迹群",
+   "reading": "jin dong mi bao a er zha da er hai di yi ji qun",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "dut_00674",
+   "text": "欧米茄零式时空狭缝德尔塔幻境1",
+   "typeText": "欧米茄零式时空狭缝德尔塔幻境1",
+   "reading": "ou mi jia ling shi shi kong xia feng de er ta huan jing 1",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00675",
+   "text": "欧米茄零式时空狭缝德尔塔幻境2",
+   "typeText": "欧米茄零式时空狭缝德尔塔幻境2",
+   "reading": "ou mi jia ling shi shi kong xia feng de er ta huan jing 2",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00676",
+   "text": "欧米茄零式时空狭缝德尔塔幻境3",
+   "typeText": "欧米茄零式时空狭缝德尔塔幻境3",
+   "reading": "ou mi jia ling shi shi kong xia feng de er ta huan jing 3",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00677",
+   "text": "欧米茄零式时空狭缝德尔塔幻境4",
+   "typeText": "欧米茄零式时空狭缝德尔塔幻境4",
+   "reading": "ou mi jia ling shi shi kong xia feng de er ta huan jing 4",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00678",
+   "text": "欧米茄零式时空狭缝西格玛幻境1",
+   "typeText": "欧米茄零式时空狭缝西格玛幻境1",
+   "reading": "ou mi jia ling shi shi kong xia feng xi ge ma huan jing 1",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00679",
+   "text": "欧米茄零式时空狭缝西格玛幻境2",
+   "typeText": "欧米茄零式时空狭缝西格玛幻境2",
+   "reading": "ou mi jia ling shi shi kong xia feng xi ge ma huan jing 2",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00680",
+   "text": "欧米茄零式时空狭缝西格玛幻境3",
+   "typeText": "欧米茄零式时空狭缝西格玛幻境3",
+   "reading": "ou mi jia ling shi shi kong xia feng xi ge ma huan jing 3",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00681",
+   "text": "欧米茄零式时空狭缝西格玛幻境4",
+   "typeText": "欧米茄零式时空狭缝西格玛幻境4",
+   "reading": "ou mi jia ling shi shi kong xia feng xi ge ma huan jing 4",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00682",
+   "text": "欧米茄零式时空狭缝阿尔法幻境1",
+   "typeText": "欧米茄零式时空狭缝阿尔法幻境1",
+   "reading": "ou mi jia ling shi shi kong xia feng a er fa huan jing 1",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00683",
+   "text": "欧米茄零式时空狭缝阿尔法幻境2",
+   "typeText": "欧米茄零式时空狭缝阿尔法幻境2",
+   "reading": "ou mi jia ling shi shi kong xia feng a er fa huan jing 2",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00684",
+   "text": "欧米茄零式时空狭缝阿尔法幻境3",
+   "typeText": "欧米茄零式时空狭缝阿尔法幻境3",
+   "reading": "ou mi jia ling shi shi kong xia feng a er fa huan jing 3",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00685",
+   "text": "欧米茄零式时空狭缝阿尔法幻境4",
+   "typeText": "欧米茄零式时空狭缝阿尔法幻境4",
+   "reading": "ou mi jia ling shi shi kong xia feng a er fa huan jing 4",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00686",
+   "text": "第23关：巴哈姆特小迷宫邂逅之章",
+   "typeText": "第23关巴哈姆特小迷宫邂逅之章",
+   "reading": "di 23 guan ba ha mu te xiao mi gong xie hou zhi zhang",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00687",
+   "text": "第24关：巴哈姆特小迷宫真源之章",
+   "typeText": "第24关巴哈姆特小迷宫真源之章",
+   "reading": "di 24 guan ba ha mu te xiao mi gong zhen yuan zhi zhang",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00688",
+   "text": "阿卡狄亚零式登天斗技场中量级1",
+   "typeText": "阿卡狄亚零式登天斗技场中量级1",
+   "reading": "a ka di ya ling shi deng tian dou ji chang zhong liang ji 1",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00689",
+   "text": "阿卡狄亚零式登天斗技场中量级2",
+   "typeText": "阿卡狄亚零式登天斗技场中量级2",
+   "reading": "a ka di ya ling shi deng tian dou ji chang zhong liang ji 2",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00690",
+   "text": "阿卡狄亚零式登天斗技场中量级3",
+   "typeText": "阿卡狄亚零式登天斗技场中量级3",
+   "reading": "a ka di ya ling shi deng tian dou ji chang zhong liang ji 3",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00691",
+   "text": "阿卡狄亚零式登天斗技场中量级4",
+   "typeText": "阿卡狄亚零式登天斗技场中量级4",
+   "reading": "a ka di ya ling shi deng tian dou ji chang zhong liang ji 4",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00692",
+   "text": "阿卡狄亚零式登天斗技场轻量级1",
+   "typeText": "阿卡狄亚零式登天斗技场轻量级1",
+   "reading": "a ka di ya ling shi deng tian dou ji chang qing liang ji 1",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00693",
+   "text": "阿卡狄亚零式登天斗技场轻量级2",
+   "typeText": "阿卡狄亚零式登天斗技场轻量级2",
+   "reading": "a ka di ya ling shi deng tian dou ji chang qing liang ji 2",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00694",
+   "text": "阿卡狄亚零式登天斗技场轻量级3",
+   "typeText": "阿卡狄亚零式登天斗技场轻量级3",
+   "reading": "a ka di ya ling shi deng tian dou ji chang qing liang ji 3",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00695",
+   "text": "阿卡狄亚零式登天斗技场轻量级4",
+   "typeText": "阿卡狄亚零式登天斗技场轻量级4",
+   "reading": "a ka di ya ling shi deng tian dou ji chang qing liang ji 4",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00696",
+   "text": "阿卡狄亚零式登天斗技场重量级1",
+   "typeText": "阿卡狄亚零式登天斗技场重量级1",
+   "reading": "a ka di ya ling shi deng tian dou ji chang zhong liang ji 1",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00697",
+   "text": "阿卡狄亚零式登天斗技场重量级2",
+   "typeText": "阿卡狄亚零式登天斗技场重量级2",
+   "reading": "a ka di ya ling shi deng tian dou ji chang zhong liang ji 2",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00698",
+   "text": "阿卡狄亚零式登天斗技场重量级3",
+   "typeText": "阿卡狄亚零式登天斗技场重量级3",
+   "reading": "a ka di ya ling shi deng tian dou ji chang zhong liang ji 3",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00699",
+   "text": "阿卡狄亚零式登天斗技场重量级4",
+   "typeText": "阿卡狄亚零式登天斗技场重量级4",
+   "reading": "a ka di ya ling shi deng tian dou ji chang zhong liang ji 4",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00700",
+   "text": "多玛方城战：东风战4人亲友桌（带食断）",
+   "typeText": "多玛方城战东风战4人亲友桌带食断",
+   "reading": "duo ma fang cheng zhan dong feng zhan 4 ren qin you zhuo dai shi duan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00701",
+   "text": "多玛方城战：半庄战4人亲友桌（带食断）",
+   "typeText": "多玛方城战半庄战4人亲友桌带食断",
+   "reading": "duo ma fang cheng zhan ban zhuang zhan 4 ren qin you zhuo dai shi duan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00702",
+   "text": "多玛方城战：东风战4人亲友桌（不带食断）",
+   "typeText": "多玛方城战东风战4人亲友桌不带食断",
+   "reading": "duo ma fang cheng zhan dong feng zhan 4 ren qin you zhuo bu dai shi duan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00703",
+   "text": "多玛方城战：半庄战4人亲友桌（不带食断）",
+   "typeText": "多玛方城战半庄战4人亲友桌不带食断",
+   "reading": "duo ma fang cheng zhan ban zhuang zhan 4 ren qin you zhuo bu dai shi duan",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "dut_00704",
+   "text": "蜃景幻界新月岛北征之章（两歧塔超魔之塔）",
+   "typeText": "蜃景幻界新月岛北征之章两歧塔超魔之塔",
+   "reading": "shen jing huan jie xin yue dao bei zheng zhi zhang liang qi ta chao mo zhi ta",
+   "category": "duties",
+   "difficulty": 3,
+   "pure": false
+  }
+ ]
+}

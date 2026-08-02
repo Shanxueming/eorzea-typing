@@ -1,0 +1,1322 @@
+{
+ "category": "worlds",
+ "label": "服务器与大区",
+ "count": 146,
+ "source": "thewakingsands/ffxiv-datamining-cn",
+ "entries": [
+  {
+   "id": "wld_00001",
+   "text": "九藤",
+   "typeText": "九藤",
+   "reading": "jiu teng",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00002",
+   "text": "剑峰",
+   "typeText": "剑峰",
+   "reading": "jian feng",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00003",
+   "text": "境树",
+   "typeText": "境树",
+   "reading": "jing shu",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00004",
+   "text": "延夏",
+   "typeText": "延夏",
+   "reading": "yan xia",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00005",
+   "text": "冰天宫",
+   "typeText": "冰天宫",
+   "reading": "bing tian gong",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00006",
+   "text": "加雷马",
+   "typeText": "加雷马",
+   "reading": "jia lei ma",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00007",
+   "text": "后桅塔",
+   "typeText": "后桅塔",
+   "reading": "hou wei ta",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00008",
+   "text": "圣人泪",
+   "typeText": "圣人泪",
+   "reading": "sheng ren lei",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00009",
+   "text": "地平关",
+   "typeText": "地平关",
+   "reading": "di ping guan",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00010",
+   "text": "妖精领",
+   "typeText": "妖精领",
+   "reading": "yao jing ling",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00011",
+   "text": "姐妹丘",
+   "typeText": "姐妹丘",
+   "reading": "jie mei qiu",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00012",
+   "text": "封魔洞",
+   "typeText": "封魔洞",
+   "reading": "feng mo dong",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00013",
+   "text": "尼姆河",
+   "typeText": "尼姆河",
+   "reading": "ni mu he",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00014",
+   "text": "巨石丘",
+   "typeText": "巨石丘",
+   "reading": "ju shi qiu",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00015",
+   "text": "幽灵湖",
+   "typeText": "幽灵湖",
+   "reading": "you ling hu",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00016",
+   "text": "摇篮树",
+   "typeText": "摇篮树",
+   "reading": "yao lan shu",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00017",
+   "text": "摩杜纳",
+   "typeText": "摩杜纳",
+   "reading": "mo du na",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00018",
+   "text": "日升门",
+   "typeText": "日升门",
+   "reading": "ri sheng men",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00019",
+   "text": "月影岛",
+   "typeText": "月影岛",
+   "reading": "yue ying dao",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00020",
+   "text": "月牙湾",
+   "typeText": "月牙湾",
+   "reading": "yue ya wan",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00021",
+   "text": "桤木泉",
+   "typeText": "桤木泉",
+   "reading": "qi mu quan",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00022",
+   "text": "梦想宫",
+   "typeText": "梦想宫",
+   "reading": "meng xiang gong",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00023",
+   "text": "横断崖",
+   "typeText": "横断崖",
+   "reading": "heng duan ya",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00024",
+   "text": "樵鸣洞",
+   "typeText": "樵鸣洞",
+   "reading": "qiao ming dong",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00025",
+   "text": "橡树原",
+   "typeText": "橡树原",
+   "reading": "xiang shu yuan",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00026",
+   "text": "水晶塔",
+   "typeText": "水晶塔",
+   "reading": "shui jing ta",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00027",
+   "text": "永恒川",
+   "typeText": "永恒川",
+   "reading": "yong heng chuan",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00028",
+   "text": "流沙屋",
+   "typeText": "流沙屋",
+   "reading": "liu sha wu",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00029",
+   "text": "海狼洞",
+   "typeText": "海狼洞",
+   "reading": "hai lang dong",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00030",
+   "text": "潮风亭",
+   "typeText": "潮风亭",
+   "reading": "chao feng ting",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00031",
+   "text": "炎帝陵",
+   "typeText": "炎帝陵",
+   "reading": "yan di ling",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00032",
+   "text": "狼烟丘",
+   "typeText": "狼烟丘",
+   "reading": "lang yan qiu",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00033",
+   "text": "珊瑚塔",
+   "typeText": "珊瑚塔",
+   "reading": "shan hu ta",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00034",
+   "text": "琥珀原",
+   "typeText": "琥珀原",
+   "reading": "hu po yuan",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00035",
+   "text": "白云崖",
+   "typeText": "白云崖",
+   "reading": "bai yun ya",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00036",
+   "text": "白银乡",
+   "typeText": "白银乡",
+   "reading": "bai yin xiang",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00037",
+   "text": "白鸥塔",
+   "typeText": "白鸥塔",
+   "reading": "bai ou ta",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00038",
+   "text": "百灵啼",
+   "typeText": "百灵啼",
+   "reading": "bai ling ti",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00039",
+   "text": "盛夏滩",
+   "typeText": "盛夏滩",
+   "reading": "sheng xia tan",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00040",
+   "text": "睡莲岩",
+   "typeText": "睡莲岩",
+   "reading": "shui lian yan",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00041",
+   "text": "石卫塔",
+   "typeText": "石卫塔",
+   "reading": "shi wei ta",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00042",
+   "text": "石绿湖",
+   "typeText": "石绿湖",
+   "reading": "shi lv hu",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00043",
+   "text": "神拳痕",
+   "typeText": "神拳痕",
+   "reading": "shen quan hen",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00044",
+   "text": "神握角",
+   "typeText": "神握角",
+   "reading": "shen wo jiao",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00045",
+   "text": "秘石塔",
+   "typeText": "秘石塔",
+   "reading": "mi shi ta",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00046",
+   "text": "红玉海",
+   "typeText": "红玉海",
+   "reading": "hong yu hai",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00047",
+   "text": "红茶川",
+   "typeText": "红茶川",
+   "reading": "hong cha chuan",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00048",
+   "text": "翡翠湖",
+   "typeText": "翡翠湖",
+   "reading": "fei cui hu",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00049",
+   "text": "芳香堂",
+   "typeText": "芳香堂",
+   "reading": "fang xiang tang",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00050",
+   "text": "荆棘森",
+   "typeText": "荆棘森",
+   "reading": "jing ji sen",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00051",
+   "text": "荣耀溪",
+   "typeText": "荣耀溪",
+   "reading": "rong yao xi",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00052",
+   "text": "莫古力",
+   "typeText": "莫古力",
+   "reading": "mo gu li",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00053",
+   "text": "萌芽池",
+   "typeText": "萌芽池",
+   "reading": "meng ya chi",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00054",
+   "text": "萨雷安",
+   "typeText": "萨雷安",
+   "reading": "sa lei an",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00055",
+   "text": "西风岬",
+   "typeText": "西风岬",
+   "reading": "xi feng jia",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00056",
+   "text": "豆豆柴",
+   "typeText": "豆豆柴",
+   "reading": "dou dou chai",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00057",
+   "text": "足迹谷",
+   "typeText": "足迹谷",
+   "reading": "zu ji gu",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00058",
+   "text": "跨天桥",
+   "typeText": "跨天桥",
+   "reading": "kua tian qiao",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00059",
+   "text": "金锭池",
+   "typeText": "金锭池",
+   "reading": "jin ding chi",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00060",
+   "text": "银泪湖",
+   "typeText": "银泪湖",
+   "reading": "yin lei hu",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00061",
+   "text": "陆行鸟",
+   "typeText": "陆行鸟",
+   "reading": "lu xing niao",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00062",
+   "text": "雪松原",
+   "typeText": "雪松原",
+   "reading": "xue song yuan",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00063",
+   "text": "青磷泉",
+   "typeText": "青磷泉",
+   "reading": "qing lin quan",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00064",
+   "text": "鲶鱼精",
+   "typeText": "鲶鱼精",
+   "reading": "nian yu jing",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00065",
+   "text": "黄昏湾",
+   "typeText": "黄昏湾",
+   "reading": "huang hun wan",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00066",
+   "text": "黄金谷",
+   "typeText": "黄金谷",
+   "reading": "huang jin gu",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00067",
+   "text": "黑金湖",
+   "typeText": "黑金湖",
+   "reading": "hei jin hu",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00068",
+   "text": "龙纹岩",
+   "typeText": "龙纹岩",
+   "reading": "long wen yan",
+   "category": "worlds",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "wld_00069",
+   "text": "不悔战泉",
+   "typeText": "不悔战泉",
+   "reading": "bu hui zhan quan",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00070",
+   "text": "伊修加德",
+   "typeText": "伊修加德",
+   "reading": "yi xiu jia de",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00071",
+   "text": "低语河谷",
+   "typeText": "低语河谷",
+   "reading": "di yu he gu",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00072",
+   "text": "元灵幼树",
+   "typeText": "元灵幼树",
+   "reading": "yuan ling you shu",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00073",
+   "text": "剑斗领域",
+   "typeText": "剑斗领域",
+   "reading": "jian dou ling yu",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00074",
+   "text": "和风流地",
+   "typeText": "和风流地",
+   "reading": "he feng liu di",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00075",
+   "text": "圣人旅道",
+   "typeText": "圣人旅道",
+   "reading": "sheng ren lv dao",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00076",
+   "text": "太阳海岸",
+   "typeText": "太阳海岸",
+   "reading": "tai yang hai an",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00077",
+   "text": "宇宙和音",
+   "typeText": "宇宙和音",
+   "reading": "yu zhou he yin",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00078",
+   "text": "审理之门",
+   "typeText": "审理之门",
+   "reading": "shen li zhi men",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00079",
+   "text": "密约之塔",
+   "typeText": "密约之塔",
+   "reading": "mi yue zhi ta",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00080",
+   "text": "小麦酒港",
+   "typeText": "小麦酒港",
+   "reading": "xiao mai jiu gang",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00081",
+   "text": "巴哈姆特",
+   "typeText": "巴哈姆特",
+   "reading": "ba ha mu te",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00082",
+   "text": "幻影群岛",
+   "typeText": "幻影群岛",
+   "reading": "huan ying qun dao",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00083",
+   "text": "库尔札斯",
+   "typeText": "库尔札斯",
+   "reading": "ku er zha si",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00084",
+   "text": "弯枝牧场",
+   "typeText": "弯枝牧场",
+   "reading": "wan zhi mu chang",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00085",
+   "text": "执掌峡谷",
+   "typeText": "执掌峡谷",
+   "reading": "zhi zhang xia gu",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00086",
+   "text": "拂晓之间",
+   "typeText": "拂晓之间",
+   "reading": "fu xiao zhi jian",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00087",
+   "text": "拉诺西亚",
+   "typeText": "拉诺西亚",
+   "reading": "la nuo xi ya",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00088",
+   "text": "旅人栈桥",
+   "typeText": "旅人栈桥",
+   "reading": "lv ren zhan qiao",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00089",
+   "text": "无限回廊",
+   "typeText": "无限回廊",
+   "reading": "wu xian hui lang",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00090",
+   "text": "旧톤베리",
+   "typeText": "旧톤베리",
+   "reading": "jiu 톤베리",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "wld_00091",
+   "text": "晨曦王座",
+   "typeText": "晨曦王座",
+   "reading": "chen xi wang zuo",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00092",
+   "text": "暴风陆门",
+   "typeText": "暴风陆门",
+   "reading": "bao feng lu men",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00093",
+   "text": "来生回廊",
+   "typeText": "来生回廊",
+   "reading": "lai sheng hui lang",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00094",
+   "text": "柔风海湾",
+   "typeText": "柔风海湾",
+   "reading": "rou feng hai wan",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00095",
+   "text": "梦羽宝境",
+   "typeText": "梦羽宝境",
+   "reading": "meng yu bao jing",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00096",
+   "text": "歌咏裂谷",
+   "typeText": "歌咏裂谷",
+   "reading": "ge yong lie gu",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00097",
+   "text": "水上庭院",
+   "typeText": "水上庭院",
+   "reading": "shui shang ting yuan",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00098",
+   "text": "沃仙曦染",
+   "typeText": "沃仙曦染",
+   "reading": "wo xian xi ran",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00099",
+   "text": "沙钟旅亭",
+   "typeText": "沙钟旅亭",
+   "reading": "sha zhong lv ting",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00100",
+   "text": "流沙迷宫",
+   "typeText": "流沙迷宫",
+   "reading": "liu sha mi gong",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00101",
+   "text": "海将水渠",
+   "typeText": "海将水渠",
+   "reading": "hai jiang shui qu",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00102",
+   "text": "海猫茶屋",
+   "typeText": "海猫茶屋",
+   "reading": "hai mao cha wu",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00103",
+   "text": "海词石窟",
+   "typeText": "海词石窟",
+   "reading": "hai ci shi ku",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00104",
+   "text": "海雾沙滩",
+   "typeText": "海雾沙滩",
+   "reading": "hai wu sha tan",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00105",
+   "text": "海鳗桥廊",
+   "typeText": "海鳗桥廊",
+   "reading": "hai man qiao lang",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00106",
+   "text": "消逝王都",
+   "typeText": "消逝王都",
+   "reading": "xiao shi wang dou",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00107",
+   "text": "源泉之梯",
+   "typeText": "源泉之梯",
+   "reading": "yuan quan zhi ti",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00108",
+   "text": "灼热走廊",
+   "typeText": "灼热走廊",
+   "reading": "zhuo re zou lang",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00109",
+   "text": "狮鹫大桥",
+   "typeText": "狮鹫大桥",
+   "reading": "shi jiu da qiao",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00110",
+   "text": "狱门蚁穴",
+   "typeText": "狱门蚁穴",
+   "reading": "yu men yi xue",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00111",
+   "text": "王者之剑",
+   "typeText": "王者之剑",
+   "reading": "wang zhe zhi jian",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00112",
+   "text": "白金幻象",
+   "typeText": "白金幻象",
+   "reading": "bai jin huan xiang",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00113",
+   "text": "白银集市",
+   "typeText": "白银集市",
+   "reading": "bai yin ji shi",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00114",
+   "text": "神意之地",
+   "typeText": "神意之地",
+   "reading": "shen yi zhi di",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00115",
+   "text": "神灵圣域",
+   "typeText": "神灵圣域",
+   "reading": "shen ling sheng yu",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00116",
+   "text": "私语巨木",
+   "typeText": "私语巨木",
+   "reading": "si yu ju mu",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00117",
+   "text": "紫水栈桥",
+   "typeText": "紫水栈桥",
+   "reading": "zi shui zhan qiao",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00118",
+   "text": "芙蓉圆桌",
+   "typeText": "芙蓉圆桌",
+   "reading": "fu rong yuan zhuo",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00119",
+   "text": "花蜜栈桥",
+   "typeText": "花蜜栈桥",
+   "reading": "hua mi zhan qiao",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00120",
+   "text": "莫拉比湾",
+   "typeText": "莫拉比湾",
+   "reading": "mo la bi wan",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00121",
+   "text": "葡萄酒港",
+   "typeText": "葡萄酒港",
+   "reading": "pu tao jiu gang",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00122",
+   "text": "蓝雾涌泉",
+   "typeText": "蓝雾涌泉",
+   "reading": "lan wu yong quan",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00123",
+   "text": "诸神黄昏",
+   "typeText": "诸神黄昏",
+   "reading": "zhu shen huang hun",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00124",
+   "text": "迷雾湿地",
+   "typeText": "迷雾湿地",
+   "reading": "mi wu shi di",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00125",
+   "text": "遗忘绿洲",
+   "typeText": "遗忘绿洲",
+   "reading": "yi wang lv zhou",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00126",
+   "text": "金锤台地",
+   "typeText": "金锤台地",
+   "reading": "jin chui tai di",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00127",
+   "text": "铜铃铜山",
+   "typeText": "铜铃铜山",
+   "reading": "tong ling tong shan",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00128",
+   "text": "镜池栈桥",
+   "typeText": "镜池栈桥",
+   "reading": "jing chi zhan qiao",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00129",
+   "text": "雄心广场",
+   "typeText": "雄心广场",
+   "reading": "xiong xin guang chang",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00130",
+   "text": "静语庄园",
+   "typeText": "静语庄园",
+   "reading": "jing yu zhuang yuan",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00131",
+   "text": "领航明灯",
+   "typeText": "领航明灯",
+   "reading": "ling hang ming deng",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00132",
+   "text": "魔兽领域",
+   "typeText": "魔兽领域",
+   "reading": "mo shou ling yu",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00133",
+   "text": "黄金广场",
+   "typeText": "黄金广场",
+   "reading": "huang jin guang chang",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00134",
+   "text": "黑尘驿站",
+   "typeText": "黑尘驿站",
+   "reading": "hei chen yi zhan",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00135",
+   "text": "黑衣森林",
+   "typeText": "黑衣森林",
+   "reading": "hei yi sen lin",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00136",
+   "text": "龙巢神殿",
+   "typeText": "龙巢神殿",
+   "reading": "long chao shen dian",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00137",
+   "text": "龙息瀑布",
+   "typeText": "龙息瀑布",
+   "reading": "long xi pu bu",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00138",
+   "text": "亚马乌罗提",
+   "typeText": "亚马乌罗提",
+   "reading": "ya ma wu luo ti",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00139",
+   "text": "八剑士前庭",
+   "typeText": "八剑士前庭",
+   "reading": "ba jian shi qian ting",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00140",
+   "text": "天狼星灯塔",
+   "typeText": "天狼星灯塔",
+   "reading": "tian lang xing deng ta",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00141",
+   "text": "小阿拉米格",
+   "typeText": "小阿拉米格",
+   "reading": "xiao a la mi ge",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00142",
+   "text": "巨龙首营地",
+   "typeText": "巨龙首营地",
+   "reading": "ju long shou ying di",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00143",
+   "text": "放浪神礼堂",
+   "typeText": "放浪神礼堂",
+   "reading": "fang lang shen li tang",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00144",
+   "text": "泽梅尔要塞",
+   "typeText": "泽梅尔要塞",
+   "reading": "ze mei er yao sai",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00145",
+   "text": "神圣裁判所",
+   "typeText": "神圣裁判所",
+   "reading": "shen sheng cai pan suo",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "wld_00146",
+   "text": "魔女咖啡馆",
+   "typeText": "魔女咖啡馆",
+   "reading": "mo nv ka fei guan",
+   "category": "worlds",
+   "difficulty": 2,
+   "pure": true
+  }
+ ]
+}

@@ -1,0 +1,5282 @@
+{
+ "category": "minions",
+ "label": "宠物",
+ "count": 586,
+ "source": "thewakingsands/ffxiv-datamining-cn",
+ "entries": [
+  {
+   "id": "min_00001",
+   "text": "九尾",
+   "typeText": "九尾",
+   "reading": "jiu wei",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00002",
+   "text": "伞蜥",
+   "typeText": "伞蜥",
+   "reading": "san xi",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00003",
+   "text": "分福",
+   "typeText": "分福",
+   "reading": "fen fu",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00004",
+   "text": "吉吉",
+   "typeText": "吉吉",
+   "reading": "ji ji",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00005",
+   "text": "吉多",
+   "typeText": "吉多",
+   "reading": "ji duo",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00006",
+   "text": "大蛇",
+   "typeText": "大蛇",
+   "reading": "da she",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00007",
+   "text": "小旗",
+   "typeText": "小旗",
+   "reading": "xiao qi",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00008",
+   "text": "小狛",
+   "typeText": "小狛",
+   "reading": "xiao bo",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00009",
+   "text": "小狼",
+   "typeText": "小狼",
+   "reading": "xiao lang",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00010",
+   "text": "沙狐",
+   "typeText": "沙狐",
+   "reading": "sha hu",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00011",
+   "text": "波奇",
+   "typeText": "波奇",
+   "reading": "bo qi",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00012",
+   "text": "浅瞳",
+   "typeText": "浅瞳",
+   "reading": "qian tong",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00013",
+   "text": "海鹦",
+   "typeText": "海鹦",
+   "reading": "hai ying",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00014",
+   "text": "狐獴",
+   "typeText": "狐獴",
+   "reading": "hu meng",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00015",
+   "text": "狒狒",
+   "typeText": "狒狒",
+   "reading": "fei fei",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00016",
+   "text": "狛犬",
+   "typeText": "狛犬",
+   "reading": "bo quan",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00017",
+   "text": "猎鹰",
+   "typeText": "猎鹰",
+   "reading": "lie ying",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00018",
+   "text": "獭獭",
+   "typeText": "獭獭",
+   "reading": "ta ta",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00019",
+   "text": "白鼬",
+   "typeText": "白鼬",
+   "reading": "bai you",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00020",
+   "text": "百目",
+   "typeText": "百目",
+   "reading": "bai mu",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00021",
+   "text": "脊龙",
+   "typeText": "脊龙",
+   "reading": "ji long",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00022",
+   "text": "蓝猫",
+   "typeText": "蓝猫",
+   "reading": "lan mao",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00023",
+   "text": "蟑虫",
+   "typeText": "蟑虫",
+   "reading": "zhang chong",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00024",
+   "text": "蟹蟹",
+   "typeText": "蟹蟹",
+   "reading": "xie xie",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00025",
+   "text": "触手",
+   "typeText": "触手",
+   "reading": "chu shou",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00026",
+   "text": "金鲶",
+   "typeText": "金鲶",
+   "reading": "jin nian",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00027",
+   "text": "阎魔",
+   "typeText": "阎魔",
+   "reading": "yan mo",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00028",
+   "text": "青帝",
+   "typeText": "青帝",
+   "reading": "qing di",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00029",
+   "text": "青鸟",
+   "typeText": "青鸟",
+   "reading": "qing niao",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00030",
+   "text": "鳐鳐",
+   "typeText": "鳐鳐",
+   "reading": "yao yao",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00031",
+   "text": "鼯鼠",
+   "typeText": "鼯鼠",
+   "reading": "wu shu",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00032",
+   "text": "63页",
+   "typeText": "63页",
+   "reading": "63 ye",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": false
+  },
+  {
+   "id": "min_00033",
+   "text": "丑小鸭",
+   "typeText": "丑小鸭",
+   "reading": "chou xiao ya",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00034",
+   "text": "中角羊",
+   "typeText": "中角羊",
+   "reading": "zhong jiao yang",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00035",
+   "text": "乌小鸦",
+   "typeText": "乌小鸦",
+   "reading": "wu xiao ya",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00036",
+   "text": "人面犬",
+   "typeText": "人面犬",
+   "reading": "ren mian quan",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00037",
+   "text": "伊克提",
+   "typeText": "伊克提",
+   "reading": "yi ke ti",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00038",
+   "text": "全记者",
+   "typeText": "全记者",
+   "reading": "quan ji zhe",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00039",
+   "text": "刺球球",
+   "typeText": "刺球球",
+   "reading": "ci qiu qiu",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00040",
+   "text": "卡尔克",
+   "typeText": "卡尔克",
+   "reading": "ka er ke",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00041",
+   "text": "变色龙",
+   "typeText": "变色龙",
+   "reading": "bian se long",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00042",
+   "text": "吉娃汪",
+   "typeText": "吉娃汪",
+   "reading": "ji wa wang",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00043",
+   "text": "吸蜜怪",
+   "typeText": "吸蜜怪",
+   "reading": "xi mi guai",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00044",
+   "text": "喜鹊儿",
+   "typeText": "喜鹊儿",
+   "reading": "xi que er",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00045",
+   "text": "嗡鸣威",
+   "typeText": "嗡鸣威",
+   "reading": "weng ming wei",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00046",
+   "text": "噗吱猪",
+   "typeText": "噗吱猪",
+   "reading": "pu zhi zhu",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00047",
+   "text": "地缚猫",
+   "typeText": "地缚猫",
+   "reading": "di fu mao",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00048",
+   "text": "大河狸",
+   "typeText": "大河狸",
+   "reading": "da he li",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00049",
+   "text": "宝宝箱",
+   "typeText": "宝宝箱",
+   "reading": "bao bao xiang",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00050",
+   "text": "小亮眼",
+   "typeText": "小亮眼",
+   "reading": "xiao liang yan",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00051",
+   "text": "小刺猬",
+   "typeText": "小刺猬",
+   "reading": "xiao ci wei",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00052",
+   "text": "小吕萨",
+   "typeText": "小吕萨",
+   "reading": "xiao lv sa",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00053",
+   "text": "小壳蟹",
+   "typeText": "小壳蟹",
+   "reading": "xiao ke xie",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00054",
+   "text": "小妖狐",
+   "typeText": "小妖狐",
+   "reading": "xiao yao hu",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00055",
+   "text": "小小羊",
+   "typeText": "小小羊",
+   "reading": "xiao xiao yang",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00056",
+   "text": "小巨魔",
+   "typeText": "小巨魔",
+   "reading": "xiao ju mo",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00057",
+   "text": "小异亚",
+   "typeText": "小异亚",
+   "reading": "xiao yi ya",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00058",
+   "text": "小松鼠",
+   "typeText": "小松鼠",
+   "reading": "xiao song shu",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00059",
+   "text": "小梦貘",
+   "typeText": "小梦貘",
+   "reading": "xiao meng mo",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00060",
+   "text": "小火车",
+   "typeText": "小火车",
+   "reading": "xiao huo che",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00061",
+   "text": "小熊猫",
+   "typeText": "小熊猫",
+   "reading": "xiao xiong mao",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00062",
+   "text": "小牛犊",
+   "typeText": "小牛犊",
+   "reading": "xiao niu du",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00063",
+   "text": "小犰狳",
+   "typeText": "小犰狳",
+   "reading": "xiao qiu yu",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00064",
+   "text": "小甚平",
+   "typeText": "小甚平",
+   "reading": "xiao shen ping",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00065",
+   "text": "小矮兔",
+   "typeText": "小矮兔",
+   "reading": "xiao ai tu",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00066",
+   "text": "小绿鸟",
+   "typeText": "小绿鸟",
+   "reading": "xiao lv niao",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00067",
+   "text": "小羊驼",
+   "typeText": "小羊驼",
+   "reading": "xiao yang tuo",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00068",
+   "text": "小蝙蝠",
+   "typeText": "小蝙蝠",
+   "reading": "xiao bian fu",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00069",
+   "text": "山羊羔",
+   "typeText": "山羊羔",
+   "reading": "shan yang gao",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00070",
+   "text": "巨像丙",
+   "typeText": "巨像丙",
+   "reading": "ju xiang bing",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00071",
+   "text": "巨蝌蚪",
+   "typeText": "巨蝌蚪",
+   "reading": "ju ke dou",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00072",
+   "text": "布莉娜",
+   "typeText": "布莉娜",
+   "reading": "bu li na",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00073",
+   "text": "幻栗斋",
+   "typeText": "幻栗斋",
+   "reading": "huan li zhai",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00074",
+   "text": "幼羚羊",
+   "typeText": "幼羚羊",
+   "reading": "you ling yang",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00075",
+   "text": "幼芽维",
+   "typeText": "幼芽维",
+   "reading": "you ya wei",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00076",
+   "text": "得摩斯",
+   "typeText": "得摩斯",
+   "reading": "de mo si",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00077",
+   "text": "恩奇都",
+   "typeText": "恩奇都",
+   "reading": "en qi dou",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00078",
+   "text": "拉拉鳄",
+   "typeText": "拉拉鳄",
+   "reading": "la la e",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00079",
+   "text": "探明威",
+   "typeText": "探明威",
+   "reading": "tan ming wei",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00080",
+   "text": "旅雀儿",
+   "typeText": "旅雀儿",
+   "reading": "lv que er",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00081",
+   "text": "本本石",
+   "typeText": "本本石",
+   "reading": "ben ben shi",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00082",
+   "text": "朱孔雀",
+   "typeText": "朱孔雀",
+   "reading": "zhu kong que",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00083",
+   "text": "柯基犬",
+   "typeText": "柯基犬",
+   "reading": "ke ji quan",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00084",
+   "text": "树苗精",
+   "typeText": "树苗精",
+   "reading": "shu miao jing",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00085",
+   "text": "武士猫",
+   "typeText": "武士猫",
+   "reading": "wu shi mao",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00086",
+   "text": "水小滴",
+   "typeText": "水小滴",
+   "reading": "shui xiao di",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00087",
+   "text": "沧小龙",
+   "typeText": "沧小龙",
+   "reading": "cang xiao long",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00088",
+   "text": "河童童",
+   "typeText": "河童童",
+   "reading": "he tong tong",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00089",
+   "text": "泥小点",
+   "typeText": "泥小点",
+   "reading": "ni xiao dian",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00090",
+   "text": "浮游猫",
+   "typeText": "浮游猫",
+   "reading": "fu you mao",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00091",
+   "text": "海小鸥",
+   "typeText": "海小鸥",
+   "reading": "hai xiao ou",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00092",
+   "text": "淘金热",
+   "typeText": "淘金热",
+   "reading": "tao jin re",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00093",
+   "text": "游星鸟",
+   "typeText": "游星鸟",
+   "reading": "you xing niao",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00094",
+   "text": "滑头鬼",
+   "typeText": "滑头鬼",
+   "reading": "hua tou gui",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00095",
+   "text": "灰尘兔",
+   "typeText": "灰尘兔",
+   "reading": "hui chen tu",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00096",
+   "text": "爆弹仔",
+   "typeText": "爆弹仔",
+   "reading": "bao dan zai",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00097",
+   "text": "狛次郎",
+   "typeText": "狛次郎",
+   "reading": "bo ci lang",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00098",
+   "text": "猪小仙",
+   "typeText": "猪小仙",
+   "reading": "zhu xiao xian",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00099",
+   "text": "猫小甜",
+   "typeText": "猫小甜",
+   "reading": "mao xiao tian",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00100",
+   "text": "猫小胖",
+   "typeText": "猫小胖",
+   "reading": "mao xiao pang",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00101",
+   "text": "白小虎",
+   "typeText": "白小虎",
+   "reading": "bai xiao hu",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00102",
+   "text": "睡羊羊",
+   "typeText": "睡羊羊",
+   "reading": "shui yang yang",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00103",
+   "text": "粘液胶",
+   "typeText": "粘液胶",
+   "reading": "nian ye jiao",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00104",
+   "text": "纳夏猫",
+   "typeText": "纳夏猫",
+   "reading": "na xia mao",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00105",
+   "text": "维斯帕",
+   "typeText": "维斯帕",
+   "reading": "wei si pa",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00106",
+   "text": "罪河狸",
+   "typeText": "罪河狸",
+   "reading": "zui he li",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00107",
+   "text": "舞海月",
+   "typeText": "舞海月",
+   "reading": "wu hai yue",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00108",
+   "text": "艾露猫",
+   "typeText": "艾露猫",
+   "reading": "ai lu mao",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00109",
+   "text": "草小人",
+   "typeText": "草小人",
+   "reading": "cao xiao ren",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00110",
+   "text": "蓝闪蝶",
+   "typeText": "蓝闪蝶",
+   "reading": "lan shan die",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00111",
+   "text": "豆豆柴",
+   "typeText": "豆豆柴",
+   "reading": "dou dou chai",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00112",
+   "text": "跃阳兔",
+   "typeText": "跃阳兔",
+   "reading": "yue yang tu",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00113",
+   "text": "迷你琳",
+   "typeText": "迷你琳",
+   "reading": "mi ni lin",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00114",
+   "text": "迷你零",
+   "typeText": "迷你零",
+   "reading": "mi ni ling",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00115",
+   "text": "酒杯刺",
+   "typeText": "酒杯刺",
+   "reading": "jiu bei ci",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00116",
+   "text": "野槌蛇",
+   "typeText": "野槌蛇",
+   "reading": "ye chui she",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00117",
+   "text": "铁小人",
+   "typeText": "铁小人",
+   "reading": "tie xiao ren",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00118",
+   "text": "铃小龙",
+   "typeText": "铃小龙",
+   "reading": "ling xiao long",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00119",
+   "text": "门小奴",
+   "typeText": "门小奴",
+   "reading": "men xiao nu",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00120",
+   "text": "阳小灵",
+   "typeText": "阳小灵",
+   "reading": "yang xiao ling",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00121",
+   "text": "阴小幽",
+   "typeText": "阴小幽",
+   "reading": "yin xiao you",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00122",
+   "text": "雏鸟祖",
+   "typeText": "雏鸟祖",
+   "reading": "chu niao zu",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00123",
+   "text": "雪孩子",
+   "typeText": "雪孩子",
+   "reading": "xue hai zi",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00124",
+   "text": "零钱龟",
+   "typeText": "零钱龟",
+   "reading": "ling qian gui",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00125",
+   "text": "雷普鲁",
+   "typeText": "雷普鲁",
+   "reading": "lei pu lu",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00126",
+   "text": "马小龙",
+   "typeText": "马小龙",
+   "reading": "ma xiao long",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00127",
+   "text": "魔菇宝",
+   "typeText": "魔菇宝",
+   "reading": "mo gu bao",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00128",
+   "text": "鲸头鹳",
+   "typeText": "鲸头鹳",
+   "reading": "jing tou guan",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00129",
+   "text": "黑小猩",
+   "typeText": "黑小猩",
+   "reading": "hei xiao xing",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00130",
+   "text": "黑小猫",
+   "typeText": "黑小猫",
+   "reading": "hei xiao mao",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00131",
+   "text": "黑豆柴",
+   "typeText": "黑豆柴",
+   "reading": "hei dou chai",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00132",
+   "text": "龙之孙",
+   "typeText": "龙之孙",
+   "reading": "long zhi sun",
+   "category": "minions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "min_00133",
+   "text": "USA蹦",
+   "typeText": "USA蹦",
+   "reading": "USA beng",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "min_00134",
+   "text": "三角龙龙",
+   "typeText": "三角龙龙",
+   "reading": "san jiao long long",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00135",
+   "text": "不幸小兔",
+   "typeText": "不幸小兔",
+   "reading": "bu xing xiao tu",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00136",
+   "text": "乌洛萨帕",
+   "typeText": "乌洛萨帕",
+   "reading": "wu luo sa pa",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00137",
+   "text": "人造元灵",
+   "typeText": "人造元灵",
+   "reading": "ren zao yuan ling",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00138",
+   "text": "人鱼公主",
+   "typeText": "人鱼公主",
+   "reading": "ren yu gong zhu",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00139",
+   "text": "仙子人偶",
+   "typeText": "仙子人偶",
+   "reading": "xian zi ren ou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00140",
+   "text": "企鹅王子",
+   "typeText": "企鹅王子",
+   "reading": "qi e wang zi",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00141",
+   "text": "休假小员",
+   "typeText": "休假小员",
+   "reading": "xiu jia xiao yuan",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00142",
+   "text": "光之战偶",
+   "typeText": "光之战偶",
+   "reading": "guang zhi zhan ou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00143",
+   "text": "光之战士",
+   "typeText": "光之战士",
+   "reading": "guang zhi zhan shi",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00144",
+   "text": "凯西幼苗",
+   "typeText": "凯西幼苗",
+   "reading": "kai xi you miao",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00145",
+   "text": "劳动八号",
+   "typeText": "劳动八号",
+   "reading": "lao dong ba hao",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00146",
+   "text": "南瓜管家",
+   "typeText": "南瓜管家",
+   "reading": "nan gua guan jia",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00147",
+   "text": "发条卫月",
+   "typeText": "发条卫月",
+   "reading": "fa tiao wei yue",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00148",
+   "text": "发条太阳",
+   "typeText": "发条太阳",
+   "reading": "fa tiao tai yang",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00149",
+   "text": "发条推车",
+   "typeText": "发条推车",
+   "reading": "fa tiao tui che",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00150",
+   "text": "发条提灯",
+   "typeText": "发条提灯",
+   "reading": "fa tiao ti deng",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00151",
+   "text": "发条月亮",
+   "typeText": "发条月亮",
+   "reading": "fa tiao yue liang",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00152",
+   "text": "发条矿车",
+   "typeText": "发条矿车",
+   "reading": "fa tiao kuang che",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00153",
+   "text": "叮叮摇铃",
+   "typeText": "叮叮摇铃",
+   "reading": "ding ding yao ling",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00154",
+   "text": "叶小妖妖",
+   "typeText": "叶小妖妖",
+   "reading": "ye xiao yao yao",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00155",
+   "text": "吹雪公主",
+   "typeText": "吹雪公主",
+   "reading": "chui xue gong zhu",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00156",
+   "text": "回复蜜虫",
+   "typeText": "回复蜜虫",
+   "reading": "hui fu mi chong",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00157",
+   "text": "地灵娃娃",
+   "typeText": "地灵娃娃",
+   "reading": "di ling wa wa",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00158",
+   "text": "地狱小犬",
+   "typeText": "地狱小犬",
+   "reading": "di yu xiao quan",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00159",
+   "text": "大脚小猿",
+   "typeText": "大脚小猿",
+   "reading": "da jiao xiao yuan",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00160",
+   "text": "大陆小眼",
+   "typeText": "大陆小眼",
+   "reading": "da lu xiao yan",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00161",
+   "text": "天佑公主",
+   "typeText": "天佑公主",
+   "reading": "tian you gong zhu",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00162",
+   "text": "天狗玩偶",
+   "typeText": "天狗玩偶",
+   "reading": "tian gou wan ou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00163",
+   "text": "天马幼兽",
+   "typeText": "天马幼兽",
+   "reading": "tian ma you shou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00164",
+   "text": "夺心小魔",
+   "typeText": "夺心小魔",
+   "reading": "duo xin xiao mo",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00165",
+   "text": "奥丁战偶",
+   "typeText": "奥丁战偶",
+   "reading": "ao ding zhan ou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00166",
+   "text": "奥猴宝宝",
+   "typeText": "奥猴宝宝",
+   "reading": "ao hou bao bao",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00167",
+   "text": "妖精娃娃",
+   "typeText": "妖精娃娃",
+   "reading": "yao jing wa wa",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00168",
+   "text": "妖精小犬",
+   "typeText": "妖精小犬",
+   "reading": "yao jing xiao quan",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00169",
+   "text": "尊杜玩偶",
+   "typeText": "尊杜玩偶",
+   "reading": "zun du wan ou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00170",
+   "text": "小凉南希",
+   "typeText": "小凉南希",
+   "reading": "xiao liang nan xi",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00171",
+   "text": "小小海牛",
+   "typeText": "小小海牛",
+   "reading": "xiao xiao hai niu",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00172",
+   "text": "小小魔精",
+   "typeText": "小小魔精",
+   "reading": "xiao xiao mo jing",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00173",
+   "text": "小巧郊狼",
+   "typeText": "小巧郊狼",
+   "reading": "xiao qiao jiao lang",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00174",
+   "text": "小托加尔",
+   "typeText": "小托加尔",
+   "reading": "xiao tuo jia er",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00175",
+   "text": "小木乃伊",
+   "typeText": "小木乃伊",
+   "reading": "xiao mu nai yi",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00176",
+   "text": "小树袋熊",
+   "typeText": "小树袋熊",
+   "reading": "xiao shu dai xiong",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00177",
+   "text": "小脚雪人",
+   "typeText": "小脚雪人",
+   "reading": "xiao jiao xue ren",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00178",
+   "text": "小草贤人",
+   "typeText": "小草贤人",
+   "reading": "xiao cao xian ren",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00179",
+   "text": "小长颈驼",
+   "typeText": "小长颈驼",
+   "reading": "xiao zhang jing tuo",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00180",
+   "text": "小雪童子",
+   "typeText": "小雪童子",
+   "reading": "xiao xue tong zi",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00181",
+   "text": "小鸭嘴兽",
+   "typeText": "小鸭嘴兽",
+   "reading": "xiao ya zui shou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00182",
+   "text": "尘世幻龙",
+   "typeText": "尘世幻龙",
+   "reading": "chen shi huan long",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00183",
+   "text": "希瓦之形",
+   "typeText": "希瓦之形",
+   "reading": "xi wa zhi xing",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00184",
+   "text": "常风王子",
+   "typeText": "常风王子",
+   "reading": "chang feng wang zi",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00185",
+   "text": "幼碧企鹅",
+   "typeText": "幼碧企鹅",
+   "reading": "you bi qi e",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00186",
+   "text": "幼龙玩偶",
+   "typeText": "幼龙玩偶",
+   "reading": "you long wan ou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00187",
+   "text": "弱弱法师",
+   "typeText": "弱弱法师",
+   "reading": "ruo ruo fa shi",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00188",
+   "text": "微暗之王",
+   "typeText": "微暗之王",
+   "reading": "wei an zhi wang",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00189",
+   "text": "忍犬白丸",
+   "typeText": "忍犬白丸",
+   "reading": "ren quan bai wan",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00190",
+   "text": "忍犬黑丸",
+   "typeText": "忍犬黑丸",
+   "reading": "ren quan hei wan",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00191",
+   "text": "恶魔砖块",
+   "typeText": "恶魔砖块",
+   "reading": "e mo zhuan kuai",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00192",
+   "text": "手指光标",
+   "typeText": "手指光标",
+   "reading": "shou zhi guang biao",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00193",
+   "text": "拉姆之形",
+   "typeText": "拉姆之形",
+   "reading": "la mu zhi xing",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00194",
+   "text": "摇摆绿光",
+   "typeText": "摇摆绿光",
+   "reading": "yao bai lv guang",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00195",
+   "text": "斗牛小犬",
+   "typeText": "斗牛小犬",
+   "reading": "dou niu xiao quan",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00196",
+   "text": "无力机兵",
+   "typeText": "无力机兵",
+   "reading": "wu li ji bing",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00197",
+   "text": "普萨玛忒",
+   "typeText": "普萨玛忒",
+   "reading": "pu sa ma te",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00198",
+   "text": "暗斗鱼苗",
+   "typeText": "暗斗鱼苗",
+   "reading": "an dou yu miao",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00199",
+   "text": "暗淡之云",
+   "typeText": "暗淡之云",
+   "reading": "an dan zhi yun",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00200",
+   "text": "月读之形",
+   "typeText": "月读之形",
+   "reading": "yue du zhi xing",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00201",
+   "text": "机械生物",
+   "typeText": "机械生物",
+   "reading": "ji xie sheng wu",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00202",
+   "text": "格斯塔拉",
+   "typeText": "格斯塔拉",
+   "reading": "ge si ta la",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00203",
+   "text": "梦魔娃娃",
+   "typeText": "梦魔娃娃",
+   "reading": "meng mo wa wa",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00204",
+   "text": "椒盐海豹",
+   "typeText": "椒盐海豹",
+   "reading": "jiao yan hai bao",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00205",
+   "text": "水妖人偶",
+   "typeText": "水妖人偶",
+   "reading": "shui yao ren ou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00206",
+   "text": "水豚幼崽",
+   "typeText": "水豚幼崽",
+   "reading": "shui tun you zai",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00207",
+   "text": "水道蜥蜴",
+   "typeText": "水道蜥蜴",
+   "reading": "shui dao xi yi",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00208",
+   "text": "沙蚤虫虫",
+   "typeText": "沙蚤虫虫",
+   "reading": "sha zao chong chong",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00209",
+   "text": "河马幼崽",
+   "typeText": "河马幼崽",
+   "reading": "he ma you zai",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00210",
+   "text": "波罗·罗格",
+   "typeText": "波罗罗格",
+   "reading": "bo luo luo ge",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "min_00211",
+   "text": "泰坦之形",
+   "typeText": "泰坦之形",
+   "reading": "tai tan zhi xing",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00212",
+   "text": "洋葱王子",
+   "typeText": "洋葱王子",
+   "reading": "yang cong wang zi",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00213",
+   "text": "淘气南加",
+   "typeText": "淘气南加",
+   "reading": "tao qi nan jia",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00214",
+   "text": "渡渡鸟雏",
+   "typeText": "渡渡鸟雏",
+   "reading": "du du niao chu",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00215",
+   "text": "熊猫宝宝",
+   "typeText": "熊猫宝宝",
+   "reading": "xiong mao bao bao",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00216",
+   "text": "犎牛宝宝",
+   "typeText": "犎牛宝宝",
+   "reading": "feng niu bao bao",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00217",
+   "text": "独角幼兽",
+   "typeText": "独角幼兽",
+   "reading": "du jiao you shou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00218",
+   "text": "狮鹫宝宝",
+   "typeText": "狮鹫宝宝",
+   "reading": "shi jiu bao bao",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00219",
+   "text": "猫头小鹰",
+   "typeText": "猫头小鹰",
+   "reading": "mao tou xiao ying",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00220",
+   "text": "猫秘玩偶",
+   "typeText": "猫秘玩偶",
+   "reading": "mao mi wan ou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00221",
+   "text": "猴面雀儿",
+   "typeText": "猴面雀儿",
+   "reading": "hou mian que er",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00222",
+   "text": "獭獭先生",
+   "typeText": "獭獭先生",
+   "reading": "ta ta xian sheng",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00223",
+   "text": "玉米大人",
+   "typeText": "玉米大人",
+   "reading": "yu mi da ren",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00224",
+   "text": "王家猎犬",
+   "typeText": "王家猎犬",
+   "reading": "wang jia lie quan",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00225",
+   "text": "甲人玩偶",
+   "typeText": "甲人玩偶",
+   "reading": "jia ren wan ou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00226",
+   "text": "番茄国王",
+   "typeText": "番茄国王",
+   "reading": "fan qie guo wang",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00227",
+   "text": "疣猪小子",
+   "typeText": "疣猪小子",
+   "reading": "you zhu xiao zi",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00228",
+   "text": "白小骑士",
+   "typeText": "白小骑士",
+   "reading": "bai xiao qi shi",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00229",
+   "text": "百鬼公主",
+   "typeText": "百鬼公主",
+   "reading": "bai gui gong zhu",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00230",
+   "text": "盗龙小宝",
+   "typeText": "盗龙小宝",
+   "reading": "dao long xiao bao",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00231",
+   "text": "石莲小猬",
+   "typeText": "石莲小猬",
+   "reading": "shi lian xiao wei",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00232",
+   "text": "矿爬虫虫",
+   "typeText": "矿爬虫虫",
+   "reading": "kuang pa chong chong",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00233",
+   "text": "祝福礼盒",
+   "typeText": "祝福礼盒",
+   "reading": "zhu fu li he",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00234",
+   "text": "神杖小蛇",
+   "typeText": "神杖小蛇",
+   "reading": "shen zhang xiao she",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00235",
+   "text": "神秘兵装",
+   "typeText": "神秘兵装",
+   "reading": "shen mi bing zhuang",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00236",
+   "text": "神龙玩偶",
+   "typeText": "神龙玩偶",
+   "reading": "shen long wan ou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00237",
+   "text": "祭品大人",
+   "typeText": "祭品大人",
+   "reading": "ji pin da ren",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00238",
+   "text": "精金幼龟",
+   "typeText": "精金幼龟",
+   "reading": "jing jin you gui",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00239",
+   "text": "糖豆企鹅",
+   "typeText": "糖豆企鹅",
+   "reading": "tang dou qi e",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00240",
+   "text": "索取小猫",
+   "typeText": "索取小猫",
+   "reading": "suo qu xiao mao",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00241",
+   "text": "红甲玩偶",
+   "typeText": "红甲玩偶",
+   "reading": "hong jia wan ou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00242",
+   "text": "绵绵坐垫",
+   "typeText": "绵绵坐垫",
+   "reading": "mian mian zuo dian",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00243",
+   "text": "胖墩跳蜥",
+   "typeText": "胖墩跳蜥",
+   "reading": "pang dun tiao xi",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00244",
+   "text": "腕龙玩偶",
+   "typeText": "腕龙玩偶",
+   "reading": "wan long wan ou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00245",
+   "text": "茄子骑士",
+   "typeText": "茄子骑士",
+   "reading": "qie zi qi shi",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00246",
+   "text": "萌神乐团",
+   "typeText": "萌神乐团",
+   "reading": "meng shen yue tuan",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00247",
+   "text": "蒜头明星",
+   "typeText": "蒜头明星",
+   "reading": "suan tou ming xing",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00248",
+   "text": "蓝足鲣鸟",
+   "typeText": "蓝足鲣鸟",
+   "reading": "lan zu jian niao",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00249",
+   "text": "薄暗之云",
+   "typeText": "薄暗之云",
+   "reading": "bao an zhi yun",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00250",
+   "text": "虎斑次郎",
+   "typeText": "虎斑次郎",
+   "reading": "hu ban ci lang",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00251",
+   "text": "蛇王凯拉",
+   "typeText": "蛇王凯拉",
+   "reading": "she wang kai la",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00252",
+   "text": "蝴蝶效应",
+   "typeText": "蝴蝶效应",
+   "reading": "hu die xiao ying",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00253",
+   "text": "衮杜玩偶",
+   "typeText": "衮杜玩偶",
+   "reading": "gun du wan ou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00254",
+   "text": "袋鼠玩偶",
+   "typeText": "袋鼠玩偶",
+   "reading": "dai shu wan ou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00255",
+   "text": "袖珍劳班",
+   "typeText": "袖珍劳班",
+   "reading": "xiu zhen lao ban",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00256",
+   "text": "袖珍领袖",
+   "typeText": "袖珍领袖",
+   "reading": "xiu zhen ling xiu",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00257",
+   "text": "象魔人偶",
+   "typeText": "象魔人偶",
+   "reading": "xiang mo ren ou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00258",
+   "text": "软软垫子",
+   "typeText": "软软垫子",
+   "reading": "ruan ruan dian zi",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00259",
+   "text": "迷你伊甸",
+   "typeText": "迷你伊甸",
+   "reading": "mi ni yi dian",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00260",
+   "text": "迷你伊达",
+   "typeText": "迷你伊达",
+   "reading": "mi ni yi da",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00261",
+   "text": "迷你凯因",
+   "typeText": "迷你凯因",
+   "reading": "mi ni kai yin",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00262",
+   "text": "迷你吉坦",
+   "typeText": "迷你吉坦",
+   "reading": "mi ni ji tan",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00263",
+   "text": "迷你夕雾",
+   "typeText": "迷你夕雾",
+   "reading": "mi ni xi wu",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00264",
+   "text": "迷你夜露",
+   "typeText": "迷你夜露",
+   "reading": "mi ni ye lu",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00265",
+   "text": "迷你好友",
+   "typeText": "迷你好友",
+   "reading": "mi ni hao you",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00266",
+   "text": "迷你尤娜",
+   "typeText": "迷你尤娜",
+   "reading": "mi ni you na",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00267",
+   "text": "迷你尤菲",
+   "typeText": "迷你尤菲",
+   "reading": "mi ni you fei",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00268",
+   "text": "迷你尼禄",
+   "typeText": "迷你尼禄",
+   "reading": "mi ni ni lu",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00269",
+   "text": "迷你巴兹",
+   "typeText": "迷你巴兹",
+   "reading": "mi ni ba zi",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00270",
+   "text": "迷你库洛",
+   "typeText": "迷你库洛",
+   "reading": "mi ni ku luo",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00271",
+   "text": "迷你海魔",
+   "typeText": "迷你海魔",
+   "reading": "mi ni hai mo",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00272",
+   "text": "迷你熙洛",
+   "typeText": "迷你熙洛",
+   "reading": "mi ni xi luo",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00273",
+   "text": "迷你琉克",
+   "typeText": "迷你琉克",
+   "reading": "mi ni liu ke",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00274",
+   "text": "迷你瑞姆",
+   "typeText": "迷你瑞姆",
+   "reading": "mi ni rui mu",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00275",
+   "text": "迷你盖娅",
+   "typeText": "迷你盖娅",
+   "reading": "mi ni gai ya",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00276",
+   "text": "迷你纱都",
+   "typeText": "迷你纱都",
+   "reading": "mi ni sha dou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00277",
+   "text": "迷你罗莎",
+   "typeText": "迷你罗莎",
+   "reading": "mi ni luo sha",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00278",
+   "text": "迷你艾吉",
+   "typeText": "迷你艾吉",
+   "reading": "mi ni ai ji",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00279",
+   "text": "迷你艾达",
+   "typeText": "迷你艾达",
+   "reading": "mi ni ai da",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00280",
+   "text": "迷你芙兰",
+   "typeText": "迷你芙兰",
+   "reading": "mi ni fu lan",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00281",
+   "text": "迷你莉瑟",
+   "typeText": "迷你莉瑟",
+   "reading": "mi ni li se",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00282",
+   "text": "迷你莱楠",
+   "typeText": "迷你莱楠",
+   "reading": "mi ni lai nan",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00283",
+   "text": "迷你蒂法",
+   "typeText": "迷你蒂法",
+   "reading": "mi ni di fa",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00284",
+   "text": "迷你西德",
+   "typeText": "迷你西德",
+   "reading": "mi ni xi de",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00285",
+   "text": "迷你豪雪",
+   "typeText": "迷你豪雪",
+   "reading": "mi ni hao xue",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00286",
+   "text": "迷你遗光",
+   "typeText": "迷你遗光",
+   "reading": "mi ni yi guang",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00287",
+   "text": "迷你露露",
+   "typeText": "迷你露露",
+   "reading": "mi ni lu lu",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00288",
+   "text": "迷你飞燕",
+   "typeText": "迷你飞燕",
+   "reading": "mi ni fei yan",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00289",
+   "text": "迷雾秃鹰",
+   "typeText": "迷雾秃鹰",
+   "reading": "mi wu tu ying",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00290",
+   "text": "追踪系统",
+   "typeText": "追踪系统",
+   "reading": "zhui zong xi tong",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00291",
+   "text": "送行提灯",
+   "typeText": "送行提灯",
+   "reading": "song xing ti deng",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00292",
+   "text": "那伊阿德",
+   "typeText": "那伊阿德",
+   "reading": "na yi a de",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00293",
+   "text": "银山雀儿",
+   "typeText": "银山雀儿",
+   "reading": "yin shan que er",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00294",
+   "text": "长须小豹",
+   "typeText": "长须小豹",
+   "reading": "zhang xu xiao bao",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00295",
+   "text": "青蓝小手",
+   "typeText": "青蓝小手",
+   "reading": "qing lan xiao shou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00296",
+   "text": "青蛙号A",
+   "typeText": "青蛙号A",
+   "reading": "qing wa hao A",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "min_00297",
+   "text": "风筝小猫",
+   "typeText": "风筝小猫",
+   "reading": "feng zheng xiao mao",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00298",
+   "text": "飞梭M9",
+   "typeText": "飞梭M9",
+   "reading": "fei suo M9",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "min_00299",
+   "text": "食果花鼠",
+   "typeText": "食果花鼠",
+   "reading": "shi guo hua shu",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00300",
+   "text": "骨颌玩偶",
+   "typeText": "骨颌玩偶",
+   "reading": "gu he wan ou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00301",
+   "text": "魔法扫帚",
+   "typeText": "魔法扫帚",
+   "reading": "mo fa sao zhou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00302",
+   "text": "魔法水桶",
+   "typeText": "魔法水桶",
+   "reading": "mo fa shui tong",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00303",
+   "text": "魔法神灯",
+   "typeText": "魔法神灯",
+   "reading": "mo fa shen deng",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00304",
+   "text": "鱼人玩偶",
+   "typeText": "鱼人玩偶",
+   "reading": "yu ren wan ou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00305",
+   "text": "鲁迪玩偶",
+   "typeText": "鲁迪玩偶",
+   "reading": "lu di wan ou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00306",
+   "text": "鸟人玩偶",
+   "typeText": "鸟人玩偶",
+   "reading": "niao ren wan ou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00307",
+   "text": "齐天小圣",
+   "typeText": "齐天小圣",
+   "reading": "qi tian xiao sheng",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00308",
+   "text": "一口小果冻",
+   "typeText": "一口小果冻",
+   "reading": "yi kou xiao guo dong",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00309",
+   "text": "乐团小羊驼",
+   "typeText": "乐团小羊驼",
+   "reading": "yue tuan xiao yang tuo",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00310",
+   "text": "亚拉戈西瓜",
+   "typeText": "亚拉戈西瓜",
+   "reading": "ya la ge xi gua",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00311",
+   "text": "仙人刺女士",
+   "typeText": "仙人刺女士",
+   "reading": "xian ren ci nv shi",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00312",
+   "text": "企业号模型",
+   "typeText": "企业号模型",
+   "reading": "qi ye hao mo xing",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00313",
+   "text": "伊沃恩玩偶",
+   "typeText": "伊沃恩玩偶",
+   "reading": "yi wo en wan ou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00314",
+   "text": "伽黎亚玩偶",
+   "typeText": "伽黎亚玩偶",
+   "reading": "ga li ya wan ou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00315",
+   "text": "俾斯麦之形",
+   "typeText": "俾斯麦之形",
+   "reading": "bi si mai zhi xing",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00316",
+   "text": "六角小螈螈",
+   "typeText": "六角小螈螈",
+   "reading": "liu jiao xiao yuan yuan",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00317",
+   "text": "冬贝利玩偶",
+   "typeText": "冬贝利玩偶",
+   "reading": "dong bei li wan ou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00318",
+   "text": "凯特西娃娃",
+   "typeText": "凯特西娃娃",
+   "reading": "kai te xi wa wa",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00319",
+   "text": "勇敢牧羊犬",
+   "typeText": "勇敢牧羊犬",
+   "reading": "yong gan mu yang quan",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00320",
+   "text": "卢恩人玩偶",
+   "typeText": "卢恩人玩偶",
+   "reading": "lu en ren wan ou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00321",
+   "text": "发条压迫者",
+   "typeText": "发条压迫者",
+   "reading": "fa tiao ya po zhe",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00322",
+   "text": "发条小汽车",
+   "typeText": "发条小汽车",
+   "reading": "fa tiao xiao qi che",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00323",
+   "text": "发条索鲁斯",
+   "typeText": "发条索鲁斯",
+   "reading": "fa tiao suo lu si",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00324",
+   "text": "发芽小猩猩",
+   "typeText": "发芽小猩猩",
+   "reading": "fa ya xiao xing xing",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00325",
+   "text": "哥布林玩偶",
+   "typeText": "哥布林玩偶",
+   "reading": "ge bu lin wan ou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00326",
+   "text": "啦哩吼矮人",
+   "typeText": "啦哩吼矮人",
+   "reading": "la li hou ai ren",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00327",
+   "text": "复活小天使",
+   "typeText": "复活小天使",
+   "reading": "fu huo xiao tian shi",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00328",
+   "text": "多玛金鱼儿",
+   "typeText": "多玛金鱼儿",
+   "reading": "duo ma jin yu er",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00329",
+   "text": "大头小鼹鼠",
+   "typeText": "大头小鼹鼠",
+   "reading": "da tou xiao yan shu",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00330",
+   "text": "天蓝背魔鸟",
+   "typeText": "天蓝背魔鸟",
+   "reading": "tian lan bei mo niao",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00331",
+   "text": "娜娜珂小熊",
+   "typeText": "娜娜珂小熊",
+   "reading": "na na ke xiao xiong",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00332",
+   "text": "小丑预言蛋",
+   "typeText": "小丑预言蛋",
+   "reading": "xiao chou yu yan dan",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00333",
+   "text": "小小古代人",
+   "typeText": "小小古代人",
+   "reading": "xiao xiao gu dai ren",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00334",
+   "text": "小小守护者",
+   "typeText": "小小守护者",
+   "reading": "xiao xiao shou hu zhe",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00335",
+   "text": "小小巨嘴鸟",
+   "typeText": "小小巨嘴鸟",
+   "reading": "xiao xiao ju zui niao",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00336",
+   "text": "小小蔓德拉",
+   "typeText": "小小蔓德拉",
+   "reading": "xiao xiao man de la",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00337",
+   "text": "小小迪兹尔",
+   "typeText": "小小迪兹尔",
+   "reading": "xiao xiao di zi er",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00338",
+   "text": "小小食蚁兽",
+   "typeText": "小小食蚁兽",
+   "reading": "xiao xiao shi yi shou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00339",
+   "text": "小山羊玩偶",
+   "typeText": "小山羊玩偶",
+   "reading": "xiao shan yang wan ou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00340",
+   "text": "巧儿陆行鸟",
+   "typeText": "巧儿陆行鸟",
+   "reading": "qiao er lu xing niao",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00341",
+   "text": "幼小仙人掌",
+   "typeText": "幼小仙人掌",
+   "reading": "you xiao xian ren zhang",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00342",
+   "text": "开创者人偶",
+   "typeText": "开创者人偶",
+   "reading": "kai chuang zhe ren ou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00343",
+   "text": "恩莫族人偶",
+   "typeText": "恩莫族人偶",
+   "reading": "en mo zu ren ou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00344",
+   "text": "恶作剧小丑",
+   "typeText": "恶作剧小丑",
+   "reading": "e zuo ju xiao chou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00345",
+   "text": "惊奇炸药仔",
+   "typeText": "惊奇炸药仔",
+   "reading": "jing qi zha yao zai",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00346",
+   "text": "擦擦羽衣精",
+   "typeText": "擦擦羽衣精",
+   "reading": "ca ca yu yi jing",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00347",
+   "text": "无敌号模型",
+   "typeText": "无敌号模型",
+   "reading": "wu di hao mo xing",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00348",
+   "text": "有限的美德",
+   "typeText": "有限的美德",
+   "reading": "you xian de mei de",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00349",
+   "text": "机器猫F型",
+   "typeText": "机器猫F型",
+   "reading": "ji qi mao F xing",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "min_00350",
+   "text": "橄榄宝石兽",
+   "typeText": "橄榄宝石兽",
+   "reading": "gan lan bao shi shou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00351",
+   "text": "洋葱小剑士",
+   "typeText": "洋葱小剑士",
+   "reading": "yang cong xiao jian shi",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00352",
+   "text": "浪人的篝火",
+   "typeText": "浪人的篝火",
+   "reading": "lang ren de gou huo",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00353",
+   "text": "海德林偶像",
+   "typeText": "海德林偶像",
+   "reading": "hai de lin ou xiang",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00354",
+   "text": "猫耳小小员",
+   "typeText": "猫耳小小员",
+   "reading": "mao er xiao xiao yuan",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00355",
+   "text": "王家仙人刺",
+   "typeText": "王家仙人刺",
+   "reading": "wang jia xian ren ci",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00356",
+   "text": "玩偶运输机",
+   "typeText": "玩偶运输机",
+   "reading": "wan ou yun shu ji",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00357",
+   "text": "砂砾小像兵",
+   "typeText": "砂砾小像兵",
+   "reading": "sha li xiao xiang bing",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00358",
+   "text": "祭礼鲶鱼精",
+   "typeText": "祭礼鲶鱼精",
+   "reading": "ji li nian yu jing",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00359",
+   "text": "私用棒槌树",
+   "typeText": "私用棒槌树",
+   "reading": "si yong bang chui shu",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00360",
+   "text": "科特尔玩偶",
+   "typeText": "科特尔玩偶",
+   "reading": "ke te er wan ou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00361",
+   "text": "米斯拉人偶",
+   "typeText": "米斯拉人偶",
+   "reading": "mi si la ren ou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00362",
+   "text": "粉红糖豆人",
+   "typeText": "粉红糖豆人",
+   "reading": "fen hong tang dou ren",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00363",
+   "text": "精金石神兵",
+   "typeText": "精金石神兵",
+   "reading": "jing jin shi shen bing",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00364",
+   "text": "紫妖精娃娃",
+   "typeText": "紫妖精娃娃",
+   "reading": "zi yao jing wa wa",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00365",
+   "text": "罗波那之形",
+   "typeText": "罗波那之形",
+   "reading": "luo bo na zhi xing",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00366",
+   "text": "聪慧小海豚",
+   "typeText": "聪慧小海豚",
+   "reading": "cong hui xiao hai tun",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00367",
+   "text": "肥肥风筝猫",
+   "typeText": "肥肥风筝猫",
+   "reading": "fei fei feng zheng mao",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00368",
+   "text": "胖儿陆行鸟",
+   "typeText": "胖儿陆行鸟",
+   "reading": "pang er lu xing niao",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00369",
+   "text": "自由脑玩偶",
+   "typeText": "自由脑玩偶",
+   "reading": "zi you nao wan ou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00370",
+   "text": "艾尔凡人偶",
+   "typeText": "艾尔凡人偶",
+   "reading": "ai er fan ren ou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00371",
+   "text": "芬里尔幼崽",
+   "typeText": "芬里尔幼崽",
+   "reading": "fen li er you zai",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00372",
+   "text": "花篮莫古力",
+   "typeText": "花篮莫古力",
+   "reading": "hua lan mo gu li",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00373",
+   "text": "莫古力娃娃",
+   "typeText": "莫古力娃娃",
+   "reading": "mo gu li wa wa",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00374",
+   "text": "莫莫拉·莫拉！！！",
+   "typeText": "莫莫拉莫拉",
+   "reading": "mo mo la mo la",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "min_00375",
+   "text": "蔓德拉王后",
+   "typeText": "蔓德拉王后",
+   "reading": "man de la wang hou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00376",
+   "text": "蜥蜴人玩偶",
+   "typeText": "蜥蜴人玩偶",
+   "reading": "xi yi ren wan ou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00377",
+   "text": "袖珍嘉恩·艾",
+   "typeText": "袖珍嘉恩艾",
+   "reading": "xiu zhen jia en ai",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "min_00378",
+   "text": "说话的石头",
+   "typeText": "说话的石头",
+   "reading": "shuo hua de shi tou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00379",
+   "text": "诺斯费拉图",
+   "typeText": "诺斯费拉图",
+   "reading": "nuo si fei la tu",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00380",
+   "text": "软软的海兽",
+   "typeText": "软软的海兽",
+   "reading": "ruan ruan de hai shou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00381",
+   "text": "辉鳞人玩偶",
+   "typeText": "辉鳞人玩偶",
+   "reading": "hui lin ren wan ou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00382",
+   "text": "迦楼罗之形",
+   "typeText": "迦楼罗之形",
+   "reading": "jia lou luo zhi xing",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00383",
+   "text": "迷你克劳德",
+   "typeText": "迷你克劳德",
+   "reading": "mi ni ke lao de",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00384",
+   "text": "迷你其日娜",
+   "typeText": "迷你其日娜",
+   "reading": "mi ni qi ri na",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00385",
+   "text": "迷你凯夫卡",
+   "typeText": "迷你凯夫卡",
+   "reading": "mi ni kai fu ka",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00386",
+   "text": "迷你凯纳槽",
+   "typeText": "迷你凯纳槽",
+   "reading": "mi ni kai na cao",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00387",
+   "text": "迷你古·拉哈",
+   "typeText": "迷你古拉哈",
+   "reading": "mi ni gu la ha",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "min_00388",
+   "text": "迷你可露儿",
+   "typeText": "迷你可露儿",
+   "reading": "mi ni ke lu er",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00389",
+   "text": "迷你命名威",
+   "typeText": "迷你命名威",
+   "reading": "mi ni ming ming wei",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00390",
+   "text": "迷你哈罗妮",
+   "typeText": "迷你哈罗妮",
+   "reading": "mi ni ha luo ni",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00391",
+   "text": "迷你嘉妮特",
+   "typeText": "迷你嘉妮特",
+   "reading": "mi ni jia ni te",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00392",
+   "text": "迷你塔塔露",
+   "typeText": "迷你塔塔露",
+   "reading": "mi ni ta ta lu",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00393",
+   "text": "迷你奇美拉",
+   "typeText": "迷你奇美拉",
+   "reading": "mi ni qi mei la",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00394",
+   "text": "迷你奥修昂",
+   "typeText": "迷你奥修昂",
+   "reading": "mi ni ao xiu ang",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00395",
+   "text": "迷你奥尔·迪",
+   "typeText": "迷你奥尔迪",
+   "reading": "mi ni ao er di",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "min_00396",
+   "text": "迷你娜娜莫",
+   "typeText": "迷你娜娜莫",
+   "reading": "mi ni na na mo",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00397",
+   "text": "迷你巨人掌",
+   "typeText": "迷你巨人掌",
+   "reading": "mi ni ju ren zhang",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00398",
+   "text": "迷你巴雷特",
+   "typeText": "迷你巴雷特",
+   "reading": "mi ni ba lei te",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00399",
+   "text": "迷你帕罗姆",
+   "typeText": "迷你帕罗姆",
+   "reading": "mi ni pa luo mu",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00400",
+   "text": "迷你弗栗多",
+   "typeText": "迷你弗栗多",
+   "reading": "mi ni fu li duo",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00401",
+   "text": "迷你拉姆萨",
+   "typeText": "迷你拉姆萨",
+   "reading": "mi ni la mu sa",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00402",
+   "text": "迷你文森特",
+   "typeText": "迷你文森特",
+   "reading": "mi ni wen sen te",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00403",
+   "text": "迷你斯卡哈",
+   "typeText": "迷你斯卡哈",
+   "reading": "mi ni si ka ha",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00404",
+   "text": "迷你普利修",
+   "typeText": "迷你普利修",
+   "reading": "mi ni pu li xiu",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00405",
+   "text": "迷你普罗姆",
+   "typeText": "迷你普罗姆",
+   "reading": "mi ni pu luo mu",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00406",
+   "text": "迷你杜丽雅",
+   "typeText": "迷你杜丽雅",
+   "reading": "mi ni du li ya",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00407",
+   "text": "迷你欧米茄",
+   "typeText": "迷你欧米茄",
+   "reading": "mi ni ou mi jia",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00408",
+   "text": "迷你法夫纳",
+   "typeText": "迷你法夫纳",
+   "reading": "mi ni fa fu na",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00409",
+   "text": "迷你浮士德",
+   "typeText": "迷你浮士德",
+   "reading": "mi ni fu shi de",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00410",
+   "text": "迷你爱丽丝",
+   "typeText": "迷你爱丽丝",
+   "reading": "mi ni ai li si",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00411",
+   "text": "迷你特弥斯",
+   "typeText": "迷你特弥斯",
+   "reading": "mi ni te mi si",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00412",
+   "text": "迷你玛格奈",
+   "typeText": "迷你玛格奈",
+   "reading": "mi ni ma ge nai",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00413",
+   "text": "迷你莉迪亚",
+   "typeText": "迷你莉迪亚",
+   "reading": "mi ni li di ya",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00414",
+   "text": "迷你阿尔法",
+   "typeText": "迷你阿尔法",
+   "reading": "mi ni a er fa",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00415",
+   "text": "迷你阿泽玛",
+   "typeText": "迷你阿泽玛",
+   "reading": "mi ni a ze ma",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00416",
+   "text": "迷你阿莉塞",
+   "typeText": "迷你阿莉塞",
+   "reading": "mi ni a li sai",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00417",
+   "text": "迷你雅典娜",
+   "typeText": "迷你雅典娜",
+   "reading": "mi ni ya dian na",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00418",
+   "text": "迷你食肉者",
+   "typeText": "迷你食肉者",
+   "reading": "mi ni shi rou zhe",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00419",
+   "text": "迷你高贝扎",
+   "typeText": "迷你高贝扎",
+   "reading": "mi ni gao bei zha",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00420",
+   "text": "迷你鲁纳尔",
+   "typeText": "迷你鲁纳尔",
+   "reading": "mi ni lu na er",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00421",
+   "text": "迷你鲶鱼精",
+   "typeText": "迷你鲶鱼精",
+   "reading": "mi ni nian yu jing",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00422",
+   "text": "遮光器土偶",
+   "typeText": "遮光器土偶",
+   "reading": "zhe guang qi tu ou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00423",
+   "text": "金曦绿茵号",
+   "typeText": "金曦绿茵号",
+   "reading": "jin xi lv yin hao",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00424",
+   "text": "金绿宝石兽",
+   "typeText": "金绿宝石兽",
+   "reading": "jin lv bao shi shou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00425",
+   "text": "长须小黑豹",
+   "typeText": "长须小黑豹",
+   "reading": "zhang xu xiao hei bao",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00426",
+   "text": "阿尼玛之形",
+   "typeText": "阿尼玛之形",
+   "reading": "a ni ma zhi xing",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00427",
+   "text": "阿难陀玩偶",
+   "typeText": "阿难陀玩偶",
+   "reading": "a nan tuo wan ou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00428",
+   "text": "阿马罗宝宝",
+   "typeText": "阿马罗宝宝",
+   "reading": "a ma luo bao bao",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00429",
+   "text": "隆卡的水蛇？",
+   "typeText": "隆卡的水蛇",
+   "reading": "long ka de shui she",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "min_00430",
+   "text": "香托托人偶",
+   "typeText": "香托托人偶",
+   "reading": "xiang tuo tuo ren ou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00431",
+   "text": "魔界花骨朵",
+   "typeText": "魔界花骨朵",
+   "reading": "mo jie hua gu duo",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00432",
+   "text": "鲨鱼指挥官",
+   "typeText": "鲨鱼指挥官",
+   "reading": "sha yu zhi hui guan",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00433",
+   "text": "鹭鹰龙宝宝",
+   "typeText": "鹭鹰龙宝宝",
+   "reading": "lu ying long bao bao",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00434",
+   "text": "黄金塔罗斯",
+   "typeText": "黄金塔罗斯",
+   "reading": "huang jin ta luo si",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00435",
+   "text": "黄金大河狸",
+   "typeText": "黄金大河狸",
+   "reading": "huang jin da he li",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00436",
+   "text": "黄金恰塔号",
+   "typeText": "黄金恰塔号",
+   "reading": "huang jin qia ta hao",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00437",
+   "text": "黑巧儿信差",
+   "typeText": "黑巧儿信差",
+   "reading": "hei qiao er xin chai",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00438",
+   "text": "不说话的蜂鸟",
+   "typeText": "不说话的蜂鸟",
+   "reading": "bu shuo hua de feng niao",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00439",
+   "text": "伊克西翁玩偶",
+   "typeText": "伊克西翁玩偶",
+   "reading": "yi ke xi weng wan ou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00440",
+   "text": "伊弗利特之形",
+   "typeText": "伊弗利特之形",
+   "reading": "yi fu li te zhi xing",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00441",
+   "text": "佐迪亚克偶像",
+   "typeText": "佐迪亚克偶像",
+   "reading": "zuo di ya ke ou xiang",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00442",
+   "text": "冒险者野餐篮",
+   "typeText": "冒险者野餐篮",
+   "reading": "mao xian zhe ye can lan",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00443",
+   "text": "利维亚桑之形",
+   "typeText": "利维亚桑之形",
+   "reading": "li wei ya sang zhi xing",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00444",
+   "text": "加提卡小叶灵",
+   "typeText": "加提卡小叶灵",
+   "reading": "jia ti ka xiao ye ling",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00445",
+   "text": "午马独角幼兽",
+   "typeText": "午马独角幼兽",
+   "reading": "wu ma du jiao you shou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00446",
+   "text": "南方度假獭獭",
+   "typeText": "南方度假獭獭",
+   "reading": "nan fang du jia ta ta",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00447",
+   "text": "原型恐慌装甲",
+   "typeText": "原型恐慌装甲",
+   "reading": "yuan xing kong huang zhuang jia",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00448",
+   "text": "发条双塔尼亚",
+   "typeText": "发条双塔尼亚",
+   "reading": "fa tiao shuang ta ni ya",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00449",
+   "text": "发条巴哈姆特",
+   "typeText": "发条巴哈姆特",
+   "reading": "fa tiao ba ha mu te",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00450",
+   "text": "可幽可幽玩偶",
+   "typeText": "可幽可幽玩偶",
+   "reading": "ke you ke you wan ou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00451",
+   "text": "吉祥天女之形",
+   "typeText": "吉祥天女之形",
+   "reading": "ji xiang tian nv zhi xing",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00452",
+   "text": "地灵2号娃娃",
+   "typeText": "地灵2号娃娃",
+   "reading": "di ling 2 hao wa wa",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "min_00453",
+   "text": "塔鲁塔鲁人偶",
+   "typeText": "塔鲁塔鲁人偶",
+   "reading": "ta lu ta lu ren ou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00454",
+   "text": "大哥布林人偶",
+   "typeText": "大哥布林人偶",
+   "reading": "da ge bu lin ren ou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00455",
+   "text": "奇塔利的水蛇？",
+   "typeText": "奇塔利的水蛇",
+   "reading": "qi ta li de shui she",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "min_00456",
+   "text": "小刻耳柏洛斯",
+   "typeText": "小刻耳柏洛斯",
+   "reading": "xiao ke er bai luo si",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00457",
+   "text": "小小冰海天使",
+   "typeText": "小小冰海天使",
+   "reading": "xiao xiao bing hai tian shi",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00458",
+   "text": "小小艾奇德娜",
+   "typeText": "小小艾奇德娜",
+   "reading": "xiao xiao ai qi de na",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00459",
+   "text": "小小阿托莫斯",
+   "typeText": "小小阿托莫斯",
+   "reading": "xiao xiao a tuo mo si",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00460",
+   "text": "尤卡巨人玩偶",
+   "typeText": "尤卡巨人玩偶",
+   "reading": "you ka ju ren wan ou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00461",
+   "text": "尼姆乌洛萨帕",
+   "typeText": "尼姆乌洛萨帕",
+   "reading": "ni mu wu luo sa pa",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00462",
+   "text": "巧儿海陆行鸟",
+   "typeText": "巧儿海陆行鸟",
+   "reading": "qiao er hai lu xing niao",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00463",
+   "text": "巧儿黑陆行鸟",
+   "typeText": "巧儿黑陆行鸟",
+   "reading": "qiao er hei lu xing niao",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00464",
+   "text": "幻影亡灵法师",
+   "typeText": "幻影亡灵法师",
+   "reading": "huan ying wang ling fa shi",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00465",
+   "text": "悌阳象族人偶",
+   "typeText": "悌阳象族人偶",
+   "reading": "ti yang xiang zu ren ou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00466",
+   "text": "拉拉队小姑娘",
+   "typeText": "拉拉队小姑娘",
+   "reading": "la la dui xiao gu niang",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00467",
+   "text": "新型迷你劳班",
+   "typeText": "新型迷你劳班",
+   "reading": "xin xing mi ni lao ban",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00468",
+   "text": "新型迷你夕雾",
+   "typeText": "新型迷你夕雾",
+   "reading": "xin xing mi ni xi wu",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00469",
+   "text": "无头骑士模型",
+   "typeText": "无头骑士模型",
+   "reading": "wu tou qi shi mo xing",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00470",
+   "text": "无齿翼龙幼崽",
+   "typeText": "无齿翼龙幼崽",
+   "reading": "wu chi yi long you zai",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00471",
+   "text": "明灯天王之形",
+   "typeText": "明灯天王之形",
+   "reading": "ming deng tian wang zhi xing",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00472",
+   "text": "朱雀机关人偶",
+   "typeText": "朱雀机关人偶",
+   "reading": "zhu que ji guan ren ou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00473",
+   "text": "极合金正义号",
+   "typeText": "极合金正义号",
+   "reading": "ji he jin zheng yi hao",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00474",
+   "text": "格雷姆林宝宝",
+   "typeText": "格雷姆林宝宝",
+   "reading": "ge lei mu lin bao bao",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00475",
+   "text": "洛洛洛特雪精",
+   "typeText": "洛洛洛特雪精",
+   "reading": "luo luo luo te xue jing",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00476",
+   "text": "烹调猴面雀儿",
+   "typeText": "烹调猴面雀儿",
+   "reading": "peng tiao hou mian que er",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00477",
+   "text": "红电气石神兵",
+   "typeText": "红电气石神兵",
+   "reading": "hong dian qi shi shen bing",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00478",
+   "text": "绿电气石神兵",
+   "typeText": "绿电气石神兵",
+   "reading": "lv dian qi shi shen bing",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00479",
+   "text": "自走人偶2B",
+   "typeText": "自走人偶2B",
+   "reading": "zi zou ren ou 2B",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "min_00480",
+   "text": "自走人偶2P",
+   "typeText": "自走人偶2P",
+   "reading": "zi zou ren ou 2P",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "min_00481",
+   "text": "自走人偶9S",
+   "typeText": "自走人偶9S",
+   "reading": "zi zou ren ou 9S",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "min_00482",
+   "text": "自走人偶妈妈",
+   "typeText": "自走人偶妈妈",
+   "reading": "zi zou ren ou ma ma",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00483",
+   "text": "艾德薇雅人偶",
+   "typeText": "艾德薇雅人偶",
+   "reading": "ai de wei ya ren ou",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00484",
+   "text": "蒸汽飞空獭獭",
+   "typeText": "蒸汽飞空獭獭",
+   "reading": "zheng qi fei kong ta ta",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00485",
+   "text": "衣匠猴面雀儿",
+   "typeText": "衣匠猴面雀儿",
+   "reading": "yi jiang hou mian que er",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00486",
+   "text": "袖珍梅尔维布",
+   "typeText": "袖珍梅尔维布",
+   "reading": "xiu zhen mei er wei bu",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00487",
+   "text": "西德尼亚丘灵",
+   "typeText": "西德尼亚丘灵",
+   "reading": "xi de ni ya qiu ling",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00488",
+   "text": "贝希摩斯宝宝",
+   "typeText": "贝希摩斯宝宝",
+   "reading": "bei xi mo si bao bao",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00489",
+   "text": "轮式工程小车",
+   "typeText": "轮式工程小车",
+   "reading": "lun shi gong cheng xiao che",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00490",
+   "text": "辅助机054",
+   "typeText": "辅助机054",
+   "reading": "fu zhu ji 054",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "min_00491",
+   "text": "辅助机316",
+   "typeText": "辅助机316",
+   "reading": "fu zhu ji 316",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "min_00492",
+   "text": "迷你于里昂热",
+   "typeText": "迷你于里昂热",
+   "reading": "mi ni yu li ang re",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00493",
+   "text": "迷你亚历山大",
+   "typeText": "迷你亚历山大",
+   "reading": "mi ni ya li shan da",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00494",
+   "text": "迷你冰之巫女",
+   "typeText": "迷你冰之巫女",
+   "reading": "mi ni bing zhi wu nv",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00495",
+   "text": "迷你古鲁加加",
+   "typeText": "迷你古鲁加加",
+   "reading": "mi ni gu lu jia jia",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00496",
+   "text": "迷你吉尔伯特",
+   "typeText": "迷你吉尔伯特",
+   "reading": "mi ni ji er bo te",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00497",
+   "text": "迷你埃伦维尔",
+   "typeText": "迷你埃伦维尔",
+   "reading": "mi ni ai lun wei er",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00498",
+   "text": "迷你奥尔什方",
+   "typeText": "迷你奥尔什方",
+   "reading": "mi ni ao er shen fang",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00499",
+   "text": "迷你富尔什诺",
+   "typeText": "迷你富尔什诺",
+   "reading": "mi ni fu er shen nuo",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00500",
+   "text": "迷你尼德霍格",
+   "typeText": "迷你尼德霍格",
+   "reading": "mi ni ni de huo ge",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00501",
+   "text": "迷你工程小车",
+   "typeText": "迷你工程小车",
+   "reading": "mi ni gong cheng xiao che",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00502",
+   "text": "迷你帕帕力莫",
+   "typeText": "迷你帕帕力莫",
+   "reading": "mi ni pa pa li mo",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00503",
+   "text": "迷你戈德伯特",
+   "typeText": "迷你戈德伯特",
+   "reading": "mi ni ge de bo te",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00504",
+   "text": "迷你敏菲利亚",
+   "typeText": "迷你敏菲利亚",
+   "reading": "mi ni min fei li ya",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00505",
+   "text": "迷你格林瓦特",
+   "typeText": "迷你格林瓦特",
+   "reading": "mi ni ge lin wa te",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00506",
+   "text": "迷你桑克瑞德",
+   "typeText": "迷你桑克瑞德",
+   "reading": "mi ni sang ke rui de",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00507",
+   "text": "迷你欧米茄F",
+   "typeText": "迷你欧米茄F",
+   "reading": "mi ni ou mi jia F",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "min_00508",
+   "text": "迷你欧米茄M",
+   "typeText": "迷你欧米茄M",
+   "reading": "mi ni ou mi jia M",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "min_00509",
+   "text": "迷你武装重甲",
+   "typeText": "迷你武装重甲",
+   "reading": "mi ni wu zhuang zhong jia",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00510",
+   "text": "迷你艾多纽斯",
+   "typeText": "迷你艾多纽斯",
+   "reading": "mi ni ai duo niu si",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00511",
+   "text": "迷你艾默里克",
+   "typeText": "迷你艾默里克",
+   "reading": "mi ni ai mo li ke",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00512",
+   "text": "迷你莫艾石像",
+   "typeText": "迷你莫艾石像",
+   "reading": "mi ni mo ai shi xiang",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00513",
+   "text": "迷你菲奥·乌儿",
+   "typeText": "迷你菲奥乌儿",
+   "reading": "mi ni fei ao wu er",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "min_00514",
+   "text": "迷你贡希尔德",
+   "typeText": "迷你贡希尔德",
+   "reading": "mi ni gong xi er de",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00515",
+   "text": "迷你赤魔法师",
+   "typeText": "迷你赤魔法师",
+   "reading": "mi ni chi mo fa shi",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00516",
+   "text": "迷你路易索瓦",
+   "typeText": "迷你路易索瓦",
+   "reading": "mi ni lu yi suo wa",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00517",
+   "text": "迷你阿尔博特",
+   "typeText": "迷你阿尔博特",
+   "reading": "mi ni a er bo te",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00518",
+   "text": "迷你阿尔菲诺",
+   "typeText": "迷你阿尔菲诺",
+   "reading": "mi ni a er fei nuo",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00519",
+   "text": "迷你雅·修特拉",
+   "typeText": "迷你雅修特拉",
+   "reading": "mi ni ya xiu te la",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "min_00520",
+   "text": "铁皮哨兵T1",
+   "typeText": "铁皮哨兵T1",
+   "reading": "tie pi shao bing T1",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "min_00521",
+   "text": "铁皮士兵S3",
+   "typeText": "铁皮士兵S3",
+   "reading": "tie pi shi bing S3",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "min_00522",
+   "text": "集成奥密克戎",
+   "typeText": "集成奥密克戎",
+   "reading": "ji cheng ao mi ke rong",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00523",
+   "text": "霍啪栌的水蛇？",
+   "typeText": "霍啪栌的水蛇",
+   "reading": "huo pa lu de shui she",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "min_00524",
+   "text": "非正宗调查员",
+   "typeText": "非正宗调查员",
+   "reading": "fei zheng zong diao cha yuan",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00525",
+   "text": "须佐之男之形",
+   "typeText": "须佐之男之形",
+   "reading": "xu zuo zhi nan zhi xing",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00526",
+   "text": "鮣鱼级潜水艇",
+   "typeText": "鮣鱼级潜水艇",
+   "reading": "yin yu ji qian shui ting",
+   "category": "minions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "min_00527",
+   "text": "7号蒸汽小战车",
+   "typeText": "7号蒸汽小战车",
+   "reading": "7 hao zheng qi xiao zhan che",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "min_00528",
+   "text": "东方的白色土龙？",
+   "typeText": "东方的白色土龙",
+   "reading": "dong fang de bai se tu long",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "min_00529",
+   "text": "佩鲁佩鲁族玩偶",
+   "typeText": "佩鲁佩鲁族玩偶",
+   "reading": "pei lu pei lu zu wan ou",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00530",
+   "text": "发条深红驱逐者",
+   "typeText": "发条深红驱逐者",
+   "reading": "fa tiao shen hong qu zhu zhe",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00531",
+   "text": "发条蔚蓝驱逐者",
+   "typeText": "发条蔚蓝驱逐者",
+   "reading": "fa tiao wei lan qu zhu zhe",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00532",
+   "text": "小小吉尔伽美什",
+   "typeText": "小小吉尔伽美什",
+   "reading": "xiao xiao ji er ga mei shen",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00533",
+   "text": "巧儿陆行鸟王子",
+   "typeText": "巧儿陆行鸟王子",
+   "reading": "qiao er lu xing niao wang zi",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00534",
+   "text": "开心彩蛋幸福兔",
+   "typeText": "开心彩蛋幸福兔",
+   "reading": "kai xin cai dan xing fu tu",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00535",
+   "text": "得到宽恕的仇恨",
+   "typeText": "得到宽恕的仇恨",
+   "reading": "de dao kuan shu de chou hen",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00536",
+   "text": "拉诺西亚短毛猫",
+   "typeText": "拉诺西亚短毛猫",
+   "reading": "la nuo xi ya duan mao mao",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00537",
+   "text": "斯卡拉乌洛萨帕",
+   "typeText": "斯卡拉乌洛萨帕",
+   "reading": "si ka la wu luo sa pa",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00538",
+   "text": "新型迷你可露儿",
+   "typeText": "新型迷你可露儿",
+   "reading": "xin xing mi ni ke lu er",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00539",
+   "text": "新型迷你塔塔露",
+   "typeText": "新型迷你塔塔露",
+   "reading": "xin xing mi ni ta ta lu",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00540",
+   "text": "新型迷你阿莉塞",
+   "typeText": "新型迷你阿莉塞",
+   "reading": "xin xing mi ni a li sai",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00541",
+   "text": "月面仙人刺王子",
+   "typeText": "月面仙人刺王子",
+   "reading": "yue mian xian ren ci wang zi",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00542",
+   "text": "格雷布洛弗玩偶",
+   "typeText": "格雷布洛弗玩偶",
+   "reading": "ge lei bu luo fu wan ou",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00543",
+   "text": "诸神黄昏号模型",
+   "typeText": "诸神黄昏号模型",
+   "reading": "zhu shen huang hun hao mo xing",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00544",
+   "text": "辰龙巧儿陆行鸟",
+   "typeText": "辰龙巧儿陆行鸟",
+   "reading": "chen long qiao er lu xing niao",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00545",
+   "text": "迷你乌克·拉玛特",
+   "typeText": "迷你乌克拉玛特",
+   "reading": "mi ni wu ke la ma te",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "min_00546",
+   "text": "迷你埃尔德纳修",
+   "typeText": "迷你埃尔德纳修",
+   "reading": "mi ni ai er de na xiu",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00547",
+   "text": "迷你埃斯蒂尼安",
+   "typeText": "迷你埃斯蒂尼安",
+   "reading": "mi ni ai si di ni an",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00548",
+   "text": "迷你奥尔特罗斯",
+   "typeText": "迷你奥尔特罗斯",
+   "reading": "mi ni ao er te luo si",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00549",
+   "text": "迷你弗利奥尼尔",
+   "typeText": "迷你弗利奥尼尔",
+   "reading": "mi ni fu li ao ni er",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00550",
+   "text": "迷你斯卡米留尼",
+   "typeText": "迷你斯卡米留尼",
+   "reading": "mi ni si ka mi liu ni",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00551",
+   "text": "迷你穆恩布瑞达",
+   "typeText": "迷你穆恩布瑞达",
+   "reading": "mi ni mu en bu rui da",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00552",
+   "text": "迷你艾克斯迪司",
+   "typeText": "迷你艾克斯迪司",
+   "reading": "mi ni ai ke si di si",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00553",
+   "text": "道士莫古力娃娃",
+   "typeText": "道士莫古力娃娃",
+   "reading": "dao shi mo gu li wa wa",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00554",
+   "text": "邮差莫古力娃娃",
+   "typeText": "邮差莫古力娃娃",
+   "reading": "you chai mo gu li wa wa",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00555",
+   "text": "验证体安布罗斯",
+   "typeText": "验证体安布罗斯",
+   "reading": "yan zheng ti an bu luo si",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00556",
+   "text": "魔导先锋追踪型",
+   "typeText": "魔导先锋追踪型",
+   "reading": "mo dao xian feng zhui zong xing",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00557",
+   "text": "魔导猎手追踪型",
+   "typeText": "魔导猎手追踪型",
+   "reading": "mo dao lie shou zhui zong xing",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00558",
+   "text": "卡洛菲斯提莉玩偶",
+   "typeText": "卡洛菲斯提莉玩偶",
+   "reading": "ka luo fei si ti li wan ou",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00559",
+   "text": "双蛇党巧儿陆行鸟",
+   "typeText": "双蛇党巧儿陆行鸟",
+   "reading": "shuang she dang qiao er lu xing niao",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00560",
+   "text": "密林人偶003号",
+   "typeText": "密林人偶003号",
+   "reading": "mi lin ren ou 003 hao",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "min_00561",
+   "text": "恒辉队巧儿陆行鸟",
+   "typeText": "恒辉队巧儿陆行鸟",
+   "reading": "heng hui dui qiao er lu xing niao",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00562",
+   "text": "新型迷你于里昂热",
+   "typeText": "新型迷你于里昂热",
+   "reading": "xin xing mi ni yu li ang re",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00563",
+   "text": "新型迷你桑克瑞德",
+   "typeText": "新型迷你桑克瑞德",
+   "reading": "xin xing mi ni sang ke rui de",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00564",
+   "text": "新型迷你雅·修特拉",
+   "typeText": "新型迷你雅修特拉",
+   "reading": "xin xing mi ni ya xiu te la",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "min_00565",
+   "text": "梅加斯三姐妹之形",
+   "typeText": "梅加斯三姐妹之形",
+   "reading": "mei jia si san jie mei zhi xing",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00566",
+   "text": "皇家贝希摩斯宝宝",
+   "typeText": "皇家贝希摩斯宝宝",
+   "reading": "huang jia bei xi mo si bao bao",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00567",
+   "text": "碧海人偶003号",
+   "typeText": "碧海人偶003号",
+   "reading": "bi hai ren ou 003 hao",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "min_00568",
+   "text": "红色自走维京人偶",
+   "typeText": "红色自走维京人偶",
+   "reading": "hong se zi zou wei jing ren ou",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00569",
+   "text": "自律型魔导浮游炮",
+   "typeText": "自律型魔导浮游炮",
+   "reading": "zi lv xing mo dao fu you pao",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00570",
+   "text": "自走人偶001号",
+   "typeText": "自走人偶001号",
+   "reading": "zi zou ren ou 001 hao",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "min_00571",
+   "text": "蓝色自走维京人偶",
+   "typeText": "蓝色自走维京人偶",
+   "reading": "lan se zi zou wei jing ren ou",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00572",
+   "text": "达因斯莱瓦追踪型",
+   "typeText": "达因斯莱瓦追踪型",
+   "reading": "da yin si lai wa zhui zong xing",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00573",
+   "text": "迷你巴尔巴莉希娅",
+   "typeText": "迷你巴尔巴莉希娅",
+   "reading": "mi ni ba er ba li xi ya",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00574",
+   "text": "迷你赤红XIII",
+   "typeText": "迷你赤红XIII",
+   "reading": "mi ni chi hong XIII",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "min_00575",
+   "text": "迷你赫拉斯瓦尔格",
+   "typeText": "迷你赫拉斯瓦尔格",
+   "reading": "mi ni he la si wa er ge",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00576",
+   "text": "魔导复仇者追踪型",
+   "typeText": "魔导复仇者追踪型",
+   "reading": "mo dao fu chou zhe zhui zong xing",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00577",
+   "text": "黄沙人偶003号",
+   "typeText": "黄沙人偶003号",
+   "reading": "huang sha ren ou 003 hao",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "min_00578",
+   "text": "黑涡团巧儿陆行鸟",
+   "typeText": "黑涡团巧儿陆行鸟",
+   "reading": "hei wo tuan qiao er lu xing niao",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00579",
+   "text": "发条红色哥布林坦克",
+   "typeText": "发条红色哥布林坦克",
+   "reading": "fa tiao hong se ge bu lin tan ke",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00580",
+   "text": "发条蓝色哥布林坦克",
+   "typeText": "发条蓝色哥布林坦克",
+   "reading": "fa tiao lan se ge bu lin tan ke",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00581",
+   "text": "新型迷你埃斯蒂尼安",
+   "typeText": "新型迷你埃斯蒂尼安",
+   "reading": "xin xing mi ni ai si di ni an",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00582",
+   "text": "魔导地狱潜者追踪型",
+   "typeText": "魔导地狱潜者追踪型",
+   "reading": "mo dao di yu qian zhe zhui zong xing",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00583",
+   "text": "希尔德拉级潜水艇P型",
+   "typeText": "希尔德拉级潜水艇P型",
+   "reading": "xi er de la ji qian shui ting P xing",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "min_00584",
+   "text": "迷你埃里克特翁尼亚斯",
+   "typeText": "迷你埃里克特翁尼亚斯",
+   "reading": "mi ni ai li ke te weng ni ya si",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "min_00585",
+   "text": "迷你第一世界雅·修特拉",
+   "typeText": "迷你第一世界雅修特拉",
+   "reading": "mi ni di yi shi jie ya xiu te la",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "min_00586",
+   "text": "究极战士G型MGSD模型",
+   "typeText": "究极战士G型MGSD模型",
+   "reading": "jiu ji zhan shi G xing MGSD mo xing",
+   "category": "minions",
+   "difficulty": 3,
+   "pure": false
+  }
+ ]
+}

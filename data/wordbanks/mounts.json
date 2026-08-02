@@ -1,0 +1,3194 @@
+{
+ "category": "mounts",
+ "label": "坐骑",
+ "count": 354,
+ "source": "thewakingsands/ffxiv-datamining-cn",
+ "entries": [
+  {
+   "id": "mnt_00001",
+   "text": "伊甸",
+   "typeText": "伊甸",
+   "reading": "yi dian",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00002",
+   "text": "凤凰",
+   "typeText": "凤凰",
+   "reading": "feng huang",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00003",
+   "text": "天马",
+   "typeText": "天马",
+   "reading": "tian ma",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00004",
+   "text": "巨魔",
+   "typeText": "巨魔",
+   "reading": "ju mo",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00005",
+   "text": "弓鲛",
+   "typeText": "弓鲛",
+   "reading": "gong jiao",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00006",
+   "text": "弦月",
+   "typeText": "弦月",
+   "reading": "xian yue",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00007",
+   "text": "影狼",
+   "typeText": "影狼",
+   "reading": "ying lang",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00008",
+   "text": "恐狼",
+   "typeText": "恐狼",
+   "reading": "kong lang",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00009",
+   "text": "战熊",
+   "typeText": "战熊",
+   "reading": "zhan xiong",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00010",
+   "text": "战狮",
+   "typeText": "战狮",
+   "reading": "zhan shi",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00011",
+   "text": "战虎",
+   "typeText": "战虎",
+   "reading": "zhan hu",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00012",
+   "text": "战豹",
+   "typeText": "战豹",
+   "reading": "zhan bao",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00013",
+   "text": "拉姆",
+   "typeText": "拉姆",
+   "reading": "la mu",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00014",
+   "text": "斑鳐",
+   "typeText": "斑鳐",
+   "reading": "ban yao",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00015",
+   "text": "斗熊",
+   "typeText": "斗熊",
+   "reading": "dou xiong",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00016",
+   "text": "斗狮",
+   "typeText": "斗狮",
+   "reading": "dou shi",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00017",
+   "text": "斗虎",
+   "typeText": "斗虎",
+   "reading": "dou hu",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00018",
+   "text": "斗豹",
+   "typeText": "斗豹",
+   "reading": "dou bao",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00019",
+   "text": "方舟",
+   "typeText": "方舟",
+   "reading": "fang zhou",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00020",
+   "text": "暴龙",
+   "typeText": "暴龙",
+   "reading": "bao long",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00021",
+   "text": "梦魇",
+   "typeText": "梦魇",
+   "reading": "meng yan",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00022",
+   "text": "永恒",
+   "typeText": "永恒",
+   "reading": "yong heng",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00023",
+   "text": "浪祖",
+   "typeText": "浪祖",
+   "reading": "lang zu",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00024",
+   "text": "海牛",
+   "typeText": "海牛",
+   "reading": "hai niu",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00025",
+   "text": "火龙",
+   "typeText": "火龙",
+   "reading": "huo long",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00026",
+   "text": "犀蜴",
+   "typeText": "犀蜴",
+   "reading": "xi yi",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00027",
+   "text": "犎牛",
+   "typeText": "犎牛",
+   "reading": "feng niu",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00028",
+   "text": "狮鹫",
+   "typeText": "狮鹫",
+   "reading": "shi jiu",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00029",
+   "text": "猫车",
+   "typeText": "猫车",
+   "reading": "mao che",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00030",
+   "text": "皮蒂",
+   "typeText": "皮蒂",
+   "reading": "pi di",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00031",
+   "text": "粉红",
+   "typeText": "粉红",
+   "reading": "fen hong",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00032",
+   "text": "绝地",
+   "typeText": "绝地",
+   "reading": "jue di",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00033",
+   "text": "羊驼",
+   "typeText": "羊驼",
+   "reading": "yang tuo",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00034",
+   "text": "老者",
+   "typeText": "老者",
+   "reading": "lao zhe",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00035",
+   "text": "胡鹰",
+   "typeText": "胡鹰",
+   "reading": "hu ying",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00036",
+   "text": "腕龙",
+   "typeText": "腕龙",
+   "reading": "wan long",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00037",
+   "text": "花人",
+   "typeText": "花人",
+   "reading": "hua ren",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00038",
+   "text": "轰天",
+   "typeText": "轰天",
+   "reading": "hong tian",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00039",
+   "text": "银牙",
+   "typeText": "银牙",
+   "reading": "yin ya",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00040",
+   "text": "雪人",
+   "typeText": "雪人",
+   "reading": "xue ren",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00041",
+   "text": "雷刚",
+   "typeText": "雷刚",
+   "reading": "lei gang",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00042",
+   "text": "须鲸",
+   "typeText": "须鲸",
+   "reading": "xu jing",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00043",
+   "text": "魔象",
+   "typeText": "魔象",
+   "reading": "mo xiang",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00044",
+   "text": "麒麟",
+   "typeText": "麒麟",
+   "reading": "qi lin",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00045",
+   "text": "三角龙",
+   "typeText": "三角龙",
+   "reading": "san jiao long",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00046",
+   "text": "乌勒尔",
+   "typeText": "乌勒尔",
+   "reading": "wu lei er",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00047",
+   "text": "优胜犬",
+   "typeText": "优胜犬",
+   "reading": "you sheng quan",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00048",
+   "text": "兵团虎",
+   "typeText": "兵团虎",
+   "reading": "bing tuan hu",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00049",
+   "text": "压迫者",
+   "typeText": "压迫者",
+   "reading": "ya po zhe",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00050",
+   "text": "叶大妖",
+   "typeText": "叶大妖",
+   "reading": "ye da yao",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00051",
+   "text": "呜噜怪",
+   "typeText": "呜噜怪",
+   "reading": "wu lu guai",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00052",
+   "text": "外勤机",
+   "typeText": "外勤机",
+   "reading": "wai qin ji",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00053",
+   "text": "大壳蟹",
+   "typeText": "大壳蟹",
+   "reading": "da ke xie",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00054",
+   "text": "大大柴",
+   "typeText": "大大柴",
+   "reading": "da da chai",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00055",
+   "text": "小鸣鼠",
+   "typeText": "小鸣鼠",
+   "reading": "xiao ming shu",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00056",
+   "text": "巫菲提",
+   "typeText": "巫菲提",
+   "reading": "wu fei ti",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00057",
+   "text": "恐爪龙",
+   "typeText": "恐爪龙",
+   "reading": "kong zhao long",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00058",
+   "text": "恶魔板",
+   "typeText": "恶魔板",
+   "reading": "e mo ban",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00059",
+   "text": "托加尔",
+   "typeText": "托加尔",
+   "reading": "tuo jia er",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00060",
+   "text": "拟鸟枝",
+   "typeText": "拟鸟枝",
+   "reading": "ni niao zhi",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00061",
+   "text": "星芒熊",
+   "typeText": "星芒熊",
+   "reading": "xing mang xiong",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00062",
+   "text": "极地熊",
+   "typeText": "极地熊",
+   "reading": "ji di xiong",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00063",
+   "text": "格拉尼",
+   "typeText": "格拉尼",
+   "reading": "ge la ni",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00064",
+   "text": "欧米茄",
+   "typeText": "欧米茄",
+   "reading": "ou mi jia",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00065",
+   "text": "气垫船",
+   "typeText": "气垫船",
+   "reading": "qi dian chuan",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00066",
+   "text": "河马车",
+   "typeText": "河马车",
+   "reading": "he ma che",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00067",
+   "text": "法厄同",
+   "typeText": "法厄同",
+   "reading": "fa e tong",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00068",
+   "text": "渡渡鸟",
+   "typeText": "渡渡鸟",
+   "reading": "du du niao",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00069",
+   "text": "火巨人",
+   "typeText": "火巨人",
+   "reading": "huo ju ren",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00070",
+   "text": "炎灵兽",
+   "typeText": "炎灵兽",
+   "reading": "yan ling shou",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00071",
+   "text": "炸药怪",
+   "typeText": "炸药怪",
+   "reading": "zha yao guai",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00072",
+   "text": "独角兽",
+   "typeText": "独角兽",
+   "reading": "du jiao shou",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00073",
+   "text": "猪大仙",
+   "typeText": "猪大仙",
+   "reading": "zhu da xian",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00074",
+   "text": "猫大胖",
+   "typeText": "猫大胖",
+   "reading": "mao da pang",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00075",
+   "text": "王冠号",
+   "typeText": "王冠号",
+   "reading": "wang guan hao",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00076",
+   "text": "王孔雀",
+   "typeText": "王孔雀",
+   "reading": "wang kong que",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00077",
+   "text": "瓣齿鲨",
+   "typeText": "瓣齿鲨",
+   "reading": "ban chi sha",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00078",
+   "text": "真狮鹫",
+   "typeText": "真狮鹫",
+   "reading": "zhen shi jiu",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00079",
+   "text": "破魔艇",
+   "typeText": "破魔艇",
+   "reading": "po mo ting",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00080",
+   "text": "硕山羊",
+   "typeText": "硕山羊",
+   "reading": "shuo shan yang",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00081",
+   "text": "神灯灵",
+   "typeText": "神灯灵",
+   "reading": "shen deng ling",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00082",
+   "text": "筋斗云",
+   "typeText": "筋斗云",
+   "reading": "jin dou yun",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00083",
+   "text": "精金龟",
+   "typeText": "精金龟",
+   "reading": "jing jin gui",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00084",
+   "text": "缪·缪咻",
+   "typeText": "缪缪咻",
+   "reading": "mou mou xiu",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": false
+  },
+  {
+   "id": "mnt_00085",
+   "text": "羽衣精",
+   "typeText": "羽衣精",
+   "reading": "yu yi jing",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00086",
+   "text": "脚夫鸭",
+   "typeText": "脚夫鸭",
+   "reading": "jiao fu ya",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00087",
+   "text": "腾云蛇",
+   "typeText": "腾云蛇",
+   "reading": "teng yun she",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00088",
+   "text": "艾尔·图",
+   "typeText": "艾尔图",
+   "reading": "ai er tu",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": false
+  },
+  {
+   "id": "mnt_00089",
+   "text": "芬里尔",
+   "typeText": "芬里尔",
+   "reading": "fen li er",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00090",
+   "text": "荡悠悠",
+   "typeText": "荡悠悠",
+   "reading": "dang you you",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00091",
+   "text": "荣耀号",
+   "typeText": "荣耀号",
+   "reading": "rong yao hao",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00092",
+   "text": "菲尔亚",
+   "typeText": "菲尔亚",
+   "reading": "fei er ya",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00093",
+   "text": "贝努鸟",
+   "typeText": "贝努鸟",
+   "reading": "bei nu niao",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00094",
+   "text": "赤兔马",
+   "typeText": "赤兔马",
+   "reading": "chi tu ma",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00095",
+   "text": "轮入道",
+   "typeText": "轮入道",
+   "reading": "lun ru dao",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00096",
+   "text": "酒桶刺",
+   "typeText": "酒桶刺",
+   "reading": "jiu tong ci",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00097",
+   "text": "醋蝎龙",
+   "typeText": "醋蝎龙",
+   "reading": "cu xie long",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00098",
+   "text": "金斗云",
+   "typeText": "金斗云",
+   "reading": "jin dou yun",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00099",
+   "text": "长绒猫",
+   "typeText": "长绒猫",
+   "reading": "zhang rong mao",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00100",
+   "text": "长须豹",
+   "typeText": "长须豹",
+   "reading": "zhang xu bao",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00101",
+   "text": "长颈驼",
+   "typeText": "长颈驼",
+   "reading": "zhang jing tuo",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00102",
+   "text": "阿里翁",
+   "typeText": "阿里翁",
+   "reading": "a li weng",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00103",
+   "text": "阿马罗",
+   "typeText": "阿马罗",
+   "reading": "a ma luo",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00104",
+   "text": "雄羚羊",
+   "typeText": "雄羚羊",
+   "reading": "xiong ling yang",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00105",
+   "text": "雌羚羊",
+   "typeText": "雌羚羊",
+   "reading": "ci ling yang",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00106",
+   "text": "风火轮",
+   "typeText": "风火轮",
+   "reading": "feng huo lun",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00107",
+   "text": "风火锅",
+   "typeText": "风火锅",
+   "reading": "feng huo guo",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00108",
+   "text": "飞隼号",
+   "typeText": "飞隼号",
+   "reading": "fei sun hao",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00109",
+   "text": "食蛋兽",
+   "typeText": "食蛋兽",
+   "reading": "shi dan shou",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00110",
+   "text": "魔界花",
+   "typeText": "魔界花",
+   "reading": "mo jie hua",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00111",
+   "text": "鹭鹰龙",
+   "typeText": "鹭鹰龙",
+   "reading": "lu ying long",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00112",
+   "text": "黑天马",
+   "typeText": "黑天马",
+   "reading": "hei tian ma",
+   "category": "mounts",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "mnt_00113",
+   "text": "九尾神威",
+   "typeText": "九尾神威",
+   "reading": "jiu wei shen wei",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00114",
+   "text": "仙子玲龙",
+   "typeText": "仙子玲龙",
+   "reading": "xian zi ling long",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00115",
+   "text": "仙术熊猫",
+   "typeText": "仙术熊猫",
+   "reading": "xian shu xiong mao",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00116",
+   "text": "伊克西翁",
+   "typeText": "伊克西翁",
+   "reading": "yi ke xi weng",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00117",
+   "text": "伍伽岩兵",
+   "typeText": "伍伽岩兵",
+   "reading": "wu ga yan bing",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00118",
+   "text": "光之玲龙",
+   "typeText": "光之玲龙",
+   "reading": "guang zhi ling long",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00119",
+   "text": "光耀吊灯",
+   "typeText": "光耀吊灯",
+   "reading": "guang yao diao deng",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00120",
+   "text": "兵队火蛟",
+   "typeText": "兵队火蛟",
+   "reading": "bing dui huo jiao",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00121",
+   "text": "冥鬼之眼",
+   "typeText": "冥鬼之眼",
+   "reading": "ming gui zhi yan",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00122",
+   "text": "凯吉古拉",
+   "typeText": "凯吉古拉",
+   "reading": "kai ji gu la",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00123",
+   "text": "加百列α",
+   "typeText": "加百列α",
+   "reading": "jia bai lie α",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "mnt_00124",
+   "text": "半机器龟",
+   "typeText": "半机器龟",
+   "reading": "ban ji qi gui",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00125",
+   "text": "南瓜行者",
+   "typeText": "南瓜行者",
+   "reading": "nan gua xing zhe",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00126",
+   "text": "厉鬼猎鹰",
+   "typeText": "厉鬼猎鹰",
+   "reading": "li gui lie ying",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00127",
+   "text": "双塔尼亚",
+   "typeText": "双塔尼亚",
+   "reading": "shuang ta ni ya",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00128",
+   "text": "双蛇战马",
+   "typeText": "双蛇战马",
+   "reading": "shuang she zhan ma",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00129",
+   "text": "双足飞龙",
+   "typeText": "双足飞龙",
+   "reading": "shuang zu fei long",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00130",
+   "text": "古菩猩猩",
+   "typeText": "古菩猩猩",
+   "reading": "gu pu xing xing",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00131",
+   "text": "商贾神威",
+   "typeText": "商贾神威",
+   "reading": "shang gu shen wei",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00132",
+   "text": "圆桌猎鹰",
+   "typeText": "圆桌猎鹰",
+   "reading": "yuan zhuo lie ying",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00133",
+   "text": "圣光猞猁",
+   "typeText": "圣光猞猁",
+   "reading": "sheng guang she li",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00134",
+   "text": "大陆之眼",
+   "typeText": "大陆之眼",
+   "reading": "da lu zhi yan",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00135",
+   "text": "大陆行鸟",
+   "typeText": "大陆行鸟",
+   "reading": "da lu xing niao",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00136",
+   "text": "天灾之翼",
+   "typeText": "天灾之翼",
+   "reading": "tian zai zhi yi",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00137",
+   "text": "奇迹之翼",
+   "typeText": "奇迹之翼",
+   "reading": "qi ji zhi yi",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00138",
+   "text": "宇宙滑板",
+   "typeText": "宇宙滑板",
+   "reading": "yu zhou hua ban",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00139",
+   "text": "宇宙面像",
+   "typeText": "宇宙面像",
+   "reading": "yu zhou mian xiang",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00140",
+   "text": "守卫机蝎",
+   "typeText": "守卫机蝎",
+   "reading": "shou wei ji xie",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00141",
+   "text": "安登三世",
+   "typeText": "安登三世",
+   "reading": "an deng san shi",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00142",
+   "text": "安静蜂鸟",
+   "typeText": "安静蜂鸟",
+   "reading": "an jing feng niao",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00143",
+   "text": "尘世幻龙",
+   "typeText": "尘世幻龙",
+   "reading": "chen shi huan long",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00144",
+   "text": "希尔德拉",
+   "typeText": "希尔德拉",
+   "reading": "xi er de la",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00145",
+   "text": "幻奇猎鹰",
+   "typeText": "幻奇猎鹰",
+   "reading": "huan qi lie ying",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00146",
+   "text": "幻象闪电",
+   "typeText": "幻象闪电",
+   "reading": "huan xiang shan dian",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00147",
+   "text": "幽夜神威",
+   "typeText": "幽夜神威",
+   "reading": "you ye shen wei",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00148",
+   "text": "库阿库阿",
+   "typeText": "库阿库阿",
+   "reading": "ku a ku a",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00149",
+   "text": "建筑7号",
+   "typeText": "建筑7号",
+   "reading": "jian zhu 7 hao",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "mnt_00150",
+   "text": "强力机兵",
+   "typeText": "强力机兵",
+   "reading": "qiang li ji bing",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00151",
+   "text": "彩蛋系统",
+   "typeText": "彩蛋系统",
+   "reading": "cai dan xi tong",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00152",
+   "text": "怒武猎鹰",
+   "typeText": "怒武猎鹰",
+   "reading": "nu wu lie ying",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00153",
+   "text": "恐慌装甲",
+   "typeText": "恐慌装甲",
+   "reading": "kong huang zhuang jia",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00154",
+   "text": "恐甲蚂蜓",
+   "typeText": "恐甲蚂蜓",
+   "reading": "kong jia ma ting",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00155",
+   "text": "恒辉战马",
+   "typeText": "恒辉战马",
+   "reading": "heng hui zhan ma",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00156",
+   "text": "战争猎鹰",
+   "typeText": "战争猎鹰",
+   "reading": "zhan zheng lie ying",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00157",
+   "text": "护送系统",
+   "typeText": "护送系统",
+   "reading": "hu song xi tong",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00158",
+   "text": "提丰老师",
+   "typeText": "提丰老师",
+   "reading": "ti feng lao shi",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00159",
+   "text": "斧喙魔鸟",
+   "typeText": "斧喙魔鸟",
+   "reading": "fu hui mo niao",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00160",
+   "text": "无瑕玲龙",
+   "typeText": "无瑕玲龙",
+   "reading": "wu xia ling long",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00161",
+   "text": "无齿翼龙",
+   "typeText": "无齿翼龙",
+   "reading": "wu chi yi long",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00162",
+   "text": "星芒雪橇",
+   "typeText": "星芒雪橇",
+   "reading": "xing mang xue qiao",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00163",
+   "text": "暗夜烈马",
+   "typeText": "暗夜烈马",
+   "reading": "an ye lie ma",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00164",
+   "text": "暗影猞猁",
+   "typeText": "暗影猞猁",
+   "reading": "an ying she li",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00165",
+   "text": "暗影玲龙",
+   "typeText": "暗影玲龙",
+   "reading": "an ying ling long",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00166",
+   "text": "暗黑猎鹰",
+   "typeText": "暗黑猎鹰",
+   "reading": "an hei lie ying",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00167",
+   "text": "暗黑羽衣",
+   "typeText": "暗黑羽衣",
+   "reading": "an hei yu yi",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00168",
+   "text": "暗黑领域",
+   "typeText": "暗黑领域",
+   "reading": "an hei ling yu",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00169",
+   "text": "朱焰神威",
+   "typeText": "朱焰神威",
+   "reading": "zhu yan shen wei",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00170",
+   "text": "机巧莲座",
+   "typeText": "机巧莲座",
+   "reading": "ji qiao lian zuo",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00171",
+   "text": "极乐神威",
+   "typeText": "极乐神威",
+   "reading": "ji le shen wei",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00172",
+   "text": "梦幻神威",
+   "typeText": "梦幻神威",
+   "reading": "meng huan shen wei",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00173",
+   "text": "死暗之翼",
+   "typeText": "死暗之翼",
+   "reading": "si an zhi yi",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00174",
+   "text": "永恒之翼",
+   "typeText": "永恒之翼",
+   "reading": "yong heng zhi yi",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00175",
+   "text": "永暗猞猁",
+   "typeText": "永暗猞猁",
+   "reading": "yong an she li",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00176",
+   "text": "浓雾之翼",
+   "typeText": "浓雾之翼",
+   "reading": "nong wu zhi yi",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00177",
+   "text": "浮空系统",
+   "typeText": "浮空系统",
+   "reading": "fu kong xi tong",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00178",
+   "text": "海岛水牛",
+   "typeText": "海岛水牛",
+   "reading": "hai dao shui niu",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00179",
+   "text": "深渊猞猁",
+   "typeText": "深渊猞猁",
+   "reading": "shen yuan she li",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00180",
+   "text": "火箭飞拳",
+   "typeText": "火箭飞拳",
+   "reading": "huo jian fei quan",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00181",
+   "text": "炀火猞猁",
+   "typeText": "炀火猞猁",
+   "reading": "yang huo she li",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00182",
+   "text": "煞风猞猁",
+   "typeText": "煞风猞猁",
+   "reading": "sha feng she li",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00183",
+   "text": "爆弹吊椅",
+   "typeText": "爆弹吊椅",
+   "reading": "bao dan diao yi",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00184",
+   "text": "狂欢神威",
+   "typeText": "狂欢神威",
+   "reading": "kuang huan shen wei",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00185",
+   "text": "狮子王子",
+   "typeText": "狮子王子",
+   "reading": "shi zi wang zi",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00186",
+   "text": "猴面爸爸",
+   "typeText": "猴面爸爸",
+   "reading": "hou mian ba ba",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00187",
+   "text": "白云猎鹰",
+   "typeText": "白云猎鹰",
+   "reading": "bai yun lie ying",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00188",
+   "text": "白化黑羊",
+   "typeText": "白化黑羊",
+   "reading": "bai hua hei yang",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00189",
+   "text": "白帝神威",
+   "typeText": "白帝神威",
+   "reading": "bai di shen wei",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00190",
+   "text": "睿智猎鹰",
+   "typeText": "睿智猎鹰",
+   "reading": "rui zhi lie ying",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00191",
+   "text": "矮人战车",
+   "typeText": "矮人战车",
+   "reading": "ai ren zhan che",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00192",
+   "text": "空军装甲",
+   "typeText": "空军装甲",
+   "reading": "kong jun zhuang jia",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00193",
+   "text": "糖豆犀牛",
+   "typeText": "糖豆犀牛",
+   "reading": "tang dou xi niu",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00194",
+   "text": "维斯帕号",
+   "typeText": "维斯帕号",
+   "reading": "wei si pa hao",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00195",
+   "text": "美花帕拉",
+   "typeText": "美花帕拉",
+   "reading": "mei hua pa la",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00196",
+   "text": "胖莫古力",
+   "typeText": "胖莫古力",
+   "reading": "pang mo gu li",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00197",
+   "text": "胖陆行鸟",
+   "typeText": "胖陆行鸟",
+   "reading": "pang lu xing niao",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00198",
+   "text": "蓝羽猞猁",
+   "typeText": "蓝羽猞猁",
+   "reading": "lan yu she li",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00199",
+   "text": "虚王之翼",
+   "typeText": "虚王之翼",
+   "reading": "xu wang zhi yi",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00200",
+   "text": "贝希摩斯",
+   "typeText": "贝希摩斯",
+   "reading": "bei xi mo si",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00201",
+   "text": "贤者座椅",
+   "typeText": "贤者座椅",
+   "reading": "xian zhe zuo yi",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00202",
+   "text": "输送系统",
+   "typeText": "输送系统",
+   "reading": "shu song xi tong",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00203",
+   "text": "遗辉之翼",
+   "typeText": "遗辉之翼",
+   "reading": "yi hui zhi yi",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00204",
+   "text": "钻石玲龙",
+   "typeText": "钻石玲龙",
+   "reading": "zuan shi ling long",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00205",
+   "text": "阿尔戈斯",
+   "typeText": "阿尔戈斯",
+   "reading": "a er ge si",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00206",
+   "text": "陪伴雪人",
+   "typeText": "陪伴雪人",
+   "reading": "pei ban xue ren",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00207",
+   "text": "青君神威",
+   "typeText": "青君神威",
+   "reading": "qing jun shen wei",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00208",
+   "text": "青磷气球",
+   "typeText": "青磷气球",
+   "reading": "qing lin qi qiu",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00209",
+   "text": "青蛙号M",
+   "typeText": "青蛙号M",
+   "reading": "qing wa hao M",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "mnt_00210",
+   "text": "颅浮巨像",
+   "typeText": "颅浮巨像",
+   "reading": "lu fu ju xiang",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00211",
+   "text": "飞梭A9",
+   "typeText": "飞梭A9",
+   "reading": "fei suo A9",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "mnt_00212",
+   "text": "飞梭C9",
+   "typeText": "飞梭C9",
+   "reading": "fei suo C9",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "mnt_00213",
+   "text": "飞行座椅",
+   "typeText": "飞行座椅",
+   "reading": "fei xing zuo yi",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00214",
+   "text": "骑乘系统",
+   "typeText": "骑乘系统",
+   "reading": "qi cheng xi tong",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00215",
+   "text": "骑士之翼",
+   "typeText": "骑士之翼",
+   "reading": "qi shi zhi yi",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00216",
+   "text": "魔女扫帚",
+   "typeText": "魔女扫帚",
+   "reading": "mo nv sao zhou",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00217",
+   "text": "魔导猎手",
+   "typeText": "魔导猎手",
+   "reading": "mo dao lie shou",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00218",
+   "text": "魔导螳螂",
+   "typeText": "魔导螳螂",
+   "reading": "mo dao tang lang",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00219",
+   "text": "魔导装甲",
+   "typeText": "魔导装甲",
+   "reading": "mo dao zhuang jia",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00220",
+   "text": "魔法幻卡",
+   "typeText": "魔法幻卡",
+   "reading": "mo fa huan ka",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00221",
+   "text": "魔法阳伞",
+   "typeText": "魔法阳伞",
+   "reading": "mo fa yang san",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00222",
+   "text": "魔法雨伞",
+   "typeText": "魔法雨伞",
+   "reading": "mo fa yu san",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00223",
+   "text": "魔法飞床",
+   "typeText": "魔法飞床",
+   "reading": "mo fa fei chuang",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00224",
+   "text": "魔法飞毯",
+   "typeText": "魔法飞毯",
+   "reading": "mo fa fei tan",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00225",
+   "text": "黑杰克号",
+   "typeText": "黑杰克号",
+   "reading": "hei jie ke hao",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00226",
+   "text": "黑涡战马",
+   "typeText": "黑涡战马",
+   "reading": "hei wo zhan ma",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00227",
+   "text": "黑陆行鸟",
+   "typeText": "黑陆行鸟",
+   "reading": "hei lu xing niao",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00228",
+   "text": "专属陆行鸟",
+   "typeText": "专属陆行鸟",
+   "reading": "zhuan shu lu xing niao",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00229",
+   "text": "仙子猪大王",
+   "typeText": "仙子猪大王",
+   "reading": "xian zi zhu da wang",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00230",
+   "text": "兵队水龙蜥",
+   "typeText": "兵队水龙蜥",
+   "reading": "bing dui shui long xi",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00231",
+   "text": "典礼陆行鸟",
+   "typeText": "典礼陆行鸟",
+   "reading": "dian li lu xing niao",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00232",
+   "text": "刻耳柏洛斯",
+   "typeText": "刻耳柏洛斯",
+   "reading": "ke er bai luo si",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00233",
+   "text": "劳动十四号",
+   "typeText": "劳动十四号",
+   "reading": "lao dong shi si hao",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00234",
+   "text": "半灵奥兹玛",
+   "typeText": "半灵奥兹玛",
+   "reading": "ban ling ao zi ma",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00235",
+   "text": "卡吕冬堤斯",
+   "typeText": "卡吕冬堤斯",
+   "reading": "ka lv dong di si",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00236",
+   "text": "厄毗米修斯",
+   "typeText": "厄毗米修斯",
+   "reading": "e pi mi xiu si",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00237",
+   "text": "原型运输器",
+   "typeText": "原型运输器",
+   "reading": "yuan xing yun shu qi",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00238",
+   "text": "古代魔法船",
+   "typeText": "古代魔法船",
+   "reading": "gu dai mo fa chuan",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00239",
+   "text": "哈迪·戴托纳",
+   "typeText": "哈迪戴托纳",
+   "reading": "ha di dai tuo na",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "mnt_00240",
+   "text": "哥布林战车",
+   "typeText": "哥布林战车",
+   "reading": "ge bu lin zhan che",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00241",
+   "text": "图拉尔雪人",
+   "typeText": "图拉尔雪人",
+   "reading": "tu la er xue ren",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00242",
+   "text": "地缚猫沙发",
+   "typeText": "地缚猫沙发",
+   "reading": "di fu mao sha fa",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00243",
+   "text": "墨诺提俄斯",
+   "typeText": "墨诺提俄斯",
+   "reading": "mo nuo ti e si",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00244",
+   "text": "太空小叶灵",
+   "typeText": "太空小叶灵",
+   "reading": "tai kong xiao ye ling",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00245",
+   "text": "孢云棉花糖",
+   "typeText": "孢云棉花糖",
+   "reading": "bao yun mian hua tang",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00246",
+   "text": "孤傲地狱犬",
+   "typeText": "孤傲地狱犬",
+   "reading": "gu ao di yu quan",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00247",
+   "text": "孤傲妖精犬",
+   "typeText": "孤傲妖精犬",
+   "reading": "gu ao yao jing quan",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00248",
+   "text": "宇宙长颈驼",
+   "typeText": "宇宙长颈驼",
+   "reading": "yu zhou zhang jing tuo",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00249",
+   "text": "巡航驱逐者",
+   "typeText": "巡航驱逐者",
+   "reading": "xun hang qu zhu zhe",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00250",
+   "text": "巧克力小妖",
+   "typeText": "巧克力小妖",
+   "reading": "qiao ke li xiao yao",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00251",
+   "text": "巨型钝口螈",
+   "typeText": "巨型钝口螈",
+   "reading": "ju xing dun kou yuan",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00252",
+   "text": "巨鲶鱼神轿",
+   "typeText": "巨鲶鱼神轿",
+   "reading": "ju nian yu shen jiao",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00253",
+   "text": "巨鲶鱼金轿",
+   "typeText": "巨鲶鱼金轿",
+   "reading": "ju nian yu jin jiao",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00254",
+   "text": "帝王仙人刺",
+   "typeText": "帝王仙人刺",
+   "reading": "di wang xian ren ci",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00255",
+   "text": "搬运魔石精",
+   "typeText": "搬运魔石精",
+   "reading": "ban yun mo shi jing",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00256",
+   "text": "斯莱普尼尔",
+   "typeText": "斯莱普尼尔",
+   "reading": "si lai pu ni er",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00257",
+   "text": "新生不死鸟",
+   "typeText": "新生不死鸟",
+   "reading": "xin sheng bu si niao",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00258",
+   "text": "旅行协助机",
+   "typeText": "旅行协助机",
+   "reading": "lv xing xie zhu ji",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00259",
+   "text": "月光仙人刺",
+   "typeText": "月光仙人刺",
+   "reading": "yue guang xian ren ci",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00260",
+   "text": "月面跃动机",
+   "typeText": "月面跃动机",
+   "reading": "yue mian yue dong ji",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00261",
+   "text": "朝圣护卫兽",
+   "typeText": "朝圣护卫兽",
+   "reading": "chao sheng hu wei shou",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00262",
+   "text": "正统裂钳蟹",
+   "typeText": "正统裂钳蟹",
+   "reading": "zheng tong lie qian xie",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00263",
+   "text": "海岛短吻鳄",
+   "typeText": "海岛短吻鳄",
+   "reading": "hai dao duan wen e",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00264",
+   "text": "海岛蔓德拉",
+   "typeText": "海岛蔓德拉",
+   "reading": "hai dao man de la",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00265",
+   "text": "海蓝宝石兽",
+   "typeText": "海蓝宝石兽",
+   "reading": "hai lan bao shi shou",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00266",
+   "text": "游行陆行鸟",
+   "typeText": "游行陆行鸟",
+   "reading": "you xing lu xing niao",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00267",
+   "text": "独轮车S1",
+   "typeText": "独轮车S1",
+   "reading": "du lun che S1",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "mnt_00268",
+   "text": "真月魔导鲸",
+   "typeText": "真月魔导鲸",
+   "reading": "zhen yue mo dao jing",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00269",
+   "text": "等级检测仪",
+   "typeText": "等级检测仪",
+   "reading": "deng ji jian ce yi",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00270",
+   "text": "红大陆行鸟",
+   "typeText": "红大陆行鸟",
+   "reading": "hong da lu xing niao",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00271",
+   "text": "红宝石玲龙",
+   "typeText": "红宝石玲龙",
+   "reading": "hong bao shi ling long",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00272",
+   "text": "绿宝石玲龙",
+   "typeText": "绿宝石玲龙",
+   "reading": "lv bao shi ling long",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00273",
+   "text": "英西塔土斯",
+   "typeText": "英西塔土斯",
+   "reading": "ying xi ta tu si",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00274",
+   "text": "跳跳车T1",
+   "typeText": "跳跳车T1",
+   "reading": "tiao tiao che T1",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "mnt_00275",
+   "text": "轮式工程车",
+   "typeText": "轮式工程车",
+   "reading": "lun shi gong cheng che",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00276",
+   "text": "遗产陆行鸟",
+   "typeText": "遗产陆行鸟",
+   "reading": "yi chan lu xing niao",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00277",
+   "text": "阿尔斯维兹",
+   "typeText": "阿尔斯维兹",
+   "reading": "a er si wei zi",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00278",
+   "text": "阿里达乌斯",
+   "typeText": "阿里达乌斯",
+   "reading": "a li da wu si",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00279",
+   "text": "陆行鸟篷车",
+   "typeText": "陆行鸟篷车",
+   "reading": "lu xing niao peng che",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00280",
+   "text": "首领地狱犬",
+   "typeText": "首领地狱犬",
+   "reading": "shou ling di yu quan",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00281",
+   "text": "首领妖精犬",
+   "typeText": "首领妖精犬",
+   "reading": "shou ling yao jing quan",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00282",
+   "text": "魔导运输器",
+   "typeText": "魔导运输器",
+   "reading": "mo dao yun shu qi",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00283",
+   "text": "魔法儿童床",
+   "typeText": "魔法儿童床",
+   "reading": "mo fa er tong chuang",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00284",
+   "text": "SDS芬里尔",
+   "typeText": "SDS芬里尔",
+   "reading": "SDS fen li er",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "mnt_00285",
+   "text": "不明飞行物体？",
+   "typeText": "不明飞行物体",
+   "reading": "bu ming fei xing wu ti",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "mnt_00286",
+   "text": "亚灵菲尼克司",
+   "typeText": "亚灵菲尼克司",
+   "reading": "ya ling fei ni ke si",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00287",
+   "text": "优雷卡盐蓝燕",
+   "typeText": "优雷卡盐蓝燕",
+   "reading": "you lei ka yan lan yan",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00288",
+   "text": "克律索马罗斯",
+   "typeText": "克律索马罗斯",
+   "reading": "ke lv suo ma luo si",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00289",
+   "text": "初代胖陆行鸟",
+   "typeText": "初代胖陆行鸟",
+   "reading": "chu dai pang lu xing niao",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00290",
+   "text": "力气大的魔象",
+   "typeText": "力气大的魔象",
+   "reading": "li qi da de mo xiang",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00291",
+   "text": "宇宙武装重甲",
+   "typeText": "宇宙武装重甲",
+   "reading": "yu zhou wu zhuang zhong jia",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00292",
+   "text": "宇宙魔导猎手",
+   "typeText": "宇宙魔导猎手",
+   "reading": "yu zhou mo dao lie shou",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00293",
+   "text": "巴哈姆特·幽愿",
+   "typeText": "巴哈姆特幽愿",
+   "reading": "ba ha mu te you yuan",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "mnt_00294",
+   "text": "希拉狄哈王座",
+   "typeText": "希拉狄哈王座",
+   "reading": "xi la di ha wang zuo",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00295",
+   "text": "建筑06S号",
+   "typeText": "建筑06S号",
+   "reading": "jian zhu 06S hao",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "mnt_00296",
+   "text": "斯塔缇丝幻影",
+   "typeText": "斯塔缇丝幻影",
+   "reading": "si ta ti si huan ying",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00297",
+   "text": "海岛沙漠玫瑰",
+   "typeText": "海岛沙漠玫瑰",
+   "reading": "hai dao sha mo mei gui",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00298",
+   "text": "海岛洋葱王子",
+   "typeText": "海岛洋葱王子",
+   "reading": "hai dao yang cong wang zi",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00299",
+   "text": "海岛番茄国王",
+   "typeText": "海岛番茄国王",
+   "reading": "hai dao fan qie guo wang",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00300",
+   "text": "海岛皮里福尔",
+   "typeText": "海岛皮里福尔",
+   "reading": "hai dao pi li fu er",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00301",
+   "text": "海岛茄子骑士",
+   "typeText": "海岛茄子骑士",
+   "reading": "hai dao qie zi qi shi",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00302",
+   "text": "海岛蒜头明星",
+   "typeText": "海岛蒜头明星",
+   "reading": "hai dao suan tou ming xing",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00303",
+   "text": "火妖马埃驮恩",
+   "typeText": "火妖马埃驮恩",
+   "reading": "huo yao ma ai tuo en",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00304",
+   "text": "红电气宝石兽",
+   "typeText": "红电气宝石兽",
+   "reading": "hong dian qi bao shi shou",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00305",
+   "text": "维斯帕前进号",
+   "typeText": "维斯帕前进号",
+   "reading": "wei si pa qian jin hao",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00306",
+   "text": "贵族魔法飞毯",
+   "typeText": "贵族魔法飞毯",
+   "reading": "gui zu mo fa fei tan",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00307",
+   "text": "辅助机602",
+   "typeText": "辅助机602",
+   "reading": "fu zhu ji 602",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "mnt_00308",
+   "text": "进击的好脑袋",
+   "typeText": "进击的好脑袋",
+   "reading": "jin ji de hao nao dai",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00309",
+   "text": "阿尔科诺斯特",
+   "typeText": "阿尔科诺斯特",
+   "reading": "a er ke nuo si te",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00310",
+   "text": "雷妖马玛卡布",
+   "typeText": "雷妖马玛卡布",
+   "reading": "lei yao ma ma ka bu",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00311",
+   "text": "雷迦利亚G型",
+   "typeText": "雷迦利亚G型",
+   "reading": "lei jia li ya G xing",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "mnt_00312",
+   "text": "飞天半心椅（右）",
+   "typeText": "飞天半心椅右",
+   "reading": "fei tian ban xin yi you",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "mnt_00313",
+   "text": "飞天半心椅（左）",
+   "typeText": "飞天半心椅左",
+   "reading": "fei tian ban xin yi zuo",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "mnt_00314",
+   "text": "魔导机车大魔",
+   "typeText": "魔导机车大魔",
+   "reading": "mo dao ji che da mo",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00315",
+   "text": "魔导浮空装甲",
+   "typeText": "魔导浮空装甲",
+   "reading": "mo dao fu kong zhuang jia",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00316",
+   "text": "魔导装甲丙型",
+   "typeText": "魔导装甲丙型",
+   "reading": "mo dao zhuang jia bing xing",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00317",
+   "text": "黄水晶宝石兽",
+   "typeText": "黄水晶宝石兽",
+   "reading": "huang shui jing bao shi shou",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00318",
+   "text": "黑色胖陆行鸟",
+   "typeText": "黑色胖陆行鸟",
+   "reading": "hei se pang lu xing niao",
+   "category": "mounts",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "mnt_00319",
+   "text": "冰妖马玻瑞阿斯",
+   "typeText": "冰妖马玻瑞阿斯",
+   "reading": "bing yao ma bo rui a si",
+   "category": "mounts",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "mnt_00320",
+   "text": "加隆德GL-II",
+   "typeText": "加隆德GLII",
+   "reading": "jia long de GLII",
+   "category": "mounts",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "mnt_00321",
+   "text": "加隆德GL-IS",
+   "typeText": "加隆德GLIS",
+   "reading": "jia long de GLIS",
+   "category": "mounts",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "mnt_00322",
+   "text": "喷洒型强力机兵",
+   "typeText": "喷洒型强力机兵",
+   "reading": "pen sa xing qiang li ji bing",
+   "category": "mounts",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "mnt_00323",
+   "text": "得到宽恕的拟态",
+   "typeText": "得到宽恕的拟态",
+   "reading": "de dao kuan shu de ni tai",
+   "category": "mounts",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "mnt_00324",
+   "text": "得到宽恕的沉默",
+   "typeText": "得到宽恕的沉默",
+   "reading": "de dao kuan shu de chen mo",
+   "category": "mounts",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "mnt_00325",
+   "text": "挖掘型强力机兵",
+   "typeText": "挖掘型强力机兵",
+   "reading": "wa jue xing qiang li ji bing",
+   "category": "mounts",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "mnt_00326",
+   "text": "捕获的魔导装甲",
+   "typeText": "捕获的魔导装甲",
+   "reading": "bu huo de mo dao zhuang jia",
+   "category": "mounts",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "mnt_00327",
+   "text": "月桂冠古菩猩猩",
+   "typeText": "月桂冠古菩猩猩",
+   "reading": "yue gui guan gu pu xing xing",
+   "category": "mounts",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "mnt_00328",
+   "text": "水妖马艾恩巴尔",
+   "typeText": "水妖马艾恩巴尔",
+   "reading": "shui yao ma ai en ba er",
+   "category": "mounts",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "mnt_00329",
+   "text": "水蛇大人的罐子",
+   "typeText": "水蛇大人的罐子",
+   "reading": "shui she da ren de guan zi",
+   "category": "mounts",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "mnt_00330",
+   "text": "海岛蔓德拉王后",
+   "typeText": "海岛蔓德拉王后",
+   "reading": "hai dao man de la wang hou",
+   "category": "mounts",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "mnt_00331",
+   "text": "灰色轮式工程车",
+   "typeText": "灰色轮式工程车",
+   "reading": "hui se lun shi gong cheng che",
+   "category": "mounts",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "mnt_00332",
+   "text": "红色轮式工程车",
+   "typeText": "红色轮式工程车",
+   "reading": "hong se lun shi gong cheng che",
+   "category": "mounts",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "mnt_00333",
+   "text": "莫古力充气浮床",
+   "typeText": "莫古力充气浮床",
+   "reading": "mo gu li chong qi fu chuang",
+   "category": "mounts",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "mnt_00334",
+   "text": "量产型强力机兵",
+   "typeText": "量产型强力机兵",
+   "reading": "liang chan xing qiang li ji bing",
+   "category": "mounts",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "mnt_00335",
+   "text": "金蛇大人的罐子",
+   "typeText": "金蛇大人的罐子",
+   "reading": "jin she da ren de guan zi",
+   "category": "mounts",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "mnt_00336",
+   "text": "风妖马刻桑图司",
+   "typeText": "风妖马刻桑图司",
+   "reading": "feng yao ma ke sang tu si",
+   "category": "mounts",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "mnt_00337",
+   "text": "加百列III号机",
+   "typeText": "加百列III号机",
+   "reading": "jia bai lie III hao ji",
+   "category": "mounts",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "mnt_00338",
+   "text": "加隆德GL-IIT",
+   "typeText": "加隆德GLIIT",
+   "reading": "jia long de GLIIT",
+   "category": "mounts",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "mnt_00339",
+   "text": "原型魔导机车大魔",
+   "typeText": "原型魔导机车大魔",
+   "reading": "yuan xing mo dao ji che da mo",
+   "category": "mounts",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "mnt_00340",
+   "text": "土妖马古尔法克西",
+   "typeText": "土妖马古尔法克西",
+   "reading": "tu yao ma gu er fa ke xi",
+   "category": "mounts",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "mnt_00341",
+   "text": "天阳马阿斯特洛珀",
+   "typeText": "天阳马阿斯特洛珀",
+   "reading": "tian yang ma a si te luo po",
+   "category": "mounts",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "mnt_00342",
+   "text": "尼禄专用魔导装甲",
+   "typeText": "尼禄专用魔导装甲",
+   "reading": "ni lu zhuan yong mo dao zhuang jia",
+   "category": "mounts",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "mnt_00343",
+   "text": "拘束型魔导死亡爪",
+   "typeText": "拘束型魔导死亡爪",
+   "reading": "ju shu xing mo dao si wang zhao",
+   "category": "mounts",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "mnt_00344",
+   "text": "改良型魔导运输器",
+   "typeText": "改良型魔导运输器",
+   "reading": "gai liang xing mo dao yun shu qi",
+   "category": "mounts",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "mnt_00345",
+   "text": "高机动型强力机兵",
+   "typeText": "高机动型强力机兵",
+   "reading": "gao ji dong xing qiang li ji bing",
+   "category": "mounts",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "mnt_00346",
+   "text": "魔导复仇者骑乘型",
+   "typeText": "魔导复仇者骑乘型",
+   "reading": "mo dao fu chou zhe qi cheng xing",
+   "category": "mounts",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "mnt_00347",
+   "text": "黑钢机龙连达巴非",
+   "typeText": "黑钢机龙连达巴非",
+   "reading": "hei gang ji long lian da ba fei",
+   "category": "mounts",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "mnt_00348",
+   "text": "改良型宇宙武装重甲",
+   "typeText": "改良型宇宙武装重甲",
+   "reading": "gai liang xing yu zhou wu zhuang zhong jia",
+   "category": "mounts",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "mnt_00349",
+   "text": "改良型魔导机车大魔",
+   "typeText": "改良型魔导机车大魔",
+   "reading": "gai liang xing mo dao ji che da mo",
+   "category": "mounts",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "mnt_00350",
+   "text": "莉维亚专用魔导装甲",
+   "typeText": "莉维亚专用魔导装甲",
+   "reading": "li wei ya zhuan yong mo dao zhuang jia",
+   "category": "mounts",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "mnt_00351",
+   "text": "逐月幻狼玛纳加尔姆",
+   "typeText": "逐月幻狼玛纳加尔姆",
+   "reading": "zhu yue huan lang ma na jia er mu",
+   "category": "mounts",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "mnt_00352",
+   "text": "特定地区专用型强力机兵",
+   "typeText": "特定地区专用型强力机兵",
+   "reading": "te ding di qu zhuan yong xing qiang li ji bing",
+   "category": "mounts",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "mnt_00353",
+   "text": "魔导复仇者寒冷地区特制型",
+   "typeText": "魔导复仇者寒冷地区特制型",
+   "reading": "mo dao fu chou zhe han leng di qu te zhi xing",
+   "category": "mounts",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "mnt_00354",
+   "text": "魔导复仇者金色涂装特制型",
+   "typeText": "魔导复仇者金色涂装特制型",
+   "reading": "mo dao fu chou zhe jin se tu zhuang te zhi xing",
+   "category": "mounts",
+   "difficulty": 3,
+   "pure": true
+  }
+ ]
+}

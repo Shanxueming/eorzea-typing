@@ -1,0 +1,14 @@
+node_modules/
+dist/
+*.log
+.env
+eorzea-typing-kit-sonnet.zip
+__pycache__/
+*.pyc
+
+# 本地试听用音频与抠图过程文件不进入公共代码仓库；公开部署仅可加入已确认授权的音频。
+assets/audio/*
+!assets/audio/.gitkeep
+!assets/audio/README.md
+scripts/source-assets/
+scripts/qa-artifacts/

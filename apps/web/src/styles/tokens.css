@@ -1,0 +1,82 @@
+:root {
+  --color-bg: #0b1020;
+  --color-bg-panel: #131a30;
+  --color-crystal: #7fd8e8;
+  --color-danger: #e85a5a;
+  --color-text: #e9f4f7;
+  --color-text-dim: #8a97b5;
+  --color-p1: #7fd8e8;
+  --color-p2: #b8b8c8;
+  --font-ui: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: radial-gradient(circle at 50% 0%, #182241 0%, var(--color-bg) 60%);
+  color: var(--color-text);
+  font-family: var(--font-ui);
+}
+
+button {
+  font-family: inherit;
+}
+
+.mobile-warning {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  .mobile-warning {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    background: var(--color-bg);
+    color: var(--color-text);
+    padding: 24px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+}
+
+/* ───────────────────────── 三个战斗反馈动画 ─────────────────────────
+ * 全部是"条件 class 一次性播放"——由调用方在 true 之后很快弹回 false
+ * (见 battle/constants.ts 的 SHATTER_MS/FLASH_MS 与各场景里的 scheduleRevert),
+ * 保证下一次触发时 class 是从无到有地重新添加,动画才会真正重播。
+ */
+
+@keyframes eorzea-shatter {
+  0% { transform: scale(1); filter: brightness(1) saturate(1); }
+  35% { transform: scale(1.04); filter: brightness(2.2) saturate(1.6); }
+  60% { transform: scale(0.98); filter: brightness(1.4); }
+  100% { transform: scale(1); filter: brightness(1) saturate(1); }
+}
+.boss-panel--shatter {
+  animation: eorzea-shatter 0.42s ease-out;
+}
+
+@keyframes eorzea-flash {
+  0% { background-color: transparent; }
+  20% { background-color: rgba(232, 90, 90, 0.35); }
+  100% { background-color: transparent; }
+}
+.battle--flash {
+  animation: eorzea-flash 0.35s ease-out;
+}
+
+@keyframes eorzea-combo-pop {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.25); }
+  100% { transform: scale(1); }
+}

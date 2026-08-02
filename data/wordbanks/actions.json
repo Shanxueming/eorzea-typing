@@ -1,0 +1,10268 @@
+{
+ "category": "actions",
+ "label": "战斗技能",
+ "count": 1140,
+ "source": "thewakingsands/ffxiv-datamining-cn",
+ "entries": [
+  {
+   "id": "act_00001",
+   "text": "下踢",
+   "typeText": "下踢",
+   "reading": "xia ti",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00002",
+   "text": "中断",
+   "typeText": "中断",
+   "reading": "zhong duan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00003",
+   "text": "丰收",
+   "typeText": "丰收",
+   "reading": "feng shou",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00004",
+   "text": "交剑",
+   "typeText": "交剑",
+   "reading": "jiao jian",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00005",
+   "text": "伤头",
+   "typeText": "伤头",
+   "reading": "shang tou",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00006",
+   "text": "伤残",
+   "typeText": "伤残",
+   "reading": "shang can",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00007",
+   "text": "伤腿",
+   "typeText": "伤腿",
+   "reading": "shang tui",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00008",
+   "text": "伤足",
+   "typeText": "伤足",
+   "reading": "shang zu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00009",
+   "text": "伪装",
+   "typeText": "伪装",
+   "reading": "wei zhuang",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00010",
+   "text": "促进",
+   "typeText": "促进",
+   "reading": "cu jin",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00011",
+   "text": "保护",
+   "typeText": "保护",
+   "reading": "bao hu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00012",
+   "text": "俭约",
+   "typeText": "俭约",
+   "reading": "jian yue",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00013",
+   "text": "倍攻",
+   "typeText": "倍攻",
+   "reading": "bei gong",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00014",
+   "text": "催眠",
+   "typeText": "催眠",
+   "reading": "cui mian",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00015",
+   "text": "光芒",
+   "typeText": "光芒",
+   "reading": "guang mang",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00016",
+   "text": "光速",
+   "typeText": "光速",
+   "reading": "guang su",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00017",
+   "text": "内丹",
+   "typeText": "内丹",
+   "reading": "nei dan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00018",
+   "text": "再生",
+   "typeText": "再生",
+   "reading": "zai sheng",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00019",
+   "text": "冰冻",
+   "typeText": "冰冻",
+   "reading": "bing dong",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00020",
+   "text": "冰封",
+   "typeText": "冰封",
+   "reading": "bing feng",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00021",
+   "text": "冰澈",
+   "typeText": "冰澈",
+   "reading": "bing che",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00022",
+   "text": "冰焰",
+   "typeText": "冰焰",
+   "reading": "bing yan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00023",
+   "text": "冰结",
+   "typeText": "冰结",
+   "reading": "bing jie",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00024",
+   "text": "冰雾",
+   "typeText": "冰雾",
+   "reading": "bing wu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00025",
+   "text": "冲击",
+   "typeText": "冲击",
+   "reading": "chong ji",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00026",
+   "text": "冲撞",
+   "typeText": "冲撞",
+   "reading": "chong zhuang",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00027",
+   "text": "决断",
+   "typeText": "决断",
+   "reading": "jue duan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00028",
+   "text": "凶星",
+   "typeText": "凶星",
+   "reading": "xiong xing",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00029",
+   "text": "刃风",
+   "typeText": "刃风",
+   "reading": "ren feng",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00030",
+   "text": "切割",
+   "typeText": "切割",
+   "reading": "qie ge",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00031",
+   "text": "刚魂",
+   "typeText": "刚魂",
+   "reading": "gang hun",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00032",
+   "text": "刺穿",
+   "typeText": "刺穿",
+   "reading": "ci chuan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00033",
+   "text": "刺阵",
+   "typeText": "刺阵",
+   "reading": "ci zhen",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00034",
+   "text": "刺鱼",
+   "typeText": "刺鱼",
+   "reading": "ci yu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00035",
+   "text": "剑舞",
+   "typeText": "剑舞",
+   "reading": "jian wu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00036",
+   "text": "力场",
+   "typeText": "力场",
+   "reading": "li chang",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00037",
+   "text": "动乱",
+   "typeText": "动乱",
+   "reading": "dong luan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00038",
+   "text": "勾刃",
+   "typeText": "勾刃",
+   "reading": "gou ren",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00039",
+   "text": "医养",
+   "typeText": "医养",
+   "reading": "yi yang",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00040",
+   "text": "医术",
+   "typeText": "医术",
+   "reading": "yi shu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00041",
+   "text": "医治",
+   "typeText": "医治",
+   "reading": "yi zhi",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00042",
+   "text": "医济",
+   "typeText": "医济",
+   "reading": "yi ji",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00043",
+   "text": "占卜",
+   "typeText": "占卜",
+   "reading": "zhan bu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00044",
+   "text": "双将",
+   "typeText": "双将",
+   "reading": "shuang jiang",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00045",
+   "text": "发炎",
+   "typeText": "发炎",
+   "reading": "fa yan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00046",
+   "text": "口笛",
+   "typeText": "口笛",
+   "reading": "kou di",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00047",
+   "text": "叶隐",
+   "typeText": "叶隐",
+   "reading": "ye yin",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00048",
+   "text": "吉星",
+   "typeText": "吉星",
+   "reading": "ji xing",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00049",
+   "text": "吸血",
+   "typeText": "吸血",
+   "reading": "xi xue",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00050",
+   "text": "吹飞",
+   "typeText": "吹飞",
+   "reading": "chui fei",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00051",
+   "text": "命水",
+   "typeText": "命水",
+   "reading": "ming shui",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00052",
+   "text": "喷墨",
+   "typeText": "喷墨",
+   "reading": "pen mo",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00053",
+   "text": "喷泉",
+   "typeText": "喷泉",
+   "reading": "pen quan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00054",
+   "text": "嗜血",
+   "typeText": "嗜血",
+   "reading": "shi xue",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00055",
+   "text": "嘉惠",
+   "typeText": "嘉惠",
+   "reading": "jia hui",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00056",
+   "text": "回刺",
+   "typeText": "回刺",
+   "reading": "hui ci",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00057",
+   "text": "回退",
+   "typeText": "回退",
+   "reading": "hui tui",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00058",
+   "text": "团契",
+   "typeText": "团契",
+   "reading": "tuan qi",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00059",
+   "text": "圣灵",
+   "typeText": "圣灵",
+   "reading": "sheng ling",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00060",
+   "text": "圣环",
+   "typeText": "圣环",
+   "reading": "sheng huan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00061",
+   "text": "地星",
+   "typeText": "地星",
+   "reading": "di xing",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00062",
+   "text": "地裂",
+   "typeText": "地裂",
+   "reading": "di lie",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00063",
+   "text": "均衡",
+   "typeText": "均衡",
+   "reading": "jun heng",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00064",
+   "text": "坚石",
+   "typeText": "坚石",
+   "reading": "jian shi",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00065",
+   "text": "垒石",
+   "typeText": "垒石",
+   "reading": "lei shi",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00066",
+   "text": "壁垒",
+   "typeText": "壁垒",
+   "reading": "bi lei",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00067",
+   "text": "士风",
+   "typeText": "士风",
+   "reading": "shi feng",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00068",
+   "text": "复仇",
+   "typeText": "复仇",
+   "reading": "fu chou",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00069",
+   "text": "复活",
+   "typeText": "复活",
+   "reading": "fu huo",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00070",
+   "text": "复生",
+   "typeText": "复生",
+   "reading": "fu sheng",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00071",
+   "text": "复苏",
+   "typeText": "复苏",
+   "reading": "fu su",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00072",
+   "text": "天启",
+   "typeText": "天启",
+   "reading": "tian qi",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00073",
+   "text": "天辉",
+   "typeText": "天辉",
+   "reading": "tian hui",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00074",
+   "text": "失衡",
+   "typeText": "失衡",
+   "reading": "shi heng",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00075",
+   "text": "夺取",
+   "typeText": "夺取",
+   "reading": "duo qu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00076",
+   "text": "守护",
+   "typeText": "守护",
+   "reading": "shou hu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00077",
+   "text": "完人",
+   "typeText": "完人",
+   "reading": "wan ren",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00078",
+   "text": "寂灭",
+   "typeText": "寂灭",
+   "reading": "ji mie",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00079",
+   "text": "寒光",
+   "typeText": "寒光",
+   "reading": "han guang",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00080",
+   "text": "导弹",
+   "typeText": "导弹",
+   "reading": "dao dan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00081",
+   "text": "将死",
+   "typeText": "将死",
+   "reading": "jiang si",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00082",
+   "text": "尽毁",
+   "typeText": "尽毁",
+   "reading": "jin hui",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00083",
+   "text": "山崩",
+   "typeText": "山崩",
+   "reading": "shan beng",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00084",
+   "text": "崇敬",
+   "typeText": "崇敬",
+   "reading": "chong jing",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00085",
+   "text": "崩拳",
+   "typeText": "崩拳",
+   "reading": "beng quan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00086",
+   "text": "崩溃",
+   "typeText": "崩溃",
+   "reading": "beng kui",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00087",
+   "text": "崩石",
+   "typeText": "崩石",
+   "reading": "beng shi",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00088",
+   "text": "干预",
+   "typeText": "干预",
+   "reading": "gan yu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00089",
+   "text": "幸福",
+   "typeText": "幸福",
+   "reading": "xing fu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00090",
+   "text": "康复",
+   "typeText": "康复",
+   "reading": "kang fu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00091",
+   "text": "异言",
+   "typeText": "异言",
+   "reading": "yi yan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00092",
+   "text": "弹射",
+   "typeText": "弹射",
+   "reading": "tan she",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00093",
+   "text": "弹道",
+   "typeText": "弹道",
+   "reading": "dan dao",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00094",
+   "text": "影牙",
+   "typeText": "影牙",
+   "reading": "ying ya",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00095",
+   "text": "心关",
+   "typeText": "心关",
+   "reading": "xin guan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00096",
+   "text": "心眼",
+   "typeText": "心眼",
+   "reading": "xin yan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00097",
+   "text": "忍术",
+   "typeText": "忍术",
+   "reading": "ren shu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00098",
+   "text": "怒视",
+   "typeText": "怒视",
+   "reading": "nu shi",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00099",
+   "text": "悔罪",
+   "typeText": "悔罪",
+   "reading": "hui zui",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00100",
+   "text": "悖论",
+   "typeText": "悖论",
+   "reading": "bei lun",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00101",
+   "text": "愈疗",
+   "typeText": "愈疗",
+   "reading": "yu liao",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00102",
+   "text": "慰藉",
+   "typeText": "慰藉",
+   "reading": "wei jie",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00103",
+   "text": "战嚎",
+   "typeText": "战嚎",
+   "reading": "zhan hao",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00104",
+   "text": "战栗",
+   "typeText": "战栗",
+   "reading": "zhan li",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00105",
+   "text": "戮山",
+   "typeText": "戮山",
+   "reading": "lu shan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00106",
+   "text": "戮罪",
+   "typeText": "戮罪",
+   "reading": "lu zui",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00107",
+   "text": "打捞",
+   "typeText": "打捞",
+   "reading": "da lao",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00108",
+   "text": "扫腿",
+   "typeText": "扫腿",
+   "reading": "sao tui",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00109",
+   "text": "投弹",
+   "typeText": "投弹",
+   "reading": "tou dan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00110",
+   "text": "投盾",
+   "typeText": "投盾",
+   "reading": "tou dun",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00111",
+   "text": "抗死",
+   "typeText": "抗死",
+   "reading": "kang si",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00112",
+   "text": "抛竿",
+   "typeText": "抛竿",
+   "reading": "pao gan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00113",
+   "text": "报应",
+   "typeText": "报应",
+   "reading": "bao ying",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00114",
+   "text": "拍掌",
+   "typeText": "拍掌",
+   "reading": "pai zhang",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00115",
+   "text": "拯救",
+   "typeText": "拯救",
+   "reading": "zheng jiu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00116",
+   "text": "挑衅",
+   "typeText": "挑衅",
+   "reading": "tiao xin",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00117",
+   "text": "捕食",
+   "typeText": "捕食",
+   "reading": "bu shi",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00118",
+   "text": "掌握",
+   "typeText": "掌握",
+   "reading": "zhang wo",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00119",
+   "text": "提纯",
+   "typeText": "提纯",
+   "reading": "ti chun",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00120",
+   "text": "提钩",
+   "typeText": "提钩",
+   "reading": "ti gou",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00121",
+   "text": "插言",
+   "typeText": "插言",
+   "reading": "cha yan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00122",
+   "text": "摆脱",
+   "typeText": "摆脱",
+   "reading": "bai tuo",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00123",
+   "text": "摇荡",
+   "typeText": "摇荡",
+   "reading": "yao dang",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00124",
+   "text": "撒饵",
+   "typeText": "撒饵",
+   "reading": "sa er",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00125",
+   "text": "撕喉",
+   "typeText": "撕喉",
+   "reading": "si hou",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00126",
+   "text": "擢升",
+   "typeText": "擢升",
+   "reading": "zhuo sheng",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00127",
+   "text": "改革",
+   "typeText": "改革",
+   "reading": "gai ge",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00128",
+   "text": "放生",
+   "typeText": "放生",
+   "reading": "fang sheng",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00129",
+   "text": "救疗",
+   "typeText": "救疗",
+   "reading": "jiu liao",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00130",
+   "text": "散射",
+   "typeText": "散射",
+   "reading": "san she",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00131",
+   "text": "散碎",
+   "typeText": "散碎",
+   "reading": "san sui",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00132",
+   "text": "整备",
+   "typeText": "整备",
+   "reading": "zheng bei",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00133",
+   "text": "断绝",
+   "typeText": "断绝",
+   "reading": "duan jue",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00134",
+   "text": "断首",
+   "typeText": "断首",
+   "reading": "duan shou",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00135",
+   "text": "无情",
+   "typeText": "无情",
+   "reading": "wu qing",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00136",
+   "text": "昏乱",
+   "typeText": "昏乱",
+   "reading": "hun luan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00137",
+   "text": "星云",
+   "typeText": "星云",
+   "reading": "xing yun",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00138",
+   "text": "晓风",
+   "typeText": "晓风",
+   "reading": "xiao feng",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00139",
+   "text": "暴雷",
+   "typeText": "暴雷",
+   "reading": "bao lei",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00140",
+   "text": "暴食",
+   "typeText": "暴食",
+   "reading": "bao shi",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00141",
+   "text": "月光",
+   "typeText": "月光",
+   "reading": "yue guang",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00142",
+   "text": "极光",
+   "typeText": "极光",
+   "reading": "ji guang",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00143",
+   "text": "核爆",
+   "typeText": "核爆",
+   "reading": "he bao",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00144",
+   "text": "根素",
+   "typeText": "根素",
+   "reading": "gen su",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00145",
+   "text": "樱花",
+   "typeText": "樱花",
+   "reading": "ying hua",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00146",
+   "text": "歇竿",
+   "typeText": "歇竿",
+   "reading": "xie gan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00147",
+   "text": "正拳",
+   "typeText": "正拳",
+   "reading": "zheng quan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00148",
+   "text": "歪风",
+   "typeText": "歪风",
+   "reading": "wai feng",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00149",
+   "text": "死斗",
+   "typeText": "死斗",
+   "reading": "si dou",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00150",
+   "text": "残影",
+   "typeText": "残影",
+   "reading": "can ying",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00151",
+   "text": "残心",
+   "typeText": "残心",
+   "reading": "can xin",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00152",
+   "text": "毁坏",
+   "typeText": "毁坏",
+   "reading": "hui huai",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00153",
+   "text": "毁灭",
+   "typeText": "毁灭",
+   "reading": "hui mie",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00154",
+   "text": "毁绝",
+   "typeText": "毁绝",
+   "reading": "hui jue",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00155",
+   "text": "毁荡",
+   "typeText": "毁荡",
+   "reading": "hui dang",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00156",
+   "text": "毒菌",
+   "typeText": "毒菌",
+   "reading": "du jun",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00157",
+   "text": "水炮",
+   "typeText": "水炮",
+   "reading": "shui pao",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00158",
+   "text": "沉静",
+   "typeText": "沉静",
+   "reading": "chen jing",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00159",
+   "text": "治疗",
+   "typeText": "治疗",
+   "reading": "zhi liao",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00160",
+   "text": "法令",
+   "typeText": "法令",
+   "reading": "fa ling",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00161",
+   "text": "注药",
+   "typeText": "注药",
+   "reading": "zhu yao",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00162",
+   "text": "活化",
+   "typeText": "活化",
+   "reading": "huo hua",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00163",
+   "text": "浴血",
+   "typeText": "浴血",
+   "reading": "yu xue",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00164",
+   "text": "消化",
+   "typeText": "消化",
+   "reading": "xiao hua",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00165",
+   "text": "混合",
+   "typeText": "混合",
+   "reading": "hun he",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00166",
+   "text": "滑舌",
+   "typeText": "滑舌",
+   "reading": "hua she",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00167",
+   "text": "满月",
+   "typeText": "满月",
+   "reading": "man yue",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00168",
+   "text": "演武",
+   "typeText": "演武",
+   "reading": "yan wu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00169",
+   "text": "激荡",
+   "typeText": "激荡",
+   "reading": "ji dang",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00170",
+   "text": "瀑泻",
+   "typeText": "瀑泻",
+   "reading": "pu xie",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00171",
+   "text": "火炎",
+   "typeText": "火炎",
+   "reading": "huo yan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00172",
+   "text": "灾星",
+   "typeText": "灾星",
+   "reading": "zai xing",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00173",
+   "text": "炽灼",
+   "typeText": "炽灼",
+   "reading": "chi zhuo",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00174",
+   "text": "炽炎",
+   "typeText": "炽炎",
+   "reading": "chi yan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00175",
+   "text": "烈炎",
+   "typeText": "烈炎",
+   "reading": "lie yan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00176",
+   "text": "烈牙",
+   "typeText": "烈牙",
+   "reading": "lie ya",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00177",
+   "text": "烈风",
+   "typeText": "烈风",
+   "reading": "lie feng",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00178",
+   "text": "烧灼",
+   "typeText": "烧灼",
+   "reading": "shao zhuo",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00179",
+   "text": "热弹",
+   "typeText": "热弹",
+   "reading": "re dan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00180",
+   "text": "焚灼",
+   "typeText": "焚灼",
+   "reading": "fen zhuo",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00181",
+   "text": "焦热",
+   "typeText": "焦热",
+   "reading": "jiao re",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00182",
+   "text": "煞星",
+   "typeText": "煞星",
+   "reading": "sha xing",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00183",
+   "text": "照破",
+   "typeText": "照破",
+   "reading": "zhao po",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00184",
+   "text": "燕飞",
+   "typeText": "燕飞",
+   "reading": "yan fei",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00185",
+   "text": "爆炎",
+   "typeText": "爆炎",
+   "reading": "bao yan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00186",
+   "text": "牵制",
+   "typeText": "牵制",
+   "reading": "qian zhi",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00187",
+   "text": "狂乱",
+   "typeText": "狂乱",
+   "reading": "kuang luan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00188",
+   "text": "狂暴",
+   "typeText": "狂暴",
+   "reading": "kuang bao",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00189",
+   "text": "狂魂",
+   "typeText": "狂魂",
+   "reading": "kuang hun",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00190",
+   "text": "猛攻",
+   "typeText": "猛攻",
+   "reading": "meng gong",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00191",
+   "text": "猛枪",
+   "typeText": "猛枪",
+   "reading": "meng qiang",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00192",
+   "text": "献奉",
+   "typeText": "献奉",
+   "reading": "xian feng",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00193",
+   "text": "玄冰",
+   "typeText": "玄冰",
+   "reading": "xuan bing",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00194",
+   "text": "生辰",
+   "typeText": "生辰",
+   "reading": "sheng chen",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00195",
+   "text": "疾风",
+   "typeText": "疾风",
+   "reading": "ji feng",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00196",
+   "text": "白风",
+   "typeText": "白风",
+   "reading": "bai feng",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00197",
+   "text": "直刺",
+   "typeText": "直刺",
+   "reading": "zhi ci",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00198",
+   "text": "盾阵",
+   "typeText": "盾阵",
+   "reading": "dun zhen",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00199",
+   "text": "真北",
+   "typeText": "真北",
+   "reading": "zhen bei",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00200",
+   "text": "真言",
+   "typeText": "真言",
+   "reading": "zhen yan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00201",
+   "text": "破防",
+   "typeText": "破防",
+   "reading": "po fang",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00202",
+   "text": "硬化",
+   "typeText": "硬化",
+   "reading": "ying hua",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00203",
+   "text": "碎岩",
+   "typeText": "碎岩",
+   "reading": "sui yan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00204",
+   "text": "神名",
+   "typeText": "神名",
+   "reading": "shen ming",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00205",
+   "text": "神圣",
+   "typeText": "神圣",
+   "reading": "shen sheng",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00206",
+   "text": "神翼",
+   "typeText": "神翼",
+   "reading": "shen yi",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00207",
+   "text": "神谕",
+   "typeText": "神谕",
+   "reading": "shen yu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00208",
+   "text": "祭牲",
+   "typeText": "祭牲",
+   "reading": "ji sheng",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00209",
+   "text": "祸星",
+   "typeText": "祸星",
+   "reading": "huo xing",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00210",
+   "text": "福星",
+   "typeText": "福星",
+   "reading": "fu xing",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00211",
+   "text": "秘策",
+   "typeText": "秘策",
+   "reading": "mi ce",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00212",
+   "text": "移转",
+   "typeText": "移转",
+   "reading": "yi zhuan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00213",
+   "text": "秽浊",
+   "typeText": "秽浊",
+   "reading": "hui zhuo",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00214",
+   "text": "穿目",
+   "typeText": "穿目",
+   "reading": "chuan mu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00215",
+   "text": "策动",
+   "typeText": "策动",
+   "reading": "ce dong",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00216",
+   "text": "箭毒",
+   "typeText": "箭毒",
+   "reading": "jian du",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00217",
+   "text": "绝望",
+   "typeText": "绝望",
+   "reading": "jue wang",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00218",
+   "text": "绝风",
+   "typeText": "绝风",
+   "reading": "jue feng",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00219",
+   "text": "绞决",
+   "typeText": "绞决",
+   "reading": "jiao jue",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00220",
+   "text": "续剑",
+   "typeText": "续剑",
+   "reading": "xu jian",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00221",
+   "text": "续斩",
+   "typeText": "续斩",
+   "reading": "xu zhan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00222",
+   "text": "缢杀",
+   "typeText": "缢杀",
+   "reading": "yi sha",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00223",
+   "text": "缩地",
+   "typeText": "缩地",
+   "reading": "suo di",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00224",
+   "text": "耀星",
+   "typeText": "耀星",
+   "reading": "yao xing",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00225",
+   "text": "耐心",
+   "typeText": "耐心",
+   "reading": "nai xin",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00226",
+   "text": "自爆",
+   "typeText": "自爆",
+   "reading": "zi bao",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00227",
+   "text": "自生",
+   "typeText": "自生",
+   "reading": "zi sheng",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00228",
+   "text": "臭气",
+   "typeText": "臭气",
+   "reading": "chou qi",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00229",
+   "text": "节制",
+   "typeText": "节制",
+   "reading": "jie zhi",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00230",
+   "text": "花车",
+   "typeText": "花车",
+   "reading": "hua che",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00231",
+   "text": "营救",
+   "typeText": "营救",
+   "reading": "ying jiu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00232",
+   "text": "蛇行",
+   "typeText": "蛇行",
+   "reading": "she xing",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00233",
+   "text": "蛙腿",
+   "typeText": "蛙腿",
+   "reading": "wa tui",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00234",
+   "text": "蜕皮",
+   "typeText": "蜕皮",
+   "reading": "tui pi",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00235",
+   "text": "融合",
+   "typeText": "融合",
+   "reading": "rong he",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00236",
+   "text": "血乱",
+   "typeText": "血乱",
+   "reading": "xue luan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00237",
+   "text": "血债",
+   "typeText": "血债",
+   "reading": "xue zhai",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00238",
+   "text": "血壤",
+   "typeText": "血壤",
+   "reading": "xue rang",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00239",
+   "text": "血溅",
+   "typeText": "血溅",
+   "reading": "xue jian",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00240",
+   "text": "行吟",
+   "typeText": "行吟",
+   "reading": "xing yin",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00241",
+   "text": "补水",
+   "typeText": "补水",
+   "reading": "bu shui",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00242",
+   "text": "裂膛",
+   "typeText": "裂膛",
+   "reading": "lie tang",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00243",
+   "text": "诊断",
+   "typeText": "诊断",
+   "reading": "zhen duan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00244",
+   "text": "详述",
+   "typeText": "详述",
+   "reading": "xiang shu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00245",
+   "text": "调停",
+   "typeText": "调停",
+   "reading": "tiao ting",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00246",
+   "text": "豪圣",
+   "typeText": "豪圣",
+   "reading": "hao sheng",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00247",
+   "text": "赞歌",
+   "typeText": "赞歌",
+   "reading": "zan ge",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00248",
+   "text": "赤焰",
+   "typeText": "赤焰",
+   "reading": "chi yan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00249",
+   "text": "起爆",
+   "typeText": "起爆",
+   "reading": "qi bao",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00250",
+   "text": "超荷",
+   "typeText": "超荷",
+   "reading": "chao he",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00251",
+   "text": "跳斩",
+   "typeText": "跳斩",
+   "reading": "tiao zhan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00252",
+   "text": "跳跃",
+   "typeText": "跳跃",
+   "reading": "tiao yue",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00253",
+   "text": "转化",
+   "typeText": "转化",
+   "reading": "zhuan hua",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00254",
+   "text": "轰雷",
+   "typeText": "轰雷",
+   "reading": "hong lei",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00255",
+   "text": "输血",
+   "typeText": "输血",
+   "reading": "shu xue",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00256",
+   "text": "连击",
+   "typeText": "连击",
+   "reading": "lian ji",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00257",
+   "text": "连攻",
+   "typeText": "连攻",
+   "reading": "lian gong",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00258",
+   "text": "迸裂",
+   "typeText": "迸裂",
+   "reading": "beng lie",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00259",
+   "text": "退避",
+   "typeText": "退避",
+   "reading": "tui bi",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00260",
+   "text": "逆流",
+   "typeText": "逆流",
+   "reading": "ni liu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00261",
+   "text": "选饵",
+   "typeText": "选饵",
+   "reading": "xuan er",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00262",
+   "text": "速涂",
+   "typeText": "速涂",
+   "reading": "su tu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00263",
+   "text": "速行",
+   "typeText": "速行",
+   "reading": "su xing",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00264",
+   "text": "醒梦",
+   "typeText": "醒梦",
+   "reading": "xing meng",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00265",
+   "text": "释放",
+   "typeText": "释放",
+   "reading": "shi fang",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00266",
+   "text": "重劈",
+   "typeText": "重劈",
+   "reading": "zhong pi",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00267",
+   "text": "重力",
+   "typeText": "重力",
+   "reading": "zhong li",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00268",
+   "text": "重斩",
+   "typeText": "重斩",
+   "reading": "zhong zhan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00269",
+   "text": "野火",
+   "typeText": "野火",
+   "reading": "ye huo",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00270",
+   "text": "钓组",
+   "typeText": "钓组",
+   "reading": "diao zu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00271",
+   "text": "钻头",
+   "typeText": "钻头",
+   "reading": "zuan tou",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00272",
+   "text": "铁壁",
+   "typeText": "铁壁",
+   "reading": "tie bi",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00273",
+   "text": "闪灼",
+   "typeText": "闪灼",
+   "reading": "shan zhuo",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00274",
+   "text": "闪耀",
+   "typeText": "闪耀",
+   "reading": "shan yao",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00275",
+   "text": "闪躲",
+   "typeText": "闪躲",
+   "reading": "shan duo",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00276",
+   "text": "闪雷",
+   "typeText": "闪雷",
+   "reading": "shan lei",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00277",
+   "text": "闪飒",
+   "typeText": "闪飒",
+   "reading": "shan sa",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00278",
+   "text": "闭气",
+   "typeText": "闭气",
+   "reading": "bi qi",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00279",
+   "text": "阔步",
+   "typeText": "阔步",
+   "reading": "kuo bu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00280",
+   "text": "阳星",
+   "typeText": "阳星",
+   "reading": "yang xing",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00281",
+   "text": "阵风",
+   "typeText": "阵风",
+   "reading": "zhen feng",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00282",
+   "text": "隐行",
+   "typeText": "隐行",
+   "reading": "yin xing",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00283",
+   "text": "隐遁",
+   "typeText": "隐遁",
+   "reading": "yin dun",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00284",
+   "text": "雪仇",
+   "typeText": "雪仇",
+   "reading": "xue chou",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00285",
+   "text": "雪风",
+   "typeText": "雪风",
+   "reading": "xue feng",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00286",
+   "text": "震脚",
+   "typeText": "震脚",
+   "reading": "zhen jiao",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00287",
+   "text": "震荡",
+   "typeText": "震荡",
+   "reading": "zhen dang",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00288",
+   "text": "震雷",
+   "typeText": "震雷",
+   "reading": "zhen lei",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00289",
+   "text": "霹雷",
+   "typeText": "霹雷",
+   "reading": "pi lei",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00290",
+   "text": "音爆",
+   "typeText": "音爆",
+   "reading": "yin bao",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00291",
+   "text": "预后",
+   "typeText": "预后",
+   "reading": "yu hou",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00292",
+   "text": "预警",
+   "typeText": "预警",
+   "reading": "yu jing",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00293",
+   "text": "风光",
+   "typeText": "风光",
+   "reading": "feng guang",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00294",
+   "text": "风车",
+   "typeText": "风车",
+   "reading": "feng che",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00295",
+   "text": "风雅",
+   "typeText": "风雅",
+   "reading": "feng ya",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00296",
+   "text": "飞刀",
+   "typeText": "飞刀",
+   "reading": "fei dao",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00297",
+   "text": "飞刺",
+   "typeText": "飞刺",
+   "reading": "fei ci",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00298",
+   "text": "飞斧",
+   "typeText": "飞斧",
+   "reading": "fei fu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00299",
+   "text": "飞石",
+   "typeText": "飞石",
+   "reading": "fei shi",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00300",
+   "text": "高产",
+   "typeText": "高产",
+   "reading": "gao chan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00301",
+   "text": "高跳",
+   "typeText": "高跳",
+   "reading": "gao tiao",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00302",
+   "text": "魔泉",
+   "typeText": "魔泉",
+   "reading": "mo quan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00303",
+   "text": "魔罩",
+   "typeText": "魔罩",
+   "reading": "mo zhao",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00304",
+   "text": "鱼眼",
+   "typeText": "鱼眼",
+   "reading": "yu yan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00305",
+   "text": "默想",
+   "typeText": "默想",
+   "reading": "mo xiang",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00306",
+   "text": "鼓励",
+   "typeText": "鼓励",
+   "reading": "gu li",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00307",
+   "text": "鼻息",
+   "typeText": "鼻息",
+   "reading": "bi xi",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00308",
+   "text": "龙剑",
+   "typeText": "龙剑",
+   "reading": "long jian",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00309",
+   "text": "4星吨",
+   "typeText": "4星吨",
+   "reading": "4 xing dun",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": false
+  },
+  {
+   "id": "act_00310",
+   "text": "中重力",
+   "typeText": "中重力",
+   "reading": "zhong zhong li",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00311",
+   "text": "交击斩",
+   "typeText": "交击斩",
+   "reading": "jiao ji zhan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00312",
+   "text": "人之印",
+   "typeText": "人之印",
+   "reading": "ren zhi yin",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00313",
+   "text": "仙人盾",
+   "typeText": "仙人盾",
+   "reading": "xian ren dun",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00314",
+   "text": "以太步",
+   "typeText": "以太步",
+   "reading": "yi tai bu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00315",
+   "text": "偿赎剑",
+   "typeText": "偿赎剑",
+   "reading": "chang shu jian",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00316",
+   "text": "先锋剑",
+   "typeText": "先锋剑",
+   "reading": "xian feng jian",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00317",
+   "text": "光之心",
+   "typeText": "光之心",
+   "reading": "guang zhi xin",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00318",
+   "text": "全大赦",
+   "typeText": "全大赦",
+   "reading": "quan da she",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00319",
+   "text": "全蚀斩",
+   "typeText": "全蚀斩",
+   "reading": "quan shi zhan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00320",
+   "text": "共鸣箭",
+   "typeText": "共鸣箭",
+   "reading": "gong ming jian",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00321",
+   "text": "凤凰舞",
+   "typeText": "凤凰舞",
+   "reading": "feng huang wu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00322",
+   "text": "凶残裂",
+   "typeText": "凶残裂",
+   "reading": "xiong can lie",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00323",
+   "text": "凶禽爪",
+   "typeText": "凶禽爪",
+   "reading": "xiong qin zhao",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00324",
+   "text": "出卡I",
+   "typeText": "出卡I",
+   "reading": "chu ka I",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": false
+  },
+  {
+   "id": "act_00325",
+   "text": "分裂弹",
+   "typeText": "分裂弹",
+   "reading": "fen lie dan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00326",
+   "text": "划圆斩",
+   "typeText": "划圆斩",
+   "reading": "hua yuan zhan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00327",
+   "text": "利刃斩",
+   "typeText": "利刃斩",
+   "reading": "li ren zhan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00328",
+   "text": "前冲刺",
+   "typeText": "前冲刺",
+   "reading": "qian chong ci",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00329",
+   "text": "前冲步",
+   "typeText": "前冲步",
+   "reading": "qian chong bu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00330",
+   "text": "千针刺",
+   "typeText": "千针刺",
+   "reading": "qian zhen ci",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00331",
+   "text": "升风车",
+   "typeText": "升风车",
+   "reading": "sheng feng che",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00332",
+   "text": "双刃旋",
+   "typeText": "双刃旋",
+   "reading": "shuang ren xuan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00333",
+   "text": "双掌打",
+   "typeText": "双掌打",
+   "reading": "shuang zhang da",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00334",
+   "text": "双龙脚",
+   "typeText": "双龙脚",
+   "reading": "shuang long jiao",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00335",
+   "text": "启示录",
+   "typeText": "启示录",
+   "reading": "qi shi lu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00336",
+   "text": "吸收斩",
+   "typeText": "吸收斩",
+   "reading": "xi shou zhan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00337",
+   "text": "噬魂斩",
+   "typeText": "噬魂斩",
+   "reading": "shi hun zhan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00338",
+   "text": "四面脚",
+   "typeText": "四面脚",
+   "reading": "si mian jiao",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00339",
+   "text": "圣盾阵",
+   "typeText": "圣盾阵",
+   "reading": "sheng dun zhen",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00340",
+   "text": "地之印",
+   "typeText": "地之印",
+   "reading": "di zhi yin",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00341",
+   "text": "地烈劲",
+   "typeText": "地烈劲",
+   "reading": "di lie jin",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00342",
+   "text": "坠喷泉",
+   "typeText": "坠喷泉",
+   "reading": "zhui pen quan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00343",
+   "text": "坠星冲",
+   "typeText": "坠星冲",
+   "reading": "zhui xing chong",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00344",
+   "text": "大丰收",
+   "typeText": "大丰收",
+   "reading": "da feng shou",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00345",
+   "text": "大回旋",
+   "typeText": "大回旋",
+   "reading": "da hui xuan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00346",
+   "text": "大宇宙",
+   "typeText": "大宇宙",
+   "reading": "da yu zhou",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00347",
+   "text": "大扫除",
+   "typeText": "大扫除",
+   "reading": "da sao chu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00348",
+   "text": "大星云",
+   "typeText": "大星云",
+   "reading": "da xing yun",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00349",
+   "text": "天之印",
+   "typeText": "天之印",
+   "reading": "tian zhi yin",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00350",
+   "text": "天地人",
+   "typeText": "天地人",
+   "reading": "tian di ren",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00351",
+   "text": "天宫图",
+   "typeText": "天宫图",
+   "reading": "tian gong tu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00352",
+   "text": "天眼通",
+   "typeText": "天眼通",
+   "reading": "tian yan tong",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00353",
+   "text": "失血箭",
+   "typeText": "失血箭",
+   "reading": "shi xue jian",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00354",
+   "text": "宝石耀",
+   "typeText": "宝石耀",
+   "reading": "bao shi yao",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00355",
+   "text": "宝石辉",
+   "typeText": "宝石辉",
+   "reading": "bao shi hui",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00356",
+   "text": "小侦测",
+   "typeText": "小侦测",
+   "reading": "xiao zhen ce",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00357",
+   "text": "小宇宙",
+   "typeText": "小宇宙",
+   "reading": "xiao yu zhou",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00358",
+   "text": "居合术",
+   "typeText": "居合术",
+   "reading": "ju he shu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00359",
+   "text": "幻象冲",
+   "typeText": "幻象冲",
+   "reading": "huan xiang chong",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00360",
+   "text": "庇护所",
+   "typeText": "庇护所",
+   "reading": "bi hu suo",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00361",
+   "text": "开膛枪",
+   "typeText": "开膛枪",
+   "reading": "kai tang qiang",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00362",
+   "text": "影噬箭",
+   "typeText": "影噬箭",
+   "reading": "ying shi jian",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00363",
+   "text": "彼岸花",
+   "typeText": "彼岸花",
+   "reading": "bi an hua",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00364",
+   "text": "必杀技",
+   "typeText": "必杀技",
+   "reading": "bi sha ji",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00365",
+   "text": "怪音波",
+   "typeText": "怪音波",
+   "reading": "guai yin bo",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00366",
+   "text": "恶魔切",
+   "typeText": "恶魔切",
+   "reading": "e mo qie",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00367",
+   "text": "恶魔杀",
+   "typeText": "恶魔杀",
+   "reading": "e mo sha",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00368",
+   "text": "惊奇光",
+   "typeText": "惊奇光",
+   "reading": "jing qi guang",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00369",
+   "text": "扇舞·序",
+   "typeText": "扇舞序",
+   "reading": "shan wu xu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": false
+  },
+  {
+   "id": "act_00370",
+   "text": "扇舞·急",
+   "typeText": "扇舞急",
+   "reading": "shan wu ji",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": false
+  },
+  {
+   "id": "act_00371",
+   "text": "扇舞·破",
+   "typeText": "扇舞破",
+   "reading": "shan wu po",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": false
+  },
+  {
+   "id": "act_00372",
+   "text": "扇舞·终",
+   "typeText": "扇舞终",
+   "reading": "shan wu zhong",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": false
+  },
+  {
+   "id": "act_00373",
+   "text": "打桩枪",
+   "typeText": "打桩枪",
+   "reading": "da zhuang qiang",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00374",
+   "text": "拂晓舞",
+   "typeText": "拂晓舞",
+   "reading": "fu xiao wu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00375",
+   "text": "提拉纳",
+   "typeText": "提拉纳",
+   "reading": "ti la na",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00376",
+   "text": "播魂种",
+   "typeText": "播魂种",
+   "reading": "bo hun zhong",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00377",
+   "text": "收获月",
+   "typeText": "收获月",
+   "reading": "shou huo yue",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00378",
+   "text": "整体论",
+   "typeText": "整体论",
+   "reading": "zheng ti lun",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00379",
+   "text": "斗灵弹",
+   "typeText": "斗灵弹",
+   "reading": "dou ling dan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00380",
+   "text": "旋风刃",
+   "typeText": "旋风刃",
+   "reading": "xuan feng ren",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00381",
+   "text": "日珥斩",
+   "typeText": "日珥斩",
+   "reading": "ri er zhan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00382",
+   "text": "暗影卫",
+   "typeText": "暗影卫",
+   "reading": "an ying wei",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00383",
+   "text": "暗影墙",
+   "typeText": "暗影墙",
+   "reading": "an ying qiang",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00384",
+   "text": "暗影步",
+   "typeText": "暗影步",
+   "reading": "an ying bu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00385",
+   "text": "暗影锋",
+   "typeText": "暗影锋",
+   "reading": "an ying feng",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00386",
+   "text": "暗黑锋",
+   "typeText": "暗黑锋",
+   "reading": "an hei feng",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00387",
+   "text": "暴乱剑",
+   "typeText": "暴乱剑",
+   "reading": "bao luan jian",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00388",
+   "text": "暴风斩",
+   "typeText": "暴风斩",
+   "reading": "bao feng zhan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00389",
+   "text": "暴风碎",
+   "typeText": "暴风碎",
+   "reading": "bao feng sui",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00390",
+   "text": "月之笛",
+   "typeText": "月之笛",
+   "reading": "yue zhi di",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00391",
+   "text": "极炎法",
+   "typeText": "极炎法",
+   "reading": "ji yan fa",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00392",
+   "text": "武神枪",
+   "typeText": "武神枪",
+   "reading": "wu shen qiang",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00393",
+   "text": "死天枪",
+   "typeText": "死天枪",
+   "reading": "si tian qiang",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00394",
+   "text": "死炎法",
+   "typeText": "死炎法",
+   "reading": "si yan fa",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00395",
+   "text": "残暴弹",
+   "typeText": "残暴弹",
+   "reading": "can bao dan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00396",
+   "text": "毒咬箭",
+   "typeText": "毒咬箭",
+   "reading": "du yao jian",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00397",
+   "text": "气炎法",
+   "typeText": "气炎法",
+   "reading": "qi yan fa",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00398",
+   "text": "水流幕",
+   "typeText": "水流幕",
+   "reading": "shui liu mu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00399",
+   "text": "水流环",
+   "typeText": "水流环",
+   "reading": "shui liu huan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00400",
+   "text": "沥血剑",
+   "typeText": "沥血剑",
+   "reading": "li xue jian",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00401",
+   "text": "泛输血",
+   "typeText": "泛输血",
+   "reading": "fan shu xue",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00402",
+   "text": "流星舞",
+   "typeText": "流星舞",
+   "reading": "liu xing wu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00403",
+   "text": "渡星冲",
+   "typeText": "渡星冲",
+   "reading": "du xing chong",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00404",
+   "text": "滚轮冲",
+   "typeText": "滚轮冲",
+   "reading": "gun lun chong",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00405",
+   "text": "激射眼",
+   "typeText": "激射眼",
+   "reading": "ji she yan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00406",
+   "text": "火投枪",
+   "typeText": "火投枪",
+   "reading": "huo tou qiang",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00407",
+   "text": "火箭炮",
+   "typeText": "火箭炮",
+   "reading": "huo jian pao",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00408",
+   "text": "灵极魂",
+   "typeText": "灵极魂",
+   "reading": "ling ji hun",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00409",
+   "text": "烈焰弹",
+   "typeText": "烈焰弹",
+   "reading": "lie yan dan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00410",
+   "text": "热冲击",
+   "typeText": "热冲击",
+   "reading": "re chong ji",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00411",
+   "text": "燕回返",
+   "typeText": "燕回返",
+   "reading": "yan hui fan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00412",
+   "text": "爆发击",
+   "typeText": "爆发击",
+   "reading": "bao fa ji",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00413",
+   "text": "爆破箭",
+   "typeText": "爆破箭",
+   "reading": "bao po jian",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00414",
+   "text": "爆裂脚",
+   "typeText": "爆裂脚",
+   "reading": "bao lie jiao",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00415",
+   "text": "狙击弹",
+   "typeText": "狙击弹",
+   "reading": "ju ji dan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00416",
+   "text": "独头弹",
+   "typeText": "独头弹",
+   "reading": "du tou dan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00417",
+   "text": "猛兽爪",
+   "typeText": "猛兽爪",
+   "reading": "meng shou zhao",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00418",
+   "text": "猛毒菌",
+   "typeText": "猛毒菌",
+   "reading": "meng du jun",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00419",
+   "text": "玄结界",
+   "typeText": "玄结界",
+   "reading": "xuan jie jie",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00420",
+   "text": "王权剑",
+   "typeText": "王权剑",
+   "reading": "wang quan jian",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00421",
+   "text": "玩泥球",
+   "typeText": "玩泥球",
+   "reading": "wan ni qiu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00422",
+   "text": "生物电",
+   "typeText": "生物电",
+   "reading": "sheng wu dian",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00423",
+   "text": "电水流",
+   "typeText": "电水流",
+   "reading": "dian shui liu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00424",
+   "text": "百雷铳",
+   "typeText": "百雷铳",
+   "reading": "bai lei chong",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00425",
+   "text": "真空波",
+   "typeText": "真空波",
+   "reading": "zhen kong bo",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00426",
+   "text": "真龙波",
+   "typeText": "真龙波",
+   "reading": "zhen long bo",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00427",
+   "text": "石之心",
+   "typeText": "石之心",
+   "reading": "shi zhi xin",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00428",
+   "text": "破碎拳",
+   "typeText": "破碎拳",
+   "reading": "po sui quan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00429",
+   "text": "破阵法",
+   "typeText": "破阵法",
+   "reading": "po zhen fa",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00430",
+   "text": "碎心箭",
+   "typeText": "碎心箭",
+   "reading": "sui xin jian",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00431",
+   "text": "祈告剑",
+   "typeText": "祈告剑",
+   "reading": "qi gao jian",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00432",
+   "text": "神爱抚",
+   "typeText": "神爱抚",
+   "reading": "shen ai fu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00433",
+   "text": "神祝祷",
+   "typeText": "神祝祷",
+   "reading": "shen zhu dao",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00434",
+   "text": "神秘环",
+   "typeText": "神秘环",
+   "reading": "shen mi huan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00435",
+   "text": "神秘纹",
+   "typeText": "神秘纹",
+   "reading": "shen mi wen",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00436",
+   "text": "空气锚",
+   "typeText": "空气锚",
+   "reading": "kong qi mao",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00437",
+   "text": "空鸣拳",
+   "typeText": "空鸣拳",
+   "reading": "kong ming quan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00438",
+   "text": "类星体",
+   "typeText": "类星体",
+   "reading": "lei xing ti",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00439",
+   "text": "精准刺",
+   "typeText": "精准刺",
+   "reading": "jing zhun ci",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00440",
+   "text": "纷乱箭",
+   "typeText": "纷乱箭",
+   "reading": "fen luan jian",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00441",
+   "text": "终极针",
+   "typeText": "终极针",
+   "reading": "zhong ji zhen",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00442",
+   "text": "绝峰箭",
+   "typeText": "绝峰箭",
+   "reading": "jue feng jian",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00443",
+   "text": "绝空拳",
+   "typeText": "绝空拳",
+   "reading": "jue kong quan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00444",
+   "text": "绞决爪",
+   "typeText": "绞决爪",
+   "reading": "jiao jue zhao",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00445",
+   "text": "缢杀爪",
+   "typeText": "缢杀爪",
+   "reading": "yi sha zhao",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00446",
+   "text": "翻天脚",
+   "typeText": "翻天脚",
+   "reading": "fan tian jiao",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00447",
+   "text": "自动弩",
+   "typeText": "自动弩",
+   "reading": "zi dong nu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00448",
+   "text": "苍气炮",
+   "typeText": "苍气炮",
+   "reading": "cang qi pao",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00449",
+   "text": "苍穹刺",
+   "typeText": "苍穹刺",
+   "reading": "cang qiong ci",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00450",
+   "text": "落刃雨",
+   "typeText": "落刃雨",
+   "reading": "luo ren yu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00451",
+   "text": "落幕舞",
+   "typeText": "落幕舞",
+   "reading": "luo mu wu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00452",
+   "text": "落血雨",
+   "typeText": "落血雨",
+   "reading": "luo xue yu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00453",
+   "text": "葬送剑",
+   "typeText": "葬送剑",
+   "reading": "zang song jian",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00454",
+   "text": "虹吸弹",
+   "typeText": "虹吸弹",
+   "reading": "hong xi dan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00455",
+   "text": "蛇尾击",
+   "typeText": "蛇尾击",
+   "reading": "she wei ji",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00456",
+   "text": "蛇尾术",
+   "typeText": "蛇尾术",
+   "reading": "she wei shu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00457",
+   "text": "蛇尾闪",
+   "typeText": "蛇尾闪",
+   "reading": "she wei shan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00458",
+   "text": "蛇灵气",
+   "typeText": "蛇灵气",
+   "reading": "she ling qi",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00459",
+   "text": "蛊毒法",
+   "typeText": "蛊毒法",
+   "reading": "gu du fa",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00460",
+   "text": "螺旋击",
+   "typeText": "螺旋击",
+   "reading": "luo xuan ji",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00461",
+   "text": "螺旋尾",
+   "typeText": "螺旋尾",
+   "reading": "luo xuan wei",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00462",
+   "text": "血红乱",
+   "typeText": "血红乱",
+   "reading": "xue hong luan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00463",
+   "text": "裂阵法",
+   "typeText": "裂阵法",
+   "reading": "lie zhen fa",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00464",
+   "text": "贯穿尖",
+   "typeText": "贯穿尖",
+   "reading": "guan chuan jian",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00465",
+   "text": "贯通刺",
+   "typeText": "贯通刺",
+   "reading": "guan tong ci",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00466",
+   "text": "赎罪剑",
+   "typeText": "赎罪剑",
+   "reading": "shu zui jian",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00467",
+   "text": "赤复活",
+   "typeText": "赤复活",
+   "reading": "chi fu huo",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00468",
+   "text": "赤暴雷",
+   "typeText": "赤暴雷",
+   "reading": "chi bao lei",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00469",
+   "text": "赤暴风",
+   "typeText": "赤暴风",
+   "reading": "chi bao feng",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00470",
+   "text": "赤核爆",
+   "typeText": "赤核爆",
+   "reading": "chi he bao",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00471",
+   "text": "赤治疗",
+   "typeText": "赤治疗",
+   "reading": "chi zhi liao",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00472",
+   "text": "赤火炎",
+   "typeText": "赤火炎",
+   "reading": "chi huo yan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00473",
+   "text": "赤烈风",
+   "typeText": "赤烈风",
+   "reading": "chi lie feng",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00474",
+   "text": "赤疾风",
+   "typeText": "赤疾风",
+   "reading": "chi ji feng",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00475",
+   "text": "赤神圣",
+   "typeText": "赤神圣",
+   "reading": "chi shen sheng",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00476",
+   "text": "赤闪雷",
+   "typeText": "赤闪雷",
+   "reading": "chi shan lei",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00477",
+   "text": "赤震雷",
+   "typeText": "赤震雷",
+   "reading": "chi zhen lei",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00478",
+   "text": "赤飞石",
+   "typeText": "赤飞石",
+   "reading": "chi fei shi",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00479",
+   "text": "超压斧",
+   "typeText": "超压斧",
+   "reading": "chao ya fu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00480",
+   "text": "超振动",
+   "typeText": "超振动",
+   "reading": "chao zhen dong",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00481",
+   "text": "超硬化",
+   "typeText": "超硬化",
+   "reading": "chao ying hua",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00482",
+   "text": "超高速",
+   "typeText": "超高速",
+   "reading": "chao gao su",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00483",
+   "text": "辉煌盾",
+   "typeText": "辉煌盾",
+   "reading": "hui huang dun",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00484",
+   "text": "辉煌箭",
+   "typeText": "辉煌箭",
+   "reading": "hui huang jian",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00485",
+   "text": "迅连斩",
+   "typeText": "迅连斩",
+   "reading": "xun lian zhan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00486",
+   "text": "连环计",
+   "typeText": "连环计",
+   "reading": "lian huan ji",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00487",
+   "text": "连珠箭",
+   "typeText": "连珠箭",
+   "reading": "lian zhu jian",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00488",
+   "text": "逆瀑泻",
+   "typeText": "逆瀑泻",
+   "reading": "ni pu xie",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00489",
+   "text": "钻头炮",
+   "typeText": "钻头炮",
+   "reading": "zuan tou pao",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00490",
+   "text": "铁山靠",
+   "typeText": "铁山靠",
+   "reading": "tie shan kao",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00491",
+   "text": "铁臂拳",
+   "typeText": "铁臂拳",
+   "reading": "tie bi quan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00492",
+   "text": "闪雷弹",
+   "typeText": "闪雷弹",
+   "reading": "shan lei dan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00493",
+   "text": "震荡波",
+   "typeText": "震荡波",
+   "reading": "zhen dang bo",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00494",
+   "text": "霰弹枪",
+   "typeText": "霰弹枪",
+   "reading": "xian dan qiang",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00495",
+   "text": "音速刺",
+   "typeText": "音速刺",
+   "reading": "yin su ci",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00496",
+   "text": "音速破",
+   "typeText": "音速破",
+   "reading": "yin su po",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00497",
+   "text": "风蚀箭",
+   "typeText": "风蚀箭",
+   "reading": "feng shi jian",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00498",
+   "text": "飞翎雨",
+   "typeText": "飞翎雨",
+   "reading": "fei ling yu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00499",
+   "text": "高冰冻",
+   "typeText": "高冰冻",
+   "reading": "gao bing dong",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00500",
+   "text": "高烈炎",
+   "typeText": "高烈炎",
+   "reading": "gao lie yan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00501",
+   "text": "高闪雷",
+   "typeText": "高闪雷",
+   "reading": "gao shan lei",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00502",
+   "text": "高震雷",
+   "typeText": "高震雷",
+   "reading": "gao zhen lei",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00503",
+   "text": "鬼宿脚",
+   "typeText": "鬼宿脚",
+   "reading": "gui su jiao",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00504",
+   "text": "魔元化",
+   "typeText": "魔元化",
+   "reading": "mo yuan hua",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00505",
+   "text": "魔回刺",
+   "typeText": "魔回刺",
+   "reading": "mo hui ci",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00506",
+   "text": "魔法锤",
+   "typeText": "魔法锤",
+   "reading": "mo fa chui",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00507",
+   "text": "魔炎法",
+   "typeText": "魔炎法",
+   "reading": "mo yan fa",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00508",
+   "text": "魔纹步",
+   "typeText": "魔纹步",
+   "reading": "mo wen bu",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00509",
+   "text": "魔续斩",
+   "typeText": "魔续斩",
+   "reading": "mo xu zhan",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00510",
+   "text": "魔连攻",
+   "typeText": "魔连攻",
+   "reading": "mo lian gong",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00511",
+   "text": "黑魔纹",
+   "typeText": "黑魔纹",
+   "reading": "hei mo wen",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00512",
+   "text": "龙之力",
+   "typeText": "龙之力",
+   "reading": "long zhi li",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00513",
+   "text": "龙炎冲",
+   "typeText": "龙炎冲",
+   "reading": "long yan chong",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00514",
+   "text": "龙炎升",
+   "typeText": "龙炎升",
+   "reading": "long yan sheng",
+   "category": "actions",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "act_00515",
+   "text": "5级即死",
+   "typeText": "5级即死",
+   "reading": "5 ji ji si",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "act_00516",
+   "text": "5级石化",
+   "typeText": "5级石化",
+   "reading": "5 ji shi hua",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "act_00517",
+   "text": "万变水波",
+   "typeText": "万变水波",
+   "reading": "wan bian shui bo",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00518",
+   "text": "万象斗气",
+   "typeText": "万象斗气",
+   "reading": "wan xiang dou qi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00519",
+   "text": "三角测量",
+   "typeText": "三角测量",
+   "reading": "san jiao ce liang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00520",
+   "text": "三连咏唱",
+   "typeText": "三连咏唱",
+   "reading": "san lian yong chang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00521",
+   "text": "三重提钩",
+   "typeText": "三重提钩",
+   "reading": "san chong ti gou",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00522",
+   "text": "三重灾祸",
+   "typeText": "三重灾祸",
+   "reading": "san chong zai huo",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00523",
+   "text": "专一垂钓",
+   "typeText": "专一垂钓",
+   "reading": "zhuan yi chui diao",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00524",
+   "text": "丛林之相",
+   "typeText": "丛林之相",
+   "reading": "cong lin zhi xiang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00525",
+   "text": "中间学派",
+   "typeText": "中间学派",
+   "reading": "zhong jian xue pai",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00526",
+   "text": "丰收II",
+   "typeText": "丰收II",
+   "reading": "feng shou II",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "act_00527",
+   "text": "义结金兰",
+   "typeText": "义结金兰",
+   "reading": "yi jie jin lan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00528",
+   "text": "九天连箭",
+   "typeText": "九天连箭",
+   "reading": "jiu tian lian jian",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00529",
+   "text": "乱击獠牙",
+   "typeText": "乱击獠牙",
+   "reading": "luan ji liao ya",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00530",
+   "text": "乱裂獠牙",
+   "typeText": "乱裂獠牙",
+   "reading": "luan lie liao ya",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00531",
+   "text": "云蒸龙变",
+   "typeText": "云蒸龙变",
+   "reading": "yun zheng long bian",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00532",
+   "text": "交错收割",
+   "typeText": "交错收割",
+   "reading": "jiao cuo shou ge",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00533",
+   "text": "亲疏自行",
+   "typeText": "亲疏自行",
+   "reading": "qin shu zi xing",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00534",
+   "text": "介毒之术",
+   "typeText": "介毒之术",
+   "reading": "jie du zhi shu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00535",
+   "text": "以太变移",
+   "typeText": "以太变移",
+   "reading": "yi tai bian yi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00536",
+   "text": "以太复制",
+   "typeText": "以太复制",
+   "reading": "yi tai fu zhi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00537",
+   "text": "以太契约",
+   "typeText": "以太契约",
+   "reading": "yi tai qi yue",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00538",
+   "text": "以太火花",
+   "typeText": "以太火花",
+   "reading": "yi tai huo hua",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00539",
+   "text": "以太蓄能",
+   "typeText": "以太蓄能",
+   "reading": "yi tai xu neng",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00540",
+   "text": "以太超流",
+   "typeText": "以太超流",
+   "reading": "yi tai chao liu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00541",
+   "text": "以小钓大",
+   "typeText": "以小钓大",
+   "reading": "yi xiao diao da",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00542",
+   "text": "价值瞩目",
+   "typeText": "价值瞩目",
+   "reading": "jia zhi zhu mu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00543",
+   "text": "众生离绝",
+   "typeText": "众生离绝",
+   "reading": "zhong sheng li jue",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00544",
+   "text": "伶牙俐齿",
+   "typeText": "伶牙俐齿",
+   "reading": "ling ya li chi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00545",
+   "text": "侧击獠齿",
+   "typeText": "侧击獠齿",
+   "reading": "ce ji liao chi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00546",
+   "text": "侧裂獠齿",
+   "typeText": "侧裂獠齿",
+   "reading": "ce lie liao chi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00547",
+   "text": "信念之剑",
+   "typeText": "信念之剑",
+   "reading": "xin nian zhi jian",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00548",
+   "text": "先天禀赋",
+   "typeText": "先天禀赋",
+   "reading": "xian tian bing fu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00549",
+   "text": "光芒四射",
+   "typeText": "光芒四射",
+   "reading": "guang mang si she",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00550",
+   "text": "六分反击",
+   "typeText": "六分反击",
+   "reading": "liu fen fan ji",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00551",
+   "text": "六道轮回",
+   "typeText": "六道轮回",
+   "reading": "liu dao lun hui",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00552",
+   "text": "兽爪彩绘",
+   "typeText": "兽爪彩绘",
+   "reading": "shou zhao cai hui",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00553",
+   "text": "兽爪构想",
+   "typeText": "兽爪构想",
+   "reading": "shou zhao gou xiang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00554",
+   "text": "内力迸发",
+   "typeText": "内力迸发",
+   "reading": "nei li beng fa",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00555",
+   "text": "农夫之智",
+   "typeText": "农夫之智",
+   "reading": "nong fu zhi zhi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00556",
+   "text": "冰棘屏障",
+   "typeText": "冰棘屏障",
+   "reading": "bing ji ping zhang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00557",
+   "text": "冰遁之术",
+   "typeText": "冰遁之术",
+   "reading": "bing dun zhi shu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00558",
+   "text": "冰雪乱舞",
+   "typeText": "冰雪乱舞",
+   "reading": "bing xue luan wu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00559",
+   "text": "减色混合",
+   "typeText": "减色混合",
+   "reading": "jian se hun he",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00560",
+   "text": "出卡II",
+   "typeText": "出卡II",
+   "reading": "chu ka II",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "act_00561",
+   "text": "分身之术",
+   "typeText": "分身之术",
+   "reading": "fen shen zhi shu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00562",
+   "text": "刚玉之心",
+   "typeText": "刚玉之心",
+   "reading": "gang yu zhi xin",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00563",
+   "text": "加强信音",
+   "typeText": "加强信音",
+   "reading": "jia qiang xin yin",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00564",
+   "text": "动物彩绘",
+   "typeText": "动物彩绘",
+   "reading": "dong wu cai hui",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00565",
+   "text": "动物构想",
+   "typeText": "动物构想",
+   "reading": "dong wu gou xiang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00566",
+   "text": "升腾火焰",
+   "typeText": "升腾火焰",
+   "reading": "sheng teng huo yan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00567",
+   "text": "危险领域",
+   "typeText": "危险领域",
+   "reading": "wei xian ling yu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00568",
+   "text": "即兴表演",
+   "typeText": "即兴表演",
+   "reading": "ji xing biao yan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00569",
+   "text": "即刻咏唱",
+   "typeText": "即刻咏唱",
+   "reading": "ji ke yong chang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00570",
+   "text": "厄运流转",
+   "typeText": "厄运流转",
+   "reading": "e yun liu zhuan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00571",
+   "text": "原初之魂",
+   "typeText": "原初之魂",
+   "reading": "yuan chu zhi hun",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00572",
+   "text": "双牙乱击",
+   "typeText": "双牙乱击",
+   "reading": "shuang ya luan ji",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00573",
+   "text": "双牙乱术",
+   "typeText": "双牙乱术",
+   "reading": "shuang ya luan shu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00574",
+   "text": "双牙乱闪",
+   "typeText": "双牙乱闪",
+   "reading": "shuang ya luan shan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00575",
+   "text": "双牙连击",
+   "typeText": "双牙连击",
+   "reading": "shuang ya lian ji",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00576",
+   "text": "双牙连术",
+   "typeText": "双牙连术",
+   "reading": "shuang ya lian shu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00577",
+   "text": "双牙连闪",
+   "typeText": "双牙连闪",
+   "reading": "shuang ya lian shan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00578",
+   "text": "双重提钩",
+   "typeText": "双重提钩",
+   "reading": "shuang chong ti gou",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00579",
+   "text": "发炎II",
+   "typeText": "发炎II",
+   "reading": "fa yan II",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "act_00580",
+   "text": "吉星相位",
+   "typeText": "吉星相位",
+   "reading": "ji xing xiang wei",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00581",
+   "text": "后跃射击",
+   "typeText": "后跃射击",
+   "reading": "hou yue she ji",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00582",
+   "text": "吸血深渊",
+   "typeText": "吸血深渊",
+   "reading": "xi xue shen yuan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00583",
+   "text": "命运之印",
+   "typeText": "命运之印",
+   "reading": "ming yun zhi yin",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00584",
+   "text": "命运之环",
+   "typeText": "命运之环",
+   "reading": "ming yun zhi huan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00585",
+   "text": "命运之轮",
+   "typeText": "命运之轮",
+   "reading": "ming yun zhi lun",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00586",
+   "text": "咕噜咕噜",
+   "typeText": "咕噜咕噜",
+   "reading": "gu lu gu lu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00587",
+   "text": "咬噬尖牙",
+   "typeText": "咬噬尖牙",
+   "reading": "yao shi jian ya",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00588",
+   "text": "咬噬尖齿",
+   "typeText": "咬噬尖齿",
+   "reading": "yao shi jian chi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00589",
+   "text": "哔哩哔哩",
+   "typeText": "哔哩哔哩",
+   "reading": "bi li bi li",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00590",
+   "text": "哥布防御",
+   "typeText": "哥布防御",
+   "reading": "ge bu fang yu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00591",
+   "text": "唧唧咋咋",
+   "typeText": "唧唧咋咋",
+   "reading": "ji ji za za",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00592",
+   "text": "噩梦钐割",
+   "typeText": "噩梦钐割",
+   "reading": "e meng shan ge",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00593",
+   "text": "回转飞锯",
+   "typeText": "回转飞锯",
+   "reading": "hui zhuan fei ju",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00594",
+   "text": "回返五剑",
+   "typeText": "回返五剑",
+   "reading": "hui fan wu jian",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00595",
+   "text": "回返斩浪",
+   "typeText": "回返斩浪",
+   "reading": "hui fan zhan lang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00596",
+   "text": "回避跳跃",
+   "typeText": "回避跳跃",
+   "reading": "hui bi tiao yue",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00597",
+   "text": "土神召唤",
+   "typeText": "土神召唤",
+   "reading": "tu shen zhao huan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00598",
+   "text": "土遁之术",
+   "typeText": "土遁之术",
+   "reading": "tu dun zhi shu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00599",
+   "text": "圣光射线",
+   "typeText": "圣光射线",
+   "reading": "sheng guang she xian",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00600",
+   "text": "圣光幕帘",
+   "typeText": "圣光幕帘",
+   "reading": "sheng guang mu lian",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00601",
+   "text": "地毁人亡",
+   "typeText": "地毁人亡",
+   "reading": "di hui ren wang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00602",
+   "text": "地火喷发",
+   "typeText": "地火喷发",
+   "reading": "di huo pen fa",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00603",
+   "text": "地狱入境",
+   "typeText": "地狱入境",
+   "reading": "di yu ru jing",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00604",
+   "text": "地狱出境",
+   "typeText": "地狱出境",
+   "reading": "di yu chu jing",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00605",
+   "text": "地狱切割",
+   "typeText": "地狱切割",
+   "reading": "di yu qie ge",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00606",
+   "text": "均衡失衡",
+   "typeText": "均衡失衡",
+   "reading": "jun heng shi heng",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00607",
+   "text": "均衡注药",
+   "typeText": "均衡注药",
+   "reading": "jun heng zhu yao",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00608",
+   "text": "均衡诊断",
+   "typeText": "均衡诊断",
+   "reading": "jun heng zhen duan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00609",
+   "text": "均衡预后",
+   "typeText": "均衡预后",
+   "reading": "jun heng yu hou",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00610",
+   "text": "坏死爆发",
+   "typeText": "坏死爆发",
+   "reading": "huai si bao fa",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00611",
+   "text": "坚角清汁",
+   "typeText": "坚角清汁",
+   "reading": "jian jiao qing zhi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00612",
+   "text": "垂钓之光",
+   "typeText": "垂钓之光",
+   "reading": "chui diao zhi guang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00613",
+   "text": "埋伏之毒",
+   "typeText": "埋伏之毒",
+   "reading": "mai fu zhi du",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00614",
+   "text": "增盈切割",
+   "typeText": "增盈切割",
+   "reading": "zeng ying qie ge",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00615",
+   "text": "复仇冲击",
+   "typeText": "复仇冲击",
+   "reading": "fu chou chong ji",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00616",
+   "text": "夜游魂衣",
+   "typeText": "夜游魂衣",
+   "reading": "ye you hun yi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00617",
+   "text": "大地之怒",
+   "typeText": "大地之怒",
+   "reading": "da di zhi nu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00618",
+   "text": "大地之护",
+   "typeText": "大地之护",
+   "reading": "da di zhi hu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00619",
+   "text": "大地勘察",
+   "typeText": "大地勘察",
+   "reading": "da di kan cha",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00620",
+   "text": "大气爆发",
+   "typeText": "大气爆发",
+   "reading": "da qi bao fa",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00621",
+   "text": "大气风斩",
+   "typeText": "大气风斩",
+   "reading": "da qi feng zhan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00622",
+   "text": "大胆提纯",
+   "typeText": "大胆提纯",
+   "reading": "da dan ti chun",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00623",
+   "text": "大鱼猎手",
+   "typeText": "大鱼猎手",
+   "reading": "da yu lie shou",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00624",
+   "text": "天下五剑",
+   "typeText": "天下五剑",
+   "reading": "tian xia wu jian",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00625",
+   "text": "天使低语",
+   "typeText": "天使低语",
+   "reading": "tian shi di yu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00626",
+   "text": "天星交错",
+   "typeText": "天星交错",
+   "reading": "tian xing jiao cuo",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00627",
+   "text": "天星冲日",
+   "typeText": "天星冲日",
+   "reading": "tian xing chong ri",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00628",
+   "text": "天星棱光",
+   "typeText": "天星棱光",
+   "reading": "tian xing leng guang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00629",
+   "text": "天理人道",
+   "typeText": "天理人道",
+   "reading": "tian li ren dao",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00630",
+   "text": "天赐收成",
+   "typeText": "天赐收成",
+   "reading": "tian ci shou cheng",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00631",
+   "text": "天赐祝福",
+   "typeText": "天赐祝福",
+   "reading": "tian ci zhu fu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00632",
+   "text": "天道五剑",
+   "typeText": "天道五剑",
+   "reading": "tian dao wu jian",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00633",
+   "text": "天龙点睛",
+   "typeText": "天龙点睛",
+   "reading": "tian long dian jing",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00634",
+   "text": "太阳星座",
+   "typeText": "太阳星座",
+   "reading": "tai yang xing zuo",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00635",
+   "text": "失衡II",
+   "typeText": "失衡II",
+   "reading": "shi heng II",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "act_00636",
+   "text": "奥义斩浪",
+   "typeText": "奥义斩浪",
+   "reading": "ao yi zhan lang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00637",
+   "text": "守护之光",
+   "typeText": "守护之光",
+   "reading": "shou hu zhi guang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00638",
+   "text": "安慰之心",
+   "typeText": "安慰之心",
+   "reading": "an wei zhi xin",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00639",
+   "text": "安魂祈祷",
+   "typeText": "安魂祈祷",
+   "reading": "an hun qi dao",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00640",
+   "text": "完美音调",
+   "typeText": "完美音调",
+   "reading": "wan mei yin diao",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00641",
+   "text": "寄生清汁",
+   "typeText": "寄生清汁",
+   "reading": "ji sheng qing zhi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00642",
+   "text": "寒冰咆哮",
+   "typeText": "寒冰咆哮",
+   "reading": "han bing pao xiao",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00643",
+   "text": "小奥秘卡",
+   "typeText": "小奥秘卡",
+   "reading": "xiao ao mi ka",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00644",
+   "text": "尖牙彩绘",
+   "typeText": "尖牙彩绘",
+   "reading": "jian ya cai hui",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00645",
+   "text": "尖牙构想",
+   "typeText": "尖牙构想",
+   "reading": "jian ya gou xiang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00646",
+   "text": "展开战术",
+   "typeText": "展开战术",
+   "reading": "zhan kai zhan shu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00647",
+   "text": "山境酷刑",
+   "typeText": "山境酷刑",
+   "reading": "shan jing ku xing",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00648",
+   "text": "山岳之相",
+   "typeText": "山岳之相",
+   "reading": "shan yue zhi xiang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00649",
+   "text": "崛起之心",
+   "typeText": "崛起之心",
+   "reading": "jue qi zhi xin",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00650",
+   "text": "平原震裂",
+   "typeText": "平原震裂",
+   "reading": "ping yuan zhen lie",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00651",
+   "text": "幻影野槌",
+   "typeText": "幻影野槌",
+   "reading": "huan ying ye chui",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00652",
+   "text": "广域群射",
+   "typeText": "广域群射",
+   "reading": "guang yu qun she",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00653",
+   "text": "应急战术",
+   "typeText": "应急战术",
+   "reading": "ying ji zhan shu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00654",
+   "text": "弃明投暗",
+   "typeText": "弃明投暗",
+   "reading": "qi ming tou an",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00655",
+   "text": "弓形冲波",
+   "typeText": "弓形冲波",
+   "reading": "gong xing chong bo",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00656",
+   "text": "强力守护",
+   "typeText": "强力守护",
+   "reading": "qiang li shou hu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00657",
+   "text": "强力射击",
+   "typeText": "强力射击",
+   "reading": "qiang li she ji",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00658",
+   "text": "强力提钩",
+   "typeText": "强力提钩",
+   "reading": "qiang li ti gou",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00659",
+   "text": "强碎灵蛇",
+   "typeText": "强碎灵蛇",
+   "reading": "qiang sui ling she",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00660",
+   "text": "强碎灵蝰",
+   "typeText": "强碎灵蝰",
+   "reading": "qiang sui ling kui",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00661",
+   "text": "彗星之黑",
+   "typeText": "彗星之黑",
+   "reading": "hui xing zhi hei",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00662",
+   "text": "彩虹点滴",
+   "typeText": "彩虹点滴",
+   "reading": "cai hong dian di",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00663",
+   "text": "彻骨雾寒",
+   "typeText": "彻骨雾寒",
+   "reading": "che gu wu han",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00664",
+   "text": "心神风息",
+   "typeText": "心神风息",
+   "reading": "xin shen feng xi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00665",
+   "text": "必灭之炎",
+   "typeText": "必灭之炎",
+   "reading": "bi mie zhi yan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00666",
+   "text": "怒发冲冠",
+   "typeText": "怒发冲冠",
+   "reading": "nu fa chong guan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00667",
+   "text": "意气冲天",
+   "typeText": "意气冲天",
+   "reading": "yi qi chong tian",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00668",
+   "text": "慎重提纯",
+   "typeText": "慎重提纯",
+   "reading": "shen zhong ti chun",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00669",
+   "text": "战斗之声",
+   "typeText": "战斗之声",
+   "reading": "zhan dou zhi sheng",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00670",
+   "text": "战斗连祷",
+   "typeText": "战斗连祷",
+   "reading": "zhan dou lian dao",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00671",
+   "text": "战逃反应",
+   "typeText": "战逃反应",
+   "reading": "zhan tao fan ying",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00672",
+   "text": "技巧舞步",
+   "typeText": "技巧舞步",
+   "reading": "ji qiao wu bu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00673",
+   "text": "拍击水面",
+   "typeText": "拍击水面",
+   "reading": "pai ji shui mian",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00674",
+   "text": "掘地飞轮",
+   "typeText": "掘地飞轮",
+   "reading": "jue di fei lun",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00675",
+   "text": "掠影示现",
+   "typeText": "掠影示现",
+   "reading": "lve ying shi xian",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00676",
+   "text": "支配之心",
+   "typeText": "支配之心",
+   "reading": "zhi pei zhi xin",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00677",
+   "text": "攻其不备",
+   "typeText": "攻其不备",
+   "reading": "gong qi bu bei",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00678",
+   "text": "放生列表",
+   "typeText": "放生列表",
+   "reading": "fang sheng lie biao",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00679",
+   "text": "敏锐视野",
+   "typeText": "敏锐视野",
+   "reading": "min rui shi ye",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00680",
+   "text": "斗争本能",
+   "typeText": "斗争本能",
+   "reading": "dou zheng ben neng",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00681",
+   "text": "断罪飞翔",
+   "typeText": "断罪飞翔",
+   "reading": "duan zui fei xiang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00682",
+   "text": "断首处刑",
+   "typeText": "断首处刑",
+   "reading": "duan shou chu xing",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00683",
+   "text": "旋转钐割",
+   "typeText": "旋转钐割",
+   "reading": "xuan zhuan shan ge",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00684",
+   "text": "无中生有",
+   "typeText": "无中生有",
+   "reading": "wu zhong sheng you",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00685",
+   "text": "日光普照",
+   "typeText": "日光普照",
+   "reading": "ri guang pu zhao",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00686",
+   "text": "明晰视野",
+   "typeText": "明晰视野",
+   "reading": "ming xi shi ye",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00687",
+   "text": "明镜止水",
+   "typeText": "明镜止水",
+   "reading": "ming jing zhi shui",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00688",
+   "text": "星位合图",
+   "typeText": "星位合图",
+   "reading": "xing wei he tu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00689",
+   "text": "星体爆轰",
+   "typeText": "星体爆轰",
+   "reading": "xing ti bao hong",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00690",
+   "text": "星极抽卡",
+   "typeText": "星极抽卡",
+   "reading": "xing ji chou ka",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00691",
+   "text": "星极核爆",
+   "typeText": "星极核爆",
+   "reading": "xing ji he bao",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00692",
+   "text": "星极脉冲",
+   "typeText": "星极脉冲",
+   "reading": "xing ji mai chong",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00693",
+   "text": "星极超流",
+   "typeText": "星极超流",
+   "reading": "xing ji chao liu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00694",
+   "text": "星灵移位",
+   "typeText": "星灵移位",
+   "reading": "xing ling yi wei",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00695",
+   "text": "星空彩绘",
+   "typeText": "星空彩绘",
+   "reading": "xing kong cai hui",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00696",
+   "text": "星空构想",
+   "typeText": "星空构想",
+   "reading": "xing kong gou xiang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00697",
+   "text": "是生灭法",
+   "typeText": "是生灭法",
+   "reading": "shi sheng mie fa",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00698",
+   "text": "显灵之章",
+   "typeText": "显灵之章",
+   "reading": "xian ling zhi zhang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00699",
+   "text": "显贵冲击",
+   "typeText": "显贵冲击",
+   "reading": "xian gui chong ji",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00700",
+   "text": "智慧之爱",
+   "typeText": "智慧之爱",
+   "reading": "zhi hui zhi ai",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00701",
+   "text": "暗影使者",
+   "typeText": "暗影使者",
+   "reading": "an ying shi zhe",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00702",
+   "text": "暗影波动",
+   "typeText": "暗影波动",
+   "reading": "an ying bo dong",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00703",
+   "text": "暗黑布道",
+   "typeText": "暗黑布道",
+   "reading": "an hei bu dao",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00704",
+   "text": "暗黑波动",
+   "typeText": "暗黑波动",
+   "reading": "an hei bo dong",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00705",
+   "text": "最终确认",
+   "typeText": "最终确认",
+   "reading": "zui zhong que ren",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00706",
+   "text": "朝日召唤",
+   "typeText": "朝日召唤",
+   "reading": "zhao ri zhao huan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00707",
+   "text": "束缚挥割",
+   "typeText": "束缚挥割",
+   "reading": "shu fu hui ge",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00708",
+   "text": "极致防御",
+   "typeText": "极致防御",
+   "reading": "ji zhi fang yu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00709",
+   "text": "枪管加热",
+   "typeText": "枪管加热",
+   "reading": "qiang guan jia re",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00710",
+   "text": "标准舞步",
+   "typeText": "标准舞步",
+   "reading": "biao zhun wu bu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00711",
+   "text": "树木之声",
+   "typeText": "树木之声",
+   "reading": "shu mu zhi sheng",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00712",
+   "text": "梦幻三段",
+   "typeText": "梦幻三段",
+   "reading": "meng huan san duan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00713",
+   "text": "梦幻斗舞",
+   "typeText": "梦幻斗舞",
+   "reading": "meng huan dou wu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00714",
+   "text": "植被专精",
+   "typeText": "植被专精",
+   "reading": "zhi bei zhuan jing",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00715",
+   "text": "樱花怒放",
+   "typeText": "樱花怒放",
+   "reading": "ying hua nu fang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00716",
+   "text": "樱花缭乱",
+   "typeText": "樱花缭乱",
+   "reading": "ying hua liao luan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00717",
+   "text": "橡果炸弹",
+   "typeText": "橡果炸弹",
+   "reading": "xiang guo zha dan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00718",
+   "text": "正义飞踢",
+   "typeText": "正义飞踢",
+   "reading": "zheng yi fei ti",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00719",
+   "text": "武器彩绘",
+   "typeText": "武器彩绘",
+   "reading": "wu qi cai hui",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00720",
+   "text": "武器构想",
+   "typeText": "武器构想",
+   "reading": "wu qi gou xiang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00721",
+   "text": "武装戍卫",
+   "typeText": "武装戍卫",
+   "reading": "wu zhuang shu wei",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00722",
+   "text": "武装解除",
+   "typeText": "武装解除",
+   "reading": "wu zhuang jie chu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00723",
+   "text": "死亡之影",
+   "typeText": "死亡之影",
+   "reading": "si wang zhi ying",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00724",
+   "text": "死亡之涡",
+   "typeText": "死亡之涡",
+   "reading": "si wang zhi wo",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00725",
+   "text": "死亡宣告",
+   "typeText": "死亡宣告",
+   "reading": "si wang xuan gao",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00726",
+   "text": "死亡箭雨",
+   "typeText": "死亡箭雨",
+   "reading": "si wang jian yu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00727",
+   "text": "死亡轮回",
+   "typeText": "死亡轮回",
+   "reading": "si wang lun hui",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00728",
+   "text": "死星核爆",
+   "typeText": "死星核爆",
+   "reading": "si xing he bao",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00729",
+   "text": "死者之岸",
+   "typeText": "死者之岸",
+   "reading": "si zhe zhi an",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00730",
+   "text": "残影镰鼬",
+   "typeText": "残影镰鼬",
+   "reading": "can ying lian you",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00731",
+   "text": "毒菌冲击",
+   "typeText": "毒菌冲击",
+   "reading": "du jun chong ji",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00732",
+   "text": "水力吸引",
+   "typeText": "水力吸引",
+   "reading": "shui li xi yin",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00733",
+   "text": "水流吐息",
+   "typeText": "水流吐息",
+   "reading": "shui liu tu xi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00734",
+   "text": "水脉诅咒",
+   "typeText": "水脉诅咒",
+   "reading": "shui mai zu zhou",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00735",
+   "text": "水遁之术",
+   "typeText": "水遁之术",
+   "reading": "shui dun zhi shu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00736",
+   "text": "永恒射线",
+   "typeText": "永恒射线",
+   "reading": "yong heng she xian",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00737",
+   "text": "污泥泼洒",
+   "typeText": "污泥泼洒",
+   "reading": "wu ni po sa",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00738",
+   "text": "沉稳咏唱",
+   "typeText": "沉稳咏唱",
+   "reading": "chen wen yong chang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00739",
+   "text": "注药II",
+   "typeText": "注药II",
+   "reading": "zhu yao II",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "act_00740",
+   "text": "泰然自若",
+   "typeText": "泰然自若",
+   "reading": "tai ran zi ruo",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00741",
+   "text": "流水之蓝",
+   "typeText": "流水之蓝",
+   "reading": "liu shui zhi lan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00742",
+   "text": "海洋之相",
+   "typeText": "海洋之相",
+   "reading": "hai yang zhi xiang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00743",
+   "text": "深仁厚泽",
+   "typeText": "深仁厚泽",
+   "reading": "shen ren hou ze",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00744",
+   "text": "深奥之灵",
+   "typeText": "深奥之灵",
+   "reading": "shen ao zhi ling",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00745",
+   "text": "深恶痛绝",
+   "typeText": "深恶痛绝",
+   "reading": "shen wu tong jue",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00746",
+   "text": "深渊贯穿",
+   "typeText": "深渊贯穿",
+   "reading": "shen yuan guan chuan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00747",
+   "text": "深红强袭",
+   "typeText": "深红强袭",
+   "reading": "shen hong qiang xi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00748",
+   "text": "深红旋风",
+   "typeText": "深红旋风",
+   "reading": "shen hong xuan feng",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00749",
+   "text": "混沌旋风",
+   "typeText": "混沌旋风",
+   "reading": "hun dun xuan feng",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00750",
+   "text": "渔叉三段",
+   "typeText": "渔叉三段",
+   "reading": "yu cha san duan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00751",
+   "text": "溃烂爆发",
+   "typeText": "溃烂爆发",
+   "reading": "kui lan bao fa",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00752",
+   "text": "激水之蓝",
+   "typeText": "激水之蓝",
+   "reading": "ji shui zhi lan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00753",
+   "text": "火炎之红",
+   "typeText": "火炎之红",
+   "reading": "huo yan zhi hong",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00754",
+   "text": "火炎放射",
+   "typeText": "火炎放射",
+   "reading": "huo yan fang she",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00755",
+   "text": "火神召唤",
+   "typeText": "火神召唤",
+   "reading": "huo shen zhao huan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00756",
+   "text": "火遁之术",
+   "typeText": "火遁之术",
+   "reading": "huo dun zhi shu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00757",
+   "text": "灵极抽卡",
+   "typeText": "灵极抽卡",
+   "reading": "ling ji chou ka",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00758",
+   "text": "灵极核爆",
+   "typeText": "灵极核爆",
+   "reading": "ling ji he bao",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00759",
+   "text": "灵极脉冲",
+   "typeText": "灵极脉冲",
+   "reading": "ling ji mai chong",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00760",
+   "text": "灵橡清汁",
+   "typeText": "灵橡清汁",
+   "reading": "ling xiang qing zhi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00761",
+   "text": "灵泉之炎",
+   "typeText": "灵泉之炎",
+   "reading": "ling quan zhi yan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00762",
+   "text": "灵魂切割",
+   "typeText": "灵魂切割",
+   "reading": "ling hun qie ge",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00763",
+   "text": "灵魂钐割",
+   "typeText": "灵魂钐割",
+   "reading": "ling hun shan ge",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00764",
+   "text": "灼热之光",
+   "typeText": "灼热之光",
+   "reading": "zhuo re zhi guang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00765",
+   "text": "灼热之闪",
+   "typeText": "灼热之闪",
+   "reading": "zhuo re zhi shan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00766",
+   "text": "炼狱之炎",
+   "typeText": "炼狱之炎",
+   "reading": "lian yu zhi yan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00767",
+   "text": "炽天召唤",
+   "typeText": "炽天召唤",
+   "reading": "chi tian zhao huan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00768",
+   "text": "炽天附体",
+   "typeText": "炽天附体",
+   "reading": "chi tian fu ti",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00769",
+   "text": "烈日核爆",
+   "typeText": "烈日核爆",
+   "reading": "lie ri he bao",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00770",
+   "text": "烈毒咬箭",
+   "typeText": "烈毒咬箭",
+   "reading": "lie du yao jian",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00771",
+   "text": "烈炎之红",
+   "typeText": "烈炎之红",
+   "reading": "lie yan zhi hong",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00772",
+   "text": "烈风之绿",
+   "typeText": "烈风之绿",
+   "reading": "lie feng zhi lv",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00773",
+   "text": "热分裂弹",
+   "typeText": "热分裂弹",
+   "reading": "re fen lie dan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00774",
+   "text": "热狙击弹",
+   "typeText": "热狙击弹",
+   "reading": "re ju ji dan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00775",
+   "text": "热独头弹",
+   "typeText": "热独头弹",
+   "reading": "re du tou dan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00776",
+   "text": "熟练妙招",
+   "typeText": "熟练妙招",
+   "reading": "shu lian miao zhao",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00777",
+   "text": "熟练技巧",
+   "typeText": "熟练技巧",
+   "reading": "shu lian ji qiao",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00778",
+   "text": "熟练渔技",
+   "typeText": "熟练渔技",
+   "reading": "shu lian yu ji",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00779",
+   "text": "燃火强袭",
+   "typeText": "燃火强袭",
+   "reading": "ran huo qiang xi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00780",
+   "text": "爆发射击",
+   "typeText": "爆发射击",
+   "reading": "bao fa she ji",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00781",
+   "text": "爆破领域",
+   "typeText": "爆破领域",
+   "reading": "bao po ling yu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00782",
+   "text": "狂喜之心",
+   "typeText": "狂喜之心",
+   "reading": "kuang xi zhi xin",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00783",
+   "text": "狂风暴雪",
+   "typeText": "狂风暴雪",
+   "reading": "kuang feng bao xue",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00784",
+   "text": "狂风蚀箭",
+   "typeText": "狂风蚀箭",
+   "reading": "kuang feng shi jian",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00785",
+   "text": "猛者强击",
+   "typeText": "猛者强击",
+   "reading": "meng zhe qiang ji",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00786",
+   "text": "猛袭利牙",
+   "typeText": "猛袭利牙",
+   "reading": "meng xi li ya",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00787",
+   "text": "猛袭利齿",
+   "typeText": "猛袭利齿",
+   "reading": "meng xi li chi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00788",
+   "text": "猛袭盘蛇",
+   "typeText": "猛袭盘蛇",
+   "reading": "meng xi pan she",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00789",
+   "text": "猛袭盘蝰",
+   "typeText": "猛袭盘蝰",
+   "reading": "meng xi pan kui",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00790",
+   "text": "猿舞连击",
+   "typeText": "猿舞连击",
+   "reading": "yuan wu lian ji",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00791",
+   "text": "王室亲卫",
+   "typeText": "王室亲卫",
+   "reading": "wang shi qin wei",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00792",
+   "text": "环境探知",
+   "typeText": "环境探知",
+   "reading": "huan jing tan zhi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00793",
+   "text": "理智同兴",
+   "typeText": "理智同兴",
+   "reading": "li zhi tong xing",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00794",
+   "text": "生成外设",
+   "typeText": "生成外设",
+   "reading": "sheng cheng wai she",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00795",
+   "text": "生杀予夺",
+   "typeText": "生杀予夺",
+   "reading": "sheng sha yu duo",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00796",
+   "text": "疾速利牙",
+   "typeText": "疾速利牙",
+   "reading": "ji su li ya",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00797",
+   "text": "疾速利齿",
+   "typeText": "疾速利齿",
+   "reading": "ji su li chi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00798",
+   "text": "疾速盘蛇",
+   "typeText": "疾速盘蛇",
+   "reading": "ji su pan she",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00799",
+   "text": "疾速盘蝰",
+   "typeText": "疾速盘蝰",
+   "reading": "ji su pan kui",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00800",
+   "text": "疾风之绿",
+   "typeText": "疾风之绿",
+   "reading": "ji feng zhi lv",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00801",
+   "text": "疾风极意",
+   "typeText": "疾风极意",
+   "reading": "ji feng ji yi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00802",
+   "text": "痛苦核爆",
+   "typeText": "痛苦核爆",
+   "reading": "tong ku he bao",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00803",
+   "text": "白昼学派",
+   "typeText": "白昼学派",
+   "reading": "bai zhou xue pai",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00804",
+   "text": "白牛清汁",
+   "typeText": "白牛清汁",
+   "reading": "bai niu qing zhi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00805",
+   "text": "百花争艳",
+   "typeText": "百花争艳",
+   "reading": "bai hua zheng yan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00806",
+   "text": "直线射击",
+   "typeText": "直线射击",
+   "reading": "zhi xian she ji",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00807",
+   "text": "盾牌猛击",
+   "typeText": "盾牌猛击",
+   "reading": "dun pai meng ji",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00808",
+   "text": "真理之剑",
+   "typeText": "真理之剑",
+   "reading": "zhen li zhi jian",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00809",
+   "text": "短兵相接",
+   "typeText": "短兵相接",
+   "reading": "duan bing xiang jie",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00810",
+   "text": "石工之理",
+   "typeText": "石工之理",
+   "reading": "shi gong zhi li",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00811",
+   "text": "矿脉勘探",
+   "typeText": "矿脉勘探",
+   "reading": "kuang mai kan tan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00812",
+   "text": "破坏神冲",
+   "typeText": "破坏神冲",
+   "reading": "po huai shen chong",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00813",
+   "text": "破坏神脚",
+   "typeText": "破坏神脚",
+   "reading": "po huai shen jiao",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00814",
+   "text": "礼仪之铃",
+   "typeText": "礼仪之铃",
+   "reading": "li yi zhi ling",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00815",
+   "text": "祖灵降临",
+   "typeText": "祖灵降临",
+   "reading": "zu ling jiang lin",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00816",
+   "text": "神圣之白",
+   "typeText": "神圣之白",
+   "reading": "shen sheng zhi bai",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00817",
+   "text": "神圣领域",
+   "typeText": "神圣领域",
+   "reading": "shen sheng ling yu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00818",
+   "text": "神速咏唱",
+   "typeText": "神速咏唱",
+   "reading": "shen su yong chang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00819",
+   "text": "秘银暴风",
+   "typeText": "秘银暴风",
+   "reading": "mi yin bao feng",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00820",
+   "text": "空间转换",
+   "typeText": "空间转换",
+   "reading": "kong jian zhuan huan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00821",
+   "text": "空鸣斗气",
+   "typeText": "空鸣斗气",
+   "reading": "kong ming dou qi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00822",
+   "text": "穿甲散弹",
+   "typeText": "穿甲散弹",
+   "reading": "chuan jia san dan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00823",
+   "text": "穿裂尖牙",
+   "typeText": "穿裂尖牙",
+   "reading": "chuan lie jian ya",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00824",
+   "text": "穿裂尖齿",
+   "typeText": "穿裂尖齿",
+   "reading": "chuan lie jian chi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00825",
+   "text": "箭毒II",
+   "typeText": "箭毒II",
+   "reading": "jian du II",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "act_00826",
+   "text": "精准强击",
+   "typeText": "精准强击",
+   "reading": "jing zhun qiang ji",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00827",
+   "text": "精准提钩",
+   "typeText": "精准提钩",
+   "reading": "jing zhun ti gou",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00828",
+   "text": "精神冲击",
+   "typeText": "精神冲击",
+   "reading": "jing shen chong ji",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00829",
+   "text": "精雕怒斩",
+   "typeText": "精雕怒斩",
+   "reading": "jing diao nu zhan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00830",
+   "text": "糖果手杖",
+   "typeText": "糖果手杖",
+   "reading": "tang guo shou zhang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00831",
+   "text": "红莲极意",
+   "typeText": "红莲极意",
+   "reading": "hong lian ji yi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00832",
+   "text": "终有一死",
+   "typeText": "终有一死",
+   "reading": "zhong you yi si",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00833",
+   "text": "终结之心",
+   "typeText": "终结之心",
+   "reading": "zhong jie zhi xin",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00834",
+   "text": "绒球彩绘",
+   "typeText": "绒球彩绘",
+   "reading": "rong qiu cai hui",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00835",
+   "text": "绒球构想",
+   "typeText": "绒球构想",
+   "reading": "rong qiu gou xiang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00836",
+   "text": "绒绒治疗",
+   "typeText": "绒绒治疗",
+   "reading": "rong rong zhi liao",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00837",
+   "text": "结束动作",
+   "typeText": "结束动作",
+   "reading": "jie shu dong zuo",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00838",
+   "text": "绝对统治",
+   "typeText": "绝对统治",
+   "reading": "jue dui tong zhi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00839",
+   "text": "绞决处刑",
+   "typeText": "绞决处刑",
+   "reading": "jiao jue chu xing",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00840",
+   "text": "缢杀处刑",
+   "typeText": "缢杀处刑",
+   "reading": "yi sha chu xing",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00841",
+   "text": "群山隆起",
+   "typeText": "群山隆起",
+   "reading": "qun shan long qi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00842",
+   "text": "翅膀彩绘",
+   "typeText": "翅膀彩绘",
+   "reading": "chi bang cai hui",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00843",
+   "text": "翅膀构想",
+   "typeText": "翅膀构想",
+   "reading": "chi bang gou xiang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00844",
+   "text": "耐心II",
+   "typeText": "耐心II",
+   "reading": "nai xin II",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "act_00845",
+   "text": "聚精鱼眼",
+   "typeText": "聚精鱼眼",
+   "reading": "ju jing yu yan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00846",
+   "text": "背击獠齿",
+   "typeText": "背击獠齿",
+   "reading": "bei ji liao chi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00847",
+   "text": "背裂獠齿",
+   "typeText": "背裂獠齿",
+   "reading": "bei lie liao chi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00848",
+   "text": "能量吸收",
+   "typeText": "能量吸收",
+   "reading": "neng liang xi shou",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00849",
+   "text": "能量抽取",
+   "typeText": "能量抽取",
+   "reading": "neng liang chou qu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00850",
+   "text": "腐秽大地",
+   "typeText": "腐秽大地",
+   "reading": "fu hui da di",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00851",
+   "text": "腐秽黑暗",
+   "typeText": "腐秽黑暗",
+   "reading": "fu hui hei an",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00852",
+   "text": "自生II",
+   "typeText": "自生II",
+   "reading": "zi sheng II",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "act_00853",
+   "text": "至黑之夜",
+   "typeText": "至黑之夜",
+   "reading": "zhi hei zhi ye",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00854",
+   "text": "芥末爆弹",
+   "typeText": "芥末爆弹",
+   "reading": "jie mo bao dan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00855",
+   "text": "苏生之炎",
+   "typeText": "苏生之炎",
+   "reading": "su sheng zhi yan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00856",
+   "text": "若隐若现",
+   "typeText": "若隐若现",
+   "reading": "ruo yin ruo xian",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00857",
+   "text": "苦闷之歌",
+   "typeText": "苦闷之歌",
+   "reading": "ku men zhi ge",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00858",
+   "text": "苦难之心",
+   "typeText": "苦难之心",
+   "reading": "ku nan zhi xin",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00859",
+   "text": "英勇之剑",
+   "typeText": "英勇之剑",
+   "reading": "ying yong zhi jian",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00860",
+   "text": "荆棘环绕",
+   "typeText": "荆棘环绕",
+   "reading": "jing ji huan rao",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00861",
+   "text": "荣耀之剑",
+   "typeText": "荣耀之剑",
+   "reading": "rong yao zhi jian",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00862",
+   "text": "莫非王土",
+   "typeText": "莫非王土",
+   "reading": "mo fei wang tu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00863",
+   "text": "落陷凶星",
+   "typeText": "落陷凶星",
+   "reading": "luo xian xiong xing",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00864",
+   "text": "虚无收割",
+   "typeText": "虚无收割",
+   "reading": "xu wu shou ge",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00865",
+   "text": "蛮荒崩裂",
+   "typeText": "蛮荒崩裂",
+   "reading": "man huang beng lie",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00866",
+   "text": "融光解除",
+   "typeText": "融光解除",
+   "reading": "rong guang jie chu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00867",
+   "text": "螺旋气流",
+   "typeText": "螺旋气流",
+   "reading": "luo xuan qi liu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00868",
+   "text": "血雨飞花",
+   "typeText": "血雨飞花",
+   "reading": "xue yu fei hua",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00869",
+   "text": "行尸走肉",
+   "typeText": "行尸走肉",
+   "reading": "xing shi zou rou",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00870",
+   "text": "袖内抽卡",
+   "typeText": "袖内抽卡",
+   "reading": "xiu nei chou ka",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00871",
+   "text": "裂石飞环",
+   "typeText": "裂石飞环",
+   "reading": "lie shi fei huan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00872",
+   "text": "解除守护",
+   "typeText": "解除守护",
+   "reading": "jie chu shou hu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00873",
+   "text": "诡异视线",
+   "typeText": "诡异视线",
+   "reading": "gui yi shi xian",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00874",
+   "text": "谦逊之饵",
+   "typeText": "谦逊之饵",
+   "reading": "qian xun zhi er",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00875",
+   "text": "豹袭崩拳",
+   "typeText": "豹袭崩拳",
+   "reading": "bao xi beng quan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00876",
+   "text": "超火流星",
+   "typeText": "超火流星",
+   "reading": "chao huo liu xing",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00877",
+   "text": "轻身步法",
+   "typeText": "轻身步法",
+   "reading": "qing shen bu fa",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00878",
+   "text": "通灵之术",
+   "typeText": "通灵之术",
+   "reading": "tong ling zhi shu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00879",
+   "text": "重锤彩绘",
+   "typeText": "重锤彩绘",
+   "reading": "zhong chui cai hui",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00880",
+   "text": "重锤抛光",
+   "typeText": "重锤抛光",
+   "reading": "zhong chui pao guang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00881",
+   "text": "重锤掠刷",
+   "typeText": "重锤掠刷",
+   "reading": "zhong chui lve shua",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00882",
+   "text": "重锤敲章",
+   "typeText": "重锤敲章",
+   "reading": "zhong chui qiao zhang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00883",
+   "text": "重锤构想",
+   "typeText": "重锤构想",
+   "reading": "zhong chui gou xiang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00884",
+   "text": "金刚周天",
+   "typeText": "金刚周天",
+   "reading": "jin gang zhou tian",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00885",
+   "text": "金刚极意",
+   "typeText": "金刚极意",
+   "reading": "jin gang ji yi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00886",
+   "text": "钢铁信念",
+   "typeText": "钢铁信念",
+   "reading": "gang tie xin nian",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00887",
+   "text": "钢铁旋风",
+   "typeText": "钢铁旋风",
+   "reading": "gang tie xuan feng",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00888",
+   "text": "铁山斗气",
+   "typeText": "铁山斗气",
+   "reading": "tie shan dou qi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00889",
+   "text": "锋利菜刀",
+   "typeText": "锋利菜刀",
+   "reading": "feng li cai dao",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00890",
+   "text": "长期俭约",
+   "typeText": "长期俭约",
+   "reading": "chang qi jian yue",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00891",
+   "text": "闭式舞姿",
+   "typeText": "闭式舞姿",
+   "reading": "bi shi wu zi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00892",
+   "text": "防御指示",
+   "typeText": "防御指示",
+   "reading": "fang yu zhi shi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00893",
+   "text": "阳星合相",
+   "typeText": "阳星合相",
+   "reading": "yang xing he xiang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00894",
+   "text": "阳星相位",
+   "typeText": "阳星相位",
+   "reading": "yang xing xiang wei",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00895",
+   "text": "阴冷收割",
+   "typeText": "阴冷收割",
+   "reading": "yin leng shou ge",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00896",
+   "text": "阴阳斗气",
+   "typeText": "阴阳斗气",
+   "reading": "yin yang dou qi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00897",
+   "text": "降临之章",
+   "typeText": "降临之章",
+   "reading": "jiang lin zhi zhang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00898",
+   "text": "隐匿挥割",
+   "typeText": "隐匿挥割",
+   "reading": "yin ni hui ge",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00899",
+   "text": "雄心之饵",
+   "typeText": "雄心之饵",
+   "reading": "xiong xin zhi er",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00900",
+   "text": "集中检查",
+   "typeText": "集中检查",
+   "reading": "ji zhong jian cha",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00901",
+   "text": "雷电咆哮",
+   "typeText": "雷电咆哮",
+   "reading": "lei dian pao xiao",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00902",
+   "text": "雷遁之术",
+   "typeText": "雷遁之术",
+   "reading": "lei dun zhi shu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00903",
+   "text": "预备碰触",
+   "typeText": "预备碰触",
+   "reading": "yu bei peng chu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00904",
+   "text": "风景彩绘",
+   "typeText": "风景彩绘",
+   "reading": "feng jing cai hui",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00905",
+   "text": "风景构想",
+   "typeText": "风景构想",
+   "reading": "feng jing gou xiang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00906",
+   "text": "风神召唤",
+   "typeText": "风神召唤",
+   "reading": "feng shen zhao huan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00907",
+   "text": "风遁之术",
+   "typeText": "风遁之术",
+   "reading": "feng dun zhi shu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00908",
+   "text": "飞蛇之尾",
+   "typeText": "飞蛇之尾",
+   "reading": "fei she zhi wei",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00909",
+   "text": "飞蛇之牙",
+   "typeText": "飞蛇之牙",
+   "reading": "fei she zhi ya",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00910",
+   "text": "高产II",
+   "typeText": "高产II",
+   "reading": "gao chan II",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "act_00911",
+   "text": "高压电流",
+   "typeText": "高压电流",
+   "reading": "gao ya dian liu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00912",
+   "text": "高山气流",
+   "typeText": "高山气流",
+   "reading": "gao shan qi liu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00913",
+   "text": "魂灵风息",
+   "typeText": "魂灵风息",
+   "reading": "hun ling feng xi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00914",
+   "text": "魔之符文",
+   "typeText": "魔之符文",
+   "reading": "mo zhi fu wen",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00915",
+   "text": "魔交击斩",
+   "typeText": "魔交击斩",
+   "reading": "mo jiao ji zhan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00916",
+   "text": "魔法吐息",
+   "typeText": "魔法吐息",
+   "reading": "mo fa tu xi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00917",
+   "text": "魔纹重置",
+   "typeText": "魔纹重置",
+   "reading": "mo wen zhong zhi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00918",
+   "text": "鱼群测定",
+   "typeText": "鱼群测定",
+   "reading": "yu qun ce ding",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00919",
+   "text": "鲨鱼之眼",
+   "typeText": "鲨鱼之眼",
+   "reading": "sha yu zhi yan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00920",
+   "text": "黑夜学派",
+   "typeText": "黑夜学派",
+   "reading": "hei ye xue pai",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00921",
+   "text": "龙牙龙爪",
+   "typeText": "龙牙龙爪",
+   "reading": "long ya long zhao",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00922",
+   "text": "龙眼苍穹",
+   "typeText": "龙眼苍穹",
+   "reading": "long yan cang qiong",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00923",
+   "text": "龙眼雷电",
+   "typeText": "龙眼雷电",
+   "reading": "long yan lei dian",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00924",
+   "text": "龙神召唤",
+   "typeText": "龙神召唤",
+   "reading": "long shen zhao huan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00925",
+   "text": "龙神迸发",
+   "typeText": "龙神迸发",
+   "reading": "long shen beng fa",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00926",
+   "text": "龙神附体",
+   "typeText": "龙神附体",
+   "reading": "long shen fu ti",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00927",
+   "text": "龙翼滑翔",
+   "typeText": "龙翼滑翔",
+   "reading": "long yi hua xiang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00928",
+   "text": "龙颚正拳",
+   "typeText": "龙颚正拳",
+   "reading": "long e zheng quan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00929",
+   "text": "万象斗气圈",
+   "typeText": "万象斗气圈",
+   "reading": "wan xiang dou qi quan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00930",
+   "text": "不死鸟之翼",
+   "typeText": "不死鸟之翼",
+   "reading": "bu si niao zhi yi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00931",
+   "text": "不死鸟召唤",
+   "typeText": "不死鸟召唤",
+   "reading": "bu si niao zhao huan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00932",
+   "text": "不死鸟迸发",
+   "typeText": "不死鸟迸发",
+   "reading": "bu si niao beng fa",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00933",
+   "text": "不死鸟附体",
+   "typeText": "不死鸟附体",
+   "reading": "bu si niao fu ti",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00934",
+   "text": "世界树之干",
+   "typeText": "世界树之干",
+   "reading": "shi jie shu zhi gan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00935",
+   "text": "乾坤斗气弹",
+   "typeText": "乾坤斗气弹",
+   "reading": "qian kun dou qi dan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00936",
+   "text": "仙光的低语",
+   "typeText": "仙光的低语",
+   "reading": "xian guang de di yu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00937",
+   "text": "仙光的拥抱",
+   "typeText": "仙光的拥抱",
+   "reading": "xian guang de yong bao",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00938",
+   "text": "侧风诱导箭",
+   "typeText": "侧风诱导箭",
+   "reading": "ce feng you dao jian",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00939",
+   "text": "全金属爆发",
+   "typeText": "全金属爆发",
+   "reading": "quan jin shu bao fa",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00940",
+   "text": "八卦无刃杀",
+   "typeText": "八卦无刃杀",
+   "reading": "ba gua wu ren sha",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00941",
+   "text": "六合星导脚",
+   "typeText": "六合星导脚",
+   "reading": "liu he xing dao jiao",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00942",
+   "text": "兽魂的愤怒",
+   "typeText": "兽魂的愤怒",
+   "reading": "shou hun de fen nu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00943",
+   "text": "冰冻之蓝青",
+   "typeText": "冰冻之蓝青",
+   "reading": "bing dong zhi lan qing",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00944",
+   "text": "冰结之蓝青",
+   "typeText": "冰结之蓝青",
+   "reading": "bing jie zhi lan qing",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00945",
+   "text": "出卡III",
+   "typeText": "出卡III",
+   "reading": "chu ka III",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "act_00946",
+   "text": "十二神加护",
+   "typeText": "十二神加护",
+   "reading": "shi er shen jia hu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00947",
+   "text": "原初的勇猛",
+   "typeText": "原初的勇猛",
+   "reading": "yuan chu de yong meng",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00948",
+   "text": "原初的怒震",
+   "typeText": "原初的怒震",
+   "reading": "yuan chu de nu zhen",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00949",
+   "text": "原初的直觉",
+   "typeText": "原初的直觉",
+   "reading": "yuan chu de zhi jue",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00950",
+   "text": "原初的血气",
+   "typeText": "原初的血气",
+   "reading": "yuan chu de xue qi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00951",
+   "text": "原初的解放",
+   "typeText": "原初的解放",
+   "reading": "yuan chu de jie fang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00952",
+   "text": "发炎III",
+   "typeText": "发炎III",
+   "reading": "fa yan III",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "act_00953",
+   "text": "哥布林乱拳",
+   "typeText": "哥布林乱拳",
+   "reading": "ge bu lin luan quan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00954",
+   "text": "回返雪月花",
+   "typeText": "回返雪月花",
+   "reading": "hui fan xue yue hua",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00955",
+   "text": "地狱之火炎",
+   "typeText": "地狱之火炎",
+   "reading": "di yu zhi huo yan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00956",
+   "text": "坚石之纯黄",
+   "typeText": "坚石之纯黄",
+   "reading": "jian shi zhi chun huang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00957",
+   "text": "坦培拉涂层",
+   "typeText": "坦培拉涂层",
+   "reading": "tan pei la tu ceng",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00958",
+   "text": "夜游魂切割",
+   "typeText": "夜游魂切割",
+   "reading": "ye you hun qie ge",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00959",
+   "text": "夜游魂钐割",
+   "typeText": "夜游魂钐割",
+   "reading": "ye you hun shan ge",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00960",
+   "text": "大地的恩惠",
+   "typeText": "大地的恩惠",
+   "reading": "da di de en hui",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00961",
+   "text": "大鱼的知识",
+   "typeText": "大鱼的知识",
+   "reading": "da yu de zhi shi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00962",
+   "text": "天使的低语",
+   "typeText": "天使的低语",
+   "reading": "tian shi de di yu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00963",
+   "text": "天使的点心",
+   "typeText": "天使的点心",
+   "reading": "tian shi de dian xin",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00964",
+   "text": "天道雪月花",
+   "typeText": "天道雪月花",
+   "reading": "tian dao xue yue hua",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00965",
+   "text": "太阳神之衡",
+   "typeText": "太阳神之衡",
+   "reading": "tai yang shen zhi heng",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00966",
+   "text": "如意大旋风",
+   "typeText": "如意大旋风",
+   "reading": "ru yi da xuan feng",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00967",
+   "text": "宝石兽召唤",
+   "typeText": "宝石兽召唤",
+   "reading": "bao shi shou zhao huan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00968",
+   "text": "小鸟交叠跳",
+   "typeText": "小鸟交叠跳",
+   "reading": "xiao niao jiao die tiao",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00969",
+   "text": "建筑神之塔",
+   "typeText": "建筑神之塔",
+   "reading": "jian zhu shen zhi ta",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00970",
+   "text": "异想的幻光",
+   "typeText": "异想的幻光",
+   "reading": "yi xiang de huan guang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00971",
+   "text": "异想的柔光",
+   "typeText": "异想的柔光",
+   "reading": "yi xiang de rou guang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00972",
+   "text": "异想的流光",
+   "typeText": "异想的流光",
+   "reading": "yi xiang de liu guang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00973",
+   "text": "异想的炽光",
+   "typeText": "异想的炽光",
+   "reading": "yi xiang de chi guang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00974",
+   "text": "异想的盟光",
+   "typeText": "异想的盟光",
+   "reading": "yi xiang de meng guang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00975",
+   "text": "异想的祥光",
+   "typeText": "异想的祥光",
+   "reading": "yi xiang de xiang guang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00976",
+   "text": "异想的融光",
+   "typeText": "异想的融光",
+   "reading": "yi xiang de rong guang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00977",
+   "text": "异想的辉光",
+   "typeText": "异想的辉光",
+   "reading": "yi xiang de hui guang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00978",
+   "text": "强甲破点突",
+   "typeText": "强甲破点突",
+   "reading": "qiang jia po dian tu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00979",
+   "text": "必杀剑·九天",
+   "typeText": "必杀剑九天",
+   "reading": "bi sha jian jiu tian",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "act_00980",
+   "text": "必杀剑·回天",
+   "typeText": "必杀剑回天",
+   "reading": "bi sha jian hui tian",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "act_00981",
+   "text": "必杀剑·夜天",
+   "typeText": "必杀剑夜天",
+   "reading": "bi sha jian ye tian",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "act_00982",
+   "text": "必杀剑·晓天",
+   "typeText": "必杀剑晓天",
+   "reading": "bi sha jian xiao tian",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "act_00983",
+   "text": "必杀剑·红莲",
+   "typeText": "必杀剑红莲",
+   "reading": "bi sha jian hong lian",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "act_00984",
+   "text": "必杀剑·闪影",
+   "typeText": "必杀剑闪影",
+   "reading": "bi sha jian shan ying",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "act_00985",
+   "text": "必杀剑·震天",
+   "typeText": "必杀剑震天",
+   "reading": "bi sha jian zhen tian",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "act_00986",
+   "text": "战争神之枪",
+   "typeText": "战争神之枪",
+   "reading": "zhan zheng shen zhi qiang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00987",
+   "text": "战女神之怒",
+   "typeText": "战女神之怒",
+   "reading": "zhan nv shen zhi nu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00988",
+   "text": "投掷沙丁鱼",
+   "typeText": "投掷沙丁鱼",
+   "reading": "tou zhi sha ding yu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00989",
+   "text": "掀地板之术",
+   "typeText": "掀地板之术",
+   "reading": "xian di ban zhi shu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00990",
+   "text": "掠影的蔑视",
+   "typeText": "掠影的蔑视",
+   "reading": "lve ying de mie shi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00991",
+   "text": "收藏品采集",
+   "typeText": "收藏品采集",
+   "reading": "shou cang pin cai ji",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00992",
+   "text": "放浪神之箭",
+   "typeText": "放浪神之箭",
+   "reading": "fang lang shen zhi jian",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00993",
+   "text": "斗魂旋风脚",
+   "typeText": "斗魂旋风脚",
+   "reading": "dou hun xuan feng jiao",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00994",
+   "text": "月下彼岸花",
+   "typeText": "月下彼岸花",
+   "reading": "yue xia bi an hua",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00995",
+   "text": "月光的拥抱",
+   "typeText": "月光的拥抱",
+   "reading": "yue guang de yong bao",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00996",
+   "text": "月光的沉默",
+   "typeText": "月光的沉默",
+   "reading": "yue guang de chen mo",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00997",
+   "text": "月影雷兽爪",
+   "typeText": "月影雷兽爪",
+   "reading": "yue ying lei shou zhao",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00998",
+   "text": "月影雷兽牙",
+   "typeText": "月影雷兽牙",
+   "reading": "yue ying lei shou ya",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_00999",
+   "text": "水神的面纱",
+   "typeText": "水神的面纱",
+   "reading": "shui shen de mian sha",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01000",
+   "text": "河流神之瓶",
+   "typeText": "河流神之瓶",
+   "reading": "he liu shen zhi ping",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01001",
+   "text": "油性分泌物",
+   "typeText": "油性分泌物",
+   "reading": "you xing fen mi wu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01002",
+   "text": "注药III",
+   "typeText": "注药III",
+   "reading": "zhu yao III",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "act_01003",
+   "text": "火焰喷射器",
+   "typeText": "火焰喷射器",
+   "reading": "huo yan pen she qi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01004",
+   "text": "炽天的幕帘",
+   "typeText": "炽天的幕帘",
+   "reading": "chi tian de mu lian",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01005",
+   "text": "炽天的幻光",
+   "typeText": "炽天的幻光",
+   "reading": "chi tian de huan guang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01006",
+   "text": "玄天武水壁",
+   "typeText": "玄天武水壁",
+   "reading": "xuan tian wu shui bi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01007",
+   "text": "王冠之贵妇",
+   "typeText": "王冠之贵妇",
+   "reading": "wang guan zhi gui fu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01008",
+   "text": "王冠之领主",
+   "typeText": "王冠之领主",
+   "reading": "wang guan zhi ling zhu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01009",
+   "text": "王室对撞机",
+   "typeText": "王室对撞机",
+   "reading": "wang shi dui zhuang ji",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01010",
+   "text": "生命回生法",
+   "typeText": "生命回生法",
+   "reading": "sheng ming hui sheng fa",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01011",
+   "text": "生命活性法",
+   "typeText": "生命活性法",
+   "reading": "sheng ming huo xing fa",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01012",
+   "text": "白骑士之旅",
+   "typeText": "白骑士之旅",
+   "reading": "bai qi shi zhi lv",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01013",
+   "text": "百首龙牙箭",
+   "typeText": "百首龙牙箭",
+   "reading": "bai shou long ya jian",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01014",
+   "text": "祖灵大蛇牙",
+   "typeText": "祖灵大蛇牙",
+   "reading": "zu ling da she ya",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01015",
+   "text": "红宝石之仪",
+   "typeText": "红宝石之仪",
+   "reading": "hong bao shi zhi yi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01016",
+   "text": "红宝石之辉",
+   "typeText": "红宝石之辉",
+   "reading": "hong bao shi zhi hui",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01017",
+   "text": "红宝石召唤",
+   "typeText": "红宝石召唤",
+   "reading": "hong bao shi zhao huan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01018",
+   "text": "红宝石毁坏",
+   "typeText": "红宝石毁坏",
+   "reading": "hong bao shi hui huai",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01019",
+   "text": "红宝石毁灭",
+   "typeText": "红宝石毁灭",
+   "reading": "hong bao shi hui mie",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01020",
+   "text": "红宝石毁荡",
+   "typeText": "红宝石毁荡",
+   "reading": "hong bao shi hui dang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01021",
+   "text": "红宝石灾变",
+   "typeText": "红宝石灾变",
+   "reading": "hong bao shi zai bian",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01022",
+   "text": "红宝石灾祸",
+   "typeText": "红宝石灾祸",
+   "reading": "hong bao shi zai huo",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01023",
+   "text": "红宝石电圈",
+   "typeText": "红宝石电圈",
+   "reading": "hong bao shi dian quan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01024",
+   "text": "红宝石迸裂",
+   "typeText": "红宝石迸裂",
+   "reading": "hong bao shi beng lie",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01025",
+   "text": "纷乱雪月花",
+   "typeText": "纷乱雪月花",
+   "reading": "fen luan xue yue hua",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01026",
+   "text": "绿叶小踢腿",
+   "typeText": "绿叶小踢腿",
+   "reading": "lv ye xiao ti tui",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01027",
+   "text": "绿宝石之仪",
+   "typeText": "绿宝石之仪",
+   "reading": "lv bao shi zhi yi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01028",
+   "text": "绿宝石之光",
+   "typeText": "绿宝石之光",
+   "reading": "lv bao shi zhi guang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01029",
+   "text": "绿宝石之辉",
+   "typeText": "绿宝石之辉",
+   "reading": "lv bao shi zhi hui",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01030",
+   "text": "绿宝石召唤",
+   "typeText": "绿宝石召唤",
+   "reading": "lv bao shi zhao huan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01031",
+   "text": "绿宝石毁坏",
+   "typeText": "绿宝石毁坏",
+   "reading": "lv bao shi hui huai",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01032",
+   "text": "绿宝石毁灭",
+   "typeText": "绿宝石毁灭",
+   "reading": "lv bao shi hui mie",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01033",
+   "text": "绿宝石毁荡",
+   "typeText": "绿宝石毁荡",
+   "reading": "lv bao shi hui dang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01034",
+   "text": "绿宝石灾变",
+   "typeText": "绿宝石灾变",
+   "reading": "lv bao shi zai bian",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01035",
+   "text": "绿宝石灾祸",
+   "typeText": "绿宝石灾祸",
+   "reading": "lv bao shi zai huo",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01036",
+   "text": "绿宝石迸裂",
+   "typeText": "绿宝石迸裂",
+   "reading": "lv bao shi beng lie",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01037",
+   "text": "莫古力激流",
+   "typeText": "莫古力激流",
+   "reading": "mo gu li ji liu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01038",
+   "text": "蔷薇曲脚步",
+   "typeText": "蔷薇曲脚步",
+   "reading": "qiang wei qu jiao bu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01039",
+   "text": "诺菲卡福音",
+   "typeText": "诺菲卡福音",
+   "reading": "nuo fei ka fu yin",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01040",
+   "text": "进攻之探戈",
+   "typeText": "进攻之探戈",
+   "reading": "jin gong zhi tan ge",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01041",
+   "text": "野战治疗阵",
+   "typeText": "野战治疗阵",
+   "reading": "ye zhan zhi liao zhen",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01042",
+   "text": "金冠趾尖转",
+   "typeText": "金冠趾尖转",
+   "reading": "jin guan zhi jian zhuan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01043",
+   "text": "闪雷之品红",
+   "typeText": "闪雷之品红",
+   "reading": "shan lei zhi pin hong",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01044",
+   "text": "防守之桑巴",
+   "typeText": "防守之桑巴",
+   "reading": "fang shou zhi sang ba",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01045",
+   "text": "阴阳斗气斩",
+   "typeText": "阴阳斗气斩",
+   "reading": "yin yang dou qi zhan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01046",
+   "text": "陆行鸟陨石",
+   "typeText": "陆行鸟陨石",
+   "reading": "lu xing niao yun shi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01047",
+   "text": "震雷之品红",
+   "typeText": "震雷之品红",
+   "reading": "zhen lei zhi pin hong",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01048",
+   "text": "风魔手里剑",
+   "typeText": "风魔手里剑",
+   "reading": "feng mo shou li jian",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01049",
+   "text": "飞石之纯黄",
+   "typeText": "飞石之纯黄",
+   "reading": "fei shi zhi chun huang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01050",
+   "text": "飞蛇乱尾击",
+   "typeText": "飞蛇乱尾击",
+   "reading": "fei she luan wei ji",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01051",
+   "text": "飞蛇连尾击",
+   "typeText": "飞蛇连尾击",
+   "reading": "fei she lian wei ji",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01052",
+   "text": "马特拉魔术",
+   "typeText": "马特拉魔术",
+   "reading": "ma te la mo shu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01053",
+   "text": "马蒂恩惩罚",
+   "typeText": "马蒂恩惩罚",
+   "reading": "ma di en cheng fa",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01054",
+   "text": "黄宝石之仪",
+   "typeText": "黄宝石之仪",
+   "reading": "huang bao shi zhi yi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01055",
+   "text": "黄宝石之辉",
+   "typeText": "黄宝石之辉",
+   "reading": "huang bao shi zhi hui",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01056",
+   "text": "黄宝石召唤",
+   "typeText": "黄宝石召唤",
+   "reading": "huang bao shi zhao huan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01057",
+   "text": "黄宝石毁坏",
+   "typeText": "黄宝石毁坏",
+   "reading": "huang bao shi hui huai",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01058",
+   "text": "黄宝石毁灭",
+   "typeText": "黄宝石毁灭",
+   "reading": "huang bao shi hui mie",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01059",
+   "text": "黄宝石毁荡",
+   "typeText": "黄宝石毁荡",
+   "reading": "huang bao shi hui dang",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01060",
+   "text": "黄宝石灾变",
+   "typeText": "黄宝石灾变",
+   "reading": "huang bao shi zai bian",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01061",
+   "text": "黄宝石灾祸",
+   "typeText": "黄宝石灾祸",
+   "reading": "huang bao shi zai huo",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01062",
+   "text": "黄宝石迸裂",
+   "typeText": "黄宝石迸裂",
+   "reading": "huang bao shi beng lie",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01063",
+   "text": "黑骑士之旅",
+   "typeText": "黑骑士之旅",
+   "reading": "hei qi shi zhi lv",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01064",
+   "text": "龙尾大回旋",
+   "typeText": "龙尾大回旋",
+   "reading": "long wei da hui xuan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01065",
+   "text": "不屈不挠之策",
+   "typeText": "不屈不挠之策",
+   "reading": "bu qu bu nao zhi ce",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01066",
+   "text": "以小钓大II",
+   "typeText": "以小钓大II",
+   "reading": "yi xiao diao da II",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "act_01067",
+   "text": "军神的赞美歌",
+   "typeText": "军神的赞美歌",
+   "reading": "jun shen de zan mei ge",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01068",
+   "text": "冰晶乱流之术",
+   "typeText": "冰晶乱流之术",
+   "reading": "bing jing luan liu zhi shu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01069",
+   "text": "劫火灭却之术",
+   "typeText": "劫火灭却之术",
+   "reading": "jie huo mie que zhi shu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01070",
+   "text": "即兴表演结束",
+   "typeText": "即兴表演结束",
+   "reading": "ji xing biao yan jie shu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01071",
+   "text": "后式自走人偶",
+   "typeText": "后式自走人偶",
+   "reading": "hou shi zi zou ren ou",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01072",
+   "text": "土神召唤II",
+   "typeText": "土神召唤II",
+   "reading": "tu shen zhao huan II",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "act_01073",
+   "text": "均衡注药II",
+   "typeText": "均衡注药II",
+   "reading": "jun heng zhu yao II",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "act_01074",
+   "text": "均衡预后II",
+   "typeText": "均衡预后II",
+   "reading": "jun heng yu hou II",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "act_01075",
+   "text": "士气高扬之策",
+   "typeText": "士气高扬之策",
+   "reading": "shi qi gao yang zhi ce",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01076",
+   "text": "大地勘察II",
+   "typeText": "大地勘察II",
+   "reading": "da di kan cha II",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "act_01077",
+   "text": "天赐收成II",
+   "typeText": "天赐收成II",
+   "reading": "tian ci shou cheng II",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "act_01078",
+   "text": "天道回返五剑",
+   "typeText": "天道回返五剑",
+   "reading": "tian dao hui fan wu jian",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01079",
+   "text": "富矿的馈赠I",
+   "typeText": "富矿的馈赠I",
+   "reading": "fu kuang de kui zeng I",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "act_01080",
+   "text": "开拓者的眼力",
+   "typeText": "开拓者的眼力",
+   "reading": "kai tuo zhe de yan li",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01081",
+   "text": "意气轩昂之策",
+   "typeText": "意气轩昂之策",
+   "reading": "yi qi xuan ang zhi ce",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01082",
+   "text": "技巧舞步结束",
+   "typeText": "技巧舞步结束",
+   "reading": "ji qiao wu bu jie shu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01083",
+   "text": "敏锐视野II",
+   "typeText": "敏锐视野II",
+   "reading": "min rui shi ye II",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "act_01084",
+   "text": "标准舞步结束",
+   "typeText": "标准舞步结束",
+   "reading": "biao zhun wu bu jie shu",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01085",
+   "text": "树木之声II",
+   "typeText": "树木之声II",
+   "reading": "shu mu zhi sheng II",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "act_01086",
+   "text": "沃土的馈赠I",
+   "typeText": "沃土的馈赠I",
+   "reading": "wo tu de kui zeng I",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "act_01087",
+   "text": "治疗之华尔兹",
+   "typeText": "治疗之华尔兹",
+   "reading": "zhi liao zhi hua er zi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01088",
+   "text": "深谋远虑之策",
+   "typeText": "深谋远虑之策",
+   "reading": "shen mou yuan lv zhi ce",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01089",
+   "text": "火神召唤II",
+   "typeText": "火神召唤II",
+   "reading": "huo shen zhao huan II",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "act_01090",
+   "text": "烈日龙神召唤",
+   "typeText": "烈日龙神召唤",
+   "reading": "lie ri long shen zhao huan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01091",
+   "text": "烈日龙神迸发",
+   "typeText": "烈日龙神迸发",
+   "reading": "lie ri long shen beng fa",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01092",
+   "text": "环境探知II",
+   "typeText": "环境探知II",
+   "reading": "huan jing tan zhi II",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "act_01093",
+   "text": "疾风怒涛之计",
+   "typeText": "疾风怒涛之计",
+   "reading": "ji feng nu tao zhi ji",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01094",
+   "text": "登山者的眼力",
+   "typeText": "登山者的眼力",
+   "reading": "deng shan zhe de yan li",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01095",
+   "text": "祖灵之牙一式",
+   "typeText": "祖灵之牙一式",
+   "reading": "zu ling zhi ya yi shi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01096",
+   "text": "祖灵之牙三式",
+   "typeText": "祖灵之牙三式",
+   "reading": "zu ling zhi ya san shi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01097",
+   "text": "祖灵之牙二式",
+   "typeText": "祖灵之牙二式",
+   "reading": "zu ling zhi ya er shi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01098",
+   "text": "祖灵之牙四式",
+   "typeText": "祖灵之牙四式",
+   "reading": "zu ling zhi ya si shi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01099",
+   "text": "祖灵之蛇一式",
+   "typeText": "祖灵之蛇一式",
+   "reading": "zu ling zhi she yi shi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01100",
+   "text": "祖灵之蛇三式",
+   "typeText": "祖灵之蛇三式",
+   "reading": "zu ling zhi she san shi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01101",
+   "text": "祖灵之蛇二式",
+   "typeText": "祖灵之蛇二式",
+   "reading": "zu ling zhi she er shi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01102",
+   "text": "祖灵之蛇四式",
+   "typeText": "祖灵之蛇四式",
+   "reading": "zu ling zhi she si shi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01103",
+   "text": "纳尔札尔福音",
+   "typeText": "纳尔札尔福音",
+   "reading": "na er zha er fu yin",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01104",
+   "text": "莫非王土II",
+   "typeText": "莫非王土II",
+   "reading": "mo fei wang tu II",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "act_01105",
+   "text": "解除深恶痛绝",
+   "typeText": "解除深恶痛绝",
+   "reading": "jie chu shen wu tong jue",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01106",
+   "text": "解除王室亲卫",
+   "typeText": "解除王室亲卫",
+   "reading": "jie chu wang shi qin wei",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01107",
+   "text": "解除钢铁信念",
+   "typeText": "解除钢铁信念",
+   "reading": "jie chu gang tie xin nian",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01108",
+   "text": "解除闭式舞姿",
+   "typeText": "解除闭式舞姿",
+   "reading": "jie chu bi shi wu zi",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01109",
+   "text": "贤者的叙事谣",
+   "typeText": "贤者的叙事谣",
+   "reading": "xian zhe de xu shi yao",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01110",
+   "text": "超档后式人偶",
+   "typeText": "超档后式人偶",
+   "reading": "chao dang hou shi ren ou",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01111",
+   "text": "超档车式炮塔",
+   "typeText": "超档车式炮塔",
+   "reading": "chao dang che shi pao ta",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01112",
+   "text": "车式浮空炮塔",
+   "typeText": "车式浮空炮塔",
+   "reading": "che shi fu kong pao ta",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01113",
+   "text": "风神召唤II",
+   "typeText": "风神召唤II",
+   "reading": "feng shen zhao huan II",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "act_01114",
+   "text": "魔划圆斩·一段",
+   "typeText": "魔划圆斩一段",
+   "reading": "mo hua yuan zhan yi duan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "act_01115",
+   "text": "魔划圆斩·三段",
+   "typeText": "魔划圆斩三段",
+   "reading": "mo hua yuan zhan san duan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "act_01116",
+   "text": "魔划圆斩·二段",
+   "typeText": "魔划圆斩二段",
+   "reading": "mo hua yuan zhan er duan",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "act_01117",
+   "text": "鲨鱼之眼II",
+   "typeText": "鲨鱼之眼II",
+   "reading": "sha yu zhi yan II",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "act_01118",
+   "text": "鼓舞激励之策",
+   "typeText": "鼓舞激励之策",
+   "reading": "gu wu ji li zhi ce",
+   "category": "actions",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "act_01119",
+   "text": "均衡注药III",
+   "typeText": "均衡注药III",
+   "reading": "jun heng zhu yao III",
+   "category": "actions",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "act_01120",
+   "text": "天道回返雪月花",
+   "typeText": "天道回返雪月花",
+   "reading": "tian dao hui fan xue yue hua",
+   "category": "actions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "act_01121",
+   "text": "富矿的馈赠II",
+   "typeText": "富矿的馈赠II",
+   "reading": "fu kuang de kui zeng II",
+   "category": "actions",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "act_01122",
+   "text": "敏锐视野III",
+   "typeText": "敏锐视野III",
+   "reading": "min rui shi ye III",
+   "category": "actions",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "act_01123",
+   "text": "沃土的馈赠II",
+   "typeText": "沃土的馈赠II",
+   "reading": "wo tu de kui zeng II",
+   "category": "actions",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "act_01124",
+   "text": "沙利亚克的恩宠",
+   "typeText": "沙利亚克的恩宠",
+   "reading": "sha li ya ke de en chong",
+   "category": "actions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "act_01125",
+   "text": "油性坦培拉涂层",
+   "typeText": "油性坦培拉涂层",
+   "reading": "you xing tan pei la tu ceng",
+   "category": "actions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "act_01126",
+   "text": "环境探知III",
+   "typeText": "环境探知III",
+   "reading": "huan jing tan zhi III",
+   "category": "actions",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "act_01127",
+   "text": "超负荷车式炮塔",
+   "typeText": "超负荷车式炮塔",
+   "reading": "chao fu he che shi pao ta",
+   "category": "actions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "act_01128",
+   "text": "通灵之术·大虾蟆",
+   "typeText": "通灵之术大虾蟆",
+   "reading": "tong ling zhi shu da ha ma",
+   "category": "actions",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "act_01129",
+   "text": "通灵之术·虾蟆仙",
+   "typeText": "通灵之术虾蟆仙",
+   "reading": "tong ling zhi shu ha ma xian",
+   "category": "actions",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "act_01130",
+   "text": "三色技巧舞步结束",
+   "typeText": "三色技巧舞步结束",
+   "reading": "san se ji qiao wu bu jie shu",
+   "category": "actions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "act_01131",
+   "text": "光明神的最终乐章",
+   "typeText": "光明神的最终乐章",
+   "reading": "guang ming shen de zui zhong yue zhang",
+   "category": "actions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "act_01132",
+   "text": "光明神的返场余音",
+   "typeText": "光明神的返场余音",
+   "reading": "guang ming shen de fan chang yu yin",
+   "category": "actions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "act_01133",
+   "text": "光阴神的礼赞凯歌",
+   "typeText": "光阴神的礼赞凯歌",
+   "reading": "guang yin shen de li zan kai ge",
+   "category": "actions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "act_01134",
+   "text": "单色技巧舞步结束",
+   "typeText": "单色技巧舞步结束",
+   "reading": "dan se ji qiao wu bu jie shu",
+   "category": "actions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "act_01135",
+   "text": "单色标准舞步结束",
+   "typeText": "单色标准舞步结束",
+   "reading": "dan se biao zhun wu bu jie shu",
+   "category": "actions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "act_01136",
+   "text": "双色技巧舞步结束",
+   "typeText": "双色技巧舞步结束",
+   "reading": "shuang se ji qiao wu bu jie shu",
+   "category": "actions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "act_01137",
+   "text": "双色标准舞步结束",
+   "typeText": "双色标准舞步结束",
+   "reading": "shuang se biao zhun wu bu jie shu",
+   "category": "actions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "act_01138",
+   "text": "四色技巧舞步结束",
+   "typeText": "四色技巧舞步结束",
+   "reading": "si se ji qiao wu bu jie shu",
+   "category": "actions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "act_01139",
+   "text": "大地神的抒情恋歌",
+   "typeText": "大地神的抒情恋歌",
+   "reading": "da di shen de shu qing lian ge",
+   "category": "actions",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "act_01140",
+   "text": "放浪神的小步舞曲",
+   "typeText": "放浪神的小步舞曲",
+   "reading": "fang lang shen de xiao bu wu qu",
+   "category": "actions",
+   "difficulty": 3,
+   "pure": true
+  }
+ ]
+}

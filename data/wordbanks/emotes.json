@@ -1,0 +1,2681 @@
+{
+ "category": "emotes",
+ "label": "情感动作",
+ "count": 297,
+ "source": "thewakingsands/ffxiv-datamining-cn",
+ "entries": [
+  {
+   "id": "emo_00001",
+   "text": "下跪",
+   "typeText": "下跪",
+   "reading": "xia gui",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00002",
+   "text": "不满",
+   "typeText": "不满",
+   "reading": "bu man",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00003",
+   "text": "伸展",
+   "typeText": "伸展",
+   "reading": "shen zhan",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00004",
+   "text": "侧步",
+   "typeText": "侧步",
+   "reading": "ce bu",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00005",
+   "text": "击掌",
+   "typeText": "击掌",
+   "reading": "ji zhang",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00006",
+   "text": "击飞",
+   "typeText": "击飞",
+   "reading": "ji fei",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00007",
+   "text": "加油",
+   "typeText": "加油",
+   "reading": "jia you",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00008",
+   "text": "后悔",
+   "typeText": "后悔",
+   "reading": "hou hui",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00009",
+   "text": "否定",
+   "typeText": "否定",
+   "reading": "fou ding",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00010",
+   "text": "哭泣",
+   "typeText": "哭泣",
+   "reading": "ku qi",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00011",
+   "text": "哼歌",
+   "typeText": "哼歌",
+   "reading": "heng ge",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00012",
+   "text": "嘿哟",
+   "typeText": "嘿哟",
+   "reading": "hei yo",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00013",
+   "text": "困惑",
+   "typeText": "困惑",
+   "reading": "kun huo",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00014",
+   "text": "坐下",
+   "typeText": "坐下",
+   "reading": "zuo xia",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00015",
+   "text": "大笑",
+   "typeText": "大笑",
+   "reading": "da xiao",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00016",
+   "text": "失望",
+   "typeText": "失望",
+   "reading": "shi wang",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00017",
+   "text": "头痛",
+   "typeText": "头痛",
+   "reading": "tou tong",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00018",
+   "text": "好冷",
+   "typeText": "好冷",
+   "reading": "hao leng",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00019",
+   "text": "好热",
+   "typeText": "好热",
+   "reading": "hao re",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00020",
+   "text": "安慰",
+   "typeText": "安慰",
+   "reading": "an wei",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00021",
+   "text": "安抚",
+   "typeText": "安抚",
+   "reading": "an fu",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00022",
+   "text": "害怕",
+   "typeText": "害怕",
+   "reading": "hai pa",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00023",
+   "text": "害羞",
+   "typeText": "害羞",
+   "reading": "hai xiu",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00024",
+   "text": "对拳",
+   "typeText": "对拳",
+   "reading": "dui quan",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00025",
+   "text": "展示",
+   "typeText": "展示",
+   "reading": "zhan shi",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00026",
+   "text": "巡视",
+   "typeText": "巡视",
+   "reading": "xun shi",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00027",
+   "text": "干杯",
+   "typeText": "干杯",
+   "reading": "gan bei",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00028",
+   "text": "引用",
+   "typeText": "引用",
+   "reading": "yin yong",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00029",
+   "text": "张望",
+   "typeText": "张望",
+   "reading": "zhang wang",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00030",
+   "text": "待命",
+   "typeText": "待命",
+   "reading": "dai ming",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00031",
+   "text": "心意",
+   "typeText": "心意",
+   "reading": "xin yi",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00032",
+   "text": "思考",
+   "typeText": "思考",
+   "reading": "si kao",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00033",
+   "text": "惊讶",
+   "typeText": "惊讶",
+   "reading": "jing ya",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00034",
+   "text": "愠怒",
+   "typeText": "愠怒",
+   "reading": "yun nu",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00035",
+   "text": "愤怒",
+   "typeText": "愤怒",
+   "reading": "fen nu",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00036",
+   "text": "慌张",
+   "typeText": "慌张",
+   "reading": "huang zhang",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00037",
+   "text": "戳指",
+   "typeText": "戳指",
+   "reading": "chuo zhi",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00038",
+   "text": "打盹",
+   "typeText": "打盹",
+   "reading": "da dun",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00039",
+   "text": "扫地",
+   "typeText": "扫地",
+   "reading": "sao di",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00040",
+   "text": "投掷",
+   "typeText": "投掷",
+   "reading": "tou zhi",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00041",
+   "text": "抚摸",
+   "typeText": "抚摸",
+   "reading": "fu mo",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00042",
+   "text": "抱头",
+   "typeText": "抱头",
+   "reading": "bao tou",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00043",
+   "text": "拍手",
+   "typeText": "拍手",
+   "reading": "pai shou",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00044",
+   "text": "拍照",
+   "typeText": "拍照",
+   "reading": "pai zhao",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00045",
+   "text": "招手",
+   "typeText": "招手",
+   "reading": "zhao shou",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00046",
+   "text": "拥抱",
+   "typeText": "拥抱",
+   "reading": "yong bao",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00047",
+   "text": "指向",
+   "typeText": "指向",
+   "reading": "zhi xiang",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00048",
+   "text": "挥手",
+   "typeText": "挥手",
+   "reading": "hui shou",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00049",
+   "text": "捂脸",
+   "typeText": "捂脸",
+   "reading": "wu lian",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00050",
+   "text": "提醒",
+   "typeText": "提醒",
+   "reading": "ti xing",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00051",
+   "text": "搓手",
+   "typeText": "搓手",
+   "reading": "cuo shou",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00052",
+   "text": "摇头",
+   "typeText": "摇头",
+   "reading": "yao tou",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00053",
+   "text": "撒娇",
+   "typeText": "撒娇",
+   "reading": "sa jiao",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00054",
+   "text": "撩水",
+   "typeText": "撩水",
+   "reading": "liao shui",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00055",
+   "text": "敬礼",
+   "typeText": "敬礼",
+   "reading": "jing li",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00056",
+   "text": "欢迎",
+   "typeText": "欢迎",
+   "reading": "huan ying",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00057",
+   "text": "比心",
+   "typeText": "比心",
+   "reading": "bi xin",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00058",
+   "text": "浇水",
+   "typeText": "浇水",
+   "reading": "jiao shui",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00059",
+   "text": "浮水",
+   "typeText": "浮水",
+   "reading": "fu shui",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00060",
+   "text": "深蹲",
+   "typeText": "深蹲",
+   "reading": "shen dun",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00061",
+   "text": "激励",
+   "typeText": "激励",
+   "reading": "ji li",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00062",
+   "text": "点头",
+   "typeText": "点头",
+   "reading": "dian tou",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00063",
+   "text": "热身",
+   "typeText": "热身",
+   "reading": "re shen",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00064",
+   "text": "煎蛋",
+   "typeText": "煎蛋",
+   "reading": "jian dan",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00065",
+   "text": "疑问",
+   "typeText": "疑问",
+   "reading": "yi wen",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00066",
+   "text": "看书",
+   "typeText": "看书",
+   "reading": "kan shu",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00067",
+   "text": "睡觉",
+   "typeText": "睡觉",
+   "reading": "shui jiao",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00068",
+   "text": "确认",
+   "typeText": "确认",
+   "reading": "que ren",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00069",
+   "text": "祈祷",
+   "typeText": "祈祷",
+   "reading": "qi dao",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00070",
+   "text": "祝祷",
+   "typeText": "祝祷",
+   "reading": "zhu dao",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00071",
+   "text": "称赞",
+   "typeText": "称赞",
+   "reading": "cheng zan",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00072",
+   "text": "稍息",
+   "typeText": "稍息",
+   "reading": "shao xi",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00073",
+   "text": "究极",
+   "typeText": "究极",
+   "reading": "jiu ji",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00074",
+   "text": "立正",
+   "typeText": "立正",
+   "reading": "li zheng",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00075",
+   "text": "练拳",
+   "typeText": "练拳",
+   "reading": "lian quan",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00076",
+   "text": "练武",
+   "typeText": "练武",
+   "reading": "lian wu",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00077",
+   "text": "耸肩",
+   "typeText": "耸肩",
+   "reading": "song jian",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00078",
+   "text": "肯定",
+   "typeText": "肯定",
+   "reading": "ken ding",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00079",
+   "text": "背靠",
+   "typeText": "背靠",
+   "reading": "bei kao",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00080",
+   "text": "自视",
+   "typeText": "自视",
+   "reading": "zi shi",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00081",
+   "text": "花雨",
+   "typeText": "花雨",
+   "reading": "hua yu",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00082",
+   "text": "莫名",
+   "typeText": "莫名",
+   "reading": "mo ming",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00083",
+   "text": "行礼",
+   "typeText": "行礼",
+   "reading": "xing li",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00084",
+   "text": "装死",
+   "typeText": "装死",
+   "reading": "zhuang si",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00085",
+   "text": "观战",
+   "typeText": "观战",
+   "reading": "guan zhan",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00086",
+   "text": "诅咒",
+   "typeText": "诅咒",
+   "reading": "zu zhou",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00087",
+   "text": "说明",
+   "typeText": "说明",
+   "reading": "shuo ming",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00088",
+   "text": "说话",
+   "typeText": "说话",
+   "reading": "shuo hua",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00089",
+   "text": "调饮",
+   "typeText": "调饮",
+   "reading": "diao yin",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00090",
+   "text": "质疑",
+   "typeText": "质疑",
+   "reading": "zhi yi",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00091",
+   "text": "起身",
+   "typeText": "起身",
+   "reading": "qi shen",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00092",
+   "text": "跳脚",
+   "typeText": "跳脚",
+   "reading": "tiao jiao",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00093",
+   "text": "跳舞",
+   "typeText": "跳舞",
+   "reading": "tiao wu",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00094",
+   "text": "转圈",
+   "typeText": "转圈",
+   "reading": "zhuan quan",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00095",
+   "text": "轻笑",
+   "typeText": "轻笑",
+   "reading": "qing xiao",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00096",
+   "text": "迷糊",
+   "typeText": "迷糊",
+   "reading": "mi hu",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00097",
+   "text": "递交",
+   "typeText": "递交",
+   "reading": "di jiao",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00098",
+   "text": "道别",
+   "typeText": "道别",
+   "reading": "dao bie",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00099",
+   "text": "震惊",
+   "typeText": "震惊",
+   "reading": "zhen jing",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00100",
+   "text": "飞吻",
+   "typeText": "飞吻",
+   "reading": "fei wen",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00101",
+   "text": "高兴",
+   "typeText": "高兴",
+   "reading": "gao xing",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00102",
+   "text": "魔术",
+   "typeText": "魔术",
+   "reading": "mo shu",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00103",
+   "text": "默剧",
+   "typeText": "默剧",
+   "reading": "mo ju",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00104",
+   "text": "默哀",
+   "typeText": "默哀",
+   "reading": "mo ai",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00105",
+   "text": "鼓励",
+   "typeText": "鼓励",
+   "reading": "gu li",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00106",
+   "text": "俯卧撑",
+   "typeText": "俯卧撑",
+   "reading": "fu wo cheng",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00107",
+   "text": "兔兔舞",
+   "typeText": "兔兔舞",
+   "reading": "tu tu wu",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00108",
+   "text": "古菩步",
+   "typeText": "古菩步",
+   "reading": "gu pu bu",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00109",
+   "text": "吃夹饼",
+   "typeText": "吃夹饼",
+   "reading": "chi jia bing",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00110",
+   "text": "吃披萨",
+   "typeText": "吃披萨",
+   "reading": "chi pi sa",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00111",
+   "text": "吃炸鸡",
+   "typeText": "吃炸鸡",
+   "reading": "chi zha ji",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00112",
+   "text": "吃苹果",
+   "typeText": "吃苹果",
+   "reading": "chi ping guo",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00113",
+   "text": "吃面包",
+   "typeText": "吃面包",
+   "reading": "chi mian bao",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00114",
+   "text": "吃饭团",
+   "typeText": "吃饭团",
+   "reading": "chi fan tuan",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00115",
+   "text": "后空翻",
+   "typeText": "后空翻",
+   "reading": "hou kong fan",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00116",
+   "text": "吓唬人",
+   "typeText": "吓唬人",
+   "reading": "xia hu ren",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00117",
+   "text": "吹泡泡",
+   "typeText": "吹泡泡",
+   "reading": "chui pao pao",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00118",
+   "text": "啦哩吼",
+   "typeText": "啦哩吼",
+   "reading": "la li hou",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00119",
+   "text": "回头看",
+   "typeText": "回头看",
+   "reading": "hui tou kan",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00120",
+   "text": "太棒了！",
+   "typeText": "太棒了",
+   "reading": "tai bang le",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": false
+  },
+  {
+   "id": "emo_00121",
+   "text": "手抚胸",
+   "typeText": "手抚胸",
+   "reading": "shou fu xiong",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00122",
+   "text": "打响指",
+   "typeText": "打响指",
+   "reading": "da xiang zhi",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00123",
+   "text": "打招呼",
+   "typeText": "打招呼",
+   "reading": "da zhao hu",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00124",
+   "text": "托眼镜",
+   "typeText": "托眼镜",
+   "reading": "tuo yan jing",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00125",
+   "text": "投雪球",
+   "typeText": "投雪球",
+   "reading": "tou xue qiu",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00126",
+   "text": "抱拳礼",
+   "typeText": "抱拳礼",
+   "reading": "bao quan li",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00127",
+   "text": "摆造型",
+   "typeText": "摆造型",
+   "reading": "bai zao xing",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00128",
+   "text": "斩铁剑",
+   "typeText": "斩铁剑",
+   "reading": "zhan tie jian",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00129",
+   "text": "方形步",
+   "typeText": "方形步",
+   "reading": "fang xing bu",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00130",
+   "text": "模特步",
+   "typeText": "模特步",
+   "reading": "mo te bu",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00131",
+   "text": "深呼吸",
+   "typeText": "深呼吸",
+   "reading": "shen hu xi",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00132",
+   "text": "火盆舞",
+   "typeText": "火盆舞",
+   "reading": "huo pen wu",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00133",
+   "text": "甩巴掌",
+   "typeText": "甩巴掌",
+   "reading": "shuai ba zhang",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00134",
+   "text": "神典石",
+   "typeText": "神典石",
+   "reading": "shen dian shi",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00135",
+   "text": "趾踵步",
+   "typeText": "趾踵步",
+   "reading": "zhi zhong bu",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00136",
+   "text": "踢踏舞",
+   "typeText": "踢踏舞",
+   "reading": "ti ta wu",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00137",
+   "text": "通讯珠",
+   "typeText": "通讯珠",
+   "reading": "tong xun zhu",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00138",
+   "text": "雀跃1",
+   "typeText": "雀跃1",
+   "reading": "que yue 1",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": false
+  },
+  {
+   "id": "emo_00139",
+   "text": "雀跃2",
+   "typeText": "雀跃2",
+   "reading": "que yue 2",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": false
+  },
+  {
+   "id": "emo_00140",
+   "text": "雀跃3",
+   "typeText": "雀跃3",
+   "reading": "que yue 3",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": false
+  },
+  {
+   "id": "emo_00141",
+   "text": "雀跃4",
+   "typeText": "雀跃4",
+   "reading": "que yue 4",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": false
+  },
+  {
+   "id": "emo_00142",
+   "text": "雀跃5",
+   "typeText": "雀跃5",
+   "reading": "que yue 5",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": false
+  },
+  {
+   "id": "emo_00143",
+   "text": "霹雳舞",
+   "typeText": "霹雳舞",
+   "reading": "pi li wu",
+   "category": "emotes",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "emo_00144",
+   "text": "下跪认错",
+   "typeText": "下跪认错",
+   "reading": "xia gui ren cuo",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00145",
+   "text": "两眼放光",
+   "typeText": "两眼放光",
+   "reading": "liang yan fang guang",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00146",
+   "text": "丰饶之舞",
+   "typeText": "丰饶之舞",
+   "reading": "feng rao zhi wu",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00147",
+   "text": "亮出武器",
+   "typeText": "亮出武器",
+   "reading": "liang chu wu qi",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00148",
+   "text": "仰卧起坐",
+   "typeText": "仰卧起坐",
+   "reading": "yang wo qi zuo",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00149",
+   "text": "众生离绝",
+   "typeText": "众生离绝",
+   "reading": "zhong sheng li jue",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00150",
+   "text": "公主之舞",
+   "typeText": "公主之舞",
+   "reading": "gong zhu zhi wu",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00151",
+   "text": "准备战斗",
+   "typeText": "准备战斗",
+   "reading": "zhun bei zhan dou",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00152",
+   "text": "单膝跪地",
+   "typeText": "单膝跪地",
+   "reading": "dan xi gui di",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00153",
+   "text": "双手抱书",
+   "typeText": "双手抱书",
+   "reading": "shuang shou bao shu",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00154",
+   "text": "叛逆精神",
+   "typeText": "叛逆精神",
+   "reading": "pan ni jing shen",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00155",
+   "text": "吃水煮蛋",
+   "typeText": "吃水煮蛋",
+   "reading": "chi shui zhu dan",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00156",
+   "text": "啦哩吼舞",
+   "typeText": "啦哩吼舞",
+   "reading": "la li hou wu",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00157",
+   "text": "噢霍卡利",
+   "typeText": "噢霍卡利",
+   "reading": "o huo ka li",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00158",
+   "text": "坚持主张",
+   "typeText": "坚持主张",
+   "reading": "jian chi zhu zhang",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00159",
+   "text": "垂头丧气",
+   "typeText": "垂头丧气",
+   "reading": "chui tou sang qi",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00160",
+   "text": "大吃一惊",
+   "typeText": "大吃一惊",
+   "reading": "da chi yi jing",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00161",
+   "text": "大失所望",
+   "typeText": "大失所望",
+   "reading": "da shi suo wang",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00162",
+   "text": "大惊小怪",
+   "typeText": "大惊小怪",
+   "reading": "da jing xiao guai",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00163",
+   "text": "大获全胜",
+   "typeText": "大获全胜",
+   "reading": "da huo quan sheng",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00164",
+   "text": "太感动了",
+   "typeText": "太感动了",
+   "reading": "tai gan dong le",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00165",
+   "text": "太阳之舞",
+   "typeText": "太阳之舞",
+   "reading": "tai yang zhi wu",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00166",
+   "text": "威光降临",
+   "typeText": "威光降临",
+   "reading": "wei guang jiang lin",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00167",
+   "text": "宫廷之舞",
+   "typeText": "宫廷之舞",
+   "reading": "gong ting zhi wu",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00168",
+   "text": "展现右侧",
+   "typeText": "展现右侧",
+   "reading": "zhan xian you ce",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00169",
+   "text": "展现左侧",
+   "typeText": "展现左侧",
+   "reading": "zhan xian zuo ce",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00170",
+   "text": "干劲十足",
+   "typeText": "干劲十足",
+   "reading": "gan jin shi zu",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00171",
+   "text": "幻想舞步",
+   "typeText": "幻想舞步",
+   "reading": "huan xiang wu bu",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00172",
+   "text": "得意洋洋",
+   "typeText": "得意洋洋",
+   "reading": "de yi yang yang",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00173",
+   "text": "扇大团扇",
+   "typeText": "扇大团扇",
+   "reading": "shan da tuan shan",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00174",
+   "text": "振作精神",
+   "typeText": "振作精神",
+   "reading": "zhen zuo jing shen",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00175",
+   "text": "摇兔兔耳",
+   "typeText": "摇兔兔耳",
+   "reading": "yao tu tu er",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00176",
+   "text": "收回武器",
+   "typeText": "收回武器",
+   "reading": "shou hui wu qi",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00177",
+   "text": "改变姿势",
+   "typeText": "改变姿势",
+   "reading": "gai bian zi shi",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00178",
+   "text": "放声大笑",
+   "typeText": "放声大笑",
+   "reading": "fang sheng da xiao",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00179",
+   "text": "敲魔键盘",
+   "typeText": "敲魔键盘",
+   "reading": "qiao mo jian pan",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00180",
+   "text": "日月之舞",
+   "typeText": "日月之舞",
+   "reading": "ri yue zhi wu",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00181",
+   "text": "晕头转向",
+   "typeText": "晕头转向",
+   "reading": "yun tou zhuan xiang",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00182",
+   "text": "查看地图",
+   "typeText": "查看地图",
+   "reading": "cha kan di tu",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00183",
+   "text": "欢呼胜利",
+   "typeText": "欢呼胜利",
+   "reading": "huan hu sheng li",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00184",
+   "text": "欣喜若狂",
+   "typeText": "欣喜若狂",
+   "reading": "xin xi ruo kuang",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00185",
+   "text": "比对文献",
+   "typeText": "比对文献",
+   "reading": "bi dui wen xian",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00186",
+   "text": "气得发抖",
+   "typeText": "气得发抖",
+   "reading": "qi de fa dou",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00187",
+   "text": "波波托步",
+   "typeText": "波波托步",
+   "reading": "bo bo tuo bu",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00188",
+   "text": "深情拥抱",
+   "typeText": "深情拥抱",
+   "reading": "shen qing yong bao",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00189",
+   "text": "火焰之舞",
+   "typeText": "火焰之舞",
+   "reading": "huo yan zhi wu",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00190",
+   "text": "灵光一现",
+   "typeText": "灵光一现",
+   "reading": "ling guang yi xian",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00191",
+   "text": "玩神典石",
+   "typeText": "玩神典石",
+   "reading": "wan shen dian shi",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00192",
+   "text": "百万核爆",
+   "typeText": "百万核爆",
+   "reading": "bai wan he bao",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00193",
+   "text": "绅士之舞",
+   "typeText": "绅士之舞",
+   "reading": "shen shi zhi wu",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00194",
+   "text": "绅士舞步",
+   "typeText": "绅士舞步",
+   "reading": "shen shi wu bu",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00195",
+   "text": "绅士风度",
+   "typeText": "绅士风度",
+   "reading": "shen shi feng du",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00196",
+   "text": "肉体之美",
+   "typeText": "肉体之美",
+   "reading": "rou ti zhi mei",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00197",
+   "text": "胜利欢呼",
+   "typeText": "胜利欢呼",
+   "reading": "sheng li huan hu",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00198",
+   "text": "胡鹰之舞",
+   "typeText": "胡鹰之舞",
+   "reading": "hu ying zhi wu",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00199",
+   "text": "萨维奈舞",
+   "typeText": "萨维奈舞",
+   "reading": "sa wei nai wu",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00200",
+   "text": "蓄力迸发",
+   "typeText": "蓄力迸发",
+   "reading": "xu li beng fa",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00201",
+   "text": "蜜蜂之舞",
+   "typeText": "蜜蜂之舞",
+   "reading": "mi feng zhi wu",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00202",
+   "text": "行东方礼",
+   "typeText": "行东方礼",
+   "reading": "hang dong fang li",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00203",
+   "text": "表情：假笑",
+   "typeText": "表情假笑",
+   "reading": "biao qing jia xiao",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "emo_00204",
+   "text": "表情：反感",
+   "typeText": "表情反感",
+   "reading": "biao qing fan gan",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "emo_00205",
+   "text": "表情：吃惊",
+   "typeText": "表情吃惊",
+   "reading": "biao qing chi jing",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "emo_00206",
+   "text": "表情：咧嘴",
+   "typeText": "表情咧嘴",
+   "reading": "biao qing lie zui",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "emo_00207",
+   "text": "表情：嘟嘴",
+   "typeText": "表情嘟嘴",
+   "reading": "biao qing du zui",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "emo_00208",
+   "text": "表情：困惑",
+   "typeText": "表情困惑",
+   "reading": "biao qing kun huo",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "emo_00209",
+   "text": "表情：平常",
+   "typeText": "表情平常",
+   "reading": "biao qing ping chang",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "emo_00210",
+   "text": "表情：幸福",
+   "typeText": "表情幸福",
+   "reading": "biao qing xing fu",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "emo_00211",
+   "text": "表情：微笑",
+   "typeText": "表情微笑",
+   "reading": "biao qing wei xiao",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "emo_00212",
+   "text": "表情：忍耐",
+   "typeText": "表情忍耐",
+   "reading": "biao qing ren nai",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "emo_00213",
+   "text": "表情：思索",
+   "typeText": "表情思索",
+   "reading": "biao qing si suo",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "emo_00214",
+   "text": "表情：恐怖",
+   "typeText": "表情恐怖",
+   "reading": "biao qing kong bu",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "emo_00215",
+   "text": "表情：悲伤",
+   "typeText": "表情悲伤",
+   "reading": "biao qing bei shang",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "emo_00216",
+   "text": "表情：意外",
+   "typeText": "表情意外",
+   "reading": "biao qing yi wai",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "emo_00217",
+   "text": "表情：担心",
+   "typeText": "表情担心",
+   "reading": "biao qing dan xin",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "emo_00218",
+   "text": "表情：无畏",
+   "typeText": "表情无畏",
+   "reading": "biao qing wu wei",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "emo_00219",
+   "text": "表情：柔和",
+   "typeText": "表情柔和",
+   "reading": "biao qing rou he",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "emo_00220",
+   "text": "表情：沉思",
+   "typeText": "表情沉思",
+   "reading": "biao qing chen si",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "emo_00221",
+   "text": "表情：满足",
+   "typeText": "表情满足",
+   "reading": "biao qing man zu",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "emo_00222",
+   "text": "表情：痛苦",
+   "typeText": "表情痛苦",
+   "reading": "biao qing tong ku",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "emo_00223",
+   "text": "表情：皱眉",
+   "typeText": "表情皱眉",
+   "reading": "biao qing zhou mei",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "emo_00224",
+   "text": "表情：笑颜",
+   "typeText": "表情笑颜",
+   "reading": "biao qing xiao yan",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "emo_00225",
+   "text": "表情：自信",
+   "typeText": "表情自信",
+   "reading": "biao qing zi xin",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "emo_00226",
+   "text": "表情：苦笑",
+   "typeText": "表情苦笑",
+   "reading": "biao qing ku xiao",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "emo_00227",
+   "text": "表情：认真",
+   "typeText": "表情认真",
+   "reading": "biao qing ren zhen",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "emo_00228",
+   "text": "表情：闭目",
+   "typeText": "表情闭目",
+   "reading": "biao qing bi mu",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "emo_00229",
+   "text": "表情：阴险",
+   "typeText": "表情阴险",
+   "reading": "biao qing yin xian",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "emo_00230",
+   "text": "表达爱意",
+   "typeText": "表达爱意",
+   "reading": "biao da ai yi",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00231",
+   "text": "认真看书",
+   "typeText": "认真看书",
+   "reading": "ren zhen kan shu",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00232",
+   "text": "说明计划",
+   "typeText": "说明计划",
+   "reading": "shuo ming ji hua",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00233",
+   "text": "赠送花束",
+   "typeText": "赠送花束",
+   "reading": "zeng song hua shu",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00234",
+   "text": "跃跃欲试",
+   "typeText": "跃跃欲试",
+   "reading": "yue yue yu shi",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00235",
+   "text": "饮用红茶",
+   "typeText": "饮用红茶",
+   "reading": "yin yong hong cha",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00236",
+   "text": "饮用绿茶",
+   "typeText": "饮用绿茶",
+   "reading": "yin yong lv cha",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00237",
+   "text": "魅惑拥抱",
+   "typeText": "魅惑拥抱",
+   "reading": "mei huo yong bao",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00238",
+   "text": "黄金之舞",
+   "typeText": "黄金之舞",
+   "reading": "huang jin zhi wu",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00239",
+   "text": "一直吃夹饼",
+   "typeText": "一直吃夹饼",
+   "reading": "yi zhi chi jia bing",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00240",
+   "text": "优雅仙人刺",
+   "typeText": "优雅仙人刺",
+   "reading": "you ya xian ren ci",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00241",
+   "text": "双蛇党军礼",
+   "typeText": "双蛇党军礼",
+   "reading": "shuang she dang jun li",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00242",
+   "text": "吃南瓜曲奇",
+   "typeText": "吃南瓜曲奇",
+   "reading": "chi nan gua qu qi",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00243",
+   "text": "坐下到地上",
+   "typeText": "坐下到地上",
+   "reading": "zuo xia dao di shang",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00244",
+   "text": "寒冰的幻想",
+   "typeText": "寒冰的幻想",
+   "reading": "han bing de huan xiang",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00245",
+   "text": "小黄莺之舞",
+   "typeText": "小黄莺之舞",
+   "reading": "xiao huang ying zhi wu",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00246",
+   "text": "帝国式军礼",
+   "typeText": "帝国式军礼",
+   "reading": "di guo shi jun li",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00247",
+   "text": "恒辉队军礼",
+   "typeText": "恒辉队军礼",
+   "reading": "heng hui dui jun li",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00248",
+   "text": "挥舞指挥棒",
+   "typeText": "挥舞指挥棒",
+   "reading": "hui wu zhi hui bang",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00249",
+   "text": "水中翻跟头",
+   "typeText": "水中翻跟头",
+   "reading": "shui zhong fan gen tou",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00250",
+   "text": "莫古莫古舞",
+   "typeText": "莫古莫古舞",
+   "reading": "mo gu mo gu wu",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00251",
+   "text": "表情：右飞眼",
+   "typeText": "表情右飞眼",
+   "reading": "biao qing you fei yan",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "emo_00252",
+   "text": "表情：左飞眼",
+   "typeText": "表情左飞眼",
+   "reading": "biao qing zuo fei yan",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "emo_00253",
+   "text": "黑涡团军礼",
+   "typeText": "黑涡团军礼",
+   "reading": "hei wo tuan jun li",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00254",
+   "text": "东方传统舞蹈",
+   "typeText": "东方传统舞蹈",
+   "reading": "dong fang chuan tong wu dao",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00255",
+   "text": "前后声援小橙",
+   "typeText": "前后声援小橙",
+   "reading": "qian hou sheng yuan xiao cheng",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00256",
+   "text": "前后声援小白",
+   "typeText": "前后声援小白",
+   "reading": "qian hou sheng yuan xiao bai",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00257",
+   "text": "前后声援小蓝",
+   "typeText": "前后声援小蓝",
+   "reading": "qian hou sheng yuan xiao lan",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00258",
+   "text": "吃恋人巧克力",
+   "typeText": "吃恋人巧克力",
+   "reading": "chi lian ren qiao ke li",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00259",
+   "text": "头部装备操作",
+   "typeText": "头部装备操作",
+   "reading": "tou bu zhuang bei cao zuo",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00260",
+   "text": "挥舞声援小粉",
+   "typeText": "挥舞声援小粉",
+   "reading": "hui wu sheng yuan xiao fen",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00261",
+   "text": "挥舞声援小紫",
+   "typeText": "挥舞声援小紫",
+   "reading": "hui wu sheng yuan xiao zi",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00262",
+   "text": "挥舞声援小黄",
+   "typeText": "挥舞声援小黄",
+   "reading": "hui wu sheng yuan xiao huang",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00263",
+   "text": "摇摆声援小绿",
+   "typeText": "摇摆声援小绿",
+   "reading": "yao bai sheng yuan xiao lv",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00264",
+   "text": "摇摆声援小蓝",
+   "typeText": "摇摆声援小蓝",
+   "reading": "yao bai sheng yuan xiao lan",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00265",
+   "text": "摇摆声援小黄",
+   "typeText": "摇摆声援小黄",
+   "reading": "yao bai sheng yuan xiao huang",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00266",
+   "text": "欧米茄F架势",
+   "typeText": "欧米茄F架势",
+   "reading": "ou mi jia F jia shi",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "emo_00267",
+   "text": "欧米茄M架势",
+   "typeText": "欧米茄M架势",
+   "reading": "ou mi jia M jia shi",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "emo_00268",
+   "text": "激活神机手铠",
+   "typeText": "激活神机手铠",
+   "reading": "ji huo shen ji shou kai",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00269",
+   "text": "激活神机王冠",
+   "typeText": "激活神机王冠",
+   "reading": "ji huo shen ji wang guan",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00270",
+   "text": "激活神机项环",
+   "typeText": "激活神机项环",
+   "reading": "ji huo shen ji xiang huan",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00271",
+   "text": "用羽毛笔记录",
+   "typeText": "用羽毛笔记录",
+   "reading": "yong yu mao bi ji lu",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00272",
+   "text": "用触控板记录",
+   "typeText": "用触控板记录",
+   "reading": "yong chu kong ban ji lu",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00273",
+   "text": "端坐享用绿茶",
+   "typeText": "端坐享用绿茶",
+   "reading": "duan zuo xiang yong lv cha",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00274",
+   "text": "节拍声援小白",
+   "typeText": "节拍声援小白",
+   "reading": "jie pai sheng yuan xiao bai",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00275",
+   "text": "节拍声援小紫",
+   "typeText": "节拍声援小紫",
+   "reading": "jie pai sheng yuan xiao zi",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00276",
+   "text": "节拍声援小红",
+   "typeText": "节拍声援小红",
+   "reading": "jie pai sheng yuan xiao hong",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00277",
+   "text": "蹦跳声援小红",
+   "typeText": "蹦跳声援小红",
+   "reading": "beng tiao sheng yuan xiao hong",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00278",
+   "text": "蹦跳声援小绿",
+   "typeText": "蹦跳声援小绿",
+   "reading": "beng tiao sheng yuan xiao lv",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00279",
+   "text": "蹦跳声援小靛",
+   "typeText": "蹦跳声援小靛",
+   "reading": "beng tiao sheng yuan xiao dian",
+   "category": "emotes",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "emo_00280",
+   "text": "守护天节的魔咒",
+   "typeText": "守护天节的魔咒",
+   "reading": "shou hu tian jie de mo zhou",
+   "category": "emotes",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "emo_00281",
+   "text": "红色陆行鸟之笔",
+   "typeText": "红色陆行鸟之笔",
+   "reading": "hong se lu xing niao zhi bi",
+   "category": "emotes",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "emo_00282",
+   "text": "蓝色陆行鸟之笔",
+   "typeText": "蓝色陆行鸟之笔",
+   "reading": "lan se lu xing niao zhi bi",
+   "category": "emotes",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "emo_00283",
+   "text": "象征自由的姿势",
+   "typeText": "象征自由的姿势",
+   "reading": "xiang zheng zi you de zi shi",
+   "category": "emotes",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "emo_00284",
+   "text": "黄色陆行鸟之笔",
+   "typeText": "黄色陆行鸟之笔",
+   "reading": "huang se lu xing niao zhi bi",
+   "category": "emotes",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "emo_00285",
+   "text": "黑色陆行鸟之笔",
+   "typeText": "黑色陆行鸟之笔",
+   "reading": "hei se lu xing niao zhi bi",
+   "category": "emotes",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "emo_00286",
+   "text": "战队演武正红一式",
+   "typeText": "战队演武正红一式",
+   "reading": "zhan dui yan wu zheng hong yi shi",
+   "category": "emotes",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "emo_00287",
+   "text": "战队演武正黄三式",
+   "typeText": "战队演武正黄三式",
+   "reading": "zhan dui yan wu zheng huang san shi",
+   "category": "emotes",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "emo_00288",
+   "text": "战队演武正黑二式",
+   "typeText": "战队演武正黑二式",
+   "reading": "zhan dui yan wu zheng hei er shi",
+   "category": "emotes",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "emo_00289",
+   "text": "战队演武逆红一式",
+   "typeText": "战队演武逆红一式",
+   "reading": "zhan dui yan wu ni hong yi shi",
+   "category": "emotes",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "emo_00290",
+   "text": "战队演武逆黄三式",
+   "typeText": "战队演武逆黄三式",
+   "reading": "zhan dui yan wu ni huang san shi",
+   "category": "emotes",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "emo_00291",
+   "text": "战队演武逆黑二式",
+   "typeText": "战队演武逆黑二式",
+   "reading": "zhan dui yan wu ni hei er shi",
+   "category": "emotes",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "emo_00292",
+   "text": "用森都风格马克杯喝",
+   "typeText": "用森都风格马克杯喝",
+   "reading": "yong sen dou feng ge ma ke bei he",
+   "category": "emotes",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "emo_00293",
+   "text": "用沙都风格马克杯喝",
+   "typeText": "用沙都风格马克杯喝",
+   "reading": "yong sha dou feng ge ma ke bei he",
+   "category": "emotes",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "emo_00294",
+   "text": "用海都风格马克杯喝",
+   "typeText": "用海都风格马克杯喝",
+   "reading": "yong hai dou feng ge ma ke bei he",
+   "category": "emotes",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "emo_00295",
+   "text": "持续用森都风格马克杯喝",
+   "typeText": "持续用森都风格马克杯喝",
+   "reading": "chi xu yong sen dou feng ge ma ke bei he",
+   "category": "emotes",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "emo_00296",
+   "text": "持续用沙都风格马克杯喝",
+   "typeText": "持续用沙都风格马克杯喝",
+   "reading": "chi xu yong sha dou feng ge ma ke bei he",
+   "category": "emotes",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "emo_00297",
+   "text": "持续用海都风格马克杯喝",
+   "typeText": "持续用海都风格马克杯喝",
+   "reading": "chi xu yong hai dou feng ge ma ke bei he",
+   "category": "emotes",
+   "difficulty": 3,
+   "pure": true
+  }
+ ]
+}

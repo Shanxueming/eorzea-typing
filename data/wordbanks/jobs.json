@@ -1,0 +1,404 @@
+{
+ "category": "jobs",
+ "label": "职业与职能",
+ "count": 44,
+ "source": "thewakingsands/ffxiv-datamining-cn",
+ "entries": [
+  {
+   "id": "job_00001",
+   "text": "学者",
+   "typeText": "学者",
+   "reading": "xue zhe",
+   "category": "jobs",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "job_00002",
+   "text": "忍者",
+   "typeText": "忍者",
+   "reading": "ren zhe",
+   "category": "jobs",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "job_00003",
+   "text": "战士",
+   "typeText": "战士",
+   "reading": "zhan shi",
+   "category": "jobs",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "job_00004",
+   "text": "武僧",
+   "typeText": "武僧",
+   "reading": "wu seng",
+   "category": "jobs",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "job_00005",
+   "text": "武士",
+   "typeText": "武士",
+   "reading": "wu shi",
+   "category": "jobs",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "job_00006",
+   "text": "舞者",
+   "typeText": "舞者",
+   "reading": "wu zhe",
+   "category": "jobs",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "job_00007",
+   "text": "贤者",
+   "typeText": "贤者",
+   "reading": "xian zhe",
+   "category": "jobs",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "job_00008",
+   "text": "骑士",
+   "typeText": "骑士",
+   "reading": "qi shi",
+   "category": "jobs",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "job_00009",
+   "text": "冒险者",
+   "typeText": "冒险者",
+   "reading": "mao xian zhe",
+   "category": "jobs",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "job_00010",
+   "text": "制革匠",
+   "typeText": "制革匠",
+   "reading": "zhi ge jiang",
+   "category": "jobs",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "job_00011",
+   "text": "刻木匠",
+   "typeText": "刻木匠",
+   "reading": "ke mu jiang",
+   "category": "jobs",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "job_00012",
+   "text": "剑术师",
+   "typeText": "剑术师",
+   "reading": "jian shu shi",
+   "category": "jobs",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "job_00013",
+   "text": "双剑师",
+   "typeText": "双剑师",
+   "reading": "shuang jian shi",
+   "category": "jobs",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "job_00014",
+   "text": "召唤师",
+   "typeText": "召唤师",
+   "reading": "zhao huan shi",
+   "category": "jobs",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "job_00015",
+   "text": "咒术师",
+   "typeText": "咒术师",
+   "reading": "zhou shu shi",
+   "category": "jobs",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "job_00016",
+   "text": "园艺工",
+   "typeText": "园艺工",
+   "reading": "yuan yi gong",
+   "category": "jobs",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "job_00017",
+   "text": "幻术师",
+   "typeText": "幻术师",
+   "reading": "huan shu shi",
+   "category": "jobs",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "job_00018",
+   "text": "弓箭手",
+   "typeText": "弓箭手",
+   "reading": "gong jian shou",
+   "category": "jobs",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "job_00019",
+   "text": "捕鱼人",
+   "typeText": "捕鱼人",
+   "reading": "bu yu ren",
+   "category": "jobs",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "job_00020",
+   "text": "斧术师",
+   "typeText": "斧术师",
+   "reading": "fu shu shi",
+   "category": "jobs",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "job_00021",
+   "text": "机工士",
+   "typeText": "机工士",
+   "reading": "ji gong shi",
+   "category": "jobs",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "job_00022",
+   "text": "枪术师",
+   "typeText": "枪术师",
+   "reading": "qiang shu shi",
+   "category": "jobs",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "job_00023",
+   "text": "格斗家",
+   "typeText": "格斗家",
+   "reading": "ge dou jia",
+   "category": "jobs",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "job_00024",
+   "text": "烹调师",
+   "typeText": "烹调师",
+   "reading": "peng tiao shi",
+   "category": "jobs",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "job_00025",
+   "text": "秘术师",
+   "typeText": "秘术师",
+   "reading": "mi shu shi",
+   "category": "jobs",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "job_00026",
+   "text": "裁衣匠",
+   "typeText": "裁衣匠",
+   "reading": "cai yi jiang",
+   "category": "jobs",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "job_00027",
+   "text": "采矿工",
+   "typeText": "采矿工",
+   "reading": "cai kuang gong",
+   "category": "jobs",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "job_00028",
+   "text": "钐镰客",
+   "typeText": "钐镰客",
+   "reading": "shan lian ke",
+   "category": "jobs",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "job_00029",
+   "text": "铸甲匠",
+   "typeText": "铸甲匠",
+   "reading": "zhu jia jiang",
+   "category": "jobs",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "job_00030",
+   "text": "锻铁匠",
+   "typeText": "锻铁匠",
+   "reading": "duan tie jiang",
+   "category": "jobs",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "job_00031",
+   "text": "雕金匠",
+   "typeText": "雕金匠",
+   "reading": "diao jin jiang",
+   "category": "jobs",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "job_00032",
+   "text": "驯兽师",
+   "typeText": "驯兽师",
+   "reading": "xun shou shi",
+   "category": "jobs",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "job_00033",
+   "text": "龙骑士",
+   "typeText": "龙骑士",
+   "reading": "long qi shi",
+   "category": "jobs",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "job_00034",
+   "text": "占星术士",
+   "typeText": "占星术士",
+   "reading": "zhan xing shu shi",
+   "category": "jobs",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "job_00035",
+   "text": "吟游诗人",
+   "typeText": "吟游诗人",
+   "reading": "yin you shi ren",
+   "category": "jobs",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "job_00036",
+   "text": "暗黑骑士",
+   "typeText": "暗黑骑士",
+   "reading": "an hei qi shi",
+   "category": "jobs",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "job_00037",
+   "text": "炼金术士",
+   "typeText": "炼金术士",
+   "reading": "lian jin shu shi",
+   "category": "jobs",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "job_00038",
+   "text": "白魔法师",
+   "typeText": "白魔法师",
+   "reading": "bai mo fa shi",
+   "category": "jobs",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "job_00039",
+   "text": "绘灵法师",
+   "typeText": "绘灵法师",
+   "reading": "hui ling fa shi",
+   "category": "jobs",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "job_00040",
+   "text": "绝枪战士",
+   "typeText": "绝枪战士",
+   "reading": "jue qiang zhan shi",
+   "category": "jobs",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "job_00041",
+   "text": "蝰蛇剑士",
+   "typeText": "蝰蛇剑士",
+   "reading": "kui she jian shi",
+   "category": "jobs",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "job_00042",
+   "text": "赤魔法师",
+   "typeText": "赤魔法师",
+   "reading": "chi mo fa shi",
+   "category": "jobs",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "job_00043",
+   "text": "青魔法师",
+   "typeText": "青魔法师",
+   "reading": "qing mo fa shi",
+   "category": "jobs",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "job_00044",
+   "text": "黑魔法师",
+   "typeText": "黑魔法师",
+   "reading": "hei mo fa shi",
+   "category": "jobs",
+   "difficulty": 2,
+   "pure": true
+  }
+ ]
+}

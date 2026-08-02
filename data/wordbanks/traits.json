@@ -1,0 +1,4076 @@
+{
+ "category": "traits",
+ "label": "特性",
+ "count": 452,
+ "source": "thewakingsands/ffxiv-datamining-cn",
+ "entries": [
+  {
+   "id": "trt_00001",
+   "text": "伶俐",
+   "typeText": "伶俐",
+   "reading": "ling li",
+   "category": "traits",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "trt_00002",
+   "text": "兽魂",
+   "typeText": "兽魂",
+   "reading": "shou hun",
+   "category": "traits",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "trt_00003",
+   "text": "内静",
+   "typeText": "内静",
+   "reading": "nei jing",
+   "category": "traits",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "trt_00004",
+   "text": "升变",
+   "typeText": "升变",
+   "reading": "sheng bian",
+   "category": "traits",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "trt_00005",
+   "text": "天语",
+   "typeText": "天语",
+   "reading": "tian yu",
+   "category": "traits",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "trt_00006",
+   "text": "学习",
+   "typeText": "学习",
+   "reading": "xue xi",
+   "category": "traits",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "trt_00007",
+   "text": "幻扇",
+   "typeText": "幻扇",
+   "reading": "huan shan",
+   "category": "traits",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "trt_00008",
+   "text": "暗血",
+   "typeText": "暗血",
+   "reading": "an xue",
+   "category": "traits",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "trt_00009",
+   "text": "毒刃",
+   "typeText": "毒刃",
+   "reading": "du ren",
+   "category": "traits",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "trt_00010",
+   "text": "火苗",
+   "typeText": "火苗",
+   "reading": "huo miao",
+   "category": "traits",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "trt_00011",
+   "text": "灵魂",
+   "typeText": "灵魂",
+   "reading": "ling hun",
+   "category": "traits",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "trt_00012",
+   "text": "蛇刺",
+   "typeText": "蛇刺",
+   "reading": "she ci",
+   "category": "traits",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "trt_00013",
+   "text": "蛇胆",
+   "typeText": "蛇胆",
+   "reading": "she dan",
+   "category": "traits",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "trt_00014",
+   "text": "雷云",
+   "typeText": "雷云",
+   "reading": "lei yun",
+   "category": "traits",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "trt_00015",
+   "text": "魂衣",
+   "typeText": "魂衣",
+   "reading": "hun yi",
+   "category": "traits",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "trt_00016",
+   "text": "灵极心",
+   "typeText": "灵极心",
+   "reading": "ling ji xin",
+   "category": "traits",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "trt_00017",
+   "text": "虚无魂",
+   "typeText": "虚无魂",
+   "reading": "xu wu hun",
+   "category": "traits",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "trt_00018",
+   "text": "调色值",
+   "typeText": "调色值",
+   "reading": "tiao se zhi",
+   "category": "traits",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "trt_00019",
+   "text": "象形拳",
+   "typeText": "象形拳",
+   "reading": "xiang xing quan",
+   "category": "traits",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "trt_00020",
+   "text": "集气法",
+   "typeText": "集气法",
+   "reading": "ji qi fa",
+   "category": "traits",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "trt_00021",
+   "text": "丰收精通",
+   "typeText": "丰收精通",
+   "reading": "feng shou jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00022",
+   "text": "云海垂钓",
+   "typeText": "云海垂钓",
+   "reading": "yun hai chui diao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00023",
+   "text": "元素精通",
+   "typeText": "元素精通",
+   "reading": "yuan su jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00024",
+   "text": "兽魂精通",
+   "typeText": "兽魂精通",
+   "reading": "shou hun jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00025",
+   "text": "内力迸发",
+   "typeText": "内力迸发",
+   "reading": "nei li beng fa",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00026",
+   "text": "再次发现",
+   "typeText": "再次发现",
+   "reading": "zai ci fa xian",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00027",
+   "text": "凶星精通",
+   "typeText": "凶星精通",
+   "reading": "xiong xing jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00028",
+   "text": "刃风精通",
+   "typeText": "刃风精通",
+   "reading": "ren feng jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00029",
+   "text": "制作精通",
+   "typeText": "制作精通",
+   "reading": "zhi zuo jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00030",
+   "text": "制作练习",
+   "typeText": "制作练习",
+   "reading": "zhi zuo lian xi",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00031",
+   "text": "剑气精通",
+   "typeText": "剑气精通",
+   "reading": "jian qi jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00032",
+   "text": "力量提高",
+   "typeText": "力量提高",
+   "reading": "li liang ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00033",
+   "text": "医济精通",
+   "typeText": "医济精通",
+   "reading": "yi ji jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00034",
+   "text": "发掘精通",
+   "typeText": "发掘精通",
+   "reading": "fa jue jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00035",
+   "text": "后翼弃兵",
+   "typeText": "后翼弃兵",
+   "reading": "hou yi qi bing",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00036",
+   "text": "咬蚀精通",
+   "typeText": "咬蚀精通",
+   "reading": "yao shi jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00037",
+   "text": "品质精查",
+   "typeText": "品质精查",
+   "reading": "pin zhi jing cha",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00038",
+   "text": "嗜血精通",
+   "typeText": "嗜血精通",
+   "reading": "shi xue jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00039",
+   "text": "复仇精通",
+   "typeText": "复仇精通",
+   "reading": "fu chou jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00040",
+   "text": "夺取精通",
+   "typeText": "夺取精通",
+   "reading": "duo qu jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00041",
+   "text": "宇宙垂钓",
+   "typeText": "宇宙垂钓",
+   "reading": "yu zhou chui diao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00042",
+   "text": "岩石低吟",
+   "typeText": "岩石低吟",
+   "reading": "yan shi di yin",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00043",
+   "text": "强化洞察",
+   "typeText": "强化洞察",
+   "reading": "qiang hua dong cha",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00044",
+   "text": "心眼精通",
+   "typeText": "心眼精通",
+   "reading": "xin yan jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00045",
+   "text": "忠义之剑",
+   "typeText": "忠义之剑",
+   "reading": "zhong yi zhi jian",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00046",
+   "text": "忠义精通",
+   "typeText": "忠义精通",
+   "reading": "zhong yi jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00047",
+   "text": "散射精通",
+   "typeText": "散射精通",
+   "reading": "san she jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00048",
+   "text": "散碎精通",
+   "typeText": "散碎精通",
+   "reading": "san sui jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00049",
+   "text": "断绝精通",
+   "typeText": "断绝精通",
+   "reading": "duan jue jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00050",
+   "text": "星云精通",
+   "typeText": "星云精通",
+   "reading": "xing yun jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00051",
+   "text": "晶壤装填",
+   "typeText": "晶壤装填",
+   "reading": "jing rang zhuang tian",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00052",
+   "text": "智力提高",
+   "typeText": "智力提高",
+   "reading": "zhi li ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00053",
+   "text": "暗血II",
+   "typeText": "暗血II",
+   "reading": "an xue II",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "trt_00054",
+   "text": "暗黑精通",
+   "typeText": "暗黑精通",
+   "reading": "an hei jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00055",
+   "text": "暴击提高",
+   "typeText": "暴击提高",
+   "reading": "bao ji ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00056",
+   "text": "极性精通",
+   "typeText": "极性精通",
+   "reading": "ji xing jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00057",
+   "text": "枪弹精通",
+   "typeText": "枪弹精通",
+   "reading": "qiang dan jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00058",
+   "text": "树木低吟",
+   "typeText": "树木低吟",
+   "reading": "shu mu di yin",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00059",
+   "text": "毁灭精通",
+   "typeText": "毁灭精通",
+   "reading": "hui mie jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00060",
+   "text": "毒刃II",
+   "typeText": "毒刃II",
+   "reading": "du ren II",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "trt_00061",
+   "text": "毒菌精通",
+   "typeText": "毒菌精通",
+   "reading": "du jun jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00062",
+   "text": "沙海垂钓",
+   "typeText": "沙海垂钓",
+   "reading": "sha hai chui diao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00063",
+   "text": "浮岛垂钓",
+   "typeText": "浮岛垂钓",
+   "reading": "fu dao chui diao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00064",
+   "text": "灵巧提高",
+   "typeText": "灵巧提高",
+   "reading": "ling qiao ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00065",
+   "text": "灵魂之声",
+   "typeText": "灵魂之声",
+   "reading": "ling hun zhi sheng",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00066",
+   "text": "炎法精通",
+   "typeText": "炎法精通",
+   "reading": "yan fa jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00067",
+   "text": "烧灼精通",
+   "typeText": "烧灼精通",
+   "reading": "shao zhuo jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00068",
+   "text": "热弹精通",
+   "typeText": "热弹精通",
+   "reading": "re dan jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00069",
+   "text": "熔岩垂钓",
+   "typeText": "熔岩垂钓",
+   "reading": "rong yan chui diao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00070",
+   "text": "狂暴精通",
+   "typeText": "狂暴精通",
+   "reading": "kuang bao jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00071",
+   "text": "疾风极意",
+   "typeText": "疾风极意",
+   "reading": "ji feng ji yi",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00072",
+   "text": "疾风精通",
+   "typeText": "疾风精通",
+   "reading": "ji feng jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00073",
+   "text": "疾风迅雷",
+   "typeText": "疾风迅雷",
+   "reading": "ji feng xun lei",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00074",
+   "text": "盐湖垂钓",
+   "typeText": "盐湖垂钓",
+   "reading": "yan hu chui diao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00075",
+   "text": "盾阵精通",
+   "typeText": "盾阵精通",
+   "reading": "dun zhen jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00076",
+   "text": "祖灵之魂",
+   "typeText": "祖灵之魂",
+   "reading": "zu ling zhi hun",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00077",
+   "text": "神圣精通",
+   "typeText": "神圣精通",
+   "reading": "shen sheng jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00078",
+   "text": "神秘百合",
+   "typeText": "神秘百合",
+   "reading": "shen mi bai he",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00079",
+   "text": "精神提高",
+   "typeText": "精神提高",
+   "reading": "jing shen ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00080",
+   "text": "红莲龙血",
+   "typeText": "红莲龙血",
+   "reading": "hong lian long xue",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00081",
+   "text": "耐力提高",
+   "typeText": "耐力提高",
+   "reading": "nai li ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00082",
+   "text": "自动隐行",
+   "typeText": "自动隐行",
+   "reading": "zi dong yin xing",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00083",
+   "text": "自生精通",
+   "typeText": "自生精通",
+   "reading": "zi sheng jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00084",
+   "text": "贤学誓词",
+   "typeText": "贤学誓词",
+   "reading": "xian xue shi ci",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00085",
+   "text": "跳跃精通",
+   "typeText": "跳跃精通",
+   "reading": "tiao yue jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00086",
+   "text": "转变精通",
+   "typeText": "转变精通",
+   "reading": "zhuan bian jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00087",
+   "text": "连续咏唱",
+   "typeText": "连续咏唱",
+   "reading": "lian xu yong chang",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00088",
+   "text": "迸裂精通",
+   "typeText": "迸裂精通",
+   "reading": "beng lie jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00089",
+   "text": "重力精通",
+   "typeText": "重力精通",
+   "reading": "zhong li jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00090",
+   "text": "长枪精通",
+   "typeText": "长枪精通",
+   "reading": "chang qiang jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00091",
+   "text": "闪耀精通",
+   "typeText": "闪耀精通",
+   "reading": "shan yao jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00092",
+   "text": "闪雷精通",
+   "typeText": "闪雷精通",
+   "reading": "shan lei jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00093",
+   "text": "防护精通",
+   "typeText": "防护精通",
+   "reading": "fang hu jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00094",
+   "text": "预警精通",
+   "typeText": "预警精通",
+   "reading": "yu jing jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00095",
+   "text": "风雅精通",
+   "typeText": "风雅精通",
+   "reading": "feng ya jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00096",
+   "text": "飞石精通",
+   "typeText": "飞石精通",
+   "reading": "fei shi jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00097",
+   "text": "飞蛇之魂",
+   "typeText": "飞蛇之魂",
+   "reading": "fei she zhi hun",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00098",
+   "text": "骑士精神",
+   "typeText": "骑士精神",
+   "reading": "qi shi jing shen",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00099",
+   "text": "高产精通",
+   "typeText": "高产精通",
+   "reading": "gao chan jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00100",
+   "text": "魔泉垂钓",
+   "typeText": "魔泉垂钓",
+   "reading": "mo quan chui diao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00101",
+   "text": "鱼群低吟",
+   "typeText": "鱼群低吟",
+   "reading": "yu qun di yin",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00102",
+   "text": "鱼鹰之眼",
+   "typeText": "鱼鹰之眼",
+   "reading": "yu ying zhi yan",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00103",
+   "text": "龙血精通",
+   "typeText": "龙血精通",
+   "reading": "long xue jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00104",
+   "text": "分裂弹精通",
+   "typeText": "分裂弹精通",
+   "reading": "fen lie dan jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00105",
+   "text": "原初的混沌",
+   "typeText": "原初的混沌",
+   "reading": "yuan chu de hun dun",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00106",
+   "text": "命中率提高",
+   "typeText": "命中率提高",
+   "reading": "ming zhong lv ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00107",
+   "text": "失血箭精通",
+   "typeText": "失血箭精通",
+   "reading": "shi xue jian jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00108",
+   "text": "岩石低吟V",
+   "typeText": "岩石低吟V",
+   "reading": "yan shi di yin V",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "trt_00109",
+   "text": "工匠的良机",
+   "typeText": "工匠的良机",
+   "reading": "gong jiang de liang ji",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00110",
+   "text": "捕鱼人之计",
+   "typeText": "捕鱼人之计",
+   "reading": "bu yu ren zhi ji",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00111",
+   "text": "暗影墙精通",
+   "typeText": "暗影墙精通",
+   "reading": "an ying qiang jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00112",
+   "text": "极性精通V",
+   "typeText": "极性精通V",
+   "reading": "ji xing jing tong V",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "trt_00113",
+   "text": "树木低吟V",
+   "typeText": "树木低吟V",
+   "reading": "shu mu di yin V",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "trt_00114",
+   "text": "热冲击精通",
+   "typeText": "热冲击精通",
+   "reading": "re chong ji jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00115",
+   "text": "爆裂脚精通",
+   "typeText": "爆裂脚精通",
+   "reading": "bao lie jiao jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00116",
+   "text": "狙击弹精通",
+   "typeText": "狙击弹精通",
+   "reading": "ju ji dan jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00117",
+   "text": "独头弹精通",
+   "typeText": "独头弹精通",
+   "reading": "du tou dan jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00118",
+   "text": "石之心精通",
+   "typeText": "石之心精通",
+   "reading": "shi zhi xin jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00119",
+   "text": "破阵法精通",
+   "typeText": "破阵法精通",
+   "reading": "po zhen fa jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00120",
+   "text": "空鸣拳精通",
+   "typeText": "空鸣拳精通",
+   "reading": "kong ming quan jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00121",
+   "text": "罗刹冲精通",
+   "typeText": "罗刹冲精通",
+   "reading": "luo cha chong jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00122",
+   "text": "赤魔法精通",
+   "typeText": "赤魔法精通",
+   "reading": "chi mo fa jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00123",
+   "text": "连珠箭精通",
+   "typeText": "连珠箭精通",
+   "reading": "lian zhu jian jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00124",
+   "text": "铁山靠精通",
+   "typeText": "铁山靠精通",
+   "reading": "tie shan kao jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00125",
+   "text": "集气法II",
+   "typeText": "集气法II",
+   "reading": "ji qi fa II",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "trt_00126",
+   "text": "魔匠的闪念",
+   "typeText": "魔匠的闪念",
+   "reading": "mo jiang de shan nian",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00127",
+   "text": "鱼鹰之眼V",
+   "typeText": "鱼鹰之眼V",
+   "reading": "yu ying zhi yan V",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "trt_00128",
+   "text": "下落受伤减轻",
+   "typeText": "下落受伤减轻",
+   "reading": "xia luo shou shang jian qing",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00129",
+   "text": "以太蓄能精通",
+   "typeText": "以太蓄能精通",
+   "reading": "yi tai xu neng jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00130",
+   "text": "伤残效果提高",
+   "typeText": "伤残效果提高",
+   "reading": "shang can xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00131",
+   "text": "伶俐效果提高",
+   "typeText": "伶俐效果提高",
+   "reading": "ling li xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00132",
+   "text": "促进效果提高",
+   "typeText": "促进效果提高",
+   "reading": "cu jin xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00133",
+   "text": "保护效果提高",
+   "typeText": "保护效果提高",
+   "reading": "bao hu xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00134",
+   "text": "光速效果提高",
+   "typeText": "光速效果提高",
+   "reading": "guang su xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00135",
+   "text": "内丹效果提高",
+   "typeText": "内丹效果提高",
+   "reading": "nei dan xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00136",
+   "text": "内力迸发II",
+   "typeText": "内力迸发II",
+   "reading": "nei li beng fa II",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "trt_00137",
+   "text": "凶星精通II",
+   "typeText": "凶星精通II",
+   "reading": "xiong xing jing tong II",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "trt_00138",
+   "text": "凶星精通IV",
+   "typeText": "凶星精通IV",
+   "reading": "xiong xing jing tong IV",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "trt_00139",
+   "text": "剑气精通II",
+   "typeText": "剑气精通II",
+   "reading": "jian qi jing tong II",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "trt_00140",
+   "text": "力量提高II",
+   "typeText": "力量提高II",
+   "reading": "li liang ti gao II",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "trt_00141",
+   "text": "占卜效果提高",
+   "typeText": "占卜效果提高",
+   "reading": "zhan bu xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00142",
+   "text": "危险领域精通",
+   "typeText": "危险领域精通",
+   "reading": "wei xian ling yu jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00143",
+   "text": "原初之魂精通",
+   "typeText": "原初之魂精通",
+   "reading": "yuan chu zhi hun jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00144",
+   "text": "吉星效果提高",
+   "typeText": "吉星效果提高",
+   "reading": "ji xing xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00145",
+   "text": "命水效果提高",
+   "typeText": "命水效果提高",
+   "reading": "ming shui xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00146",
+   "text": "咬蚀精通II",
+   "typeText": "咬蚀精通II",
+   "reading": "yao shi jing tong II",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "trt_00147",
+   "text": "均衡预后精通",
+   "typeText": "均衡预后精通",
+   "reading": "jun heng yu hou jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00148",
+   "text": "坯料制作精通",
+   "typeText": "坯料制作精通",
+   "reading": "pi liao zhi zuo jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00149",
+   "text": "天语效果提高",
+   "typeText": "天语效果提高",
+   "reading": "tian yu xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00150",
+   "text": "夺取效果提高",
+   "typeText": "夺取效果提高",
+   "reading": "duo qu xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00151",
+   "text": "妮美雅的加护",
+   "typeText": "妮美雅的加护",
+   "reading": "ni mei ya de jia hu",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00152",
+   "text": "安魂祈祷精通",
+   "typeText": "安魂祈祷精通",
+   "reading": "an hun qi dao jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00153",
+   "text": "小奥秘卡精通",
+   "typeText": "小奥秘卡精通",
+   "reading": "xiao ao mi ka jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00154",
+   "text": "岩石低吟II",
+   "typeText": "岩石低吟II",
+   "reading": "yan shi di yin II",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "trt_00155",
+   "text": "岩石低吟IV",
+   "typeText": "岩石低吟IV",
+   "reading": "yan shi di yin IV",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "trt_00156",
+   "text": "干预效果提高",
+   "typeText": "干预效果提高",
+   "reading": "gan yu xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00157",
+   "text": "广域群射精通",
+   "typeText": "广域群射精通",
+   "reading": "guang yu qun she jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00158",
+   "text": "强力射击精通",
+   "typeText": "强力射击精通",
+   "reading": "qiang li she ji jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00159",
+   "text": "彩绘效果提高",
+   "typeText": "彩绘效果提高",
+   "reading": "cai hui xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00160",
+   "text": "战嚎效果提高",
+   "typeText": "战嚎效果提高",
+   "reading": "zhan hao xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00161",
+   "text": "战栗效果提高",
+   "typeText": "战栗效果提高",
+   "reading": "zhan li xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00162",
+   "text": "战歌效果提高",
+   "typeText": "战歌效果提高",
+   "reading": "zhan ge xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00163",
+   "text": "技能伤害提高",
+   "typeText": "技能伤害提高",
+   "reading": "ji neng shang hai ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00164",
+   "text": "技能威力提高",
+   "typeText": "技能威力提高",
+   "reading": "ji neng wei li ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00165",
+   "text": "技能效果提高",
+   "typeText": "技能效果提高",
+   "reading": "ji neng xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00166",
+   "text": "抽卡效果提高",
+   "typeText": "抽卡效果提高",
+   "reading": "chou ka xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00167",
+   "text": "拯救效果提高",
+   "typeText": "拯救效果提高",
+   "reading": "zheng jiu xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00168",
+   "text": "捕鱼人的慧眼",
+   "typeText": "捕鱼人的慧眼",
+   "reading": "bu yu ren de hui yan",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00169",
+   "text": "摆脱效果提高",
+   "typeText": "摆脱效果提高",
+   "reading": "bai tuo xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00170",
+   "text": "摇荡效果提高",
+   "typeText": "摇荡效果提高",
+   "reading": "yao dang xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00171",
+   "text": "攻其不备精通",
+   "typeText": "攻其不备精通",
+   "reading": "gong qi bu bei jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00172",
+   "text": "攻击速度提高",
+   "typeText": "攻击速度提高",
+   "reading": "gong ji su du ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00173",
+   "text": "攻击魔法精通",
+   "typeText": "攻击魔法精通",
+   "reading": "gong ji mo fa jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00174",
+   "text": "整备效果提高",
+   "typeText": "整备效果提高",
+   "reading": "zheng bei xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00175",
+   "text": "斗气积累提高",
+   "typeText": "斗气积累提高",
+   "reading": "dou qi ji lei ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00176",
+   "text": "无情效果提高",
+   "typeText": "无情效果提高",
+   "reading": "wu qing xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00177",
+   "text": "昏乱效果提高",
+   "typeText": "昏乱效果提高",
+   "reading": "hun luan xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00178",
+   "text": "智力提高II",
+   "typeText": "智力提高II",
+   "reading": "zhi li ti gao II",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "trt_00179",
+   "text": "暴食效果提高",
+   "typeText": "暴食效果提高",
+   "reading": "bao shi xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00180",
+   "text": "最大体力提高",
+   "typeText": "最大体力提高",
+   "reading": "zui da ti li ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00181",
+   "text": "极光效果提高",
+   "typeText": "极光效果提高",
+   "reading": "ji guang xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00182",
+   "text": "极性精通II",
+   "typeText": "极性精通II",
+   "reading": "ji xing jing tong II",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "trt_00183",
+   "text": "极性精通IV",
+   "typeText": "极性精通IV",
+   "reading": "ji xing jing tong IV",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "trt_00184",
+   "text": "树木低吟II",
+   "typeText": "树木低吟II",
+   "reading": "shu mu di yin II",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "trt_00185",
+   "text": "树木低吟IV",
+   "typeText": "树木低吟IV",
+   "reading": "shu mu di yin IV",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "trt_00186",
+   "text": "模范制作精通",
+   "typeText": "模范制作精通",
+   "reading": "mo fan zhi zuo jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00187",
+   "text": "毁坏效果提高",
+   "typeText": "毁坏效果提高",
+   "reading": "hui huai xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00188",
+   "text": "毁灭精通II",
+   "typeText": "毁灭精通II",
+   "reading": "hui mie jing tong II",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "trt_00189",
+   "text": "毁灭精通IV",
+   "typeText": "毁灭精通IV",
+   "reading": "hui mie jing tong IV",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "trt_00190",
+   "text": "毒菌精通II",
+   "typeText": "毒菌精通II",
+   "reading": "du jun jing tong II",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "trt_00191",
+   "text": "治疗效果提高",
+   "typeText": "治疗效果提高",
+   "reading": "zhi liao xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00192",
+   "text": "活化效果提高",
+   "typeText": "活化效果提高",
+   "reading": "huo hua xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00193",
+   "text": "深奥之灵精通",
+   "typeText": "深奥之灵精通",
+   "reading": "shen ao zhi ling jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00194",
+   "text": "溃烂爆发精通",
+   "typeText": "溃烂爆发精通",
+   "reading": "kui lan bao fa jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00195",
+   "text": "潜行效果提高",
+   "typeText": "潜行效果提高",
+   "reading": "qian xing xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00196",
+   "text": "灵巧提高II",
+   "typeText": "灵巧提高II",
+   "reading": "ling qiao ti gao II",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "trt_00197",
+   "text": "灵攻效果提高",
+   "typeText": "灵攻效果提高",
+   "reading": "ling gong xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00198",
+   "text": "灾祸效果提高",
+   "typeText": "灾祸效果提高",
+   "reading": "zai huo xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00199",
+   "text": "炎法精通II",
+   "typeText": "炎法精通II",
+   "reading": "yan fa jing tong II",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "trt_00200",
+   "text": "炎法精通IV",
+   "typeText": "炎法精通IV",
+   "reading": "yan fa jing tong IV",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "trt_00201",
+   "text": "烧灼精通II",
+   "typeText": "烧灼精通II",
+   "reading": "shao zhuo jing tong II",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "trt_00202",
+   "text": "牵制效果提高",
+   "typeText": "牵制效果提高",
+   "reading": "qian zhi xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00203",
+   "text": "猛攻效果提高",
+   "typeText": "猛攻效果提高",
+   "reading": "meng gong xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00204",
+   "text": "疾风精通II",
+   "typeText": "疾风精通II",
+   "reading": "ji feng jing tong II",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "trt_00205",
+   "text": "直线射击精通",
+   "typeText": "直线射击精通",
+   "reading": "zhi xian she ji jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00206",
+   "text": "直觉甄别精通",
+   "typeText": "直觉甄别精通",
+   "reading": "zhi jue zhen bie jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00207",
+   "text": "盾阵效果提高",
+   "typeText": "盾阵效果提高",
+   "reading": "dun zhen xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00208",
+   "text": "破坏神冲精通",
+   "typeText": "破坏神冲精通",
+   "reading": "po huai shen chong jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00209",
+   "text": "祖灵之牙精通",
+   "typeText": "祖灵之牙精通",
+   "reading": "zu ling zhi ya jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00210",
+   "text": "神名效果提高",
+   "typeText": "神名效果提高",
+   "reading": "shen ming xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00211",
+   "text": "神圣魔法精通",
+   "typeText": "神圣魔法精通",
+   "reading": "shen sheng mo fa jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00212",
+   "text": "神秘百合II",
+   "typeText": "神秘百合II",
+   "reading": "shen mi bai he II",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "trt_00213",
+   "text": "秘策效果提高",
+   "typeText": "秘策效果提高",
+   "reading": "mi ce xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00214",
+   "text": "积蓄技能精通",
+   "typeText": "积蓄技能精通",
+   "reading": "ji xu ji neng jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00215",
+   "text": "移动速度提高",
+   "typeText": "移动速度提高",
+   "reading": "yi dong su du ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00216",
+   "text": "移转效果提高",
+   "typeText": "移转效果提高",
+   "reading": "yi zhuan xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00217",
+   "text": "秽浊效果提高",
+   "typeText": "秽浊效果提高",
+   "reading": "hui zhuo xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00218",
+   "text": "策动效果提高",
+   "typeText": "策动效果提高",
+   "reading": "ce dong xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00219",
+   "text": "精密制作精通",
+   "typeText": "精密制作精通",
+   "reading": "jing mi zhi zuo jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00220",
+   "text": "精神提高II",
+   "typeText": "精神提高II",
+   "reading": "jing shen ti gao II",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "trt_00221",
+   "text": "续剑效果提高",
+   "typeText": "续剑效果提高",
+   "reading": "xu jian xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00222",
+   "text": "缩地效果提高",
+   "typeText": "缩地效果提高",
+   "reading": "suo di xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00223",
+   "text": "耐力提高II",
+   "typeText": "耐力提高II",
+   "reading": "nai li ti gao II",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "trt_00224",
+   "text": "自动三角测量",
+   "typeText": "自动三角测量",
+   "reading": "zi dong san jiao ce liang",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00225",
+   "text": "自动丛林之相",
+   "typeText": "自动丛林之相",
+   "reading": "zi dong cong lin zhi xiang",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00226",
+   "text": "自动山岳之相",
+   "typeText": "自动山岳之相",
+   "reading": "zi dong shan yue zhi xiang",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00227",
+   "text": "自动海洋之相",
+   "typeText": "自动海洋之相",
+   "reading": "zi dong hai yang zhi xiang",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00228",
+   "text": "自动矿脉勘探",
+   "typeText": "自动矿脉勘探",
+   "reading": "zi dong kuang mai kan tan",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00229",
+   "text": "自动鱼群测定",
+   "typeText": "自动鱼群测定",
+   "reading": "zi dong yu qun ce ding",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00230",
+   "text": "节制效果提高",
+   "typeText": "节制效果提高",
+   "reading": "jie zhi xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00231",
+   "text": "蛇行效果提高",
+   "typeText": "蛇行效果提高",
+   "reading": "she xing xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00232",
+   "text": "血乱效果提高",
+   "typeText": "血乱效果提高",
+   "reading": "xue luan xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00233",
+   "text": "血壤效果提高",
+   "typeText": "血壤效果提高",
+   "reading": "xue rang xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00234",
+   "text": "行吟效果提高",
+   "typeText": "行吟效果提高",
+   "reading": "xing yin xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00235",
+   "text": "贤学誓词II",
+   "typeText": "贤学誓词II",
+   "reading": "xian xue shi ci II",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "trt_00236",
+   "text": "跳斩效果提高",
+   "typeText": "跳斩效果提高",
+   "reading": "tiao zhan xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00237",
+   "text": "跳跃效果提高",
+   "typeText": "跳跃效果提高",
+   "reading": "tiao yue xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00238",
+   "text": "迸裂效果提高",
+   "typeText": "迸裂效果提高",
+   "reading": "beng lie xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00239",
+   "text": "迸裂精通II",
+   "typeText": "迸裂精通II",
+   "reading": "beng lie jing tong II",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "trt_00240",
+   "text": "通晓效果提高",
+   "typeText": "通晓效果提高",
+   "reading": "tong xiao xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00241",
+   "text": "速涂效果提高",
+   "typeText": "速涂效果提高",
+   "reading": "su tu xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00242",
+   "text": "野火效果提高",
+   "typeText": "野火效果提高",
+   "reading": "ye huo xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00243",
+   "text": "钢铁旋风精通",
+   "typeText": "钢铁旋风精通",
+   "reading": "gang tie xuan feng jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00244",
+   "text": "铁壁效果提高",
+   "typeText": "铁壁效果提高",
+   "reading": "tie bi xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00245",
+   "text": "长枪精通II",
+   "typeText": "长枪精通II",
+   "reading": "chang qiang jing tong II",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "trt_00246",
+   "text": "长枪精通IV",
+   "typeText": "长枪精通IV",
+   "reading": "chang qiang jing tong IV",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "trt_00247",
+   "text": "闪雷精通II",
+   "typeText": "闪雷精通II",
+   "reading": "shan lei jing tong II",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "trt_00248",
+   "text": "阳星相位精通",
+   "typeText": "阳星相位精通",
+   "reading": "yang xing xiang wei jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00249",
+   "text": "集气法III",
+   "typeText": "集气法III",
+   "reading": "ji qi fa III",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "trt_00250",
+   "text": "雪仇效果提高",
+   "typeText": "雪仇效果提高",
+   "reading": "xue chou xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00251",
+   "text": "震脚效果提高",
+   "typeText": "震脚效果提高",
+   "reading": "zhen jiao xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00252",
+   "text": "震荡效果提高",
+   "typeText": "震荡效果提高",
+   "reading": "zhen dang xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00253",
+   "text": "飞石精通II",
+   "typeText": "飞石精通II",
+   "reading": "fei shi jing tong II",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "trt_00254",
+   "text": "飞石精通IV",
+   "typeText": "飞石精通IV",
+   "reading": "fei shi jing tong IV",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "trt_00255",
+   "text": "高速制作精通",
+   "typeText": "高速制作精通",
+   "reading": "gao su zhi zuo jing tong",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00256",
+   "text": "魔泉效果提高",
+   "typeText": "魔泉效果提高",
+   "reading": "mo quan xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00257",
+   "text": "鱼鹰之眼II",
+   "typeText": "鱼鹰之眼II",
+   "reading": "yu ying zhi yan II",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "trt_00258",
+   "text": "鱼鹰之眼IV",
+   "typeText": "鱼鹰之眼IV",
+   "reading": "yu ying zhi yan IV",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "trt_00259",
+   "text": "鱼鹰之眼IX",
+   "typeText": "鱼鹰之眼IX",
+   "reading": "yu ying zhi yan IX",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "trt_00260",
+   "text": "鱼鹰之眼VI",
+   "typeText": "鱼鹰之眼VI",
+   "reading": "yu ying zhi yan VI",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "trt_00261",
+   "text": "鼓励效果提高",
+   "typeText": "鼓励效果提高",
+   "reading": "gu li xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00262",
+   "text": "龙剑效果提高",
+   "typeText": "龙剑效果提高",
+   "reading": "long jian xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "trt_00263",
+   "text": "凶星精通III",
+   "typeText": "凶星精通III",
+   "reading": "xiong xing jing tong III",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00264",
+   "text": "前冲步效果提高",
+   "typeText": "前冲步效果提高",
+   "reading": "qian chong bu xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00265",
+   "text": "力量提高III",
+   "typeText": "力量提高III",
+   "reading": "li liang ti gao III",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00266",
+   "text": "原初的直觉精通",
+   "typeText": "原初的直觉精通",
+   "reading": "yuan chu de zhi jue jing tong",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00267",
+   "text": "坠星冲效果提高",
+   "typeText": "坠星冲效果提高",
+   "reading": "zhui xing chong xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00268",
+   "text": "坦培拉效果提高",
+   "typeText": "坦培拉效果提高",
+   "reading": "tan pei la xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00269",
+   "text": "大丰收效果提高",
+   "typeText": "大丰收效果提高",
+   "reading": "da feng shou xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00270",
+   "text": "天地人效果提高",
+   "typeText": "天地人效果提高",
+   "reading": "tian di ren xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00271",
+   "text": "失血箭效果提高",
+   "typeText": "失血箭效果提高",
+   "reading": "shi xue jian xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00272",
+   "text": "居合术效果提高",
+   "typeText": "居合术效果提高",
+   "reading": "ju he shu xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00273",
+   "text": "岩石低吟III",
+   "typeText": "岩石低吟III",
+   "reading": "yan shi di yin III",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00274",
+   "text": "庇护所效果提高",
+   "typeText": "庇护所效果提高",
+   "reading": "bi hu suo xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00275",
+   "text": "彩绘效果提高V",
+   "typeText": "彩绘效果提高V",
+   "reading": "cai hui xiao guo ti gao V",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00276",
+   "text": "必杀剑效果提高",
+   "typeText": "必杀剑效果提高",
+   "reading": "bi sha jian xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00277",
+   "text": "战女神之怒精通",
+   "typeText": "战女神之怒精通",
+   "reading": "zhan nv shen zhi nu jing tong",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00278",
+   "text": "技能效果提高V",
+   "typeText": "技能效果提高V",
+   "reading": "ji neng xiao guo ti gao V",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00279",
+   "text": "斗魂旋风脚精通",
+   "typeText": "斗魂旋风脚精通",
+   "reading": "dou hun xuan feng jiao jing tong",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00280",
+   "text": "日珥斩效果提高",
+   "typeText": "日珥斩效果提高",
+   "reading": "ri er zhan xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00281",
+   "text": "星极火效果提高",
+   "typeText": "星极火效果提高",
+   "reading": "xing ji huo xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00282",
+   "text": "智力提高III",
+   "typeText": "智力提高III",
+   "reading": "zhi li ti gao III",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00283",
+   "text": "极性精通III",
+   "typeText": "极性精通III",
+   "reading": "ji xing jing tong III",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00284",
+   "text": "树木低吟III",
+   "typeText": "树木低吟III",
+   "reading": "shu mu di yin III",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00285",
+   "text": "残暴弹效果提高",
+   "typeText": "残暴弹效果提高",
+   "reading": "can bao dan xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00286",
+   "text": "毁灭精通III",
+   "typeText": "毁灭精通III",
+   "reading": "hui mie jing tong III",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00287",
+   "text": "潜行效果提高V",
+   "typeText": "潜行效果提高V",
+   "reading": "qian xing xiao guo ti gao V",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00288",
+   "text": "潜行效果提高X",
+   "typeText": "潜行效果提高X",
+   "reading": "qian xing xiao guo ti gao X",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00289",
+   "text": "灵巧提高III",
+   "typeText": "灵巧提高III",
+   "reading": "ling qiao ti gao III",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00290",
+   "text": "灵极心效果提高",
+   "typeText": "灵极心效果提高",
+   "reading": "ling ji xin xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00291",
+   "text": "灵魂技效果提高",
+   "typeText": "灵魂技效果提高",
+   "reading": "ling hun ji xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00292",
+   "text": "炎法精通III",
+   "typeText": "炎法精通III",
+   "reading": "yan fa jing tong III",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00293",
+   "text": "燕回返效果提高",
+   "typeText": "燕回返效果提高",
+   "reading": "yan hui fan xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00294",
+   "text": "破碎冲效果提高",
+   "typeText": "破碎冲效果提高",
+   "reading": "po sui chong xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00295",
+   "text": "神祝祷效果提高",
+   "typeText": "神祝祷效果提高",
+   "reading": "shen zhu dao xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00296",
+   "text": "神秘环效果提高",
+   "typeText": "神秘环效果提高",
+   "reading": "shen mi huan xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00297",
+   "text": "神秘纹效果提高",
+   "typeText": "神秘纹效果提高",
+   "reading": "shen mi wen xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00298",
+   "text": "精神提高III",
+   "typeText": "精神提高III",
+   "reading": "jing shen ti gao III",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00299",
+   "text": "红宝石召唤精通",
+   "typeText": "红宝石召唤精通",
+   "reading": "hong bao shi zhao huan jing tong",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00300",
+   "text": "纷乱箭效果提高",
+   "typeText": "纷乱箭效果提高",
+   "reading": "fen luan jian xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00301",
+   "text": "绝峰箭效果提高",
+   "typeText": "绝峰箭效果提高",
+   "reading": "jue feng jian xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00302",
+   "text": "绿宝石召唤精通",
+   "typeText": "绿宝石召唤精通",
+   "reading": "lv bao shi zhao huan jing tong",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00303",
+   "text": "耐力提高III",
+   "typeText": "耐力提高III",
+   "reading": "nai li ti gao III",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00304",
+   "text": "自动开拓者之手",
+   "typeText": "自动开拓者之手",
+   "reading": "zi dong kai tuo zhe zhi shou",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00305",
+   "text": "自动登山者之感",
+   "typeText": "自动登山者之感",
+   "reading": "zi dong deng shan zhe zhi gan",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00306",
+   "text": "调色板效果提高",
+   "typeText": "调色板效果提高",
+   "reading": "tiao se ban xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00307",
+   "text": "赤魔法精通II",
+   "typeText": "赤魔法精通II",
+   "reading": "chi mo fa jing tong II",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00308",
+   "text": "连环计效果提高",
+   "typeText": "连环计效果提高",
+   "reading": "lian huan ji xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00309",
+   "text": "连珠箭效果提高",
+   "typeText": "连珠箭效果提高",
+   "reading": "lian zhu jian xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00310",
+   "text": "长枪精通III",
+   "typeText": "长枪精通III",
+   "reading": "chang qiang jing tong III",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00311",
+   "text": "闪雷精通III",
+   "typeText": "闪雷精通III",
+   "reading": "shan lei jing tong III",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00312",
+   "text": "飞石精通III",
+   "typeText": "飞石精通III",
+   "reading": "fei shi jing tong III",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00313",
+   "text": "魔元化效果提高",
+   "typeText": "魔元化效果提高",
+   "reading": "mo yuan hua xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00314",
+   "text": "魔法剑效果提高",
+   "typeText": "魔法剑效果提高",
+   "reading": "mo fa jian xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00315",
+   "text": "鱼鹰之眼III",
+   "typeText": "鱼鹰之眼III",
+   "reading": "yu ying zhi yan III",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00316",
+   "text": "鱼鹰之眼VII",
+   "typeText": "鱼鹰之眼VII",
+   "reading": "yu ying zhi yan VII",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00317",
+   "text": "黄宝石召唤精通",
+   "typeText": "黄宝石召唤精通",
+   "reading": "huang bao shi zhao huan jing tong",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00318",
+   "text": "黑魔纹效果提高",
+   "typeText": "黑魔纹效果提高",
+   "reading": "hei mo wen xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00319",
+   "text": "龙炎冲效果提高",
+   "typeText": "龙炎冲效果提高",
+   "reading": "long yan chong xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00320",
+   "text": "三重灾祸效果提高",
+   "typeText": "三重灾祸效果提高",
+   "reading": "san chong zai huo xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00321",
+   "text": "中间学派效果提高",
+   "typeText": "中间学派效果提高",
+   "reading": "zhong jian xue pai xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00322",
+   "text": "义结金兰效果提高",
+   "typeText": "义结金兰效果提高",
+   "reading": "yi jie jin lan xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00323",
+   "text": "九天连箭效果提高",
+   "typeText": "九天连箭效果提高",
+   "reading": "jiu tian lian jian xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00324",
+   "text": "介毒之术效果提高",
+   "typeText": "介毒之术效果提高",
+   "reading": "jie du zhi shu xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00325",
+   "text": "以太蓄能效果提高",
+   "typeText": "以太蓄能效果提高",
+   "reading": "yi tai xu neng xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00326",
+   "text": "以太超流效果提高",
+   "typeText": "以太超流效果提高",
+   "reading": "yi tai chao liu xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00327",
+   "text": "以小钓大效果提高",
+   "typeText": "以小钓大效果提高",
+   "reading": "yi xiao diao da xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00328",
+   "text": "促进效果提高II",
+   "typeText": "促进效果提高II",
+   "reading": "cu jin xiao guo ti gao II",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00329",
+   "text": "先天禀赋效果提高",
+   "typeText": "先天禀赋效果提高",
+   "reading": "xian tian bing fu xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00330",
+   "text": "内力迸发效果提高",
+   "typeText": "内力迸发效果提高",
+   "reading": "nei li beng fa xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00331",
+   "text": "农夫之智效果提高",
+   "typeText": "农夫之智效果提高",
+   "reading": "nong fu zhi zhi xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00332",
+   "text": "化身能力效果提高",
+   "typeText": "化身能力效果提高",
+   "reading": "hua shen neng li xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00333",
+   "text": "即刻咏唱效果提高",
+   "typeText": "即刻咏唱效果提高",
+   "reading": "ji ke yong chang xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00334",
+   "text": "圣光幕帘效果提高",
+   "typeText": "圣光幕帘效果提高",
+   "reading": "sheng guang mu lian xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00335",
+   "text": "地狱之门效果提高",
+   "typeText": "地狱之门效果提高",
+   "reading": "di yu zhi men xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00336",
+   "text": "坚角清汁效果提高",
+   "typeText": "坚角清汁效果提高",
+   "reading": "jian jiao qing zhi xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00337",
+   "text": "士气高扬之策精通",
+   "typeText": "士气高扬之策精通",
+   "reading": "shi qi gao yang zhi ce jing tong",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00338",
+   "text": "多种武器效果提高",
+   "typeText": "多种武器效果提高",
+   "reading": "duo zhong wu qi xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00339",
+   "text": "夜游魂衣效果提高",
+   "typeText": "夜游魂衣效果提高",
+   "reading": "ye you hun yi xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00340",
+   "text": "天星交错效果提高",
+   "typeText": "天星交错效果提高",
+   "reading": "tian xing jiao cuo xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00341",
+   "text": "天语效果提高II",
+   "typeText": "天语效果提高II",
+   "reading": "tian yu xiao guo ti gao II",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00342",
+   "text": "天语效果提高IV",
+   "typeText": "天语效果提高IV",
+   "reading": "tian yu xiao guo ti gao IV",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00343",
+   "text": "守护之光效果提高",
+   "typeText": "守护之光效果提高",
+   "reading": "shou hu zhi guang xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00344",
+   "text": "安慰之心效果提高",
+   "typeText": "安慰之心效果提高",
+   "reading": "an wei zhi xin xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00345",
+   "text": "安魂祈祷效果提高",
+   "typeText": "安魂祈祷效果提高",
+   "reading": "an hun qi dao xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00346",
+   "text": "展开战术效果提高",
+   "typeText": "展开战术效果提高",
+   "reading": "zhan kai zhan shu xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00347",
+   "text": "山境酷刑效果提高",
+   "typeText": "山境酷刑效果提高",
+   "reading": "shan jing ku xing xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00348",
+   "text": "强力射击效果提高",
+   "typeText": "强力射击效果提高",
+   "reading": "qiang li she ji xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00349",
+   "text": "彩绘效果提高II",
+   "typeText": "彩绘效果提高II",
+   "reading": "cai hui xiao guo ti gao II",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00350",
+   "text": "彩绘效果提高IV",
+   "typeText": "彩绘效果提高IV",
+   "reading": "cai hui xiao guo ti gao IV",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00351",
+   "text": "意气冲天效果提高",
+   "typeText": "意气冲天效果提高",
+   "reading": "yi qi chong tian xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00352",
+   "text": "战逃反应效果提高",
+   "typeText": "战逃反应效果提高",
+   "reading": "zhan tao fan ying xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00353",
+   "text": "技能伤害提高II",
+   "typeText": "技能伤害提高II",
+   "reading": "ji neng shang hai ti gao II",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00354",
+   "text": "技能威力提高II",
+   "typeText": "技能威力提高II",
+   "reading": "ji neng wei li ti gao II",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00355",
+   "text": "技能威力提高IV",
+   "typeText": "技能威力提高IV",
+   "reading": "ji neng wei li ti gao IV",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00356",
+   "text": "技能效果提高II",
+   "typeText": "技能效果提高II",
+   "reading": "ji neng xiao guo ti gao II",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00357",
+   "text": "技能效果提高IV",
+   "typeText": "技能效果提高IV",
+   "reading": "ji neng xiao guo ti gao IV",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00358",
+   "text": "抽卡效果提高II",
+   "typeText": "抽卡效果提高II",
+   "reading": "chou ka xiao guo ti gao II",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00359",
+   "text": "掠影示现效果提高",
+   "typeText": "掠影示现效果提高",
+   "reading": "lve ying shi xian xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00360",
+   "text": "攻击魔法精通II",
+   "typeText": "攻击魔法精通II",
+   "reading": "gong ji mo fa jing tong II",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00361",
+   "text": "斗气积累提高II",
+   "typeText": "斗气积累提高II",
+   "reading": "dou qi ji lei ti gao II",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00362",
+   "text": "明镜止水效果提高",
+   "typeText": "明镜止水效果提高",
+   "reading": "ming jing zhi shui xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00363",
+   "text": "晶壤装填效果提高",
+   "typeText": "晶壤装填效果提高",
+   "reading": "jing rang zhuang tian xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00364",
+   "text": "枪管加热效果提高",
+   "typeText": "枪管加热效果提高",
+   "reading": "qiang guan jia re xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00365",
+   "text": "治疗技能效果提高",
+   "typeText": "治疗技能效果提高",
+   "reading": "zhi liao ji neng xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00366",
+   "text": "泰然自若效果提高",
+   "typeText": "泰然自若效果提高",
+   "reading": "tai ran zi ruo xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00367",
+   "text": "潜行效果提高II",
+   "typeText": "潜行效果提高II",
+   "reading": "qian xing xiao guo ti gao II",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00368",
+   "text": "潜行效果提高IV",
+   "typeText": "潜行效果提高IV",
+   "reading": "qian xing xiao guo ti gao IV",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00369",
+   "text": "潜行效果提高IX",
+   "typeText": "潜行效果提高IX",
+   "reading": "qian xing xiao guo ti gao IX",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00370",
+   "text": "潜行效果提高VI",
+   "typeText": "潜行效果提高VI",
+   "reading": "qian xing xiao guo ti gao VI",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00371",
+   "text": "潜行效果提高XI",
+   "typeText": "潜行效果提高XI",
+   "reading": "qian xing xiao guo ti gao XI",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00372",
+   "text": "激情咏唱效果提高",
+   "typeText": "激情咏唱效果提高",
+   "reading": "ji qing yong chang xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00373",
+   "text": "灼热之光效果提高",
+   "typeText": "灼热之光效果提高",
+   "reading": "zhuo re zhi guang xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00374",
+   "text": "牙系技能效果提高",
+   "typeText": "牙系技能效果提高",
+   "reading": "ya xi ji neng xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00375",
+   "text": "生杀予夺效果提高",
+   "typeText": "生杀予夺效果提高",
+   "reading": "sheng sha yu duo xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00376",
+   "text": "疾风极意效果提高",
+   "typeText": "疾风极意效果提高",
+   "reading": "ji feng ji yi xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00377",
+   "text": "疾风迅雷效果提高",
+   "typeText": "疾风迅雷效果提高",
+   "reading": "ji feng xun lei xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00378",
+   "text": "百花争艳效果提高",
+   "typeText": "百花争艳效果提高",
+   "reading": "bai hua zheng yan xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00379",
+   "text": "石工之理效果提高",
+   "typeText": "石工之理效果提高",
+   "reading": "shi gong zhi li xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00380",
+   "text": "祖灵之魂效果提高",
+   "typeText": "祖灵之魂效果提高",
+   "reading": "zu ling zhi hun xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00381",
+   "text": "神圣魔法精通II",
+   "typeText": "神圣魔法精通II",
+   "reading": "shen sheng mo fa jing tong II",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00382",
+   "text": "神速咏唱效果提高",
+   "typeText": "神速咏唱效果提高",
+   "reading": "shen su yong chang xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00383",
+   "text": "积蓄技能效果提高",
+   "typeText": "积蓄技能效果提高",
+   "reading": "ji xu ji neng xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00384",
+   "text": "策动效果提高II",
+   "typeText": "策动效果提高II",
+   "reading": "ce dong xiao guo ti gao II",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00385",
+   "text": "红莲体势效果提高",
+   "typeText": "红莲体势效果提高",
+   "reading": "hong lian ti shi xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00386",
+   "text": "红莲极意效果提高",
+   "typeText": "红莲极意效果提高",
+   "reading": "hong lian ji yi xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00387",
+   "text": "续剑效果提高II",
+   "typeText": "续剑效果提高II",
+   "reading": "xu jian xiao guo ti gao II",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00388",
+   "text": "缩地效果提高II",
+   "typeText": "缩地效果提高II",
+   "reading": "suo di xiao guo ti gao II",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00389",
+   "text": "能量抽取效果提高",
+   "typeText": "能量抽取效果提高",
+   "reading": "neng liang chou qu xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00390",
+   "text": "自生II效果提高",
+   "typeText": "自生II效果提高",
+   "reading": "zi sheng II xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00391",
+   "text": "英勇之剑效果提高",
+   "typeText": "英勇之剑效果提高",
+   "reading": "ying yong zhi jian xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00392",
+   "text": "蛇系技能效果提高",
+   "typeText": "蛇系技能效果提高",
+   "reading": "she xi ji neng xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00393",
+   "text": "蛮荒崩裂效果提高",
+   "typeText": "蛮荒崩裂效果提高",
+   "reading": "man huang beng lie xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00394",
+   "text": "蝰系技能效果提高",
+   "typeText": "蝰系技能效果提高",
+   "reading": "kui xi ji neng xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00395",
+   "text": "行吟效果提高II",
+   "typeText": "行吟效果提高II",
+   "reading": "xing yin xiao guo ti gao II",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00396",
+   "text": "赤魔法精通III",
+   "typeText": "赤魔法精通III",
+   "reading": "chi mo fa jing tong III",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00397",
+   "text": "轻身步法效果提高",
+   "typeText": "轻身步法效果提高",
+   "reading": "qing shen bu fa xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00398",
+   "text": "通晓效果提高II",
+   "typeText": "通晓效果提高II",
+   "reading": "tong xiao xiao guo ti gao II",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00399",
+   "text": "采集力恢复量提高",
+   "typeText": "采集力恢复量提高",
+   "reading": "cai ji li hui fu liang ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00400",
+   "text": "雷遁之术效果提高",
+   "typeText": "雷遁之术效果提高",
+   "reading": "lei dun zhi shu xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00401",
+   "text": "颜料魔法效果提高",
+   "typeText": "颜料魔法效果提高",
+   "reading": "yan liao mo fa xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00402",
+   "text": "风月风花效果提高",
+   "typeText": "风月风花效果提高",
+   "reading": "feng yue feng hua xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00403",
+   "text": "飞蛇之尾效果提高",
+   "typeText": "飞蛇之尾效果提高",
+   "reading": "fei she zhi wei xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00404",
+   "text": "飞蛇之魂效果提高",
+   "typeText": "飞蛇之魂效果提高",
+   "reading": "fei she zhi hun xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00405",
+   "text": "鱼鹰之眼VIII",
+   "typeText": "鱼鹰之眼VIII",
+   "reading": "yu ying zhi yan VIII",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00406",
+   "text": "齿系技能效果提高",
+   "typeText": "齿系技能效果提高",
+   "reading": "chi xi ji neng xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00407",
+   "text": "龙神召唤效果提高",
+   "typeText": "龙神召唤效果提高",
+   "reading": "long shen zhao huan xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00408",
+   "text": "龙神附体效果提高",
+   "typeText": "龙神附体效果提高",
+   "reading": "long shen fu ti xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00409",
+   "text": "龙翼滑翔效果提高",
+   "typeText": "龙翼滑翔效果提高",
+   "reading": "long yi hua xiang xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00410",
+   "text": "不死鸟附体效果提高",
+   "typeText": "不死鸟附体效果提高",
+   "reading": "bu si niao fu ti xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00411",
+   "text": "前冲步效果提高II",
+   "typeText": "前冲步效果提高II",
+   "reading": "qian chong bu xiao guo ti gao II",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00412",
+   "text": "十二神加护效果提高",
+   "typeText": "十二神加护效果提高",
+   "reading": "shi er shen jia hu xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00413",
+   "text": "原初的勇猛效果提高",
+   "typeText": "原初的勇猛效果提高",
+   "reading": "yuan chu de yong meng xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00414",
+   "text": "原初的解放效果提高",
+   "typeText": "原初的解放效果提高",
+   "reading": "yuan chu de jie fang xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00415",
+   "text": "天语效果提高III",
+   "typeText": "天语效果提高III",
+   "reading": "tian yu xiao guo ti gao III",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00416",
+   "text": "彩绘效果提高III",
+   "typeText": "彩绘效果提高III",
+   "reading": "cai hui xiao guo ti gao III",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00417",
+   "text": "技能威力提高III",
+   "typeText": "技能威力提高III",
+   "reading": "ji neng wei li ti gao III",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00418",
+   "text": "技能效果提高III",
+   "typeText": "技能效果提高III",
+   "reading": "ji neng xiao guo ti gao III",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00419",
+   "text": "潜行效果提高III",
+   "typeText": "潜行效果提高III",
+   "reading": "qian xing xiao guo ti gao III",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00420",
+   "text": "潜行效果提高VII",
+   "typeText": "潜行效果提高VII",
+   "reading": "qian xing xiao guo ti gao VII",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00421",
+   "text": "潜行效果提高XII",
+   "typeText": "潜行效果提高XII",
+   "reading": "qian xing xiao guo ti gao XII",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00422",
+   "text": "进攻之探戈效果提高",
+   "typeText": "进攻之探戈效果提高",
+   "reading": "jin gong zhi tan ge xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00423",
+   "text": "野战治疗阵效果提高",
+   "typeText": "野战治疗阵效果提高",
+   "reading": "ye zhan zhi liao zhen xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00424",
+   "text": "防守之桑巴效果提高",
+   "typeText": "防守之桑巴效果提高",
+   "reading": "fang shou zhi sang ba xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00425",
+   "text": "魔元化效果提高II",
+   "typeText": "魔元化效果提高II",
+   "reading": "mo yuan hua xiao guo ti gao II",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00426",
+   "text": "以太蓄能效果提高II",
+   "typeText": "以太蓄能效果提高II",
+   "reading": "yi tai xu neng xiao guo ti gao II",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00427",
+   "text": "以太超流复唱时间缩短",
+   "typeText": "以太超流复唱时间缩短",
+   "reading": "yi tai chao liu fu chang shi jian suo duan",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00428",
+   "text": "以太超流效果提高II",
+   "typeText": "以太超流效果提高II",
+   "reading": "yi tai chao liu xiao guo ti gao II",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00429",
+   "text": "先天禀赋效果提高II",
+   "typeText": "先天禀赋效果提高II",
+   "reading": "xian tian bing fu xiao guo ti gao II",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00430",
+   "text": "军神的赞美歌效果提高",
+   "typeText": "军神的赞美歌效果提高",
+   "reading": "jun shen de zan mei ge xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00431",
+   "text": "多种武器效果提高II",
+   "typeText": "多种武器效果提高II",
+   "reading": "duo zhong wu qi xiao guo ti gao II",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00432",
+   "text": "意气冲天效果提高II",
+   "typeText": "意气冲天效果提高II",
+   "reading": "yi qi chong tian xiao guo ti gao II",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00433",
+   "text": "技巧舞步结束效果提高",
+   "typeText": "技巧舞步结束效果提高",
+   "reading": "ji qiao wu bu jie shu xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00434",
+   "text": "掠影示现效果提高II",
+   "typeText": "掠影示现效果提高II",
+   "reading": "lve ying shi xian xiao guo ti gao II",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00435",
+   "text": "明镜止水效果提高II",
+   "typeText": "明镜止水效果提高II",
+   "reading": "ming jing zhi shui xiao guo ti gao II",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00436",
+   "text": "标准舞步结束效果提高",
+   "typeText": "标准舞步结束效果提高",
+   "reading": "biao zhun wu bu jie shu xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00437",
+   "text": "潜行效果提高VIII",
+   "typeText": "潜行效果提高VIII",
+   "reading": "qian xing xiao guo ti gao VIII",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00438",
+   "text": "激情咏唱效果提高II",
+   "typeText": "激情咏唱效果提高II",
+   "reading": "ji qing yong chang xiao guo ti gao II",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00439",
+   "text": "疾风迅雷效果提高II",
+   "typeText": "疾风迅雷效果提高II",
+   "reading": "ji feng xun lei xiao guo ti gao II",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00440",
+   "text": "百花争艳效果提高II",
+   "typeText": "百花争艳效果提高II",
+   "reading": "bai hua zheng yan xiao guo ti gao II",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00441",
+   "text": "采集力恢复量提高II",
+   "typeText": "采集力恢复量提高II",
+   "reading": "cai ji li hui fu liang ti gao II",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00442",
+   "text": "龙神召唤效果提高II",
+   "typeText": "龙神召唤效果提高II",
+   "reading": "long shen zhao huan xiao guo ti gao II",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00443",
+   "text": "龙神附体效果提高II",
+   "typeText": "龙神附体效果提高II",
+   "reading": "long shen fu ti xiao guo ti gao II",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00444",
+   "text": "以太超流效果提高III",
+   "typeText": "以太超流效果提高III",
+   "reading": "yi tai chao liu xiao guo ti gao III",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00445",
+   "text": "十二神加护效果提高II",
+   "typeText": "十二神加护效果提高II",
+   "reading": "shi er shen jia hu xiao guo ti gao II",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00446",
+   "text": "掠影示现效果提高III",
+   "typeText": "掠影示现效果提高III",
+   "reading": "lve ying shi xian xiao guo ti gao III",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00447",
+   "text": "疾风迅雷效果提高III",
+   "typeText": "疾风迅雷效果提高III",
+   "reading": "ji feng xun lei xiao guo ti gao III",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00448",
+   "text": "采集力恢复量提高III",
+   "typeText": "采集力恢复量提高III",
+   "reading": "cai ji li hui fu liang ti gao III",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00449",
+   "text": "防守之桑巴效果提高II",
+   "typeText": "防守之桑巴效果提高II",
+   "reading": "fang shou zhi sang ba xiao guo ti gao II",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00450",
+   "text": "光明神的最终乐章效果提高",
+   "typeText": "光明神的最终乐章效果提高",
+   "reading": "guang ming shen de zui zhong yue zhang xiao guo ti gao",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "trt_00451",
+   "text": "十二神加护效果提高III",
+   "typeText": "十二神加护效果提高III",
+   "reading": "shi er shen jia hu xiao guo ti gao III",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "trt_00452",
+   "text": "技巧舞步结束效果提高II",
+   "typeText": "技巧舞步结束效果提高II",
+   "reading": "ji qiao wu bu jie shu xiao guo ti gao II",
+   "category": "traits",
+   "difficulty": 3,
+   "pure": false
+  }
+ ]
+}

@@ -1,0 +1,7919 @@
+{
+ "category": "music",
+ "label": "乐曲",
+ "count": 879,
+ "source": "thewakingsands/ffxiv-datamining-cn",
+ "entries": [
+  {
+   "id": "msc_00001",
+   "text": "万魔",
+   "typeText": "万魔",
+   "reading": "wan mo",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00002",
+   "text": "人王",
+   "typeText": "人王",
+   "reading": "ren wang",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00003",
+   "text": "余光",
+   "typeText": "余光",
+   "reading": "yu guang",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00004",
+   "text": "信念",
+   "typeText": "信念",
+   "reading": "xin nian",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00005",
+   "text": "修行",
+   "typeText": "修行",
+   "reading": "xiu xing",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00006",
+   "text": "倒影",
+   "typeText": "倒影",
+   "reading": "dao ying",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00007",
+   "text": "傲慢",
+   "typeText": "傲慢",
+   "reading": "ao man",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00008",
+   "text": "军略",
+   "typeText": "军略",
+   "reading": "jun lve",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00009",
+   "text": "冲击",
+   "typeText": "冲击",
+   "reading": "chong ji",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00010",
+   "text": "凶兆",
+   "typeText": "凶兆",
+   "reading": "xiong zhao",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00011",
+   "text": "剑闪",
+   "typeText": "剑闪",
+   "reading": "jian shan",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00012",
+   "text": "动荡",
+   "typeText": "动荡",
+   "reading": "dong dang",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00013",
+   "text": "勇武",
+   "typeText": "勇武",
+   "reading": "yong wu",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00014",
+   "text": "千面",
+   "typeText": "千面",
+   "reading": "qian mian",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00015",
+   "text": "卒中",
+   "typeText": "卒中",
+   "reading": "zu zhong",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00016",
+   "text": "危言",
+   "typeText": "危言",
+   "reading": "wei yan",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00017",
+   "text": "古伤",
+   "typeText": "古伤",
+   "reading": "gu shang",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00018",
+   "text": "古都",
+   "typeText": "古都",
+   "reading": "gu du",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00019",
+   "text": "启示",
+   "typeText": "启示",
+   "reading": "qi shi",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00020",
+   "text": "呐喊",
+   "typeText": "呐喊",
+   "reading": "na han",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00021",
+   "text": "和谐",
+   "typeText": "和谐",
+   "reading": "he xie",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00022",
+   "text": "哀愁",
+   "typeText": "哀愁",
+   "reading": "ai chou",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00023",
+   "text": "回忆",
+   "typeText": "回忆",
+   "reading": "hui yi",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00024",
+   "text": "回想",
+   "typeText": "回想",
+   "reading": "hui xiang",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00025",
+   "text": "圣座",
+   "typeText": "圣座",
+   "reading": "sheng zuo",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00026",
+   "text": "圣痕",
+   "typeText": "圣痕",
+   "reading": "sheng hen",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00027",
+   "text": "地壳",
+   "typeText": "地壳",
+   "reading": "di qiao",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00028",
+   "text": "地裂",
+   "typeText": "地裂",
+   "reading": "di lie",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00029",
+   "text": "坚毅",
+   "typeText": "坚毅",
+   "reading": "jian yi",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00030",
+   "text": "堕落",
+   "typeText": "堕落",
+   "reading": "duo luo",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00031",
+   "text": "复仇",
+   "typeText": "复仇",
+   "reading": "fu chou",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00032",
+   "text": "天楔",
+   "typeText": "天楔",
+   "reading": "tian xie",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00033",
+   "text": "天灾",
+   "typeText": "天灾",
+   "reading": "tian zai",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00034",
+   "text": "天王",
+   "typeText": "天王",
+   "reading": "tian wang",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00035",
+   "text": "天雷",
+   "typeText": "天雷",
+   "reading": "tian lei",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00036",
+   "text": "天风",
+   "typeText": "天风",
+   "reading": "tian feng",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00037",
+   "text": "奸计",
+   "typeText": "奸计",
+   "reading": "jian ji",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00038",
+   "text": "威光",
+   "typeText": "威光",
+   "reading": "wei guang",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00039",
+   "text": "宝石",
+   "typeText": "宝石",
+   "reading": "bao shi",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00040",
+   "text": "家园",
+   "typeText": "家园",
+   "reading": "jia yuan",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00041",
+   "text": "宿命",
+   "typeText": "宿命",
+   "reading": "su ming",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00042",
+   "text": "密道",
+   "typeText": "密道",
+   "reading": "mi dao",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00043",
+   "text": "对峙",
+   "typeText": "对峙",
+   "reading": "dui zhi",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00044",
+   "text": "寻火",
+   "typeText": "寻火",
+   "reading": "xun huo",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00045",
+   "text": "尖叫",
+   "typeText": "尖叫",
+   "reading": "jian jiao",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00046",
+   "text": "尘沙",
+   "typeText": "尘沙",
+   "reading": "chen sha",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00047",
+   "text": "平衡",
+   "typeText": "平衡",
+   "reading": "ping heng",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00048",
+   "text": "幽深",
+   "typeText": "幽深",
+   "reading": "you shen",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00049",
+   "text": "异形",
+   "typeText": "异形",
+   "reading": "yi xing",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00050",
+   "text": "强权",
+   "typeText": "强权",
+   "reading": "qiang quan",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00051",
+   "text": "忠义",
+   "typeText": "忠义",
+   "reading": "zhong yi",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00052",
+   "text": "惬意",
+   "typeText": "惬意",
+   "reading": "qie yi",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00053",
+   "text": "愤怒",
+   "typeText": "愤怒",
+   "reading": "fen nu",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00054",
+   "text": "憎恶",
+   "typeText": "憎恶",
+   "reading": "zeng wu",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00055",
+   "text": "战乱",
+   "typeText": "战乱",
+   "reading": "zhan luan",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00056",
+   "text": "战祸",
+   "typeText": "战祸",
+   "reading": "zhan huo",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00057",
+   "text": "搏战",
+   "typeText": "搏战",
+   "reading": "bo zhan",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00058",
+   "text": "摇篮",
+   "typeText": "摇篮",
+   "reading": "yao lan",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00059",
+   "text": "文明",
+   "typeText": "文明",
+   "reading": "wen ming",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00060",
+   "text": "斗争",
+   "typeText": "斗争",
+   "reading": "dou zheng",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00061",
+   "text": "无心",
+   "typeText": "无心",
+   "reading": "wu xin",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00062",
+   "text": "无望",
+   "typeText": "无望",
+   "reading": "wu wang",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00063",
+   "text": "无限",
+   "typeText": "无限",
+   "reading": "wu xian",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00064",
+   "text": "星海",
+   "typeText": "星海",
+   "reading": "xing hai",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00065",
+   "text": "智理",
+   "typeText": "智理",
+   "reading": "zhi li",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00066",
+   "text": "暗淡",
+   "typeText": "暗淡",
+   "reading": "an dan",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00067",
+   "text": "极乐",
+   "typeText": "极乐",
+   "reading": "ji le",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00068",
+   "text": "歇宿",
+   "typeText": "歇宿",
+   "reading": "xie su",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00069",
+   "text": "永眠",
+   "typeText": "永眠",
+   "reading": "yong mian",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00070",
+   "text": "沉静",
+   "typeText": "沉静",
+   "reading": "chen jing",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00071",
+   "text": "泡影",
+   "typeText": "泡影",
+   "reading": "pao ying",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00072",
+   "text": "激潮",
+   "typeText": "激潮",
+   "reading": "ji chao",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00073",
+   "text": "热身",
+   "typeText": "热身",
+   "reading": "re shen",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00074",
+   "text": "焦虑",
+   "typeText": "焦虑",
+   "reading": "jiao lv",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00075",
+   "text": "熏灰",
+   "typeText": "熏灰",
+   "reading": "xun hui",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00076",
+   "text": "猛攻",
+   "typeText": "猛攻",
+   "reading": "meng gong",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00077",
+   "text": "疾径",
+   "typeText": "疾径",
+   "reading": "ji jing",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00078",
+   "text": "监牢",
+   "typeText": "监牢",
+   "reading": "jian lao",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00079",
+   "text": "破灭",
+   "typeText": "破灭",
+   "reading": "po mie",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00080",
+   "text": "破碎",
+   "typeText": "破碎",
+   "reading": "po sui",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00081",
+   "text": "硬甲",
+   "typeText": "硬甲",
+   "reading": "ying jia",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00082",
+   "text": "神龙",
+   "typeText": "神龙",
+   "reading": "shen long",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00083",
+   "text": "离乡",
+   "typeText": "离乡",
+   "reading": "li xiang",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00084",
+   "text": "离别",
+   "typeText": "离别",
+   "reading": "li bie",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00085",
+   "text": "策谋",
+   "typeText": "策谋",
+   "reading": "ce mou",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00086",
+   "text": "终局",
+   "typeText": "终局",
+   "reading": "zhong ju",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00087",
+   "text": "结局",
+   "typeText": "结局",
+   "reading": "jie ju",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00088",
+   "text": "绚烂",
+   "typeText": "绚烂",
+   "reading": "xuan lan",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00089",
+   "text": "耽溺",
+   "typeText": "耽溺",
+   "reading": "dan ni",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00090",
+   "text": "苍翼",
+   "typeText": "苍翼",
+   "reading": "cang yi",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00091",
+   "text": "英杰",
+   "typeText": "英杰",
+   "reading": "ying jie",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00092",
+   "text": "蓄意",
+   "typeText": "蓄意",
+   "reading": "xu yi",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00093",
+   "text": "虚构",
+   "typeText": "虚构",
+   "reading": "xu gou",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00094",
+   "text": "螺旋",
+   "typeText": "螺旋",
+   "reading": "luo xuan",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00095",
+   "text": "觉醒",
+   "typeText": "觉醒",
+   "reading": "jue xing",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00096",
+   "text": "解读",
+   "typeText": "解读",
+   "reading": "jie du",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00097",
+   "text": "触礁",
+   "typeText": "触礁",
+   "reading": "chu jiao",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00098",
+   "text": "贪欲",
+   "typeText": "贪欲",
+   "reading": "tan yu",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00099",
+   "text": "起义",
+   "typeText": "起义",
+   "reading": "qi yi",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00100",
+   "text": "轨迹",
+   "typeText": "轨迹",
+   "reading": "gui ji",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00101",
+   "text": "轰鸣",
+   "typeText": "轰鸣",
+   "reading": "hong ming",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00102",
+   "text": "边境",
+   "typeText": "边境",
+   "reading": "bian jing",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00103",
+   "text": "迎风",
+   "typeText": "迎风",
+   "reading": "ying feng",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00104",
+   "text": "进退",
+   "typeText": "进退",
+   "reading": "jin tui",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00105",
+   "text": "迷梦",
+   "typeText": "迷梦",
+   "reading": "mi meng",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00106",
+   "text": "迷津",
+   "typeText": "迷津",
+   "reading": "mi jin",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00107",
+   "text": "追悼",
+   "typeText": "追悼",
+   "reading": "zhui dao",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00108",
+   "text": "逃亡",
+   "typeText": "逃亡",
+   "reading": "tao wang",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00109",
+   "text": "邪欲",
+   "typeText": "邪欲",
+   "reading": "xie yu",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00110",
+   "text": "金属",
+   "typeText": "金属",
+   "reading": "jin shu",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00111",
+   "text": "钟声",
+   "typeText": "钟声",
+   "reading": "zhong sheng",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00112",
+   "text": "铭记",
+   "typeText": "铭记",
+   "reading": "ming ji",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00113",
+   "text": "银泪",
+   "typeText": "银泪",
+   "reading": "yin lei",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00114",
+   "text": "锋芒",
+   "typeText": "锋芒",
+   "reading": "feng mang",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00115",
+   "text": "陨石",
+   "typeText": "陨石",
+   "reading": "yun shi",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00116",
+   "text": "险恶",
+   "typeText": "险恶",
+   "reading": "xian e",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00117",
+   "text": "险技",
+   "typeText": "险技",
+   "reading": "xian ji",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00118",
+   "text": "雪风",
+   "typeText": "雪风",
+   "reading": "xue feng",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00119",
+   "text": "雷鸣",
+   "typeText": "雷鸣",
+   "reading": "lei ming",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00120",
+   "text": "鬼岛",
+   "typeText": "鬼岛",
+   "reading": "gui dao",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00121",
+   "text": "魔神",
+   "typeText": "魔神",
+   "reading": "mo shen",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00122",
+   "text": "一小步",
+   "typeText": "一小步",
+   "reading": "yi xiao bu",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00123",
+   "text": "万花筒",
+   "typeText": "万花筒",
+   "reading": "wan hua tong",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00124",
+   "text": "三等分",
+   "typeText": "三等分",
+   "reading": "san deng fen",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00125",
+   "text": "五郎八",
+   "typeText": "五郎八",
+   "reading": "wu lang ba",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00126",
+   "text": "以太圈",
+   "typeText": "以太圈",
+   "reading": "yi tai quan",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00127",
+   "text": "决战δ",
+   "typeText": "决战δ",
+   "reading": "jue zhan δ",
+   "category": "music",
+   "difficulty": 1,
+   "pure": false
+  },
+  {
+   "id": "msc_00128",
+   "text": "决战σ",
+   "typeText": "决战σ",
+   "reading": "jue zhan σ",
+   "category": "music",
+   "difficulty": 1,
+   "pure": false
+  },
+  {
+   "id": "msc_00129",
+   "text": "啪啪呀",
+   "typeText": "啪啪呀",
+   "reading": "pa pa ya",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00130",
+   "text": "图·利亚",
+   "typeText": "图利亚",
+   "reading": "tu li ya",
+   "category": "music",
+   "difficulty": 1,
+   "pure": false
+  },
+  {
+   "id": "msc_00131",
+   "text": "堕天使",
+   "typeText": "堕天使",
+   "reading": "duo tian shi",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00132",
+   "text": "大家伙",
+   "typeText": "大家伙",
+   "reading": "da jia huo",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00133",
+   "text": "始源湖",
+   "typeText": "始源湖",
+   "reading": "shi yuan hu",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00134",
+   "text": "恐书症",
+   "typeText": "恐书症",
+   "reading": "kong shu zheng",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00135",
+   "text": "战斗α",
+   "typeText": "战斗α",
+   "reading": "zhan dou α",
+   "category": "music",
+   "difficulty": 1,
+   "pure": false
+  },
+  {
+   "id": "msc_00136",
+   "text": "星芒节",
+   "typeText": "星芒节",
+   "reading": "xing mang jie",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00137",
+   "text": "暗之王",
+   "typeText": "暗之王",
+   "reading": "an zhi wang",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00138",
+   "text": "月亮门",
+   "typeText": "月亮门",
+   "reading": "yue liang men",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00139",
+   "text": "水晶雨",
+   "typeText": "水晶雨",
+   "reading": "shui jing yu",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00140",
+   "text": "沙之家",
+   "typeText": "沙之家",
+   "reading": "sha zhi jia",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00141",
+   "text": "游乐园",
+   "typeText": "游乐园",
+   "reading": "you le yuan",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00142",
+   "text": "石与钢",
+   "typeText": "石与钢",
+   "reading": "shi yu gang",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00143",
+   "text": "紧急1",
+   "typeText": "紧急1",
+   "reading": "jin ji 1",
+   "category": "music",
+   "difficulty": 1,
+   "pure": false
+  },
+  {
+   "id": "msc_00144",
+   "text": "红莲节",
+   "typeText": "红莲节",
+   "reading": "hong lian jie",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00145",
+   "text": "航海者",
+   "typeText": "航海者",
+   "reading": "hang hai zhe",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00146",
+   "text": "莫古房",
+   "typeText": "莫古房",
+   "reading": "mo gu fang",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00147",
+   "text": "观星者",
+   "typeText": "观星者",
+   "reading": "guan xing zhe",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00148",
+   "text": "退热剂",
+   "typeText": "退热剂",
+   "reading": "tui re ji",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00149",
+   "text": "锤头鲨",
+   "typeText": "锤头鲨",
+   "reading": "chui tou sha",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00150",
+   "text": "降神节",
+   "typeText": "降神节",
+   "reading": "jiang shen jie",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00151",
+   "text": "隆弗尔",
+   "typeText": "隆弗尔",
+   "reading": "long fu er",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00152",
+   "text": "雨中泪",
+   "typeText": "雨中泪",
+   "reading": "yu zhong lei",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00153",
+   "text": "震天雷",
+   "typeText": "震天雷",
+   "reading": "zhen tian lei",
+   "category": "music",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "msc_00154",
+   "text": "一瞬千里",
+   "typeText": "一瞬千里",
+   "reading": "yi shun qian li",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00155",
+   "text": "一落千丈",
+   "typeText": "一落千丈",
+   "reading": "yi luo qian zhang",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00156",
+   "text": "万世箴言",
+   "typeText": "万世箴言",
+   "reading": "wan shi zhen yan",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00157",
+   "text": "万龙之祖",
+   "typeText": "万龙之祖",
+   "reading": "wan long zhi zu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00158",
+   "text": "上下易位",
+   "typeText": "上下易位",
+   "reading": "shang xia yi wei",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00159",
+   "text": "不屈不挠",
+   "typeText": "不屈不挠",
+   "reading": "bu qu bu nao",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00160",
+   "text": "不屈之刃",
+   "typeText": "不屈之刃",
+   "reading": "bu qu zhi ren",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00161",
+   "text": "不灭孤念",
+   "typeText": "不灭孤念",
+   "reading": "bu mie gu nian",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00162",
+   "text": "不稳深渊",
+   "typeText": "不稳深渊",
+   "reading": "bu wen shen yuan",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00163",
+   "text": "世界地图",
+   "typeText": "世界地图",
+   "reading": "shi jie di tu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00164",
+   "text": "世界局势",
+   "typeText": "世界局势",
+   "reading": "shi jie ju shi",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00165",
+   "text": "东方之地",
+   "typeText": "东方之地",
+   "reading": "dong fang zhi di",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00166",
+   "text": "东方游戏",
+   "typeText": "东方游戏",
+   "reading": "dong fang you xi",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00167",
+   "text": "丰饶之岛",
+   "typeText": "丰饶之岛",
+   "reading": "feng rao zhi dao",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00168",
+   "text": "乘上西风",
+   "typeText": "乘上西风",
+   "reading": "cheng shang xi feng",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00169",
+   "text": "云中匿影",
+   "typeText": "云中匿影",
+   "reading": "yun zhong ni ying",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00170",
+   "text": "云蒸龙变",
+   "typeText": "云蒸龙变",
+   "reading": "yun zheng long bian",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00171",
+   "text": "享乐之痛",
+   "typeText": "享乐之痛",
+   "reading": "xiang le zhi tong",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00172",
+   "text": "今夕何夕",
+   "typeText": "今夕何夕",
+   "reading": "jin xi he xi",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00173",
+   "text": "从不畏惧",
+   "typeText": "从不畏惧",
+   "reading": "cong bu wei ju",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00174",
+   "text": "从天而降",
+   "typeText": "从天而降",
+   "reading": "cong tian er jiang",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00175",
+   "text": "从此美满",
+   "typeText": "从此美满",
+   "reading": "cong ci mei man",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00176",
+   "text": "仙灵战斗",
+   "typeText": "仙灵战斗",
+   "reading": "xian ling zhan dou",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00177",
+   "text": "以血洗血",
+   "typeText": "以血洗血",
+   "reading": "yi xue xi xue",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00178",
+   "text": "众神之怒",
+   "typeText": "众神之怒",
+   "reading": "zhong shen zhi nu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00179",
+   "text": "位高责重",
+   "typeText": "位高责重",
+   "reading": "wei gao ze zhong",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00180",
+   "text": "你的答案",
+   "typeText": "你的答案",
+   "reading": "ni de da an",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00181",
+   "text": "假面舞会",
+   "typeText": "假面舞会",
+   "reading": "jia mian wu hui",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00182",
+   "text": "光宗耀祖",
+   "typeText": "光宗耀祖",
+   "reading": "guang zong yao zu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00183",
+   "text": "全力释放",
+   "typeText": "全力释放",
+   "reading": "quan li shi fang",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00184",
+   "text": "其火尚存",
+   "typeText": "其火尚存",
+   "reading": "qi huo shang cun",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00185",
+   "text": "兹瓦尔城",
+   "typeText": "兹瓦尔城",
+   "reading": "zi wa er cheng",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00186",
+   "text": "再来一杯！",
+   "typeText": "再来一杯",
+   "reading": "zai lai yi bei",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00187",
+   "text": "凶兽腹中",
+   "typeText": "凶兽腹中",
+   "reading": "xiong shou fu zhong",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00188",
+   "text": "勇士传奇",
+   "typeText": "勇士传奇",
+   "reading": "yong shi chuan qi",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00189",
+   "text": "千声悲鸣",
+   "typeText": "千声悲鸣",
+   "reading": "qian sheng bei ming",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00190",
+   "text": "千年夕照",
+   "typeText": "千年夕照",
+   "reading": "qian nian xi zhao",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00191",
+   "text": "千年旭光",
+   "typeText": "千年旭光",
+   "reading": "qian nian xu guang",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00192",
+   "text": "华美宫殿",
+   "typeText": "华美宫殿",
+   "reading": "hua mei gong dian",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00193",
+   "text": "厚于利刃",
+   "typeText": "厚于利刃",
+   "reading": "hou yu li ren",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00194",
+   "text": "古城墙内",
+   "typeText": "古城墙内",
+   "reading": "gu cheng qiang nei",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00195",
+   "text": "古斯塔堡",
+   "typeText": "古斯塔堡",
+   "reading": "gu si ta bao",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00196",
+   "text": "另一块砖",
+   "typeText": "另一块砖",
+   "reading": "ling yi kuai zhuan",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00197",
+   "text": "同仇敌忾",
+   "typeText": "同仇敌忾",
+   "reading": "tong chou di kai",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00198",
+   "text": "同行之路",
+   "typeText": "同行之路",
+   "reading": "tong hang zhi lu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00199",
+   "text": "名誉之战",
+   "typeText": "名誉之战",
+   "reading": "ming yu zhi zhan",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00200",
+   "text": "命运之旅",
+   "typeText": "命运之旅",
+   "reading": "ming yun zhi lv",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00201",
+   "text": "咖啡时间",
+   "typeText": "咖啡时间",
+   "reading": "ka fei shi jian",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00202",
+   "text": "圣域陷阱",
+   "typeText": "圣域陷阱",
+   "reading": "sheng yu xian jing",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00203",
+   "text": "地下坑道",
+   "typeText": "地下坑道",
+   "reading": "di xia keng dao",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00204",
+   "text": "场间暂缓",
+   "typeText": "场间暂缓",
+   "reading": "chang jian zan huan",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00205",
+   "text": "坚不可摧",
+   "typeText": "坚不可摧",
+   "reading": "jian bu ke cui",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00206",
+   "text": "多彩之都",
+   "typeText": "多彩之都",
+   "reading": "duo cai zhi dou",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00207",
+   "text": "夜之启示",
+   "typeText": "夜之启示",
+   "reading": "ye zhi qi shi",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00208",
+   "text": "夜雾缭绕",
+   "typeText": "夜雾缭绕",
+   "reading": "ye wu liao rao",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00209",
+   "text": "大地低语",
+   "typeText": "大地低语",
+   "reading": "da di di yu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00210",
+   "text": "天上世界",
+   "typeText": "天上世界",
+   "reading": "tian shang shi jie",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00211",
+   "text": "天使醒来",
+   "typeText": "天使醒来",
+   "reading": "tian shi xing lai",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00212",
+   "text": "天幕之下",
+   "typeText": "天幕之下",
+   "reading": "tian mu zhi xia",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00213",
+   "text": "天穹同庆",
+   "typeText": "天穹同庆",
+   "reading": "tian qiong tong qing",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00214",
+   "text": "天赐良机",
+   "typeText": "天赐良机",
+   "reading": "tian ci liang ji",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00215",
+   "text": "天边回响",
+   "typeText": "天边回响",
+   "reading": "tian bian hui xiang",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00216",
+   "text": "天降之力",
+   "typeText": "天降之力",
+   "reading": "tian jiang zhi li",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00217",
+   "text": "天降之绒",
+   "typeText": "天降之绒",
+   "reading": "tian jiang zhi rong",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00218",
+   "text": "夹饼欢宴",
+   "typeText": "夹饼欢宴",
+   "reading": "jia bing huan yan",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00219",
+   "text": "女王复活",
+   "typeText": "女王复活",
+   "reading": "nv wang fu huo",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00220",
+   "text": "妖精之环",
+   "typeText": "妖精之环",
+   "reading": "yao jing zhi huan",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00221",
+   "text": "孤注一掷",
+   "typeText": "孤注一掷",
+   "reading": "gu zhu yi zhi",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00222",
+   "text": "孤独之路",
+   "typeText": "孤独之路",
+   "reading": "gu du zhi lu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00223",
+   "text": "守势战场",
+   "typeText": "守势战场",
+   "reading": "shou shi zhan chang",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00224",
+   "text": "守护天节",
+   "typeText": "守护天节",
+   "reading": "shou hu tian jie",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00225",
+   "text": "安乐小屋",
+   "typeText": "安乐小屋",
+   "reading": "an le xiao wu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00226",
+   "text": "寻爱之人",
+   "typeText": "寻爱之人",
+   "reading": "xun ai zhi ren",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00227",
+   "text": "小礼拜堂",
+   "typeText": "小礼拜堂",
+   "reading": "xiao li bai tang",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00228",
+   "text": "山峡凉风",
+   "typeText": "山峡凉风",
+   "reading": "shan xia liang feng",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00229",
+   "text": "山峡夜风",
+   "typeText": "山峡夜风",
+   "reading": "shan xia ye feng",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00230",
+   "text": "崇山峻岭",
+   "typeText": "崇山峻岭",
+   "reading": "chong shan jun ling",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00231",
+   "text": "崎岖之路",
+   "typeText": "崎岖之路",
+   "reading": "qi qu zhi lu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00232",
+   "text": "希望之地",
+   "typeText": "希望之地",
+   "reading": "xi wang zhi di",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00233",
+   "text": "希望之都",
+   "typeText": "希望之都",
+   "reading": "xi wang zhi dou",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00234",
+   "text": "帝国之威",
+   "typeText": "帝国之威",
+   "reading": "di guo zhi wei",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00235",
+   "text": "幽冥水底",
+   "typeText": "幽冥水底",
+   "reading": "you ming shui di",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00236",
+   "text": "幽幻夜雾",
+   "typeText": "幽幻夜雾",
+   "reading": "you huan ye wu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00237",
+   "text": "应许之地",
+   "typeText": "应许之地",
+   "reading": "ying xu zhi di",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00238",
+   "text": "开场动画",
+   "typeText": "开场动画",
+   "reading": "kai chang dong hua",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00239",
+   "text": "开演时间！",
+   "typeText": "开演时间",
+   "reading": "kai yan shi jian",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00240",
+   "text": "开路先锋",
+   "typeText": "开路先锋",
+   "reading": "kai lu xian feng",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00241",
+   "text": "异形之人",
+   "typeText": "异形之人",
+   "reading": "yi xing zhi ren",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00242",
+   "text": "异想天开",
+   "typeText": "异想天开",
+   "reading": "yi xiang tian kai",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00243",
+   "text": "异物显现",
+   "typeText": "异物显现",
+   "reading": "yi wu xian xian",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00244",
+   "text": "异路同归",
+   "typeText": "异路同归",
+   "reading": "yi lu tong gui",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00245",
+   "text": "彻夜狂欢",
+   "typeText": "彻夜狂欢",
+   "reading": "che ye kuang huan",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00246",
+   "text": "彼岸花开",
+   "typeText": "彼岸花开",
+   "reading": "bi an hua kai",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00247",
+   "text": "心动之物",
+   "typeText": "心动之物",
+   "reading": "xin dong zhi wu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00248",
+   "text": "心潮澎湃",
+   "typeText": "心潮澎湃",
+   "reading": "xin chao peng pai",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00249",
+   "text": "快跑！～晓月～",
+   "typeText": "快跑晓月",
+   "reading": "kuai pao xiao yue",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00250",
+   "text": "快速加油",
+   "typeText": "快速加油",
+   "reading": "kuai su jia you",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00251",
+   "text": "思维迷路",
+   "typeText": "思维迷路",
+   "reading": "si wei mi lu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00252",
+   "text": "恬静一刻",
+   "typeText": "恬静一刻",
+   "reading": "tian jing yi ke",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00253",
+   "text": "恶疾缠身",
+   "typeText": "恶疾缠身",
+   "reading": "e ji chan shen",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00254",
+   "text": "意义／无",
+   "typeText": "意义／无",
+   "reading": "yi yi ／ wu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00255",
+   "text": "战斗1.X",
+   "typeText": "战斗1X",
+   "reading": "zhan dou 1X",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00256",
+   "text": "战斗2δ",
+   "typeText": "战斗2δ",
+   "reading": "zhan dou 2δ",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00257",
+   "text": "战斗之人",
+   "typeText": "战斗之人",
+   "reading": "zhan dou zhi ren",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00258",
+   "text": "手下无情",
+   "typeText": "手下无情",
+   "reading": "shou xia wu qing",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00259",
+   "text": "指数崩坏",
+   "typeText": "指数崩坏",
+   "reading": "zhi shu beng huai",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00260",
+   "text": "挥汗如雨",
+   "typeText": "挥汗如雨",
+   "reading": "hui han ru yu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00261",
+   "text": "攻势战场",
+   "typeText": "攻势战场",
+   "reading": "gong shi zhan chang",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00262",
+   "text": "旅行公司",
+   "typeText": "旅行公司",
+   "reading": "lv xing gong si",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00263",
+   "text": "无与伦比",
+   "typeText": "无与伦比",
+   "reading": "wu yu lun bi",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00264",
+   "text": "无声尖叫",
+   "typeText": "无声尖叫",
+   "reading": "wu sheng jian jiao",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00265",
+   "text": "无处之处",
+   "typeText": "无处之处",
+   "reading": "wu chu zhi chu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00266",
+   "text": "无尽苍空",
+   "typeText": "无尽苍空",
+   "reading": "wu jin cang kong",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00267",
+   "text": "无影之影",
+   "typeText": "无影之影",
+   "reading": "wu ying zhi ying",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00268",
+   "text": "无限循环",
+   "typeText": "无限循环",
+   "reading": "wu xian xun huan",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00269",
+   "text": "星芒之歌",
+   "typeText": "星芒之歌",
+   "reading": "xing mang zhi ge",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00270",
+   "text": "星芒之门",
+   "typeText": "星芒之门",
+   "reading": "xing mang zhi men",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00271",
+   "text": "景观美化",
+   "typeText": "景观美化",
+   "reading": "jing guan mei hua",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00272",
+   "text": "智慧不眠",
+   "typeText": "智慧不眠",
+   "reading": "zhi hui bu mian",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00273",
+   "text": "暗夜投石",
+   "typeText": "暗夜投石",
+   "reading": "an ye tou shi",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00274",
+   "text": "暗天雷光",
+   "typeText": "暗天雷光",
+   "reading": "an tian lei guang",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00275",
+   "text": "最后一次",
+   "typeText": "最后一次",
+   "reading": "zui hou yi ci",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00276",
+   "text": "最终救赎",
+   "typeText": "最终救赎",
+   "reading": "zui zhong jiu shu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00277",
+   "text": "月下美人",
+   "typeText": "月下美人",
+   "reading": "yue xia mei ren",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00278",
+   "text": "有价之物",
+   "typeText": "有价之物",
+   "reading": "you jia zhi wu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00279",
+   "text": "有毒植物",
+   "typeText": "有毒植物",
+   "reading": "you du zhi wu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00280",
+   "text": "末日时刻",
+   "typeText": "末日时刻",
+   "reading": "mo ri shi ke",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00281",
+   "text": "末路尽头",
+   "typeText": "末路尽头",
+   "reading": "mo lu jin tou",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00282",
+   "text": "极寒战线",
+   "typeText": "极寒战线",
+   "reading": "ji han zhan xian",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00283",
+   "text": "极尽～暗影～",
+   "typeText": "极尽暗影",
+   "reading": "ji jin an ying",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00284",
+   "text": "枪旗飘扬",
+   "typeText": "枪旗飘扬",
+   "reading": "qiang qi piao yang",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00285",
+   "text": "某时某处",
+   "typeText": "某时某处",
+   "reading": "mou shi mou chu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00286",
+   "text": "桥上之战",
+   "typeText": "桥上之战",
+   "reading": "qiao shang zhi zhan",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00287",
+   "text": "梦园之门",
+   "typeText": "梦园之门",
+   "reading": "meng yuan zhi men",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00288",
+   "text": "梦明旅人",
+   "typeText": "梦明旅人",
+   "reading": "meng ming lv ren",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00289",
+   "text": "欢声闹语",
+   "typeText": "欢声闹语",
+   "reading": "huan sheng nao yu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00290",
+   "text": "此处有狮",
+   "typeText": "此处有狮",
+   "reading": "ci chu you shi",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00291",
+   "text": "此路不通",
+   "typeText": "此路不通",
+   "reading": "ci lu bu tong",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00292",
+   "text": "武神降临",
+   "typeText": "武神降临",
+   "reading": "wu shen jiang lin",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00293",
+   "text": "死亡大地",
+   "typeText": "死亡大地",
+   "reading": "si wang da di",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00294",
+   "text": "死亡报告",
+   "typeText": "死亡报告",
+   "reading": "si wang bao gao",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00295",
+   "text": "死斗～苍穹～",
+   "typeText": "死斗苍穹",
+   "reading": "si dou cang qiong",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00296",
+   "text": "死灰复燃",
+   "typeText": "死灰复燃",
+   "reading": "si hui fu ran",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00297",
+   "text": "母以子贵",
+   "typeText": "母以子贵",
+   "reading": "mu yi zi gui",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00298",
+   "text": "水手不眠",
+   "typeText": "水手不眠",
+   "reading": "shui shou bu mian",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00299",
+   "text": "水手遇难",
+   "typeText": "水手遇难",
+   "reading": "shui shou yu nan",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00300",
+   "text": "水晶战士",
+   "typeText": "水晶战士",
+   "reading": "shui jing zhan shi",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00301",
+   "text": "水深五寻",
+   "typeText": "水深五寻",
+   "reading": "shui shen wu xun",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00302",
+   "text": "水车低鸣",
+   "typeText": "水车低鸣",
+   "reading": "shui che di ming",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00303",
+   "text": "沃茨之锤",
+   "typeText": "沃茨之锤",
+   "reading": "wo ci zhi chui",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00304",
+   "text": "沉痛之色",
+   "typeText": "沉痛之色",
+   "reading": "chen tong zhi se",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00305",
+   "text": "沙中秘密",
+   "typeText": "沙中秘密",
+   "reading": "sha zhong mi mi",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00306",
+   "text": "泥中莲花",
+   "typeText": "泥中莲花",
+   "reading": "ni zhong lian hua",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00307",
+   "text": "洞中青辉",
+   "typeText": "洞中青辉",
+   "reading": "dong zhong qing hui",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00308",
+   "text": "海上涟漪",
+   "typeText": "海上涟漪",
+   "reading": "hai shang lian yi",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00309",
+   "text": "海风飘香",
+   "typeText": "海风飘香",
+   "reading": "hai feng piao xiang",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00310",
+   "text": "深宵之海",
+   "typeText": "深宵之海",
+   "reading": "shen xiao zhi hai",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00311",
+   "text": "清风拂面",
+   "typeText": "清风拂面",
+   "reading": "qing feng fu mian",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00312",
+   "text": "渎神魔王",
+   "typeText": "渎神魔王",
+   "reading": "du shen mo wang",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00313",
+   "text": "游戏理论",
+   "typeText": "游戏理论",
+   "reading": "you xi li lun",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00314",
+   "text": "满月之夜",
+   "typeText": "满月之夜",
+   "reading": "man yue zhi ye",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00315",
+   "text": "潜伏于沙",
+   "typeText": "潜伏于沙",
+   "reading": "qian fu yu sha",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00316",
+   "text": "火焰之海",
+   "typeText": "火焰之海",
+   "reading": "huo yan zhi hai",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00317",
+   "text": "灵魂深处",
+   "typeText": "灵魂深处",
+   "reading": "ling hun shen chu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00318",
+   "text": "灼热之地",
+   "typeText": "灼热之地",
+   "reading": "zhuo re zhi di",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00319",
+   "text": "灾厄狂起",
+   "typeText": "灾厄狂起",
+   "reading": "zai e kuang qi",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00320",
+   "text": "灾厄蔓延",
+   "typeText": "灾厄蔓延",
+   "reading": "zai e man yan",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00321",
+   "text": "烈羽争锋",
+   "typeText": "烈羽争锋",
+   "reading": "lie yu zheng feng",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00322",
+   "text": "熏香之都",
+   "typeText": "熏香之都",
+   "reading": "xun xiang zhi dou",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00323",
+   "text": "爱是库啵？",
+   "typeText": "爱是库啵",
+   "reading": "ai shi ku bo",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00324",
+   "text": "父子之罪",
+   "typeText": "父子之罪",
+   "reading": "fu zi zhi zui",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00325",
+   "text": "片刻安宁",
+   "typeText": "片刻安宁",
+   "reading": "pian ke an ning",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00326",
+   "text": "犹如夏雨",
+   "typeText": "犹如夏雨",
+   "reading": "you ru xia yu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00327",
+   "text": "猛禽猎食",
+   "typeText": "猛禽猎食",
+   "reading": "meng qin lie shi",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00328",
+   "text": "珠宝树枝",
+   "typeText": "珠宝树枝",
+   "reading": "zhu bao shu zhi",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00329",
+   "text": "琥珀沙漠",
+   "typeText": "琥珀沙漠",
+   "reading": "hu po sha mo",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00330",
+   "text": "甜甜蜜蜜",
+   "typeText": "甜甜蜜蜜",
+   "reading": "tian tian mi mi",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00331",
+   "text": "甜美的梦",
+   "typeText": "甜美的梦",
+   "reading": "tian mei de meng",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00332",
+   "text": "电闪雷鸣",
+   "typeText": "电闪雷鸣",
+   "reading": "dian shan lei ming",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00333",
+   "text": "疫病蔓延",
+   "typeText": "疫病蔓延",
+   "reading": "yi bing man yan",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00334",
+   "text": "疲惫不堪",
+   "typeText": "疲惫不堪",
+   "reading": "pi bei bu kan",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00335",
+   "text": "登高远望",
+   "typeText": "登高远望",
+   "reading": "deng gao yuan wang",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00336",
+   "text": "白色孤影",
+   "typeText": "白色孤影",
+   "reading": "bai se gu ying",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00337",
+   "text": "皇国田园",
+   "typeText": "皇国田园",
+   "reading": "huang guo tian yuan",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00338",
+   "text": "相白质黑",
+   "typeText": "相白质黑",
+   "reading": "xiang bai zhi hei",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00339",
+   "text": "破碎的心",
+   "typeText": "破碎的心",
+   "reading": "po sui de xin",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00340",
+   "text": "硝烟弥漫",
+   "typeText": "硝烟弥漫",
+   "reading": "xiao yan mi man",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00341",
+   "text": "祈祷之歌",
+   "typeText": "祈祷之歌",
+   "reading": "qi dao zhi ge",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00342",
+   "text": "神拳之痕",
+   "typeText": "神拳之痕",
+   "reading": "shen quan zhi hen",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00343",
+   "text": "神龙见尾",
+   "typeText": "神龙见尾",
+   "reading": "shen long jian wei",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00344",
+   "text": "神龙见首",
+   "typeText": "神龙见首",
+   "reading": "shen long jian shou",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00345",
+   "text": "禁海危航",
+   "typeText": "禁海危航",
+   "reading": "jin hai wei hang",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00346",
+   "text": "离群一族",
+   "typeText": "离群一族",
+   "reading": "li qun yi zu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00347",
+   "text": "称王之龙",
+   "typeText": "称王之龙",
+   "reading": "cheng wang zhi long",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00348",
+   "text": "究极神兵",
+   "typeText": "究极神兵",
+   "reading": "jiu ji shen bing",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00349",
+   "text": "第七星历",
+   "typeText": "第七星历",
+   "reading": "di qi xing li",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00350",
+   "text": "精神错乱",
+   "typeText": "精神错乱",
+   "reading": "jing shen cuo luan",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00351",
+   "text": "繁星之下",
+   "typeText": "繁星之下",
+   "reading": "fan xing zhi xia",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00352",
+   "text": "红色夜阑",
+   "typeText": "红色夜阑",
+   "reading": "hong se ye lan",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00353",
+   "text": "红色山棱",
+   "typeText": "红色山棱",
+   "reading": "hong se shan leng",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00354",
+   "text": "红色黎明",
+   "typeText": "红色黎明",
+   "reading": "hong se li ming",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00355",
+   "text": "红莲序曲",
+   "typeText": "红莲序曲",
+   "reading": "hong lian xu qu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00356",
+   "text": "纯爱之吻",
+   "typeText": "纯爱之吻",
+   "reading": "chun ai zhi wen",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00357",
+   "text": "终结之战",
+   "typeText": "终结之战",
+   "reading": "zhong jie zhi zhan",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00358",
+   "text": "终结之音",
+   "typeText": "终结之音",
+   "reading": "zhong jie zhi yin",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00359",
+   "text": "绝命怒嚎",
+   "typeText": "绝命怒嚎",
+   "reading": "jue ming nu hao",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00360",
+   "text": "绝对霸道",
+   "typeText": "绝对霸道",
+   "reading": "jue dui ba dao",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00361",
+   "text": "编队画面",
+   "typeText": "编队画面",
+   "reading": "bian dui hua mian",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00362",
+   "text": "耀眼浪苍",
+   "typeText": "耀眼浪苍",
+   "reading": "yao yan lang cang",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00363",
+   "text": "职员名单",
+   "typeText": "职员名单",
+   "reading": "zhi yuan ming dan",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00364",
+   "text": "背景故事",
+   "typeText": "背景故事",
+   "reading": "bei jing gu shi",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00365",
+   "text": "英雄凯旋",
+   "typeText": "英雄凯旋",
+   "reading": "ying xiong kai xuan",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00366",
+   "text": "英雄未成",
+   "typeText": "英雄未成",
+   "reading": "ying xiong wei cheng",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00367",
+   "text": "萤火之舞",
+   "typeText": "萤火之舞",
+   "reading": "ying huo zhi wu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00368",
+   "text": "落日之都",
+   "typeText": "落日之都",
+   "reading": "luo ri zhi dou",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00369",
+   "text": "落日遗迹",
+   "typeText": "落日遗迹",
+   "reading": "luo ri yi ji",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00370",
+   "text": "虚无之棺",
+   "typeText": "虚无之棺",
+   "reading": "xu wu zhi guan",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00371",
+   "text": "虚无大地",
+   "typeText": "虚无大地",
+   "reading": "xu wu da di",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00372",
+   "text": "行于荒野",
+   "typeText": "行于荒野",
+   "reading": "xing yu huang ye",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00373",
+   "text": "西德老大",
+   "typeText": "西德老大",
+   "reading": "xi de lao da",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00374",
+   "text": "解剖生命",
+   "typeText": "解剖生命",
+   "reading": "jie pou sheng ming",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00375",
+   "text": "解围之雷",
+   "typeText": "解围之雷",
+   "reading": "jie wei zhi lei",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00376",
+   "text": "诸神已死",
+   "typeText": "诸神已死",
+   "reading": "zhu shen yi si",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00377",
+   "text": "谎言之城",
+   "typeText": "谎言之城",
+   "reading": "huang yan zhi cheng",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00378",
+   "text": "谢罪之诗",
+   "typeText": "谢罪之诗",
+   "reading": "xie zui zhi shi",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00379",
+   "text": "豁达的家",
+   "typeText": "豁达的家",
+   "reading": "huo da de jia",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00380",
+   "text": "豹头环眼",
+   "typeText": "豹头环眼",
+   "reading": "bao tou huan yan",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00381",
+   "text": "贵族沉眠",
+   "typeText": "贵族沉眠",
+   "reading": "gui zu chen mian",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00382",
+   "text": "赤翼～晓月～",
+   "typeText": "赤翼晓月",
+   "reading": "chi yi xiao yue",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00383",
+   "text": "走向世界",
+   "typeText": "走向世界",
+   "reading": "zou xiang shi jie",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00384",
+   "text": "超越极限",
+   "typeText": "超越极限",
+   "reading": "chao yue ji xian",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00385",
+   "text": "转瞬即逝",
+   "typeText": "转瞬即逝",
+   "reading": "zhuan shun ji shi",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00386",
+   "text": "边境乱战",
+   "typeText": "边境乱战",
+   "reading": "bian jing luan zhan",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00387",
+   "text": "边防卫士",
+   "typeText": "边防卫士",
+   "reading": "bian fang wei shi",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00388",
+   "text": "近在天边",
+   "typeText": "近在天边",
+   "reading": "jin zai tian bian",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00389",
+   "text": "迷宫～金曦～",
+   "typeText": "迷宫金曦",
+   "reading": "mi gong jin xi",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00390",
+   "text": "追忆往昔",
+   "typeText": "追忆往昔",
+   "reading": "zhui yi wang xi",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00391",
+   "text": "通向黎明",
+   "typeText": "通向黎明",
+   "reading": "tong xiang li ming",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00392",
+   "text": "邪风飒飒",
+   "typeText": "邪风飒飒",
+   "reading": "xie feng sa sa",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00393",
+   "text": "邪龙咆哮",
+   "typeText": "邪龙咆哮",
+   "reading": "xie long pao xiao",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00394",
+   "text": "邪龙急袭",
+   "typeText": "邪龙急袭",
+   "reading": "xie long ji xi",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00395",
+   "text": "重压灭顶",
+   "typeText": "重压灭顶",
+   "reading": "zhong ya mie ding",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00396",
+   "text": "金曦之明",
+   "typeText": "金曦之明",
+   "reading": "jin xi zhi ming",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00397",
+   "text": "金曦之民",
+   "typeText": "金曦之民",
+   "reading": "jin xi zhi min",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00398",
+   "text": "钢铁理念",
+   "typeText": "钢铁理念",
+   "reading": "gang tie li nian",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00399",
+   "text": "铁壁之外",
+   "typeText": "铁壁之外",
+   "reading": "tie bi zhi wai",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00400",
+   "text": "铭记于石",
+   "typeText": "铭记于石",
+   "reading": "ming ji yu shi",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00401",
+   "text": "阴天雷云",
+   "typeText": "阴天雷云",
+   "reading": "yin tian lei yun",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00402",
+   "text": "阴谋美计",
+   "typeText": "阴谋美计",
+   "reading": "yin mou mei ji",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00403",
+   "text": "隐忍之刃",
+   "typeText": "隐忍之刃",
+   "reading": "yin ren zhi ren",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00404",
+   "text": "雷轰电转",
+   "typeText": "雷轰电转",
+   "reading": "lei hong dian zhuan",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00405",
+   "text": "青烟弥漫",
+   "typeText": "青烟弥漫",
+   "reading": "qing yan mi man",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00406",
+   "text": "青烟野蔓",
+   "typeText": "青烟野蔓",
+   "reading": "qing yan ye man",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00407",
+   "text": "风水宝地",
+   "typeText": "风水宝地",
+   "reading": "feng shui bao di",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00408",
+   "text": "饿狼群集",
+   "typeText": "饿狼群集",
+   "reading": "e lang qun ji",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00409",
+   "text": "高耸入云",
+   "typeText": "高耸入云",
+   "reading": "gao song ru yun",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00410",
+   "text": "魂火铸就",
+   "typeText": "魂火铸就",
+   "reading": "hun huo zhu jiu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00411",
+   "text": "魔导军团",
+   "typeText": "魔导军团",
+   "reading": "mo dao jun tuan",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00412",
+   "text": "鲜血沙漠",
+   "typeText": "鲜血沙漠",
+   "reading": "xian xue sha mo",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00413",
+   "text": "黑暗遮蔽",
+   "typeText": "黑暗遮蔽",
+   "reading": "hei an zhe bi",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00414",
+   "text": "一瞬的光彩",
+   "typeText": "一瞬的光彩",
+   "reading": "yi shun de guang cai",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00415",
+   "text": "不变与变化",
+   "typeText": "不变与变化",
+   "reading": "bu bian yu bian hua",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00416",
+   "text": "不屈的挑战",
+   "typeText": "不屈的挑战",
+   "reading": "bu qu de tiao zhan",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00417",
+   "text": "久远的记忆",
+   "typeText": "久远的记忆",
+   "reading": "jiu yuan de ji yi",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00418",
+   "text": "久远的遗音",
+   "typeText": "久远的遗音",
+   "reading": "jiu yuan de yi yin",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00419",
+   "text": "交错的命运",
+   "typeText": "交错的命运",
+   "reading": "jiao cuo de ming yun",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00420",
+   "text": "休息与反省",
+   "typeText": "休息与反省",
+   "reading": "xiu xi yu fan xing",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00421",
+   "text": "众人的祈祷",
+   "typeText": "众人的祈祷",
+   "reading": "zhong ren de qi dao",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00422",
+   "text": "众生如归流",
+   "typeText": "众生如归流",
+   "reading": "zhong sheng ru gui liu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00423",
+   "text": "众神的宠爱",
+   "typeText": "众神的宠爱",
+   "reading": "zhong shen de chong ai",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00424",
+   "text": "众神的教诲",
+   "typeText": "众神的教诲",
+   "reading": "zhong shen de jiao hui",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00425",
+   "text": "伟大的母港",
+   "typeText": "伟大的母港",
+   "reading": "wei da de mu gang",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00426",
+   "text": "佐特塔～晓月～",
+   "typeText": "佐特塔晓月",
+   "reading": "zuo te ta xiao yue",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00427",
+   "text": "先逝的群星",
+   "typeText": "先逝的群星",
+   "reading": "xian shi de qun xing",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00428",
+   "text": "光辉胡萝卜",
+   "typeText": "光辉胡萝卜",
+   "reading": "guang hui hu luo bo",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00429",
+   "text": "冬贝利之泪",
+   "typeText": "冬贝利之泪",
+   "reading": "dong bei li zhi lei",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00430",
+   "text": "凶兆（钢琴集）",
+   "typeText": "凶兆钢琴集",
+   "reading": "xiong zhao gang qin ji",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00431",
+   "text": "凶猛的容器",
+   "typeText": "凶猛的容器",
+   "reading": "xiong meng de rong qi",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00432",
+   "text": "分隔的世界",
+   "typeText": "分隔的世界",
+   "reading": "fen ge de shi jie",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00433",
+   "text": "创造之奇迹",
+   "typeText": "创造之奇迹",
+   "reading": "chuang zao zhi qi ji",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00434",
+   "text": "加雷马快列",
+   "typeText": "加雷马快列",
+   "reading": "jia lei ma kuai lie",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00435",
+   "text": "升起于地平",
+   "typeText": "升起于地平",
+   "reading": "sheng qi yu di ping",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00436",
+   "text": "华彩的夜空",
+   "typeText": "华彩的夜空",
+   "reading": "hua cai de ye kong",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00437",
+   "text": "华彩的山麓",
+   "typeText": "华彩的山麓",
+   "reading": "hua cai de shan lu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00438",
+   "text": "危险的赌注",
+   "typeText": "危险的赌注",
+   "reading": "wei xian de du zhu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00439",
+   "text": "原始的审判",
+   "typeText": "原始的审判",
+   "reading": "yuan shi de shen pan",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00440",
+   "text": "双极的噩梦",
+   "typeText": "双极的噩梦",
+   "reading": "shuang ji de e meng",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00441",
+   "text": "古伤（钢琴集）",
+   "typeText": "古伤钢琴集",
+   "reading": "gu shang gang qin ji",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00442",
+   "text": "召唤兽之地",
+   "typeText": "召唤兽之地",
+   "reading": "zhao huan shou zhi di",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00443",
+   "text": "各自的旅程",
+   "typeText": "各自的旅程",
+   "reading": "ge zi de lv cheng",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00444",
+   "text": "向胜利冲锋",
+   "typeText": "向胜利冲锋",
+   "reading": "xiang sheng li chong feng",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00445",
+   "text": "向远方（副歌）",
+   "typeText": "向远方副歌",
+   "reading": "xiang yuan fang fu ge",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00446",
+   "text": "唯一的行路",
+   "typeText": "唯一的行路",
+   "reading": "wei yi de xing lu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00447",
+   "text": "喧嚣的树丛",
+   "typeText": "喧嚣的树丛",
+   "reading": "xuan xiao de shu cong",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00448",
+   "text": "回到画板上",
+   "typeText": "回到画板上",
+   "reading": "hui dao hua ban shang",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00449",
+   "text": "埃尔德纳修",
+   "typeText": "埃尔德纳修",
+   "reading": "ai er de na xiu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00450",
+   "text": "塞壬的歌声",
+   "typeText": "塞壬的歌声",
+   "reading": "sai ren de ge sheng",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00451",
+   "text": "复仇的怒嚎",
+   "typeText": "复仇的怒嚎",
+   "reading": "fu chou de nu hao",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00452",
+   "text": "大本营（白昼）",
+   "typeText": "大本营白昼",
+   "reading": "da ben ying bai zhou",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00453",
+   "text": "天边的瑶星",
+   "typeText": "天边的瑶星",
+   "reading": "tian bian de yao xing",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00454",
+   "text": "女王的美梦",
+   "typeText": "女王的美梦",
+   "reading": "nv wang de mei meng",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00455",
+   "text": "存在的理由",
+   "typeText": "存在的理由",
+   "reading": "cun zai de li you",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00456",
+   "text": "小小捣蛋鬼",
+   "typeText": "小小捣蛋鬼",
+   "reading": "xiao xiao dao dan gui",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00457",
+   "text": "少女的哀歌",
+   "typeText": "少女的哀歌",
+   "reading": "shao nv de ai ge",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00458",
+   "text": "崩坏的虚妄",
+   "typeText": "崩坏的虚妄",
+   "reading": "beng huai de xu wang",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00459",
+   "text": "巡礼者之路",
+   "typeText": "巡礼者之路",
+   "reading": "xun li zhe zhi lu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00460",
+   "text": "帝国的意志",
+   "typeText": "帝国的意志",
+   "reading": "di guo de yi zhi",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00461",
+   "text": "幻想圆舞曲",
+   "typeText": "幻想圆舞曲",
+   "reading": "huan xiang yuan wu qu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00462",
+   "text": "异形的末路",
+   "typeText": "异形的末路",
+   "reading": "yi xing de mo lu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00463",
+   "text": "德尔塔幻境",
+   "typeText": "德尔塔幻境",
+   "reading": "de er ta huan jing",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00464",
+   "text": "心灵的归处",
+   "typeText": "心灵的归处",
+   "reading": "xin ling de gui chu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00465",
+   "text": "忘却的彼岸",
+   "typeText": "忘却的彼岸",
+   "reading": "wang que de bi an",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00466",
+   "text": "忘却的此岸",
+   "typeText": "忘却的此岸",
+   "reading": "wang que de ci an",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00467",
+   "text": "惩戒的镣铐",
+   "typeText": "惩戒的镣铐",
+   "reading": "cheng jie de liao kao",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00468",
+   "text": "想要了解你",
+   "typeText": "想要了解你",
+   "reading": "xiang yao liao jie ni",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00469",
+   "text": "愉快的生活",
+   "typeText": "愉快的生活",
+   "reading": "yu kuai de sheng huo",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00470",
+   "text": "愤怒的恶魔",
+   "typeText": "愤怒的恶魔",
+   "reading": "fen nu de e mo",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00471",
+   "text": "战士的直觉",
+   "typeText": "战士的直觉",
+   "reading": "zhan shi de zhi jue",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00472",
+   "text": "战神的教义",
+   "typeText": "战神的教义",
+   "reading": "zhan shen de jiao yi",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00473",
+   "text": "打开的地图",
+   "typeText": "打开的地图",
+   "reading": "da kai de di tu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00474",
+   "text": "新世界～金曦～",
+   "typeText": "新世界金曦",
+   "reading": "xin shi jie jin xi",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00475",
+   "text": "无尽的旅路",
+   "typeText": "无尽的旅路",
+   "reading": "wu jin de lv lu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00476",
+   "text": "无望的竞争",
+   "typeText": "无望的竞争",
+   "reading": "wu wang de jing zheng",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00477",
+   "text": "明日与未来",
+   "typeText": "明日与未来",
+   "reading": "ming ri yu wei lai",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00478",
+   "text": "明日复明日",
+   "typeText": "明日复明日",
+   "reading": "ming ri fu ming ri",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00479",
+   "text": "明日的路标",
+   "typeText": "明日的路标",
+   "reading": "ming ri de lu biao",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00480",
+   "text": "昏暗的深处",
+   "typeText": "昏暗的深处",
+   "reading": "hun an de shen chu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00481",
+   "text": "昔日的回响",
+   "typeText": "昔日的回响",
+   "reading": "xi ri de hui xiang",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00482",
+   "text": "星球的叹息",
+   "typeText": "星球的叹息",
+   "reading": "xing qiu de tan xi",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00483",
+   "text": "智慧的海螺",
+   "typeText": "智慧的海螺",
+   "reading": "zhi hui de hai luo",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00484",
+   "text": "更好的明天",
+   "typeText": "更好的明天",
+   "reading": "geng hao de ming tian",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00485",
+   "text": "最后之战δ",
+   "typeText": "最后之战δ",
+   "reading": "zui hou zhi zhan δ",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00486",
+   "text": "未解读法则",
+   "typeText": "未解读法则",
+   "reading": "wei jie du fa ze",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00487",
+   "text": "朱诺-星芒节-",
+   "typeText": "朱诺星芒节",
+   "reading": "zhu nuo xing mang jie",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00488",
+   "text": "朱诺大公国",
+   "typeText": "朱诺大公国",
+   "reading": "zhu nuo da gong guo",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00489",
+   "text": "格格主题曲",
+   "typeText": "格格主题曲",
+   "reading": "ge ge zhu ti qu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00490",
+   "text": "梦中的天空",
+   "typeText": "梦中的天空",
+   "reading": "meng zhong de tian kong",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00491",
+   "text": "残忍与自由",
+   "typeText": "残忍与自由",
+   "reading": "can ren yu zi you",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00492",
+   "text": "永远的碎片",
+   "typeText": "永远的碎片",
+   "reading": "yong yuan de sui pian",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00493",
+   "text": "永远的离别",
+   "typeText": "永远的离别",
+   "reading": "yong yuan de li bie",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00494",
+   "text": "汇集的海风",
+   "typeText": "汇集的海风",
+   "reading": "hui ji de hai feng",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00495",
+   "text": "沉没于天际",
+   "typeText": "沉没于天际",
+   "reading": "chen mo yu tian ji",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00496",
+   "text": "沉溺于永久",
+   "typeText": "沉溺于永久",
+   "reading": "chen ni yu yong jiu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00497",
+   "text": "沉静（钢琴集）",
+   "typeText": "沉静钢琴集",
+   "reading": "chen jing gang qin ji",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00498",
+   "text": "河马骑手团",
+   "typeText": "河马骑手团",
+   "reading": "he ma qi shou tuan",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00499",
+   "text": "泽梅尔要塞",
+   "typeText": "泽梅尔要塞",
+   "reading": "ze mei er yao sai",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00500",
+   "text": "活着的理由",
+   "typeText": "活着的理由",
+   "reading": "huo zhe de li you",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00501",
+   "text": "淑女的盛宴",
+   "typeText": "淑女的盛宴",
+   "reading": "shu nv de sheng yan",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00502",
+   "text": "混沌的漩涡",
+   "typeText": "混沌的漩涡",
+   "reading": "hun dun de xuan wo",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00503",
+   "text": "混沌的预感",
+   "typeText": "混沌的预感",
+   "reading": "hun dun de yu gan",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00504",
+   "text": "清凉的洞窟",
+   "typeText": "清凉的洞窟",
+   "reading": "qing liang de dong ku",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00505",
+   "text": "温达斯联邦",
+   "typeText": "温达斯联邦",
+   "reading": "wen da si lian bang",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00506",
+   "text": "漆黑的艾达",
+   "typeText": "漆黑的艾达",
+   "reading": "qi hei de ai da",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00507",
+   "text": "漆黑的誓言",
+   "typeText": "漆黑的誓言",
+   "reading": "qi hei de shi yan",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00508",
+   "text": "火花与闪光",
+   "typeText": "火花与闪光",
+   "reading": "huo hua yu shan guang",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00509",
+   "text": "烈火七部族",
+   "typeText": "烈火七部族",
+   "reading": "lie huo qi bu zu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00510",
+   "text": "烈火与利剑",
+   "typeText": "烈火与利剑",
+   "reading": "lie huo yu li jian",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00511",
+   "text": "热情的奔流",
+   "typeText": "热情的奔流",
+   "reading": "re qing de ben liu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00512",
+   "text": "燃烧的灵魂",
+   "typeText": "燃烧的灵魂",
+   "reading": "ran shao de ling hun",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00513",
+   "text": "环境音：无声",
+   "typeText": "环境音无声",
+   "reading": "huan jing yin wu sheng",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00514",
+   "text": "环境音：海中",
+   "typeText": "环境音海中",
+   "reading": "huan jing yin hai zhong",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00515",
+   "text": "环境音：涛声",
+   "typeText": "环境音涛声",
+   "reading": "huan jing yin tao sheng",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00516",
+   "text": "环境音：篝火",
+   "typeText": "环境音篝火",
+   "reading": "huan jing yin gou huo",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00517",
+   "text": "环境音：虫鸣",
+   "typeText": "环境音虫鸣",
+   "reading": "huan jing yin chong ming",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00518",
+   "text": "环境音：蝉鸣",
+   "typeText": "环境音蝉鸣",
+   "reading": "huan jing yin chan ming",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00519",
+   "text": "环境音：雨声",
+   "typeText": "环境音雨声",
+   "reading": "huan jing yin yu sheng",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00520",
+   "text": "环境音：鸟鸣",
+   "typeText": "环境音鸟鸣",
+   "reading": "huan jing yin niao ming",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00521",
+   "text": "生命的天平",
+   "typeText": "生命的天平",
+   "reading": "sheng ming de tian ping",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00522",
+   "text": "白雪与黑铁",
+   "typeText": "白雪与黑铁",
+   "reading": "bai xue yu hei tie",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00523",
+   "text": "皇都的熙攘",
+   "typeText": "皇都的熙攘",
+   "reading": "huang dou de xi rang",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00524",
+   "text": "真正的自我",
+   "typeText": "真正的自我",
+   "reading": "zhen zheng de zi wo",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00525",
+   "text": "知识的水瓶",
+   "typeText": "知识的水瓶",
+   "reading": "zhi shi de shui ping",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00526",
+   "text": "祖母／破坏",
+   "typeText": "祖母／破坏",
+   "reading": "zu mu ／ po huai",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00527",
+   "text": "神圣的教导",
+   "typeText": "神圣的教导",
+   "reading": "shen sheng de jiao dao",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00528",
+   "text": "神子的假寐",
+   "typeText": "神子的假寐",
+   "reading": "shen zi de jia mei",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00529",
+   "text": "神子的狩猎",
+   "typeText": "神子的狩猎",
+   "reading": "shen zi de shou lie",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00530",
+   "text": "禁忌的封印",
+   "typeText": "禁忌的封印",
+   "reading": "jin ji de feng yin",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00531",
+   "text": "繁忙的日常",
+   "typeText": "繁忙的日常",
+   "reading": "fan mang de ri chang",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00532",
+   "text": "终结之音：丁",
+   "typeText": "终结之音丁",
+   "reading": "zhong jie zhi yin ding",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00533",
+   "text": "缺失的书页",
+   "typeText": "缺失的书页",
+   "reading": "que shi de shu ye",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00534",
+   "text": "自然的礼物",
+   "typeText": "自然的礼物",
+   "reading": "zi ran de li wu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00535",
+   "text": "艰苦的战斗",
+   "typeText": "艰苦的战斗",
+   "reading": "jian ku de zhan dou",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00536",
+   "text": "艳彩的宝饰",
+   "typeText": "艳彩的宝饰",
+   "reading": "yan cai de bao shi",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00537",
+   "text": "艳彩的羽翼",
+   "typeText": "艳彩的羽翼",
+   "reading": "yan cai de yu yi",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00538",
+   "text": "苍穹骑士团",
+   "typeText": "苍穹骑士团",
+   "reading": "cang qiong qi shi tuan",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00539",
+   "text": "苍色的日常",
+   "typeText": "苍色的日常",
+   "reading": "cang se de ri chang",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00540",
+   "text": "英杰（钢琴集）",
+   "typeText": "英杰钢琴集",
+   "reading": "ying jie gang qin ji",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00541",
+   "text": "蛇巢司令部",
+   "typeText": "蛇巢司令部",
+   "reading": "she chao si ling bu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00542",
+   "text": "被分割的光",
+   "typeText": "被分割的光",
+   "reading": "bei fen ge de guang",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00543",
+   "text": "诙谐的笑谈",
+   "typeText": "诙谐的笑谈",
+   "reading": "hui xie de xiao tan",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00544",
+   "text": "诸神的黄昏",
+   "typeText": "诸神的黄昏",
+   "reading": "zhu shen de huang hun",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00545",
+   "text": "起始的幻域",
+   "typeText": "起始的幻域",
+   "reading": "qi shi de huan yu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00546",
+   "text": "越过地平线",
+   "typeText": "越过地平线",
+   "reading": "yue guo di ping xian",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00547",
+   "text": "跃动的大地",
+   "typeText": "跃动的大地",
+   "reading": "yue dong de da di",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00548",
+   "text": "远古的天空",
+   "typeText": "远古的天空",
+   "reading": "yuan gu de tian kong",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00549",
+   "text": "远古的星空",
+   "typeText": "远古的星空",
+   "reading": "yuan gu de xing kong",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00550",
+   "text": "遗忘的希望",
+   "typeText": "遗忘的希望",
+   "reading": "yi wang de xi wang",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00551",
+   "text": "重生的大地",
+   "typeText": "重生的大地",
+   "reading": "chong sheng de da di",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00552",
+   "text": "镜中的自我",
+   "typeText": "镜中的自我",
+   "reading": "jing zhong de zi wo",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00553",
+   "text": "陆行鸟星芒",
+   "typeText": "陆行鸟星芒",
+   "reading": "lu xing niao xing mang",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00554",
+   "text": "陆行鸟竞赛",
+   "typeText": "陆行鸟竞赛",
+   "reading": "lu xing niao jing sai",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00555",
+   "text": "隐藏的真相",
+   "typeText": "隐藏的真相",
+   "reading": "yin cang de zhen xiang",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00556",
+   "text": "雪上的足迹",
+   "typeText": "雪上的足迹",
+   "reading": "xue shang de zu ji",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00557",
+   "text": "雪中鬼灵精",
+   "typeText": "雪中鬼灵精",
+   "reading": "xue zhong gui ling jing",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00558",
+   "text": "霍啪栌古盘",
+   "typeText": "霍啪栌古盘",
+   "reading": "huo pa lu gu pan",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00559",
+   "text": "静寂的星空",
+   "typeText": "静寂的星空",
+   "reading": "jing ji de xing kong",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00560",
+   "text": "非著名侦探",
+   "typeText": "非著名侦探",
+   "reading": "fei zhu ming zhen tan",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00561",
+   "text": "黑暗与白雪",
+   "typeText": "黑暗与白雪",
+   "reading": "hei an yu bai xue",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00562",
+   "text": "黑暗与黑铁",
+   "typeText": "黑暗与黑铁",
+   "reading": "hei an yu hei tie",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00563",
+   "text": "黑暗的拥抱",
+   "typeText": "黑暗的拥抱",
+   "reading": "hei an de yong bao",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00564",
+   "text": "黑涡军令部",
+   "typeText": "黑涡军令部",
+   "reading": "hei wo jun ling bu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00565",
+   "text": "不要畏惧～暗影～",
+   "typeText": "不要畏惧暗影",
+   "reading": "bu yao wei ju an ying",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00566",
+   "text": "为了守护笑容",
+   "typeText": "为了守护笑容",
+   "reading": "wei le shou hu xiao rong",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00567",
+   "text": "主人公主题曲",
+   "typeText": "主人公主题曲",
+   "reading": "zhu ren gong zhu ti qu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00568",
+   "text": "传说之兽～暗影～",
+   "typeText": "传说之兽暗影",
+   "reading": "chuan shuo zhi shou an ying",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00569",
+   "text": "凶兆（交响乐版）",
+   "typeText": "凶兆交响乐版",
+   "reading": "xiong zhao jiao xiang yue ban",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00570",
+   "text": "前往银岭～金曦～",
+   "typeText": "前往银岭金曦",
+   "reading": "qian wang yin ling jin xi",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00571",
+   "text": "力战前行～暗影～",
+   "typeText": "力战前行暗影",
+   "reading": "li zhan qian xing an ying",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00572",
+   "text": "博兹雅的微风",
+   "typeText": "博兹雅的微风",
+   "reading": "bo zi ya de wei feng",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00573",
+   "text": "博兹雅的血风",
+   "typeText": "博兹雅的血风",
+   "reading": "bo zi ya de xue feng",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00574",
+   "text": "原始的堕天使",
+   "typeText": "原始的堕天使",
+   "reading": "yuan shi de duo tian shi",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00575",
+   "text": "呐喊（交响乐版）",
+   "typeText": "呐喊交响乐版",
+   "reading": "na han jiao xiang yue ban",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00576",
+   "text": "呼唤终结之神",
+   "typeText": "呼唤终结之神",
+   "reading": "hu huan zhong jie zhi shen",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00577",
+   "text": "啪啪呀降质版",
+   "typeText": "啪啪呀降质版",
+   "reading": "pa pa ya jiang zhi ban",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00578",
+   "text": "基鲁菲冈之谜",
+   "typeText": "基鲁菲冈之谜",
+   "reading": "ji lu fei gang zhi mi",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00579",
+   "text": "夏弗还是布吉",
+   "typeText": "夏弗还是布吉",
+   "reading": "xia fu hai shi bu ji",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00580",
+   "text": "天晴大鲶音头",
+   "typeText": "天晴大鲶音头",
+   "reading": "tian qing da nian yin tou",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00581",
+   "text": "天空燃烧之日",
+   "typeText": "天空燃烧之日",
+   "reading": "tian kong ran shao zhi ri",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00582",
+   "text": "孤儿们的战斗",
+   "typeText": "孤儿们的战斗",
+   "reading": "gu er men de zhan dou",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00583",
+   "text": "守财奴的愚行",
+   "typeText": "守财奴的愚行",
+   "reading": "shou cai nu de yu xing",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00584",
+   "text": "寻找公主～金曦～",
+   "typeText": "寻找公主金曦",
+   "reading": "xun zhao gong zhu jin xi",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00585",
+   "text": "封印之物～金曦～",
+   "typeText": "封印之物金曦",
+   "reading": "feng yin zhi wu jin xi",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00586",
+   "text": "尖叫（继续前进）",
+   "typeText": "尖叫继续前进",
+   "reading": "jian jiao ji xu qian jin",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00587",
+   "text": "巴隆王国～晓月～",
+   "typeText": "巴隆王国晓月",
+   "reading": "ba long wang guo xiao yue",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00588",
+   "text": "平衡（脉动电音）",
+   "typeText": "平衡脉动电音",
+   "reading": "ping heng mai dong dian yin",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00589",
+   "text": "微笑（交响乐版）",
+   "typeText": "微笑交响乐版",
+   "reading": "wei xiao jiao xiang yue ban",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00590",
+   "text": "微笑（重返擂台）",
+   "typeText": "微笑重返擂台",
+   "reading": "wei xiao chong fan lei tai",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00591",
+   "text": "心愿如风随行",
+   "typeText": "心愿如风随行",
+   "reading": "xin yuan ru feng sui xing",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00592",
+   "text": "恒辉作战总部",
+   "typeText": "恒辉作战总部",
+   "reading": "heng hui zuo zhan zong bu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00593",
+   "text": "悠久之风～暗影～",
+   "typeText": "悠久之风暗影",
+   "reading": "you jiu zhi feng an ying",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00594",
+   "text": "悠久之风～重生～",
+   "typeText": "悠久之风重生",
+   "reading": "you jiu zhi feng chong sheng",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00595",
+   "text": "战祸的景观盒",
+   "typeText": "战祸的景观盒",
+   "reading": "zhan huo de jing guan he",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00596",
+   "text": "打开的玉手箱",
+   "typeText": "打开的玉手箱",
+   "reading": "da kai de yu shou xiang",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00597",
+   "text": "掠夺者的财宝",
+   "typeText": "掠夺者的财宝",
+   "reading": "lve duo zhe de cai bao",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00598",
+   "text": "文明的景观盒",
+   "typeText": "文明的景观盒",
+   "reading": "wen ming de jing guan he",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00599",
+   "text": "树海深处之梦",
+   "typeText": "树海深处之梦",
+   "reading": "shu hai shen chu zhi meng",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00600",
+   "text": "桑多利亚王国",
+   "typeText": "桑多利亚王国",
+   "reading": "sang duo li ya wang guo",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00601",
+   "text": "欢迎来到金碟",
+   "typeText": "欢迎来到金碟",
+   "reading": "huan ying lai dao jin die",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00602",
+   "text": "死斗（黄道年代）",
+   "typeText": "死斗黄道年代",
+   "reading": "si dou huang dao nian dai",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00603",
+   "text": "沉静（交响乐版）",
+   "typeText": "沉静交响乐版",
+   "reading": "chen jing jiao xiang yue ban",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00604",
+   "text": "海牛逆流而上",
+   "typeText": "海牛逆流而上",
+   "reading": "hai niu ni liu er shang",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00605",
+   "text": "潜入（黄道年代）",
+   "typeText": "潜入黄道年代",
+   "reading": "qian ru huang dao nian dai",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00606",
+   "text": "照耀世界之暗",
+   "typeText": "照耀世界之暗",
+   "reading": "zhao yao shi jie zhi an",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00607",
+   "text": "特罗亚国～晓月～",
+   "typeText": "特罗亚国晓月",
+   "reading": "te luo ya guo xiao yue",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00608",
+   "text": "狩猎时机～晓月～",
+   "typeText": "狩猎时机晓月",
+   "reading": "shou lie shi ji xiao yue",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00609",
+   "text": "献上我的灵魂",
+   "typeText": "献上我的灵魂",
+   "reading": "xian shang wo de ling hun",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00610",
+   "text": "生死答问-回响",
+   "typeText": "生死答问回响",
+   "reading": "sheng si da wen hui xiang",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00611",
+   "text": "盐与苦难之歌",
+   "typeText": "盐与苦难之歌",
+   "reading": "yan yu ku nan zhi ge",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00612",
+   "text": "红莲战旗之下",
+   "typeText": "红莲战旗之下",
+   "reading": "hong lian zhan qi zhi xia",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00613",
+   "text": "终有一日～晓月～",
+   "typeText": "终有一日晓月",
+   "reading": "zhong you yi ri xiao yue",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00614",
+   "text": "终途旅人-足迹",
+   "typeText": "终途旅人足迹",
+   "reading": "zhong tu lv ren zu ji",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00615",
+   "text": "绝望（铭记于石）",
+   "typeText": "绝望铭记于石",
+   "reading": "jue wang ming ji yu shi",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00616",
+   "text": "继续战斗之人",
+   "typeText": "继续战斗之人",
+   "reading": "ji xu zhan dou zhi ren",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00617",
+   "text": "胜利或是死亡",
+   "typeText": "胜利或是死亡",
+   "reading": "sheng li huo shi si wang",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00618",
+   "text": "自由或是死亡",
+   "typeText": "自由或是死亡",
+   "reading": "zi you huo shi si wang",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00619",
+   "text": "艾欧泽亚神话",
+   "typeText": "艾欧泽亚神话",
+   "reading": "ai ou ze ya shen hua",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00620",
+   "text": "艾米尔／绝望",
+   "typeText": "艾米尔／绝望",
+   "reading": "ai mi er ／ jue wang",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00621",
+   "text": "英杰（交响乐版）",
+   "typeText": "英杰交响乐版",
+   "reading": "ying jie jiao xiang yue ban",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00622",
+   "text": "萨纳兰的热沙",
+   "typeText": "萨纳兰的热沙",
+   "reading": "sa na lan de re sha",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00623",
+   "text": "萨纳兰的黄昏",
+   "typeText": "萨纳兰的黄昏",
+   "reading": "sa na lan de huang hun",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00624",
+   "text": "萨鲁塔巴鲁塔",
+   "typeText": "萨鲁塔巴鲁塔",
+   "reading": "sa lu ta ba lu ta",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00625",
+   "text": "蓝色原野～暗影～",
+   "typeText": "蓝色原野暗影",
+   "reading": "lan se yuan ye an ying",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00626",
+   "text": "让梦乘上翅膀",
+   "typeText": "让梦乘上翅膀",
+   "reading": "rang meng cheng shang chi bang",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00627",
+   "text": "起义（脉动电音）",
+   "typeText": "起义脉动电音",
+   "reading": "qi yi mai dong dian yin",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00628",
+   "text": "起义（蛮荒神影）",
+   "typeText": "起义蛮荒神影",
+   "reading": "qi yi man huang shen ying",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00629",
+   "text": "轨迹（蛮荒神影）",
+   "typeText": "轨迹蛮荒神影",
+   "reading": "gui ji man huang shen ying",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00630",
+   "text": "迷宫中的战斗",
+   "typeText": "迷宫中的战斗",
+   "reading": "mi gong zhong de zhan dou",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00631",
+   "text": "迷津（继续前进）",
+   "typeText": "迷津继续前进",
+   "reading": "mi jin ji xu qian jin",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00632",
+   "text": "逃亡（星海旅途）",
+   "typeText": "逃亡星海旅途",
+   "reading": "tao wang xing hai lv tu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00633",
+   "text": "遭到蹂躏的心",
+   "typeText": "遭到蹂躏的心",
+   "reading": "zao dao rou lin de xin",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00634",
+   "text": "邪欲（重返擂台）",
+   "typeText": "邪欲重返擂台",
+   "reading": "xie yu chong fan lei tai",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00635",
+   "text": "重建竣工小调",
+   "typeText": "重建竣工小调",
+   "reading": "chong jian jun gong xiao diao",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00636",
+   "text": "金属-正义无情",
+   "typeText": "金属正义无情",
+   "reading": "jin shu zheng yi wu qing",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00637",
+   "text": "阿鲁玛主题曲",
+   "typeText": "阿鲁玛主题曲",
+   "reading": "a lu ma zhu ti qu",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00638",
+   "text": "非著名调查员",
+   "typeText": "非著名调查员",
+   "reading": "fei zhu ming diao cha yuan",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00639",
+   "text": "风暴中的灯火",
+   "typeText": "风暴中的灯火",
+   "reading": "feng bao zhong de deng huo",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00640",
+   "text": "魔大战的伤痕",
+   "typeText": "魔大战的伤痕",
+   "reading": "mo da zhan de shang hen",
+   "category": "music",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "msc_00641",
+   "text": "魔神（蛮荒神影）",
+   "typeText": "魔神蛮荒神影",
+   "reading": "mo shen man huang shen ying",
+   "category": "music",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "msc_00642",
+   "text": "Smile-微笑-",
+   "typeText": "Smile微笑",
+   "reading": "Smile wei xiao",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00643",
+   "text": "一言难尽的悲哀",
+   "typeText": "一言难尽的悲哀",
+   "reading": "yi yan nan jin de bei ai",
+   "category": "music",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "msc_00644",
+   "text": "万世箴言（钢琴集）",
+   "typeText": "万世箴言钢琴集",
+   "reading": "wan shi zhen yan gang qin ji",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00645",
+   "text": "不会失效的约定",
+   "typeText": "不会失效的约定",
+   "reading": "bu hui shi xiao de yue ding",
+   "category": "music",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "msc_00646",
+   "text": "不倦之人雅典娜",
+   "typeText": "不倦之人雅典娜",
+   "reading": "bu juan zhi ren ya dian na",
+   "category": "music",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "msc_00647",
+   "text": "不归之声／吉他",
+   "typeText": "不归之声／吉他",
+   "reading": "bu gui zhi sheng ／ ji ta",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00648",
+   "text": "不归之声／通常",
+   "typeText": "不归之声／通常",
+   "reading": "bu gui zhi sheng ／ tong chang",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00649",
+   "text": "为雪林带来温暖",
+   "typeText": "为雪林带来温暖",
+   "reading": "wei xue lin dai lai wen nuan",
+   "category": "music",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "msc_00650",
+   "text": "乘上西风（钢琴集）",
+   "typeText": "乘上西风钢琴集",
+   "reading": "cheng shang xi feng gang qin ji",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00651",
+   "text": "五月的玫瑰～金曦～",
+   "typeText": "五月的玫瑰金曦",
+   "reading": "wu yue de mei gui jin xi",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00652",
+   "text": "仰望黎明的天空",
+   "typeText": "仰望黎明的天空",
+   "reading": "yang wang li ming de tian kong",
+   "category": "music",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "msc_00653",
+   "text": "冒险途中的小憩",
+   "typeText": "冒险途中的小憩",
+   "reading": "mao xian tu zhong de xiao qi",
+   "category": "music",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "msc_00654",
+   "text": "凯严主题曲～红莲～",
+   "typeText": "凯严主题曲红莲",
+   "reading": "kai yan zhu ti qu hong lian",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00655",
+   "text": "刚出炉的仙子猪",
+   "typeText": "刚出炉的仙子猪",
+   "reading": "gang chu lu de xian zi zhu",
+   "category": "music",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "msc_00656",
+   "text": "另一个月亮～晓月～",
+   "typeText": "另一个月亮晓月",
+   "reading": "ling yi ge yue liang xiao yue",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00657",
+   "text": "城镇主题曲～晓月～",
+   "typeText": "城镇主题曲晓月",
+   "reading": "cheng zhen zhu ti qu xiao yue",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00658",
+   "text": "城镇主题曲～金曦～",
+   "typeText": "城镇主题曲金曦",
+   "reading": "cheng zhen zhu ti qu jin xi",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00659",
+   "text": "多加与乌内之心",
+   "typeText": "多加与乌内之心",
+   "reading": "duo jia yu wu nei zhi xin",
+   "category": "music",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "msc_00660",
+   "text": "夜雾缭绕（钢琴集）",
+   "typeText": "夜雾缭绕钢琴集",
+   "reading": "ye wu liao rao gang qin ji",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00661",
+   "text": "天上的阿卡狄亚",
+   "typeText": "天上的阿卡狄亚",
+   "reading": "tian shang de a ka di ya",
+   "category": "music",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "msc_00662",
+   "text": "宿命冲突-防卫战-",
+   "typeText": "宿命冲突防卫战",
+   "reading": "su ming chong tu fang wei zhan",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00663",
+   "text": "巴斯图克共和国",
+   "typeText": "巴斯图克共和国",
+   "reading": "ba si tu ke gong he guo",
+   "category": "music",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "msc_00664",
+   "text": "希望之都（钢琴集）",
+   "typeText": "希望之都钢琴集",
+   "reading": "xi wang zhi dou gang qin ji",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00665",
+   "text": "库尔札斯的寂静",
+   "typeText": "库尔札斯的寂静",
+   "reading": "ku er zha si de ji jing",
+   "category": "music",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "msc_00666",
+   "text": "开开心心胡萝卜",
+   "typeText": "开开心心胡萝卜",
+   "reading": "kai kai xin xin hu luo bo",
+   "category": "music",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "msc_00667",
+   "text": "异想天开（钢琴集）",
+   "typeText": "异想天开钢琴集",
+   "reading": "yi xiang tian kai gang qin ji",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00668",
+   "text": "微笑（泪流至曦明）",
+   "typeText": "微笑泪流至曦明",
+   "reading": "wei xiao lei liu zhi xi ming",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00669",
+   "text": "心爱的蓝色故乡",
+   "typeText": "心爱的蓝色故乡",
+   "reading": "xin ai de lan se gu xiang",
+   "category": "music",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "msc_00670",
+   "text": "快快落落糖豆人",
+   "typeText": "快快落落糖豆人",
+   "reading": "kuai kuai luo luo tang dou ren",
+   "category": "music",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "msc_00671",
+   "text": "悠久之风（转调版）",
+   "typeText": "悠久之风转调版",
+   "reading": "you jiu zhi feng zhuan diao ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00672",
+   "text": "拉诺西亚的疾风",
+   "typeText": "拉诺西亚的疾风",
+   "reading": "la nuo xi ya de ji feng",
+   "category": "music",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "msc_00673",
+   "text": "文明（脉动电音2）",
+   "typeText": "文明脉动电音2",
+   "reading": "wen ming mai dong dian yin 2",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00674",
+   "text": "无名众人的激情",
+   "typeText": "无名众人的激情",
+   "reading": "wu ming zhong ren de ji qing",
+   "category": "music",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "msc_00675",
+   "text": "无法拼合的碎片",
+   "typeText": "无法拼合的碎片",
+   "reading": "wu fa pin he de sui pian",
+   "category": "music",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "msc_00676",
+   "text": "最后的死斗～重生～",
+   "typeText": "最后的死斗重生",
+   "reading": "zui hou de si dou chong sheng",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00677",
+   "text": "未曾升空的战舰",
+   "typeText": "未曾升空的战舰",
+   "reading": "wei ceng sheng kong de zhan jian",
+   "category": "music",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "msc_00678",
+   "text": "水车低鸣（钢琴集）",
+   "typeText": "水车低鸣钢琴集",
+   "reading": "shui che di ming gang qin ji",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00679",
+   "text": "深宵之海（钢琴集）",
+   "typeText": "深宵之海钢琴集",
+   "reading": "shen xiao zhi hai gang qin ji",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00680",
+   "text": "激情四射胡萝卜",
+   "typeText": "激情四射胡萝卜",
+   "reading": "ji qing si she hu luo bo",
+   "category": "music",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "msc_00681",
+   "text": "灼热之地（钢琴集）",
+   "typeText": "灼热之地钢琴集",
+   "reading": "zhuo re zhi di gang qin ji",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00682",
+   "text": "环境音：寺院钟鸣",
+   "typeText": "环境音寺院钟鸣",
+   "reading": "huan jing yin si yuan zhong ming",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00683",
+   "text": "环境音：小河流水",
+   "typeText": "环境音小河流水",
+   "reading": "huan jing yin xiao he liu shui",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00684",
+   "text": "环境音：技师工房",
+   "typeText": "环境音技师工房",
+   "reading": "huan jing yin ji shi gong fang",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00685",
+   "text": "环境音：教堂钟鸣",
+   "typeText": "环境音教堂钟鸣",
+   "reading": "huan jing yin jiao tang zhong ming",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00686",
+   "text": "环境音：晨间厨房",
+   "typeText": "环境音晨间厨房",
+   "reading": "huan jing yin chen jian chu fang",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00687",
+   "text": "环境音：街市嘈杂",
+   "typeText": "环境音街市嘈杂",
+   "reading": "huan jing yin jie shi cao za",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00688",
+   "text": "环境音：风铃轻荡",
+   "typeText": "环境音风铃轻荡",
+   "reading": "huan jing yin feng ling qing dang",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00689",
+   "text": "瓦纳·迪尔进行曲",
+   "typeText": "瓦纳迪尔进行曲",
+   "reading": "wa na di er jin xing qu",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00690",
+   "text": "禁地优雷卡～晓月～",
+   "typeText": "禁地优雷卡晓月",
+   "reading": "jin di you lei ka xiao yue",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00691",
+   "text": "红土大地的恩惠",
+   "typeText": "红土大地的恩惠",
+   "reading": "hong tu da di de en hui",
+   "category": "music",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "msc_00692",
+   "text": "红色夜阑（钢琴集）",
+   "typeText": "红色夜阑钢琴集",
+   "reading": "hong se ye lan gang qin ji",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00693",
+   "text": "胜利的号角～重生～",
+   "typeText": "胜利的号角重生",
+   "reading": "sheng li de hao jiao chong sheng",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00694",
+   "text": "艰苦的战斗#2",
+   "typeText": "艰苦的战斗#2",
+   "reading": "jian ku de zhan dou #2",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00695",
+   "text": "艾欧泽亚陆行鸟",
+   "typeText": "艾欧泽亚陆行鸟",
+   "reading": "ai ou ze ya lu xing niao",
+   "category": "music",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "msc_00696",
+   "text": "虚无界的救赎者",
+   "typeText": "虚无界的救赎者",
+   "reading": "xu wu jie de jiu shu zhe",
+   "category": "music",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "msc_00697",
+   "text": "让真相大白于世",
+   "typeText": "让真相大白于世",
+   "reading": "rang zhen xiang da bai yu shi",
+   "category": "music",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "msc_00698",
+   "text": "贪欲（脉动电音2）",
+   "typeText": "贪欲脉动电音2",
+   "reading": "tan yu mai dong dian yin 2",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00699",
+   "text": "超级虹彩战队Z",
+   "typeText": "超级虹彩战队Z",
+   "reading": "chao ji hong cai zhan dui Z",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00700",
+   "text": "跟着节奏跳起来",
+   "typeText": "跟着节奏跳起来",
+   "reading": "gen zhe jie zou tiao qi lai",
+   "category": "music",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "msc_00701",
+   "text": "近在天边（伴奏曲）",
+   "typeText": "近在天边伴奏曲",
+   "reading": "jin zai tian bian ban zou qu",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00702",
+   "text": "远古之歌／赎罪",
+   "typeText": "远古之歌／赎罪",
+   "reading": "yuan gu zhi ge ／ shu zui",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00703",
+   "text": "遗留之所／斜光",
+   "typeText": "遗留之所／斜光",
+   "reading": "yi liu zhi suo ／ xie guang",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00704",
+   "text": "闪耀的信仰之光",
+   "typeText": "闪耀的信仰之光",
+   "reading": "shan yao de xin yang zhi guang",
+   "category": "music",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "msc_00705",
+   "text": "雷神西德主题曲",
+   "typeText": "雷神西德主题曲",
+   "reading": "lei shen xi de zhu ti qu",
+   "category": "music",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "msc_00706",
+   "text": "风暴之前-诺旺堡",
+   "typeText": "风暴之前诺旺堡",
+   "reading": "feng bao zhi qian nuo wang bao",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00707",
+   "text": "魔神（脉动电音2）",
+   "typeText": "魔神脉动电音2",
+   "reading": "mo shen mai dong dian yin 2",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00708",
+   "text": "Flow-生如归流-",
+   "typeText": "Flow生如归流",
+   "reading": "Flow sheng ru gui liu",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00709",
+   "text": "一瞬千里（脉动电音）",
+   "typeText": "一瞬千里脉动电音",
+   "reading": "yi shun qian li mai dong dian yin",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00710",
+   "text": "不屈之刃（身心二元）",
+   "typeText": "不屈之刃身心二元",
+   "reading": "bu qu zhi ren shen xin er yuan",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00711",
+   "text": "与此同时～野心蠢动～",
+   "typeText": "与此同时野心蠢动",
+   "reading": "yu ci tong shi ye xin chun dong",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00712",
+   "text": "伟大的母港（钢琴集）",
+   "typeText": "伟大的母港钢琴集",
+   "reading": "wei da de mu gang gang qin ji",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00713",
+   "text": "你的答案（交响乐版）",
+   "typeText": "你的答案交响乐版",
+   "reading": "ni de da an jiao xiang yue ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00714",
+   "text": "倾注心意完成库啵",
+   "typeText": "倾注心意完成库啵",
+   "reading": "qing zhu xin yi wan cheng ku bo",
+   "category": "music",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "msc_00715",
+   "text": "停滞的祈祷／晓风",
+   "typeText": "停滞的祈祷／晓风",
+   "reading": "ting zhi de qi dao ／ xiao feng",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00716",
+   "text": "千年旭光（脉动电音）",
+   "typeText": "千年旭光脉动电音",
+   "reading": "qian nian xu guang mai dong dian yin",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00717",
+   "text": "华彩的山麓（钢琴集）",
+   "typeText": "华彩的山麓钢琴集",
+   "reading": "hua cai de shan lu gang qin ji",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00718",
+   "text": "召唤兽战（黄道年代）",
+   "typeText": "召唤兽战黄道年代",
+   "reading": "zhao huan shou zhan huang dao nian dai",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00719",
+   "text": "号角（最终幻想IX）",
+   "typeText": "号角最终幻想IX",
+   "reading": "hao jiao zui zhong huan xiang IX",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00720",
+   "text": "坚不可摧（脉动电音）",
+   "typeText": "坚不可摧脉动电音",
+   "reading": "jian bu ke cui mai dong dian yin",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00721",
+   "text": "坚不可摧（身心二元）",
+   "typeText": "坚不可摧身心二元",
+   "reading": "jian bu ke cui shen xin er yuan",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00722",
+   "text": "夏弗还是布吉～暗影～",
+   "typeText": "夏弗还是布吉暗影",
+   "reading": "xia fu hai shi bu ji an ying",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00723",
+   "text": "大家一起，无所畏惧",
+   "typeText": "大家一起无所畏惧",
+   "reading": "da jia yi qi wu suo wei ju",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00724",
+   "text": "大桥上的死斗～重生～",
+   "typeText": "大桥上的死斗重生",
+   "reading": "da qiao shang de si dou chong sheng",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00725",
+   "text": "天使醒来（脉动电音）",
+   "typeText": "天使醒来脉动电音",
+   "reading": "tian shi xing lai mai dong dian yin",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00726",
+   "text": "天空与森林的交界",
+   "typeText": "天空与森林的交界",
+   "reading": "tian kong yu sen lin de jiao jie",
+   "category": "music",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "msc_00727",
+   "text": "孤注一掷（临曦至暗）",
+   "typeText": "孤注一掷临曦至暗",
+   "reading": "gu zhu yi zhi lin xi zhi an",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00728",
+   "text": "孤注一掷（交响乐版）",
+   "typeText": "孤注一掷交响乐版",
+   "reading": "gu zhu yi zhi jiao xiang yue ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00729",
+   "text": "山峡凉风（交响乐版）",
+   "typeText": "山峡凉风交响乐版",
+   "reading": "shan xia liang feng jiao xiang yue ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00730",
+   "text": "幽冥水底（古裔今罪）",
+   "typeText": "幽冥水底古裔今罪",
+   "reading": "you ming shui di gu yi jin zui",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00731",
+   "text": "幽冥水底（脉动电音）",
+   "typeText": "幽冥水底脉动电音",
+   "reading": "you ming shui di mai dong dian yin",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00732",
+   "text": "情感所影响的力量",
+   "typeText": "情感所影响的力量",
+   "reading": "qing gan suo ying xiang de li liang",
+   "category": "music",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "msc_00733",
+   "text": "战斗（最终幻想XI）",
+   "typeText": "战斗最终幻想XI",
+   "reading": "zhan dou zui zhong huan xiang XI",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00734",
+   "text": "无言之战（黄道年代）",
+   "typeText": "无言之战黄道年代",
+   "reading": "wu yan zhi zhan huang dao nian dai",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00735",
+   "text": "无边无际（身心二元）",
+   "typeText": "无边无际身心二元",
+   "reading": "wu bian wu ji shen xin er yuan",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00736",
+   "text": "无限循环（交响乐版）",
+   "typeText": "无限循环交响乐版",
+   "reading": "wu xian xun huan jiao xiang yue ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00737",
+   "text": "暗影使者（交响乐版）",
+   "typeText": "暗影使者交响乐版",
+   "reading": "an ying shi zhe jiao xiang yue ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00738",
+   "text": "暗影使者（暗涌十年）",
+   "typeText": "暗影使者暗涌十年",
+   "reading": "an ying shi zhe an yong shi nian",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00739",
+   "text": "末路尽头（交响乐版）",
+   "typeText": "末路尽头交响乐版",
+   "reading": "mo lu jin tou jiao xiang yue ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00740",
+   "text": "末路尽头（继续前进）",
+   "typeText": "末路尽头继续前进",
+   "reading": "mo lu jin tou ji xu qian jin",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00741",
+   "text": "森林与地底的交界",
+   "typeText": "森林与地底的交界",
+   "reading": "sen lin yu di di de jiao jie",
+   "category": "music",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "msc_00742",
+   "text": "此处有狮（超越暗影）",
+   "typeText": "此处有狮超越暗影",
+   "reading": "ci chu you shi chao yue an ying",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00743",
+   "text": "永远-罗扎利亚公国",
+   "typeText": "永远罗扎利亚公国",
+   "reading": "yong yuan luo zha li ya gong guo",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00744",
+   "text": "没有星星的摩天楼",
+   "typeText": "没有星星的摩天楼",
+   "reading": "mei you xing xing de mo tian lou",
+   "category": "music",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "msc_00745",
+   "text": "满月之夜（继续前进）",
+   "typeText": "满月之夜继续前进",
+   "reading": "man yue zhi ye ji xu qian jin",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00746",
+   "text": "漆黑王狼重现世间",
+   "typeText": "漆黑王狼重现世间",
+   "reading": "qi hei wang lang chong xian shi jian",
+   "category": "music",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "msc_00747",
+   "text": "灾厄蔓延（交响乐版）",
+   "typeText": "灾厄蔓延交响乐版",
+   "reading": "zai e man yan jiao xiang yue ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00748",
+   "text": "玛托雅的洞穴～苍穹～",
+   "typeText": "玛托雅的洞穴苍穹",
+   "reading": "ma tuo ya de dong xue cang qiong",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00749",
+   "text": "甜甜蜜蜜（临曦至暗）",
+   "typeText": "甜甜蜜蜜临曦至暗",
+   "reading": "tian tian mi mi lin xi zhi an",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00750",
+   "text": "生如归流（交响乐版）",
+   "typeText": "生如归流交响乐版",
+   "reading": "sheng ru gui liu jiao xiang yue ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00751",
+   "text": "生如归流（嘉年华版）",
+   "typeText": "生如归流嘉年华版",
+   "reading": "sheng ru gui liu jia nian hua ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00752",
+   "text": "生如归流（继续前进）",
+   "typeText": "生如归流继续前进",
+   "reading": "sheng ru gui liu ji xu qian jin",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00753",
+   "text": "白银凶鸟展翅翱翔",
+   "typeText": "白银凶鸟展翅翱翔",
+   "reading": "bai yin xiong niao zhan chi ao xiang",
+   "category": "music",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "msc_00754",
+   "text": "相白质黑（继续前进）",
+   "typeText": "相白质黑继续前进",
+   "reading": "xiang bai zhi hei ji xu qian jin",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00755",
+   "text": "神龙见尾（交响乐版）",
+   "typeText": "神龙见尾交响乐版",
+   "reading": "shen long jian wei jiao xiang yue ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00756",
+   "text": "神龙见尾（星海旅途）",
+   "typeText": "神龙见尾星海旅途",
+   "reading": "shen long jian wei xing hai lv tu",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00757",
+   "text": "究极神兵（交响乐版）",
+   "typeText": "究极神兵交响乐版",
+   "reading": "jiu ji shen bing jiao xiang yue ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00758",
+   "text": "究极神兵（蛮荒神影）",
+   "typeText": "究极神兵蛮荒神影",
+   "reading": "jiu ji shen bing man huang shen ying",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00759",
+   "text": "第二颂歌：遥远之约",
+   "typeText": "第二颂歌遥远之约",
+   "reading": "di er song ge yao yuan zhi yue",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00760",
+   "text": "第五颂歌：祈祷之时",
+   "typeText": "第五颂歌祈祷之时",
+   "reading": "di wu song ge qi dao zhi shi",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00761",
+   "text": "终结之战（交响乐版）",
+   "typeText": "终结之战交响乐版",
+   "reading": "zhong jie zhi zhan jiao xiang yue ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00762",
+   "text": "绝对霸道（重返擂台）",
+   "typeText": "绝对霸道重返擂台",
+   "reading": "jue dui ba dao chong fan lei tai",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00763",
+   "text": "艾欧泽亚的守护者",
+   "typeText": "艾欧泽亚的守护者",
+   "reading": "ai ou ze ya de shou hu zhe",
+   "category": "music",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "msc_00764",
+   "text": "莫要在野营地撒野",
+   "typeText": "莫要在野营地撒野",
+   "reading": "mo yao zai ye ying di sa ye",
+   "category": "music",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "msc_00765",
+   "text": "近在天边（交响乐版）",
+   "typeText": "近在天边交响乐版",
+   "reading": "jin zai tian bian jiao xiang yue ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00766",
+   "text": "近在天边（超越暗影）",
+   "typeText": "近在天边超越暗影",
+   "reading": "jin zai tian bian chao yue an ying",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00767",
+   "text": "迷宫中的战斗#3",
+   "typeText": "迷宫中的战斗#3",
+   "reading": "mi gong zhong de zhan dou #3",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00768",
+   "text": "重压灭顶（蛮荒神影）",
+   "typeText": "重压灭顶蛮荒神影",
+   "reading": "zhong ya mie ding man huang shen ying",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00769",
+   "text": "阴谋美计（脉动电音）",
+   "typeText": "阴谋美计脉动电音",
+   "reading": "yin mou mei ji mai dong dian yin",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00770",
+   "text": "阿尔蒂玛优雅形态",
+   "typeText": "阿尔蒂玛优雅形态",
+   "reading": "a er di ma you ya xing tai",
+   "category": "music",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "msc_00771",
+   "text": "阿尔蒂玛完美形态",
+   "typeText": "阿尔蒂玛完美形态",
+   "reading": "a er di ma wan mei xing tai",
+   "category": "music",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "msc_00772",
+   "text": "露水之玉，明月之光",
+   "typeText": "露水之玉明月之光",
+   "reading": "lu shui zhi yu ming yue zhi guang",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00773",
+   "text": "不见月明的小丑～金曦～",
+   "typeText": "不见月明的小丑金曦",
+   "reading": "bu jian yue ming de xiao chou jin xi",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00774",
+   "text": "世界的重量／伴奏曲",
+   "typeText": "世界的重量／伴奏曲",
+   "reading": "shi jie de zhong liang ／ ban zou qu",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00775",
+   "text": "乐园之门-路·美特庭园",
+   "typeText": "乐园之门路美特庭园",
+   "reading": "le yuan zhi men lu mei te ting yuan",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00776",
+   "text": "伟大的母港（脉动电音）",
+   "typeText": "伟大的母港脉动电音",
+   "reading": "wei da de mu gang mai dong dian yin",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00777",
+   "text": "制作最好的蛋糕库啵",
+   "typeText": "制作最好的蛋糕库啵",
+   "reading": "zhi zuo zui hao de dan gao ku bo",
+   "category": "music",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "msc_00778",
+   "text": "动乱帝国版（黄道年代）",
+   "typeText": "动乱帝国版黄道年代",
+   "reading": "dong luan di guo ban huang dao nian dai",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00779",
+   "text": "华彩的山麓（交响乐版）",
+   "typeText": "华彩的山麓交响乐版",
+   "reading": "hua cai de shan lu jiao xiang yue ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00780",
+   "text": "在札纳尔坎德（转调版）",
+   "typeText": "在札纳尔坎德转调版",
+   "reading": "zai zha na er kan de zhuan diao ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00781",
+   "text": "复仇的怒嚎（交响乐版）",
+   "typeText": "复仇的怒嚎交响乐版",
+   "reading": "fu chou de nu hao jiao xiang yue ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00782",
+   "text": "妖星乱舞σ第1乐章",
+   "typeText": "妖星乱舞σ第1乐章",
+   "reading": "yao xing luan wu σ di 1 yue zhang",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00783",
+   "text": "妖星乱舞σ第2乐章",
+   "typeText": "妖星乱舞σ第2乐章",
+   "reading": "yao xing luan wu σ di 2 yue zhang",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00784",
+   "text": "妖星乱舞σ第3乐章",
+   "typeText": "妖星乱舞σ第3乐章",
+   "reading": "yao xing luan wu σ di 3 yue zhang",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00785",
+   "text": "妖星乱舞σ第4乐章",
+   "typeText": "妖星乱舞σ第4乐章",
+   "reading": "yao xing luan wu σ di 4 yue zhang",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00786",
+   "text": "妖星乱舞（遥远的世界）",
+   "typeText": "妖星乱舞遥远的世界",
+   "reading": "yao xing luan wu yao yuan de shi jie",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00787",
+   "text": "山峡凉风（脉动电音2）",
+   "typeText": "山峡凉风脉动电音2",
+   "reading": "shan xia liang feng mai dong dian yin 2",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00788",
+   "text": "平衡（古裔今罪：乐团版）",
+   "typeText": "平衡古裔今罪乐团版",
+   "reading": "ping heng gu yi jin zui yue tuan ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00789",
+   "text": "彼岸花开（芯片音乐版）",
+   "typeText": "彼岸花开芯片音乐版",
+   "reading": "bi an hua kai xin pian yin yue ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00790",
+   "text": "忘却的彼岸（交响乐版）",
+   "typeText": "忘却的彼岸交响乐版",
+   "reading": "wang que de bi an jiao xiang yue ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00791",
+   "text": "战斗1（最终幻想IV）",
+   "typeText": "战斗1最终幻想IV",
+   "reading": "zhan dou 1 zui zhong huan xiang IV",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00792",
+   "text": "战斗2（最终幻想IX）",
+   "typeText": "战斗2最终幻想IX",
+   "reading": "zhan dou 2 zui zhong huan xiang IX",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00793",
+   "text": "支配森林的蛮颚之龙",
+   "typeText": "支配森林的蛮颚之龙",
+   "reading": "zhi pei sen lin de man e zhi long",
+   "category": "music",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "msc_00794",
+   "text": "无眠之都特雷诺～金曦～",
+   "typeText": "无眠之都特雷诺金曦",
+   "reading": "wu mian zhi dou te lei nuo jin xi",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00795",
+   "text": "明日与未来（交响乐版）",
+   "typeText": "明日与未来交响乐版",
+   "reading": "ming ri yu wei lai jiao xiang yue ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00796",
+   "text": "曼德维尔金碟游乐场",
+   "typeText": "曼德维尔金碟游乐场",
+   "reading": "man de wei er jin die you le chang",
+   "category": "music",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "msc_00797",
+   "text": "最终幻想XI主题曲",
+   "typeText": "最终幻想XI主题曲",
+   "reading": "zui zhong huan xiang XI zhu ti qu",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00798",
+   "text": "月读命之歌（交响乐版）",
+   "typeText": "月读命之歌交响乐版",
+   "reading": "yue du ming zhi ge jiao xiang yue ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00799",
+   "text": "末路尽头（脉动电音2）",
+   "typeText": "末路尽头脉动电音2",
+   "reading": "mo lu jin tou mai dong dian yin 2",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00800",
+   "text": "水晶序曲～冒险的序章～",
+   "typeText": "水晶序曲冒险的序章",
+   "reading": "shui jing xu qu mao xian de xu zhang",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00801",
+   "text": "混沌的漩涡（脉动电音）",
+   "typeText": "混沌的漩涡脉动电音",
+   "reading": "hun dun de xuan wo mai dong dian yin",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00802",
+   "text": "混沌的漩涡（蛮荒神影）",
+   "typeText": "混沌的漩涡蛮荒神影",
+   "reading": "hun dun de xuan wo man huang shen ying",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00803",
+   "text": "满月之夜（脉动电音2）",
+   "typeText": "满月之夜脉动电音2",
+   "reading": "man yue zhi ye mai dong dian yin 2",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00804",
+   "text": "环境音：地下湖的水滴",
+   "typeText": "环境音地下湖的水滴",
+   "reading": "huan jing yin di xia hu de shui di",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00805",
+   "text": "瓦纳·迪尔进行曲#2",
+   "typeText": "瓦纳迪尔进行曲#2",
+   "reading": "wa na di er jin xing qu #2",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00806",
+   "text": "瓦纳·迪尔进行曲#4",
+   "typeText": "瓦纳迪尔进行曲#4",
+   "reading": "wa na di er jin xing qu #4",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00807",
+   "text": "甜甜蜜蜜（泪流至曦明）",
+   "typeText": "甜甜蜜蜜泪流至曦明",
+   "reading": "tian tian mi mi lei liu zhi xi ming",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00808",
+   "text": "甜甜蜜蜜（脉动电音2）",
+   "typeText": "甜甜蜜蜜脉动电音2",
+   "reading": "tian tian mi mi mai dong dian yin 2",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00809",
+   "text": "生命的呼声响彻白光",
+   "typeText": "生命的呼声响彻白光",
+   "reading": "sheng ming de hu sheng xiang che bai guang",
+   "category": "music",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "msc_00810",
+   "text": "生命的天平（继续前进）",
+   "typeText": "生命的天平继续前进",
+   "reading": "sheng ming de tian ping ji xu qian jin",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00811",
+   "text": "神龙见尾（芯片音乐版）",
+   "typeText": "神龙见尾芯片音乐版",
+   "reading": "shen long jian wei xin pian yin yue ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00812",
+   "text": "艾克斯迪司之城～金曦～",
+   "typeText": "艾克斯迪司之城金曦",
+   "reading": "ai ke si di si zhi cheng jin xi",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00813",
+   "text": "英杰起义（芯片音乐版）",
+   "typeText": "英杰起义芯片音乐版",
+   "reading": "ying jie qi yi xin pian yin yue ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00814",
+   "text": "贪欲（古裔今罪：乐团版）",
+   "typeText": "贪欲古裔今罪乐团版",
+   "reading": "tan yu gu yi jin zui yue tuan ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00815",
+   "text": "近在天边（脉动电音2）",
+   "typeText": "近在天边脉动电音2",
+   "reading": "jin zai tian bian mai dong dian yin 2",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00816",
+   "text": "金曦之都（泪流至曦明）",
+   "typeText": "金曦之都泪流至曦明",
+   "reading": "jin xi zhi dou lei liu zhi xi ming",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00817",
+   "text": "镜中的自我（重返擂台）",
+   "typeText": "镜中的自我重返擂台",
+   "reading": "jing zhong de zi wo chong fan lei tai",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00818",
+   "text": "飞空艇（最终幻想IV）",
+   "typeText": "飞空艇最终幻想IV",
+   "reading": "fei kong ting zui zhong huan xiang IV",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00819",
+   "text": "飞空艇（最终幻想XI）",
+   "typeText": "飞空艇最终幻想XI",
+   "reading": "fei kong ting zui zhong huan xiang XI",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00820",
+   "text": "一起来跳弗拉门戈～暗影～",
+   "typeText": "一起来跳弗拉门戈暗影",
+   "reading": "yi qi lai tiao fu la men ge an ying",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00821",
+   "text": "呼唤终结之神（交响乐版）",
+   "typeText": "呼唤终结之神交响乐版",
+   "reading": "hu huan zhong jie zhi shen jiao xiang yue ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00822",
+   "text": "回去吧，回到遥远的故乡",
+   "typeText": "回去吧回到遥远的故乡",
+   "reading": "hui qu ba hui dao yao yuan de gu xiang",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00823",
+   "text": "忘却的此岸（脉动电音2）",
+   "typeText": "忘却的此岸脉动电音2",
+   "reading": "wang que de ci an mai dong dian yin 2",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00824",
+   "text": "战斗1（最终幻想V）～金曦～",
+   "typeText": "战斗1最终幻想V金曦",
+   "reading": "zhan dou 1 zui zhong huan xiang V jin xi",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00825",
+   "text": "战斗2（最终幻想III）",
+   "typeText": "战斗2最终幻想III",
+   "reading": "zhan dou 2 zui zhong huan xiang III",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00826",
+   "text": "智慧的海螺（脉动电音2）",
+   "typeText": "智慧的海螺脉动电音2",
+   "reading": "zhi hui de hai luo mai dong dian yin 2",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00827",
+   "text": "盐与苦难之歌（交响乐版）",
+   "typeText": "盐与苦难之歌交响乐版",
+   "reading": "yan yu ku nan zhi ge jiao xiang yue ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00828",
+   "text": "索亨地下宫殿（黄道年代）",
+   "typeText": "索亨地下宫殿黄道年代",
+   "reading": "suo heng di xia gong dian huang dao nian dai",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00829",
+   "text": "终途旅人-足迹（嘉年华版）",
+   "typeText": "终途旅人足迹嘉年华版",
+   "reading": "zhong tu lv ren zu ji jia nian hua ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00830",
+   "text": "贤王莫古尔·莫古十二世",
+   "typeText": "贤王莫古尔莫古十二世",
+   "reading": "xian wang mo gu er mo gu shi er shi",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00831",
+   "text": "金属-正义无情（蛮荒神影）",
+   "typeText": "金属正义无情蛮荒神影",
+   "reading": "jin shu zheng yi wu qing man huang shen ying",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00832",
+   "text": "阿尔蒂玛完美形态～晓月～",
+   "typeText": "阿尔蒂玛完美形态晓月",
+   "reading": "a er di ma wan mei xing tai xiao yue",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00833",
+   "text": "Answers-生死答问-",
+   "typeText": "Answers生死答问",
+   "reading": "Answers sheng si da wen",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00834",
+   "text": "一瞬千里（古裔今罪：乐团版）",
+   "typeText": "一瞬千里古裔今罪乐团版",
+   "reading": "yi shun qian li gu yi jin zui yue tuan ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00835",
+   "text": "一瞬千里（古裔今罪：钢琴版）",
+   "typeText": "一瞬千里古裔今罪钢琴版",
+   "reading": "yi shun qian li gu yi jin zui gang qin ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00836",
+   "text": "不倦之人雅典娜（继续前进）",
+   "typeText": "不倦之人雅典娜继续前进",
+   "reading": "bu juan zhi ren ya dian na ji xu qian jin",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00837",
+   "text": "不灭孤念（古裔今罪：钢琴版）",
+   "typeText": "不灭孤念古裔今罪钢琴版",
+   "reading": "bu mie gu nian gu yi jin zui gang qin ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00838",
+   "text": "世界的重量／水晶序曲版",
+   "typeText": "世界的重量／水晶序曲版",
+   "reading": "shi jie de zhong liang ／ shui jing xu qu ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00839",
+   "text": "凯宁／最终幻想主题曲版",
+   "typeText": "凯宁／最终幻想主题曲版",
+   "reading": "kai ning ／ zui zhong huan xiang zhu ti qu ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00840",
+   "text": "原始的审判：复审（重返擂台）",
+   "typeText": "原始的审判复审重返擂台",
+   "reading": "yuan shi de shen pan fu shen chong fan lei tai",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00841",
+   "text": "天使醒来（古裔今罪：乐团版）",
+   "typeText": "天使醒来古裔今罪乐团版",
+   "reading": "tian shi xing lai gu yi jin zui yue tuan ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00842",
+   "text": "天使醒来（古裔今罪：伴奏曲）",
+   "typeText": "天使醒来古裔今罪伴奏曲",
+   "reading": "tian shi xing lai gu yi jin zui ban zou qu",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00843",
+   "text": "开开心心胡萝卜（继续前进）",
+   "typeText": "开开心心胡萝卜继续前进",
+   "reading": "kai kai xin xin hu luo bo ji xu qian jin",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00844",
+   "text": "战斗1（最终幻想IX）～金曦～",
+   "typeText": "战斗1最终幻想IX金曦",
+   "reading": "zhan dou 1 zui zhong huan xiang IX jin xi",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00845",
+   "text": "战斗2（最终幻想IV）～晓月～",
+   "typeText": "战斗2最终幻想IV晓月",
+   "reading": "zhan dou 2 zui zhong huan xiang IV xiao yue",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00846",
+   "text": "战斗2（最终幻想IX）～金曦～",
+   "typeText": "战斗2最终幻想IX金曦",
+   "reading": "zhan dou 2 zui zhong huan xiang IX jin xi",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00847",
+   "text": "无影之影（古裔今罪：钢琴版）",
+   "typeText": "无影之影古裔今罪钢琴版",
+   "reading": "wu ying zhi ying gu yi jin zui gang qin ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00848",
+   "text": "暗影使者（古裔今罪：乐团版）",
+   "typeText": "暗影使者古裔今罪乐团版",
+   "reading": "an ying shi zhe gu yi jin zui yue tuan ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00849",
+   "text": "最后之战（最终幻想V）～金曦～",
+   "typeText": "最后之战最终幻想V金曦",
+   "reading": "zui hou zhi zhan zui zhong huan xiang V jin xi",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00850",
+   "text": "爱是绝佳的秘密调味库啵",
+   "typeText": "爱是绝佳的秘密调味库啵",
+   "reading": "ai shi jue jia de mi mi tiao wei ku bo",
+   "category": "music",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "msc_00851",
+   "text": "耀眼浪苍（古裔今罪：乐团版）",
+   "typeText": "耀眼浪苍古裔今罪乐团版",
+   "reading": "yao yan lang cang gu yi jin zui yue tuan ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00852",
+   "text": "跟着节奏跳起来（暗涌十年）",
+   "typeText": "跟着节奏跳起来暗涌十年",
+   "reading": "gen zhe jie zou tiao qi lai an yong shi nian",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00853",
+   "text": "风音村库纳法-丰饶期-（白昼）",
+   "typeText": "风音村库纳法丰饶期白昼",
+   "reading": "feng yin cun ku na fa feng rao qi bai zhou",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00854",
+   "text": "不会失效的约定（泪流至曦明）",
+   "typeText": "不会失效的约定泪流至曦明",
+   "reading": "bu hui shi xiao de yue ding lei liu zhi xi ming",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00855",
+   "text": "不倦之人雅典娜（脉动电音2）",
+   "typeText": "不倦之人雅典娜脉动电音2",
+   "reading": "bu juan zhi ren ya dian na mai dong dian yin 2",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00856",
+   "text": "主题曲～玛托雅的洞穴（转调版）",
+   "typeText": "主题曲玛托雅的洞穴转调版",
+   "reading": "zhu ti qu ma tuo ya de dong xue zhuan diao ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00857",
+   "text": "五月的玫瑰～金曦～（泪流至曦明）",
+   "typeText": "五月的玫瑰金曦泪流至曦明",
+   "reading": "wu yue de mei gui jin xi lei liu zhi xi ming",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00858",
+   "text": "忘却的彼岸（GUNN演唱版）",
+   "typeText": "忘却的彼岸GUNN演唱版",
+   "reading": "wang que de bi an GUNN yan chang ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00859",
+   "text": "忘却的此岸（古裔今罪：乐团版）",
+   "typeText": "忘却的此岸古裔今罪乐团版",
+   "reading": "wang que de ci an gu yi jin zui yue tuan ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00860",
+   "text": "最后之战（最终幻想IV）～晓月～",
+   "typeText": "最后之战最终幻想IV晓月",
+   "reading": "zui hou zhi zhan zui zhong huan xiang IV xiao yue",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00861",
+   "text": "最后之战（最终幻想IX）～金曦～",
+   "typeText": "最后之战最终幻想IX金曦",
+   "reading": "zui hou zhi zhan zui zhong huan xiang IX jin xi",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00862",
+   "text": "白银凶鸟展翅翱翔（交响乐版）",
+   "typeText": "白银凶鸟展翅翱翔交响乐版",
+   "reading": "bai yin xiong niao zhan chi ao xiang jiao xiang yue ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00863",
+   "text": "跳舞娃娃卡尔克布莉娜～苍穹～",
+   "typeText": "跳舞娃娃卡尔克布莉娜苍穹",
+   "reading": "tiao wu wa wa ka er ke bu li na cang qiong",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00864",
+   "text": "Dawntrail-曦光旅路-",
+   "typeText": "Dawntrail曦光旅路",
+   "reading": "Dawntrail xi guang lv lu",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00865",
+   "text": "忆中金曦～久远的混曲～（交响乐版）",
+   "typeText": "忆中金曦久远的混曲交响乐版",
+   "reading": "yi zhong jin xi jiu yuan de hun qu jiao xiang yue ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00866",
+   "text": "英雄之证～«怪物猎人世界»版",
+   "typeText": "英雄之证«怪物猎人世界»版",
+   "reading": "ying xiong zhi zheng « guai wu lie ren shi jie » ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00867",
+   "text": "高贝扎四天王之战～禁断的记忆～",
+   "typeText": "高贝扎四天王之战禁断的记忆",
+   "reading": "gao bei zha si tian wang zhi zhan jin duan de ji yi",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00868",
+   "text": "Dragonsong-千年龙诗-",
+   "typeText": "Dragonsong千年龙诗",
+   "reading": "Dragonsong qian nian long shi",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00869",
+   "text": "Stormblood-血雨狂潮-",
+   "typeText": "Stormblood血雨狂潮",
+   "reading": "Stormblood xue yu kuang chao",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00870",
+   "text": "前往新大陆的基础～调查据点星辰",
+   "typeText": "前往新大陆的基础调查据点星辰",
+   "reading": "qian wang xin da lu de ji chu diao cha ju dian xing chen",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00871",
+   "text": "被遗忘的城市-塔布纳基亚地下壕",
+   "typeText": "被遗忘的城市塔布纳基亚地下壕",
+   "reading": "bei yi wang de cheng shi ta bu na ji ya di xia hao",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00872",
+   "text": "Heavensward-飞向苍穹-",
+   "typeText": "Heavensward飞向苍穹",
+   "reading": "Heavensward fei xiang cang qiong",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00873",
+   "text": "Revolutions-变革之时-",
+   "typeText": "Revolutions变革之时",
+   "reading": "Revolutions bian ge zhi shi",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00874",
+   "text": "贤王莫古尔·莫古十二世（脉动电音2）",
+   "typeText": "贤王莫古尔莫古十二世脉动电音2",
+   "reading": "xian wang mo gu er mo gu shi er shi mai dong dian yin 2",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00875",
+   "text": "远古的昊空～厄尔庇斯混曲～（继续前进）",
+   "typeText": "远古的昊空厄尔庇斯混曲继续前进",
+   "reading": "yuan gu de hao kong e er bi si hun qu ji xu qian jin",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00876",
+   "text": "天降之力～破坏一切的黑色巨人／混合版",
+   "typeText": "天降之力破坏一切的黑色巨人／混合版",
+   "reading": "tian jiang zhi li po huai yi qie de hei se ju ren ／ hun he ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00877",
+   "text": "Shadowbringers-暗影使者-",
+   "typeText": "Shadowbringers暗影使者",
+   "reading": "Shadowbringers an ying shi zhe",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00878",
+   "text": "满月之夜（AmandaAchen演唱版）",
+   "typeText": "满月之夜AmandaAchen演唱版",
+   "reading": "man yue zhi ye AmandaAchen yan chang ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "msc_00879",
+   "text": "生命的天平（AmandaAchen演唱版）",
+   "typeText": "生命的天平AmandaAchen演唱版",
+   "reading": "sheng ming de tian ping AmandaAchen yan chang ban",
+   "category": "music",
+   "difficulty": 3,
+   "pure": false
+  }
+ ]
+}

@@ -1,0 +1,7289 @@
+{
+ "category": "titles",
+ "label": "称号",
+ "count": 809,
+ "source": "thewakingsands/ffxiv-datamining-cn",
+ "entries": [
+  {
+   "id": "ttl_00001",
+   "text": "专家",
+   "typeText": "专家",
+   "reading": "zhuan jia",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00002",
+   "text": "主宰",
+   "typeText": "主宰",
+   "reading": "zhu zai",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00003",
+   "text": "传奇",
+   "typeText": "传奇",
+   "reading": "chuan qi",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00004",
+   "text": "元始",
+   "typeText": "元始",
+   "reading": "yuan shi",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00005",
+   "text": "先锋",
+   "typeText": "先锋",
+   "reading": "xian feng",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00006",
+   "text": "创世",
+   "typeText": "创世",
+   "reading": "chuang shi",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00007",
+   "text": "博学",
+   "typeText": "博学",
+   "reading": "bo xue",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00008",
+   "text": "博闻",
+   "typeText": "博闻",
+   "reading": "bo wen",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00009",
+   "text": "双牙",
+   "typeText": "双牙",
+   "reading": "shuang ya",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00010",
+   "text": "召星",
+   "typeText": "召星",
+   "reading": "zhao xing",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00011",
+   "text": "嗜血",
+   "typeText": "嗜血",
+   "reading": "shi xue",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00012",
+   "text": "天弓",
+   "typeText": "天弓",
+   "reading": "tian gong",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00013",
+   "text": "妖星",
+   "typeText": "妖星",
+   "reading": "yao xing",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00014",
+   "text": "媒人",
+   "typeText": "媒人",
+   "reading": "mei ren",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00015",
+   "text": "学识",
+   "typeText": "学识",
+   "reading": "xue shi",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00016",
+   "text": "完美",
+   "typeText": "完美",
+   "reading": "wan mei",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00017",
+   "text": "宣武",
+   "typeText": "宣武",
+   "reading": "xuan wu",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00018",
+   "text": "尚武",
+   "typeText": "尚武",
+   "reading": "shang wu",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00019",
+   "text": "巅峰",
+   "typeText": "巅峰",
+   "reading": "dian feng",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00020",
+   "text": "工艺",
+   "typeText": "工艺",
+   "reading": "gong yi",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00021",
+   "text": "平衡",
+   "typeText": "平衡",
+   "reading": "ping heng",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00022",
+   "text": "广识",
+   "typeText": "广识",
+   "reading": "guang shi",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00023",
+   "text": "强识",
+   "typeText": "强识",
+   "reading": "qiang shi",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00024",
+   "text": "影忍",
+   "typeText": "影忍",
+   "reading": "ying ren",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00025",
+   "text": "御魔",
+   "typeText": "御魔",
+   "reading": "yu mo",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00026",
+   "text": "忠诚",
+   "typeText": "忠诚",
+   "reading": "zhong cheng",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00027",
+   "text": "打无",
+   "typeText": "打无",
+   "reading": "da wu",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00028",
+   "text": "敌手",
+   "typeText": "敌手",
+   "reading": "di shou",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00029",
+   "text": "散兵",
+   "typeText": "散兵",
+   "reading": "san bing",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00030",
+   "text": "斩将",
+   "typeText": "斩将",
+   "reading": "zhan jiang",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00031",
+   "text": "斩铁",
+   "typeText": "斩铁",
+   "reading": "zhan tie",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00032",
+   "text": "星愿",
+   "typeText": "星愿",
+   "reading": "xing yuan",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00033",
+   "text": "暗灭",
+   "typeText": "暗灭",
+   "reading": "an mie",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00034",
+   "text": "曙光",
+   "typeText": "曙光",
+   "reading": "shu guang",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00035",
+   "text": "横刀",
+   "typeText": "横刀",
+   "reading": "heng dao",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00036",
+   "text": "正义",
+   "typeText": "正义",
+   "reading": "zheng yi",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00037",
+   "text": "永锋",
+   "typeText": "永锋",
+   "reading": "yong feng",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00038",
+   "text": "海王",
+   "typeText": "海王",
+   "reading": "hai wang",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00039",
+   "text": "溯源",
+   "typeText": "溯源",
+   "reading": "su yuan",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00040",
+   "text": "炼魔",
+   "typeText": "炼魔",
+   "reading": "lian mo",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00041",
+   "text": "烈羽",
+   "typeText": "烈羽",
+   "reading": "lie yu",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00042",
+   "text": "牙狼",
+   "typeText": "牙狼",
+   "reading": "ya lang",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00043",
+   "text": "狂野",
+   "typeText": "狂野",
+   "reading": "kuang ye",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00044",
+   "text": "矫捷",
+   "typeText": "矫捷",
+   "reading": "jiao jie",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00045",
+   "text": "破冰",
+   "typeText": "破冰",
+   "reading": "po bing",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00046",
+   "text": "破衣",
+   "typeText": "破衣",
+   "reading": "po yi",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00047",
+   "text": "究极",
+   "typeText": "究极",
+   "reading": "jiu ji",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00048",
+   "text": "空贼",
+   "typeText": "空贼",
+   "reading": "kong zei",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00049",
+   "text": "纯白",
+   "typeText": "纯白",
+   "reading": "chun bai",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00050",
+   "text": "绅士",
+   "typeText": "绅士",
+   "reading": "shen shi",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00051",
+   "text": "绝狼",
+   "typeText": "绝狼",
+   "reading": "jue lang",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00052",
+   "text": "绿瞳",
+   "typeText": "绿瞳",
+   "reading": "lv tong",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00053",
+   "text": "致命",
+   "typeText": "致命",
+   "reading": "zhi ming",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00054",
+   "text": "苍穹",
+   "typeText": "苍穹",
+   "reading": "cang qiong",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00055",
+   "text": "茶友",
+   "typeText": "茶友",
+   "reading": "cha you",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00056",
+   "text": "血战",
+   "typeText": "血战",
+   "reading": "xue zhan",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00057",
+   "text": "豹拳",
+   "typeText": "豹拳",
+   "reading": "bao quan",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00058",
+   "text": "辅弼",
+   "typeText": "辅弼",
+   "reading": "fu bi",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00059",
+   "text": "迅雷",
+   "typeText": "迅雷",
+   "reading": "xun lei",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00060",
+   "text": "钢翼",
+   "typeText": "钢翼",
+   "reading": "gang yi",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00061",
+   "text": "铁卫",
+   "typeText": "铁卫",
+   "reading": "tie wei",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00062",
+   "text": "银剑",
+   "typeText": "银剑",
+   "reading": "yin jian",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00063",
+   "text": "锐锋",
+   "typeText": "锐锋",
+   "reading": "rui feng",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00064",
+   "text": "雪恨",
+   "typeText": "雪恨",
+   "reading": "xue hen",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00065",
+   "text": "韬略",
+   "typeText": "韬略",
+   "reading": "tao lve",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00066",
+   "text": "丘比特",
+   "typeText": "丘比特",
+   "reading": "qiu bi te",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00067",
+   "text": "人偶师",
+   "typeText": "人偶师",
+   "reading": "ren ou shi",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00068",
+   "text": "仲裁者",
+   "typeText": "仲裁者",
+   "reading": "zhong cai zhe",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00069",
+   "text": "体育官",
+   "typeText": "体育官",
+   "reading": "ti yu guan",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00070",
+   "text": "光明威",
+   "typeText": "光明威",
+   "reading": "guang ming wei",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00071",
+   "text": "全知者",
+   "typeText": "全知者",
+   "reading": "quan zhi zhe",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00072",
+   "text": "决斗者",
+   "typeText": "决斗者",
+   "reading": "jue dou zhe",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00073",
+   "text": "助学者",
+   "typeText": "助学者",
+   "reading": "zhu xue zhe",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00074",
+   "text": "同盟者",
+   "typeText": "同盟者",
+   "reading": "tong meng zhe",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00075",
+   "text": "咨询师",
+   "typeText": "咨询师",
+   "reading": "zi xun shi",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00076",
+   "text": "守密人",
+   "typeText": "守密人",
+   "reading": "shou mi ren",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00077",
+   "text": "小小猪",
+   "typeText": "小小猪",
+   "reading": "xiao xiao zhu",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00078",
+   "text": "小淘气",
+   "typeText": "小淘气",
+   "reading": "xiao tao qi",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00079",
+   "text": "小蜜蜂",
+   "typeText": "小蜜蜂",
+   "reading": "xiao mi feng",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00080",
+   "text": "巴拉格",
+   "typeText": "巴拉格",
+   "reading": "ba la ge",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00081",
+   "text": "幸运儿",
+   "typeText": "幸运儿",
+   "reading": "xing yun er",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00082",
+   "text": "幸运星",
+   "typeText": "幸运星",
+   "reading": "xing yun xing",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00083",
+   "text": "征服者",
+   "typeText": "征服者",
+   "reading": "zheng fu zhe",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00084",
+   "text": "慈善家",
+   "typeText": "慈善家",
+   "reading": "ci shan jia",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00085",
+   "text": "拾穗机",
+   "typeText": "拾穗机",
+   "reading": "shi sui ji",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00086",
+   "text": "捕鲨人",
+   "typeText": "捕鲨人",
+   "reading": "bu sha ren",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00087",
+   "text": "探秘人",
+   "typeText": "探秘人",
+   "reading": "tan mi ren",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00088",
+   "text": "救生员",
+   "typeText": "救生员",
+   "reading": "jiu sheng yuan",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00089",
+   "text": "热心肠",
+   "typeText": "热心肠",
+   "reading": "re xin chang",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00090",
+   "text": "牧星人",
+   "typeText": "牧星人",
+   "reading": "mu xing ren",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00091",
+   "text": "猎蛋人",
+   "typeText": "猎蛋人",
+   "reading": "lie dan ren",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00092",
+   "text": "真英雄",
+   "typeText": "真英雄",
+   "reading": "zhen ying xiong",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00093",
+   "text": "糖豆王",
+   "typeText": "糖豆王",
+   "reading": "tang dou wang",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00094",
+   "text": "育鸟人",
+   "typeText": "育鸟人",
+   "reading": "yu niao ren",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00095",
+   "text": "胜负师",
+   "typeText": "胜负师",
+   "reading": "sheng fu shi",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00096",
+   "text": "英雄王",
+   "typeText": "英雄王",
+   "reading": "ying xiong wang",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00097",
+   "text": "草语者",
+   "typeText": "草语者",
+   "reading": "cao yu zhe",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00098",
+   "text": "邮递员",
+   "typeText": "邮递员",
+   "reading": "you di yuan",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00099",
+   "text": "铺轨人",
+   "typeText": "铺轨人",
+   "reading": "pu gui ren",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00100",
+   "text": "鱼太公",
+   "typeText": "鱼太公",
+   "reading": "yu tai gong",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00101",
+   "text": "麒麟儿",
+   "typeText": "麒麟儿",
+   "reading": "qi lin er",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00102",
+   "text": "龙语者",
+   "typeText": "龙语者",
+   "reading": "long yu zhe",
+   "category": "titles",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ttl_00103",
+   "text": "一壶千金",
+   "typeText": "一壶千金",
+   "reading": "yi hu qian jin",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00104",
+   "text": "一拳潮人",
+   "typeText": "一拳潮人",
+   "reading": "yi quan chao ren",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00105",
+   "text": "一掷千金",
+   "typeText": "一掷千金",
+   "reading": "yi zhi qian jin",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00106",
+   "text": "一流骑师",
+   "typeText": "一流骑师",
+   "reading": "yi liu qi shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00107",
+   "text": "一网无眠",
+   "typeText": "一网无眠",
+   "reading": "yi wang wu mian",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00108",
+   "text": "万卡归宗",
+   "typeText": "万卡归宗",
+   "reading": "wan ka gui zong",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00109",
+   "text": "万珠串联",
+   "typeText": "万珠串联",
+   "reading": "wan zhu chuan lian",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00110",
+   "text": "上级骑师",
+   "typeText": "上级骑师",
+   "reading": "shang ji qi shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00111",
+   "text": "不动如山",
+   "typeText": "不动如山",
+   "reading": "bu dong ru shan",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00112",
+   "text": "不可斩断",
+   "typeText": "不可斩断",
+   "reading": "bu ke zhan duan",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00113",
+   "text": "不断之钢",
+   "typeText": "不断之钢",
+   "reading": "bu duan zhi gang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00114",
+   "text": "不知疲倦",
+   "typeText": "不知疲倦",
+   "reading": "bu zhi pi juan",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00115",
+   "text": "不碎之岩",
+   "typeText": "不碎之岩",
+   "reading": "bu sui zhi yan",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00116",
+   "text": "世界壁垒",
+   "typeText": "世界壁垒",
+   "reading": "shi jie bi lei",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00117",
+   "text": "东天之星",
+   "typeText": "东天之星",
+   "reading": "dong tian zhi xing",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00118",
+   "text": "两歧之主",
+   "typeText": "两歧之主",
+   "reading": "liang qi zhi zhu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00119",
+   "text": "临危不惧",
+   "typeText": "临危不惧",
+   "reading": "lin wei bu ju",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00120",
+   "text": "乐善好施",
+   "typeText": "乐善好施",
+   "reading": "le shan hao shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00121",
+   "text": "九尾通天",
+   "typeText": "九尾通天",
+   "reading": "jiu wei tong tian",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00122",
+   "text": "二元剑手",
+   "typeText": "二元剑手",
+   "reading": "er yuan jian shou",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00123",
+   "text": "云上战歌",
+   "typeText": "云上战歌",
+   "reading": "yun shang zhan ge",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00124",
+   "text": "亲信战友",
+   "typeText": "亲信战友",
+   "reading": "qin xin zhan you",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00125",
+   "text": "人形凶兽",
+   "typeText": "人形凶兽",
+   "reading": "ren xing xiong shou",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00126",
+   "text": "人生如梦",
+   "typeText": "人生如梦",
+   "reading": "ren sheng ru meng",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00127",
+   "text": "人生导师",
+   "typeText": "人生导师",
+   "reading": "ren sheng dao shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00128",
+   "text": "仁心之富",
+   "typeText": "仁心之富",
+   "reading": "ren xin zhi fu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00129",
+   "text": "他乡之人",
+   "typeText": "他乡之人",
+   "reading": "ta xiang zhi ren",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00130",
+   "text": "仙风道骨",
+   "typeText": "仙风道骨",
+   "reading": "xian feng dao gu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00131",
+   "text": "伐遍世界",
+   "typeText": "伐遍世界",
+   "reading": "fa bian shi jie",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00132",
+   "text": "众星之刀",
+   "typeText": "众星之刀",
+   "reading": "zhong xing zhi dao",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00133",
+   "text": "众星之斧",
+   "typeText": "众星之斧",
+   "reading": "zhong xing zhi fu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00134",
+   "text": "众星之框",
+   "typeText": "众星之框",
+   "reading": "zhong xing zhi kuang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00135",
+   "text": "众星之炉",
+   "typeText": "众星之炉",
+   "reading": "zhong xing zhi lu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00136",
+   "text": "众星之锅",
+   "typeText": "众星之锅",
+   "reading": "zhong xing zhi guo",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00137",
+   "text": "众星之锤",
+   "typeText": "众星之锤",
+   "reading": "zhong xing zhi chui",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00138",
+   "text": "众星之镐",
+   "typeText": "众星之镐",
+   "reading": "zhong xing zhi gao",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00139",
+   "text": "众星宝石",
+   "typeText": "众星宝石",
+   "reading": "zhong xing bao shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00140",
+   "text": "众星灵药",
+   "typeText": "众星灵药",
+   "reading": "zhong xing ling yao",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00141",
+   "text": "众星纺车",
+   "typeText": "众星纺车",
+   "reading": "zhong xing fang che",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00142",
+   "text": "众星钓竿",
+   "typeText": "众星钓竿",
+   "reading": "zhong xing diao gan",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00143",
+   "text": "传承之学",
+   "typeText": "传承之学",
+   "reading": "chuan cheng zhi xue",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00144",
+   "text": "体育健将",
+   "typeText": "体育健将",
+   "reading": "ti yu jian jiang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00145",
+   "text": "信条不灭",
+   "typeText": "信条不灭",
+   "reading": "xin tiao bu mie",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00146",
+   "text": "信条长明",
+   "typeText": "信条长明",
+   "reading": "xin tiao zhang ming",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00147",
+   "text": "元灵实体",
+   "typeText": "元灵实体",
+   "reading": "yuan ling shi ti",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00148",
+   "text": "光明使者",
+   "typeText": "光明使者",
+   "reading": "guang ming shi zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00149",
+   "text": "光耀之人",
+   "typeText": "光耀之人",
+   "reading": "guang yao zhi ren",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00150",
+   "text": "光阴之翼",
+   "typeText": "光阴之翼",
+   "reading": "guang yin zhi yi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00151",
+   "text": "兔有其名",
+   "typeText": "兔有其名",
+   "reading": "tu you qi ming",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00152",
+   "text": "全心全意",
+   "typeText": "全心全意",
+   "reading": "quan xin quan yi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00153",
+   "text": "八爪旅人",
+   "typeText": "八爪旅人",
+   "reading": "ba zhao lv ren",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00154",
+   "text": "兴奋猎手",
+   "typeText": "兴奋猎手",
+   "reading": "xing fen lie shou",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00155",
+   "text": "兽王之王",
+   "typeText": "兽王之王",
+   "reading": "shou wang zhi wang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00156",
+   "text": "冠军之剑",
+   "typeText": "冠军之剑",
+   "reading": "guan jun zhi jian",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00157",
+   "text": "冷血之富",
+   "typeText": "冷血之富",
+   "reading": "leng xue zhi fu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00158",
+   "text": "准备起飞",
+   "typeText": "准备起飞",
+   "reading": "zhun bei qi fei",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00159",
+   "text": "凛冬之龙",
+   "typeText": "凛冬之龙",
+   "reading": "lin dong zhi long",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00160",
+   "text": "凶恶狼群",
+   "typeText": "凶恶狼群",
+   "reading": "xiong e lang qun",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00161",
+   "text": "凶猛异常",
+   "typeText": "凶猛异常",
+   "reading": "xiong meng yi chang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00162",
+   "text": "分解技工",
+   "typeText": "分解技工",
+   "reading": "fen jie ji gong",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00163",
+   "text": "创造之手",
+   "typeText": "创造之手",
+   "reading": "chuang zao zhi shou",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00164",
+   "text": "利斧战士",
+   "typeText": "利斧战士",
+   "reading": "li fu zhan shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00165",
+   "text": "制胜关键",
+   "typeText": "制胜关键",
+   "reading": "zhi sheng guan jian",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00166",
+   "text": "制革专家",
+   "typeText": "制革专家",
+   "reading": "zhi ge zhuan jia",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00167",
+   "text": "制革金刀",
+   "typeText": "制革金刀",
+   "reading": "zhi ge jin dao",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00168",
+   "text": "刺激猎手",
+   "typeText": "刺激猎手",
+   "reading": "ci ji lie shou",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00169",
+   "text": "刻木专家",
+   "typeText": "刻木专家",
+   "reading": "ke mu zhuan jia",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00170",
+   "text": "刻木金锯",
+   "typeText": "刻木金锯",
+   "reading": "ke mu jin ju",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00171",
+   "text": "力之守卫",
+   "typeText": "力之守卫",
+   "reading": "li zhi shou wei",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00172",
+   "text": "化身为影",
+   "typeText": "化身为影",
+   "reading": "hua shen wei ying",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00173",
+   "text": "南方之剑",
+   "typeText": "南方之剑",
+   "reading": "nan fang zhi jian",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00174",
+   "text": "双星际会",
+   "typeText": "双星际会",
+   "reading": "shuang xing ji hui",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00175",
+   "text": "史诗英雄",
+   "typeText": "史诗英雄",
+   "reading": "shi shi ying xiong",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00176",
+   "text": "合金无数",
+   "typeText": "合金无数",
+   "reading": "he jin wu shu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00177",
+   "text": "同道中人",
+   "typeText": "同道中人",
+   "reading": "tong dao zhong ren",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00178",
+   "text": "咆哮之火",
+   "typeText": "咆哮之火",
+   "reading": "pao xiao zhi huo",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00179",
+   "text": "和平使者",
+   "typeText": "和平使者",
+   "reading": "he ping shi zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00180",
+   "text": "嗜血饿狼",
+   "typeText": "嗜血饿狼",
+   "reading": "shi xue e lang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00181",
+   "text": "园艺专家",
+   "typeText": "园艺专家",
+   "reading": "yuan yi zhuan jia",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00182",
+   "text": "固定遇敌",
+   "typeText": "固定遇敌",
+   "reading": "gu ding yu di",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00183",
+   "text": "圆桌假面",
+   "typeText": "圆桌假面",
+   "reading": "yuan zhuo jia mian",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00184",
+   "text": "圣供材商",
+   "typeText": "圣供材商",
+   "reading": "sheng gong cai shang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00185",
+   "text": "地灵克星",
+   "typeText": "地灵克星",
+   "reading": "di ling ke xing",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00186",
+   "text": "地牢围攻",
+   "typeText": "地牢围攻",
+   "reading": "di lao wei gong",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00187",
+   "text": "地狱舞者",
+   "typeText": "地狱舞者",
+   "reading": "di yu wu zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00188",
+   "text": "坚守誓言",
+   "typeText": "坚守誓言",
+   "reading": "jian shou shi yan",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00189",
+   "text": "坚定不移",
+   "typeText": "坚定不移",
+   "reading": "jian ding bu yi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00190",
+   "text": "坚盾骑士",
+   "typeText": "坚盾骑士",
+   "reading": "jian dun qi shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00191",
+   "text": "塔可英雄",
+   "typeText": "塔可英雄",
+   "reading": "ta ke ying xiong",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00192",
+   "text": "壮志凌云",
+   "typeText": "壮志凌云",
+   "reading": "zhuang zhi ling yun",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00193",
+   "text": "复教之拳",
+   "typeText": "复教之拳",
+   "reading": "fu jiao zhi quan",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00194",
+   "text": "大变活人",
+   "typeText": "大变活人",
+   "reading": "da bian huo ren",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00195",
+   "text": "大地之巅",
+   "typeText": "大地之巅",
+   "reading": "da di zhi dian",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00196",
+   "text": "大地之神",
+   "typeText": "大地之神",
+   "reading": "da di zhi shen",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00197",
+   "text": "大地之魂",
+   "typeText": "大地之魂",
+   "reading": "da di zhi hun",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00198",
+   "text": "大慈大悲",
+   "typeText": "大慈大悲",
+   "reading": "da ci da bei",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00199",
+   "text": "天命所归",
+   "typeText": "天命所归",
+   "reading": "tian ming suo gui",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00200",
+   "text": "天王尽灭",
+   "typeText": "天王尽灭",
+   "reading": "tian wang jin mie",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00201",
+   "text": "天神下凡",
+   "typeText": "天神下凡",
+   "reading": "tian shen xia fan",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00202",
+   "text": "天穹之刀",
+   "typeText": "天穹之刀",
+   "reading": "tian qiong zhi dao",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00203",
+   "text": "天穹之斧",
+   "typeText": "天穹之斧",
+   "reading": "tian qiong zhi fu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00204",
+   "text": "天穹之框",
+   "typeText": "天穹之框",
+   "reading": "tian qiong zhi kuang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00205",
+   "text": "天穹之炉",
+   "typeText": "天穹之炉",
+   "reading": "tian qiong zhi lu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00206",
+   "text": "天穹之锅",
+   "typeText": "天穹之锅",
+   "reading": "tian qiong zhi guo",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00207",
+   "text": "天穹之锤",
+   "typeText": "天穹之锤",
+   "reading": "tian qiong zhi chui",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00208",
+   "text": "天穹之镐",
+   "typeText": "天穹之镐",
+   "reading": "tian qiong zhi gao",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00209",
+   "text": "天穹圣人",
+   "typeText": "天穹圣人",
+   "reading": "tian qiong sheng ren",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00210",
+   "text": "天穹圣徒",
+   "typeText": "天穹圣徒",
+   "reading": "tian qiong sheng tu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00211",
+   "text": "天穹宝石",
+   "typeText": "天穹宝石",
+   "reading": "tian qiong bao shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00212",
+   "text": "天穹灵药",
+   "typeText": "天穹灵药",
+   "reading": "tian qiong ling yao",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00213",
+   "text": "天穹纺车",
+   "typeText": "天穹纺车",
+   "reading": "tian qiong fang che",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00214",
+   "text": "天穹钓竿",
+   "typeText": "天穹钓竿",
+   "reading": "tian qiong diao gan",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00215",
+   "text": "天衣无缝",
+   "typeText": "天衣无缝",
+   "reading": "tian yi wu feng",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00216",
+   "text": "天赋卓绝",
+   "typeText": "天赋卓绝",
+   "reading": "tian fu zhuo jue",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00217",
+   "text": "天道酬勤",
+   "typeText": "天道酬勤",
+   "reading": "tian dao chou qin",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00218",
+   "text": "天际行者",
+   "typeText": "天际行者",
+   "reading": "tian ji xing zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00219",
+   "text": "太阳之翼",
+   "typeText": "太阳之翼",
+   "reading": "tai yang zhi yi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00220",
+   "text": "太阳舞者",
+   "typeText": "太阳舞者",
+   "reading": "tai yang wu zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00221",
+   "text": "奇光异彩",
+   "typeText": "奇光异彩",
+   "reading": "qi guang yi cai",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00222",
+   "text": "女王之刃",
+   "typeText": "女王之刃",
+   "reading": "nv wang zhi ren",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00223",
+   "text": "女王之影",
+   "typeText": "女王之影",
+   "reading": "nv wang zhi ying",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00224",
+   "text": "女王钦点",
+   "typeText": "女王钦点",
+   "reading": "nv wang qin dian",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00225",
+   "text": "妖精之友",
+   "typeText": "妖精之友",
+   "reading": "yao jing zhi you",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00226",
+   "text": "威镇百兽",
+   "typeText": "威镇百兽",
+   "reading": "wei zhen bai shou",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00227",
+   "text": "威震南洋",
+   "typeText": "威震南洋",
+   "reading": "wei zhen nan yang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00228",
+   "text": "孤傲狼王",
+   "typeText": "孤傲狼王",
+   "reading": "gu ao lang wang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00229",
+   "text": "孤胆英雄",
+   "typeText": "孤胆英雄",
+   "reading": "gu dan ying xiong",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00230",
+   "text": "学徒骑师",
+   "typeText": "学徒骑师",
+   "reading": "xue tu qi shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00231",
+   "text": "宇航奇才",
+   "typeText": "宇航奇才",
+   "reading": "yu hang qi cai",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00232",
+   "text": "守护天使",
+   "typeText": "守护天使",
+   "reading": "shou hu tian shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00233",
+   "text": "守约之刃",
+   "typeText": "守约之刃",
+   "reading": "shou yue zhi ren",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00234",
+   "text": "守誓之剑",
+   "typeText": "守誓之剑",
+   "reading": "shou shi zhi jian",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00235",
+   "text": "完美构图",
+   "typeText": "完美构图",
+   "reading": "wan mei gou tu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00236",
+   "text": "宝境之主",
+   "typeText": "宝境之主",
+   "reading": "bao jing zhi zhu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00237",
+   "text": "宝境居民",
+   "typeText": "宝境居民",
+   "reading": "bao jing ju min",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00238",
+   "text": "宝物猎人",
+   "typeText": "宝物猎人",
+   "reading": "bao wu lie ren",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00239",
+   "text": "宝藏无数",
+   "typeText": "宝藏无数",
+   "reading": "bao zang wu shu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00240",
+   "text": "宠物大师",
+   "typeText": "宠物大师",
+   "reading": "chong wu da shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00241",
+   "text": "密林吼狼",
+   "typeText": "密林吼狼",
+   "reading": "mi lin hou lang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00242",
+   "text": "密林啸狼",
+   "typeText": "密林啸狼",
+   "reading": "mi lin xiao lang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00243",
+   "text": "密林巡狼",
+   "typeText": "密林巡狼",
+   "reading": "mi lin xun lang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00244",
+   "text": "密林幼狼",
+   "typeText": "密林幼狼",
+   "reading": "mi lin you lang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00245",
+   "text": "密林猎狼",
+   "typeText": "密林猎狼",
+   "reading": "mi lin lie lang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00246",
+   "text": "密林追狼",
+   "typeText": "密林追狼",
+   "reading": "mi lin zhui lang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00247",
+   "text": "寻物高手",
+   "typeText": "寻物高手",
+   "reading": "xun wu gao shou",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00248",
+   "text": "寻踪觅影",
+   "typeText": "寻踪觅影",
+   "reading": "xun zong mi ying",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00249",
+   "text": "尼姆海兵",
+   "typeText": "尼姆海兵",
+   "reading": "ni mu hai bing",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00250",
+   "text": "山中头陀",
+   "typeText": "山中头陀",
+   "reading": "shan zhong tou tuo",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00251",
+   "text": "工艺之巅",
+   "typeText": "工艺之巅",
+   "reading": "gong yi zhi dian",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00252",
+   "text": "工艺无数",
+   "typeText": "工艺无数",
+   "reading": "gong yi wu shu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00253",
+   "text": "巧手之神",
+   "typeText": "巧手之神",
+   "reading": "qiao shou zhi shen",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00254",
+   "text": "巧手之魂",
+   "typeText": "巧手之魂",
+   "reading": "qiao shou zhi hun",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00255",
+   "text": "巨蛋猎人",
+   "typeText": "巨蛋猎人",
+   "reading": "ju dan lie ren",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00256",
+   "text": "希望使徒",
+   "typeText": "希望使徒",
+   "reading": "xi wang shi tu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00257",
+   "text": "希望重现",
+   "typeText": "希望重现",
+   "reading": "xi wang chong xian",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00258",
+   "text": "帝国隐患",
+   "typeText": "帝国隐患",
+   "reading": "di guo yin huan",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00259",
+   "text": "幻影救赎",
+   "typeText": "幻影救赎",
+   "reading": "huan ying jiu shu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00260",
+   "text": "开天辟地",
+   "typeText": "开天辟地",
+   "reading": "kai tian pi di",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00261",
+   "text": "异乡武士",
+   "typeText": "异乡武士",
+   "reading": "yi xiang wu shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00262",
+   "text": "异人旅者",
+   "typeText": "异人旅者",
+   "reading": "yi ren lv zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00263",
+   "text": "异水之主",
+   "typeText": "异水之主",
+   "reading": "yi shui zhi zhu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00264",
+   "text": "归来之人",
+   "typeText": "归来之人",
+   "reading": "gui lai zhi ren",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00265",
+   "text": "心动之舞",
+   "typeText": "心动之舞",
+   "reading": "xin dong zhi wu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00266",
+   "text": "心狠手辣",
+   "typeText": "心狠手辣",
+   "reading": "xin hen shou la",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00267",
+   "text": "忠诚不灭",
+   "typeText": "忠诚不灭",
+   "reading": "zhong cheng bu mie",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00268",
+   "text": "忠诚长明",
+   "typeText": "忠诚长明",
+   "reading": "zhong cheng zhang ming",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00269",
+   "text": "怪物猎人",
+   "typeText": "怪物猎人",
+   "reading": "guai wu lie ren",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00270",
+   "text": "惩奸除恶",
+   "typeText": "惩奸除恶",
+   "reading": "cheng jian chu e",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00271",
+   "text": "战争之神",
+   "typeText": "战争之神",
+   "reading": "zhan zheng zhi shen",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00272",
+   "text": "战争之魂",
+   "typeText": "战争之魂",
+   "reading": "zhan zheng zhi hun",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00273",
+   "text": "战场野狼",
+   "typeText": "战场野狼",
+   "reading": "zhan chang ye lang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00274",
+   "text": "战斗之巅",
+   "typeText": "战斗之巅",
+   "reading": "zhan dou zhi dian",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00275",
+   "text": "战车技师",
+   "typeText": "战车技师",
+   "reading": "zhan che ji shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00276",
+   "text": "手足情深",
+   "typeText": "手足情深",
+   "reading": "shou zu qing shen",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00277",
+   "text": "抗争之红",
+   "typeText": "抗争之红",
+   "reading": "kang zheng zhi hong",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00278",
+   "text": "护卫队员",
+   "typeText": "护卫队员",
+   "reading": "hu wei dui yuan",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00279",
+   "text": "拂晓血盟",
+   "typeText": "拂晓血盟",
+   "reading": "fu xiao xue meng",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00280",
+   "text": "挖遍世界",
+   "typeText": "挖遍世界",
+   "reading": "wa bian shi jie",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00281",
+   "text": "挥竿降龙",
+   "typeText": "挥竿降龙",
+   "reading": "hui gan xiang long",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00282",
+   "text": "捕鱼专家",
+   "typeText": "捕鱼专家",
+   "reading": "bu yu zhuan jia",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00283",
+   "text": "撰写命运",
+   "typeText": "撰写命运",
+   "reading": "zhuan xie ming yun",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00284",
+   "text": "攻舰精锐",
+   "typeText": "攻舰精锐",
+   "reading": "gong jian jing rui",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00285",
+   "text": "文学重炮",
+   "typeText": "文学重炮",
+   "reading": "wen xue zhong pao",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00286",
+   "text": "斧木生花",
+   "typeText": "斧木生花",
+   "reading": "fu mu sheng hua",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00287",
+   "text": "断剑之人",
+   "typeText": "断剑之人",
+   "reading": "duan jian zhi ren",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00288",
+   "text": "新的曦光",
+   "typeText": "新的曦光",
+   "reading": "xin de xi guang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00289",
+   "text": "方城之主",
+   "typeText": "方城之主",
+   "reading": "fang cheng zhi zhu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00290",
+   "text": "方城之将",
+   "typeText": "方城之将",
+   "reading": "fang cheng zhi jiang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00291",
+   "text": "无信仰者",
+   "typeText": "无信仰者",
+   "reading": "wu xin yang zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00292",
+   "text": "无光之人",
+   "typeText": "无光之人",
+   "reading": "wu guang zhi ren",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00293",
+   "text": "无双之士",
+   "typeText": "无双之士",
+   "reading": "wu shuang zhi shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00294",
+   "text": "无尽冲突",
+   "typeText": "无尽冲突",
+   "reading": "wu jin chong tu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00295",
+   "text": "无尽狩猎",
+   "typeText": "无尽狩猎",
+   "reading": "wu jin shou lie",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00296",
+   "text": "无所不能",
+   "typeText": "无所不能",
+   "reading": "wu suo bu neng",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00297",
+   "text": "无拘之青",
+   "typeText": "无拘之青",
+   "reading": "wu ju zhi qing",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00298",
+   "text": "无拘无束",
+   "typeText": "无拘无束",
+   "reading": "wu ju wu shu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00299",
+   "text": "无神论者",
+   "typeText": "无神论者",
+   "reading": "wu shen lun zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00300",
+   "text": "日月舞者",
+   "typeText": "日月舞者",
+   "reading": "ri yue wu zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00301",
+   "text": "时尚先锋",
+   "typeText": "时尚先锋",
+   "reading": "shi shang xian feng",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00302",
+   "text": "昏黑骑士",
+   "typeText": "昏黑骑士",
+   "reading": "hun hei qi shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00303",
+   "text": "星天观测",
+   "typeText": "星天观测",
+   "reading": "xing tian guan ce",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00304",
+   "text": "星际大使",
+   "typeText": "星际大使",
+   "reading": "xing ji da shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00305",
+   "text": "星龙勇士",
+   "typeText": "星龙勇士",
+   "reading": "xing long yong shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00306",
+   "text": "智绝两界",
+   "typeText": "智绝两界",
+   "reading": "zhi jue liang jie",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00307",
+   "text": "暗血沸腾",
+   "typeText": "暗血沸腾",
+   "reading": "an xue fei teng",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00308",
+   "text": "曼德维尔",
+   "typeText": "曼德维尔",
+   "reading": "man de wei er",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00309",
+   "text": "替天行道",
+   "typeText": "替天行道",
+   "reading": "ti tian xing dao",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00310",
+   "text": "最初之影",
+   "typeText": "最初之影",
+   "reading": "zui chu zhi ying",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00311",
+   "text": "最初祝福",
+   "typeText": "最初祝福",
+   "reading": "zui chu zhu fu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00312",
+   "text": "最终见证",
+   "typeText": "最终见证",
+   "reading": "zui zhong jian zheng",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00313",
+   "text": "最终鲩想",
+   "typeText": "最终鲩想",
+   "reading": "zui zhong huan xiang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00314",
+   "text": "月健天恩",
+   "typeText": "月健天恩",
+   "reading": "yue jian tian en",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00315",
+   "text": "本我觉醒",
+   "typeText": "本我觉醒",
+   "reading": "ben wo jue xing",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00316",
+   "text": "杀戮凶狼",
+   "typeText": "杀戮凶狼",
+   "reading": "sha lu xiong lang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00317",
+   "text": "极度惊奇",
+   "typeText": "极度惊奇",
+   "reading": "ji du jing qi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00318",
+   "text": "极限狩猎",
+   "typeText": "极限狩猎",
+   "reading": "ji xian shou lie",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00319",
+   "text": "森罗万象",
+   "typeText": "森罗万象",
+   "reading": "sen luo wan xiang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00320",
+   "text": "死灵术士",
+   "typeText": "死灵术士",
+   "reading": "si ling shu shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00321",
+   "text": "残暴狼群",
+   "typeText": "残暴狼群",
+   "reading": "can bao lang qun",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00322",
+   "text": "毫发无伤",
+   "typeText": "毫发无伤",
+   "reading": "hao fa wu shang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00323",
+   "text": "水城居民",
+   "typeText": "水城居民",
+   "reading": "shui cheng ju min",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00324",
+   "text": "水母狂魔",
+   "typeText": "水母狂魔",
+   "reading": "shui mu kuang mo",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00325",
+   "text": "永恒之王",
+   "typeText": "永恒之王",
+   "reading": "yong heng zhi wang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00326",
+   "text": "永无止境",
+   "typeText": "永无止境",
+   "reading": "yong wu zhi jing",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00327",
+   "text": "沧海拾贝",
+   "typeText": "沧海拾贝",
+   "reading": "cang hai shi bei",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00328",
+   "text": "河马英雄",
+   "typeText": "河马英雄",
+   "reading": "he ma ying xiong",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00329",
+   "text": "洁白无瑕",
+   "typeText": "洁白无瑕",
+   "reading": "jie bai wu xia",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00330",
+   "text": "流浪保镖",
+   "typeText": "流浪保镖",
+   "reading": "liu lang bao biao",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00331",
+   "text": "浪涛行者",
+   "typeText": "浪涛行者",
+   "reading": "lang tao xing zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00332",
+   "text": "海岛商人",
+   "typeText": "海岛商人",
+   "reading": "hai dao shang ren",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00333",
+   "text": "海川鱼神",
+   "typeText": "海川鱼神",
+   "reading": "hai chuan yu shen",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00334",
+   "text": "海盗之恨",
+   "typeText": "海盗之恨",
+   "reading": "hai dao zhi hen",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00335",
+   "text": "海龙骑士",
+   "typeText": "海龙骑士",
+   "reading": "hai long qi shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00336",
+   "text": "深奥祥辉",
+   "typeText": "深奥祥辉",
+   "reading": "shen ao xiang hui",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00337",
+   "text": "深层居民",
+   "typeText": "深层居民",
+   "reading": "shen ceng ju min",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00338",
+   "text": "深暗之影",
+   "typeText": "深暗之影",
+   "reading": "shen an zhi ying",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00339",
+   "text": "深洋之劫",
+   "typeText": "深洋之劫",
+   "reading": "shen yang zhi jie",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00340",
+   "text": "深渊之暗",
+   "typeText": "深渊之暗",
+   "reading": "shen yuan zhi an",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00341",
+   "text": "渔汛无数",
+   "typeText": "渔汛无数",
+   "reading": "yu xun wu shu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00342",
+   "text": "游钓大洋",
+   "typeText": "游钓大洋",
+   "reading": "you diao da yang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00343",
+   "text": "潜踪隐迹",
+   "typeText": "潜踪隐迹",
+   "reading": "qian zong yin ji",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00344",
+   "text": "激昂冲突",
+   "typeText": "激昂冲突",
+   "reading": "ji ang chong tu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00345",
+   "text": "灰党兄弟",
+   "typeText": "灰党兄弟",
+   "reading": "hui dang xiong di",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00346",
+   "text": "灵灾学家",
+   "typeText": "灵灾学家",
+   "reading": "ling zai xue jia",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00347",
+   "text": "灵蛇之光",
+   "typeText": "灵蛇之光",
+   "reading": "ling she zhi guang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00348",
+   "text": "灵魂主祭",
+   "typeText": "灵魂主祭",
+   "reading": "ling hun zhu ji",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00349",
+   "text": "炼金专家",
+   "typeText": "炼金专家",
+   "reading": "lian jin zhuan jia",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00350",
+   "text": "炼金金瓶",
+   "typeText": "炼金金瓶",
+   "reading": "lian jin jin ping",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00351",
+   "text": "烈火金刚",
+   "typeText": "烈火金刚",
+   "reading": "lie huo jin gang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00352",
+   "text": "烟波钓徒",
+   "typeText": "烟波钓徒",
+   "reading": "yan bo diao tu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00353",
+   "text": "烹调专家",
+   "typeText": "烹调专家",
+   "reading": "peng tiao zhuan jia",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00354",
+   "text": "烹饪金勺",
+   "typeText": "烹饪金勺",
+   "reading": "peng ren jin shao",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00355",
+   "text": "爱之使者",
+   "typeText": "爱之使者",
+   "reading": "ai zhi shi zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00356",
+   "text": "物质变换",
+   "typeText": "物质变换",
+   "reading": "wu zhi bian huan",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00357",
+   "text": "特别顾问",
+   "typeText": "特别顾问",
+   "reading": "te bie gu wen",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00358",
+   "text": "狂乱前奏",
+   "typeText": "狂乱前奏",
+   "reading": "kuang luan qian zou",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00359",
+   "text": "狩猎大师",
+   "typeText": "狩猎大师",
+   "reading": "shou lie da shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00360",
+   "text": "狩猎新星",
+   "typeText": "狩猎新星",
+   "reading": "shou lie xin xing",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00361",
+   "text": "狩猎行家",
+   "typeText": "狩猎行家",
+   "reading": "shou lie hang jia",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00362",
+   "text": "狩猎队长",
+   "typeText": "狩猎队长",
+   "reading": "shou lie dui zhang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00363",
+   "text": "独角之手",
+   "typeText": "独角之手",
+   "reading": "du jiao zhi shou",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00364",
+   "text": "狼吞虎噬",
+   "typeText": "狼吞虎噬",
+   "reading": "lang tun hu shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00365",
+   "text": "狼子野心",
+   "typeText": "狼子野心",
+   "reading": "lang zi ye xin",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00366",
+   "text": "狼群之王",
+   "typeText": "狼群之王",
+   "reading": "lang qun zhi wang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00367",
+   "text": "王座将倾",
+   "typeText": "王座将倾",
+   "reading": "wang zuo jiang qing",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00368",
+   "text": "王牌之兵",
+   "typeText": "王牌之兵",
+   "reading": "wang pai zhi bing",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00369",
+   "text": "王者之剑",
+   "typeText": "王者之剑",
+   "reading": "wang zhe zhi jian",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00370",
+   "text": "瑕不掩瑜",
+   "typeText": "瑕不掩瑜",
+   "reading": "xia bu yan yu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00371",
+   "text": "甜美正义",
+   "typeText": "甜美正义",
+   "reading": "tian mei zheng yi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00372",
+   "text": "生意伙伴",
+   "typeText": "生意伙伴",
+   "reading": "sheng yi huo ban",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00373",
+   "text": "白色孤影",
+   "typeText": "白色孤影",
+   "reading": "bai se gu ying",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00374",
+   "text": "白金凶狼",
+   "typeText": "白金凶狼",
+   "reading": "bai jin xiong lang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00375",
+   "text": "白金狼群",
+   "typeText": "白金狼群",
+   "reading": "bai jin lang qun",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00376",
+   "text": "白银狼群",
+   "typeText": "白银狼群",
+   "reading": "bai yin lang qun",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00377",
+   "text": "白银野狼",
+   "typeText": "白银野狼",
+   "reading": "bai yin ye lang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00378",
+   "text": "百宝连城",
+   "typeText": "百宝连城",
+   "reading": "bai bao lian cheng",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00379",
+   "text": "百战历练",
+   "typeText": "百战历练",
+   "reading": "bai zhan li lian",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00380",
+   "text": "百战锻铸",
+   "typeText": "百战锻铸",
+   "reading": "bai zhan duan zhu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00381",
+   "text": "皇家总管",
+   "typeText": "皇家总管",
+   "reading": "huang jia zong guan",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00382",
+   "text": "眺望星空",
+   "typeText": "眺望星空",
+   "reading": "tiao wang xing kong",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00383",
+   "text": "知见命运",
+   "typeText": "知见命运",
+   "reading": "zhi jian ming yun",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00384",
+   "text": "矫若鱿龙",
+   "typeText": "矫若鱿龙",
+   "reading": "jiao ruo you long",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00385",
+   "text": "矿团勇士",
+   "typeText": "矿团勇士",
+   "reading": "kuang tuan yong shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00386",
+   "text": "破刃之剑",
+   "typeText": "破刃之剑",
+   "reading": "po ren zhi jian",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00387",
+   "text": "破梦而出",
+   "typeText": "破梦而出",
+   "reading": "po meng er chu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00388",
+   "text": "破顶而入",
+   "typeText": "破顶而入",
+   "reading": "po ding er ru",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00389",
+   "text": "碧海吼狼",
+   "typeText": "碧海吼狼",
+   "reading": "bi hai hou lang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00390",
+   "text": "碧海啸狼",
+   "typeText": "碧海啸狼",
+   "reading": "bi hai xiao lang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00391",
+   "text": "碧海巡狼",
+   "typeText": "碧海巡狼",
+   "reading": "bi hai xun lang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00392",
+   "text": "碧海幼狼",
+   "typeText": "碧海幼狼",
+   "reading": "bi hai you lang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00393",
+   "text": "碧海猎狼",
+   "typeText": "碧海猎狼",
+   "reading": "bi hai lie lang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00394",
+   "text": "碧海追狼",
+   "typeText": "碧海追狼",
+   "reading": "bi hai zhui lang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00395",
+   "text": "碧蓝之甲",
+   "typeText": "碧蓝之甲",
+   "reading": "bi lan zhi jia",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00396",
+   "text": "神殿辅祭",
+   "typeText": "神殿辅祭",
+   "reading": "shen dian fu ji",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00397",
+   "text": "神话破灭",
+   "typeText": "神话破灭",
+   "reading": "shen hua po mie",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00398",
+   "text": "秘宝猎人",
+   "typeText": "秘宝猎人",
+   "reading": "mi bao lie ren",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00399",
+   "text": "秘银之心",
+   "typeText": "秘银之心",
+   "reading": "mi yin zhi xin",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00400",
+   "text": "究极段位",
+   "typeText": "究极段位",
+   "reading": "jiu ji duan wei",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00401",
+   "text": "穿云乐歌",
+   "typeText": "穿云乐歌",
+   "reading": "chuan yun yue ge",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00402",
+   "text": "突破天际",
+   "typeText": "突破天际",
+   "reading": "tu po tian ji",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00403",
+   "text": "精英杀手",
+   "typeText": "精英杀手",
+   "reading": "jing ying sha shou",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00404",
+   "text": "红叶之诗",
+   "typeText": "红叶之诗",
+   "reading": "hong ye zhi shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00405",
+   "text": "红的朋友",
+   "typeText": "红的朋友",
+   "reading": "hong de peng you",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00406",
+   "text": "红血之龙",
+   "typeText": "红血之龙",
+   "reading": "hong xue zhi long",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00407",
+   "text": "纯爱之斧",
+   "typeText": "纯爱之斧",
+   "reading": "chun ai zhi fu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00408",
+   "text": "组织核心",
+   "typeText": "组织核心",
+   "reading": "zu zhi he xin",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00409",
+   "text": "终途行者",
+   "typeText": "终途行者",
+   "reading": "zhong tu xing zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00410",
+   "text": "维和之人",
+   "typeText": "维和之人",
+   "reading": "wei he zhi ren",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00411",
+   "text": "缺觉学者",
+   "typeText": "缺觉学者",
+   "reading": "que jue xue zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00412",
+   "text": "美梦使者",
+   "typeText": "美梦使者",
+   "reading": "mei meng shi zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00413",
+   "text": "能言善道",
+   "typeText": "能言善道",
+   "reading": "neng yan shan dao",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00414",
+   "text": "脉轮全开",
+   "typeText": "脉轮全开",
+   "reading": "mai lun quan kai",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00415",
+   "text": "脱罪之人",
+   "typeText": "脱罪之人",
+   "reading": "tuo zui zhi ren",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00416",
+   "text": "自然之力",
+   "typeText": "自然之力",
+   "reading": "zi ran zhi li",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00417",
+   "text": "自由新脑",
+   "typeText": "自由新脑",
+   "reading": "zi you xin nao",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00418",
+   "text": "至远呼唤",
+   "typeText": "至远呼唤",
+   "reading": "zhi yuan hu huan",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00419",
+   "text": "良师益友",
+   "typeText": "良师益友",
+   "reading": "liang shi yi you",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00420",
+   "text": "苍天龙骑",
+   "typeText": "苍天龙骑",
+   "reading": "cang tian long qi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00421",
+   "text": "英雄挽歌",
+   "typeText": "英雄挽歌",
+   "reading": "ying xiong wan ge",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00422",
+   "text": "草原勇士",
+   "typeText": "草原勇士",
+   "reading": "cao yuan yong shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00423",
+   "text": "荣誉勋章",
+   "typeText": "荣誉勋章",
+   "reading": "rong yu xun zhang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00424",
+   "text": "荣誉教员",
+   "typeText": "荣誉教员",
+   "reading": "rong yu jiao yuan",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00425",
+   "text": "荣誉骑士",
+   "typeText": "荣誉骑士",
+   "reading": "rong yu qi shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00426",
+   "text": "莫古之友",
+   "typeText": "莫古之友",
+   "reading": "mo gu zhi you",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00427",
+   "text": "萌宠之王",
+   "typeText": "萌宠之王",
+   "reading": "meng chong zhi wang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00428",
+   "text": "萌宠王子",
+   "typeText": "萌宠王子",
+   "reading": "meng chong wang zi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00429",
+   "text": "虔诚信徒",
+   "typeText": "虔诚信徒",
+   "reading": "qian cheng xin tu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00430",
+   "text": "虚无之约",
+   "typeText": "虚无之约",
+   "reading": "xu wu zhi yue",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00431",
+   "text": "虾捕虾捕",
+   "typeText": "虾捕虾捕",
+   "reading": "xia bu xia bu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00432",
+   "text": "蛭子猎手",
+   "typeText": "蛭子猎手",
+   "reading": "zhi zi lie shou",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00433",
+   "text": "血红战士",
+   "typeText": "血红战士",
+   "reading": "xue hong zhan shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00434",
+   "text": "裁衣专家",
+   "typeText": "裁衣专家",
+   "reading": "cai yi zhuan jia",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00435",
+   "text": "裁衣金针",
+   "typeText": "裁衣金针",
+   "reading": "cai yi jin zhen",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00436",
+   "text": "西方之忍",
+   "typeText": "西方之忍",
+   "reading": "xi fang zhi ren",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00437",
+   "text": "见机行事",
+   "typeText": "见机行事",
+   "reading": "jian ji xing shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00438",
+   "text": "角尊之白",
+   "typeText": "角尊之白",
+   "reading": "jiao zun zhi bai",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00439",
+   "text": "解放之人",
+   "typeText": "解放之人",
+   "reading": "jie fang zhi ren",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00440",
+   "text": "誓言不灭",
+   "typeText": "誓言不灭",
+   "reading": "shi yan bu mie",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00441",
+   "text": "誓言长明",
+   "typeText": "誓言长明",
+   "reading": "shi yan zhang ming",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00442",
+   "text": "训鸟专家",
+   "typeText": "训鸟专家",
+   "reading": "xun niao zhuan jia",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00443",
+   "text": "诺布家人",
+   "typeText": "诺布家人",
+   "reading": "nuo bu jia ren",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00444",
+   "text": "调和无数",
+   "typeText": "调和无数",
+   "reading": "tiao he wu shu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00445",
+   "text": "财运亨通",
+   "typeText": "财运亨通",
+   "reading": "cai yun heng tong",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00446",
+   "text": "贤高识远",
+   "typeText": "贤高识远",
+   "reading": "xian gao shi yuan",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00447",
+   "text": "资深骑师",
+   "typeText": "资深骑师",
+   "reading": "zi shen qi shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00448",
+   "text": "赏金佣兵",
+   "typeText": "赏金佣兵",
+   "reading": "shang jin yong bing",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00449",
+   "text": "赏金猎人",
+   "typeText": "赏金猎人",
+   "reading": "shang jin lie ren",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00450",
+   "text": "赤胆忠心",
+   "typeText": "赤胆忠心",
+   "reading": "chi dan zhong xin",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00451",
+   "text": "起舞新程",
+   "typeText": "起舞新程",
+   "reading": "qi wu xin cheng",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00452",
+   "text": "超凡感知",
+   "typeText": "超凡感知",
+   "reading": "chao fan gan zhi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00453",
+   "text": "超度亡魂",
+   "typeText": "超度亡魂",
+   "reading": "chao du wang hun",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00454",
+   "text": "超脱人趣",
+   "typeText": "超脱人趣",
+   "reading": "chao tuo ren qu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00455",
+   "text": "足智多谋",
+   "typeText": "足智多谋",
+   "reading": "zu zhi duo mou",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00456",
+   "text": "跨凤乘鸾",
+   "typeText": "跨凤乘鸾",
+   "reading": "kua feng cheng luan",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00457",
+   "text": "跨界枪鸣",
+   "typeText": "跨界枪鸣",
+   "reading": "kua jie qiang ming",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00458",
+   "text": "踏风无痕",
+   "typeText": "踏风无痕",
+   "reading": "ta feng wu hen",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00459",
+   "text": "身兼数职",
+   "typeText": "身兼数职",
+   "reading": "shen jian shu zhi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00460",
+   "text": "身轻如燕",
+   "typeText": "身轻如燕",
+   "reading": "shen qing ru yan",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00461",
+   "text": "过度赋职",
+   "typeText": "过度赋职",
+   "reading": "guo du fu zhi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00462",
+   "text": "迎向黎明",
+   "typeText": "迎向黎明",
+   "reading": "ying xiang li ming",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00463",
+   "text": "运河之主",
+   "typeText": "运河之主",
+   "reading": "yun he zhi zhu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00464",
+   "text": "运河居民",
+   "typeText": "运河居民",
+   "reading": "yun he ju min",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00465",
+   "text": "逐日英雄",
+   "typeText": "逐日英雄",
+   "reading": "zhu ri ying xiong",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00466",
+   "text": "速度之魔",
+   "typeText": "速度之魔",
+   "reading": "su du zhi mo",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00467",
+   "text": "邪龙杀手",
+   "typeText": "邪龙杀手",
+   "reading": "xie long sha shou",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00468",
+   "text": "采矿专家",
+   "typeText": "采矿专家",
+   "reading": "cai kuang zhuan jia",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00469",
+   "text": "重剑骑士",
+   "typeText": "重剑骑士",
+   "reading": "zhong jian qi shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00470",
+   "text": "金曦之鳞",
+   "typeText": "金曦之鳞",
+   "reading": "jin xi zhi lin",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00471",
+   "text": "钓之以恒",
+   "typeText": "钓之以恒",
+   "reading": "diao zhi yi heng",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00472",
+   "text": "钓场之王",
+   "typeText": "钓场之王",
+   "reading": "diao chang zhi wang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00473",
+   "text": "钓遍世界",
+   "typeText": "钓遍世界",
+   "reading": "diao bian shi jie",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00474",
+   "text": "钢铁不屈",
+   "typeText": "钢铁不屈",
+   "reading": "gang tie bu qu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00475",
+   "text": "钢铁不灭",
+   "typeText": "钢铁不灭",
+   "reading": "gang tie bu mie",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00476",
+   "text": "钢铁长明",
+   "typeText": "钢铁长明",
+   "reading": "gang tie zhang ming",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00477",
+   "text": "钩人心魄",
+   "typeText": "钩人心魄",
+   "reading": "gou ren xin po",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00478",
+   "text": "钻石狼王",
+   "typeText": "钻石狼王",
+   "reading": "zuan shi lang wang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00479",
+   "text": "钻石狼群",
+   "typeText": "钻石狼群",
+   "reading": "zuan shi lang qun",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00480",
+   "text": "铁血头狼",
+   "typeText": "铁血头狼",
+   "reading": "tie xue tou lang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00481",
+   "text": "银白骑士",
+   "typeText": "银白骑士",
+   "reading": "yin bai qi shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00482",
+   "text": "铸甲专家",
+   "typeText": "铸甲专家",
+   "reading": "zhu jia zhuan jia",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00483",
+   "text": "铸甲金锤",
+   "typeText": "铸甲金锤",
+   "reading": "zhu jia jin chui",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00484",
+   "text": "锻铁专家",
+   "typeText": "锻铁专家",
+   "reading": "duan tie zhuan jia",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00485",
+   "text": "锻铁金砧",
+   "typeText": "锻铁金砧",
+   "reading": "duan tie jin zhen",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00486",
+   "text": "镐不停歇",
+   "typeText": "镐不停歇",
+   "reading": "gao bu ting xie",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00487",
+   "text": "镶嵌专家",
+   "typeText": "镶嵌专家",
+   "reading": "xiang qian zhuan jia",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00488",
+   "text": "长风痞徒",
+   "typeText": "长风痞徒",
+   "reading": "zhang feng pi tu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00489",
+   "text": "闪耀胜金",
+   "typeText": "闪耀胜金",
+   "reading": "shan yao sheng jin",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00490",
+   "text": "陌影愈深",
+   "typeText": "陌影愈深",
+   "reading": "mo ying yu shen",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00491",
+   "text": "降世化身",
+   "typeText": "降世化身",
+   "reading": "jiang shi hua shen",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00492",
+   "text": "随机遇敌",
+   "typeText": "随机遇敌",
+   "reading": "sui ji yu di",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00493",
+   "text": "隐秘天坑",
+   "typeText": "隐秘天坑",
+   "reading": "yin mi tian keng",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00494",
+   "text": "雕金专家",
+   "typeText": "雕金专家",
+   "reading": "diao jin zhuan jia",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00495",
+   "text": "雕金金板",
+   "typeText": "雕金金板",
+   "reading": "diao jin jin ban",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00496",
+   "text": "雪灵精怪",
+   "typeText": "雪灵精怪",
+   "reading": "xue ling jing guai",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00497",
+   "text": "雾中奇人",
+   "typeText": "雾中奇人",
+   "reading": "wu zhong qi ren",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00498",
+   "text": "霓虹之夜",
+   "typeText": "霓虹之夜",
+   "reading": "ni hong zhi ye",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00499",
+   "text": "霓虹交错",
+   "typeText": "霓虹交错",
+   "reading": "ni hong jiao cuo",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00500",
+   "text": "青之假面",
+   "typeText": "青之假面",
+   "reading": "qing zhi jia mian",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00501",
+   "text": "青之先驱",
+   "typeText": "青之先驱",
+   "reading": "qing zhi xian qu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00502",
+   "text": "青之冠军",
+   "typeText": "青之冠军",
+   "reading": "qing zhi guan jun",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00503",
+   "text": "青之完美",
+   "typeText": "青之完美",
+   "reading": "qing zhi wan mei",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00504",
+   "text": "青之正义",
+   "typeText": "青之正义",
+   "reading": "qing zhi zheng yi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00505",
+   "text": "青之游侠",
+   "typeText": "青之游侠",
+   "reading": "qing zhi you xia",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00506",
+   "text": "青之禁果",
+   "typeText": "青之禁果",
+   "reading": "qing zhi jin guo",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00507",
+   "text": "青之纯粹",
+   "typeText": "青之纯粹",
+   "reading": "qing zhi chun cui",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00508",
+   "text": "青之血脉",
+   "typeText": "青之血脉",
+   "reading": "qing zhi xue mai",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00509",
+   "text": "青之豪杰",
+   "typeText": "青之豪杰",
+   "reading": "qing zhi hao jie",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00510",
+   "text": "青之轮回",
+   "typeText": "青之轮回",
+   "reading": "qing zhi lun hui",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00511",
+   "text": "青之骨血",
+   "typeText": "青之骨血",
+   "reading": "qing zhi gu xue",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00512",
+   "text": "青铜狼群",
+   "typeText": "青铜狼群",
+   "reading": "qing tong lang qun",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00513",
+   "text": "青铜野狼",
+   "typeText": "青铜野狼",
+   "reading": "qing tong ye lang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00514",
+   "text": "顶级冲突",
+   "typeText": "顶级冲突",
+   "reading": "ding ji chong tu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00515",
+   "text": "首席之唤",
+   "typeText": "首席之唤",
+   "reading": "shou xi zhi huan",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00516",
+   "text": "魂游于夜",
+   "typeText": "魂游于夜",
+   "reading": "hun you yu ye",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00517",
+   "text": "魔戒学者",
+   "typeText": "魔戒学者",
+   "reading": "mo jie xue zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00518",
+   "text": "魔戒武僧",
+   "typeText": "魔戒武僧",
+   "reading": "mo jie wu seng",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00519",
+   "text": "魔戒武士",
+   "typeText": "魔戒武士",
+   "reading": "mo jie wu shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00520",
+   "text": "魔戒至尊",
+   "typeText": "魔戒至尊",
+   "reading": "mo jie zhi zun",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00521",
+   "text": "魔戒舞者",
+   "typeText": "魔戒舞者",
+   "reading": "mo jie wu zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00522",
+   "text": "魔戒贤者",
+   "typeText": "魔戒贤者",
+   "reading": "mo jie xian zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00523",
+   "text": "魔法之巅",
+   "typeText": "魔法之巅",
+   "reading": "mo fa zhi dian",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00524",
+   "text": "魔法之神",
+   "typeText": "魔法之神",
+   "reading": "mo fa zhi shen",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00525",
+   "text": "魔法之魂",
+   "typeText": "魔法之魂",
+   "reading": "mo fa zhi hun",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00526",
+   "text": "魔石之黑",
+   "typeText": "魔石之黑",
+   "reading": "mo shi zhi hei",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00527",
+   "text": "鲜羽精兵",
+   "typeText": "鲜羽精兵",
+   "reading": "xian yu jing bing",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00528",
+   "text": "鳐不可急",
+   "typeText": "鳐不可急",
+   "reading": "yao bu ke ji",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00529",
+   "text": "鳞鳞生辉",
+   "typeText": "鳞鳞生辉",
+   "reading": "lin lin sheng hui",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00530",
+   "text": "鸟人克星",
+   "typeText": "鸟人克星",
+   "reading": "niao ren ke xing",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00531",
+   "text": "鸿运之主",
+   "typeText": "鸿运之主",
+   "reading": "hong yun zhi zhu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00532",
+   "text": "鹰巢之主",
+   "typeText": "鹰巢之主",
+   "reading": "ying chao zhi zhu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00533",
+   "text": "黄沙吼狼",
+   "typeText": "黄沙吼狼",
+   "reading": "huang sha hou lang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00534",
+   "text": "黄沙啸狼",
+   "typeText": "黄沙啸狼",
+   "reading": "huang sha xiao lang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00535",
+   "text": "黄沙巡狼",
+   "typeText": "黄沙巡狼",
+   "reading": "huang sha xun lang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00536",
+   "text": "黄沙幼狼",
+   "typeText": "黄沙幼狼",
+   "reading": "huang sha you lang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00537",
+   "text": "黄沙猎狼",
+   "typeText": "黄沙猎狼",
+   "reading": "huang sha lie lang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00538",
+   "text": "黄沙追狼",
+   "typeText": "黄沙追狼",
+   "reading": "huang sha zhui lang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00539",
+   "text": "黄金之心",
+   "typeText": "黄金之心",
+   "reading": "huang jin zhi xin",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00540",
+   "text": "黄金凶狼",
+   "typeText": "黄金凶狼",
+   "reading": "huang jin xiong lang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00541",
+   "text": "黄金狼群",
+   "typeText": "黄金狼群",
+   "reading": "huang jin lang qun",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00542",
+   "text": "黑暗无际",
+   "typeText": "黑暗无际",
+   "reading": "hei an wu ji",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00543",
+   "text": "黑翼夙愿",
+   "typeText": "黑翼夙愿",
+   "reading": "hei yi su yuan",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00544",
+   "text": "龙神后裔",
+   "typeText": "龙神后裔",
+   "reading": "long shen hou yi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00545",
+   "text": "龙诗战争",
+   "typeText": "龙诗战争",
+   "reading": "long shi zhan zheng",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00546",
+   "text": "专业主人公",
+   "typeText": "专业主人公",
+   "reading": "zhuan ye zhu ren gong",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00547",
+   "text": "世界级钓手",
+   "typeText": "世界级钓手",
+   "reading": "shi jie ji diao shou",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00548",
+   "text": "任性的客户",
+   "typeText": "任性的客户",
+   "reading": "ren xing de ke hu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00549",
+   "text": "伪神探求者",
+   "typeText": "伪神探求者",
+   "reading": "wei shen tan qiu zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00550",
+   "text": "光之送葬者",
+   "typeText": "光之送葬者",
+   "reading": "guang zhi song zang zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00551",
+   "text": "光之邮递员",
+   "typeText": "光之邮递员",
+   "reading": "guang zhi you di yuan",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00552",
+   "text": "光明的零点",
+   "typeText": "光明的零点",
+   "reading": "guang ming de ling dian",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00553",
+   "text": "前线先驱者",
+   "typeText": "前线先驱者",
+   "reading": "qian xian xian qu zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00554",
+   "text": "劳班的左膀",
+   "typeText": "劳班的左膀",
+   "reading": "lao ban de zuo bang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00555",
+   "text": "升歌制革匠",
+   "typeText": "升歌制革匠",
+   "reading": "sheng ge zhi ge jiang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00556",
+   "text": "升歌刻木匠",
+   "typeText": "升歌刻木匠",
+   "reading": "sheng ge ke mu jiang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00557",
+   "text": "升歌园艺工",
+   "typeText": "升歌园艺工",
+   "reading": "sheng ge yuan yi gong",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00558",
+   "text": "升歌捕鱼人",
+   "typeText": "升歌捕鱼人",
+   "reading": "sheng ge bu yu ren",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00559",
+   "text": "升歌烹调师",
+   "typeText": "升歌烹调师",
+   "reading": "sheng ge peng tiao shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00560",
+   "text": "升歌裁衣匠",
+   "typeText": "升歌裁衣匠",
+   "reading": "sheng ge cai yi jiang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00561",
+   "text": "升歌采矿工",
+   "typeText": "升歌采矿工",
+   "reading": "sheng ge cai kuang gong",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00562",
+   "text": "升歌铸甲匠",
+   "typeText": "升歌铸甲匠",
+   "reading": "sheng ge zhu jia jiang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00563",
+   "text": "升歌锻铁匠",
+   "typeText": "升歌锻铁匠",
+   "reading": "sheng ge duan tie jiang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00564",
+   "text": "升歌雕金匠",
+   "typeText": "升歌雕金匠",
+   "reading": "sheng ge diao jin jiang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00565",
+   "text": "历史缔造者",
+   "typeText": "历史缔造者",
+   "reading": "li shi di zao zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00566",
+   "text": "双蛇先锋队",
+   "typeText": "双蛇先锋队",
+   "reading": "shuang she xian feng dui",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00567",
+   "text": "双蛇军备队",
+   "typeText": "双蛇军备队",
+   "reading": "shuang she jun bei dui",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00568",
+   "text": "双蛇后勤队",
+   "typeText": "双蛇后勤队",
+   "reading": "shuang she hou qin dui",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00569",
+   "text": "双蛇精兵队",
+   "typeText": "双蛇精兵队",
+   "reading": "shuang she jing bing dui",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00570",
+   "text": "古殿探索者",
+   "typeText": "古殿探索者",
+   "reading": "gu dian tan suo zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00571",
+   "text": "古鱼类学者",
+   "typeText": "古鱼类学者",
+   "reading": "gu yu lei xue zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00572",
+   "text": "名誉防爆员",
+   "typeText": "名誉防爆员",
+   "reading": "ming yu fang bao yuan",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00573",
+   "text": "命运的止境",
+   "typeText": "命运的止境",
+   "reading": "ming yun de zhi jing",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00574",
+   "text": "命运的齿轮",
+   "typeText": "命运的齿轮",
+   "reading": "ming yun de chi lun",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00575",
+   "text": "命运资助者",
+   "typeText": "命运资助者",
+   "reading": "ming yun zi zhu zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00576",
+   "text": "埋藏的诅咒",
+   "typeText": "埋藏的诅咒",
+   "reading": "mai cang de zu zhou",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00577",
+   "text": "大地仲裁者",
+   "typeText": "大地仲裁者",
+   "reading": "da di zhong cai zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00578",
+   "text": "大地的华光",
+   "typeText": "大地的华光",
+   "reading": "da di de hua guang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00579",
+   "text": "大王花杀手",
+   "typeText": "大王花杀手",
+   "reading": "da wang hua sha shou",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00580",
+   "text": "太阳的历练",
+   "typeText": "太阳的历练",
+   "reading": "tai yang de li lian",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00581",
+   "text": "妖歌幸存者",
+   "typeText": "妖歌幸存者",
+   "reading": "yao ge xing cun zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00582",
+   "text": "娜格的主顾",
+   "typeText": "娜格的主顾",
+   "reading": "na ge de zhu gu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00583",
+   "text": "娜格的搭档",
+   "typeText": "娜格的搭档",
+   "reading": "na ge de da dang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00584",
+   "text": "安逸街之狼",
+   "typeText": "安逸街之狼",
+   "reading": "an yi jie zhi lang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00585",
+   "text": "宝境入侵者",
+   "typeText": "宝境入侵者",
+   "reading": "bao jing ru qin zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00586",
+   "text": "宝物收藏家",
+   "typeText": "宝物收藏家",
+   "reading": "bao wu shou cang jia",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00587",
+   "text": "宠物收藏家",
+   "typeText": "宠物收藏家",
+   "reading": "chong wu shou cang jia",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00588",
+   "text": "密林先驱者",
+   "typeText": "密林先驱者",
+   "reading": "mi lin xian qu zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00589",
+   "text": "小龙的朋友",
+   "typeText": "小龙的朋友",
+   "reading": "xiao long de peng you",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00590",
+   "text": "尖尖山伯爵",
+   "typeText": "尖尖山伯爵",
+   "reading": "jian jian shan bo jue",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00591",
+   "text": "尘谜守护者",
+   "typeText": "尘谜守护者",
+   "reading": "chen mi shou hu zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00592",
+   "text": "工艺仲裁者",
+   "typeText": "工艺仲裁者",
+   "reading": "gong yi zhong cai zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00593",
+   "text": "巧手的华光",
+   "typeText": "巧手的华光",
+   "reading": "qiao shou de hua guang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00594",
+   "text": "希望的灯火",
+   "typeText": "希望的灯火",
+   "reading": "xi wang de deng huo",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00595",
+   "text": "幸福兔保佑",
+   "typeText": "幸福兔保佑",
+   "reading": "xing fu tu bao you",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00596",
+   "text": "幻卡搜集者",
+   "typeText": "幻卡搜集者",
+   "reading": "huan ka sou ji zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00597",
+   "text": "幻卡收藏家",
+   "typeText": "幻卡收藏家",
+   "reading": "huan ka shou cang jia",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00598",
+   "text": "异界垂钓者",
+   "typeText": "异界垂钓者",
+   "reading": "yi jie chui diao zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00599",
+   "text": "异界手艺人",
+   "typeText": "异界手艺人",
+   "reading": "yi jie shou yi ren",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00600",
+   "text": "异界采集家",
+   "typeText": "异界采集家",
+   "reading": "yi jie cai ji jia",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00601",
+   "text": "异界金属匠",
+   "typeText": "异界金属匠",
+   "reading": "yi jie jin shu jiang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00602",
+   "text": "异界食药师",
+   "typeText": "异界食药师",
+   "reading": "yi jie shi yao shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00603",
+   "text": "恒辉先锋队",
+   "typeText": "恒辉先锋队",
+   "reading": "heng hui xian feng dui",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00604",
+   "text": "恒辉军备队",
+   "typeText": "恒辉军备队",
+   "reading": "heng hui jun bei dui",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00605",
+   "text": "恒辉后勤队",
+   "typeText": "恒辉后勤队",
+   "reading": "heng hui hou qin dui",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00606",
+   "text": "恒辉精兵队",
+   "typeText": "恒辉精兵队",
+   "reading": "heng hui jing bing dui",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00607",
+   "text": "悲伤的圣人",
+   "typeText": "悲伤的圣人",
+   "reading": "bei shang de sheng ren",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00608",
+   "text": "悲寂受膏者",
+   "typeText": "悲寂受膏者",
+   "reading": "bei ji shou gao zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00609",
+   "text": "战争仲裁者",
+   "typeText": "战争仲裁者",
+   "reading": "zhan zheng zhong cai zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00610",
+   "text": "战争神圣徒",
+   "typeText": "战争神圣徒",
+   "reading": "zhan zheng shen sheng tu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00611",
+   "text": "执着的朋友",
+   "typeText": "执着的朋友",
+   "reading": "zhi zhuo de peng you",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00612",
+   "text": "放浪之圣徒",
+   "typeText": "放浪之圣徒",
+   "reading": "fang lang zhi sheng tu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00613",
+   "text": "文鸟的和声",
+   "typeText": "文鸟的和声",
+   "reading": "wen niao de he sheng",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00614",
+   "text": "旅途的起点",
+   "typeText": "旅途的起点",
+   "reading": "lv tu de qi dian",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00615",
+   "text": "无二江名流",
+   "typeText": "无二江名流",
+   "reading": "wu er jiang ming liu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00616",
+   "text": "无人机射手",
+   "typeText": "无人机射手",
+   "reading": "wu ren ji she shou",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00617",
+   "text": "明日的路标",
+   "typeText": "明日的路标",
+   "reading": "ming ri de lu biao",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00618",
+   "text": "暗影反叛者",
+   "typeText": "暗影反叛者",
+   "reading": "an ying fan pan zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00619",
+   "text": "最好的学生",
+   "typeText": "最好的学生",
+   "reading": "zui hao de xue sheng",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00620",
+   "text": "月下彼岸花",
+   "typeText": "月下彼岸花",
+   "reading": "yue xia bi an hua",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00621",
+   "text": "月球漫步者",
+   "typeText": "月球漫步者",
+   "reading": "yue qiu man bu zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00622",
+   "text": "梦明工作者",
+   "typeText": "梦明工作者",
+   "reading": "meng ming gong zuo zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00623",
+   "text": "梦醒妖灵乡",
+   "typeText": "梦醒妖灵乡",
+   "reading": "meng xing yao ling xiang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00624",
+   "text": "欧米茄段位",
+   "typeText": "欧米茄段位",
+   "reading": "ou mi jia duan wei",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00625",
+   "text": "死者的故事",
+   "typeText": "死者的故事",
+   "reading": "si zhe de gu shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00626",
+   "text": "水城入侵者",
+   "typeText": "水城入侵者",
+   "reading": "shui cheng ru qin zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00627",
+   "text": "水晶守护者",
+   "typeText": "水晶守护者",
+   "reading": "shui jing shou hu zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00628",
+   "text": "水晶搬运者",
+   "typeText": "水晶搬运者",
+   "reading": "shui jing ban yun zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00629",
+   "text": "永久探求者",
+   "typeText": "永久探求者",
+   "reading": "yong jiu tan qiu zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00630",
+   "text": "活着的记忆",
+   "typeText": "活着的记忆",
+   "reading": "huo zhe de ji yi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00631",
+   "text": "深层入侵者",
+   "typeText": "深层入侵者",
+   "reading": "shen ceng ru qin zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00632",
+   "text": "漂流者之王",
+   "typeText": "漂流者之王",
+   "reading": "piao liu zhe zhi wang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00633",
+   "text": "灵魂继承者",
+   "typeText": "灵魂继承者",
+   "reading": "ling hun ji cheng zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00634",
+   "text": "熙洛的朋友",
+   "typeText": "熙洛的朋友",
+   "reading": "xi luo de peng you",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00635",
+   "text": "熟练探索者",
+   "typeText": "熟练探索者",
+   "reading": "shu lian tan suo zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00636",
+   "text": "独行探险家",
+   "typeText": "独行探险家",
+   "reading": "du xing tan xian jia",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00637",
+   "text": "白金守护者",
+   "typeText": "白金守护者",
+   "reading": "bai jin shou hu zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00638",
+   "text": "白银守护者",
+   "typeText": "白银守护者",
+   "reading": "bai yin shou hu zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00639",
+   "text": "看不见的手",
+   "typeText": "看不见的手",
+   "reading": "kan bu jian de shou",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00640",
+   "text": "真正的朋友",
+   "typeText": "真正的朋友",
+   "reading": "zhen zheng de peng you",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00641",
+   "text": "破坏神圣徒",
+   "typeText": "破坏神圣徒",
+   "reading": "po huai shen sheng tu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00642",
+   "text": "碧海先驱者",
+   "typeText": "碧海先驱者",
+   "reading": "bi hai xian qu zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00643",
+   "text": "称霸锦标赛",
+   "typeText": "称霸锦标赛",
+   "reading": "cheng ba jin biao sai",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00644",
+   "text": "精品制作者",
+   "typeText": "精品制作者",
+   "reading": "jing pin zhi zuo zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00645",
+   "text": "精品采集者",
+   "typeText": "精品采集者",
+   "reading": "jing pin cai ji zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00646",
+   "text": "红的老主顾",
+   "typeText": "红的老主顾",
+   "reading": "hong de lao zhu gu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00647",
+   "text": "红莲探索者",
+   "typeText": "红莲探索者",
+   "reading": "hong lian tan suo zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00648",
+   "text": "红莲解放者",
+   "typeText": "红莲解放者",
+   "reading": "hong lian jie fang zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00649",
+   "text": "纯白与漆黑",
+   "typeText": "纯白与漆黑",
+   "reading": "chun bai yu qi hei",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00650",
+   "text": "缇姨的宝贝",
+   "typeText": "缇姨的宝贝",
+   "reading": "ti yi de bao bei",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00651",
+   "text": "罐子守护者",
+   "typeText": "罐子守护者",
+   "reading": "guan zi shou hu zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00652",
+   "text": "莉瑟的右拳",
+   "typeText": "莉瑟的右拳",
+   "reading": "li se de you quan",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00653",
+   "text": "蜥蜴人克星",
+   "typeText": "蜥蜴人克星",
+   "reading": "xi yi ren ke xing",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00654",
+   "text": "观光领路人",
+   "typeText": "观光领路人",
+   "reading": "guan guang ling lu ren",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00655",
+   "text": "诅咒策展人",
+   "typeText": "诅咒策展人",
+   "reading": "zu zhou ce zhan ren",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00656",
+   "text": "超级调整兵",
+   "typeText": "超级调整兵",
+   "reading": "chao ji tiao zheng bing",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00657",
+   "text": "运河入侵者",
+   "typeText": "运河入侵者",
+   "reading": "yun he ru qin zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00658",
+   "text": "追忆的凶星",
+   "typeText": "追忆的凶星",
+   "reading": "zhui yi de xiong xing",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00659",
+   "text": "遗留的希望",
+   "typeText": "遗留的希望",
+   "reading": "yi liu de xi wang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00660",
+   "text": "重力对抗者",
+   "typeText": "重力对抗者",
+   "reading": "zhong li dui kang zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00661",
+   "text": "钻石守护者",
+   "typeText": "钻石守护者",
+   "reading": "zuan shi shou hu zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00662",
+   "text": "防爆组佣兵",
+   "typeText": "防爆组佣兵",
+   "reading": "fang bao zu yong bing",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00663",
+   "text": "阿泽玛之盾",
+   "typeText": "阿泽玛之盾",
+   "reading": "a ze ma zhi dun",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00664",
+   "text": "隆卡史学家",
+   "typeText": "隆卡史学家",
+   "reading": "long ka shi xue jia",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00665",
+   "text": "青铜守护者",
+   "typeText": "青铜守护者",
+   "reading": "qing tong shou hu zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00666",
+   "text": "饱学垂钓者",
+   "typeText": "饱学垂钓者",
+   "reading": "bao xue chui diao zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00667",
+   "text": "饱学手艺人",
+   "typeText": "饱学手艺人",
+   "reading": "bao xue shou yi ren",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00668",
+   "text": "饱学采集家",
+   "typeText": "饱学采集家",
+   "reading": "bao xue cai ji jia",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00669",
+   "text": "饱学金属匠",
+   "typeText": "饱学金属匠",
+   "reading": "bao xue jin shu jiang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00670",
+   "text": "饱学食药师",
+   "typeText": "饱学食药师",
+   "reading": "bao xue shi yao shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00671",
+   "text": "魔戒召唤师",
+   "typeText": "魔戒召唤师",
+   "reading": "mo jie zhao huan shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00672",
+   "text": "魔戒机工士",
+   "typeText": "魔戒机工士",
+   "reading": "mo jie ji gong shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00673",
+   "text": "魔戒钐镰客",
+   "typeText": "魔戒钐镰客",
+   "reading": "mo jie shan lian ke",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00674",
+   "text": "魔法仲裁者",
+   "typeText": "魔法仲裁者",
+   "reading": "mo fa zhong cai zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00675",
+   "text": "魔键盘斗士",
+   "typeText": "魔键盘斗士",
+   "reading": "mo jian pan dou shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00676",
+   "text": "黄沙先驱者",
+   "typeText": "黄沙先驱者",
+   "reading": "huang sha xian qu zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00677",
+   "text": "黄金守护者",
+   "typeText": "黄金守护者",
+   "reading": "huang jin shou hu zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00678",
+   "text": "黑涡先锋队",
+   "typeText": "黑涡先锋队",
+   "reading": "hei wo xian feng dui",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00679",
+   "text": "黑涡军备队",
+   "typeText": "黑涡军备队",
+   "reading": "hei wo jun bei dui",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00680",
+   "text": "黑涡后勤队",
+   "typeText": "黑涡后勤队",
+   "reading": "hei wo hou qin dui",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00681",
+   "text": "黑涡精兵队",
+   "typeText": "黑涡精兵队",
+   "reading": "hei wo jing bing dui",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00682",
+   "text": "众神眷爱之人",
+   "typeText": "众神眷爱之人",
+   "reading": "zhong shen juan ai zhi ren",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00683",
+   "text": "优雷卡探险家",
+   "typeText": "优雷卡探险家",
+   "reading": "you lei ka tan xian jia",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00684",
+   "text": "加百列的末日",
+   "typeText": "加百列的末日",
+   "reading": "jia bai lie de mo ri",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00685",
+   "text": "升歌炼金术士",
+   "typeText": "升歌炼金术士",
+   "reading": "sheng ge lian jin shu shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00686",
+   "text": "密林刺鱼之王",
+   "typeText": "密林刺鱼之王",
+   "reading": "mi lin ci yu zhi wang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00687",
+   "text": "密林割草之王",
+   "typeText": "密林割草之王",
+   "reading": "mi lin ge cao zhi wang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00688",
+   "text": "密林碎石之王",
+   "typeText": "密林碎石之王",
+   "reading": "mi lin sui shi zhi wang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00689",
+   "text": "密林采伐之王",
+   "typeText": "密林采伐之王",
+   "reading": "mi lin cai fa zhi wang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00690",
+   "text": "密林采掘之王",
+   "typeText": "密林采掘之王",
+   "reading": "mi lin cai jue zhi wang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00691",
+   "text": "密林钓鱼之王",
+   "typeText": "密林钓鱼之王",
+   "reading": "mi lin diao yu zhi wang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00692",
+   "text": "小麦酒港之卫",
+   "typeText": "小麦酒港之卫",
+   "reading": "xiao mai jiu gang zhi wei",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00693",
+   "text": "小麦酒港之手",
+   "typeText": "小麦酒港之手",
+   "reading": "xiao mai jiu gang zhi shou",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00694",
+   "text": "小麦酒港之风",
+   "typeText": "小麦酒港之风",
+   "reading": "xiao mai jiu gang zhi feng",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00695",
+   "text": "崭新的冒险者",
+   "typeText": "崭新的冒险者",
+   "reading": "zhan xin de mao xian zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00696",
+   "text": "希拉狄哈魔影",
+   "typeText": "希拉狄哈魔影",
+   "reading": "xi la di ha mo ying",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00697",
+   "text": "库洛的好朋友",
+   "typeText": "库洛的好朋友",
+   "reading": "ku luo de hao peng you",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00698",
+   "text": "库洛的小伙伴",
+   "typeText": "库洛的小伙伴",
+   "reading": "ku luo de xiao huo ban",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00699",
+   "text": "恶名精英猎手",
+   "typeText": "恶名精英猎手",
+   "reading": "e ming jing ying lie shou",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00700",
+   "text": "悦光之设计师",
+   "typeText": "悦光之设计师",
+   "reading": "yue guang zhi she ji shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00701",
+   "text": "扎杜诺尔英雄",
+   "typeText": "扎杜诺尔英雄",
+   "reading": "zha du nuo er ying xiong",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00702",
+   "text": "无人岛开拓者",
+   "typeText": "无人岛开拓者",
+   "reading": "wu ren dao kai tuo zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00703",
+   "text": "明星级制革匠",
+   "typeText": "明星级制革匠",
+   "reading": "ming xing ji zhi ge jiang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00704",
+   "text": "明星级刻木匠",
+   "typeText": "明星级刻木匠",
+   "reading": "ming xing ji ke mu jiang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00705",
+   "text": "明星级园艺工",
+   "typeText": "明星级园艺工",
+   "reading": "ming xing ji yuan yi gong",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00706",
+   "text": "明星级捕鱼人",
+   "typeText": "明星级捕鱼人",
+   "reading": "ming xing ji bu yu ren",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00707",
+   "text": "明星级烹调师",
+   "typeText": "明星级烹调师",
+   "reading": "ming xing ji peng tiao shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00708",
+   "text": "明星级裁衣匠",
+   "typeText": "明星级裁衣匠",
+   "reading": "ming xing ji cai yi jiang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00709",
+   "text": "明星级采矿工",
+   "typeText": "明星级采矿工",
+   "reading": "ming xing ji cai kuang gong",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00710",
+   "text": "明星级铸甲匠",
+   "typeText": "明星级铸甲匠",
+   "reading": "ming xing ji zhu jia jiang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00711",
+   "text": "明星级锻铁匠",
+   "typeText": "明星级锻铁匠",
+   "reading": "ming xing ji duan tie jiang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00712",
+   "text": "明星级雕金匠",
+   "typeText": "明星级雕金匠",
+   "reading": "ming xing ji diao jin jiang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00713",
+   "text": "星际天文学家",
+   "typeText": "星际天文学家",
+   "reading": "xing ji tian wen xue jia",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00714",
+   "text": "林场水车之卫",
+   "typeText": "林场水车之卫",
+   "reading": "lin chang shui che zhi wei",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00715",
+   "text": "林场水车之手",
+   "typeText": "林场水车之手",
+   "reading": "lin chang shui che zhi shou",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00716",
+   "text": "林场水车之风",
+   "typeText": "林场水车之风",
+   "reading": "lin chang shui che zhi feng",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00717",
+   "text": "格尔莫拉英雄",
+   "typeText": "格尔莫拉英雄",
+   "reading": "ge er mo la ying xiong",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00718",
+   "text": "死亡从天而降",
+   "typeText": "死亡从天而降",
+   "reading": "si wang cong tian er jiang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00719",
+   "text": "熄火青蓝之手",
+   "typeText": "熄火青蓝之手",
+   "reading": "xi huo qing lan zhi shou",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00720",
+   "text": "熙洛的老主顾",
+   "typeText": "熙洛的老主顾",
+   "reading": "xi luo de lao zhu gu",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00721",
+   "text": "碧海刺鱼之王",
+   "typeText": "碧海刺鱼之王",
+   "reading": "bi hai ci yu zhi wang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00722",
+   "text": "碧海割草之王",
+   "typeText": "碧海割草之王",
+   "reading": "bi hai ge cao zhi wang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00723",
+   "text": "碧海碎石之王",
+   "typeText": "碧海碎石之王",
+   "reading": "bi hai sui shi zhi wang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00724",
+   "text": "碧海采伐之王",
+   "typeText": "碧海采伐之王",
+   "reading": "bi hai cai fa zhi wang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00725",
+   "text": "碧海采掘之王",
+   "typeText": "碧海采掘之王",
+   "reading": "bi hai cai jue zhi wang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00726",
+   "text": "碧海钓鱼之王",
+   "typeText": "碧海钓鱼之王",
+   "reading": "bi hai diao yu zhi wang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00727",
+   "text": "祈求神灵之人",
+   "typeText": "祈求神灵之人",
+   "reading": "qi qiu shen ling zhi ren",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00728",
+   "text": "穿越铁路大亨",
+   "typeText": "穿越铁路大亨",
+   "reading": "chuan yue tie lu da heng",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00729",
+   "text": "第一中的第一",
+   "typeText": "第一中的第一",
+   "reading": "di yi zhong de di yi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00730",
+   "text": "美瑠姬奴克星",
+   "typeText": "美瑠姬奴克星",
+   "reading": "mei liu ji nu ke xing",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00731",
+   "text": "群星的启明者",
+   "typeText": "群星的启明者",
+   "reading": "qun xing de qi ming zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00732",
+   "text": "群星的探明者",
+   "typeText": "群星的探明者",
+   "reading": "qun xing de tan ming zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00733",
+   "text": "萨纳兰之利剑",
+   "typeText": "萨纳兰之利剑",
+   "reading": "sa na lan zhi li jian",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00734",
+   "text": "萨纳兰之坚盾",
+   "typeText": "萨纳兰之坚盾",
+   "reading": "sa na lan zhi jian dun",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00735",
+   "text": "虔诚的朝圣者",
+   "typeText": "虔诚的朝圣者",
+   "reading": "qian cheng de chao sheng zhe",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00736",
+   "text": "见证暗黑天启",
+   "typeText": "见证暗黑天启",
+   "reading": "jian zheng an hei tian qi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00737",
+   "text": "谢尔达莱富豪",
+   "typeText": "谢尔达莱富豪",
+   "reading": "xie er da lai fu hao",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00738",
+   "text": "追晨逐曦之人",
+   "typeText": "追晨逐曦之人",
+   "reading": "zhui chen zhu xi zhi ren",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00739",
+   "text": "魔戒占星术士",
+   "typeText": "魔戒占星术士",
+   "reading": "mo jie zhan xing shu shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00740",
+   "text": "魔戒吟游诗人",
+   "typeText": "魔戒吟游诗人",
+   "reading": "mo jie yin you shi ren",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00741",
+   "text": "魔戒白魔法师",
+   "typeText": "魔戒白魔法师",
+   "reading": "mo jie bai mo fa shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00742",
+   "text": "魔戒绝枪战士",
+   "typeText": "魔戒绝枪战士",
+   "reading": "mo jie jue qiang zhan shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00743",
+   "text": "魔戒赤魔法师",
+   "typeText": "魔戒赤魔法师",
+   "reading": "mo jie chi mo fa shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00744",
+   "text": "魔戒黑魔法师",
+   "typeText": "魔戒黑魔法师",
+   "reading": "mo jie hei mo fa shi",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00745",
+   "text": "黄沙刺鱼之王",
+   "typeText": "黄沙刺鱼之王",
+   "reading": "huang sha ci yu zhi wang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00746",
+   "text": "黄沙割草之王",
+   "typeText": "黄沙割草之王",
+   "reading": "huang sha ge cao zhi wang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00747",
+   "text": "黄沙碎石之王",
+   "typeText": "黄沙碎石之王",
+   "reading": "huang sha sui shi zhi wang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00748",
+   "text": "黄沙采伐之王",
+   "typeText": "黄沙采伐之王",
+   "reading": "huang sha cai fa zhi wang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00749",
+   "text": "黄沙采掘之王",
+   "typeText": "黄沙采掘之王",
+   "reading": "huang sha cai jue zhi wang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00750",
+   "text": "黄沙钓鱼之王",
+   "typeText": "黄沙钓鱼之王",
+   "reading": "huang sha diao yu zhi wang",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00751",
+   "text": "黄金集市之卫",
+   "typeText": "黄金集市之卫",
+   "reading": "huang jin ji shi zhi wei",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00752",
+   "text": "黄金集市之手",
+   "typeText": "黄金集市之手",
+   "reading": "huang jin ji shi zhi shou",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00753",
+   "text": "黄金集市之风",
+   "typeText": "黄金集市之风",
+   "reading": "huang jin ji shi zhi feng",
+   "category": "titles",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ttl_00754",
+   "text": "几近佩鲁佩鲁族",
+   "typeText": "几近佩鲁佩鲁族",
+   "reading": "ji jin pei lu pei lu zu",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ttl_00755",
+   "text": "凯·希尔的好伙伴",
+   "typeText": "凯希尔的好伙伴",
+   "reading": "kai xi er de hao huo ban",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "ttl_00756",
+   "text": "吉吉最好的朋友",
+   "typeText": "吉吉最好的朋友",
+   "reading": "ji ji zui hao de peng you",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ttl_00757",
+   "text": "好奇鬼的酷老师",
+   "typeText": "好奇鬼的酷老师",
+   "reading": "hao qi gui de ku lao shi",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ttl_00758",
+   "text": "好运眷顾的库啵",
+   "typeText": "好运眷顾的库啵",
+   "reading": "hao yun juan gu de ku bo",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ttl_00759",
+   "text": "拉诺西亚之利剑",
+   "typeText": "拉诺西亚之利剑",
+   "reading": "la nuo xi ya zhi li jian",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ttl_00760",
+   "text": "拉诺西亚之坚盾",
+   "typeText": "拉诺西亚之坚盾",
+   "reading": "la nuo xi ya zhi jian dun",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ttl_00761",
+   "text": "新巢御用制革匠",
+   "typeText": "新巢御用制革匠",
+   "reading": "xin chao yu yong zhi ge jiang",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ttl_00762",
+   "text": "新巢御用刻木匠",
+   "typeText": "新巢御用刻木匠",
+   "reading": "xin chao yu yong ke mu jiang",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ttl_00763",
+   "text": "新巢御用园艺工",
+   "typeText": "新巢御用园艺工",
+   "reading": "xin chao yu yong yuan yi gong",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ttl_00764",
+   "text": "新巢御用捕鱼人",
+   "typeText": "新巢御用捕鱼人",
+   "reading": "xin chao yu yong bu yu ren",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ttl_00765",
+   "text": "新巢御用烹调师",
+   "typeText": "新巢御用烹调师",
+   "reading": "xin chao yu yong peng tiao shi",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ttl_00766",
+   "text": "新巢御用裁衣匠",
+   "typeText": "新巢御用裁衣匠",
+   "reading": "xin chao yu yong cai yi jiang",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ttl_00767",
+   "text": "新巢御用采矿工",
+   "typeText": "新巢御用采矿工",
+   "reading": "xin chao yu yong cai kuang gong",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ttl_00768",
+   "text": "新巢御用铸甲匠",
+   "typeText": "新巢御用铸甲匠",
+   "reading": "xin chao yu yong zhu jia jiang",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ttl_00769",
+   "text": "新巢御用锻铁匠",
+   "typeText": "新巢御用锻铁匠",
+   "reading": "xin chao yu yong duan tie jiang",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ttl_00770",
+   "text": "新巢御用雕金匠",
+   "typeText": "新巢御用雕金匠",
+   "reading": "xin chao yu yong diao jin jiang",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ttl_00771",
+   "text": "明星级炼金术士",
+   "typeText": "明星级炼金术士",
+   "reading": "ming xing ji lian jin shu shi",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ttl_00772",
+   "text": "狄兰达尔的天使",
+   "typeText": "狄兰达尔的天使",
+   "reading": "di lan da er de tian shi",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ttl_00773",
+   "text": "福尔唐家的骑士",
+   "typeText": "福尔唐家的骑士",
+   "reading": "fu er tang jia de qi shi",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ttl_00774",
+   "text": "艾欧泽亚之利剑",
+   "typeText": "艾欧泽亚之利剑",
+   "reading": "ai ou ze ya zhi li jian",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ttl_00775",
+   "text": "艾欧泽亚之坚盾",
+   "typeText": "艾欧泽亚之坚盾",
+   "reading": "ai ou ze ya zhi jian dun",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ttl_00776",
+   "text": "获得祝福的救赎",
+   "typeText": "获得祝福的救赎",
+   "reading": "huo de zhu fu de jiu shu",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ttl_00777",
+   "text": "落羽最佳制革匠",
+   "typeText": "落羽最佳制革匠",
+   "reading": "luo yu zui jia zhi ge jiang",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ttl_00778",
+   "text": "落羽最佳刻木匠",
+   "typeText": "落羽最佳刻木匠",
+   "reading": "luo yu zui jia ke mu jiang",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ttl_00779",
+   "text": "落羽最佳园艺工",
+   "typeText": "落羽最佳园艺工",
+   "reading": "luo yu zui jia yuan yi gong",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ttl_00780",
+   "text": "落羽最佳捕鱼人",
+   "typeText": "落羽最佳捕鱼人",
+   "reading": "luo yu zui jia bu yu ren",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ttl_00781",
+   "text": "落羽最佳烹调师",
+   "typeText": "落羽最佳烹调师",
+   "reading": "luo yu zui jia peng tiao shi",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ttl_00782",
+   "text": "落羽最佳裁衣匠",
+   "typeText": "落羽最佳裁衣匠",
+   "reading": "luo yu zui jia cai yi jiang",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ttl_00783",
+   "text": "落羽最佳采矿工",
+   "typeText": "落羽最佳采矿工",
+   "reading": "luo yu zui jia cai kuang gong",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ttl_00784",
+   "text": "落羽最佳铸甲匠",
+   "typeText": "落羽最佳铸甲匠",
+   "reading": "luo yu zui jia zhu jia jiang",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ttl_00785",
+   "text": "落羽最佳锻铁匠",
+   "typeText": "落羽最佳锻铁匠",
+   "reading": "luo yu zui jia duan tie jiang",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ttl_00786",
+   "text": "落羽最佳雕金匠",
+   "typeText": "落羽最佳雕金匠",
+   "reading": "luo yu zui jia diao jin jiang",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ttl_00787",
+   "text": "阿斯卡隆的末日",
+   "typeText": "阿斯卡隆的末日",
+   "reading": "a si ka long de mo ri",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ttl_00788",
+   "text": "黑衣森林之利剑",
+   "typeText": "黑衣森林之利剑",
+   "reading": "hei yi sen lin zhi li jian",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ttl_00789",
+   "text": "黑衣森林之坚盾",
+   "typeText": "黑衣森林之坚盾",
+   "reading": "hei yi sen lin zhi jian dun",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ttl_00790",
+   "text": "亚历山德里亚骑士",
+   "typeText": "亚历山德里亚骑士",
+   "reading": "ya li shan de li ya qi shi",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ttl_00791",
+   "text": "宇宙尽头的咖啡师",
+   "typeText": "宇宙尽头的咖啡师",
+   "reading": "yu zhou jin tou de ka fei shi",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ttl_00792",
+   "text": "德尔塔幻境破坏者",
+   "typeText": "德尔塔幻境破坏者",
+   "reading": "de er ta huan jing po huai zhe",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ttl_00793",
+   "text": "新巢御用炼金术士",
+   "typeText": "新巢御用炼金术士",
+   "reading": "xin chao yu yong lian jin shu shi",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ttl_00794",
+   "text": "艾欧泽亚的守护者",
+   "typeText": "艾欧泽亚的守护者",
+   "reading": "ai ou ze ya de shou hu zhe",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ttl_00795",
+   "text": "落羽最佳炼金术士",
+   "typeText": "落羽最佳炼金术士",
+   "reading": "luo yu zui jia lian jin shu shi",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ttl_00796",
+   "text": "阿梅莉安丝的贵友",
+   "typeText": "阿梅莉安丝的贵友",
+   "reading": "a mei li an si de gui you",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ttl_00797",
+   "text": "艾欧泽亚极限体能王",
+   "typeText": "艾欧泽亚极限体能王",
+   "reading": "ai ou ze ya ji xian ti neng wang",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ttl_00798",
+   "text": "2018群狼盛宴冠军",
+   "typeText": "2018群狼盛宴冠军",
+   "reading": "2018 qun lang sheng yan guan jun",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "ttl_00799",
+   "text": "2019群狼盛宴冠军",
+   "typeText": "2019群狼盛宴冠军",
+   "reading": "2019 qun lang sheng yan guan jun",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "ttl_00800",
+   "text": "2024水晶冲突冠军",
+   "typeText": "2024水晶冲突冠军",
+   "reading": "2024 shui jing chong tu guan jun",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "ttl_00801",
+   "text": "2026水晶冲突冠军",
+   "typeText": "2026水晶冲突冠军",
+   "reading": "2026 shui jing chong tu guan jun",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "ttl_00802",
+   "text": "2018群狼盛宴入围选手",
+   "typeText": "2018群狼盛宴入围选手",
+   "reading": "2018 qun lang sheng yan ru wei xuan shou",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "ttl_00803",
+   "text": "2018群狼盛宴晋级选手",
+   "typeText": "2018群狼盛宴晋级选手",
+   "reading": "2018 qun lang sheng yan jin ji xuan shou",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "ttl_00804",
+   "text": "2019群狼盛宴入围选手",
+   "typeText": "2019群狼盛宴入围选手",
+   "reading": "2019 qun lang sheng yan ru wei xuan shou",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "ttl_00805",
+   "text": "2019群狼盛宴晋级选手",
+   "typeText": "2019群狼盛宴晋级选手",
+   "reading": "2019 qun lang sheng yan jin ji xuan shou",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "ttl_00806",
+   "text": "2024水晶冲突入围选手",
+   "typeText": "2024水晶冲突入围选手",
+   "reading": "2024 shui jing chong tu ru wei xuan shou",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "ttl_00807",
+   "text": "2024水晶冲突晋级选手",
+   "typeText": "2024水晶冲突晋级选手",
+   "reading": "2024 shui jing chong tu jin ji xuan shou",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "ttl_00808",
+   "text": "2026水晶冲突入围选手",
+   "typeText": "2026水晶冲突入围选手",
+   "reading": "2026 shui jing chong tu ru wei xuan shou",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "ttl_00809",
+   "text": "2026水晶冲突晋级选手",
+   "typeText": "2026水晶冲突晋级选手",
+   "reading": "2026 shui jing chong tu jin ji xuan shou",
+   "category": "titles",
+   "difficulty": 3,
+   "pure": false
+  }
+ ]
+}

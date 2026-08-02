@@ -1,0 +1,224 @@
+{
+ "category": "races",
+ "label": "种族与部族",
+ "count": 24,
+ "source": "thewakingsands/ffxiv-datamining-cn",
+ "entries": [
+  {
+   "id": "rce_00001",
+   "text": "人族",
+   "typeText": "人族",
+   "reading": "ren zu",
+   "category": "races",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "rce_00002",
+   "text": "敖龙族",
+   "typeText": "敖龙族",
+   "reading": "ao long zu",
+   "category": "races",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "rce_00003",
+   "text": "猫魅族",
+   "typeText": "猫魅族",
+   "reading": "mao mei zu",
+   "category": "races",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "rce_00004",
+   "text": "硌狮族",
+   "typeText": "硌狮族",
+   "reading": "ge shi zu",
+   "category": "races",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "rce_00005",
+   "text": "精灵族",
+   "typeText": "精灵族",
+   "reading": "jing ling zu",
+   "category": "races",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "rce_00006",
+   "text": "鲁加族",
+   "typeText": "鲁加族",
+   "reading": "lu jia zu",
+   "category": "races",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "rce_00007",
+   "text": "中原之民",
+   "typeText": "中原之民",
+   "reading": "zhong yuan zhi min",
+   "category": "races",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "rce_00008",
+   "text": "北洋之民",
+   "typeText": "北洋之民",
+   "reading": "bei yang zhi min",
+   "category": "races",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "rce_00009",
+   "text": "密林之民",
+   "typeText": "密林之民",
+   "reading": "mi lin zhi min",
+   "category": "races",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "rce_00010",
+   "text": "山林之民",
+   "typeText": "山林之民",
+   "reading": "shan lin zhi min",
+   "category": "races",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "rce_00011",
+   "text": "平原之民",
+   "typeText": "平原之民",
+   "reading": "ping yuan zhi min",
+   "category": "races",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "rce_00012",
+   "text": "护月之民",
+   "typeText": "护月之民",
+   "reading": "hu yue zhi min",
+   "category": "races",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "rce_00013",
+   "text": "掠日之民",
+   "typeText": "掠日之民",
+   "reading": "lve ri zhi min",
+   "category": "races",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "rce_00014",
+   "text": "晨曦之民",
+   "typeText": "晨曦之民",
+   "reading": "chen xi zhi min",
+   "category": "races",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "rce_00015",
+   "text": "暮晖之民",
+   "typeText": "暮晖之民",
+   "reading": "mu hui zhi min",
+   "category": "races",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "rce_00016",
+   "text": "森林之民",
+   "typeText": "森林之民",
+   "reading": "sen lin zhi min",
+   "category": "races",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "rce_00017",
+   "text": "沙漠之民",
+   "typeText": "沙漠之民",
+   "reading": "sha mo zhi min",
+   "category": "races",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "rce_00018",
+   "text": "红焰之民",
+   "typeText": "红焰之民",
+   "reading": "hong yan zhi min",
+   "category": "races",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "rce_00019",
+   "text": "维埃拉族",
+   "typeText": "维埃拉族",
+   "reading": "wei ai la zu",
+   "category": "races",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "rce_00020",
+   "text": "迷踪之民",
+   "typeText": "迷踪之民",
+   "reading": "mi zong zhi min",
+   "category": "races",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "rce_00021",
+   "text": "逐日之民",
+   "typeText": "逐日之民",
+   "reading": "zhu ri zhi min",
+   "category": "races",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "rce_00022",
+   "text": "高地之民",
+   "typeText": "高地之民",
+   "reading": "gao di zhi min",
+   "category": "races",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "rce_00023",
+   "text": "黑影之民",
+   "typeText": "黑影之民",
+   "reading": "hei ying zhi min",
+   "category": "races",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "rce_00024",
+   "text": "拉拉菲尔族",
+   "typeText": "拉拉菲尔族",
+   "reading": "la la fei er zu",
+   "category": "races",
+   "difficulty": 2,
+   "pure": true
+  }
+ ]
+}
