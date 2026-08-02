@@ -1,0 +1,10 @@
+# Render Blueprint：完整 Fastify + WebSocket 服务，适合 GitHub 连接后一键部署。
+services:
+  - type: web
+    name: eorzea-typing-game
+    runtime: docker
+    plan: free
+    region: singapore
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    autoDeployTrigger: commit
