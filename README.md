@@ -22,7 +22,7 @@ pnpm start       # 单进程同时托管前端产物 + 词库 + 素材 + WebSock
 
 ```bash
 pnpm install
-pnpm test          # 47 个单测 + scripts/smoke-coop.ts 的联机冒烟测试
+pnpm test          # 50 个单测 + scripts/smoke-coop.ts 的联机冒烟测试
 ```
 
 起两个开发进程(各自独立热重载):
@@ -65,7 +65,10 @@ docker run -p 8080:8080 eorzea-typing
 
 ## 移动端
 
-不适配移动端,建议使用桌面浏览器——窄屏会显示提示遮罩,不会尝试渲染出一个挤坏的界面。
+**移动端只有单人模式**,联机入口在窄屏/触屏下不渲染(两个人对着房间码互相等,
+小屏体验差,触屏 IME 的时序差异也更容易踩到反作弊的硬校验)。断点定义在
+`apps/web/src/App.tsx` 的 `MOBILE_QUERY`,与 `app.css` 末尾那段媒体查询对齐,
+改一处要同时改另一处。
 
 ## 词库
 
@@ -75,7 +78,10 @@ docker run -p 8080:8080 eorzea-typing
 ## 素材
 
 见 [`assets/README.md`](assets/README.md) 与 [`assets/CREDITS.md`](assets/CREDITS.md)。
-当前仓库里 `assets/` 是空的,游戏走完全降级路径也能正常开局、打完、结算。
+图片素材(小人、兔子、泰坦剪影)随仓库分发;**BGM 不进版本控制也不打进部署镜像**
+(`assets/audio/` 已在 `.gitignore` / `.dockerignore` 中排除),线上没有 BGM,
+想听的人自行把已获授权的音频放进本地 `assets/audio/`。素材缺失时全部走降级路径,
+不影响正常开局、打完、结算。
 # 启动游戏
 
 Windows 下可直接双击根目录的 [`启动艾欧泽亚打字游戏.cmd`](启动艾欧泽亚打字游戏.cmd)。它会自动检查依赖、构建页面、启动本地服务，并打开 `http://localhost:8799/`；首次启动需要安装 Node.js LTS，且依赖安装可能需要网络。

@@ -5,3 +5,4 @@ export * from './anticheat';
 export * from './typingReducer';
 export * from './wordbank';
 export * from './battle';
+export * from './mechanics';

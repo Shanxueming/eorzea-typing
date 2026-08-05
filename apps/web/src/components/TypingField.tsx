@@ -1,5 +1,6 @@
 import type { ClipboardEvent, InputHTMLAttributes, Ref } from 'react';
 import type { WordEntry, TypingMode } from '@eorzea/shared/types';
+import type { InputMode } from '@eorzea/shared/battle';
 import type { JudgeStatus } from '@eorzea/shared/scoring';
 
 export interface TypingFieldProps {
@@ -12,6 +13,13 @@ export interface TypingFieldProps {
   isInterrupt: boolean;
   /** 是否在目标词下方显示拼音提示(仅汉字模式下有意义)。不传则默认显示,兼容旧调用方 */
   showReading?: boolean;
+  /** 组合输入下输入框要按状态变色(蓝/红/绿),逐字输入沿用原来的朴素样式 */
+  inputMode?: InputMode;
+  /**
+   * 多个并列目标(三连桶的左右方向词)。传了就并排展示、打哪个都算数;
+   * 此时逐字高亮会关掉 —— 玩家还没决定打哪个,高亮到某一个上是误导。
+   */
+  alternatives?: readonly WordEntry[];
 }
 
 function blockCopy(ev: ClipboardEvent<HTMLDivElement>): void {
@@ -37,6 +45,18 @@ function buildDisplayMap(display: string, target: string): number[] {
   return map;
 }
 
+/**
+ * 组合输入的三色反馈:默认/进行中是蓝,内容不匹配是红,完全匹配是绿。
+ * 逐字输入不需要这套 —— 它的 error 状态只存在于「立刻结算」之前的一瞬间,
+ * 染色没有意义,保留原来的朴素外观。
+ */
+function inputStateClass(status: JudgeStatus, inputMode: InputMode | undefined): string {
+  if (inputMode !== 'composed') return '';
+  if (status === 'error') return ' typing-field__input--mismatch';
+  if (status === 'complete') return ' typing-field__input--matched';
+  return ' typing-field__input--typing';
+}
+
 export function TypingField({
   entry,
   status,
@@ -45,7 +65,26 @@ export function TypingField({
   inputProps,
   isInterrupt,
   showReading = true,
+  inputMode,
+  alternatives,
 }: TypingFieldProps) {
+  if (alternatives && alternatives.length > 1) {
+    return (
+      <div className={`typing-field typing-field--interrupt typing-field--${status}`}>
+        <div className="typing-field__alts" onCopy={blockCopy} onCut={blockCopy}>
+          {alternatives.map((alt) => (
+            <span key={alt.id} className="typing-field__alt">{alt.text}</span>
+          ))}
+        </div>
+        <input
+          {...inputProps}
+          className={`typing-field__input${inputStateClass(status, inputMode)}`}
+          placeholder="打其中一个"
+        />
+      </div>
+    );
+  }
+
   if (!entry) {
     return (
       <div className="typing-field typing-field--empty">
@@ -89,7 +128,7 @@ export function TypingField({
       )}
       <input
         {...inputProps}
-        className="typing-field__input"
+        className={`typing-field__input${inputStateClass(status, inputMode)}`}
         placeholder={mode === 'pinyin' ? '输入拼音，完成后自动攻击' : '输入…'}
       />
     </div>

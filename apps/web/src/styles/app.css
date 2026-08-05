@@ -112,11 +112,58 @@ button:disabled {
 .menu__mode {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.menu__mode--input {
+  gap: 16px;
+}
+.menu__mode-hint {
+  color: var(--color-text-dim);
+  font-size: 12px;
+}
+/* 地狱难度下组合输入不可选 —— 置灰但仍留在原地,让人看得见「这一档没有它」 */
+.menu__option--locked {
+  opacity: 0.45;
+  cursor: not-allowed;
 }
 .menu__quick-start {
   align-self: flex-start;
   font-size: 17px;
   padding: 12px 24px;
+}
+
+.menu__characters {
+  background: var(--color-bg-panel);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.menu__character-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.menu__character-art {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+}
+.menu__character-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.menu__character-skill {
+  color: var(--color-text-dim);
+  font-size: 12px;
 }
 
 .menu__appearance {
@@ -447,6 +494,66 @@ button:disabled {
   border-color: var(--color-crystal);
 }
 
+/* ── 组合输入的三色反馈 ──
+ * 逐字输入不加这几个 class(见 TypingField 的 inputStateClass):它的 error 只
+ * 存在于「立刻结算」前的一瞬间,染色没有意义。组合输入才需要玩家能一眼看出
+ * 「现在这串对不对」,因为判定权交回给了玩家自己。
+ * 边框 + 外发光双通道,不靠单一色相传达状态,红绿色觉障碍下也能分辨。
+ */
+.typing-field__input--typing {
+  border-color: var(--color-input-idle);
+  box-shadow: 0 0 0 2px rgba(90, 140, 232, 0.18);
+}
+.typing-field__input--mismatch {
+  border-color: var(--color-input-mismatch);
+  box-shadow: 0 0 0 2px rgba(232, 90, 90, 0.26);
+}
+.typing-field__input--matched {
+  border-color: var(--color-input-matched);
+  box-shadow: 0 0 0 2px rgba(79, 206, 127, 0.3);
+}
+
+/* 技能按钮与增益条 */
+.battle__actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.skill-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--color-crystal);
+  background: rgba(127, 216, 232, 0.12);
+  color: var(--color-text);
+  font-size: 13px;
+  cursor: pointer;
+}
+.skill-button:hover:not(:disabled) {
+  background: rgba(127, 216, 232, 0.26);
+}
+.skill-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+.skill-button--cooling {
+  border-color: var(--color-text-dim);
+  background: rgba(255, 255, 255, 0.04);
+}
+.skill-button__state {
+  color: var(--color-text-dim);
+  font-variant-numeric: tabular-nums;
+}
+.battle__buff {
+  align-self: center;
+  font-size: 13px;
+  color: #ffd47f;
+}
+
 .battle__avatar-row {
   display: flex;
   justify-content: center;
@@ -734,4 +841,488 @@ button:disabled {
   border: 1px solid var(--color-text-dim);
   background: rgba(255, 255, 255, 0.04);
   color: var(--color-text);
+}
+
+/* ───────────────────────── 移动端(单人) ─────────────────────────
+ *
+ * 断点跟 App.tsx 里的 MOBILE_QUERY 对齐:720px 以下,或者粗指针 + 1024px 以下
+ * (手机与竖屏平板)。联机入口在这个尺寸下由 React 直接不渲染,这里只管布局。
+ *
+ * 三条约束驱动了下面的写法:
+ *   1. 输入框绝不能被软键盘顶出视口 —— 战斗页改成「Boss 区可滚动 + 输入区
+ *      贴在下方」的纵向流,输入框始终在拇指够得到的位置。
+ *   2. 输入框字号必须 ≥16px,否则 iOS Safari 会在聚焦时自动放大整个页面,
+ *      放大后就再也回不去,后面每个词都在放大的视口里打。
+ *   3. 触摸目标 ≥44px:技能、放弃、退出这几个按钮在战斗中是要抢时间点的。
+ */
+@media (max-width: 720px), (pointer: coarse) and (max-width: 1024px) {
+  .app {
+    padding: 12px 12px 32px;
+  }
+
+  /* 音频控件在小屏上从固定悬浮改成随文档流,不然会盖住标题 */
+  .app__audio-controls {
+    position: static;
+    max-width: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 12px;
+  }
+  .app__now-playing {
+    max-width: 100%;
+    order: 3;
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .menu__title {
+    font-size: 26px;
+  }
+  .menu__category-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    max-height: 200px;
+  }
+  .menu__quick-start,
+  .menu__custom-start {
+    align-self: stretch;
+    min-height: 48px;
+  }
+
+  /* Boss 立绘在竖屏上压缩,把纵向空间让给输入区 */
+  .boss-panel {
+    padding: 10px 12px;
+  }
+  .boss-panel__art {
+    height: 128px;
+  }
+  .boss-panel__titan {
+    height: 150px;
+  }
+  .boss-panel__titan-fallback {
+    font-size: 52px;
+    letter-spacing: 10px;
+  }
+
+  .typing-field__word {
+    font-size: 28px;
+    word-break: break-all;
+  }
+  .typing-field__input {
+    max-width: none;
+    /* ≥16px:低于这个值 iOS 会在聚焦时强制放大页面 */
+    font-size: 17px;
+    min-height: 48px;
+  }
+
+  .battle__actions {
+    gap: 8px;
+  }
+  .battle__actions .skill-button,
+  .battle__skip,
+  .battle__exit {
+    min-height: 44px;
+    flex: 1 1 auto;
+    justify-content: center;
+  }
+
+  /* 小人区在竖屏上并排会挤成两条细缝,单人模式本来也只有一个 */
+  .battle__avatar-row {
+    gap: 12px;
+  }
+}
+
+/* 横屏手机:高度极其有限,进一步压缩 Boss 区,优先保住输入框 */
+@media (pointer: coarse) and (max-height: 480px) {
+  .boss-panel__art {
+    height: 76px;
+  }
+  .boss-panel__titan {
+    height: 92px;
+  }
+  .app__audio-controls {
+    display: none;
+  }
+}
+
+/* ───────────────────────── 无限模式 ───────────────────────── */
+
+.menu__endless {
+  align-self: flex-start;
+  font-size: 15px;
+  padding: 11px 20px;
+  border-color: rgba(255, 212, 127, 0.6);
+  color: #ffd47f;
+  background: rgba(255, 212, 127, 0.1);
+}
+.menu__endless:hover:not(:disabled) {
+  background: rgba(255, 212, 127, 0.22);
+}
+
+/* 战斗中顶部那行「已存活 x:xx · 已击倒 n 只」,替代标准模式的狂暴倒计时 */
+.battle__endless-stat {
+  text-align: center;
+  font-size: 14px;
+  color: #ffd47f;
+  font-variant-numeric: tabular-nums;
+}
+.battle__endless-stat strong {
+  font-size: 17px;
+}
+
+.results__track {
+  color: var(--color-text-dim);
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+.results__endless {
+  background: var(--color-bg-panel);
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+}
+.results__endless-main {
+  font-size: 18px;
+}
+.results__endless-main strong {
+  font-size: 30px;
+  color: #ffd47f;
+}
+.results__endless-sub {
+  color: var(--color-text-dim);
+  font-size: 13px;
+  margin-top: 4px;
+}
+.results__new-record {
+  color: #ffd47f;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* ───────────────────────── Boss 特殊机制 ───────────────────────── */
+
+.mechanic {
+  background: rgba(232, 90, 90, 0.1);
+  border: 1px solid rgba(232, 90, 90, 0.45);
+  border-radius: 12px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.mechanic__header {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.mechanic__name {
+  font-size: 17px;
+  font-weight: 700;
+  color: #ff9d9d;
+}
+.mechanic__hint {
+  font-size: 12px;
+  color: var(--color-text-dim);
+  flex: 1;
+}
+.mechanic__timer {
+  font-variant-numeric: tabular-nums;
+  color: #ff9d9d;
+  font-weight: 700;
+}
+.mechanic__track {
+  height: 5px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+.mechanic__track-fill {
+  height: 100%;
+  background: var(--color-danger);
+  transition: width 0.1s linear;
+}
+
+/* 三连桶:一条格子赛道,猫在某格,石头在正中 */
+.barrel__lane {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+}
+.barrel__cell {
+  width: 52px;
+  height: 52px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+}
+.barrel__cell--stone {
+  border-color: rgba(127, 216, 232, 0.6);
+  background: rgba(127, 216, 232, 0.12);
+}
+.barrel__cell--self {
+  border-color: var(--color-crystal);
+  box-shadow: 0 0 0 2px rgba(127, 216, 232, 0.35);
+}
+.barrel__legend {
+  text-align: center;
+  font-size: 13px;
+  color: var(--color-text-dim);
+  margin-top: 8px;
+}
+.barrel__legend strong {
+  color: var(--color-crystal);
+  font-size: 16px;
+}
+.barrel__note {
+  display: block;
+  font-size: 11px;
+  margin-top: 2px;
+}
+
+/* 三穿一:三个词带序号,当前那个高亮,已完成的置灰 */
+.pierce {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.pierce__item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.04);
+}
+.pierce__item--current {
+  border-color: var(--color-crystal);
+  background: rgba(127, 216, 232, 0.14);
+}
+.pierce__item--done {
+  opacity: 0.4;
+  text-decoration: line-through;
+}
+.pierce__index {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.14);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+}
+.pierce__item--current .pierce__index {
+  background: var(--color-crystal);
+  color: #0b1020;
+}
+
+/* 并列目标(三连桶的左右词) */
+.typing-field__alts {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 12px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.typing-field__alt {
+  font-size: 26px;
+  letter-spacing: 2px;
+  padding: 4px 14px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 720px), (pointer: coarse) and (max-width: 1024px) {
+  .barrel__cell {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+  .typing-field__alt {
+    font-size: 20px;
+  }
+}
+
+/* 队友那一份机制状态:三连桶两人位置独立,得能看见队友躲到哪了 */
+.mechanic-teammate {
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 8px 12px;
+}
+.mechanic-teammate__title {
+  font-size: 12px;
+  color: var(--color-text-dim);
+  margin-bottom: 6px;
+}
+.mechanic--compact {
+  background: transparent;
+  border: none;
+  padding: 0;
+  gap: 4px;
+}
+.mechanic--compact .barrel__cell {
+  width: 34px;
+  height: 34px;
+  font-size: 17px;
+}
+.mechanic--compact .barrel__legend {
+  display: none;
+}
+.mechanic--compact .pierce__item {
+  padding: 3px 8px;
+  font-size: 12px;
+}
+.lobby__character {
+  color: var(--color-crystal);
+}
+
+.results__trust-warn {
+  color: #ffb44f;
+  font-size: 13px;
+  background: rgba(255, 180, 79, 0.1);
+  border: 1px solid rgba(255, 180, 79, 0.35);
+  border-radius: 10px;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+}
+
+/* ───────────────────────── 更新说明弹窗 ───────────────────────── */
+
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(6, 9, 20, 0.78);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.modal__panel {
+  background: var(--color-bg-panel);
+  border: 1px solid rgba(127, 216, 232, 0.35);
+  border-radius: 14px;
+  width: min(680px, 100%);
+  /* 内容可能很长:面板本身不长高,滚动交给 __body */
+  max-height: min(80vh, 720px);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.55);
+}
+.modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.modal__title {
+  margin: 0;
+  font-size: 19px;
+}
+.modal__close {
+  border: none;
+  background: transparent;
+  color: var(--color-text-dim);
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 6px;
+}
+.modal__close:hover {
+  color: var(--color-text);
+}
+.modal__body {
+  overflow-y: auto;
+  padding: 16px 20px;
+}
+.modal__footer {
+  padding: 12px 20px 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: flex-end;
+}
+.modal__confirm {
+  padding: 9px 22px;
+  font-size: 15px;
+  border-color: var(--color-crystal);
+  color: var(--color-text);
+  background: rgba(127, 216, 232, 0.16);
+}
+.modal__confirm:hover {
+  background: rgba(127, 216, 232, 0.3);
+}
+
+.changelog__version {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--color-crystal);
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+.changelog__date {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--color-text-dim);
+}
+.changelog__summary {
+  color: var(--color-text-dim);
+  font-size: 13px;
+  margin: 4px 0 14px;
+}
+.changelog__section {
+  margin-bottom: 14px;
+}
+.changelog__section-title {
+  font-size: 14px;
+  margin: 0 0 6px;
+  color: #ffd47f;
+}
+.changelog__list {
+  margin: 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.changelog__list li {
+  font-size: 13px;
+  line-height: 1.65;
+}
+.changelog__list strong {
+  color: var(--color-text);
+}
+
+.menu__changelog-link {
+  margin-left: 10px;
+  padding: 2px 10px;
+  font-size: 12px;
+  border-color: rgba(127, 216, 232, 0.5);
+  color: var(--color-crystal);
+  background: transparent;
+}
+.menu__changelog-link:hover {
+  background: rgba(127, 216, 232, 0.14);
+}
+
+@media (max-width: 720px), (pointer: coarse) and (max-width: 1024px) {
+  .modal {
+    padding: 10px;
+  }
+  .modal__panel {
+    max-height: 88vh;
+  }
+  .modal__confirm {
+    min-height: 44px;
+    flex: 1;
+  }
 }

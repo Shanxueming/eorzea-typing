@@ -4,3 +4,9 @@ node_modules
 **/dist
 *.log
 eorzea-typing-kit-sonnet.zip
+
+# BGM 不下发到线上镜像:体积大且授权状态因人而异。线上 /api/audio-playlist
+# 会返回空列表,前端按既有降级路径静默不播 BGM,不影响开局与通关。
+assets/audio/*
+!assets/audio/.gitkeep
+!assets/audio/README.md

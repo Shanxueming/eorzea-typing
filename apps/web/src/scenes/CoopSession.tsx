@@ -1,10 +1,11 @@
 import { useEffect, useReducer, useRef } from 'react';
 import type { BattleConfig, PlayerResult } from '@eorzea/shared/types';
-import type { Difficulty } from '@eorzea/shared/battle';
+import type { CharacterId, Difficulty, InputMode } from '@eorzea/shared/battle';
+import type { MechanicId, MechanicState } from '@eorzea/shared/mechanics';
 import { audio } from '../engine/audio';
 import { coopSocketUrl, type C2S, type PlayerPublic, type PlayerTick, type S2C } from '../engine/coopProtocol';
 import { Lobby } from './Lobby';
-import { CoopBattle, type CoopCastInfo } from './CoopBattle';
+import { CoopBattle } from './CoopBattle';
 import { CoopResults } from './CoopResults';
 
 interface SessionState {
@@ -15,13 +16,20 @@ interface SessionState {
   config: BattleConfig | null;
   startAt: number | null;
   difficulty: Difficulty;
+  inputMode: InputMode;
   bossHp: number;
+  bossMaxHp: number;
   teamHp: number;
   scores: PlayerTick[];
-  castWarning: boolean;
-  cast: CoopCastInfo | null;
-  lastResolvedCastId: string | null;
-  lastInterruptedBy: string | null;
+  /** 进行中的机制:自己的那一份状态 + 队友的那一份(队友区要显示对方位置) */
+  mechanicId: MechanicId | null;
+  mechanicStates: Record<string, MechanicState>;
+  mechanicTotalMs: number;
+  mechanicEndsAt: number | null;
+  mechanicClearedBy: string[];
+  /** 已经完成的人,用于在队友区打勾 */
+  mechanicDone: string[];
+  lastSkillUsedBy: string | null;
   lastAdvancedWord: { playerId: string; wordId: string } | null;
   results: PlayerResult[] | null;
   victory: boolean;
@@ -36,13 +44,18 @@ const initialState: SessionState = {
   config: null,
   startAt: null,
   difficulty: 'normal',
+  inputMode: 'sequential',
   bossHp: 0,
+  bossMaxHp: 0,
   teamHp: 0,
   scores: [],
-  castWarning: false,
-  cast: null,
-  lastResolvedCastId: null,
-  lastInterruptedBy: null,
+  mechanicId: null,
+  mechanicStates: {},
+  mechanicTotalMs: 0,
+  mechanicEndsAt: null,
+  mechanicClearedBy: [],
+  mechanicDone: [],
+  lastSkillUsedBy: null,
   lastAdvancedWord: null,
   results: null,
   victory: false,
@@ -68,30 +81,54 @@ function reduce(s: SessionState, a: Action): SessionState {
         config: a.config,
         startAt: a.startAt,
         difficulty: a.difficulty,
+        inputMode: a.inputMode,
         bossHp: a.config.bossHp,
+        bossMaxHp: a.config.bossHp,
         teamHp: 100,
         scores: [],
-        castWarning: false,
-        cast: null,
-        lastResolvedCastId: null,
-        lastInterruptedBy: null,
+        mechanicId: null,
+        mechanicStates: {},
+        mechanicTotalMs: 0,
+        mechanicEndsAt: null,
+        mechanicClearedBy: [],
+        mechanicDone: [],
+        lastSkillUsedBy: null,
         lastAdvancedWord: null,
         victory: false,
       };
-    case 'boss_cast_warning':
-      return { ...s, castWarning: true };
-    case 'boss_cast':
+    case 'mechanic_start':
       return {
         ...s,
-        castWarning: false,
-        cast: { castId: a.castId, skillName: a.skillName, word: a.word, castMs: a.castMs, startedAt: Date.now() },
+        mechanicId: a.mechanicId,
+        mechanicStates: a.states,
+        mechanicTotalMs: a.durationMs,
+        mechanicEndsAt: Date.now() + a.durationMs,
+        mechanicClearedBy: [],
+        mechanicDone: [],
       };
-    case 'cast_resolved':
-      return { ...s, cast: null, lastResolvedCastId: a.castId, lastInterruptedBy: a.interruptedBy };
+    case 'mechanic_progress':
+      return { ...s, mechanicStates: { ...s.mechanicStates, [a.playerId]: a.state } };
+    case 'mechanic_cleared':
+      return s.mechanicDone.includes(a.playerId)
+        ? s
+        : { ...s, mechanicDone: [...s.mechanicDone, a.playerId] };
+    case 'mechanic_resolved':
+      // ★ 这里不消费词队列。机制是插进来的挑战,普通词原地冻结,
+      //   服务端 resumeNormalWord 同样不推进 —— 两边必须一致。
+      return {
+        ...s,
+        mechanicId: null,
+        mechanicStates: {},
+        mechanicEndsAt: null,
+        mechanicClearedBy: a.clearedBy,
+        mechanicDone: [],
+      };
+    case 'skill_used':
+      return { ...s, lastSkillUsedBy: a.playerId };
     case 'word_advanced':
       return { ...s, lastAdvancedWord: { playerId: a.playerId, wordId: a.wordId } };
     case 'score_tick':
-      return { ...s, scores: a.scores, bossHp: a.bossHp, teamHp: a.teamHp };
+      return { ...s, scores: a.scores, bossHp: a.bossHp, bossMaxHp: a.bossMaxHp, teamHp: a.teamHp };
     case 'battle_end':
       return { ...s, status: 'results', results: a.results, victory: a.victory };
     case 'error':
@@ -181,13 +218,17 @@ export function CoopSession({ onExit, onVictory }: CoopSessionProps) {
         config={state.config}
         startAt={state.startAt}
         difficulty={state.difficulty}
+        inputMode={state.inputMode}
         bossHp={state.bossHp}
         teamHp={state.teamHp}
         scores={state.scores}
-        castWarning={state.castWarning}
-        cast={state.cast}
-        lastResolvedCastId={state.lastResolvedCastId}
-        lastInterruptedBy={state.lastInterruptedBy}
+        bossMaxHp={state.bossMaxHp}
+        mechanicId={state.mechanicId}
+        mechanicStates={state.mechanicStates}
+        mechanicTotalMs={state.mechanicTotalMs}
+        mechanicEndsAt={state.mechanicEndsAt}
+        mechanicClearedBy={state.mechanicClearedBy}
+        mechanicDone={state.mechanicDone}
         lastAdvancedWord={state.lastAdvancedWord}
         send={send}
         onExit={onExit}
@@ -207,7 +248,8 @@ export function CoopSession({ onExit, onVictory }: CoopSessionProps) {
       onCreate={(nick) => send({ t: 'create_room', nick })}
       onJoin={(code, nick) => send({ t: 'join_room', code, nick })}
       onReady={() => send({ t: 'ready' })}
-      onStart={(difficulty) => send({ t: 'start', difficulty })}
+      onStart={(difficulty, inputMode) => send({ t: 'start', difficulty, inputMode })}
+      onSelectCharacter={(character: CharacterId) => send({ t: 'select_character', character })}
       onExit={onExit}
     />
   );

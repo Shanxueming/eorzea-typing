@@ -13,6 +13,11 @@ export function loadBank(category: WordCategory | 'starter'): Promise<WordBankFi
       if (!r.ok) throw new Error(`wordbank "${category}" 加载失败: ${r.status}`);
       return r.json() as Promise<WordBankFile>;
     });
+    // 失败的 promise 不能留在缓存里,否则一次网络抖动就会让这个分类在整个页面
+    // 生命周期内永远加载失败,玩家重试多少次拿到的都是同一个 rejected promise。
+    p.catch(() => {
+      if (bankCache.get(category) === p) bankCache.delete(category);
+    });
     bankCache.set(category, p);
   }
   return p;

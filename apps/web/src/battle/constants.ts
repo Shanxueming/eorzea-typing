@@ -6,17 +6,37 @@ export {
   CAST_WARNING_MS,
   TITAN_WRATH_ON_SUCCESS_CHANCE,
   TITAN_WRATH_ON_FAILURE_CHANCE,
-  NORMAL_WORD_TIMEOUT_MULTIPLIER,
   PLAYER_MAX_HP,
-  PLAYER_DAMAGE_ON_MISS,
   PLAYER_DAMAGE_ON_FAIL,
   PLAYER_HEAL_ON_INTERRUPT,
   BOSS_NAME,
   BOSS_SKILL_NAME,
-  DIFFICULTY_CAST_MULTIPLIER,
+  DIFFICULTY_WORD_TIMEOUT_MS,
+  DIFFICULTY_CAST_DURATION_MS,
+  DIFFICULTY_DAMAGE_ON_MISS,
+  DIFFICULTY_WORD_LENGTH,
+  filterPoolByDifficulty,
+  hasTitanWrath,
+  TITAN_WRATH_PITY_STEP,
+  TITAN_WRATH_PITY_CAP,
+  TITAN_WRATH_COOLDOWN_WORDS,
+  titanWrathChance,
+  DEFAULT_INPUT_MODE,
+  allowsComposedInput,
+  resolveInputMode,
+  ENDLESS_DIFFICULTY,
+  ENDLESS_BOSS_HP_GROWTH,
+  ENDLESS_KILL_HEAL,
+  SKILL_COOLDOWN_MS,
+  SKILLS,
+  CHARACTER_LABEL,
+  BLOODBATH_WORDS,
+  BLOODBATH_MULTIPLIER,
+  BLOODBATH_TIME_SCALE,
 } from '@eorzea/shared/battle';
 import type { Difficulty } from '@eorzea/shared/battle';
 export type { Difficulty };
+export type { InputMode, CharacterId, GameMode } from '@eorzea/shared/battle';
 
 /** 小人 attack/miss 动画回弹到 idle 的时长上限。纯前端表现参数,不随战斗协议下发 */
 export const AVATAR_PULSE_MS = 380;
@@ -36,4 +56,15 @@ export const DIFFICULTY_LABEL: Record<Difficulty, string> = {
   normal: '普通',
   hard: '困难',
   hell: '地狱',
+};
+
+/** 输入模式的界面文案。纯前端渲染表,和难度文案一样不需要跨端同步。 */
+export const INPUT_MODE_LABEL: Record<import('@eorzea/shared/battle').InputMode, string> = {
+  composed: '组合输入',
+  sequential: '逐字输入',
+};
+
+export const INPUT_MODE_HINT: Record<import('@eorzea/shared/battle').InputMode, string> = {
+  composed: '可以先打完再回头改,输入框变绿才算过',
+  sequential: '一旦打错就立刻结算,不给修改机会',
 };

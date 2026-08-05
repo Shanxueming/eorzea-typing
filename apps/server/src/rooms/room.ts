@@ -23,25 +23,47 @@ import { computeDamage, computeScore, computeStats, targetOf } from '@eorzea/sha
 import { randomCategories, selectPool } from '@eorzea/shared/wordbank';
 import { checkAttempt, analyzeSession } from '@eorzea/shared/anticheat';
 import {
+  bossHpFor,
   createWordQueue,
   filterFeaturedWordPool,
-  pickShortInterruptWord,
+  filterPoolByDifficulty,
+  resolveInputMode,
+  titanWrathChance,
+  BLOODBATH_MULTIPLIER,
+  BLOODBATH_TIME_SCALE,
+  BLOODBATH_WORDS,
+  SKILL_COOLDOWN_MS,
   type WordQueue,
+  type CharacterId,
   type Difficulty,
+  type InputMode,
   BOSS_MAX_HP,
   BATTLE_DURATION_MS,
   CAST_INTERVAL_MS,
-  CAST_DURATION_MS,
-  DIFFICULTY_CAST_MULTIPLIER,
-  NORMAL_WORD_TIMEOUT_MULTIPLIER,
+  DIFFICULTY_CAST_DURATION_MS,
+  DIFFICULTY_DAMAGE_ON_MISS,
+  DIFFICULTY_WORD_TIMEOUT_MS,
   PLAYER_MAX_HP,
-  PLAYER_DAMAGE_ON_MISS,
   PLAYER_DAMAGE_ON_FAIL,
   PLAYER_HEAL_ON_INTERRUPT,
   BOSS_SKILL_NAME,
   TITAN_WRATH_ON_FAILURE_CHANCE,
   TITAN_WRATH_ON_SUCCESS_CHANCE,
 } from '@eorzea/shared/battle';
+import {
+  ENDLESS_MECHANIC_CHANCE,
+  ENDLESS_MECHANIC_THRESHOLDS,
+  MECHANICS,
+  createMechanicState,
+  crossedThresholds,
+  currentMechanicWords,
+  mechanicDurationMs,
+  mechanicForHpDrop,
+  submitMechanicWord,
+  type MechanicId,
+  type MechanicState,
+} from '@eorzea/shared/mechanics';
+import { ALLOW_SYNTHETIC_INPUT } from '../devFlags.js';
 import { loadAllCategories, loadBank, loadBanks } from './wordbankStore.js';
 import { send, type ConnectedPlayer, type PlayerPublic, type PlayerTick, type S2C } from './protocol.js';
 import type { WebSocket } from 'ws';
@@ -62,16 +84,34 @@ interface PlayerBattleState {
   targets: Map<string, string>;
   /** checkAttempt 硬校验命中的 flag,局末并入 analyzeSession 的统计 flags 一起展示 */
   hardFlags: Set<string>;
-  /** 普通词限时计时器,打断期间不跑这个,由 triggerCast 清掉 */
+  /** 普通词限时计时器,机制期间不跑这个,由 beginMechanic 清掉 */
   wordTimer: ReturnType<typeof setTimeout> | null;
+  /** 技能可再次使用的时刻(相对本局毫秒) */
+  skillReadyAt: number;
+  /** 「浴血」剩余覆盖几个词 */
+  bloodbathWordsLeft: number;
 }
 
-interface PendingCast {
-  castId: string;
-  word: WordEntry;
+/**
+ * 进行中的机制。
+ *
+ * ★ 两种语义并存,靠 `shared` 区分:
+ *   - 共享型(泰坦之怒):任一玩家打对就算全队躲过,大家一起结束。
+ *   - 独立型(三连桶/三穿一):**每人一份状态、各自判定**(需求明确要求),
+ *     谁没在时限内完成谁吃一份伤害;全员完成则提前结束。
+ */
+interface PendingMechanic {
+  mechanicId: MechanicId;
+  shared: boolean;
+  /** playerId -> 该玩家当前的机制状态。已完成的人从这里移除 */
+  states: Map<string, MechanicState>;
+  cleared: Set<string>;
   deadline: number;
-  resolvedBy: string | null;
+  totalMs: number;
 }
+
+/** 昵称展示上限,超出部分截断,避免超长串把对手的界面撑坏 */
+const MAX_NICK_LENGTH = 16;
 
 export class Room {
   readonly code: string;
@@ -81,16 +121,32 @@ export class Room {
   private onEmpty: () => void;
   private battleStartedAt = 0;
   private seed = '';
+  /** 这一局的普通词池,已按难度分布筛过 */
   private pool: WordEntry[] = [];
+  /**
+   * 打断词池:只过 filterFeaturedWordPool,**不按难度筛**。
+   * 打断词必须是 ≤4 字的短词,而困难/地狱的普通词池最短就是 4 字,拿它去找
+   * 短词很容易一个都找不到,泰坦之怒会从此静默失效。打断的难度体现在读条窗口
+   * (DIFFICULTY_CAST_DURATION_MS)上,不在字数上。
+   */
+  private interruptPool: WordEntry[] = [];
   private config: BattleConfig | null = null;
   private bossHp = 0;
+  private bossMaxHp = 0;
   private teamHp = 0;
-  private castDurationMs = CAST_DURATION_MS;
-  private normalWordTimeoutMs = CAST_DURATION_MS * NORMAL_WORD_TIMEOUT_MULTIPLIER;
+  private castDurationMs = DIFFICULTY_CAST_DURATION_MS.normal;
+  private normalWordTimeoutMs = DIFFICULTY_WORD_TIMEOUT_MS.normal;
   private difficulty: Difficulty = 'normal';
+  private inputMode: InputMode = 'sequential';
+  /**
+   * 泰坦之怒保底计数器:距上次触发之后全房又结算了几个普通词。
+   * **全房一份**,不是每人一份 —— 泰坦之怒本来就是全房共享的一次事件,
+   * 每人各攒一份会让两人局的实际触发频率直接翻倍。
+   */
+  private wordsSinceWrath = 0;
   private battleState = new Map<string, PlayerBattleState>();
-  private pendingCast: PendingCast | null = null;
-  private castTimeoutTimer: ReturnType<typeof setTimeout> | null = null;
+  private pendingMechanic: PendingMechanic | null = null;
+  private mechanicTimer: ReturnType<typeof setTimeout> | null = null;
   private tickTimer: ReturnType<typeof setInterval> | null = null;
   private endTimer: ReturnType<typeof setTimeout> | null = null;
   private ended = false;
@@ -104,9 +160,25 @@ export class Room {
     return Date.now() - this.battleStartedAt;
   }
 
+  /**
+   * 反作弊硬校验的统一出口。
+   *
+   * 测试开关 ALLOW_SYNTHETIC_INPUT 只放行 `untrusted_event` 这**一条**
+   * (自动化脚本发的合成事件),时间线倒流、时钟偏移、粘贴检测一条不少 ——
+   * 它是为了让 E2E 能跑通联机对局,不是为了让作弊变容易。默认关闭。
+   */
+  private verifyAttempt(attempt: WordAttempt, wordId: string, target: string, nowMs: number) {
+    const check = checkAttempt(attempt, { wordId, target }, nowMs);
+    if (!ALLOW_SYNTHETIC_INPUT) return check;
+    const flags = check.flags.filter((f) => f !== 'untrusted_event');
+    return { ok: flags.length === 0, flags };
+  }
+
   publicPlayers(): PlayerPublic[] {
     // 第一个加入的玩家就是房主,不用额外存字段
-    return this.players.map((p, i) => ({ playerId: p.playerId, nick: p.nick, ready: p.ready, isHost: i === 0 }));
+    return this.players.map((p, i) => ({
+      playerId: p.playerId, nick: p.nick, ready: p.ready, isHost: i === 0, character: p.character,
+    }));
   }
 
   broadcast(msg: S2C): void {
@@ -119,15 +191,25 @@ export class Room {
     }
     const player: ConnectedPlayer = {
       playerId: nanoid(8),
-      nick,
+      nick: nick.slice(0, MAX_NICK_LENGTH),
       ws,
       ready: false,
       connected: true,
       disconnectTimer: null,
       eliminated: false,
+      character: 'p1',
     };
     this.players.push(player);
     return player;
+  }
+
+  /** 大厅里选角色。两人可以选同一个 —— 合作模式没必要抢 */
+  handleSelectCharacter(playerId: string, character: CharacterId): void {
+    if (this.phase !== 'lobby') return;
+    const p = this.players.find((x) => x.playerId === playerId);
+    if (!p) return;
+    p.character = character;
+    this.broadcast({ t: 'room_update', players: this.publicPlayers() });
   }
 
   /** 非房主点「准备」;房主不需要走这条(房主直接点开始) */
@@ -140,16 +222,16 @@ export class Room {
 
   /**
    * 房主专用:单人不能开始;必须凑够 2 人且非房主那位已经点了准备;
-   * 这局用哪档难度由房主这次点开始时带的值决定,不商量。
+   * 这局用哪档难度、哪种输入模式都由房主这次点开始时带的值决定,不商量。
    */
-  handleStart(playerId: string, difficulty: Difficulty): void {
+  handleStart(playerId: string, difficulty: Difficulty, inputMode: InputMode): void {
     if (this.phase !== 'lobby') return;
     const host = this.players[0];
     if (!host || host.playerId !== playerId) return;
     if (this.players.length < 2) return;
     const guest = this.players[1];
     if (!guest || !guest.ready) return;
-    void this.startBattle(difficulty);
+    void this.startBattle(difficulty, inputMode);
   }
 
   handleDisconnect(playerId: string): void {
@@ -173,12 +255,16 @@ export class Room {
     }, 5000);
   }
 
-  private async startBattle(difficulty: Difficulty): Promise<void> {
+  private async startBattle(difficulty: Difficulty, inputMode: InputMode): Promise<void> {
     this.phase = 'battle';
     this.seed = nanoid(12);
-    this.castDurationMs = Math.round(CAST_DURATION_MS * DIFFICULTY_CAST_MULTIPLIER[difficulty]);
-    this.normalWordTimeoutMs = Math.round(this.castDurationMs * NORMAL_WORD_TIMEOUT_MULTIPLIER);
+    this.castDurationMs = DIFFICULTY_CAST_DURATION_MS[difficulty];
+    this.normalWordTimeoutMs = DIFFICULTY_WORD_TIMEOUT_MS[difficulty];
     this.difficulty = difficulty;
+    // 地狱难度强制逐字:客户端理应也这么收敛,但输入模式决定判负规则,
+    // 不能指望客户端老实,服务端自己再过一遍同一个函数。
+    this.inputMode = resolveInputMode(difficulty, inputMode);
+    this.wordsSinceWrath = 0;
 
     const allCategories = await loadAllCategories();
     let categories = randomCategories(allCategories, this.seed);
@@ -191,12 +277,14 @@ export class Room {
       pool = filterFeaturedWordPool(selectPool([starter], { categories, pureOnly: true }));
       banks = [starter];
     }
-    this.pool = pool;
+    // 完整池留给打断词,普通词队列用按难度筛过的池
+    this.interruptPool = pool;
+    this.pool = filterPoolByDifficulty(pool, difficulty);
 
     this.config = {
       seed: this.seed,
       bossId: 'titan',
-      bossHp: BOSS_MAX_HP,
+      bossHp: bossHpFor(difficulty),
       durationMs: BATTLE_DURATION_MS,
       categories,
       pureOnly: true,
@@ -204,13 +292,14 @@ export class Room {
       mode: 'hanzi',
       castIntervalMs: CAST_INTERVAL_MS,
     };
-    this.bossHp = BOSS_MAX_HP;
+    this.bossMaxHp = bossHpFor(difficulty);
+    this.bossHp = this.bossMaxHp;
     this.teamHp = PLAYER_MAX_HP;
     this.battleStartedAt = Date.now();
 
     for (const p of this.players) {
       this.battleState.set(p.playerId, {
-        queue: createWordQueue(pool, this.seed),
+        queue: createWordQueue(this.pool, this.seed),
         currentWord: null,
         isInterrupt: false,
         combo: 0,
@@ -225,11 +314,19 @@ export class Room {
         targets: new Map(),
         hardFlags: new Set(),
         wordTimer: null,
+        skillReadyAt: 0,
+        bloodbathWordsLeft: 0,
       });
       this.drawNext(p.playerId);
     }
 
-    this.broadcast({ t: 'battle_start', config: this.config, startAt: this.battleStartedAt, difficulty });
+    this.broadcast({
+      t: 'battle_start',
+      config: this.config,
+      startAt: this.battleStartedAt,
+      difficulty,
+      inputMode: this.inputMode,
+    });
     this.tickTimer = setInterval(() => this.tick(), 250);
     this.endTimer = setTimeout(() => this.endBattle(), BATTLE_DURATION_MS);
   }
@@ -250,16 +347,24 @@ export class Room {
   private scheduleWordTimeout(playerId: string, wordId: string): void {
     const bs = this.battleState.get(playerId);
     if (!bs) return;
+    const timeoutMs = bs.bloodbathWordsLeft > 0
+      ? Math.round(this.normalWordTimeoutMs * BLOODBATH_TIME_SCALE)
+      : this.normalWordTimeoutMs;
     bs.wordTimer = setTimeout(() => {
       const cur = this.battleState.get(playerId);
       if (!cur || this.ended || cur.isInterrupt || !cur.currentWord || cur.currentWord.id !== wordId) return;
       this.resolveNormalMiss(playerId);
-    }, this.normalWordTimeoutMs);
+    }, timeoutMs);
   }
 
   /**
    * 普通词的失败出口。超时、地狱模式输错与反作弊硬校验失败都从这里结算：
-   * 先扣血，再随机决定推进到下一词或立刻进入泰坦之怒。
+   * 先扣血，推进到下一个普通词，再随机决定要不要插入一次泰坦之怒。
+   *
+   * ★ 推进与广播必须发生在 tryTriggerTitanWrath 之前:客户端消费队列的时机是
+   *   固定的(见 CoopBattle.tsx),服务端只要在某条分支上跳过 drawNext,两边的
+   *   队列游标就会永久错开一格,之后所有 word_attempt 都会因 wordId 对不上被
+   *   本文件的 handleWordAttempt 静默丢弃。
    */
   private resolveNormalMiss(playerId: string): void {
     const bs = this.battleState.get(playerId);
@@ -267,11 +372,12 @@ export class Room {
     const failedWordId = bs.currentWord.id;
     bs.misses += 1;
     bs.combo = 0;
-    this.damageTeam(PLAYER_DAMAGE_ON_MISS);
+    this.damageTeam(DIFFICULTY_DAMAGE_ON_MISS[this.difficulty]);
     if (this.ended) return;
-    if (this.tryTriggerTitanWrath(TITAN_WRATH_ON_FAILURE_CHANCE)) return;
+    this.wordsSinceWrath += 1;
     this.drawNext(playerId);
     this.broadcast({ t: 'word_advanced', playerId, wordId: failedWordId });
+    this.tryTriggerTitanWrath(TITAN_WRATH_ON_FAILURE_CHANCE);
   }
 
   handleWordAttempt(playerId: string, attempt: WordAttempt): void {
@@ -283,19 +389,8 @@ export class Room {
     bs.keystrokesTotal += attempt.keystrokes.length;
     bs.backspacesTotal += attempt.backspaces;
 
-    if (bs.isInterrupt && this.pendingCast && this.pendingCast.resolvedBy === null) {
-      const target = targetOf(this.pendingCast.word, this.config.mode);
-      bs.attempts.push(attempt);
-      bs.targets.set(attempt.wordId, target);
-      const check = checkAttempt(attempt, { wordId: this.pendingCast.word.id, target }, nowMs);
-      if (!check.ok) {
-        check.flags.forEach((f) => bs.hardFlags.add(f));
-        if (this.difficulty === 'hell') this.resolveCastTimeout(this.pendingCast.castId);
-      } else if (attempt.wordId === this.pendingCast.word.id && attempt.submitted === target) {
-        this.resolveCastSuccess(playerId);
-      } else if (this.difficulty === 'hell') {
-        this.resolveCastTimeout(this.pendingCast.castId);
-      }
+    if (bs.isInterrupt && this.pendingMechanic) {
+      this.handleMechanicAttempt(playerId, attempt, nowMs);
       return;
     }
 
@@ -307,18 +402,22 @@ export class Room {
 
     // 一致性硬校验:时间线、trusted 事件、粘贴检测。不通过就该次不算数
     // (即便文本碰巧打对了),记 0 分、扣血并留下 flag。
-    const check = checkAttempt(attempt, { wordId: bs.currentWord.id, target }, nowMs);
+    const check = this.verifyAttempt(attempt, bs.currentWord.id, target, nowMs);
     if (!check.ok) {
       check.flags.forEach((f) => bs.hardFlags.add(f));
       this.resolveNormalMiss(playerId);
       return;
     }
 
+    let prevBossHp = this.bossHp;
     if (attempt.submitted === target) {
-      const dmg = computeDamage(bs.currentWord.difficulty, bs.combo, false);
+      const raw = computeDamage(bs.currentWord.difficulty, bs.combo, false);
+      // 「浴血」把奖惩一起放大
+      const dmg = bs.bloodbathWordsLeft > 0 ? Math.round(raw * BLOODBATH_MULTIPLIER) : raw;
       bs.damage += dmg;
       bs.combo += 1;
       bs.wordsCompleted += 1;
+      prevBossHp = this.bossHp;
       this.bossHp = Math.max(0, this.bossHp - dmg);
       if (this.bossHp <= 0) {
         this.endBattle(true);
@@ -326,20 +425,84 @@ export class Room {
       }
     } else {
       // 简单/普通/困难允许原词重输；只有地狱会把一个错误字符立刻结算为失败。
+      // (组合输入下客户端根本不会为「打错」发 attempt,这里只可能是地狱模式
+      //  的逐字上报,或者客户端乱发 —— 两种情况都按同一套规则处理。)
       if (this.difficulty === 'hell') this.resolveNormalMiss(playerId);
       return;
     }
-    if (!this.tryTriggerTitanWrath(TITAN_WRATH_ON_SUCCESS_CHANCE)) this.drawNext(playerId);
+    // 客户端打对后一定会乐观推进到下一个词,服务端必须无条件跟上,再决定要不要
+    // 插入泰坦之怒 —— 顺序反过来就会两边错位一格,理由见 resolveNormalMiss。
+    this.wordsSinceWrath += 1;
+    if (bs.bloodbathWordsLeft > 0) bs.bloodbathWordsLeft -= 1;
+    this.drawNext(playerId);
+    // 血量阈值机制优先于随机插入的泰坦之怒 —— 它是「剧情节点」
+    this.tryTriggerHpMechanic(prevBossHp, this.bossHp);
+    if (!this.pendingMechanic) this.tryTriggerTitanWrath(TITAN_WRATH_ON_SUCCESS_CHANCE);
   }
 
-  /** 玩家主动放弃当前词：服务端权威地结算为失败，不能被较低难度的重输规则绕过。 */
-  handleSkipWord(playerId: string, wordId: string): void {
+  /**
+   * 机制期间的提交。判定与推进全部走 mechanics.ts 的纯函数,服务端只负责
+   * 反作弊校验 + 广播 —— 加新机制不需要动这个方法。
+   */
+  private handleMechanicAttempt(playerId: string, attempt: WordAttempt, nowMs: number): void {
+    const pm = this.pendingMechanic;
     const bs = this.battleState.get(playerId);
-    if (!bs || this.ended || this.phase !== 'battle' || !bs.currentWord || bs.currentWord.id !== wordId) return;
-    if (bs.isInterrupt && this.pendingCast) {
-      this.resolveCastTimeout(this.pendingCast.castId);
+    if (!pm || !bs || !this.config) return;
+    const state = pm.states.get(playerId);
+    if (!state) return; // 已经通过的人不再判定
+
+    const candidates = currentMechanicWords(state);
+    const hit = candidates.find((w) => w.id === attempt.wordId);
+    if (!hit) return; // 提交的不是当前该打的词,忽略
+
+    const target = targetOf(hit, this.config.mode);
+    bs.attempts.push(attempt);
+    bs.targets.set(attempt.wordId, target);
+    const check = this.verifyAttempt(attempt, hit.id, target, nowMs);
+    if (!check.ok) {
+      check.flags.forEach((f) => bs.hardFlags.add(f));
       return;
     }
+    if (attempt.submitted !== target) return;
+
+    const outcome = submitMechanicWord(state, hit.id);
+    if (outcome.kind === 'rejected') return; // 方向/顺序不对:原地不动,不广播
+    if (outcome.kind === 'progress') {
+      pm.states.set(playerId, outcome.state);
+      this.broadcast({ t: 'mechanic_progress', playerId, state: outcome.state });
+      return;
+    }
+
+    // cleared
+    pm.cleared.add(playerId);
+    pm.states.delete(playerId);
+    this.broadcast({ t: 'mechanic_cleared', playerId });
+    // 共享型一人通过即全队通过;独立型要等所有人各自完成
+    const alive = this.players.filter((x) => !x.eliminated);
+    if (pm.shared || pm.cleared.size >= alive.length) this.resolveMechanic();
+  }
+
+  /**
+   * 玩家主动放弃当前词：服务端权威地结算为失败，不能被较低难度的重输规则绕过。
+   * 打断期间客户端提交的是打断词的 id(普通词在后台原地等着),所以两种 id 都要认。
+   */
+  handleSkipWord(playerId: string, wordId: string): void {
+    const bs = this.battleState.get(playerId);
+    if (!bs || this.ended || this.phase !== 'battle') return;
+    if (bs.isInterrupt) {
+      // 机制期间放弃:把自己这一份从待判定里摘掉(不算通过),其余人继续。
+      // 独立判定下不能因为一个人放弃就把另一个人的机制也掐了。
+      const pm = this.pendingMechanic;
+      if (pm && pm.states.has(playerId)) {
+        pm.states.delete(playerId);
+        const alive = this.players.filter((x) => !x.eliminated);
+        if (pm.shared || pm.cleared.size + (alive.length - pm.states.size - pm.cleared.size) >= alive.length) {
+          if (pm.states.size === 0) this.resolveMechanic();
+        }
+      }
+      return;
+    }
+    if (!bs.currentWord || bs.currentWord.id !== wordId) return;
     this.resolveNormalMiss(playerId);
   }
 
@@ -356,76 +519,170 @@ export class Room {
     this.teamHp = Math.min(PLAYER_MAX_HP, this.teamHp + amount);
   }
 
-  /** 泰坦之怒只跟着普通词失败随机触发,不再按计时器抢断玩家正在输入的词。 */
-  private tryTriggerTitanWrath(chance: number): boolean {
+  /**
+   * 泰坦之怒:每次普通词结算后按概率插入。实际概率经 titanWrathChance 叠加保底
+   * 并施加触发后的冷却窗口,地狱难度不吃那层冷却,简单难度根本不触发。
+   */
+  private tryTriggerTitanWrath(baseChance: number): boolean {
+    const chance = titanWrathChance(baseChance, this.wordsSinceWrath, this.difficulty);
     if (Math.random() >= chance) return false;
-    this.triggerCast();
-    return this.pendingCast !== null;
+    this.beginMechanic('titan_wrath');
+    if (this.pendingMechanic) this.wordsSinceWrath = 0; // 真的触发了才重置保底
+    return this.pendingMechanic !== null;
   }
 
-  private triggerCast(): void {
-    if (this.ended || this.pendingCast || this.phase !== 'battle') return;
-    const word = pickShortInterruptWord(this.pool, `${this.seed}:cast:${Date.now()}`);
-    if (!word) return;
+  /**
+   * Boss 掉血后检查血量阈值机制(三连桶 67% / 三穿一 33%)。
+   *
+   * ⚠ 每一条让 Boss 掉血的路径都必须调这个方法。机制成功带 2.5 倍打断加成,
+   *   一击跨过整个阈值区间是常事 —— 漏一处那一档机制就被静默跳过、不报任何错。
+   */
+  private tryTriggerHpMechanic(prevHp: number, curHp: number): void {
+    if (this.pendingMechanic || this.ended || this.bossMaxHp <= 0) return;
+    const prevRatio = prevHp / this.bossMaxHp;
+    const curRatio = curHp / this.bossMaxHp;
+    const id = mechanicForHpDrop(prevRatio, curRatio, Math.random());
+    if (id) this.beginMechanic(id);
+  }
 
-    const castId = nanoid(8);
-    this.pendingCast = { castId, word, deadline: this.now() + this.castDurationMs, resolvedBy: null };
-    for (const p of this.players) {
-      const bs = this.battleState.get(p.playerId);
-      if (bs) {
-        if (bs.wordTimer) {
-          clearTimeout(bs.wordTimer);
-          bs.wordTimer = null;
-        }
-        bs.isInterrupt = true;
-        bs.currentWord = word;
-      }
+  /**
+   * 开一次机制。所有机制走这一个入口。
+   *
+   * ★ 每个玩家各建一份状态 —— 三连桶要求两人独立位置、独立判定(需求 Q11)。
+   *   共享型(泰坦之怒)也各发一份,但内容相同、任一人打对即全队通过。
+   * ★ 机制词从**没按难度筛过的完整池**取,理由见 mechanics.ts 里的说明。
+   */
+  private beginMechanic(id: MechanicId): void {
+    if (this.ended || this.pendingMechanic || this.phase !== 'battle') return;
+    const alive = this.players.filter((p) => !p.eliminated);
+    if (alive.length === 0) return;
+
+    const shared = id === 'titan_wrath';
+    const totalMs = mechanicDurationMs(id, this.difficulty);
+    const states = new Map<string, MechanicState>();
+    const wire: Record<string, MechanicState> = {};
+
+    for (const p of alive) {
+      // 共享型两人用同一个 seed(词必须一样);独立型带上 playerId,
+      // 这样两人的方向词与出生点各不相同,不能靠抄对方的操作蒙混过关。
+      const seed = shared
+        ? `${this.seed}:${id}:${this.now()}`
+        : `${this.seed}:${id}:${this.now()}:${p.playerId}`;
+      const st = createMechanicState(id, this.interruptPool, this.difficulty, this.now(), seed, Math.random());
+      if (!st) return; // 池子凑不出词就跳过这次机制,不让战斗卡住
+      states.set(p.playerId, st);
+      wire[p.playerId] = st;
     }
-    this.broadcast({ t: 'boss_cast', castId, skillName: BOSS_SKILL_NAME, word, castMs: this.castDurationMs });
-    this.castTimeoutTimer = setTimeout(() => this.resolveCastTimeout(castId), this.castDurationMs);
-  }
 
-  private resolveCastSuccess(playerId: string): void {
-    if (!this.pendingCast || this.pendingCast.resolvedBy) return;
-    const { castId, word } = this.pendingCast;
-    this.pendingCast.resolvedBy = playerId;
-    if (this.castTimeoutTimer) clearTimeout(this.castTimeoutTimer);
-
-    const bs = this.battleState.get(playerId)!;
-    const dmg = computeDamage(word.difficulty, bs.combo, true);
-    bs.damage += dmg;
-    bs.combo += 1;
-    bs.interruptsSucceeded += 1;
-    this.bossHp = Math.max(0, this.bossHp - dmg);
-    this.healTeam(PLAYER_HEAL_ON_INTERRUPT);
-
-    this.broadcast({ t: 'cast_resolved', castId, interruptedBy: playerId });
-    for (const p of this.players) {
-      const b = this.battleState.get(p.playerId);
-      if (b) {
-        b.isInterrupt = false;
-        this.drawNext(p.playerId);
-      }
-    }
-    this.pendingCast = null;
-
-    if (this.bossHp <= 0) this.endBattle(true);
-  }
-
-  private resolveCastTimeout(castId: string): void {
-    if (!this.pendingCast || this.pendingCast.castId !== castId || this.pendingCast.resolvedBy) return;
-    this.broadcast({ t: 'cast_resolved', castId, interruptedBy: null });
-    this.damageTeam(PLAYER_DAMAGE_ON_FAIL);
+    this.pendingMechanic = {
+      mechanicId: id,
+      shared,
+      states,
+      cleared: new Set(),
+      deadline: this.now() + totalMs,
+      totalMs,
+    };
 
     for (const p of this.players) {
       const bs = this.battleState.get(p.playerId);
       if (!bs) continue;
-      bs.isInterrupt = false;
-      bs.interruptsFailed += 1;
-      bs.combo = 0;
-      this.drawNext(p.playerId);
+      // 机制期间普通词不计时,免得一边打机制一边被判超时
+      if (bs.wordTimer) {
+        clearTimeout(bs.wordTimer);
+        bs.wordTimer = null;
+      }
+      bs.isInterrupt = true;
     }
-    this.pendingCast = null;
+
+    this.broadcast({ t: 'mechanic_start', mechanicId: id, states: wire, durationMs: totalMs, shared });
+    this.mechanicTimer = setTimeout(() => this.resolveMechanic(), totalMs);
+  }
+
+  /**
+   * 机制结算。通过的人拿奖励,没通过的人各扣一份 PLAYER_DAMAGE_ON_FAIL。
+   * 独立判定意味着**两个人都没躲开就扣两份**,这是团队血条下的自然后果。
+   */
+  private resolveMechanic(): void {
+    const pm = this.pendingMechanic;
+    if (!pm) return;
+    this.pendingMechanic = null;
+    if (this.mechanicTimer) {
+      clearTimeout(this.mechanicTimer);
+      this.mechanicTimer = null;
+    }
+
+    const alive = this.players.filter((p) => !p.eliminated);
+    const clearedBy = [...pm.cleared];
+    const prevBossHp = this.bossHp;
+
+    for (const p of alive) {
+      const bs = this.battleState.get(p.playerId);
+      if (!bs) continue;
+      if (pm.cleared.has(p.playerId) || (pm.shared && clearedBy.length > 0)) {
+        // 通过:给一次打断级奖励(伤害 + 回血)
+        const word = currentMechanicWords(pm.states.get(p.playerId) ?? ({} as MechanicState))[0];
+        const raw = computeDamage(word?.difficulty ?? 2, bs.combo, true);
+        const dmg = bs.bloodbathWordsLeft > 0 ? Math.round(raw * BLOODBATH_MULTIPLIER) : raw;
+        bs.damage += dmg;
+        bs.combo += 1;
+        bs.interruptsSucceeded += 1;
+        this.bossHp = Math.max(0, this.bossHp - dmg);
+        this.healTeam(PLAYER_HEAL_ON_INTERRUPT);
+      } else {
+        bs.interruptsFailed += 1;
+        bs.combo = 0;
+        this.damageTeam(PLAYER_DAMAGE_ON_FAIL);
+        if (this.ended) return;
+      }
+    }
+
+    this.broadcast({ t: 'mechanic_resolved', mechanicId: pm.mechanicId, clearedBy });
+    for (const p of this.players) this.resumeNormalWord(p.playerId);
+
+    if (this.bossHp <= 0) {
+      this.endBattle(true);
+      return;
+    }
+    // 机制伤害同样可能跨过下一档阈值,必须再查一次
+    this.tryTriggerHpMechanic(prevBossHp, this.bossHp);
+  }
+
+  /**
+   * 机制结束:回到被冻结的那个普通词,重新起限时,**不消费队列**。
+   * 机制是插进来的一次挑战,普通词原地冻结 —— 这条是词队列不错位的地基,
+   * 客户端在 mechanic_resolved 时同样不推进队列。
+   */
+  private resumeNormalWord(playerId: string): void {
+    const bs = this.battleState.get(playerId);
+    if (!bs || this.ended) return;
+    bs.isInterrupt = false;
+    if (bs.currentWord) this.scheduleWordTimeout(playerId, bs.currentWord.id);
+  }
+
+  /**
+   * 主动技能。服务端权威 —— 技能会跳词、改时限,交给客户端自己算等于开挂。
+   */
+  handleUseSkill(playerId: string): void {
+    const p = this.players.find((x) => x.playerId === playerId);
+    const bs = this.battleState.get(playerId);
+    if (!p || !bs || this.ended || this.phase !== 'battle') return;
+    if (bs.isInterrupt || !bs.currentWord) return; // 机制期间不能开
+    if (this.now() < bs.skillReadyAt) return;
+    bs.skillReadyAt = this.now() + SKILL_COOLDOWN_MS;
+
+    if (p.character === 'p1') {
+      // 原初的解放:换掉当前词、连击不断,不造成任何伤害。
+      // 要广播 word_advanced,否则客户端的队列不会跟着走 —— 这正是词队列错位的
+      // 那类 bug 的温床,技能这条新路径同样必须遵守「两边消费次数逐次相等」。
+      const skipped = bs.currentWord.id;
+      this.drawNext(playerId);
+      this.broadcast({ t: 'word_advanced', playerId, wordId: skipped });
+    } else {
+      bs.bloodbathWordsLeft = BLOODBATH_WORDS;
+      // 增益期间限时收紧,重设当前词的计时器
+      if (bs.currentWord) this.scheduleWordTimeout(playerId, bs.currentWord.id);
+    }
+    this.broadcast({ t: 'skill_used', playerId, character: p.character });
   }
 
   private tick(): void {
@@ -446,18 +703,26 @@ export class Room {
         combo: bs.combo,
       };
     });
-    this.broadcast({ t: 'score_tick', scores, bossHp: this.bossHp, teamHp: this.teamHp });
+    this.broadcast({ t: 'score_tick', scores, bossHp: this.bossHp, bossMaxHp: this.bossMaxHp, teamHp: this.teamHp });
   }
 
   private endBattle(victory = false): void {
     if (this.ended) return;
     this.ended = true;
     this.phase = 'ended';
-    if (this.castTimeoutTimer) clearTimeout(this.castTimeoutTimer);
+    if (this.mechanicTimer) clearTimeout(this.mechanicTimer);
     if (this.tickTimer) clearInterval(this.tickTimer);
     if (this.endTimer) clearTimeout(this.endTimer);
     for (const bs of this.battleState.values()) {
       if (bs.wordTimer) clearTimeout(bs.wordTimer);
+    }
+    // 断线宽限计时器也要清:战斗已经结束,再让它 5 秒后回调没有意义,
+    // 房间对象却会因此被计时器多引用 5 秒。
+    for (const p of this.players) {
+      if (p.disconnectTimer) {
+        clearTimeout(p.disconnectTimer);
+        p.disconnectTimer = null;
+      }
     }
 
     const elapsedMs = this.now();

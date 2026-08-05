@@ -16,8 +16,9 @@
  * 判定逻辑抽成了下面的纯 reducer,可单独测试,不依赖 DOM。
  */
 
-import { useCallback, useEffect, useRef, useReducer } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useReducer } from 'react';
 import type { KeystrokeEvent, WordEntry, TypingMode } from '@eorzea/shared/types';
+import { judgeInput } from '@eorzea/shared/scoring';
 import {
   typingReducer, initialTypingState, type TypingState,
 } from '@eorzea/shared/typingReducer';
@@ -26,11 +27,19 @@ import {
 
 export interface UseTypingInputOptions {
   entry: WordEntry | null;
+  /**
+   * 备选目标。三连桶那种「同时给左右两个词、打哪个都行」的机制会用到:
+   * 传进来之后,输入匹配其中任何一个都算数,`onComplete` 会告诉你命中的是哪个。
+   * 不传就是单目标,行为和以前一模一样。
+   */
+  candidates?: readonly WordEntry[];
   mode: TypingMode;
   /** 返回相对本局开始的毫秒数 */
   now: () => number;
   /** 一个词打完时回调,拿到该词的完整遥测 */
   onComplete: (payload: {
+    /** 实际命中的那个词的 id —— 多候选时调用方靠它区分玩家选了哪个 */
+    wordId: string;
     submitted: string;
     keystrokes: KeystrokeEvent[];
     backspaces: number;
@@ -42,23 +51,58 @@ export interface UseTypingInputOptions {
   disabled?: boolean;
 }
 
+/**
+ * 多候选下选出「当前应该拿哪个词去判定」。
+ *
+ * ★ 只读的 typingReducer 一次只认一个 entry,所以多目标不能靠改 reducer 实现,
+ *   而是在 dispatch 之前先挑出最贴合当前输入的那个候选喂给它:
+ *   完全命中 > 还是前缀(打了一半) > 都不是(随便给第一个,让它判 error)。
+ *   这样「打左词还是右词」在玩家敲第一个字时就自然分流了。
+ */
+function pickCandidate(
+  candidates: readonly WordEntry[],
+  value: string,
+  mode: TypingMode,
+): WordEntry {
+  let progress: WordEntry | null = null;
+  for (const c of candidates) {
+    const r = judgeInput(c, value, mode);
+    if (r.status === 'complete') return c;
+    if (r.status === 'progress' && !progress) progress = c;
+  }
+  return progress ?? candidates[0];
+}
+
 export function useTypingInput(opts: UseTypingInputOptions) {
-  const { entry, mode, now, onComplete, disabled } = opts;
+  const { entry, candidates, mode, now, onComplete, disabled } = opts;
   const [state, dispatch] = useReducer(typingReducer, undefined, () => initialTypingState(0));
   const inputRef = useRef<HTMLInputElement | null>(null);
   const stateRef = useRef(state);
   stateRef.current = state;
 
-  // 换词时重置。注意依赖是 entry?.id 而不是 entry 对象,避免引用变化导致误重置
+  /** 实际参与判定的目标集合。没传 candidates 就退化成单目标 */
+  const targets = useMemo<readonly WordEntry[]>(
+    () => (candidates && candidates.length > 0 ? candidates : entry ? [entry] : []),
+    [candidates, entry],
+  );
+  const targetsRef = useRef(targets);
+  targetsRef.current = targets;
+
+  // 换词时重置。key 用所有候选的 id 拼起来 —— 多候选下任何一个换了都要重置,
+  // 只看 entry?.id 会漏掉「entry 没变但备选换了」的情况。
+  const targetsKey = targets.map((t) => t.id).join('|');
   useEffect(() => {
     dispatch({ type: 'RESET', now: now() });
     if (inputRef.current) inputRef.current.value = '';
-  }, [entry?.id]);
+  }, [targetsKey]);
 
   // 打完一个词:上报遥测并清空
   useEffect(() => {
-    if (state.status !== 'complete' || !entry) return;
+    if (state.status !== 'complete' || targets.length === 0) return;
+    // 命中的是哪个候选:此刻输入已经完全等于某个目标,pickCandidate 会把它选出来
+    const hit = pickCandidate(targets, state.input, mode);
     onComplete({
+      wordId: hit.id,
       submitted: state.input,
       keystrokes: state.keystrokes,
       backspaces: state.backspaces,
@@ -84,23 +128,25 @@ export function useTypingInput(opts: UseTypingInputOptions) {
   }, [disabled, now]);
 
   const handleInput = useCallback((ev: React.FormEvent<HTMLInputElement>) => {
-    if (disabled || !entry) return;
-    dispatch({ type: 'INPUT', value: ev.currentTarget.value, entry, mode });
-  }, [disabled, entry, mode]);
+    if (disabled || targetsRef.current.length === 0) return;
+    const value = ev.currentTarget.value;
+    dispatch({ type: 'INPUT', value, entry: pickCandidate(targetsRef.current, value, mode), mode });
+  }, [disabled, mode]);
 
   const handleCompositionStart = useCallback(() => {
     dispatch({ type: 'COMPOSITION_START' });
   }, []);
 
   const handleCompositionEnd = useCallback((ev: React.CompositionEvent<HTMLInputElement>) => {
-    if (!entry) return;
+    if (targetsRef.current.length === 0) return;
+    const value = (ev.target as HTMLInputElement).value;
     dispatch({
       type: 'COMPOSITION_END',
-      value: (ev.target as HTMLInputElement).value,
-      entry,
+      value,
+      entry: pickCandidate(targetsRef.current, value, mode),
       mode,
     });
-  }, [entry, mode]);
+  }, [mode]);
 
   const handleBlur = useCallback(() => dispatch({ type: 'BLUR', now: now() }), [now]);
   const handleFocus = useCallback(() => dispatch({ type: 'FOCUS', now: now() }), [now]);

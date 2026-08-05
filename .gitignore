@@ -9,3 +9,9 @@ __pycache__/
 # 抠图原件与过程文件不进入公共代码仓库。
 scripts/source-assets/
 scripts/qa-artifacts/
+
+# BGM 音频不进版本控制、也不参与部署下发：体积大、且授权状态由放入者各自负责。
+# 玩家/开发者把自己的音频放进 assets/audio/ 即可本地生效,游戏缺文件时静默降级。
+assets/audio/*
+!assets/audio/.gitkeep
+!assets/audio/README.md

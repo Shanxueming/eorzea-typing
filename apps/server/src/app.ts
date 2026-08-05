@@ -70,7 +70,9 @@ export async function buildApp(): Promise<FastifyInstance> {
 
 export async function startServer(port: number): Promise<FastifyInstance> {
   const app = await buildApp();
-  await app.listen({ port, host: '0.0.0.0' });
+  // 先挂 WebSocket 再开始监听:反过来的话,从 listen 成功到 attach 完成之间
+  // 到达的 /ws 升级请求会被没有 upgrade 处理器的 http server 直接拒掉。
   attachRoomServer(app.server);
+  await app.listen({ port, host: '0.0.0.0' });
   return app;
 }

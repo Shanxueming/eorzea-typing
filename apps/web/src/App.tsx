@@ -4,6 +4,8 @@ import { SoloBattle, type SoloResult } from './scenes/SoloBattle';
 import { Results } from './scenes/Results';
 import { CoopSession } from './scenes/CoopSession';
 import { audio } from './engine/audio';
+import { ChangelogModal } from './components/ChangelogModal';
+import { hasSeenLatest } from './data/changelog';
 
 type Scene = 'menu' | 'solo' | 'results' | 'coop';
 
@@ -81,16 +83,49 @@ function AudioControls() {
   );
 }
 
+/**
+ * 移动端只做单人:联机要两个人对着房间码互相等,小屏上体验差,而且触屏 IME 的
+ * 时序差异更容易踩到反作弊的硬校验。用媒体查询而不是 UA 嗅探判断,横屏平板
+ * 一样能玩联机。
+ */
+const MOBILE_QUERY = '(max-width: 720px), (pointer: coarse) and (max-width: 1024px)';
+
+function useIsMobile(): boolean {
+  const [isMobile, setIsMobile] = useState(
+    () => typeof window !== 'undefined' && window.matchMedia(MOBILE_QUERY).matches,
+  );
+  useEffect(() => {
+    const mq = window.matchMedia(MOBILE_QUERY);
+    // ★ 挂 listener 之前必须先同步一次当前值。首次渲染求值到这个 effect 执行
+    //   之间视口可能已经变了(页面在视口尺寸还是 0 的时候完成首屏渲染就会这样),
+    //   那一次 change 事件发生在我们订阅之前,永远收不到 —— 结果就是桌面浏览器
+    //   被永久判定成移动端、联机入口再也不出现。
+    setIsMobile(mq.matches);
+    const onChange = (ev: MediaQueryListEvent) => setIsMobile(ev.matches);
+    mq.addEventListener('change', onChange);
+    return () => mq.removeEventListener('change', onChange);
+  }, []);
+  return isMobile;
+}
+
 export default function App() {
   const [scene, setScene] = useState<Scene>('menu');
   const [soloConfig, setSoloConfig] = useState<SoloStartConfig | null>(null);
   const [soloResult, setSoloResult] = useState<SoloResult | null>(null);
   const [battleKey, setBattleKey] = useState(0);
   const [victoryCount, setVictoryCount] = useState(0);
+  const isMobile = useIsMobile();
+  // 有新版更新说明就自动弹一次;看过之后只能从主菜单再点开
+  const [showChangelog, setShowChangelog] = useState(() => !hasSeenLatest());
+
+  // 从联机场景切到窄屏(转竖屏、缩窗口)时把人送回菜单,免得卡在一个
+  // 移动端不再支持的场景里。
+  useEffect(() => {
+    if (isMobile && scene === 'coop') setScene('menu');
+  }, [isMobile, scene]);
 
   return (
-    <div className="app">
-      <div className="mobile-warning">建议使用桌面浏览器进行本游戏,移动端暂不适配。</div>
+    <div className={`app${isMobile ? ' app--mobile' : ''}`}>
       <AudioControls />
 
       {scene === 'menu' && (
@@ -102,6 +137,8 @@ export default function App() {
           }}
           onGoCoop={() => setScene('coop')}
           victoryCount={victoryCount}
+          coopAvailable={!isMobile}
+          onShowChangelog={() => setShowChangelog(true)}
         />
       )}
 
@@ -111,6 +148,9 @@ export default function App() {
           pool={soloConfig.pool}
           mode={soloConfig.mode}
           difficulty={soloConfig.difficulty}
+          inputMode={soloConfig.inputMode}
+          character={soloConfig.character}
+          gameMode={soloConfig.gameMode}
           onExit={() => setScene('menu')}
           onFinish={(result) => {
             setSoloResult(result);
@@ -132,6 +172,8 @@ export default function App() {
       )}
 
       {scene === 'coop' && <CoopSession onExit={() => setScene('menu')} onVictory={() => setVictoryCount((count) => count + 1)} />}
+
+      {showChangelog && <ChangelogModal onClose={() => setShowChangelog(false)} />}
     </div>
   );
 }

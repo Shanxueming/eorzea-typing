@@ -7,6 +7,10 @@
   --color-text-dim: #8a97b5;
   --color-p1: #7fd8e8;
   --color-p2: #b8b8c8;
+  /* 组合输入的三色反馈:默认蓝、不匹配红、完全匹配绿 */
+  --color-input-idle: #5a8ce8;
+  --color-input-mismatch: #e85a5a;
+  --color-input-matched: #4fce7f;
   --font-ui: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
 }
 
@@ -31,22 +35,12 @@ button {
   font-family: inherit;
 }
 
-.mobile-warning {
-  display: none;
-}
+/* 移动端不再盖遮罩劝退,改为真正适配(单人)。整块 .mobile-warning 已移除。 */
 
-@media (max-width: 720px) {
-  .mobile-warning {
-    display: block;
-    position: fixed;
-    inset: 0;
-    z-index: 999;
-    background: var(--color-bg);
-    color: var(--color-text);
-    padding: 24px;
-    text-align: center;
-    font-size: 15px;
-    line-height: 1.6;
+/* 触屏上不要因为双击缩放而吃掉第二次点击,打字游戏点得很快 */
+@media (pointer: coarse) {
+  button {
+    touch-action: manipulation;
   }
 }
 
