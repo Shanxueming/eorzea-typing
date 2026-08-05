@@ -34,8 +34,10 @@ export function SkillButton({ skill, readyAt, now, disabled, onUse }: SkillButto
       className={`skill-button${onCooldown ? ' skill-button--cooling' : ''}`}
       disabled={disabled || onCooldown}
       onClick={onUse}
-      title={skill.description}
+      title={`${skill.description}(快捷键 Tab)`}
+      tabIndex={-1}
     >
+      <span className="skill-button__key">Tab</span>
       <span className="skill-button__name">{skill.name}</span>
       <span className="skill-button__state">
         {onCooldown ? `${Math.ceil(remainingMs / 1000)}s` : '可用'}

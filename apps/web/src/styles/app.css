@@ -1268,38 +1268,47 @@ button:disabled {
   display: flex;
   align-items: baseline;
   gap: 10px;
+  flex-wrap: wrap;
 }
 .changelog__date {
   font-size: 12px;
   font-weight: 400;
   color: var(--color-text-dim);
 }
-.changelog__summary {
-  color: var(--color-text-dim);
+/* 顶部那段地址:保留换行,并且允许长 URL 断行,窄屏上不会撑破面板 */
+.changelog__lead {
+  white-space: pre-line;
+  word-break: break-all;
   font-size: 13px;
-  margin: 4px 0 14px;
+  line-height: 1.7;
+  color: var(--color-text-dim);
+  background: rgba(127, 216, 232, 0.08);
+  border-left: 2px solid var(--color-crystal);
+  padding: 8px 12px;
+  margin: 10px 0 16px;
 }
 .changelog__section {
-  margin-bottom: 14px;
+  margin-bottom: 18px;
 }
 .changelog__section-title {
   font-size: 14px;
-  margin: 0 0 6px;
+  margin: 0 0 8px;
   color: #ffd47f;
 }
-.changelog__list {
-  margin: 0;
-  padding-left: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
+.changelog__item {
+  margin-bottom: 10px;
 }
-.changelog__list li {
+.changelog__item-name {
   font-size: 13px;
-  line-height: 1.65;
+  font-weight: 700;
+  margin-bottom: 2px;
 }
-.changelog__list strong {
-  color: var(--color-text);
+/* ★ pre-line:更新说明是按「一行一句」手写断行的,自动折行会打乱节奏 */
+.changelog__item-text {
+  white-space: pre-line;
+  font-size: 13px;
+  line-height: 1.75;
+  color: var(--color-text-dim);
 }
 
 .menu__changelog-link {
@@ -1324,5 +1333,24 @@ button:disabled {
   .modal__confirm {
     min-height: 44px;
     flex: 1;
+  }
+}
+
+/* 技能按钮上的快捷键角标 */
+.skill-button__key {
+  font-size: 11px;
+  padding: 1px 6px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.14);
+  color: var(--color-text-dim);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+.skill-button:not(:disabled) .skill-button__key {
+  color: var(--color-crystal);
+}
+/* 触屏上没有键盘,角标只会让人困惑 */
+@media (pointer: coarse) {
+  .skill-button__key {
+    display: none;
   }
 }

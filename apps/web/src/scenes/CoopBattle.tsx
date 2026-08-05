@@ -343,6 +343,17 @@ export function CoopBattle(props: CoopBattleProps) {
 
   function onKeyDown(ev: KeyboardEvent<HTMLInputElement>) {
     inputProps.onKeyDown(ev);
+
+    // Tab 开技能,理由与按键选择见 SoloBattle 里同一处的注释
+    if (ev.key === 'Tab' && !ev.nativeEvent.isComposing) {
+      ev.preventDefault();
+      if (!inMechanic && now() >= skillReadyAt) {
+        send({ t: 'use_skill' });
+        setSkillReadyAt(now() + SKILL_COOLDOWN_MS);
+      }
+      return;
+    }
+
     // 组合输入下 Enter 不清空,理由同 SoloBattle
     if (inputMode === 'composed') return;
     if (ev.key === 'Enter' && !ev.nativeEvent.isComposing) {

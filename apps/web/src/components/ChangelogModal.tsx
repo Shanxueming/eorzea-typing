@@ -1,4 +1,4 @@
-import { useEffect, useRef, type ReactNode } from 'react';
+import { useEffect, useRef } from 'react';
 import { CHANGELOG, markLatestSeen } from '../data/changelog';
 
 export interface ChangelogModalProps {
@@ -6,19 +6,12 @@ export interface ChangelogModalProps {
 }
 
 /**
- * 把 `**加粗**` 渲染成 <strong>。
+ * 更新说明弹窗。
  *
- * 只支持这一种标记 —— 更新说明里唯一需要的强调就是「哪几个字是重点」,
- * 为它引一个 markdown 库不值得(依赖白名单里也没有)。
+ * 正文原样保留换行(CSS 的 white-space: pre-line)—— 更新说明是按「一行一句、
+ * 断在语义处」写的,自动折行会把节奏打乱。所以这里不做任何 markdown 解析,
+ * 数据里写成什么样就显示成什么样。
  */
-function renderEmphasis(text: string): ReactNode[] {
-  return text.split(/(\*\*[^*]+\*\*)/g).map((part, i) =>
-    part.startsWith('**') && part.endsWith('**')
-      ? <strong key={i}>{part.slice(2, -2)}</strong>
-      : <span key={i}>{part}</span>,
-  );
-}
-
 export function ChangelogModal({ onClose }: ChangelogModalProps) {
   const closeRef = useRef<HTMLButtonElement | null>(null);
 
@@ -52,18 +45,20 @@ export function ChangelogModal({ onClose }: ChangelogModalProps) {
           {CHANGELOG.map((entry) => (
             <article key={entry.version} className="changelog__entry">
               <div className="changelog__version">
-                {entry.version}
-                <span className="changelog__date">{entry.date}</span>
+                艾欧泽亚打字修行 · 更新
+                <span className="changelog__date">{entry.version}</span>
               </div>
-              <p className="changelog__summary">{entry.summary}</p>
+              {entry.lead && <p className="changelog__lead">{entry.lead}</p>}
+
               {entry.sections.map((section) => (
                 <section key={section.title} className="changelog__section">
-                  <h3 className="changelog__section-title">{section.title}</h3>
-                  <ul className="changelog__list">
-                    {section.items.map((item, i) => (
-                      <li key={i}>{renderEmphasis(item)}</li>
-                    ))}
-                  </ul>
+                  <h3 className="changelog__section-title">【{section.title}】</h3>
+                  {section.items.map((item, i) => (
+                    <div key={i} className="changelog__item">
+                      {item.name && <div className="changelog__item-name">■ {item.name}</div>}
+                      <div className="changelog__item-text">{item.text}</div>
+                    </div>
+                  ))}
                 </section>
               ))}
             </article>

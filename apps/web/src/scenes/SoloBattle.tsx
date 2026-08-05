@@ -712,6 +712,19 @@ export function SoloBattle({ pool, mode, difficulty, inputMode, character, gameM
 
   function onKeyDown(ev: KeyboardEvent<HTMLInputElement>) {
     inputProps.onKeyDown(ev);
+
+    // Tab 开技能。打字游戏里两只手都在键盘上,为开技能去点鼠标等于放弃这几秒输入。
+    // 选 Tab 的理由:左手小指不用离开home区就能够到,而且中文输入法用数字键和
+    // 空格选词、不占用 Tab。必须 preventDefault —— 否则焦点会跳出输入框,
+    // 之后打的字全都进不去。
+    // isComposing 时放行给输入法:少数输入法在候选状态下用 Tab 翻页,
+    // 这时候抢走它会让人没法选词。
+    if (ev.key === 'Tab' && !ev.nativeEvent.isComposing) {
+      ev.preventDefault();
+      useSkill();
+      return;
+    }
+
     // 组合输入下 Enter 不做任何事:玩家可能刚打完一长串正要回头改,
     // 这时候把输入清掉是最气人的行为。
     if (inputMode === 'composed') return;

@@ -299,9 +299,13 @@ export const SKILLS: Record<CharacterId, SkillDef> = {
   },
 };
 
+/**
+ * 角色在界面上的称呼。跟着 assets/avatar/ 的槽位命名走(p1.png / p2.png),
+ * 换立绘不必改这里。
+ */
 export const CHARACTER_LABEL: Record<CharacterId, string> = {
-  p1: '黑皮猫娘',
-  p2: '灰皮猫娘',
+  p1: 'P1',
+  p2: 'P2',
 };
 
 export type TrustVerdict = 'verified' | 'unverified' | 'rejected';
