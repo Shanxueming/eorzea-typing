@@ -110,6 +110,13 @@ interface PendingMechanic {
   /** playerId -> 该玩家当前的机制状态。已完成的人从这里移除 */
   states: Map<string, MechanicState>;
   cleared: Set<string>;
+  /**
+   * 独立型机制专用:哪些人已经单独结算过奖惩、放回普通词了。
+   * resolveMechanic 最终清算(超时兜底)时要跳过他们,不能再罚/奖一遍。
+   */
+  resolvedEarly: Set<string>;
+  /** 机制开始那一刻的 Boss 血量,最终清算时用来检查有没有跨过下一档阈值 */
+  bossHpAtStart: number;
   deadline: number;
   totalMs: number;
 }
@@ -454,6 +461,41 @@ export class Room {
   }
 
   /**
+   * 独立型机制下,某个玩家自己已经有结果了(打过关,或放弃/超时判负)——
+   * 立刻结算这一份的奖惩、放回普通词,不等队友。
+   *
+   * ★ 这是本条修复的核心:以前不管共享型独立型,都要等 `resolveMechanic()`
+   *   在全队都有结果(或整个机制超时)之后统一结算,独立型机制手快的人打完
+   *   自己那份还要干等着手慢的队友——普通词冻结、技能也开不了,体验上就像
+   *   "被队友卡住了"。独立判定的本意是"各自判定",结算时机也应该各自独立。
+   */
+  private settleIndividualMechanic(
+    playerId: string,
+    pm: PendingMechanic,
+    passed: boolean,
+    word: WordEntry | undefined,
+  ): void {
+    const bs = this.battleState.get(playerId);
+    if (!bs) return;
+    if (passed) {
+      const raw = computeDamage(word?.difficulty ?? 2, bs.combo, true);
+      const dmg = bs.bloodbathWordsLeft > 0 ? Math.round(raw * BLOODBATH_MULTIPLIER) : raw;
+      bs.damage += dmg;
+      bs.combo += 1;
+      bs.interruptsSucceeded += 1;
+      this.bossHp = Math.max(0, this.bossHp - dmg);
+      this.healTeam(PLAYER_HEAL_ON_INTERRUPT);
+    } else {
+      bs.interruptsFailed += 1;
+      bs.combo = 0;
+      this.damageTeam(PLAYER_DAMAGE_ON_FAIL);
+    }
+    pm.resolvedEarly.add(playerId);
+    if (this.ended) return;
+    this.resumeNormalWord(playerId);
+  }
+
+  /**
    * 机制期间的提交。判定与推进全部走 mechanics.ts 的纯函数,服务端只负责
    * 反作弊校验 + 广播 —— 加新机制不需要动这个方法。
    */
@@ -490,9 +532,20 @@ export class Room {
     pm.cleared.add(playerId);
     pm.states.delete(playerId);
     this.broadcast({ t: 'mechanic_cleared', playerId });
-    // 共享型一人通过即全队通过;独立型要等所有人各自完成
+    if (pm.shared) {
+      // 共享型:一人通过即全队通过,立刻结算
+      this.resolveMechanic();
+      return;
+    }
+    // 独立型:自己这一份立刻结算、放回普通词,不用等队友
+    this.settleIndividualMechanic(playerId, pm, true, hit);
+    if (this.ended) return;
+    if (this.bossHp <= 0) {
+      this.endBattle(true);
+      return;
+    }
     const alive = this.players.filter((x) => !x.eliminated);
-    if (pm.shared || pm.cleared.size >= alive.length) this.resolveMechanic();
+    if (pm.resolvedEarly.size >= alive.length) this.resolveMechanic();
   }
 
   /**
@@ -508,10 +561,18 @@ export class Room {
       const pm = this.pendingMechanic;
       if (pm && pm.states.has(playerId)) {
         pm.states.delete(playerId);
-        const alive = this.players.filter((x) => !x.eliminated);
-        if (pm.shared || pm.cleared.size + (alive.length - pm.states.size - pm.cleared.size) >= alive.length) {
+        if (pm.shared) {
+          // 共享型:一人放弃不代表全队放弃;只有"所有人都没打对、也都放弃了"
+          // 才判全队失败——真有人打对的话,resolveMechanic 早在那时就跑过了。
           if (pm.states.size === 0) this.resolveMechanic();
+          return;
         }
+        // 独立型:自己放弃就是自己没躲开,立刻结算失败、放回普通词——
+        // 不连累队友,也不用等队友。
+        this.settleIndividualMechanic(playerId, pm, false, undefined);
+        if (this.ended) return;
+        const alive = this.players.filter((x) => !x.eliminated);
+        if (pm.resolvedEarly.size >= alive.length) this.resolveMechanic();
       }
       return;
     }
@@ -592,6 +653,8 @@ export class Room {
       shared,
       states,
       cleared: new Set(),
+      resolvedEarly: new Set(),
+      bossHpAtStart: this.bossHp,
       deadline: this.now() + totalMs,
       totalMs,
     };
@@ -612,8 +675,10 @@ export class Room {
   }
 
   /**
-   * 机制结算。通过的人拿奖励,没通过的人各扣一份 PLAYER_DAMAGE_ON_FAIL。
-   * 独立判定意味着**两个人都没躲开就扣两份**,这是团队血条下的自然后果。
+   * 机制最终清算。独立型机制下,打过关/主动放弃的人早就在
+   * `settleIndividualMechanic` 里各自结算过了(见那边的注释)——这里只
+   * 处理两种情况:共享型机制(一直批量结算到这一步),以及独立型里单纯
+   * 超时、没打对也没主动放弃的人(按失败扣团队血)。
    */
   private resolveMechanic(): void {
     const pm = this.pendingMechanic;
@@ -626,13 +691,14 @@ export class Room {
 
     const alive = this.players.filter((p) => !p.eliminated);
     const clearedBy = [...pm.cleared];
-    const prevBossHp = this.bossHp;
 
     for (const p of alive) {
+      if (pm.resolvedEarly.has(p.playerId)) continue; // 独立型:已经单独结算过
       const bs = this.battleState.get(p.playerId);
       if (!bs) continue;
       if (pm.cleared.has(p.playerId) || (pm.shared && clearedBy.length > 0)) {
-        // 通过:给一次打断级奖励(伤害 + 回血)
+        // 通过:给一次打断级奖励(伤害 + 回血)。走到这里的只可能是共享型
+        // (独立型的"通过"都已经在 settleIndividualMechanic 里处理过了)。
         const word = currentMechanicWords(pm.states.get(p.playerId) ?? ({} as MechanicState))[0];
         const raw = computeDamage(word?.difficulty ?? 2, bs.combo, true);
         const dmg = bs.bloodbathWordsLeft > 0 ? Math.round(raw * BLOODBATH_MULTIPLIER) : raw;
@@ -642,22 +708,25 @@ export class Room {
         this.bossHp = Math.max(0, this.bossHp - dmg);
         this.healTeam(PLAYER_HEAL_ON_INTERRUPT);
       } else {
+        // 没通过:共享型全队一起罚,或独立型里单纯超时(没打对也没主动放弃)的人
         bs.interruptsFailed += 1;
         bs.combo = 0;
         this.damageTeam(PLAYER_DAMAGE_ON_FAIL);
         if (this.ended) return;
       }
+      this.resumeNormalWord(p.playerId);
     }
 
     this.broadcast({ t: 'mechanic_resolved', mechanicId: pm.mechanicId, clearedBy });
-    for (const p of this.players) this.resumeNormalWord(p.playerId);
 
     if (this.bossHp <= 0) {
       this.endBattle(true);
       return;
     }
-    // 机制伤害同样可能跨过下一档阈值,必须再查一次
-    this.tryTriggerHpMechanic(prevBossHp, this.bossHp);
+    // 机制伤害同样可能跨过下一档阈值,必须再查一次——独立型的伤害大多已经在
+    // settleIndividualMechanic 里实时判过了,这里用机制开始时的血量兜底,
+    // 保证不会因为拆成两处结算而漏判。
+    this.tryTriggerHpMechanic(pm.bossHpAtStart, this.bossHp);
   }
 
   /**

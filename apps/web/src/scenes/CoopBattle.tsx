@@ -48,6 +48,8 @@ export interface CoopBattleProps {
   scores: PlayerTick[];
   /** 进行中的机制。states 按 playerId 分开 —— 三连桶两人位置各自独立 */
   mechanicId: MechanicId | null;
+  /** 全房共享(泰坦之怒)还是各自独立判定(三连桶/三穿一) */
+  mechanicShared: boolean;
   mechanicStates: Record<string, MechanicState>;
   mechanicTotalMs: number;
   mechanicEndsAt: number | null;
@@ -79,6 +81,7 @@ export function CoopBattle(props: CoopBattleProps) {
     teamHp,
     scores,
     mechanicId,
+    mechanicShared,
     mechanicStates,
     mechanicTotalMs,
     mechanicEndsAt,
@@ -243,7 +246,11 @@ export function CoopBattle(props: CoopBattleProps) {
     ? mechanicStates[opponentForMech.playerId] ?? null
     : null;
   const selfCharacter: CharacterId = players.find((p) => p.playerId === selfId)?.character ?? 'p1';
-  const selfMechanic = mechanicId ? mechanicStates[selfId] ?? null : null;
+  // 独立型机制下,自己一旦单独打过关/放弃(服务端已经放回普通词了,见
+  // Room.settleIndividualMechanic),就不该再被"队友还没打完"卡住——
+  // 只有共享型才需要等 mechanic_resolved 广播统一收尾。
+  const selfDone = !mechanicShared && mechanicDone.includes(selfId);
+  const selfMechanic = mechanicId && !selfDone ? mechanicStates[selfId] ?? null : null;
   const mechanicWords = selfMechanic ? currentMechanicWords(selfMechanic) : [];
   const inMechanic = !!selfMechanic;
   const entry = mechanicWords[0] ?? localWord;

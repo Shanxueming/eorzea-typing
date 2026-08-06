@@ -23,6 +23,8 @@ interface SessionState {
   scores: PlayerTick[];
   /** 进行中的机制:自己的那一份状态 + 队友的那一份(队友区要显示对方位置) */
   mechanicId: MechanicId | null;
+  /** 全房共享(泰坦之怒)还是各自独立判定(三连桶/三穿一) */
+  mechanicShared: boolean;
   mechanicStates: Record<string, MechanicState>;
   mechanicTotalMs: number;
   mechanicEndsAt: number | null;
@@ -50,6 +52,7 @@ const initialState: SessionState = {
   teamHp: 0,
   scores: [],
   mechanicId: null,
+  mechanicShared: false,
   mechanicStates: {},
   mechanicTotalMs: 0,
   mechanicEndsAt: null,
@@ -87,6 +90,7 @@ function reduce(s: SessionState, a: Action): SessionState {
         teamHp: 100,
         scores: [],
         mechanicId: null,
+        mechanicShared: false,
         mechanicStates: {},
         mechanicTotalMs: 0,
         mechanicEndsAt: null,
@@ -100,6 +104,7 @@ function reduce(s: SessionState, a: Action): SessionState {
       return {
         ...s,
         mechanicId: a.mechanicId,
+        mechanicShared: a.shared,
         mechanicStates: a.states,
         mechanicTotalMs: a.durationMs,
         mechanicEndsAt: Date.now() + a.durationMs,
@@ -224,6 +229,7 @@ export function CoopSession({ onExit, onVictory }: CoopSessionProps) {
         scores={state.scores}
         bossMaxHp={state.bossMaxHp}
         mechanicId={state.mechanicId}
+        mechanicShared={state.mechanicShared}
         mechanicStates={state.mechanicStates}
         mechanicTotalMs={state.mechanicTotalMs}
         mechanicEndsAt={state.mechanicEndsAt}

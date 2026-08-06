@@ -126,7 +126,7 @@ export function MainMenu({ onStartSolo, onGoCoop, victoryCount, coopAvailable, o
   return (
     <div className="menu-layout">
       <div className="menu">
-      <h1 className="menu__title">艾欧泽亚打字修行</h1>
+      <img className="menu__title" src="/assets/logo-title.png" alt="最终幻想14打字通" />
       <p className="menu__subtitle">键入词条,打倒泰坦</p>
       <div className="menu__record">本次记录 · 通关次数 <strong>{victoryCount}</strong></div>
       <div className="menu__account">

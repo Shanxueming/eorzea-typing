@@ -93,6 +93,14 @@ apps/web 和 apps/server 里各写一份可能跑偏的副本。
   mechanic_resolved` 四条消息**,`boss_cast` 那套已经删了。机制的差异全装在
   `MechanicState` 里 —— **加新机制不需要动协议**。
   三连桶/三穿一是每人一份独立状态、各自判定;泰坦之怒是全房共享,一人打对即过。
+  ⚠ **独立型的"各自判定"连结算时机也要各自独立**(2026-08-06 修过一次真实
+  bug):谁先打完/放弃谁先立刻拿奖惩、放回普通词(`Room.settleIndividualMechanic`),
+  不能等队友——以前是攒到 `resolveMechanic()` 一起结算,手快的人打完自己那份
+  还要眼睁睁看着队友卡在里面,普通词计时器却已经在后台重新跑了,超时就白白
+  判 miss。客户端(`CoopBattle.tsx`)对应要看 `mechanicDone` 里有没有自己的
+  playerId 来判断"我是不是已经不在机制里了",不能只认房间级的 `mechanicId`——
+  房间级机制可能因为队友还没完成而继续挂着。`scripts/smoke-coop.ts` 里
+  Bob 从不参与机制判定,专门用来把这类"等队友等到超时"的错位测出来。
 - 词序列(`createWordQueue(pool, seed)`)客户端和服务端各自独立生成,只靠
   相同的 seed 保证一致——服务端不主动推送"当前该打哪个词",只在
   `word_attempt` 到达时核对 wordId 是否对得上。这是乐观预测 + 服务端权威

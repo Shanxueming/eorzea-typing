@@ -72,10 +72,11 @@ button:disabled {
   gap: 16px;
 }
 .menu__title {
-  font-size: 32px;
-  margin: 0;
-  color: var(--color-crystal);
-  text-shadow: 0 0 18px rgba(127, 216, 232, 0.5);
+  height: 56px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  align-self: flex-start;
 }
 .menu__subtitle {
   margin: -8px 0 0;
@@ -876,7 +877,7 @@ button:disabled {
   }
 
   .menu__title {
-    font-size: 26px;
+    height: 40px;
   }
   .menu__category-grid {
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));

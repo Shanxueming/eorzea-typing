@@ -193,6 +193,12 @@ async function main(): Promise<void> {
     const clientQueue = createWordQueue(pool, config.seed);
     let currentWord: WordEntry = clientQueue.next();
     let mechStart: Extract<S2C, { t: 'mechanic_start' }> | null = null;
+    let mechShared = false;
+    // 独立型机制下,自己是否已经单独打完(不用等 Bob——他在这个脚本里从不参与
+    // 机制判定,见下面 for 循环里的说明)。对应 Room.settleIndividualMechanic
+    // 与 CoopBattle.tsx 的 selfDone:自己一清完,服务端立刻放回普通词、重新起
+    // 计时器,再傻等 mechanic_resolved 就会白白超时判 miss。
+    let selfMechDone = false;
     let seenAdvance: string | null = null;
     let ended = false;
     let normalSubmits = 0;
@@ -202,14 +208,22 @@ async function main(): Promise<void> {
       if (m.t === 'battle_end') ended = true;
       if (m.t === 'mechanic_start') {
         mechStart = m;
+        mechShared = m.shared;
+        selfMechDone = false;
         castCount++;
       }
       if (m.t === 'mechanic_progress' && m.playerId === joinedA.playerId && mechStart) {
         mechStart = { ...mechStart, states: { ...mechStart.states, [m.playerId]: m.state } };
       }
+      if (m.t === 'mechanic_cleared' && m.playerId === joinedA.playerId && !mechShared) {
+        selfMechDone = true;
+      }
       // ★ 机制结算时不消费词队列 —— 普通词在机制期间原地冻结,
       //   服务端 resumeNormalWord 同样不推进。这条是两边不错位的地基。
-      if (m.t === 'mechanic_resolved') mechStart = null;
+      if (m.t === 'mechanic_resolved') {
+        mechStart = null;
+        selfMechDone = false;
+      }
       if (m.t === 'word_advanced' && m.playerId === joinedA.playerId) {
         const key = `${m.playerId}:${m.wordId}`;
         if (seenAdvance !== key && currentWord.id === m.wordId) {
@@ -224,11 +238,14 @@ async function main(): Promise<void> {
     const MAX_HITS = 150;
     for (let i = 0; i < MAX_HITS && !ended; i++) {
       const nowMs = Date.now() - startA.startAt;
-      const mech: Extract<S2C, { t: 'mechanic_start' }> | null = mechStart;
+      const mech: Extract<S2C, { t: 'mechanic_start' }> | null = mechStart && !selfMechDone ? mechStart : null;
       if (mech) {
         // 机制期间打机制给的词,普通词队列一格都不动。
-        // 三连桶要走好几步、三穿一要打三个,所以循环提交直到服务端宣布结算。
-        for (let step = 0; step < 8 && mechStart; step++) {
+        // 三连桶要走好几步、三穿一要打三个,所以循环提交直到服务端宣布结算——
+        // 但 Bob 这个脚本从不参与机制判定(见下面 word_attempt 那行的注释),
+        // 所以独立型机制下不能等 mechanic_resolved(那要等 Bob,而 Bob 永远不会
+        // 交卷),自己一清完(selfMechDone)就得立刻跳出去打普通词。
+        for (let step = 0; step < 8 && mechStart && !selfMechDone; step++) {
           const st = mechStart.states[joinedA.playerId];
           if (!st) break;
           const words = currentMechanicWords(st);
@@ -240,7 +257,11 @@ async function main(): Promise<void> {
           a.send({ t: 'word_attempt', attempt: buildAttempt(pick, config.mode, Date.now() - startA.startAt) });
           await new Promise((resolve) => setTimeout(resolve, 40));
         }
-        await a.waitFor((m) => m.t === 'mechanic_resolved', 20000, 'mechanic_resolved');
+        // 共享型:一人打对全队立刻过,mechanic_resolved 紧跟着广播,这里等得到。
+        // 独立型且自己已经单独结算完的话,不用等,交给外层下一轮直接打普通词。
+        if (mechStart && !selfMechDone) {
+          await a.waitFor((m) => m.t === 'mechanic_resolved', 20000, 'mechanic_resolved');
+        }
       } else {
         const attempt = buildAttempt(currentWord, config.mode, nowMs);
         a.send({ t: 'word_attempt', attempt });
