@@ -236,9 +236,6 @@ export const ENDLESS_DIFFICULTY: Difficulty = 'hard';
  */
 export const ENDLESS_BOSS_HP_GROWTH = 1.25;
 
-/** 击杀一只泰坦的回血奖励。没有这个,无限模式就是纯消耗,必死于血量而非手速。 */
-export const ENDLESS_KILL_HEAL = 25;
-
 /**
  * 无限模式:每打倒一只泰坦,普通词的输入时限就缩短这么多——
  * 血厚(ENDLESS_BOSS_HP_GROWTH)只逼着你打得更久,这条才是逼着你打得更快,

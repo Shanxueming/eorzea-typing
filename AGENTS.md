@@ -160,10 +160,13 @@ apps/web 和 apps/server 里各写一份可能跑偏的副本。
 - **玩法模式**(`GameMode`):
   - `standard` 标准:打 `BATTLE_DURATION_MS` 一局,打死泰坦通关,时间到判负。
   - `endless` 无限:没有狂暴倒计时,泰坦打死一只立刻刷下一只、血量按
-    `ENDLESS_BOSS_HP_GROWTH` 逐只加厚,击杀回血 `ENDLESS_KILL_HEAL`,
-    **玩家血量归零才结束**。难度固定 `ENDLESS_DIFFICULTY`(困难)以便成绩可比,
-    输入模式仍由玩家选但会记进成绩。**只有单机支持,联机没有这个模式**
-    (`room.ts` 里不存在 `endless` 分支)。
+    `ENDLESS_BOSS_HP_GROWTH` 逐只加厚,**玩家血量归零才结束**。难度固定
+    `ENDLESS_DIFFICULTY`(困难)以便成绩可比,输入模式仍由玩家选但会记进成绩。
+    **只有单机支持,联机没有这个模式**(`room.ts` 里不存在 `endless` 分支)。
+    ⚠ 2026-08-06 起击杀不再回血(原 `ENDLESS_KILL_HEAL` 已删除):玩家血量
+    全程只有一条,不随击杀刷新——这是用户明确要的,「新泰坦刷血条」天经地义,
+    但玩家的血是这一整局的资源,击杀送血会让状态好的人感觉不到消耗。要回血
+    只能靠机制/技能(泰坦之怒打断、「原初的解放」)挣。
   - 击杀数还联动限时:每打倒一只泰坦,普通词限时在 `wordTimeoutFor` 里按
     `ENDLESS_TIMEOUT_SHRINK_PER_KILL_MS` 缩短一截,下限
     `ENDLESS_MIN_WORD_TIMEOUT_MS`;直接读 `engineRef.current.kills` 现算,

@@ -28,7 +28,6 @@ import {
   BOSS_NAME,
   BOSS_SKILL_NAME,
   ENDLESS_BOSS_HP_GROWTH,
-  ENDLESS_KILL_HEAL,
   ENDLESS_TIMEOUT_SHRINK_PER_KILL_MS,
   ENDLESS_MIN_WORD_TIMEOUT_MS,
   DIFFICULTY_CAST_DURATION_MS,
@@ -526,7 +525,9 @@ export function SoloBattle({ pool, mode, difficulty, inputMode, character, gameM
     e.mechanic = null; // 换 Boss 时清掉进行中的机制,避免跨 Boss 悬着
     e.bossMaxHp = Math.round(e.bossMaxHp * ENDLESS_BOSS_HP_GROWTH);
     e.bossHp = e.bossMaxHp;
-    e.playerHp = Math.min(PLAYER_MAX_HP, e.playerHp + ENDLESS_KILL_HEAL);
+    // ★ 玩家血量全程只有一条,不随击杀刷新——泰坦的血条换新是"下一只"天经地义,
+    //   但玩家的血是"这一整局"的资源,击杀奖励额外回血会让状态好的人感觉不到消耗,
+    //   变相把无限模式拖到几乎打不死。要回血只能靠机制/技能挣。
     e.shattered = true;
     scheduleRevert({ shattered: false }, SHATTER_MS);
     return true;
