@@ -1635,23 +1635,57 @@ button:disabled {
   border-radius: 8px;
   font-size: 13px;
 }
+.results__review-filters {
+  display: flex;
+  gap: 6px;
+  margin-top: 10px;
+}
+.results__review-filter {
+  border: 1px solid var(--color-text-dim);
+  background: transparent;
+  color: var(--color-text-dim);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+.results__review-filter--active {
+  color: var(--color-text);
+  border-color: var(--color-crystal);
+  background: rgba(127, 216, 232, 0.14);
+}
+.results__review-filter--correct.results__review-filter--active {
+  border-color: var(--color-input-matched);
+  background: rgba(79, 206, 127, 0.14);
+}
+.results__review-filter--missed.results__review-filter--active {
+  border-color: var(--color-danger);
+  background: rgba(232, 90, 90, 0.14);
+}
+.results__review-empty {
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--color-text-dim);
+}
 .results__review-list {
   list-style: none;
   margin: 10px 0 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   gap: 6px;
   max-height: 320px;
   overflow-y: auto;
 }
+/* 两行卡片:第一行汉字,第二行拼音——各占一整行宽度,不用再跟对错标记
+   挤在同一行里抢空间(那正是之前拼音被截断的原因) */
 .results__review-item {
+  position: relative;
   display: flex;
-  align-items: baseline;
-  gap: 6px;
+  flex-direction: column;
+  gap: 2px;
   background: var(--color-bg-panel);
   border-radius: 8px;
-  padding: 6px 10px;
+  padding: 6px 24px 6px 10px;
   font-size: 13px;
 }
 .results__review-item--missed {
@@ -1659,6 +1693,11 @@ button:disabled {
 }
 .results__review-item--correct {
   box-shadow: inset 3px 0 0 var(--color-input-matched);
+}
+.results__review-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .results__review-reading {
   font-size: 11px;
@@ -1668,7 +1707,10 @@ button:disabled {
   white-space: nowrap;
 }
 .results__review-outcome {
-  margin-left: auto;
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  font-size: 12px;
   font-weight: 700;
 }
 .results__review-item--missed .results__review-outcome {

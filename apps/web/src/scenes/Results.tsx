@@ -28,6 +28,7 @@ export function Results({ result, session, onGoAccount, onBackToMenu, onRetry }:
   const [uploadState, setUploadState] = useState<'idle' | 'sending' | 'done' | 'error'>('idle');
   const [uploadMsg, setUploadMsg] = useState<string | null>(null);
   const [showReview, setShowReview] = useState(false);
+  const [reviewFilter, setReviewFilter] = useState<'all' | 'correct' | 'missed'>('all');
 
   /**
    * 能不能上榜。四个条件缺一不可:
@@ -120,6 +121,10 @@ export function Results({ result, session, onGoAccount, onBackToMenu, onRetry }:
     ? !!endless && (!previousBest || (endless.kills > (previousBest.kills ?? 0)))
     : !previousBest || result.score > previousBest.score;
 
+  const reviewCorrectCount = result.wordsReview.filter((w) => w.outcome === 'correct').length;
+  const reviewMissedCount = result.wordsReview.length - reviewCorrectCount;
+  const filteredReview = result.wordsReview.filter((w) => reviewFilter === 'all' || w.outcome === reviewFilter);
+
   return (
     <div className="results">
       <h1 className="results__title">
@@ -210,20 +215,46 @@ export function Results({ result, session, onGoAccount, onBackToMenu, onRetry }:
             {showReview ? '收起' : '展开'} 词语复盘({result.wordsReview.length})
           </button>
           {showReview && (
-            <ol className="results__review-list">
-              {result.wordsReview.map((w) => (
-                <li
-                  key={w.id}
-                  className={`results__review-item results__review-item--${w.outcome}`}
+            <>
+              <div className="results__review-filters">
+                <button
+                  className={`results__review-filter${reviewFilter === 'all' ? ' results__review-filter--active' : ''}`}
+                  onClick={() => setReviewFilter('all')}
                 >
-                  <span className="results__review-text">{w.text}</span>
-                  <span className="results__review-reading">{w.reading}</span>
-                  <span className="results__review-outcome">
-                    {w.outcome === 'correct' ? '✓' : '✗'}
-                  </span>
-                </li>
-              ))}
-            </ol>
+                  全部 {result.wordsReview.length}
+                </button>
+                <button
+                  className={`results__review-filter results__review-filter--correct${reviewFilter === 'correct' ? ' results__review-filter--active' : ''}`}
+                  onClick={() => setReviewFilter('correct')}
+                >
+                  打对 {reviewCorrectCount}
+                </button>
+                <button
+                  className={`results__review-filter results__review-filter--missed${reviewFilter === 'missed' ? ' results__review-filter--active' : ''}`}
+                  onClick={() => setReviewFilter('missed')}
+                >
+                  没打对 {reviewMissedCount}
+                </button>
+              </div>
+              {filteredReview.length === 0 ? (
+                <div className="results__review-empty">这一类没有词。</div>
+              ) : (
+                <ol className="results__review-list">
+                  {filteredReview.map((w) => (
+                    <li
+                      key={w.id}
+                      className={`results__review-item results__review-item--${w.outcome}`}
+                    >
+                      <span className="results__review-outcome">
+                        {w.outcome === 'correct' ? '✓' : '✗'}
+                      </span>
+                      <span className="results__review-text">{w.text}</span>
+                      <span className="results__review-reading">{w.reading}</span>
+                    </li>
+                  ))}
+                </ol>
+              )}
+            </>
           )}
         </div>
       )}

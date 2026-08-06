@@ -1,14 +1,16 @@
 /**
  * 战斗相关的共用常量与词序列生成器。
  *
- * buildSequence 一次只给定长度,而战斗时长不确定,所以按批次续接;
- * 单机与联机(服务端与客户端各自用同一个 seed 独立调用)都走这份逻辑,
- * 保证词序完全一致 —— 这是 M3 协议"只下发 seed,不下发词序"的地基。
+ * createWordQueue 按 seed 持续发词,战斗时长不确定也不用关心——牌堆式洗牌,
+ * 顺序发完再重新洗一次(见下面的实现注释);单机与联机(服务端与客户端各自
+ * 用同一个 seed 独立调用)都走这份逻辑,保证词序完全一致 —— 这是 M3 协议
+ * "只下发 seed,不下发词序"的地基。
  *
  * 这是新增文件,不在 §1 的八个只读文件之列。
  */
 import type { WordEntry } from './types';
 import { buildSequence } from './wordbank';
+import { createRng } from './rng';
 import { THRESHOLDS } from './anticheat';
 
 export const BOSS_MAX_HP = 6000;
@@ -335,30 +337,39 @@ export function verdictOf(trustScore: number): TrustVerdict {
   return 'rejected';
 }
 
-const BATCH_SIZE = 200;
-
 export interface WordQueue {
   next(): WordEntry;
 }
 
+/**
+ * ★ 2026-08-06 修复:以前按 BATCH_SIZE(200)分批调用 buildSequence,每一批都是
+ *   「把整个 pool 重新洗一次牌、只留最前面 200 个」——池子只要比 200 大,后面
+ *   没被留下的部分就白洗了,下一批又是一次独立的全池重新抽样。结果是同一个词
+ *   跨批次几乎没有"不重复"的保证,长会话(尤其无限模式,一局能抽几千个词)
+ *   会明显感觉到某些词反复刷到。
+ *
+ *   现在换成一副真正跨批次持续的"牌堆":一次性洗好整个 pool,顺序发完才重新
+ *   洗一次,保证同一个词至少要隔 pool.length 次才可能再出现。
+ */
 export function createWordQueue(pool: readonly WordEntry[], seed: string): WordQueue {
   if (pool.length === 0) {
     throw new Error('word pool is empty');
   }
-  let batchIndex = 0;
-  let buffer: WordEntry[] = [];
-  let cursor = 0;
+  const rng = createRng(seed);
+  let bag: WordEntry[] = [];
 
-  function fill(): void {
-    buffer = buildSequence(pool, Math.min(BATCH_SIZE, pool.length), `${seed}:${batchIndex}`);
-    batchIndex += 1;
-    cursor = 0;
+  function reshuffle(): void {
+    bag = pool.slice();
+    for (let i = bag.length - 1; i > 0; i--) {
+      const j = rng.int(i + 1);
+      [bag[i], bag[j]] = [bag[j], bag[i]];
+    }
   }
 
   return {
     next(): WordEntry {
-      if (cursor >= buffer.length) fill();
-      return buffer[cursor++];
+      if (bag.length === 0) reshuffle();
+      return bag.pop() as WordEntry;
     },
   };
 }

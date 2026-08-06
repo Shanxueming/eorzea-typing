@@ -260,7 +260,7 @@
    "id": "mob_00029",
    "text": "僧伽",
    "typeText": "僧伽",
-   "reading": "seng ga",
+   "reading": "seng qie",
    "category": "monsters",
    "difficulty": 1,
    "pure": true
@@ -9764,7 +9764,7 @@
    "id": "mob_01085",
    "text": "小僧伽",
    "typeText": "小僧伽",
-   "reading": "xiao seng ga",
+   "reading": "xiao seng qie",
    "category": "monsters",
    "difficulty": 1,
    "pure": true
@@ -24092,7 +24092,7 @@
    "id": "mob_02677",
    "text": "复制僧伽",
    "typeText": "复制僧伽",
-   "reading": "fu zhi seng ga",
+   "reading": "fu zhi seng qie",
    "category": "monsters",
    "difficulty": 2,
    "pure": true
