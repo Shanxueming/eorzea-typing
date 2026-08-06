@@ -1311,6 +1311,40 @@ button:disabled {
   color: var(--color-text-dim);
 }
 
+.changelog__history {
+  margin-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 14px;
+}
+.changelog__history-title {
+  font-size: 13px;
+  margin: 0 0 8px;
+  color: var(--color-text-dim);
+  font-weight: 400;
+}
+.changelog__history-entry {
+  margin-bottom: 6px;
+}
+.changelog__history-toggle {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: transparent;
+  color: var(--color-text);
+  padding: 7px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  text-align: left;
+}
+.changelog__history-toggle:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+.changelog__history-body {
+  padding: 10px 4px 4px 16px;
+}
+
 .menu__changelog-link {
   margin-left: 10px;
   padding: 2px 10px;
