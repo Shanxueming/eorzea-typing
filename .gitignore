@@ -15,3 +15,11 @@ scripts/qa-artifacts/
 assets/audio/*
 !assets/audio/.gitkeep
 !assets/audio/README.md
+
+# SQLite 数据库不进版本控制:它是运行时数据,不是代码。
+# 本地开发时落在 .data/(见 apps/server/src/db/database.ts 的 DATA_DIR),
+# 线上由 EORZEA_DATA_DIR 指到挂载卷。
+.data/
+*.db
+*.db-wal
+*.db-shm

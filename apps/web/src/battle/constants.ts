@@ -38,6 +38,9 @@ import type { Difficulty } from '@eorzea/shared/battle';
 export type { Difficulty };
 export type { InputMode, CharacterId, GameMode } from '@eorzea/shared/battle';
 
+/** 只有这两档会计入排行榜。和服务端 db/scores.ts 的 RANKED_DIFFICULTIES 必须一致 */
+export const RANKED_DIFFICULTIES: readonly Difficulty[] = ['hard', 'hell'];
+
 /** 小人 attack/miss 动画回弹到 idle 的时长上限。纯前端表现参数,不随战斗协议下发 */
 export const AVATAR_PULSE_MS = 380;
 export const SHATTER_MS = 450;

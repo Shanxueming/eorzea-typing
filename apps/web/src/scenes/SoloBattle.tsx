@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState, type KeyboardEvent } from 'react';
-import type { AvatarState, TypingMode, WordAttempt, WordEntry } from '@eorzea/shared/types';
+import type { AvatarState, TypingMode, WordAttempt, WordCategory, WordEntry } from '@eorzea/shared/types';
 import { computeDamage, computeScore, computeStats, targetOf, type SessionStats } from '@eorzea/shared/scoring';
 import { analyzeSession, checkAttempt } from '@eorzea/shared/anticheat';
 import { bossHpFor, createWordQueue, filterPoolByDifficulty } from '@eorzea/shared/battle';
@@ -75,8 +75,16 @@ export interface SoloResult {
    */
   trustScore: number;
   trustFlags: string[];
-  /** 整局的原始击键遥测。上榜时要连同 seed 一起交给服务端重放校验 */
+  /**
+   * 上榜时要交给服务端重放核算的原始材料。服务端拿 seed + categories + pureOnly
+   * + difficulty 把这一局的词序列一模一样地重建出来,再逐条核对 attempts ——
+   * 少任何一项都重建不出同一个序列,好人也会被判成作弊。
+   */
   attempts: WordAttempt[];
+  seed: string;
+  mode: TypingMode;
+  categories: WordCategory[];
+  pureOnly: boolean;
   gameMode: GameMode;
   difficulty: Difficulty;
   inputMode: InputMode;
@@ -97,6 +105,9 @@ export interface SoloBattleProps {
   inputMode: InputMode;
   character: CharacterId;
   gameMode: GameMode;
+  /** 这一局用了哪些分类、是否只要纯汉字 —— 服务端重放核算要靠它重建词池 */
+  categories: WordCategory[];
+  pureOnly: boolean;
   onFinish: (result: SoloResult) => void;
   onExit: () => void;
 }
@@ -180,7 +191,7 @@ function initEngine(bossMaxHp: number): EngineState {
  * ★ 血量归零直接秒结(defeat),没有"倒地复活"这一套——那是联机才有的,
  *   单机死了就是死了。
  */
-export function SoloBattle({ pool, mode, difficulty, inputMode, character, gameMode, onFinish, onExit }: SoloBattleProps) {
+export function SoloBattle({ pool, mode, difficulty, inputMode, character, gameMode, categories, pureOnly, onFinish, onExit }: SoloBattleProps) {
   const isEndless = gameMode === 'endless';
   // Boss 血量按难度加厚:困难 +30%、地狱 +100%
   const bossMaxHp = bossHpFor(difficulty);
@@ -265,6 +276,10 @@ export function SoloBattle({ pool, mode, difficulty, inputMode, character, gameM
       trustScore: trust.trustScore,
       trustFlags,
       attempts: attemptsRef.current,
+      seed: seedRef.current,
+      mode,
+      categories,
+      pureOnly,
       gameMode,
       difficulty,
       inputMode,

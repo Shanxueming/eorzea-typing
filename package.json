@@ -3,12 +3,13 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "vitest run && tsx scripts/smoke-coop.ts",
+    "test": "vitest run && tsx scripts/smoke-coop.ts && tsx scripts/smoke-account.ts",
     "test:unit": "vitest run",
     "test:coop": "tsx scripts/smoke-coop.ts",
     "typecheck": "tsc --noEmit -p tsconfig.base.json",
     "build": "pnpm --filter @eorzea/web build",
-    "start": "pnpm --filter @eorzea/server start"
+    "start": "pnpm --filter @eorzea/server start",
+    "test:account": "tsx scripts/smoke-account.ts"
   },
   "dependencies": {
     "@eorzea/shared": "workspace:*"

@@ -1,6 +1,8 @@
 # 单阶段部署:一个 Node 进程同时托管静态资源(web 构建产物 + 词库 + 素材)
 # 与 WebSocket 房间服务器。目标 Railway / Fly.io。
-FROM node:22-alpine
+# Node 24:内置的 node:sqlite 在这个版本不需要 --experimental-sqlite,
+# 账号与排行榜因此不必引第三方数据库驱动(依赖白名单里也没有)。
+FROM node:24-alpine
 
 WORKDIR /app
 
@@ -22,6 +24,9 @@ RUN pnpm --filter @eorzea/web build
 
 ENV NODE_ENV=production
 ENV PORT=8080
+# 数据库落在这个目录,部署时用 bind mount 挂到宿主机,重新部署不会丢数据
+ENV EORZEA_DATA_DIR=/data
+VOLUME ["/data"]
 EXPOSE 8080
 
 CMD ["pnpm", "--filter", "@eorzea/server", "start"]

@@ -6,6 +6,8 @@ import { loadBank, loadBanks, loadWordbankIndex, type WordbankIndex } from '../d
 import { audio } from '../engine/audio';
 import { avatarSkinPath, rabbitStylePath } from '../engine/assets';
 import { SkinPicker } from '../components/SkinPicker';
+import { Leaderboard } from '../components/Leaderboard';
+import type { Session } from '../engine/accountApi';
 import {
   CHARACTER_LABEL,
   DEFAULT_INPUT_MODE,
@@ -29,6 +31,8 @@ export interface SoloStartConfig {
   inputMode: InputMode;
   character: CharacterId;
   gameMode: GameMode;
+  categories: WordEntry['category'][];
+  pureOnly: boolean;
 }
 
 export interface MainMenuProps {
@@ -38,9 +42,13 @@ export interface MainMenuProps {
   /** 移动端不提供联机,入口整块藏掉而不是给个点了没反应的按钮 */
   coopAvailable: boolean;
   onShowChangelog: () => void;
+  onGoAccount: () => void;
+  session: Session | null;
 }
 
-export function MainMenu({ onStartSolo, onGoCoop, victoryCount, coopAvailable, onShowChangelog }: MainMenuProps) {
+export function MainMenu({ onStartSolo, onGoCoop, victoryCount, coopAvailable, onShowChangelog, onGoAccount, session }: MainMenuProps) {
+  // 首页只放地狱榜和无限榜(需求 Q27);困难榜要单独点开
+  const [showHardBoard, setShowHardBoard] = useState(false);
   const [index, setIndex] = useState<WordbankIndex | null>(null);
   const [selected, setSelected] = useState<Set<string>>(new Set());
   const [mode, setMode] = useState<TypingMode>('hanzi');
@@ -82,7 +90,8 @@ export function MainMenu({ onStartSolo, onGoCoop, victoryCount, coopAvailable, o
       const bank = await loadBank('starter');
       const pool = filterFeaturedWordPool(selectPool([bank], { categories: ['starter'], pureOnly: true }));
       const d = gameMode === 'endless' ? ENDLESS_DIFFICULTY : difficulty;
-      onStartSolo({ pool, mode, difficulty: d, inputMode: resolveInputMode(d, preferredInputMode), character, gameMode });
+      onStartSolo({ pool, mode, difficulty: d, inputMode: resolveInputMode(d, preferredInputMode), character, gameMode,
+        categories: ['starter'], pureOnly: true });
     } catch (e) {
       setError(String(e));
     } finally {
@@ -105,7 +114,8 @@ export function MainMenu({ onStartSolo, onGoCoop, victoryCount, coopAvailable, o
         setError('所选分类里没有可用的纯汉字词条,换一批分类试试。');
         return;
       }
-      onStartSolo({ pool, mode, difficulty, inputMode, character, gameMode: 'standard' });
+      onStartSolo({ pool, mode, difficulty, inputMode, character, gameMode: 'standard',
+        categories, pureOnly: !includeImpure });
     } catch (e) {
       setError(String(e));
     } finally {
@@ -118,6 +128,14 @@ export function MainMenu({ onStartSolo, onGoCoop, victoryCount, coopAvailable, o
       <h1 className="menu__title">艾欧泽亚打字修行</h1>
       <p className="menu__subtitle">键入词条,打倒泰坦</p>
       <div className="menu__record">本次记录 · 通关次数 <strong>{victoryCount}</strong></div>
+      <div className="menu__account">
+        {session
+          ? <><span className="menu__account-id">{session.displayId}</span>
+              <button className="menu__changelog-link" onClick={onGoAccount}>账号</button></>
+          : <><span className="menu__account-id">未登录 · 成绩无法上榜</span>
+              <button className="menu__changelog-link" onClick={onGoAccount}>申请 / 登录</button></>}
+      </div>
+
       <div className="menu__community">
         玩家群 · <strong>143232747</strong>
         <button className="menu__changelog-link" type="button" onClick={onShowChangelog}>
@@ -209,6 +227,16 @@ export function MainMenu({ onStartSolo, onGoCoop, victoryCount, coopAvailable, o
       <button className="menu__endless" disabled={busy} onClick={() => void startSolo('endless')}>
         无限模式 · 困难规则,打到倒下为止
       </button>
+
+      <div className="menu__boards">
+        <Leaderboard gameMode="standard" difficulty="hell" inputMode="composed" />
+        <Leaderboard gameMode="endless" difficulty="hard" inputMode="composed" />
+        {showHardBoard
+          ? <Leaderboard gameMode="standard" difficulty="hard" inputMode="composed" />
+          : <button className="menu__changelog-link" onClick={() => setShowHardBoard(true)}>
+              查看困难难度排行榜
+            </button>}
+      </div>
 
       <div className="menu__appearance">
         <SkinPicker label="你的皮肤" slot="p1" pathFor={(i) => avatarSkinPath('p1', i)} />

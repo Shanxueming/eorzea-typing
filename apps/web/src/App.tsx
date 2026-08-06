@@ -3,11 +3,14 @@ import { MainMenu, type SoloStartConfig } from './scenes/MainMenu';
 import { SoloBattle, type SoloResult } from './scenes/SoloBattle';
 import { Results } from './scenes/Results';
 import { CoopSession } from './scenes/CoopSession';
+import { AccountScene } from './scenes/AccountScene';
+import { AdminScene } from './scenes/AdminScene';
+import { loadSession, type Session } from './engine/accountApi';
 import { audio } from './engine/audio';
 import { ChangelogModal } from './components/ChangelogModal';
 import { hasSeenLatest } from './data/changelog';
 
-type Scene = 'menu' | 'solo' | 'results' | 'coop';
+type Scene = 'menu' | 'solo' | 'results' | 'coop' | 'account' | 'admin';
 
 /** 音乐与音效分开控制，偏好由 AudioEngine 存在浏览器本地。 */
 function AudioControls() {
@@ -117,6 +120,23 @@ export default function App() {
   const isMobile = useIsMobile();
   // 有新版更新说明就自动弹一次;看过之后只能从主菜单再点开
   const [showChangelog, setShowChangelog] = useState(() => !hasSeenLatest());
+  const [session, setSession] = useState<Session | null>(() => loadSession());
+
+  /**
+   * 管理后台只能靠手敲 #admin 进,菜单里不给入口 ——
+   * 玩家永远用不到它,摆在那儿只会让人好奇去点。
+   * 监听 hashchange 是为了让「地址栏改一下就进」这条路真的能走通。
+   */
+  useEffect(() => {
+    const sync = () => {
+      if (window.location.hash === '#admin') setScene('admin');
+      else if (scene === 'admin') setScene('menu');
+    };
+    sync();
+    window.addEventListener('hashchange', sync);
+    return () => window.removeEventListener('hashchange', sync);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   // 从联机场景切到窄屏(转竖屏、缩窗口)时把人送回菜单,免得卡在一个
   // 移动端不再支持的场景里。
@@ -139,6 +159,8 @@ export default function App() {
           victoryCount={victoryCount}
           coopAvailable={!isMobile}
           onShowChangelog={() => setShowChangelog(true)}
+          onGoAccount={() => setScene('account')}
+          session={session}
         />
       )}
 
@@ -151,6 +173,8 @@ export default function App() {
           inputMode={soloConfig.inputMode}
           character={soloConfig.character}
           gameMode={soloConfig.gameMode}
+          categories={soloConfig.categories}
+          pureOnly={soloConfig.pureOnly}
           onExit={() => setScene('menu')}
           onFinish={(result) => {
             setSoloResult(result);
@@ -160,9 +184,23 @@ export default function App() {
         />
       )}
 
+      {scene === 'admin' && (
+        <AdminScene onExit={() => { window.location.hash = ''; setScene('menu'); }} />
+      )}
+
+      {scene === 'account' && (
+        <AccountScene
+          session={session}
+          onSession={setSession}
+          onExit={() => setScene('menu')}
+        />
+      )}
+
       {scene === 'results' && soloResult && soloConfig && (
         <Results
           result={soloResult}
+          session={session}
+          onGoAccount={() => setScene('account')}
           onRetry={() => {
             setBattleKey((k) => k + 1);
             setScene('solo');

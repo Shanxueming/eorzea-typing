@@ -4,10 +4,19 @@ import Fastify, { type FastifyInstance } from 'fastify';
 import fastifyStatic from '@fastify/static';
 import { WORDBANKS_DIR, ASSETS_DIR, WEB_DIST_DIR } from './paths.js';
 import { attachRoomServer } from './rooms/server.js';
+import { registerApiRoutes } from './routes/api.js';
+import { getDb } from './db/database.js';
+import { printAdminSetup } from './auth/adminSession.js';
 
 /** 构建 Fastify 实例并挂上 WebSocket 房间服务器,但不监听端口 —— 交给调用方决定端口。 */
 export async function buildApp(): Promise<FastifyInstance> {
   const app = Fastify({ logger: false });
+
+  // 账号与排行榜的库。在注册路由之前打开 —— 建表失败要立刻炸,
+  // 而不是等第一个玩家来注册时才发现磁盘没挂上。
+  getDb();
+  printAdminSetup();
+  await registerApiRoutes(app);
 
   /**
    * BGM 不再约定单一文件名：只暴露 audio 目录下的常见浏览器音频格式。

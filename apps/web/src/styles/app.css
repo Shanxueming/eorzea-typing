@@ -1354,3 +1354,403 @@ button:disabled {
     display: none;
   }
 }
+
+/* ───────────────────────── 账号与排行榜 ───────────────────────── */
+
+/* 三栏:中间是账号操作,两侧挂榜单。窄屏下自动叠成一列 */
+.account {
+  display: grid;
+  grid-template-columns: 1fr minmax(0, 420px) 1fr;
+  gap: 20px;
+  align-items: start;
+}
+.account__main {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.account__title {
+  margin: 0;
+  font-size: 24px;
+}
+.account__block {
+  background: var(--color-bg-panel);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.account__block h2 {
+  margin: 0;
+  font-size: 16px;
+}
+.account__hint {
+  margin: 0;
+  font-size: 13px;
+  color: var(--color-text-dim);
+  line-height: 1.7;
+}
+.account__input {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--color-text-dim);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--color-text);
+  font-size: 15px;
+}
+.account__primary {
+  font-size: 16px;
+  padding: 11px 20px;
+  border-color: var(--color-crystal);
+  background: rgba(127, 216, 232, 0.16);
+}
+.account__back {
+  align-self: flex-start;
+}
+.account__logged-in {
+  background: var(--color-bg-panel);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+.account__logged-id {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-crystal);
+}
+
+/* 凭证展示区:整块用告警色包起来,让人知道这不是普通信息 */
+.account__issued {
+  background: var(--color-bg-panel);
+  border: 1px solid rgba(255, 180, 79, 0.5);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.account__warn {
+  color: #ffb44f;
+  font-size: 13px;
+  line-height: 1.7;
+  background: rgba(255, 180, 79, 0.1);
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+.credential {
+  border-left: 2px solid rgba(127, 216, 232, 0.5);
+  padding-left: 12px;
+}
+.credential--emphasis {
+  border-left-color: #ffb44f;
+}
+.credential__label {
+  font-size: 12px;
+  color: var(--color-text-dim);
+}
+.credential__value {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 2px 0 4px;
+}
+.credential__value code {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  /* 凭证会被手抄,必须能整段选中;长 ID 在窄屏要能断行 */
+  word-break: break-all;
+  user-select: all;
+}
+.credential__value button {
+  padding: 3px 10px;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+.credential__note {
+  font-size: 12px;
+  color: var(--color-text-dim);
+  line-height: 1.6;
+}
+.account__issued-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.account__confirm {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+/* 榜单 */
+.leaderboard {
+  background: var(--color-bg-panel);
+  border-radius: 12px;
+  padding: 14px;
+}
+.leaderboard__title {
+  font-size: 17px;
+  font-weight: 700;
+  color: #ffd47f;
+  text-align: center;
+  letter-spacing: 0.08em;
+}
+.leaderboard__track {
+  font-size: 11px;
+  color: var(--color-text-dim);
+  text-align: center;
+  margin: 2px 0 10px;
+}
+.leaderboard__empty {
+  font-size: 12px;
+  color: var(--color-text-dim);
+  text-align: center;
+  line-height: 1.8;
+  padding: 12px 0;
+}
+.leaderboard__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.leaderboard__row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+.leaderboard__rank {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.1);
+  flex-shrink: 0;
+}
+.leaderboard__rank--1 { background: #ffd700; color: #0b1020; }
+.leaderboard__rank--2 { background: #c0c8d0; color: #0b1020; }
+.leaderboard__rank--3 { background: #cd7f32; color: #0b1020; }
+.leaderboard__who {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+.leaderboard__name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.leaderboard__meta {
+  font-size: 11px;
+  color: var(--color-text-dim);
+}
+.leaderboard__flag {
+  color: #ffb44f;
+}
+.leaderboard__metric {
+  font-variant-numeric: tabular-nums;
+  color: var(--color-crystal);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.leaderboard--compact .leaderboard__row {
+  font-size: 12px;
+}
+
+.menu__boards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.menu__account {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 13px;
+}
+.menu__account-id {
+  color: var(--color-crystal);
+}
+
+/* 结算页的上传区 */
+.results__upload {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+.results__upload-btn {
+  border-color: #ffd47f;
+  color: #ffd47f;
+  background: rgba(255, 212, 127, 0.12);
+  padding: 10px 18px;
+  font-size: 15px;
+}
+.results__upload-hint {
+  font-size: 12px;
+  color: var(--color-text-dim);
+}
+.results__upload-ok {
+  color: #4fce7f;
+  font-weight: 700;
+}
+
+@media (max-width: 720px), (pointer: coarse) and (max-width: 1024px) {
+  /* 窄屏叠成一列:账号操作在最上面,榜单跟在后面 */
+  .account {
+    grid-template-columns: 1fr;
+  }
+  .account__side--left { order: 2; }
+  .account__side--right { order: 3; }
+  .account__main { order: 1; }
+  .credential__value code {
+    font-size: 16px;
+  }
+  .account__primary,
+  .results__upload-btn {
+    min-height: 44px;
+    align-self: stretch;
+  }
+}
+
+/* ───────────────────────── 管理后台 ───────────────────────── */
+
+.admin {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.admin__login {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 360px;
+  margin: 40px auto;
+  background: var(--color-bg-panel);
+  padding: 20px;
+  border-radius: 12px;
+}
+.admin__title {
+  margin: 0;
+  font-size: 20px;
+}
+.admin__bar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.admin__tabs {
+  display: flex;
+  gap: 6px;
+  flex: 1;
+}
+.admin__tab--on {
+  border-color: var(--color-crystal);
+  color: var(--color-crystal);
+}
+.admin__panel {
+  background: var(--color-bg-panel);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.admin__panel h2 {
+  margin: 0;
+  font-size: 16px;
+}
+.admin__row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.admin__row .account__input {
+  flex: 1;
+  min-width: 160px;
+}
+.admin__notice {
+  color: #4fce7f;
+  font-size: 13px;
+}
+.admin__ok {
+  color: #4fce7f;
+  font-weight: 700;
+}
+.admin__issued {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  background: rgba(255, 212, 127, 0.1);
+  border: 1px solid rgba(255, 212, 127, 0.4);
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 13px;
+}
+.admin__issued code {
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  user-select: all;
+}
+
+/* 表格在窄屏会撑破容器,让它自己横向滚动而不是把页面撑宽 */
+.admin__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.admin__table th,
+.admin__table td {
+  padding: 7px 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: left;
+}
+.admin__table th {
+  color: var(--color-text-dim);
+  font-weight: 600;
+  font-size: 12px;
+}
+.admin__table button {
+  padding: 3px 10px;
+  font-size: 12px;
+}
+.admin__banned {
+  opacity: 0.5;
+}
+.admin__tag {
+  margin-left: 6px;
+  font-size: 11px;
+  color: var(--color-danger);
+}
+.admin__low-trust {
+  color: #ffb44f;
+}
+.admin__flags {
+  font-size: 11px;
+  color: var(--color-text-dim);
+  white-space: normal;
+  max-width: 240px;
+}

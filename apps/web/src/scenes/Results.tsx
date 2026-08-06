@@ -1,10 +1,14 @@
 import { useEffect, useRef, useState } from 'react';
 import { CHARACTER_LABEL, DIFFICULTY_LABEL, INPUT_MODE_LABEL } from '../battle/constants';
 import { bestRecord, saveRecord, type GameRecord } from '../engine/records';
+import { submitScore, type Session } from '../engine/accountApi';
+import { RANKED_DIFFICULTIES } from '../battle/constants';
 import type { SoloResult } from './SoloBattle';
 
 export interface ResultsProps {
   result: SoloResult;
+  session: Session | null;
+  onGoAccount: () => void;
   onBackToMenu: () => void;
   onRetry: () => void;
 }
@@ -20,7 +24,65 @@ function formatDuration(ms: number): string {
   return `${Math.floor(total / 60)}:${String(total % 60).padStart(2, '0')}`;
 }
 
-export function Results({ result, onBackToMenu, onRetry }: ResultsProps) {
+export function Results({ result, session, onGoAccount, onBackToMenu, onRetry }: ResultsProps) {
+  const [uploadState, setUploadState] = useState<'idle' | 'sending' | 'done' | 'error'>('idle');
+  const [uploadMsg, setUploadMsg] = useState<string | null>(null);
+
+  /**
+   * 能不能上榜。四个条件缺一不可:
+   *   1. 登录了 —— 榜单要有名字
+   *   2. 难度是困难或地狱(需求 Q22)
+   *   3. 标准模式必须通关;无限模式没有「通关」概念,一律可传
+   *   4. 有原始遥测可交 —— 服务端要靠它重放核算
+   */
+  const rankable = !!session
+    && RANKED_DIFFICULTIES.includes(result.difficulty)
+    && (result.gameMode === 'endless' || result.victory)
+    && result.attempts.length > 0;
+
+  const upload = async () => {
+    if (!session) return;
+    setUploadState('sending');
+    setUploadMsg(null);
+    try {
+      const r = await submitScore(session, {
+        seed: result.seed,
+        gameMode: result.gameMode,
+        difficulty: result.difficulty,
+        inputMode: result.inputMode,
+        character: result.character,
+        mode: result.mode,
+        categories: result.categories,
+        pureOnly: result.pureOnly,
+        attempts: result.attempts,
+        elapsedMs: result.stats.elapsedMs,
+        claimed: {
+          score: result.score,
+          kills: result.endless?.kills,
+          survivedMs: result.endless?.survivedMs,
+          clearMs: result.gameMode === 'standard' && result.victory ? result.stats.elapsedMs : undefined,
+        },
+      });
+      setUploadState('done');
+      setUploadMsg(
+        r.status === 'inserted' ? '已上榜！'
+          : r.status === 'improved' ? '刷新了你自己的纪录！'
+          : '这次没超过你之前的成绩，榜上保留原来那条。',
+      );
+    } catch (e) {
+      const msg = String(e);
+      setUploadState('error');
+      // 服务端重放核算把成绩拒了的话,原因要说清楚,不能只丢一句「失败」
+      setUploadMsg(
+        msg.includes('score_overclaim') ? '服务端核算的分数与本地对不上，这次成绩不予收录。'
+          : msg.includes('word_not_in_sequence') ? '词序核对失败，这次成绩不予收录。'
+          : msg.includes('not_cleared') ? '标准模式只收通关的成绩。'
+          : msg.includes('unranked_difficulty') ? '只有困难和地狱难度会计入排行榜。'
+          : `上传失败：${msg}`,
+      );
+    }
+  };
+
   const { stats, endless } = result;
   const isEndless = result.gameMode === 'endless';
 
@@ -127,6 +189,33 @@ export function Results({ result, onBackToMenu, onRetry }: ResultsProps) {
           <span className="results__stat-label">打断失败</span>
           <span className="results__stat-value">{result.interruptsFailed}</span>
         </div>
+      </div>
+
+      <div className="results__upload">
+        {rankable && uploadState !== 'done' && (
+          <>
+            <button className="results__upload-btn" disabled={uploadState === 'sending'} onClick={() => void upload()}>
+              {uploadState === 'sending' ? '上传中…' : '上传成绩到排行榜'}
+            </button>
+            <span className="results__upload-hint">上传后服务端会重新核算一遍，你可以选择不传</span>
+          </>
+        )}
+        {uploadState === 'done' && <div className="results__upload-ok">{uploadMsg}</div>}
+        {uploadState === 'error' && <div className="menu__error">{uploadMsg}</div>}
+
+        {!session && (
+          <div className="results__upload-hint">
+            还没登录，这局成绩只存在本机。
+            <button className="menu__changelog-link" onClick={onGoAccount}>申请 / 登录</button>
+          </div>
+        )}
+        {session && !rankable && (
+          <div className="results__upload-hint">
+            {!RANKED_DIFFICULTIES.includes(result.difficulty)
+              ? '只有困难和地狱难度会计入排行榜。'
+              : '标准模式要通关才能上榜。'}
+          </div>
+        )}
       </div>
 
       <div className="results__actions">
