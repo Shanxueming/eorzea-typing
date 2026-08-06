@@ -145,7 +145,10 @@ export default function App() {
   }, [isMobile, scene]);
 
   return (
-    <div className={`app${isMobile ? ' app--mobile' : ''}`}>
+    // 主菜单与账号页是多栏布局,720px 的默认宽度装不下;战斗页保持窄栏
+    // —— 打字的时候视线不该左右横跳。
+    <div className={`app${isMobile ? ' app--mobile' : ''}${
+      scene === 'menu' || scene === 'account' ? ' app--wide' : ''}`}>
       <AudioControls />
 
       {scene === 'menu' && (

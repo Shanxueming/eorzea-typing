@@ -1,11 +1,17 @@
 import { useEffect, useState } from 'react';
-import type { Difficulty, GameMode, InputMode } from '@eorzea/shared/battle';
+import { resolveInputMode, type Difficulty, type GameMode, type InputMode } from '@eorzea/shared/battle';
 import { CHARACTER_LABEL, DIFFICULTY_LABEL, INPUT_MODE_LABEL } from '../battle/constants';
 import { fetchLeaderboard, type LeaderboardRow } from '../engine/accountApi';
 
 export interface LeaderboardProps {
   gameMode: GameMode;
   difficulty: Difficulty;
+  /**
+   * 想看哪种输入模式的榜。**会先过 resolveInputMode 按难度收敛** ——
+   * 地狱强制逐字,所以「地狱 + 组合输入」这条赛道根本不会有成绩。
+   * 曾经这里直接用传进来的值,首页的地狱榜写死 composed,结果是玩家通关地狱、
+   * 传了成绩、回首页却看不到自己,而标题还写着「地狱 · 组合输入」。
+   */
   inputMode: InputMode;
   /** 紧凑版:发放页两侧那种窄栏用,只显示名次和关键指标 */
   compact?: boolean;
@@ -26,22 +32,24 @@ function mainMetric(row: LeaderboardRow, gameMode: GameMode): string {
 }
 
 export function Leaderboard({ gameMode, difficulty, inputMode, compact, title }: LeaderboardProps) {
+  // ★ 收敛后的才是真实赛道:地狱只有逐字,拿 composed 去查必然是空的
+  const track = resolveInputMode(difficulty, inputMode);
   const [rows, setRows] = useState<LeaderboardRow[] | null>(null);
 
   useEffect(() => {
     let alive = true;
     setRows(null);
-    fetchLeaderboard(gameMode, difficulty, inputMode)
+    fetchLeaderboard(gameMode, difficulty, track)
       .then((r) => { if (alive) setRows(r); })
       .catch(() => { if (alive) setRows([]); });
     return () => { alive = false; };
-  }, [gameMode, difficulty, inputMode]);
+  }, [gameMode, difficulty, track]);
 
   return (
     <div className={`leaderboard${compact ? ' leaderboard--compact' : ''}`}>
       <div className="leaderboard__title">艾欧泽亚打字王</div>
       <div className="leaderboard__track">
-        {title ?? `${gameMode === 'endless' ? '无限模式' : '标准模式'} · ${DIFFICULTY_LABEL[difficulty]} · ${INPUT_MODE_LABEL[inputMode]}`}
+        {title ?? `${gameMode === 'endless' ? '无限模式' : '标准模式'} · ${DIFFICULTY_LABEL[difficulty]} · ${INPUT_MODE_LABEL[track]}`}
       </div>
 
       {rows === null && <div className="leaderboard__empty">读取中…</div>}

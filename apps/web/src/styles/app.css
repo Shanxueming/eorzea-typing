@@ -1587,6 +1587,63 @@ button:disabled {
   color: var(--color-crystal);
 }
 
+/* 结算页的词语复盘:折叠列表,默认收起 —— 一局下来词条可能有几十条,展开前不占地方 */
+.results__review {
+  width: 100%;
+  text-align: left;
+}
+.results__review-toggle {
+  width: 100%;
+  border: 1px solid var(--color-text-dim);
+  background: transparent;
+  color: var(--color-text);
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+.results__review-list {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 6px;
+  max-height: 320px;
+  overflow-y: auto;
+}
+.results__review-item {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  background: var(--color-bg-panel);
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 13px;
+}
+.results__review-item--missed {
+  box-shadow: inset 3px 0 0 var(--color-danger);
+}
+.results__review-item--correct {
+  box-shadow: inset 3px 0 0 var(--color-input-matched);
+}
+.results__review-reading {
+  font-size: 11px;
+  color: var(--color-text-dim);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.results__review-outcome {
+  margin-left: auto;
+  font-weight: 700;
+}
+.results__review-item--missed .results__review-outcome {
+  color: var(--color-danger);
+}
+.results__review-item--correct .results__review-outcome {
+  color: var(--color-input-matched);
+}
+
 /* 结算页的上传区 */
 .results__upload {
   display: flex;
@@ -1753,4 +1810,77 @@ button:disabled {
   color: var(--color-text-dim);
   white-space: normal;
   max-width: 240px;
+}
+
+/* ───────────────── 主菜单两栏布局(左菜单 / 右排行榜) ───────────────── */
+
+/*
+ * 只有主菜单与账号页放宽。战斗页保持 720px 窄栏 ——
+ * 打字的时候视线在屏幕中间一小块来回,栏宽了反而累。
+ */
+.app--wide {
+  max-width: 1180px;
+}
+
+.menu-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: 28px;
+  align-items: start;
+}
+
+/*
+ * 榜单钉在视口里跟着滚。菜单本身很长(分类列表就占半屏),
+ * 不钉住的话滑到下面选分类时榜单早就滚没了。
+ * max-height + overflow 是为了榜单本身太长时不至于顶穿视口。
+ */
+.menu-layout__boards {
+  position: sticky;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-height: calc(100vh - 40px);
+  overflow-y: auto;
+}
+
+/* 快速开始 + 联机对战并排。联机在移动端不渲染,这时按钮自己占满 */
+.menu__start-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.menu__start-row .menu__quick-start,
+.menu__start-row .menu__coop {
+  align-self: auto;
+  margin: 0;
+}
+.menu__start-row .menu__coop {
+  font-size: 15px;
+  padding: 12px 20px;
+  border-color: rgba(127, 216, 232, 0.55);
+  color: var(--color-crystal);
+  background: rgba(127, 216, 232, 0.1);
+}
+.menu__start-row .menu__coop:hover:not(:disabled) {
+  background: rgba(127, 216, 232, 0.22);
+}
+
+/* 窄屏:叠回单列,榜单沉到菜单下面,并解除 sticky(小屏上钉住会挡内容) */
+@media (max-width: 980px) {
+  .menu-layout {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .menu-layout__boards {
+    position: static;
+    max-height: none;
+    overflow: visible;
+  }
+  .menu__start-row .menu__quick-start,
+  .menu__start-row .menu__coop {
+    flex: 1 1 auto;
+    min-height: 48px;
+  }
 }

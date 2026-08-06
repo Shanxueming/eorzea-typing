@@ -13,6 +13,7 @@ import {
   countPlayers, createPlayer, findPlayer, listPlayers, login,
   resetPassword, setBanned, verifyRoot,
 } from '../db/players.js';
+import { resolveInputMode } from '@eorzea/shared/battle';
 import { formatForDisplay } from '../auth/credentials.js';
 import { buildNounPool } from '../auth/idGenerator.js';
 import { adminLogin, adminLogout, isAdminEnabled, secondFactorKind, verifyAdminToken } from '../auth/adminSession.js';
@@ -71,11 +72,15 @@ export async function registerApiRoutes(app: FastifyInstance): Promise<void> {
     const q = req.query as Record<string, string | undefined>;
     const gameMode = q.gameMode === 'endless' ? 'endless' : 'standard';
     const difficulty = q.difficulty === 'hell' ? 'hell' : 'hard';
-    const inputMode = q.inputMode === 'sequential' ? 'sequential' : 'composed';
+    const requested = q.inputMode === 'sequential' ? 'sequential' : 'composed';
     if (!RANKED_DIFFICULTIES.includes(difficulty)) {
       return reply.code(400).send({ ok: false, error: 'unranked_difficulty' });
     }
-    return { ok: true, rows: getLeaderboard(gameMode, difficulty, inputMode, 50) };
+    // ★ 按难度收敛:地狱强制逐字,「地狱 + 组合输入」这条赛道不存在。
+    //   查询侧不收敛的话,请求它只会得到一个空榜,让人以为「没人上榜」。
+    //   把实际用的赛道回给前端,免得界面标签和内容对不上。
+    const inputMode = resolveInputMode(difficulty, requested);
+    return { ok: true, inputMode, rows: getLeaderboard(gameMode, difficulty, inputMode, 50) };
   });
 
   /**

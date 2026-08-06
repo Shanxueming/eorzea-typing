@@ -14,15 +14,15 @@ import { THRESHOLDS } from './anticheat';
 export const BOSS_MAX_HP = 6000;
 
 /**
- * Boss 血量按难度加厚。困难 +30%、地狱 +100% —— 高难度不只是限时更紧,
- * 一局要打的总量也更大,拉开的是「能不能撑到最后」而不只是「手够不够快」。
- * 简单与普通维持基准值。
+ * Boss 血量按难度加厚。困难 +30%、地狱 +200%(在原先「+100%」的基础上
+ * 又提了 50%,即 ×2 → ×3)—— 高难度不只是限时更紧,一局要打的总量也更大,
+ * 拉开的是「能不能撑到最后」而不只是「手够不够快」。简单与普通维持基准值。
  */
 export const DIFFICULTY_BOSS_HP_MULTIPLIER: Record<Difficulty, number> = {
   easy: 1,
   normal: 1,
   hard: 1.3,
-  hell: 2,
+  hell: 3,
 };
 
 export function bossHpFor(difficulty: Difficulty): number {
@@ -239,6 +239,15 @@ export const ENDLESS_BOSS_HP_GROWTH = 1.25;
 /** 击杀一只泰坦的回血奖励。没有这个,无限模式就是纯消耗,必死于血量而非手速。 */
 export const ENDLESS_KILL_HEAL = 25;
 
+/**
+ * 无限模式:每打倒一只泰坦,普通词的输入时限就缩短这么多——
+ * 血厚(ENDLESS_BOSS_HP_GROWTH)只逼着你打得更久,这条才是逼着你打得更快,
+ * 两条一起才有「越打越紧」的感觉,不然后期就是纯粹堆时间的体力活。
+ */
+export const ENDLESS_TIMEOUT_SHRINK_PER_KILL_MS = 300;
+/** 上面那条缩减的下限,不然刷到二三十只之后时限会缩到根本打不完一个词。 */
+export const ENDLESS_MIN_WORD_TIMEOUT_MS = 5_000;
+
 export const DEFAULT_INPUT_MODE: InputMode = 'composed';
 
 /**
@@ -276,6 +285,14 @@ export const BLOODBATH_MULTIPLIER = 1.5;
 /** 「浴血」期间普通词限时的缩放(减少 25%) */
 export const BLOODBATH_TIME_SCALE = 0.75;
 
+/**
+ * 「原初的解放」的追加效果:换完词之后紧接着的下一个词,打成功就回血;
+ * 但满血状态下回血没有意义,所以改成让那个词的伤害翻倍——同一份增益,
+ * 缺血时保命、满血时爆发,不会出现「已经满血,这次技能等于白开」的情况。
+ */
+export const PRIMAL_RELEASE_HEAL = 10;
+export const PRIMAL_RELEASE_DAMAGE_MULTIPLIER = 2;
+
 export interface SkillDef {
   id: string;
   name: string;
@@ -288,8 +305,9 @@ export const SKILLS: Record<CharacterId, SkillDef> = {
     id: 'primal_release',
     name: '原初的解放',
     character: 'p1',
-    // ★ 只是把当前词换掉,不对 Boss 造成任何伤害;价值在于「跳过难词而连击不断」
-    description: '跳过当前词,连击不中断。不造成伤害,单纯换一个词。',
+    // ★ 换词本身不对 Boss 造成任何伤害;价值在于「跳过难词而连击不断」,
+    //   外加下面这条追加效果(见 PRIMAL_RELEASE_HEAL 的注释)。
+    description: `跳过当前词,连击不中断。下一个词打成功回复 ${PRIMAL_RELEASE_HEAL} 点血量;若已是满血,则改为让这个词的伤害翻 ${PRIMAL_RELEASE_DAMAGE_MULTIPLIER} 倍。`,
   },
   p2: {
     id: 'bloodbath',

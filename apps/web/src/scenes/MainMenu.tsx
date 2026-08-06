@@ -124,7 +124,8 @@ export function MainMenu({ onStartSolo, onGoCoop, victoryCount, coopAvailable, o
   };
 
   return (
-    <div className="menu">
+    <div className="menu-layout">
+      <div className="menu">
       <h1 className="menu__title">艾欧泽亚打字修行</h1>
       <p className="menu__subtitle">键入词条,打倒泰坦</p>
       <div className="menu__record">本次记录 · 通关次数 <strong>{victoryCount}</strong></div>
@@ -220,23 +221,20 @@ export function MainMenu({ onStartSolo, onGoCoop, victoryCount, coopAvailable, o
         ))}
       </div>
 
+      <div className="menu__start-row">
         <button className="menu__quick-start" disabled={busy} onClick={startQuick}>
           快速开始(艾欧泽亚特色词库)
-      </button>
+        </button>
+        {coopAvailable && (
+          <button className="menu__coop" disabled={busy} onClick={onGoCoop}>
+            联机对战(2 人)
+          </button>
+        )}
+      </div>
 
       <button className="menu__endless" disabled={busy} onClick={() => void startSolo('endless')}>
         无限模式 · 困难规则,打到倒下为止
       </button>
-
-      <div className="menu__boards">
-        <Leaderboard gameMode="standard" difficulty="hell" inputMode="composed" />
-        <Leaderboard gameMode="endless" difficulty="hard" inputMode="composed" />
-        {showHardBoard
-          ? <Leaderboard gameMode="standard" difficulty="hard" inputMode="composed" />
-          : <button className="menu__changelog-link" onClick={() => setShowHardBoard(true)}>
-              查看困难难度排行榜
-            </button>}
-      </div>
 
       <div className="menu__appearance">
         <SkinPicker label="你的皮肤" slot="p1" pathFor={(i) => avatarSkinPath('p1', i)} />
@@ -273,13 +271,22 @@ export function MainMenu({ onStartSolo, onGoCoop, victoryCount, coopAvailable, o
         </button>
       </div>
 
-      {coopAvailable && (
-        <button className="menu__coop" disabled={busy} onClick={onGoCoop}>
-          联机对战(2 人)
-        </button>
-      )}
-
       {error && <div className="menu__error">{error}</div>}
+      </div>
+
+      {/*
+        排行榜独立成右栏,sticky 跟随滚动 —— 菜单本身很长,榜单钉住之后
+        滑到底部选分类时也还看得见自己排第几。窄屏由媒体查询叠回单列。
+      */}
+      <aside className="menu-layout__boards">
+        <Leaderboard gameMode="standard" difficulty="hell" inputMode="composed" />
+        <Leaderboard gameMode="endless" difficulty="hard" inputMode="composed" />
+        {showHardBoard
+          ? <Leaderboard gameMode="standard" difficulty="hard" inputMode="composed" />
+          : <button className="menu__changelog-link" onClick={() => setShowHardBoard(true)}>
+              查看困难难度排行榜
+            </button>}
+      </aside>
     </div>
   );
 }

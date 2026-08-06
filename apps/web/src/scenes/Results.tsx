@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { CHARACTER_LABEL, DIFFICULTY_LABEL, INPUT_MODE_LABEL } from '../battle/constants';
+import { CHARACTER_LABEL, DIFFICULTY_LABEL, INPUT_MODE_LABEL, PLAYER_MAX_HP } from '../battle/constants';
 import { bestRecord, saveRecord, type GameRecord } from '../engine/records';
 import { submitScore, type Session } from '../engine/accountApi';
 import { RANKED_DIFFICULTIES } from '../battle/constants';
@@ -27,6 +27,7 @@ function formatDuration(ms: number): string {
 export function Results({ result, session, onGoAccount, onBackToMenu, onRetry }: ResultsProps) {
   const [uploadState, setUploadState] = useState<'idle' | 'sending' | 'done' | 'error'>('idle');
   const [uploadMsg, setUploadMsg] = useState<string | null>(null);
+  const [showReview, setShowReview] = useState(false);
 
   /**
    * 能不能上榜。四个条件缺一不可:
@@ -158,6 +159,14 @@ export function Results({ result, session, onGoAccount, onBackToMenu, onRetry }:
 
       <div className="results__grid">
         <div className="results__stat">
+          <span className="results__stat-label">本局时长</span>
+          <span className="results__stat-value">{formatDuration(stats.elapsedMs)}</span>
+        </div>
+        <div className="results__stat">
+          <span className="results__stat-label">剩余血量</span>
+          <span className="results__stat-value">{result.playerHp} / {PLAYER_MAX_HP}</span>
+        </div>
+        <div className="results__stat">
           <span className="results__stat-label">总伤害</span>
           <span className="results__stat-value">{result.damage}</span>
         </div>
@@ -190,6 +199,34 @@ export function Results({ result, session, onGoAccount, onBackToMenu, onRetry }:
           <span className="results__stat-value">{result.interruptsFailed}</span>
         </div>
       </div>
+
+      {result.wordsReview.length > 0 && (
+        <div className="results__review">
+          <button
+            className="results__review-toggle"
+            onClick={() => setShowReview((v) => !v)}
+            aria-expanded={showReview}
+          >
+            {showReview ? '收起' : '展开'} 词语复盘({result.wordsReview.length})
+          </button>
+          {showReview && (
+            <ol className="results__review-list">
+              {result.wordsReview.map((w) => (
+                <li
+                  key={w.id}
+                  className={`results__review-item results__review-item--${w.outcome}`}
+                >
+                  <span className="results__review-text">{w.text}</span>
+                  <span className="results__review-reading">{w.reading}</span>
+                  <span className="results__review-outcome">
+                    {w.outcome === 'correct' ? '✓' : '✗'}
+                  </span>
+                </li>
+              ))}
+            </ol>
+          )}
+        </div>
+      )}
 
       <div className="results__upload">
         {rankable && uploadState !== 'done' && (

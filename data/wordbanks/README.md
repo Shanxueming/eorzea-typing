@@ -89,3 +89,6 @@
 3. **社区黑话没有覆盖**:「光之战士」「水晶公」「坐和放宽」这类梗不在游戏文件里,需人工另建 `memes.json`。
 4. **`achievements` 与 `fates` 的非纯汉字比例偏高**(含数字序号),启用前建议按 `pure` 过滤。
 5. **`named` 启发式基于「不含『的』字 + 无路人后缀 + 长度 ≤7」**,规则简单,可按需调整 `build_wordbank.py` 中的 `GENERIC_SUFFIX`。
+6. **手动订正过的错字**(源数据本身的问题,重新跑 `build_wordbank.py` 会被覆盖回错的,记得重新订正):
+   - `places.json` / `starter.json` 的 `plc_00089`:「死都」→「死斗」
+   - `quests.json` 的 `qst_00722`:「腐朽魔都」→「腐朽魔斗」

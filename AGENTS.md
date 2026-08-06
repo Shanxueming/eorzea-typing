@@ -141,7 +141,12 @@ apps/web 和 apps/server 里各写一份可能跑偏的副本。
 - **角色与技能**(单机与联机都有;联机在大厅自选,允许两人选同一个,
   技能效果由服务端权威裁定):
   - p1(界面显示 P1)「原初的解放」:换掉当前词、连击不断,**不造成任何伤害**,
-    也不推进保底计数器 —— 它不是一次结算,只是换一个词。
+    也不推进保底计数器 —— 它不是一次结算,只是换一个词。追加效果挂在换出来的
+    那个新词上(`primalReleaseArmed`,单机在 `SoloBattle`、联机在
+    `PlayerBattleState` 各自一份):这个词打成功回 `PRIMAL_RELEASE_HEAL` 点血
+    (联机回团队血);打的时候已经满血(联机看 `teamHp`)就改成让这个词的伤害
+    ×`PRIMAL_RELEASE_DAMAGE_MULTIPLIER`。打错/超时/主动跳过则作废,不会留到
+    再下一个词上——`resolveNormalMiss` 两端都会清掉这个标记。
   - p2(界面显示 P2)「浴血」:接下来 `BLOODBATH_WORDS` 个词伤害与扣血同时 ×1.5,
     普通词限时 ×`BLOODBATH_TIME_SCALE`。奖惩一起放大是它的设计核心,
     只放大奖励就成了纯收益。
@@ -157,7 +162,13 @@ apps/web 和 apps/server 里各写一份可能跑偏的副本。
   - `endless` 无限:没有狂暴倒计时,泰坦打死一只立刻刷下一只、血量按
     `ENDLESS_BOSS_HP_GROWTH` 逐只加厚,击杀回血 `ENDLESS_KILL_HEAL`,
     **玩家血量归零才结束**。难度固定 `ENDLESS_DIFFICULTY`(困难)以便成绩可比,
-    输入模式仍由玩家选但会记进成绩。
+    输入模式仍由玩家选但会记进成绩。**只有单机支持,联机没有这个模式**
+    (`room.ts` 里不存在 `endless` 分支)。
+  - 击杀数还联动限时:每打倒一只泰坦,普通词限时在 `wordTimeoutFor` 里按
+    `ENDLESS_TIMEOUT_SHRINK_PER_KILL_MS` 缩短一截,下限
+    `ENDLESS_MIN_WORD_TIMEOUT_MS`;直接读 `engineRef.current.kills` 现算,
+    没有额外状态字段。血厚(越打越久)+ 限时紧(越打越快)两条一起才是
+    「越打越难」,只加一条会显得后期要么太肉要么太赶。
 - ⚠ **反作弊:单机跑的那一份只是「本机自查」,不是防线**。
   `SoloBattle` 局末会跑 `checkAttempt`(逐次硬校验)+ `analyzeSession`(整局节奏
   统计),把 `trustScore`/`trustFlags` 记进成绩 —— 它挡得住随手写的自动化脚本
@@ -170,6 +181,14 @@ apps/web 和 apps/server 里各写一份可能跑偏的副本。
   **比较成绩必须
   三个维度都一致**(玩法 + 难度 + 输入模式):拿组合输入的成绩去比逐字的纪录
   没有意义,组合输入允许反复退格,准确率天然更低。
+- **词语复盘**(结算页折叠面板,仅单机):`SoloBattle` 用 `reviewRef`(按
+  `word.id` 去重的 `Map`)记录这一局遇到过的每个词,`recordReview(word, outcome)`
+  统一写入,四个调用点覆盖全部结算路径 —— `handleComplete` 的普通词成功分支与
+  机制 `progress`/`cleared` 分支记 `'correct'`,`resolveNormalMiss`(超时/放弃/
+  地狱打错殊途同归都会转到这里)与 `resolveMechanicFail` 记 `'missed'`。
+  ⚠ 加新的结算路径时如果绕过了这四个函数,词会从复盘里"隐形"——别在别处
+  新开一条不经过它们的失败/成功出口。只做单机:联机没有接这个,协议目前不
+  下发完整 `WordEntry`,只有 `wordId`。
 - **四档难度的全部差异**都集中在 `packages/shared/src/battle.ts` 的几张表里,
   调手感直接改表,不要在场景里写 `if (difficulty === ...)`:
 
@@ -182,6 +201,9 @@ apps/web 和 apps/server 里各写一份可能跑偏的副本。
   | 泰坦之怒 | 不触发 | 有 | 有 | 有(无冷却窗口) |
   | 组合输入 | 可选 | 可选 | 可选 | 强制逐字 |
   | 拼音提示 | 显示 | — | — | — |
+
+  表外还有一项:泰坦血量按 `DIFFICULTY_BOSS_HP_MULTIPLIER` 加厚,简单/普通基准、
+  困难 ×1.3、地狱 ×3(2026-08-06 在原先「翻倍」的基础上又提了 50%)。
 
   地狱与困难**刻意共用同一批词**:它的难度来自 9 秒限时 + 强制逐字,再叠字数
   只会变成折磨而非更高的技巧上限。限时与读条窗口现在是**两张独立的表**,

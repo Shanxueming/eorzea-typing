@@ -32,6 +32,8 @@ import {
   BLOODBATH_MULTIPLIER,
   BLOODBATH_TIME_SCALE,
   BLOODBATH_WORDS,
+  PRIMAL_RELEASE_HEAL,
+  PRIMAL_RELEASE_DAMAGE_MULTIPLIER,
   SKILL_COOLDOWN_MS,
   type WordQueue,
   type CharacterId,
@@ -90,6 +92,8 @@ interface PlayerBattleState {
   skillReadyAt: number;
   /** 「浴血」剩余覆盖几个词 */
   bloodbathWordsLeft: number;
+  /** 「原初的解放」的追加效果是否挂在下一个词上:打成功才结算,打错/超时就作废 */
+  primalReleaseArmed: boolean;
 }
 
 /**
@@ -316,6 +320,7 @@ export class Room {
         wordTimer: null,
         skillReadyAt: 0,
         bloodbathWordsLeft: 0,
+        primalReleaseArmed: false,
       });
       this.drawNext(p.playerId);
     }
@@ -372,6 +377,8 @@ export class Room {
     const failedWordId = bs.currentWord.id;
     bs.misses += 1;
     bs.combo = 0;
+    // 「原初的解放」的追加效果只认「下一个词打成功」——这次没打成功,增益作废。
+    bs.primalReleaseArmed = false;
     this.damageTeam(DIFFICULTY_DAMAGE_ON_MISS[this.difficulty]);
     if (this.ended) return;
     this.wordsSinceWrath += 1;
@@ -413,12 +420,18 @@ export class Room {
     if (attempt.submitted === target) {
       const raw = computeDamage(bs.currentWord.difficulty, bs.combo, false);
       // 「浴血」把奖惩一起放大
-      const dmg = bs.bloodbathWordsLeft > 0 ? Math.round(raw * BLOODBATH_MULTIPLIER) : raw;
+      const bloodbathDmg = bs.bloodbathWordsLeft > 0 ? Math.round(raw * BLOODBATH_MULTIPLIER) : raw;
+      // 「原初的解放」的追加效果只结算这一次:团队满血就翻倍伤害,没满血就回血
+      const primalArmed = bs.primalReleaseArmed;
+      bs.primalReleaseArmed = false;
+      const primalFullHp = primalArmed && this.teamHp >= PLAYER_MAX_HP;
+      const dmg = primalFullHp ? Math.round(bloodbathDmg * PRIMAL_RELEASE_DAMAGE_MULTIPLIER) : bloodbathDmg;
       bs.damage += dmg;
       bs.combo += 1;
       bs.wordsCompleted += 1;
       prevBossHp = this.bossHp;
       this.bossHp = Math.max(0, this.bossHp - dmg);
+      if (primalArmed && !primalFullHp) this.healTeam(PRIMAL_RELEASE_HEAL);
       if (this.bossHp <= 0) {
         this.endBattle(true);
         return;
@@ -676,6 +689,8 @@ export class Room {
       // 那类 bug 的温床,技能这条新路径同样必须遵守「两边消费次数逐次相等」。
       const skipped = bs.currentWord.id;
       this.drawNext(playerId);
+      // 换出来的这个新词挂上追加效果:打成功回团队血,满血则改为那个词伤害翻倍。
+      bs.primalReleaseArmed = true;
       this.broadcast({ t: 'word_advanced', playerId, wordId: skipped });
     } else {
       bs.bloodbathWordsLeft = BLOODBATH_WORDS;

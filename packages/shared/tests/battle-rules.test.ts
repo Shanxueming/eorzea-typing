@@ -5,17 +5,25 @@
  */
 import { describe, it, expect } from 'vitest';
 import {
+  BOSS_MAX_HP,
+  DIFFICULTY_BOSS_HP_MULTIPLIER,
   DIFFICULTY_CAST_DURATION_MS,
   DIFFICULTY_DAMAGE_ON_MISS,
   DIFFICULTY_WORD_LENGTH,
   DIFFICULTY_WORD_TIMEOUT_MS,
+  ENDLESS_MIN_WORD_TIMEOUT_MS,
+  ENDLESS_TIMEOUT_SHRINK_PER_KILL_MS,
   MAX_INTERRUPT_WORD_LENGTH,
+  PRIMAL_RELEASE_DAMAGE_MULTIPLIER,
+  PRIMAL_RELEASE_HEAL,
+  SKILLS,
   TITAN_WRATH_COOLDOWN_WORDS,
   TITAN_WRATH_ON_FAILURE_CHANCE,
   TITAN_WRATH_ON_SUCCESS_CHANCE,
   TITAN_WRATH_PITY_CAP,
   TITAN_WRATH_PITY_STEP,
   allowsComposedInput,
+  bossHpFor,
   filterPoolByDifficulty,
   hasTitanWrath,
   resolveInputMode,
@@ -184,6 +192,58 @@ describe('难度分布(按判定字符数筛)', () => {
     const before = POOL.length;
     filterPoolByDifficulty(POOL, 'easy');
     expect(POOL).toHaveLength(before);
+  });
+});
+
+describe('泰坦血量按难度加厚', () => {
+  it('简单/普通是基准值,困难 ×1.3,地狱 ×3', () => {
+    expect(DIFFICULTY_BOSS_HP_MULTIPLIER.easy).toBe(1);
+    expect(DIFFICULTY_BOSS_HP_MULTIPLIER.normal).toBe(1);
+    expect(DIFFICULTY_BOSS_HP_MULTIPLIER.hard).toBeCloseTo(1.3, 10);
+    expect(DIFFICULTY_BOSS_HP_MULTIPLIER.hell).toBe(3);
+  });
+
+  it('★ 2026-08-06:地狱在原先「翻倍」的基础上又提了 50%,bossHpFor 直接反映这个数', () => {
+    expect(bossHpFor('hell')).toBe(BOSS_MAX_HP * 3);
+    expect(bossHpFor('hell')).toBe(18_000);
+  });
+});
+
+describe('「原初的解放」追加效果:满血翻伤害,没满血就回血', () => {
+  it('回血量与伤害倍率的数值口径', () => {
+    expect(PRIMAL_RELEASE_HEAL).toBe(10);
+    expect(PRIMAL_RELEASE_DAMAGE_MULTIPLIER).toBe(2);
+  });
+
+  it('技能描述里带上了这两个数,不能和实际生效的常量脱节', () => {
+    expect(SKILLS.p1.description).toContain(`${PRIMAL_RELEASE_HEAL}`);
+    expect(SKILLS.p1.description).toContain(`${PRIMAL_RELEASE_DAMAGE_MULTIPLIER}`);
+  });
+});
+
+describe('无限模式:击杀数联动普通词限时', () => {
+  it('每杀一只缩短 300ms,下限 5000ms', () => {
+    expect(ENDLESS_TIMEOUT_SHRINK_PER_KILL_MS).toBe(300);
+    expect(ENDLESS_MIN_WORD_TIMEOUT_MS).toBe(5_000);
+  });
+
+  it('★ 困难档基础限时是 12s,缩到下限之前应该严格递减', () => {
+    const base = DIFFICULTY_WORD_TIMEOUT_MS.hard;
+    const after10Kills = Math.max(
+      ENDLESS_MIN_WORD_TIMEOUT_MS,
+      base - 10 * ENDLESS_TIMEOUT_SHRINK_PER_KILL_MS,
+    );
+    expect(after10Kills).toBe(base - 3_000);
+    expect(after10Kills).toBeLessThan(base);
+  });
+
+  it('打再多也不会缩到下限以下', () => {
+    const base = DIFFICULTY_WORD_TIMEOUT_MS.hard;
+    const after999Kills = Math.max(
+      ENDLESS_MIN_WORD_TIMEOUT_MS,
+      base - 999 * ENDLESS_TIMEOUT_SHRINK_PER_KILL_MS,
+    );
+    expect(after999Kills).toBe(ENDLESS_MIN_WORD_TIMEOUT_MS);
   });
 });
 

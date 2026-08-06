@@ -29,6 +29,8 @@ import {
   BOSS_SKILL_NAME,
   ENDLESS_BOSS_HP_GROWTH,
   ENDLESS_KILL_HEAL,
+  ENDLESS_TIMEOUT_SHRINK_PER_KILL_MS,
+  ENDLESS_MIN_WORD_TIMEOUT_MS,
   DIFFICULTY_CAST_DURATION_MS,
   DIFFICULTY_DAMAGE_ON_MISS,
   DIFFICULTY_WORD_TIMEOUT_MS,
@@ -40,6 +42,8 @@ import {
   SHATTER_MS,
   SKILLS,
   SKILL_COOLDOWN_MS,
+  PRIMAL_RELEASE_HEAL,
+  PRIMAL_RELEASE_DAMAGE_MULTIPLIER,
   TITAN_WRATH_ON_FAILURE_CHANCE,
   TITAN_WRATH_ON_SUCCESS_CHANCE,
   titanWrathChance,
@@ -57,11 +61,23 @@ import { HpBar } from '../components/HpBar';
 import { CountdownBar } from '../components/CountdownBar';
 import { BattleExitControl } from '../components/BattleExitControl';
 
+/** 词语复盘:这一局遇到过的词,打对了还是没打对(超时/跳过/放弃都算没打对) */
+export interface WordReviewEntry {
+  id: string;
+  /** 显示原文,可能含中点,如 "必杀剑·九天" */
+  text: string;
+  reading: string;
+  category: WordCategory;
+  outcome: 'correct' | 'missed';
+}
+
 export interface SoloResult {
   victory: boolean;
   /** 非胜利时区分到底是血量归零秒结,还是单纯打到时间到 */
   reason: 'boss_defeated' | 'player_defeated' | 'time_up';
   score: number;
+  /** 结算那一刻的剩余血量;血量归零判负时恒为 0 */
+  playerHp: number;
   damage: number;
   interruptsSucceeded: number;
   interruptsFailed: number;
@@ -95,6 +111,8 @@ export interface SoloResult {
     survivedMs: number;
     maxCombo: number;
   };
+  /** 这一局遇到过的所有词(去重,按第一次遇到的顺序),结算页「词语复盘」用 */
+  wordsReview: WordReviewEntry[];
 }
 
 export interface SoloBattleProps {
@@ -142,6 +160,8 @@ interface EngineState {
   skillReadyAt: number;
   /** 「浴血」剩余覆盖几个词,0 表示没在增益里 */
   bloodbathWordsLeft: number;
+  /** 「原初的解放」的追加效果是否挂在下一个词上:打成功才结算,打错/超时就作废 */
+  primalReleaseArmed: boolean;
   /** 无限模式:已经打倒几只泰坦 */
   kills: number;
   /** 无限模式:当前这只泰坦的血量上限(逐只加厚) */
@@ -177,6 +197,7 @@ function initEngine(bossMaxHp: number): EngineState {
     wordsSinceWrath: 0,
     skillReadyAt: 0,
     bloodbathWordsLeft: 0,
+    primalReleaseArmed: false,
     kills: 0,
     bossMaxHp,
     maxCombo: 0,
@@ -204,9 +225,20 @@ export function SoloBattle({ pool, mode, difficulty, inputMode, character, gameM
   const showReading = DIFFICULTY_SHOW_READING[difficulty];
   const skill = SKILLS[character];
 
-  /** 「浴血」期间普通词限时收紧 25%,换词时按当时的增益状态重新算 */
-  const wordTimeoutFor = (bloodbathActive: boolean) =>
-    Math.round(baseWordTimeoutMs * (bloodbathActive ? BLOODBATH_TIME_SCALE : 1));
+  /**
+   * 「浴血」期间普通词限时收紧 25%,换词时按当时的增益状态重新算。
+   * 无限模式再叠一层:每打倒一只泰坦,限时先按 ENDLESS_TIMEOUT_SHRINK_PER_KILL_MS
+   * 缩一截(有下限),「浴血」的收紧在这个已经缩过的值上再乘一次。
+   */
+  const wordTimeoutFor = (bloodbathActive: boolean) => {
+    const base = isEndless
+      ? Math.max(
+          ENDLESS_MIN_WORD_TIMEOUT_MS,
+          baseWordTimeoutMs - engineRef.current.kills * ENDLESS_TIMEOUT_SHRINK_PER_KILL_MS,
+        )
+      : baseWordTimeoutMs;
+    return Math.round(base * (bloodbathActive ? BLOODBATH_TIME_SCALE : 1));
+  };
 
   const battleStartRef = useRef(performance.now());
   const now = () => performance.now() - battleStartRef.current;
@@ -222,6 +254,17 @@ export function SoloBattle({ pool, mode, difficulty, inputMode, character, gameM
   const queueRef = useRef(createWordQueue(normalPoolRef.current, seedRef.current));
   const attemptsRef = useRef<WordAttempt[]>([]);
   const targetsRef = useRef(new Map<string, string>());
+  /**
+   * 词语复盘:按 word.id 去重,同一个词重复出现时最新结果覆盖旧的。
+   * 用 Map 是因为 JS 的 Map.set 在 key 已存在时不会挪动插入位置 ——
+   * 覆盖结果的同时,列表仍按「第一次遇到」的顺序排列,不用另外记时间戳排序。
+   */
+  const reviewRef = useRef(new Map<string, WordReviewEntry>());
+  function recordReview(word: WordEntry, outcome: WordReviewEntry['outcome']) {
+    reviewRef.current.set(word.id, {
+      id: word.id, text: word.text, reading: word.reading, category: word.category, outcome,
+    });
+  }
   const finishedRef = useRef(false);
   const castDeadlineRef = useRef<number | null>(null);
   const wordDeadlineRef = useRef<number | null>(null);
@@ -269,6 +312,7 @@ export function SoloBattle({ pool, mode, difficulty, inputMode, character, gameM
       victory,
       reason,
       score,
+      playerHp: e.playerHp,
       damage: e.totalDamage,
       interruptsSucceeded: e.interruptsSucceeded,
       interruptsFailed: e.interruptsFailed,
@@ -287,6 +331,7 @@ export function SoloBattle({ pool, mode, difficulty, inputMode, character, gameM
       endless: isEndless
         ? { kills: e.kills, survivedMs: Math.round(now()), maxCombo: e.maxCombo }
         : undefined,
+      wordsReview: Array.from(reviewRef.current.values()),
     });
   }
 
@@ -339,11 +384,13 @@ export function SoloBattle({ pool, mode, difficulty, inputMode, character, gameM
     revertTimersRef.current.push(t);
   }
 
-  function applyDamage(word: WordEntry, isInterrupt: boolean) {
+  /** extraMultiplier 目前只服务于「原初的解放」满血时的伤害翻倍,默认不生效 */
+  function applyDamage(word: WordEntry, isInterrupt: boolean, extraMultiplier = 1) {
     const e = engineRef.current;
     const base = computeDamage(word.difficulty, e.combo, isInterrupt);
     // 「浴血」把奖惩一起放大:这里是奖励侧,扣血侧在 damagePlayer 里
-    const dmg = e.bloodbathWordsLeft > 0 ? Math.round(base * BLOODBATH_MULTIPLIER) : base;
+    const bloodbathDmg = e.bloodbathWordsLeft > 0 ? Math.round(base * BLOODBATH_MULTIPLIER) : base;
+    const dmg = extraMultiplier !== 1 ? Math.round(bloodbathDmg * extraMultiplier) : bloodbathDmg;
     e.bossHp = Math.max(0, e.bossHp - dmg);
     e.combo += 1;
     if (e.combo > e.maxCombo) e.maxCombo = e.combo;
@@ -379,6 +426,9 @@ export function SoloBattle({ pool, mode, difficulty, inputMode, character, gameM
   /** 机制失败(超时或主动放弃):扣一份重伤害,回到被冻结的普通词 */
   function resolveMechanicFail() {
     const e = engineRef.current;
+    // 三连桶会同时给出左右两个候选词,失败时说不清玩家看到的是哪一个,
+    // 两个都记为「没打对」——反正两个都在屏幕上出现过。
+    if (e.mechanic) currentMechanicWords(e.mechanic).forEach((w) => recordReview(w, 'missed'));
     e.interruptsFailed += 1;
     damagePlayer(PLAYER_DAMAGE_ON_FAIL);
     audio.play('hurt');
@@ -389,7 +439,13 @@ export function SoloBattle({ pool, mode, difficulty, inputMode, character, gameM
 
   function resolveNormalMiss() {
     const e = engineRef.current;
+    // 超时/放弃/地狱模式打错都从这里(或 resolveMiss 转手)统一结算,
+    // 在 drawNext 换词之前记一笔,词语复盘才能覆盖到「没打对」的词。
+    if (e.currentWord) recordReview(e.currentWord, 'missed');
     e.combo = 0;
+    // 「原初的解放」的追加效果只认「下一个词打成功」——这次没打成功,增益作废,
+    // 不会留到再下一个词上。
+    e.primalReleaseArmed = false;
     e.avatarState = 'miss';
     scheduleRevert({ avatarState: 'idle' }, AVATAR_PULSE_MS);
     audio.play('miss');
@@ -491,6 +547,9 @@ export function SoloBattle({ pool, mode, difficulty, inputMode, character, gameM
 
     // ── 机制进行中:交给 mechanics.ts 的状态机推进 ──
     if (e.mechanic) {
+      // 提交前先按 wordId 把命中的那个词找出来——submitMechanicWord 之后
+      // 状态就推进了,三连桶打完左词右词候选会跟着换,再找就找不到原来那个了。
+      const hitWord = currentMechanicWords(e.mechanic).find((w) => w.id === payload.wordId);
       const outcome = submitMechanicWord(e.mechanic, payload.wordId);
       if (outcome.kind === 'rejected') {
         // 三连桶打错方向 / 三穿一打错顺序:原地不动,清空输入让玩家重打,
@@ -500,6 +559,7 @@ export function SoloBattle({ pool, mode, difficulty, inputMode, character, gameM
         rerender();
         return;
       }
+      if (hitWord) recordReview(hitWord, 'correct');
       if (outcome.kind === 'progress') {
         e.mechanic = outcome.state;
         audio.play('hit_slash');
@@ -517,9 +577,17 @@ export function SoloBattle({ pool, mode, difficulty, inputMode, character, gameM
     const word = e.currentWord;
     attemptsRef.current.push({ ...payload, wordId: word.id });
     targetsRef.current.set(word.id, targetOf(word, mode));
+    recordReview(word, 'correct');
 
     const prevBossHp = e.bossHp;
-    applyDamage(word, false);
+    // 「原初的解放」的追加效果只结算这一次:满血翻倍伤害,没满血就回血。
+    const primalArmed = e.primalReleaseArmed;
+    e.primalReleaseArmed = false;
+    const primalFullHp = primalArmed && e.playerHp >= PLAYER_MAX_HP;
+    applyDamage(word, false, primalFullHp ? PRIMAL_RELEASE_DAMAGE_MULTIPLIER : 1);
+    if (primalArmed && !primalFullHp) {
+      e.playerHp = Math.min(PLAYER_MAX_HP, e.playerHp + PRIMAL_RELEASE_HEAL);
+    }
     audio.play('hit_slash');
 
     if (e.bossHp <= 0 && !onBossDefeated()) return;
@@ -578,8 +646,10 @@ export function SoloBattle({ pool, mode, difficulty, inputMode, character, gameM
     if (character === 'p1') {
       // 原初的解放:换掉当前词,连击不断,**不对 Boss 造成任何伤害**。
       // 不记 attempt(没有真正打完这个词),也不推进保底计数器——它不是一次结算。
+      // 换出来的这个新词挂上追加效果:打成功回血,满血则改为那个词伤害翻倍。
       audio.play('interrupt');
       drawNext();
+      e.primalReleaseArmed = true;
     } else {
       // 浴血:接下来 BLOODBATH_WORDS 个词奖惩同放大,并收紧限时。
       // 立刻按新的限时重算当前词的截止时刻,不然增益要等到换词才生效。

@@ -186,6 +186,29 @@ async function main(): Promise<void> {
     const otherTrack = await get('/api/leaderboard?gameMode=standard&difficulty=hard&inputMode=sequential');
     assert.equal((otherTrack.json.rows as unknown[]).length, 0, '不同输入模式必须分榜');
 
+    // ★ 地狱榜必须按难度收敛输入模式。
+    //   地狱强制逐字,「地狱 + 组合输入」这条赛道根本不存在 —— 曾经首页把地狱榜
+    //   写死成 composed,结果玩家通关地狱、传了成绩、回首页看不到自己,
+    //   榜单标题还写着「地狱 · 组合输入」。查询侧必须替调用方收敛,而不是回空榜。
+    const hellPayload = {
+      ...basePayload, difficulty: 'hell' as const, inputMode: 'sequential' as const,
+      claimed: { score: 1, clearMs: 70_000 },
+    };
+    assert.equal((await post('/api/score/submit', hellPayload)).status, 200, '地狱成绩应该能上传');
+
+    const hellAsComposed = await get('/api/leaderboard?gameMode=standard&difficulty=hell&inputMode=composed');
+    assert.equal(hellAsComposed.json.inputMode, 'sequential',
+      '请求地狱+组合输入时,服务端必须收敛成逐字并把实际赛道回给前端');
+    assert.equal((hellAsComposed.json.rows as unknown[]).length, 1,
+      '地狱榜不该因为请求方写了 composed 就变成空榜');
+
+    const hellAsSequential = await get('/api/leaderboard?gameMode=standard&difficulty=hell&inputMode=sequential');
+    assert.deepEqual(
+      (hellAsSequential.json.rows as Array<{ displayId: string }>).map((r) => r.displayId),
+      (hellAsComposed.json.rows as Array<{ displayId: string }>).map((r) => r.displayId),
+      '地狱榜无论请求哪种输入模式,拿到的都该是同一条赛道',
+    );
+
     // 同一人再交一个更快的,应该替换而不是新增
     const faster = await post('/api/score/submit', {
       ...basePayload, claimed: { score: 1, clearMs: 45_000 },
