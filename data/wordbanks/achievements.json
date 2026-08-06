@@ -1430,7 +1430,7 @@
    "id": "ach_00159",
    "text": "皇都铁卫",
    "typeText": "皇都铁卫",
-   "reading": "huang dou tie wei",
+   "reading": "huang du tie wei",
    "category": "achievements",
    "difficulty": 2,
    "pure": true
@@ -1439,7 +1439,7 @@
    "id": "ach_00160",
    "text": "皇都骚乱",
    "typeText": "皇都骚乱",
-   "reading": "huang dou sao luan",
+   "reading": "huang du sao luan",
    "category": "achievements",
    "difficulty": 2,
    "pure": true
@@ -1943,7 +1943,7 @@
    "id": "ach_00216",
    "text": "长风同志",
    "typeText": "长风同志",
-   "reading": "zhang feng tong zhi",
+   "reading": "chang feng tong zhi",
    "category": "achievements",
    "difficulty": 2,
    "pure": true
@@ -12077,7 +12077,7 @@
    "id": "ach_01342",
    "text": "森都谢幕之音",
    "typeText": "森都谢幕之音",
-   "reading": "sen dou xie mu zhi yin",
+   "reading": "sen du xie mu zhi yin",
    "category": "achievements",
    "difficulty": 2,
    "pure": true
@@ -12500,7 +12500,7 @@
    "id": "ach_01389",
    "text": "皇都之机工士",
    "typeText": "皇都之机工士",
-   "reading": "huang dou zhi ji gong shi",
+   "reading": "huang du zhi ji gong shi",
    "category": "achievements",
    "difficulty": 2,
    "pure": true
@@ -14174,7 +14174,7 @@
    "id": "ach_01575",
    "text": "长风空力团1",
    "typeText": "长风空力团1",
-   "reading": "zhang feng kong li tuan 1",
+   "reading": "chang feng kong li tuan 1",
    "category": "achievements",
    "difficulty": 2,
    "pure": false
@@ -14183,7 +14183,7 @@
    "id": "ach_01576",
    "text": "长风空力团2",
    "typeText": "长风空力团2",
-   "reading": "zhang feng kong li tuan 2",
+   "reading": "chang feng kong li tuan 2",
    "category": "achievements",
    "difficulty": 2,
    "pure": false
@@ -14192,7 +14192,7 @@
    "id": "ach_01577",
    "text": "长风空力团3",
    "typeText": "长风空力团3",
-   "reading": "zhang feng kong li tuan 3",
+   "reading": "chang feng kong li tuan 3",
    "category": "achievements",
    "difficulty": 2,
    "pure": false
@@ -15659,7 +15659,7 @@
    "id": "ach_01740",
    "text": "为了皇都的繁荣",
    "typeText": "为了皇都的繁荣",
-   "reading": "wei le huang dou de fan rong",
+   "reading": "wei le huang du de fan rong",
    "category": "achievements",
    "difficulty": 3,
    "pure": true
@@ -19016,7 +19016,7 @@
    "id": "ach_02113",
    "text": "森之都的凯旋1",
    "typeText": "森之都的凯旋1",
-   "reading": "sen zhi dou de kai xuan 1",
+   "reading": "sen zhi du de kai xuan 1",
    "category": "achievements",
    "difficulty": 3,
    "pure": false
@@ -19025,7 +19025,7 @@
    "id": "ach_02114",
    "text": "森之都的凯旋2",
    "typeText": "森之都的凯旋2",
-   "reading": "sen zhi dou de kai xuan 2",
+   "reading": "sen zhi du de kai xuan 2",
    "category": "achievements",
    "difficulty": 3,
    "pure": false
@@ -19034,7 +19034,7 @@
    "id": "ach_02115",
    "text": "森之都的凯旋3",
    "typeText": "森之都的凯旋3",
-   "reading": "sen zhi dou de kai xuan 3",
+   "reading": "sen zhi du de kai xuan 3",
    "category": "achievements",
    "difficulty": 3,
    "pure": false
@@ -19043,7 +19043,7 @@
    "id": "ach_02116",
    "text": "森之都的凯旋4",
    "typeText": "森之都的凯旋4",
-   "reading": "sen zhi dou de kai xuan 4",
+   "reading": "sen zhi du de kai xuan 4",
    "category": "achievements",
    "difficulty": 3,
    "pure": false
@@ -19052,7 +19052,7 @@
    "id": "ach_02117",
    "text": "森之都的凯旋5",
    "typeText": "森之都的凯旋5",
-   "reading": "sen zhi dou de kai xuan 5",
+   "reading": "sen zhi du de kai xuan 5",
    "category": "achievements",
    "difficulty": 3,
    "pure": false
@@ -19061,7 +19061,7 @@
    "id": "ach_02118",
    "text": "森之都的猎蛋人",
    "typeText": "森之都的猎蛋人",
-   "reading": "sen zhi dou de lie dan ren",
+   "reading": "sen zhi du de lie dan ren",
    "category": "achievements",
    "difficulty": 3,
    "pure": true
@@ -19241,7 +19241,7 @@
    "id": "ach_02138",
    "text": "沙之都的凯旋1",
    "typeText": "沙之都的凯旋1",
-   "reading": "sha zhi dou de kai xuan 1",
+   "reading": "sha zhi du de kai xuan 1",
    "category": "achievements",
    "difficulty": 3,
    "pure": false
@@ -19250,7 +19250,7 @@
    "id": "ach_02139",
    "text": "沙之都的凯旋2",
    "typeText": "沙之都的凯旋2",
-   "reading": "sha zhi dou de kai xuan 2",
+   "reading": "sha zhi du de kai xuan 2",
    "category": "achievements",
    "difficulty": 3,
    "pure": false
@@ -19259,7 +19259,7 @@
    "id": "ach_02140",
    "text": "沙之都的凯旋3",
    "typeText": "沙之都的凯旋3",
-   "reading": "sha zhi dou de kai xuan 3",
+   "reading": "sha zhi du de kai xuan 3",
    "category": "achievements",
    "difficulty": 3,
    "pure": false
@@ -19268,7 +19268,7 @@
    "id": "ach_02141",
    "text": "沙之都的凯旋4",
    "typeText": "沙之都的凯旋4",
-   "reading": "sha zhi dou de kai xuan 4",
+   "reading": "sha zhi du de kai xuan 4",
    "category": "achievements",
    "difficulty": 3,
    "pure": false
@@ -19277,7 +19277,7 @@
    "id": "ach_02142",
    "text": "沙之都的凯旋5",
    "typeText": "沙之都的凯旋5",
-   "reading": "sha zhi dou de kai xuan 5",
+   "reading": "sha zhi du de kai xuan 5",
    "category": "achievements",
    "difficulty": 3,
    "pure": false
@@ -19331,7 +19331,7 @@
    "id": "ach_02148",
    "text": "海之都的凯旋1",
    "typeText": "海之都的凯旋1",
-   "reading": "hai zhi dou de kai xuan 1",
+   "reading": "hai zhi du de kai xuan 1",
    "category": "achievements",
    "difficulty": 3,
    "pure": false
@@ -19340,7 +19340,7 @@
    "id": "ach_02149",
    "text": "海之都的凯旋2",
    "typeText": "海之都的凯旋2",
-   "reading": "hai zhi dou de kai xuan 2",
+   "reading": "hai zhi du de kai xuan 2",
    "category": "achievements",
    "difficulty": 3,
    "pure": false
@@ -19349,7 +19349,7 @@
    "id": "ach_02150",
    "text": "海之都的凯旋3",
    "typeText": "海之都的凯旋3",
-   "reading": "hai zhi dou de kai xuan 3",
+   "reading": "hai zhi du de kai xuan 3",
    "category": "achievements",
    "difficulty": 3,
    "pure": false
@@ -19358,7 +19358,7 @@
    "id": "ach_02151",
    "text": "海之都的凯旋4",
    "typeText": "海之都的凯旋4",
-   "reading": "hai zhi dou de kai xuan 4",
+   "reading": "hai zhi du de kai xuan 4",
    "category": "achievements",
    "difficulty": 3,
    "pure": false
@@ -19367,7 +19367,7 @@
    "id": "ach_02152",
    "text": "海之都的凯旋5",
    "typeText": "海之都的凯旋5",
-   "reading": "hai zhi dou de kai xuan 5",
+   "reading": "hai zhi du de kai xuan 5",
    "category": "achievements",
    "difficulty": 3,
    "pure": false
@@ -19844,7 +19844,7 @@
    "id": "ach_02205",
    "text": "皇都之占星术士",
    "typeText": "皇都之占星术士",
-   "reading": "huang dou zhi zhan xing shu shi",
+   "reading": "huang du zhi zhan xing shu shi",
    "category": "achievements",
    "difficulty": 3,
    "pure": true
@@ -19853,7 +19853,7 @@
    "id": "ach_02206",
    "text": "皇都之暗黑骑士",
    "typeText": "皇都之暗黑骑士",
-   "reading": "huang dou zhi an hei qi shi",
+   "reading": "huang du zhi an hei qi shi",
    "category": "achievements",
    "difficulty": 3,
    "pure": true
@@ -33200,7 +33200,7 @@
    "id": "ach_03689",
    "text": "踏遍迦巴勒幻想图书馆",
    "typeText": "踏遍迦巴勒幻想图书馆",
-   "reading": "ta bian jia ba lei huan xiang tu shu guan",
+   "reading": "ta bian jia ba le huan xiang tu shu guan",
    "category": "achievements",
    "difficulty": 3,
    "pure": true
@@ -34622,7 +34622,7 @@
    "id": "ach_03847",
    "text": "再次踏遍迦巴勒幻想图书馆",
    "typeText": "再次踏遍迦巴勒幻想图书馆",
-   "reading": "zai ci ta bian jia ba lei huan xiang tu shu guan",
+   "reading": "zai ci ta bian jia ba le huan xiang tu shu guan",
    "category": "achievements",
    "difficulty": 3,
    "pure": true

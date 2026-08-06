@@ -413,7 +413,7 @@
    "id": "mnt_00046",
    "text": "乌勒尔",
    "typeText": "乌勒尔",
-   "reading": "wu lei er",
+   "reading": "wu le er",
    "category": "mounts",
    "difficulty": 1,
    "pure": true
@@ -890,7 +890,7 @@
    "id": "mnt_00099",
    "text": "长绒猫",
    "typeText": "长绒猫",
-   "reading": "zhang rong mao",
+   "reading": "chang rong mao",
    "category": "mounts",
    "difficulty": 1,
    "pure": true
@@ -899,7 +899,7 @@
    "id": "mnt_00100",
    "text": "长须豹",
    "typeText": "长须豹",
-   "reading": "zhang xu bao",
+   "reading": "chang xu bao",
    "category": "mounts",
    "difficulty": 1,
    "pure": true
@@ -908,7 +908,7 @@
    "id": "mnt_00101",
    "text": "长颈驼",
    "typeText": "长颈驼",
-   "reading": "zhang jing tuo",
+   "reading": "chang jing tuo",
    "category": "mounts",
    "difficulty": 1,
    "pure": true

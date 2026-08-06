@@ -692,7 +692,7 @@
    "id": "min_00077",
    "text": "恩奇都",
    "typeText": "恩奇都",
-   "reading": "en qi dou",
+   "reading": "en qi du",
    "category": "minions",
    "difficulty": 1,
    "pure": true
@@ -2483,7 +2483,7 @@
    "id": "min_00276",
    "text": "迷你纱都",
    "typeText": "迷你纱都",
-   "reading": "mi ni sha dou",
+   "reading": "mi ni sha du",
    "category": "minions",
    "difficulty": 2,
    "pure": true
@@ -2645,7 +2645,7 @@
    "id": "min_00294",
    "text": "长须小豹",
    "typeText": "长须小豹",
-   "reading": "zhang xu xiao bao",
+   "reading": "chang xu xiao bao",
    "category": "minions",
    "difficulty": 2,
    "pure": true
@@ -3824,7 +3824,7 @@
    "id": "min_00425",
    "text": "长须小黑豹",
    "typeText": "长须小黑豹",
-   "reading": "zhang xu xiao hei bao",
+   "reading": "chang xu xiao hei bao",
    "category": "minions",
    "difficulty": 2,
    "pure": true

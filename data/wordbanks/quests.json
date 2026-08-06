@@ -5345,7 +5345,7 @@
    "id": "qst_00594",
    "text": "游览王都",
    "typeText": "游览王都",
-   "reading": "you lan wang dou",
+   "reading": "you lan wang du",
    "category": "quests",
    "difficulty": 2,
    "pure": true
@@ -5741,7 +5741,7 @@
    "id": "qst_00638",
    "text": "皇都寻龙",
    "typeText": "皇都寻龙",
-   "reading": "huang dou xun long",
+   "reading": "huang du xun long",
    "category": "quests",
    "difficulty": 2,
    "pure": true
@@ -5750,7 +5750,7 @@
    "id": "qst_00639",
    "text": "皇都母女",
    "typeText": "皇都母女",
-   "reading": "huang dou mu nv",
+   "reading": "huang du mu nv",
    "category": "quests",
    "difficulty": 2,
    "pure": true
@@ -5759,7 +5759,7 @@
    "id": "qst_00640",
    "text": "皇都骚动",
    "typeText": "皇都骚动",
-   "reading": "huang dou sao dong",
+   "reading": "huang du sao dong",
    "category": "quests",
    "difficulty": 2,
    "pure": true
@@ -9296,7 +9296,7 @@
    "id": "qst_01033",
    "text": "动荡的皇都",
    "typeText": "动荡的皇都",
-   "reading": "dong dang de huang dou",
+   "reading": "dong dang de huang du",
    "category": "quests",
    "difficulty": 2,
    "pure": true
@@ -9998,7 +9998,7 @@
    "id": "qst_01111",
    "text": "壮丽的皇都",
    "typeText": "壮丽的皇都",
-   "reading": "zhuang li de huang dou",
+   "reading": "zhuang li de huang du",
    "category": "quests",
    "difficulty": 2,
    "pure": true
@@ -11690,7 +11690,7 @@
    "id": "qst_01299",
    "text": "搜寻伊塞勒",
    "typeText": "搜寻伊塞勒",
-   "reading": "sou xun yi sai lei",
+   "reading": "sou xun yi sai le",
    "category": "quests",
    "difficulty": 2,
    "pure": true
@@ -13499,7 +13499,7 @@
    "id": "qst_01500",
    "text": "皇都的文化",
    "typeText": "皇都的文化",
-   "reading": "huang dou de wen hua",
+   "reading": "huang du de wen hua",
    "category": "quests",
    "difficulty": 2,
    "pure": true
@@ -15209,7 +15209,7 @@
    "id": "qst_01690",
    "text": "长耳的去向",
    "typeText": "长耳的去向",
-   "reading": "zhang er de qu xiang",
+   "reading": "chang er de qu xiang",
    "category": "quests",
    "difficulty": 2,
    "pure": true
@@ -20024,7 +20024,7 @@
    "id": "qst_02225",
    "text": "森之都的工作",
    "typeText": "森之都的工作",
-   "reading": "sen zhi dou de gong zuo",
+   "reading": "sen zhi du de gong zuo",
    "category": "quests",
    "difficulty": 2,
    "pure": true
@@ -20141,7 +20141,7 @@
    "id": "qst_02238",
    "text": "水晶都的气魄",
    "typeText": "水晶都的气魄",
-   "reading": "shui jing dou de qi po",
+   "reading": "shui jing du de qi po",
    "category": "quests",
    "difficulty": 2,
    "pure": true
@@ -20159,7 +20159,7 @@
    "id": "qst_02240",
    "text": "沙之都的工作",
    "typeText": "沙之都的工作",
-   "reading": "sha zhi dou de gong zuo",
+   "reading": "sha zhi du de gong zuo",
    "category": "quests",
    "difficulty": 2,
    "pure": true
@@ -20231,7 +20231,7 @@
    "id": "qst_02248",
    "text": "海之都的仇敌",
    "typeText": "海之都的仇敌",
-   "reading": "hai zhi dou de chou di",
+   "reading": "hai zhi du de chou di",
    "category": "quests",
    "difficulty": 2,
    "pure": true
@@ -20240,7 +20240,7 @@
    "id": "qst_02249",
    "text": "海之都的工作",
    "typeText": "海之都的工作",
-   "reading": "hai zhi dou de gong zuo",
+   "reading": "hai zhi du de gong zuo",
    "category": "quests",
    "difficulty": 2,
    "pure": true
@@ -20294,7 +20294,7 @@
    "id": "qst_02255",
    "text": "海都毒果风波",
    "typeText": "海都毒果风波",
-   "reading": "hai dou du guo feng bo",
+   "reading": "hai du du guo feng bo",
    "category": "quests",
    "difficulty": 2,
    "pure": true
@@ -23012,7 +23012,7 @@
    "id": "qst_02557",
    "text": "圣都的热汤",
    "typeText": "圣都的热汤",
-   "reading": " sheng dou de re tang",
+   "reading": " sheng du de re tang",
    "category": "quests",
    "difficulty": 2,
    "pure": false
@@ -24443,7 +24443,7 @@
    "id": "qst_02716",
    "text": "为了皇都的繁荣",
    "typeText": "为了皇都的繁荣",
-   "reading": "wei le huang dou de fan rong",
+   "reading": "wei le huang du de fan rong",
    "category": "quests",
    "difficulty": 3,
    "pure": true
@@ -26162,7 +26162,7 @@
    "id": "qst_02907",
    "text": "布都嘎部的理想",
    "typeText": "布都嘎部的理想",
-   "reading": "bu dou ga bu de li xiang",
+   "reading": "bu du ga bu de li xiang",
    "category": "quests",
    "difficulty": 3,
    "pure": true
@@ -26234,7 +26234,7 @@
    "id": "qst_02915",
    "text": "废都拿巴示艾兰",
    "typeText": "废都拿巴示艾兰",
-   "reading": "fei dou na ba shi ai lan",
+   "reading": "fei du na ba shi ai lan",
    "category": "quests",
    "difficulty": 3,
    "pure": true
@@ -26846,7 +26846,7 @@
    "id": "qst_02983",
    "text": "提高品质的目标",
    "typeText": "提高品质的目标",
-   "reading": "ti gao pin zhi di mu biao",
+   "reading": "ti gao pin zhi de mu biao",
    "category": "quests",
    "difficulty": 3,
    "pure": true
@@ -27359,7 +27359,7 @@
    "id": "qst_03040",
    "text": "来自沙都的消息",
    "typeText": "来自沙都的消息",
-   "reading": "lai zi sha dou de xiao xi",
+   "reading": "lai zi sha du de xiao xi",
    "category": "quests",
    "difficulty": 3,
    "pure": true
@@ -27368,7 +27368,7 @@
    "id": "qst_03041",
    "text": "来自皇都的特使",
    "typeText": "来自皇都的特使",
-   "reading": "lai zi huang dou de te shi",
+   "reading": "lai zi huang du de te shi",
    "category": "quests",
    "difficulty": 3,
    "pure": true
@@ -27449,7 +27449,7 @@
    "id": "qst_03050",
    "text": "森之都与沙之都",
    "typeText": "森之都与沙之都",
-   "reading": "sen zhi dou yu sha zhi dou",
+   "reading": "sen zhi du yu sha zhi du",
    "category": "quests",
    "difficulty": 3,
    "pure": true
@@ -27467,7 +27467,7 @@
    "id": "qst_03052",
    "text": "森都骗子真情溢",
    "typeText": "森都骗子真情溢",
-   "reading": "sen dou pian zi zhen qing yi",
+   "reading": "sen du pian zi zhen qing yi",
    "category": "quests",
    "difficulty": 3,
    "pure": true
@@ -27530,7 +27530,7 @@
    "id": "qst_03059",
    "text": "水晶都理符开放",
    "typeText": "水晶都理符开放",
-   "reading": "shui jing dou li fu kai fang",
+   "reading": "shui jing du li fu kai fang",
    "category": "quests",
    "difficulty": 3,
    "pure": true
@@ -27575,7 +27575,7 @@
    "id": "qst_03064",
    "text": "沙都穷人遭奴役",
    "typeText": "沙都穷人遭奴役",
-   "reading": "sha dou qiong ren zao nu yi",
+   "reading": "sha du qiong ren zao nu yi",
    "category": "quests",
    "difficulty": 3,
    "pure": true
@@ -27719,7 +27719,7 @@
    "id": "qst_03080",
    "text": "海之都与森之都",
    "typeText": "海之都与森之都",
-   "reading": "hai zhi dou yu sen zhi dou",
+   "reading": "hai zhi du yu sen zhi du",
    "category": "quests",
    "difficulty": 3,
    "pure": true
@@ -27728,7 +27728,7 @@
    "id": "qst_03081",
    "text": "海之都与沙之都",
    "typeText": "海之都与沙之都",
-   "reading": "hai zhi dou yu sha zhi dou",
+   "reading": "hai zhi du yu sha zhi du",
    "category": "quests",
    "difficulty": 3,
    "pure": true
@@ -27764,7 +27764,7 @@
    "id": "qst_03085",
    "text": "海都的地下组织",
    "typeText": "海都的地下组织",
-   "reading": "hai dou de di xia zu zhi",
+   "reading": "hai du de di xia zu zhi",
    "category": "quests",
    "difficulty": 3,
    "pure": true
@@ -27773,7 +27773,7 @@
    "id": "qst_03086",
    "text": "海都路人身首异",
    "typeText": "海都路人身首异",
-   "reading": "hai dou lu ren shen shou yi",
+   "reading": "hai du lu ren shen shou yi",
    "category": "quests",
    "difficulty": 3,
    "pure": true
@@ -28178,7 +28178,7 @@
    "id": "qst_03131",
    "text": "玛丽埃勒的忧郁",
    "typeText": "玛丽埃勒的忧郁",
-   "reading": "ma li ai lei de you yu",
+   "reading": "ma li ai le de you yu",
    "category": "quests",
    "difficulty": 3,
    "pure": true
@@ -28268,7 +28268,7 @@
    "id": "qst_03141",
    "text": "皇都受伤的灵魂",
    "typeText": "皇都受伤的灵魂",
-   "reading": "huang dou shou shang de ling hun",
+   "reading": "huang du shou shang de ling hun",
    "category": "quests",
    "difficulty": 3,
    "pure": true
@@ -28277,7 +28277,7 @@
    "id": "qst_03142",
    "text": "皇都鸳鸯崖下呓",
    "typeText": "皇都鸳鸯崖下呓",
-   "reading": "huang dou yuan yang ya xia yi",
+   "reading": "huang du yuan yang ya xia yi",
    "category": "quests",
    "difficulty": 3,
    "pure": true
@@ -30302,7 +30302,7 @@
    "id": "qst_03367",
    "text": "鲁姆勒与艾雅奈",
    "typeText": "鲁姆勒与艾雅奈",
-   "reading": "lu mu lei yu ai ya nai",
+   "reading": "lu mu le yu ai ya nai",
    "category": "quests",
    "difficulty": 3,
    "pure": true
@@ -30329,7 +30329,7 @@
    "id": "qst_03370",
    "text": "黄金沙都的婚约",
    "typeText": "黄金沙都的婚约",
-   "reading": "huang jin sha dou de hun yue",
+   "reading": "huang jin sha du de hun yue",
    "category": "quests",
    "difficulty": 3,
    "pure": true
@@ -31382,7 +31382,7 @@
    "id": "qst_03487",
    "text": "水晶都小调查",
    "typeText": "水晶都小调查",
-   "reading": " shui jing dou xiao diao cha",
+   "reading": " shui jing du xiao diao cha",
    "category": "quests",
    "difficulty": 3,
    "pure": false
@@ -31553,7 +31553,7 @@
    "id": "qst_03506",
    "text": "王都的羊驼们",
    "typeText": "王都的羊驼们",
-   "reading": " wang dou de yang tuo men",
+   "reading": " wang du de yang tuo men",
    "category": "quests",
    "difficulty": 3,
    "pure": false
@@ -32327,7 +32327,7 @@
    "id": "qst_03592",
    "text": "与森都的贸易交涉",
    "typeText": "与森都的贸易交涉",
-   "reading": "yu sen dou de mao yi jiao she",
+   "reading": "yu sen du de mao yi jiao she",
    "category": "quests",
    "difficulty": 3,
    "pure": true
@@ -32336,7 +32336,7 @@
    "id": "qst_03593",
    "text": "与沙都的贸易交涉",
    "typeText": "与沙都的贸易交涉",
-   "reading": "yu sha dou de mao yi jiao she",
+   "reading": "yu sha du de mao yi jiao she",
    "category": "quests",
    "difficulty": 3,
    "pure": true
@@ -32345,7 +32345,7 @@
    "id": "qst_03594",
    "text": "与海都的贸易交涉",
    "typeText": "与海都的贸易交涉",
-   "reading": "yu hai dou de mao yi jiao she",
+   "reading": "yu hai du de mao yi jiao she",
    "category": "quests",
    "difficulty": 3,
    "pure": true
@@ -34550,7 +34550,7 @@
    "id": "qst_03839",
    "text": "欢迎来到森林之都",
    "typeText": "欢迎来到森林之都",
-   "reading": "huan ying lai dao sen lin zhi dou",
+   "reading": "huan ying lai dao sen lin zhi du",
    "category": "quests",
    "difficulty": 3,
    "pure": true
@@ -34559,7 +34559,7 @@
    "id": "qst_03840",
    "text": "欢迎来到沙漠之都",
    "typeText": "欢迎来到沙漠之都",
-   "reading": "huan ying lai dao sha mo zhi dou",
+   "reading": "huan ying lai dao sha mo zhi du",
    "category": "quests",
    "difficulty": 3,
    "pure": true
@@ -34568,7 +34568,7 @@
    "id": "qst_03841",
    "text": "欢迎来到海洋之都",
    "typeText": "欢迎来到海洋之都",
-   "reading": "huan ying lai dao hai yang zhi dou",
+   "reading": "huan ying lai dao hai yang zhi du",
    "category": "quests",
    "difficulty": 3,
    "pure": true
@@ -34775,7 +34775,7 @@
    "id": "qst_03864",
    "text": "照亮水晶都的光芒",
    "typeText": "照亮水晶都的光芒",
-   "reading": "zhao liang shui jing dou de guang mang",
+   "reading": "zhao liang shui jing du de guang mang",
    "category": "quests",
    "difficulty": 3,
    "pure": true
@@ -35081,7 +35081,7 @@
    "id": "qst_03898",
    "text": "答案尽在知识之都",
    "typeText": "答案尽在知识之都",
-   "reading": "da an jin zai zhi shi zhi dou",
+   "reading": "da an jin zai zhi shi zhi du",
    "category": "quests",
    "difficulty": 3,
    "pure": true
@@ -37952,7 +37952,7 @@
    "id": "qst_04217",
    "text": "请说出你的目的！",
    "typeText": "请说出你的目的",
-   "reading": " qing shuo chu ni de mu di",
+   "reading": " qing shuo chu ni de mu de",
    "category": "quests",
    "difficulty": 3,
    "pure": false
@@ -38510,7 +38510,7 @@
    "id": "qst_04279",
    "text": "为了扛起皇都的未来",
    "typeText": "为了扛起皇都的未来",
-   "reading": "wei le kang qi huang dou de wei lai",
+   "reading": "wei le kang qi huang du de wei lai",
    "category": "quests",
    "difficulty": 3,
    "pure": true
@@ -38924,7 +38924,7 @@
    "id": "qst_04325",
    "text": "失落之都拉巴纳斯塔",
    "typeText": "失落之都拉巴纳斯塔",
-   "reading": "shi luo zhi dou la ba na si ta",
+   "reading": "shi luo zhi du la ba na si ta",
    "category": "quests",
    "difficulty": 3,
    "pure": true
@@ -39419,7 +39419,7 @@
    "id": "qst_04380",
    "text": "引人注目的出海垂钓",
    "typeText": "引人注目的出海垂钓",
-   "reading": "yin ren zhu mu di chu hai chui diao",
+   "reading": "yin ren zhu mu de chu hai chui diao",
    "category": "quests",
    "difficulty": 3,
    "pure": true
@@ -39689,7 +39689,7 @@
    "id": "qst_04410",
    "text": "新生庆典与西风海都",
    "typeText": "新生庆典与西风海都",
-   "reading": "xin sheng qing dian yu xi feng hai dou",
+   "reading": "xin sheng qing dian yu xi feng hai du",
    "category": "quests",
    "difficulty": 3,
    "pure": true
@@ -39752,7 +39752,7 @@
    "id": "qst_04417",
    "text": "旅行画家的森都旅程",
    "typeText": "旅行画家的森都旅程",
-   "reading": "lv xing hua jia de sen dou lv cheng",
+   "reading": "lv xing hua jia de sen du lv cheng",
    "category": "quests",
    "difficulty": 3,
    "pure": true
@@ -39761,7 +39761,7 @@
    "id": "qst_04418",
    "text": "旅行画家的沙都旅程",
    "typeText": "旅行画家的沙都旅程",
-   "reading": "lv xing hua jia de sha dou lv cheng",
+   "reading": "lv xing hua jia de sha du lv cheng",
    "category": "quests",
    "difficulty": 3,
    "pure": true
@@ -39770,7 +39770,7 @@
    "id": "qst_04419",
    "text": "旅行画家的皇都旅程",
    "typeText": "旅行画家的皇都旅程",
-   "reading": "lv xing hua jia de huang dou lv cheng",
+   "reading": "lv xing hua jia de huang du lv cheng",
    "category": "quests",
    "difficulty": 3,
    "pure": true
@@ -40148,7 +40148,7 @@
    "id": "qst_04461",
    "text": "皇都伊修加德保卫战",
    "typeText": "皇都伊修加德保卫战",
-   "reading": "huang dou yi xiu jia de bao wei zhan",
+   "reading": "huang du yi xiu jia de bao wei zhan",
    "category": "quests",
    "difficulty": 3,
    "pure": true
@@ -40157,7 +40157,7 @@
    "id": "qst_04462",
    "text": "知识之都的咏诗之人",
    "typeText": "知识之都的咏诗之人",
-   "reading": "zhi shi zhi dou de yong shi zhi ren",
+   "reading": "zhi shi zhi du de yong shi zhi ren",
    "category": "quests",
    "difficulty": 3,
    "pure": true
@@ -43532,7 +43532,7 @@
    "id": "qst_04837",
    "text": "莱韦耶勒尔家的双胞胎",
    "typeText": "莱韦耶勒尔家的双胞胎",
-   "reading": "lai wei ye lei er jia de shuang bao tai",
+   "reading": "lai wei ye le er jia de shuang bao tai",
    "category": "quests",
    "difficulty": 3,
    "pure": true
@@ -44027,7 +44027,7 @@
    "id": "qst_04892",
    "text": "前往安宁之城水晶都",
    "typeText": "前往安宁之城水晶都",
-   "reading": " qian wang an ning zhi cheng shui jing dou",
+   "reading": " qian wang an ning zhi cheng shui jing du",
    "category": "quests",
    "difficulty": 3,
    "pure": false
@@ -45557,7 +45557,7 @@
    "id": "qst_05062",
    "text": "红莲节与森之都的冒险者",
    "typeText": "红莲节与森之都的冒险者",
-   "reading": "hong lian jie yu sen zhi dou de mao xian zhe",
+   "reading": "hong lian jie yu sen zhi du de mao xian zhe",
    "category": "quests",
    "difficulty": 3,
    "pure": true
@@ -45566,7 +45566,7 @@
    "id": "qst_05063",
    "text": "红莲节与沙之都的冒险者",
    "typeText": "红莲节与沙之都的冒险者",
-   "reading": "hong lian jie yu sha zhi dou de mao xian zhe",
+   "reading": "hong lian jie yu sha zhi du de mao xian zhe",
    "category": "quests",
    "difficulty": 3,
    "pure": true
@@ -45575,7 +45575,7 @@
    "id": "qst_05064",
    "text": "红莲节与海之都的冒险者",
    "typeText": "红莲节与海之都的冒险者",
-   "reading": "hong lian jie yu hai zhi dou de mao xian zhe",
+   "reading": "hong lian jie yu hai zhi du de mao xian zhe",
    "category": "quests",
    "difficulty": 3,
    "pure": true
@@ -45629,7 +45629,7 @@
    "id": "qst_05070",
    "text": "莱韦耶勒尔家赠送的礼物",
    "typeText": "莱韦耶勒尔家赠送的礼物",
-   "reading": "lai wei ye lei er jia zeng song de li wu",
+   "reading": "lai wei ye le er jia zeng song de li wu",
    "category": "quests",
    "difficulty": 3,
    "pure": true
@@ -46097,7 +46097,7 @@
    "id": "qst_05122",
    "text": "战斗能力获得质的飞跃",
    "typeText": "战斗能力获得质的飞跃",
-   "reading": " zhan dou neng li huo de zhi di fei yue",
+   "reading": " zhan dou neng li huo de zhi de fei yue",
    "category": "quests",
    "difficulty": 3,
    "pure": false
@@ -46241,7 +46241,7 @@
    "id": "qst_05138",
    "text": "河马骑手与海都的交易",
    "typeText": "河马骑手与海都的交易",
-   "reading": " he ma qi shou yu hai dou de jiao yi",
+   "reading": " he ma qi shou yu hai du de jiao yi",
    "category": "quests",
    "difficulty": 3,
    "pure": false
@@ -46655,7 +46655,7 @@
    "id": "qst_05184",
    "text": "秘本宝库迦巴勒幻想图书馆",
    "typeText": "秘本宝库迦巴勒幻想图书馆",
-   "reading": "mi ben bao ku jia ba lei huan xiang tu shu guan",
+   "reading": "mi ben bao ku jia ba le huan xiang tu shu guan",
    "category": "quests",
    "difficulty": 3,
    "pure": true
@@ -46754,7 +46754,7 @@
    "id": "qst_05195",
    "text": "与弟弟分离的哥哥的希望",
    "typeText": "与弟弟分离的哥哥的希望",
-   "reading": " yu di di fen li di ge ge de xi wang",
+   "reading": " yu di di fen li de ge ge de xi wang",
    "category": "quests",
    "difficulty": 3,
    "pure": false
@@ -47060,7 +47060,7 @@
    "id": "qst_05229",
    "text": "莱韦耶勒尔家的慈善事业",
    "typeText": "莱韦耶勒尔家的慈善事业",
-   "reading": " lai wei ye lei er jia de ci shan shi ye",
+   "reading": " lai wei ye le er jia de ci shan shi ye",
    "category": "quests",
    "difficulty": 3,
    "pure": false
@@ -47249,7 +47249,7 @@
    "id": "qst_05250",
    "text": "收集任务：有趣的哥布林面具",
    "typeText": "收集任务有趣的哥布林面具",
-   "reading": " shou ji ren wu you qu di ge bu lin mian ju",
+   "reading": " shou ji ren wu you qu de ge bu lin mian ju",
    "category": "quests",
    "difficulty": 3,
    "pure": false

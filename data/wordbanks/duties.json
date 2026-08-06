@@ -1619,7 +1619,7 @@
    "id": "dut_00180",
    "text": "废都拿巴示艾兰",
    "typeText": "废都拿巴示艾兰",
-   "reading": "fei dou na ba shi ai lan",
+   "reading": "fei du na ba shi ai lan",
    "category": "duties",
    "difficulty": 3,
    "pure": true
@@ -1835,7 +1835,7 @@
    "id": "dut_00204",
    "text": "海都路人身首异",
    "typeText": "海都路人身首异",
-   "reading": "hai dou lu ren shen shou yi",
+   "reading": "hai du lu ren shen shou yi",
    "category": "duties",
    "difficulty": 3,
    "pure": true
@@ -2042,7 +2042,7 @@
    "id": "dut_00227",
    "text": "绝妙傀儡师——都灵",
    "typeText": "绝妙傀儡师都灵",
-   "reading": "jue miao kui lei shi dou ling",
+   "reading": "jue miao kui lei shi du ling",
    "category": "duties",
    "difficulty": 3,
    "pure": false
@@ -3302,7 +3302,7 @@
    "id": "dut_00367",
    "text": "失落之都拉巴纳斯塔",
    "typeText": "失落之都拉巴纳斯塔",
-   "reading": "shi luo zhi dou la ba na si ta",
+   "reading": "shi luo zhi du la ba na si ta",
    "category": "duties",
    "difficulty": 3,
    "pure": true
@@ -3428,7 +3428,7 @@
    "id": "dut_00381",
    "text": "旅行画家的森都旅程",
    "typeText": "旅行画家的森都旅程",
-   "reading": "lv xing hua jia de sen dou lv cheng",
+   "reading": "lv xing hua jia de sen du lv cheng",
    "category": "duties",
    "difficulty": 3,
    "pure": true
@@ -3554,7 +3554,7 @@
    "id": "dut_00395",
    "text": "皇都伊修加德保卫战",
    "typeText": "皇都伊修加德保卫战",
-   "reading": "huang dou yi xiu jia de bao wei zhan",
+   "reading": "huang du yi xiu jia de bao wei zhan",
    "category": "duties",
    "difficulty": 3,
    "pure": true
@@ -3761,7 +3761,7 @@
    "id": "dut_00418",
    "text": "那布里亚勒斯讨伐战",
    "typeText": "那布里亚勒斯讨伐战",
-   "reading": "na bu li ya lei si tao fa zhan",
+   "reading": "na bu li ya le si tao fa zhan",
    "category": "duties",
    "difficulty": 3,
    "pure": true
@@ -5003,7 +5003,7 @@
    "id": "dut_00556",
    "text": "学识宝库迦巴勒幻想图书馆",
    "typeText": "学识宝库迦巴勒幻想图书馆",
-   "reading": "xue shi bao ku jia ba lei huan xiang tu shu guan",
+   "reading": "xue shi bao ku jia ba le huan xiang tu shu guan",
    "category": "duties",
    "difficulty": 3,
    "pure": true
@@ -5237,7 +5237,7 @@
    "id": "dut_00582",
    "text": "秘本宝库迦巴勒幻想图书馆",
    "typeText": "秘本宝库迦巴勒幻想图书馆",
-   "reading": "mi ben bao ku jia ba lei huan xiang tu shu guan",
+   "reading": "mi ben bao ku jia ba le huan xiang tu shu guan",
    "category": "duties",
    "difficulty": 3,
    "pure": true

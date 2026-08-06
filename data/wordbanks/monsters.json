@@ -4445,7 +4445,7 @@
    "id": "mob_00494",
    "text": "纱都",
    "typeText": "纱都",
-   "reading": "sha dou",
+   "reading": "sha du",
    "category": "monsters",
    "difficulty": 1,
    "pure": true
@@ -5525,7 +5525,7 @@
    "id": "mob_00614",
    "text": "都灵",
    "typeText": "都灵",
-   "reading": "dou ling",
+   "reading": "du ling",
    "category": "monsters",
    "difficulty": 1,
    "pure": true
@@ -7082,7 +7082,7 @@
    "id": "mob_00787",
    "text": "伊塞勒",
    "typeText": "伊塞勒",
-   "reading": "yi sai lei",
+   "reading": "yi sai le",
    "category": "monsters",
    "difficulty": 1,
    "pure": true
@@ -10889,7 +10889,7 @@
    "id": "mob_01210",
    "text": "忒勒斯",
    "typeText": "忒勒斯",
-   "reading": "te lei si",
+   "reading": "te le si",
    "category": "monsters",
    "difficulty": 1,
    "pure": true
@@ -10925,7 +10925,7 @@
    "id": "mob_01214",
    "text": "恩奇都",
    "typeText": "恩奇都",
-   "reading": "en qi dou",
+   "reading": "en qi du",
    "category": "monsters",
    "difficulty": 1,
    "pure": true
@@ -14723,7 +14723,7 @@
    "id": "mob_01636",
    "text": "米勒卡",
    "typeText": "米勒卡",
-   "reading": "mi lei ka",
+   "reading": "mi le ka",
    "category": "monsters",
    "difficulty": 1,
    "pure": true
@@ -16253,7 +16253,7 @@
    "id": "mob_01806",
    "text": "赛勒菲",
    "typeText": "赛勒菲",
-   "reading": "sai lei fei",
+   "reading": "sai le fei",
    "category": "monsters",
    "difficulty": 1,
    "pure": true
@@ -16901,7 +16901,7 @@
    "id": "mob_01878",
    "text": "长手精",
    "typeText": "长手精",
-   "reading": "zhang shou jing",
+   "reading": "chang shou jing",
    "category": "monsters",
    "difficulty": 1,
    "pure": true
@@ -16937,7 +16937,7 @@
    "id": "mob_01882",
    "text": "长须豹",
    "typeText": "长须豹",
-   "reading": "zhang xu bao",
+   "reading": "chang xu bao",
    "category": "monsters",
    "difficulty": 1,
    "pure": true
@@ -16946,7 +16946,7 @@
    "id": "mob_01883",
    "text": "长颈驼",
    "typeText": "长颈驼",
-   "reading": "zhang jing tuo",
+   "reading": "chang jing tuo",
    "category": "monsters",
    "difficulty": 1,
    "pure": true
@@ -16955,7 +16955,7 @@
    "id": "mob_01884",
    "text": "长颈骆",
    "typeText": "长颈骆",
-   "reading": "zhang jing luo",
+   "reading": "chang jing luo",
    "category": "monsters",
    "difficulty": 1,
    "pure": true
@@ -18251,7 +18251,7 @@
    "id": "mob_02028",
    "text": "鲁姆勒",
    "typeText": "鲁姆勒",
-   "reading": "lu mu lei",
+   "reading": "lu mu le",
    "category": "monsters",
    "difficulty": 1,
    "pure": true
@@ -18944,7 +18944,7 @@
    "id": "mob_02105",
    "text": "丘都尤都",
    "typeText": "丘都尤都",
-   "reading": "qiu dou you dou",
+   "reading": "qiu du you du",
    "category": "monsters",
    "difficulty": 2,
    "pure": true
@@ -21356,7 +21356,7 @@
    "id": "mob_02373",
    "text": "勒杀藤蔓",
    "typeText": "勒杀藤蔓",
-   "reading": "lei sha teng wan",
+   "reading": "le sha teng wan",
    "category": "monsters",
    "difficulty": 2,
    "pure": true
@@ -25406,7 +25406,7 @@
    "id": "mob_02823",
    "text": "天火纱都",
    "typeText": "天火纱都",
-   "reading": "tian huo sha dou",
+   "reading": "tian huo sha du",
    "category": "monsters",
    "difficulty": 2,
    "pure": true
@@ -33515,7 +33515,7 @@
    "id": "mob_03724",
    "text": "格里奥勒",
    "typeText": "格里奥勒",
-   "reading": "ge li ao lei",
+   "reading": "ge li ao le",
    "category": "monsters",
    "difficulty": 2,
    "pure": true
@@ -38024,7 +38024,7 @@
    "id": "mob_04225",
    "text": "特勒扎克",
    "typeText": "特勒扎克",
-   "reading": "te lei zha ke",
+   "reading": "te le zha ke",
    "category": "monsters",
    "difficulty": 2,
    "pure": true
@@ -45683,7 +45683,7 @@
    "id": "mob_05076",
    "text": "迷你纱都",
    "typeText": "迷你纱都",
-   "reading": "mi ni sha dou",
+   "reading": "mi ni sha du",
    "category": "monsters",
    "difficulty": 2,
    "pure": true
@@ -46853,7 +46853,7 @@
    "id": "mob_05206",
    "text": "长尾犰狳",
    "typeText": "长尾犰狳",
-   "reading": "zhang wei qiu yu",
+   "reading": "chang wei qiu yu",
    "category": "monsters",
    "difficulty": 2,
    "pure": true
@@ -46862,7 +46862,7 @@
    "id": "mob_05207",
    "text": "长尾神猴",
    "typeText": "长尾神猴",
-   "reading": "zhang wei shen hou",
+   "reading": "chang wei shen hou",
    "category": "monsters",
    "difficulty": 2,
    "pure": true
@@ -46880,7 +46880,7 @@
    "id": "mob_05209",
    "text": "长爪婴猴",
    "typeText": "长爪婴猴",
-   "reading": "zhang zhao ying hou",
+   "reading": "chang zhao ying hou",
    "category": "monsters",
    "difficulty": 2,
    "pure": true
@@ -46889,7 +46889,7 @@
    "id": "mob_05210",
    "text": "长牙狞豹",
    "typeText": "长牙狞豹",
-   "reading": "zhang ya ning bao",
+   "reading": "chang ya ning bao",
    "category": "monsters",
    "difficulty": 2,
    "pure": true
@@ -46925,7 +46925,7 @@
    "id": "mob_05214",
    "text": "长腿恐鹤",
    "typeText": "长腿恐鹤",
-   "reading": "zhang tui kong he",
+   "reading": "chang tui kong he",
    "category": "monsters",
    "difficulty": 2,
    "pure": true
@@ -46934,7 +46934,7 @@
    "id": "mob_05215",
    "text": "长腿老爹",
    "typeText": "长腿老爹",
-   "reading": "zhang tui lao die",
+   "reading": "chang tui lao die",
    "category": "monsters",
    "difficulty": 2,
    "pure": true
@@ -46943,7 +46943,7 @@
    "id": "mob_05216",
    "text": "长须小豹",
    "typeText": "长须小豹",
-   "reading": "zhang xu xiao bao",
+   "reading": "chang xu xiao bao",
    "category": "monsters",
    "difficulty": 2,
    "pure": true
@@ -46952,7 +46952,7 @@
    "id": "mob_05217",
    "text": "长颈恐鹤",
    "typeText": "长颈恐鹤",
-   "reading": "zhang jing kong he",
+   "reading": "chang jing kong he",
    "category": "monsters",
    "difficulty": 2,
    "pure": true
@@ -46961,7 +46961,7 @@
    "id": "mob_05218",
    "text": "长风狐猴",
    "typeText": "长风狐猴",
-   "reading": "zhang feng hu hou",
+   "reading": "chang feng hu hou",
    "category": "monsters",
    "difficulty": 2,
    "pure": true
@@ -51560,7 +51560,7 @@
    "id": "mob_05729",
    "text": "伊姆都古德",
    "typeText": "伊姆都古德",
-   "reading": "yi mu dou gu de",
+   "reading": "yi mu du gu de",
    "category": "monsters",
    "difficulty": 2,
    "pure": true
@@ -52721,7 +52721,7 @@
    "id": "mob_05858",
    "text": "加尔加梅勒",
    "typeText": "加尔加梅勒",
-   "reading": "jia er jia mei lei",
+   "reading": "jia er jia mei le",
    "category": "monsters",
    "difficulty": 2,
    "pure": true
@@ -58787,7 +58787,7 @@
    "id": "mob_06532",
    "text": "彭忒西勒亚",
    "typeText": "彭忒西勒亚",
-   "reading": "peng te xi lei ya",
+   "reading": "peng te xi le ya",
    "category": "monsters",
    "difficulty": 2,
    "pure": true
@@ -73943,7 +73943,7 @@
    "id": "mob_08216",
    "text": "迦巴勒游隼",
    "typeText": "迦巴勒游隼",
-   "reading": "jia ba lei you sun",
+   "reading": "jia ba le you sun",
    "category": "monsters",
    "difficulty": 2,
    "pure": true
@@ -75293,7 +75293,7 @@
    "id": "mob_08366",
    "text": "长耳希尔达",
    "typeText": "长耳希尔达",
-   "reading": "zhang er xi er da",
+   "reading": "chang er xi er da",
    "category": "monsters",
    "difficulty": 2,
    "pure": true
@@ -75302,7 +75302,7 @@
    "id": "mob_08367",
    "text": "长腿白滨蟹",
    "typeText": "长腿白滨蟹",
-   "reading": "zhang tui bai bin xie",
+   "reading": "chang tui bai bin xie",
    "category": "monsters",
    "difficulty": 2,
    "pure": true
@@ -75320,7 +75320,7 @@
    "id": "mob_08369",
    "text": "长须小黑豹",
    "typeText": "长须小黑豹",
-   "reading": "zhang xu xiao hei bao",
+   "reading": "chang xu xiao hei bao",
    "category": "monsters",
    "difficulty": 2,
    "pure": true
@@ -75329,7 +75329,7 @@
    "id": "mob_08370",
    "text": "长须豹女王",
    "typeText": "长须豹女王",
-   "reading": "zhang xu bao nv wang",
+   "reading": "chang xu bao nv wang",
    "category": "monsters",
    "difficulty": 2,
    "pure": true
@@ -75338,7 +75338,7 @@
    "id": "mob_08371",
    "text": "长须豹幼崽",
    "typeText": "长须豹幼崽",
-   "reading": "zhang xu bao you zai",
+   "reading": "chang xu bao you zai",
    "category": "monsters",
    "difficulty": 2,
    "pure": true
@@ -78866,7 +78866,7 @@
    "id": "mob_08763",
    "text": "伊塞勒的灵魂",
    "typeText": "伊塞勒的灵魂",
-   "reading": "yi sai lei de ling hun",
+   "reading": "yi sai le de ling hun",
    "category": "monsters",
    "difficulty": 2,
    "pure": true
@@ -79568,7 +79568,7 @@
    "id": "mob_08841",
    "text": "冷火波勒克兰",
    "typeText": "冷火波勒克兰",
-   "reading": "leng huo bo lei ke lan",
+   "reading": "leng huo bo le ke lan",
    "category": "monsters",
    "difficulty": 2,
    "pure": true
@@ -79955,7 +79955,7 @@
    "id": "mob_08884",
    "text": "化缘巨人僧都",
    "typeText": "化缘巨人僧都",
-   "reading": "hua yuan ju ren seng dou",
+   "reading": "hua yuan ju ren seng du",
    "category": "monsters",
    "difficulty": 2,
    "pure": true
@@ -81449,7 +81449,7 @@
    "id": "mob_09050",
    "text": "圣骑士让勒努",
    "typeText": "圣骑士让勒努",
-   "reading": "sheng qi shi rang lei nu",
+   "reading": "sheng qi shi rang le nu",
    "category": "monsters",
    "difficulty": 2,
    "pure": true
@@ -81773,7 +81773,7 @@
    "id": "mob_09086",
    "text": "基迦巨人僧都",
    "typeText": "基迦巨人僧都",
-   "reading": "ji jia ju ren seng dou",
+   "reading": "ji jia ju ren seng du",
    "category": "monsters",
    "difficulty": 2,
    "pure": true
@@ -82376,7 +82376,7 @@
    "id": "mob_09153",
    "text": "好汉歹都库勒",
    "typeText": "好汉歹都库勒",
-   "reading": "hao han dai dou ku lei",
+   "reading": "hao han dai du ku le",
    "category": "monsters",
    "difficulty": 2,
    "pure": true
@@ -82970,7 +82970,7 @@
    "id": "mob_09219",
    "text": "布都嘎部医生",
    "typeText": "布都嘎部医生",
-   "reading": "bu dou ga bu yi sheng",
+   "reading": "bu du ga bu yi sheng",
    "category": "monsters",
    "difficulty": 2,
    "pure": true
@@ -82979,7 +82979,7 @@
    "id": "mob_09220",
    "text": "布都嘎部战士",
    "typeText": "布都嘎部战士",
-   "reading": "bu dou ga bu zhan shi",
+   "reading": "bu du ga bu zhan shi",
    "category": "monsters",
    "difficulty": 2,
    "pure": true
@@ -82988,7 +82988,7 @@
    "id": "mob_09221",
    "text": "布都嘎部猎人",
    "typeText": "布都嘎部猎人",
-   "reading": "bu dou ga bu lie ren",
+   "reading": "bu du ga bu lie ren",
    "category": "monsters",
    "difficulty": 2,
    "pure": true
@@ -82997,7 +82997,7 @@
    "id": "mob_09222",
    "text": "布都嘎部萨满",
    "typeText": "布都嘎部萨满",
-   "reading": "bu dou ga bu sa man",
+   "reading": "bu du ga bu sa man",
    "category": "monsters",
    "difficulty": 2,
    "pure": true
@@ -84374,7 +84374,7 @@
    "id": "mob_09375",
    "text": "执刚剑让勒努",
    "typeText": "执刚剑让勒努",
-   "reading": "zhi gang jian rang lei nu",
+   "reading": "zhi gang jian rang le nu",
    "category": "monsters",
    "difficulty": 2,
    "pure": true
@@ -86345,7 +86345,7 @@
    "id": "mob_09594",
    "text": "格里奥勒根茎",
    "typeText": "格里奥勒根茎",
-   "reading": "ge li ao lei gen jing",
+   "reading": "ge li ao le gen jing",
    "category": "monsters",
    "difficulty": 2,
    "pure": true
@@ -86354,7 +86354,7 @@
    "id": "mob_09595",
    "text": "格里奥勒花苗",
    "typeText": "格里奥勒花苗",
-   "reading": "ge li ao lei hua miao",
+   "reading": "ge li ao le hua miao",
    "category": "monsters",
    "difficulty": 2,
    "pure": true
@@ -86435,7 +86435,7 @@
    "id": "mob_09604",
    "text": "森都的孩子们",
    "typeText": "森都的孩子们",
-   "reading": "sen dou de hai zi men",
+   "reading": "sen du de hai zi men",
    "category": "monsters",
    "difficulty": 2,
    "pure": true
@@ -87074,7 +87074,7 @@
    "id": "mob_09675",
    "text": "水晶都的卫兵",
    "typeText": "水晶都的卫兵",
-   "reading": "shui jing dou de wei bing",
+   "reading": "shui jing du de wei bing",
    "category": "monsters",
    "difficulty": 2,
    "pure": true
@@ -88568,7 +88568,7 @@
    "id": "mob_09841",
    "text": "白栎沃尔赛勒",
    "typeText": "白栎沃尔赛勒",
-   "reading": "bai li wo er sai lei",
+   "reading": "bai li wo er sai le",
    "category": "monsters",
    "difficulty": 2,
    "pure": true
@@ -91466,7 +91466,7 @@
    "id": "mob_10163",
    "text": "蛇蝎心让勒米",
    "typeText": "蛇蝎心让勒米",
-   "reading": "she xie xin rang lei mi",
+   "reading": "she xie xin rang le mi",
    "category": "monsters",
    "difficulty": 2,
    "pure": true
@@ -93320,7 +93320,7 @@
    "id": "mob_10369",
    "text": "迷路的哥布林",
    "typeText": "迷路的哥布林",
-   "reading": "mi lu di ge bu lin",
+   "reading": "mi lu de ge bu lin",
    "category": "monsters",
    "difficulty": 2,
    "pure": true
@@ -93437,7 +93437,7 @@
    "id": "mob_10382",
    "text": "那布里亚勒斯",
    "typeText": "那布里亚勒斯",
-   "reading": "na bu li ya lei si",
+   "reading": "na bu li ya le si",
    "category": "monsters",
    "difficulty": 2,
    "pure": true
@@ -95966,7 +95966,7 @@
    "id": "mob_10663",
    "text": "世界联邦的士兵",
    "typeText": "世界联邦的士兵",
-   "reading": "shi jie lian bang di shi bing",
+   "reading": "shi jie lian bang de shi bing",
    "category": "monsters",
    "difficulty": 3,
    "pure": true
@@ -96605,7 +96605,7 @@
    "id": "mob_10734",
    "text": "人马王洛弗卡勒",
    "typeText": "人马王洛弗卡勒",
-   "reading": "ren ma wang luo fu ka lei",
+   "reading": "ren ma wang luo fu ka le",
    "category": "monsters",
    "difficulty": 3,
    "pure": true
@@ -96641,7 +96641,7 @@
    "id": "mob_10738",
    "text": "以太缠绕的士兵",
    "typeText": "以太缠绕的士兵",
-   "reading": "yi tai chan rao di shi bing",
+   "reading": "yi tai chan rao de shi bing",
    "category": "monsters",
    "difficulty": 3,
    "pure": true
@@ -96704,7 +96704,7 @@
    "id": "mob_10745",
    "text": "伊姆都古德之女",
    "typeText": "伊姆都古德之女",
-   "reading": "yi mu dou gu de zhi nv",
+   "reading": "yi mu du gu de zhi nv",
    "category": "monsters",
    "difficulty": 3,
    "pure": true
@@ -96713,7 +96713,7 @@
    "id": "mob_10746",
    "text": "伊姆都古德之子",
    "typeText": "伊姆都古德之子",
-   "reading": "yi mu dou gu de zhi zi",
+   "reading": "yi mu du gu de zhi zi",
    "category": "monsters",
    "difficulty": 3,
    "pure": true
@@ -98360,7 +98360,7 @@
    "id": "mob_10929",
    "text": "圣骑士波勒克兰",
    "typeText": "圣骑士波勒克兰",
-   "reading": "sheng qi shi bo lei ke lan",
+   "reading": "sheng qi shi bo le ke lan",
    "category": "monsters",
    "difficulty": 3,
    "pure": true
@@ -99449,7 +99449,7 @@
    "id": "mob_11050",
    "text": "巴隆王国的士兵",
    "typeText": "巴隆王国的士兵",
-   "reading": "ba long wang guo di shi bing",
+   "reading": "ba long wang guo de shi bing",
    "category": "monsters",
    "difficulty": 3,
    "pure": true
@@ -101798,7 +101798,7 @@
    "id": "mob_11311",
    "text": "无声无息莉艾勒",
    "typeText": "无声无息莉艾勒",
-   "reading": "wu sheng wu xi li ai lei",
+   "reading": "wu sheng wu xi li ai le",
    "category": "monsters",
    "difficulty": 3,
    "pure": true
@@ -103364,7 +103364,7 @@
    "id": "mob_11485",
    "text": "皇都出身的商人",
    "typeText": "皇都出身的商人",
-   "reading": "huang dou chu shen de shang ren",
+   "reading": "huang du chu shen de shang ren",
    "category": "monsters",
    "difficulty": 3,
    "pure": true
@@ -105074,7 +105074,7 @@
    "id": "mob_11675",
    "text": "自由联盟的士兵",
    "typeText": "自由联盟的士兵",
-   "reading": "zi you lian meng di shi bing",
+   "reading": "zi you lian meng de shi bing",
    "category": "monsters",
    "difficulty": 3,
    "pure": true
@@ -106658,7 +106658,7 @@
    "id": "mob_11851",
    "text": "长颈迦迦纳怪鸟",
    "typeText": "长颈迦迦纳怪鸟",
-   "reading": "zhang jing jia jia na guai niao",
+   "reading": "chang jing jia jia na guai niao",
    "category": "monsters",
    "difficulty": 3,
    "pure": true
@@ -106865,7 +106865,7 @@
    "id": "mob_11874",
    "text": "阿斯克勒庇俄斯",
    "typeText": "阿斯克勒庇俄斯",
-   "reading": "a si ke lei bi e si",
+   "reading": "a si ke le bi e si",
    "category": "monsters",
    "difficulty": 3,
    "pure": true
@@ -107909,7 +107909,7 @@
    "id": "mob_11990",
    "text": "黑曜心希德勒格",
    "typeText": "黑曜心希德勒格",
-   "reading": "hei yao xin xi de lei ge",
+   "reading": "hei yao xin xi de le ge",
    "category": "monsters",
    "difficulty": 3,
    "pure": true
@@ -109592,7 +109592,7 @@
    "id": "mob_12177",
    "text": "巴隆王国的士兵长",
    "typeText": "巴隆王国的士兵长",
-   "reading": "ba long wang guo di shi bing zhang",
+   "reading": "ba long wang guo de shi bing zhang",
    "category": "monsters",
    "difficulty": 3,
    "pure": true
@@ -109988,7 +109988,7 @@
    "id": "mob_12221",
    "text": "戈尔德马尔的士兵",
    "typeText": "戈尔德马尔的士兵",
-   "reading": "ge er de ma er di shi bing",
+   "reading": "ge er de ma er de shi bing",
    "category": "monsters",
    "difficulty": 3,
    "pure": true
@@ -110132,7 +110132,7 @@
    "id": "mob_12237",
    "text": "报废的哥布林坦克",
    "typeText": "报废的哥布林坦克",
-   "reading": "bao fei di ge bu lin tan ke",
+   "reading": "bao fei de ge bu lin tan ke",
    "category": "monsters",
    "difficulty": 3,
    "pure": true
@@ -110141,7 +110141,7 @@
    "id": "mob_12238",
    "text": "报废的哥布林装甲",
    "typeText": "报废的哥布林装甲",
-   "reading": "bao fei di ge bu lin zhuang jia",
+   "reading": "bao fei de ge bu lin zhuang jia",
    "category": "monsters",
    "difficulty": 3,
    "pure": true
@@ -111266,7 +111266,7 @@
    "id": "mob_12363",
    "text": "神秘莫测莫勒图斯",
    "typeText": "神秘莫测莫勒图斯",
-   "reading": "shen mi mo ce mo lei tu si",
+   "reading": "shen mi mo ce mo le tu si",
    "category": "monsters",
    "difficulty": 3,
    "pure": true
@@ -111275,7 +111275,7 @@
    "id": "mob_12364",
    "text": "神经质的雷电猎犬",
    "typeText": "神经质的雷电猎犬",
-   "reading": "shen jing zhi di lei dian lie quan",
+   "reading": "shen jing zhi de lei dian lie quan",
    "category": "monsters",
    "difficulty": 3,
    "pure": true
@@ -112643,7 +112643,7 @@
    "id": "mob_12516",
    "text": "那布里亚勒斯之影",
    "typeText": "那布里亚勒斯之影",
-   "reading": "na bu li ya lei si zhi ying",
+   "reading": "na bu li ya le si zhi ying",
    "category": "monsters",
    "difficulty": 3,
    "pure": true
@@ -113525,7 +113525,7 @@
    "id": "mob_12614",
    "text": "卷须魔花克里斯泰勒",
    "typeText": "卷须魔花克里斯泰勒",
-   "reading": "juan xu mo hua ke li si tai lei",
+   "reading": "juan xu mo hua ke li si tai le",
    "category": "monsters",
    "difficulty": 3,
    "pure": true
@@ -113993,7 +113993,7 @@
    "id": "mob_12666",
    "text": "报废的哥布林黑寡妇",
    "typeText": "报废的哥布林黑寡妇",
-   "reading": "bao fei di ge bu lin hei gua fu",
+   "reading": "bao fei de ge bu lin hei gua fu",
    "category": "monsters",
    "difficulty": 3,
    "pure": true

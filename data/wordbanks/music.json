@@ -1853,7 +1853,7 @@
    "id": "msc_00206",
    "text": "多彩之都",
    "typeText": "多彩之都",
-   "reading": "duo cai zhi dou",
+   "reading": "duo cai zhi du",
    "category": "music",
    "difficulty": 2,
    "pure": true
@@ -2096,7 +2096,7 @@
    "id": "msc_00233",
    "text": "希望之都",
    "typeText": "希望之都",
-   "reading": "xi wang zhi dou",
+   "reading": "xi wang zhi du",
    "category": "music",
    "difficulty": 2,
    "pure": true
@@ -2897,7 +2897,7 @@
    "id": "msc_00322",
    "text": "熏香之都",
    "typeText": "熏香之都",
-   "reading": "xun xiang zhi dou",
+   "reading": "xun xiang zhi du",
    "category": "music",
    "difficulty": 2,
    "pure": true
@@ -3311,7 +3311,7 @@
    "id": "msc_00368",
    "text": "落日之都",
    "typeText": "落日之都",
-   "reading": "luo ri zhi dou",
+   "reading": "luo ri zhi du",
    "category": "music",
    "difficulty": 2,
    "pure": true
@@ -4706,7 +4706,7 @@
    "id": "msc_00523",
    "text": "皇都的熙攘",
    "typeText": "皇都的熙攘",
-   "reading": "huang dou de xi rang",
+   "reading": "huang du de xi rang",
    "category": "music",
    "difficulty": 2,
    "pure": true
@@ -5975,7 +5975,7 @@
    "id": "msc_00664",
    "text": "希望之都（钢琴集）",
    "typeText": "希望之都钢琴集",
-   "reading": "xi wang zhi dou gang qin ji",
+   "reading": "xi wang zhi du gang qin ji",
    "category": "music",
    "difficulty": 3,
    "pure": false
@@ -7145,7 +7145,7 @@
    "id": "msc_00794",
    "text": "无眠之都特雷诺～金曦～",
    "typeText": "无眠之都特雷诺金曦",
-   "reading": "wu mian zhi dou te lei nuo jin xi",
+   "reading": "wu mian zhi du te lei nuo jin xi",
    "category": "music",
    "difficulty": 3,
    "pure": false
@@ -7343,7 +7343,7 @@
    "id": "msc_00816",
    "text": "金曦之都（泪流至曦明）",
    "typeText": "金曦之都泪流至曦明",
-   "reading": "jin xi zhi dou lei liu zhi xi ming",
+   "reading": "jin xi zhi du lei liu zhi xi ming",
    "category": "music",
    "difficulty": 3,
    "pure": false

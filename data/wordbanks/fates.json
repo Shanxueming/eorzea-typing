@@ -2474,7 +2474,7 @@
    "id": "fat_00275",
    "text": "长腿坏蛋",
    "typeText": "长腿坏蛋",
-   "reading": "zhang tui huai dan",
+   "reading": "chang tui huai dan",
    "category": "fates",
    "difficulty": 2,
    "pure": true
@@ -3752,7 +3752,7 @@
    "id": "fat_00417",
    "text": "长手精叔叔",
    "typeText": "长手精叔叔",
-   "reading": "zhang shou jing shu shu",
+   "reading": "chang shou jing shu shu",
    "category": "fates",
    "difficulty": 2,
    "pure": true
@@ -5975,7 +5975,7 @@
    "id": "fat_00664",
    "text": "绝命美声——忒勒斯",
    "typeText": "绝命美声忒勒斯",
-   "reading": "jue ming mei sheng te lei si",
+   "reading": "jue ming mei sheng te le si",
    "category": "fates",
    "difficulty": 3,
    "pure": false
@@ -7415,7 +7415,7 @@
    "id": "fat_00824",
    "text": "硬质的病魔——阿萨格",
    "typeText": "硬质的病魔阿萨格",
-   "reading": "ying zhi di bing mo a sa ge",
+   "reading": "ying zhi de bing mo a sa ge",
    "category": "fates",
    "difficulty": 3,
    "pure": false
@@ -8936,7 +8936,7 @@
    "id": "fat_00993",
    "text": "长牙大物——摩西娑苏罗",
    "typeText": "长牙大物摩西娑苏罗",
-   "reading": "zhang ya da wu mo xi suo su luo",
+   "reading": "chang ya da wu mo xi suo su luo",
    "category": "fates",
    "difficulty": 3,
    "pure": false
@@ -9386,7 +9386,7 @@
    "id": "fat_01043",
    "text": "大口食人魔——加尔加梅勒",
    "typeText": "大口食人魔加尔加梅勒",
-   "reading": "da kou shi ren mo jia er jia mei lei",
+   "reading": "da kou shi ren mo jia er jia mei le",
    "category": "fates",
    "difficulty": 3,
    "pure": false
@@ -9674,7 +9674,7 @@
    "id": "fat_01075",
    "text": "望请索克勒斯先生谅解",
    "typeText": "望请索克勒斯先生谅解",
-   "reading": "wang qing suo ke lei si xian sheng liang jie",
+   "reading": "wang qing suo ke le si xian sheng liang jie",
    "category": "fates",
    "difficulty": 3,
    "pure": true
@@ -9728,7 +9728,7 @@
    "id": "fat_01081",
    "text": "炎蝶的女王——彭忒西勒亚",
    "typeText": "炎蝶的女王彭忒西勒亚",
-   "reading": "yan die de nv wang peng te xi lei ya",
+   "reading": "yan die de nv wang peng te xi le ya",
    "category": "fates",
    "difficulty": 3,
    "pure": false
@@ -11303,7 +11303,7 @@
    "id": "fat_01256",
    "text": "对抗魔物演习——克里斯泰勒入侵",
    "typeText": "对抗魔物演习克里斯泰勒入侵",
-   "reading": "dui kang mo wu yan xi ke li si tai lei ru qin",
+   "reading": "dui kang mo wu yan xi ke li si tai le ru qin",
    "category": "fates",
    "difficulty": 3,
    "pure": false
@@ -12104,7 +12104,7 @@
    "id": "fat_01345",
    "text": "圣罗埃勒广场：第一次整备计划完工",
    "typeText": "圣罗埃勒广场第一次整备计划完工",
-   "reading": "sheng luo ai lei guang chang di yi ci zheng bei ji hua wan gong",
+   "reading": "sheng luo ai le guang chang di yi ci zheng bei ji hua wan gong",
    "category": "fates",
    "difficulty": 3,
    "pure": false
@@ -12113,7 +12113,7 @@
    "id": "fat_01346",
    "text": "圣罗埃勒广场：第三次整备计划动工",
    "typeText": "圣罗埃勒广场第三次整备计划动工",
-   "reading": "sheng luo ai lei guang chang di san ci zheng bei ji hua dong gong",
+   "reading": "sheng luo ai le guang chang di san ci zheng bei ji hua dong gong",
    "category": "fates",
    "difficulty": 3,
    "pure": false
@@ -12122,7 +12122,7 @@
    "id": "fat_01347",
    "text": "圣罗埃勒广场：第三次整备计划完工",
    "typeText": "圣罗埃勒广场第三次整备计划完工",
-   "reading": "sheng luo ai lei guang chang di san ci zheng bei ji hua wan gong",
+   "reading": "sheng luo ai le guang chang di san ci zheng bei ji hua wan gong",
    "category": "fates",
    "difficulty": 3,
    "pure": false
@@ -12131,7 +12131,7 @@
    "id": "fat_01348",
    "text": "圣罗埃勒广场：第二次整备计划完工",
    "typeText": "圣罗埃勒广场第二次整备计划完工",
-   "reading": "sheng luo ai lei guang chang di er ci zheng bei ji hua wan gong",
+   "reading": "sheng luo ai le guang chang di er ci zheng bei ji hua wan gong",
    "category": "fates",
    "difficulty": 3,
    "pure": false
@@ -12140,7 +12140,7 @@
    "id": "fat_01349",
    "text": "圣罗埃勒广场：第四次整备计划完工",
    "typeText": "圣罗埃勒广场第四次整备计划完工",
-   "reading": "sheng luo ai lei guang chang di si ci zheng bei ji hua wan gong",
+   "reading": "sheng luo ai le guang chang di si ci zheng bei ji hua wan gong",
    "category": "fates",
    "difficulty": 3,
    "pure": false
