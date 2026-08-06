@@ -24,7 +24,8 @@ M0→M5 六个里程碑(脚手架、单机 Boss 战、双人联机、反作弊�
 pnpm install && pnpm test
 ```
 
-**50 个单测 + `scripts/smoke-coop.ts` 联机冒烟测试必须全绿。**
+**103 个单测 + `scripts/smoke-coop.ts`(联机)+ `scripts/smoke-account.ts`
+(账号/排行榜/后台)三样必须全绿。**
 任何时候测试变红,先修复再继续,不要在红的基础上继续加功能。
 
 ## 仓库结构
@@ -40,6 +41,15 @@ apps/server/src/            Fastify 静态资源托管 + WebSocket 房间状态�
   rooms/room.ts              房间状态机主体,单个房间的完整生命周期都在这一个类里
   rooms/protocol.ts          C2S/S2C 协议类型(权威定义,apps/web/src/engine/coopProtocol.ts 是前端镜像)
   rooms/wordbankStore.ts     服务端自己的词库读取(不依赖前端的 loader)
+  db/                        SQLite(node:sqlite,无第三方驱动):账号表与成绩表
+  auth/                      随机 ID 生成、凭证哈希、管理员会话、TOTP
+  routes/api.ts              账号 / 排行榜 / 管理后台的 HTTP 接口
+  scoreReplay.ts             ★ 单机成绩的服务端重放核算,排行榜可信的唯一理由
+apps/web/src/
+  scenes/AccountScene.tsx    申请/登录页,两侧挂排行榜
+  scenes/AdminScene.tsx      管理后台(只能手敲 #admin 进)
+  components/Leaderboard.tsx 榜单
+  engine/accountApi.ts       前端 API 封装与会话
 data/wordbanks/             96,828 条词库,只读,见 data/wordbanks/README.md
 assets/                     素材目录,见下面「素材约定」
 scripts/
@@ -74,12 +84,15 @@ apps/web 和 apps/server 里各写一份可能跑偏的副本。
 "CODEX_PLAN.md §5"协议的新增和理由。核心点:
 
 - 房主流程:第一个加入房间的人是房主(`PlayerPublic.isHost`),没有「准备」
-  按钮,选好难度后发 `{t:'start', difficulty}`。非房主先发 `{t:'ready'}`,
-  房主才能点开始。
+  按钮,选好难度与输入模式后发 `{t:'start', difficulty, inputMode}`。
+  非房主先发 `{t:'ready'}`,房主才能点开始。
 - 联机两人**共用一条血条**(`score_tick.teamHp`),不是各自一条。归零直接
   结束战斗(判负),没有个人复活。
 - `PlayerTick.combo` 是服务端广播的权威连击数,前端不要再本地维护一份。
-- `boss_cast_warning` 在真正的 `boss_cast` 前 1 秒广播,预警阶段还打不了。
+- **Boss 机制统一走 `mechanic_start / mechanic_progress / mechanic_cleared /
+  mechanic_resolved` 四条消息**,`boss_cast` 那套已经删了。机制的差异全装在
+  `MechanicState` 里 —— **加新机制不需要动协议**。
+  三连桶/三穿一是每人一份独立状态、各自判定;泰坦之怒是全房共享,一人打对即过。
 - 词序列(`createWordQueue(pool, seed)`)客户端和服务端各自独立生成,只靠
   相同的 seed 保证一致——服务端不主动推送"当前该打哪个词",只在
   `word_attempt` 到达时核对 wordId 是否对得上。这是乐观预测 + 服务端权威
@@ -99,9 +112,9 @@ apps/web 和 apps/server 里各写一份可能跑偏的副本。
 - 打错一个字:逐字模式下**只有地狱难度**会立刻结算为失败,简单/普通/困难都允许
   原词重输(清空输入、不重置该词的限时起点,见 `useTypingInput` 的 `reset`);
   组合模式下打错完全不结算。
-- 普通词也**限时**:时限是这局读条时长(按难度换算过)的 2.5 倍
-  (`NORMAL_WORD_TIMEOUT_MULTIPLIER`),超时按失败处理。联机由服务端用
-  定时器强制执行,客户端本地也跑一份同样的计时器保持体验一致。
+- 普通词也**限时**,时限直接查 `DIFFICULTY_WORD_TIMEOUT_MS`(不再是「读条 ×2.5」,
+  那个倍数已经废弃)。超时按失败处理;联机由服务端定时器强制执行,客户端本地
+  也跑一份同样的计时器保持体验一致。
 - 读条(泰坦之怒)**不按墙钟定时**,而是在每次普通词结算之后按概率插进来
   (`TITAN_WRATH_ON_SUCCESS_CHANCE` / `TITAN_WRATH_ON_FAILURE_CHANCE`),
   所以不会抢断玩家正在输入的词。实际概率一律走 `titanWrathChance()`:
@@ -125,14 +138,18 @@ apps/web 和 apps/server 里各写一份可能跑偏的副本。
   冻结(连它的限时计时器一起停),打完读条回到同一个词接着打。服务端
   `Room.triggerCast` 不动 `bs.currentWord`,单机 `SoloBattle` 用
   `pendingNormalWord` 存,两边语义必须一致 —— 理由见下面「已知的坑」第 6 条。
-- **角色与技能**(目前只有单人模式有,联机仍是「P1/P2 = 座位」):
-  - p1 黑皮猫娘「原初的解放」:换掉当前词、连击不断,**不造成任何伤害**,
+- **角色与技能**(单机与联机都有;联机在大厅自选,允许两人选同一个,
+  技能效果由服务端权威裁定):
+  - p1(界面显示 P1)「原初的解放」:换掉当前词、连击不断,**不造成任何伤害**,
     也不推进保底计数器 —— 它不是一次结算,只是换一个词。
-  - p2 灰皮猫娘「浴血」:接下来 `BLOODBATH_WORDS` 个词伤害与扣血同时 ×1.5,
+  - p2(界面显示 P2)「浴血」:接下来 `BLOODBATH_WORDS` 个词伤害与扣血同时 ×1.5,
     普通词限时 ×`BLOODBATH_TIME_SCALE`。奖惩一起放大是它的设计核心,
     只放大奖励就成了纯收益。
-  - 冷却 `SKILL_COOLDOWN_MS`,一局(180 秒)大约能开两次。**打断期间不能开**:
-    读条阶段放行会让「原初的解放」变成白嫖打断。
+  - 冷却 `SKILL_COOLDOWN_MS`,一局(180 秒)大约能开两次。快捷键 **Tab**
+    (要 preventDefault,否则焦点跳出输入框;IME 候选状态下放行给输入法)。
+    **机制期间不能开**:那时放行会让「原初的解放」变成白嫖打断。
+  - ⚠ 联机的「原初的解放」跳词时**必须广播 `word_advanced`**,否则客户端的
+    词队列不会跟着走 —— 又是词队列错位那一类 bug。
   - 角色和皮肤是两层:角色决定技能,皮肤只是同一角色的不同外观(仍存
     localStorage,不进协议)。
 - **玩法模式**(`GameMode`):
@@ -146,13 +163,11 @@ apps/web 和 apps/server 里各写一份可能跑偏的副本。
   统计),把 `trustScore`/`trustFlags` 记进成绩 —— 它挡得住随手写的自动化脚本
   (实测一个合成事件脚本会拿到 0 分、命中六个 flag),但**挡不住认真改客户端的人**,
   因为它就跑在玩家自己的浏览器里,改个数字就是 100 分。
-  **排行榜真正的防线必须是服务端重放**:上榜时把 `attempts` + `seed` + 配置
-  一起上传,服务端用同一个 seed 重建词序列、逐个核对 wordId/submitted、重跑两层
-  反作弊、重算得分,再和客户端声称的对比。这一步还没做,做排行榜时必须补上,
-  否则单机成绩形同虚设(联机不受影响 —— 它本来就每一次提交都在服务端校验)。
-- **成绩记录**在 `apps/web/src/engine/records.ts`,目前落 localStorage。
-  `GameRecord` 是按「一条可上传的成绩」设计的,不是按界面形状 —— 等账号系统和
-  数据库定下来,同一个对象直接 POST 上去即可,不用改调用方。**比较成绩必须
+  **排行榜真正的防线是服务端重放**,已经实现在 `apps/server/src/scoreReplay.ts`,
+  细节见下面「账号与排行榜」一节。(联机本来就每一次提交都在服务端校验,不受影响。)
+- **本机成绩记录**在 `apps/web/src/engine/records.ts`(localStorage),
+  和排行榜是两回事:它记每一局、不需要登录;排行榜只收玩家主动上传的那些。
+  **比较成绩必须
   三个维度都一致**(玩法 + 难度 + 输入模式):拿组合输入的成绩去比逐字的纪录
   没有意义,组合输入允许反复退格,准确率天然更低。
 - **四档难度的全部差异**都集中在 `packages/shared/src/battle.ts` 的几张表里,
@@ -237,6 +252,37 @@ apps/web 和 apps/server 里各写一份可能跑偏的副本。
 `data/wordbanks/` 只读,`items.json` 11MB,**禁止整体读取**,只能
 `head -c 500` 或 `jq '.entries[0:3]'`。
 
+## 账号与排行榜(第三轮新增)
+
+- **数据库用 Node 24 内置的 `node:sqlite`**,没有第三方驱动也没有 ORM。
+  两张表手写 SQL 就够,引一层抽象反而更难看清在查什么。
+  数据落在 `EORZEA_DATA_DIR`,线上是挂载卷 —— **绝不能放进镜像里的应用目录**,
+  那样每次重新部署都会重建,玩家数据就没了。
+- **两套凭证都是加盐 scrypt 哈希入库,库里没有明文**。
+  所以「查密码告诉玩家」技术上做不到,忘记密码的流程只能是
+  「出示 root 密码核对身份 → 重置出新的」。这不是偷懒:明文入库一旦泄露,
+  会连累玩家在别处复用的密码。
+- ⚠⚠ **`scoreReplay.ts` 是排行榜唯一的防线,不是「额外一层保险」**。
+  单机整场战斗都跑在玩家浏览器里,客户端报上来的分数、可信度、甚至
+  「我打完了这些词」全都可以编造。所以服务端**不信任任何结论**,只信原始材料:
+  拿同一个 seed 重建词序列、逐条核对 wordId 与提交文本、重跑两层反作弊、
+  **用自己算的分数入库**。删掉或绕过这一步,单机榜等于直接开放给脚本。
+  - 机制词(泰坦之怒/三连桶/三穿一)来自**未按难度筛的完整池**,重放时要单独
+    识别,否则正常通关会被误判成「词序错误」—— 这个坑踩过一次。
+  - 分数比对容差是 3 倍,不是 1.0:服务端还原不了技能与增益(浴血 ×1.5 等),
+    重算值系统性偏低。卡太紧会把正常玩家全判成作弊,而卡松也不放过谁 ——
+    **入库的本来就是服务端分数**,那条比对只拦「离谱到不可能」的谎报。
+- **赛道 = 玩法 + 难度 + 输入模式**,三者任一不同就是另一条榜。
+  组合输入允许反复退格、准确率天然低于逐字,混在一起比没有意义。
+  前端 `RANKED_DIFFICULTIES` 与服务端 `db/scores.ts` 的同名常量**必须一致**。
+- 管理后台环境变量配不全时**整个 404**,而不是退化成无密码可进。默认安全。
+
+## 线上运维
+
+**服务器上有真实玩家在用,动手之前先读 [`DEPLOY.md`](DEPLOY.md)。**
+那里有部署步骤、备份与恢复、换 BGM、排查清单,以及几个踩过的坑
+(bind mount 认 inode、WAL 模式下不能 cp 数据库、ffmpeg 镜像没有 ffprobe)。
+
 ## 依赖白名单
 
 ```
@@ -253,7 +299,7 @@ server: fastify, @fastify/static, ws, nanoid
 
 ```bash
 pnpm install
-pnpm test                              # 50 单测 + smoke-coop,提交前必须全绿
+pnpm test                              # 103 单测 + 两个冒烟测试,提交前必须全绿
 pnpm typecheck                         # 根 tsconfig.base.json,只覆盖 packages/shared
 pnpm --filter @eorzea/web exec tsc -p tsconfig.json --noEmit   # 前端单独类型检查
 pnpm --filter @eorzea/server exec tsc -p tsconfig.json --noEmit # 服务端单独类型检查
