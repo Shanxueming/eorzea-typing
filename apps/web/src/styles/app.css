@@ -227,6 +227,19 @@ button:disabled {
   color: var(--color-text-dim);
   font-size: 12px;
 }
+/* 客串词库(非 FF14 本体,见 MainMenu.tsx 的 GUEST_CATEGORIES)。
+   染紫是为了在一长串 FF14 分类里一眼认出来 —— 它不进快速开始/无限模式,
+   只有在这里手动勾选才会出现。 */
+.menu__category-item--guest {
+  color: #c9a0ff;
+  font-weight: 600;
+}
+.menu__category-item--guest .menu__category-count {
+  color: rgba(201, 160, 255, 0.7);
+}
+.menu__category-item--guest input {
+  accent-color: #c9a0ff;
+}
 .menu__custom-start {
   margin-top: 12px;
 }

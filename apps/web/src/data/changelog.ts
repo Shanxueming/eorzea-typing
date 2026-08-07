@@ -25,6 +25,31 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    version: '2026.08.07c',
+    date: '2026-08-07',
+    sections: [
+      {
+        title: '新增《最终幻想7》词库',
+        items: [
+          {
+            text: '141 个 FF7 专有名词：克劳德、蒂法、萨菲罗斯、\n魔晄炉、神罗、米德加、魔石……角色、地名、组织、术语都有。',
+          },
+          {
+            name: '在哪儿玩',
+            text: '在主菜单最下面的「自定义分类」里，\n找到紫色的「最终幻想7」勾上，再点「用所选分类开始」。\n它是紫色的，在一长串分类里很好认。',
+          },
+          {
+            name: '不会串味',
+            text: '这个词库不会混进「快速开始」和「无限模式」——\n那两个还是纯 FF14 词条，想打 FF7 必须自己勾。',
+          },
+          {
+            text: '译名参考了社区维护的 FF7 中文对照表\n（GitHub: V-Lipset/ao3-chinese），拼音逐条核对过。',
+          },
+        ],
+      },
+    ],
+  },
+  {
     version: '2026.08.07b',
     date: '2026-08-07',
     sections: [

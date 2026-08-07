@@ -1,9 +1,19 @@
-# FF14 国服专有名词词库
+# 专有名词词库
 
-**总计 96,828 条**,21 个分类,外加 2,156 条的精选起步包。
+**总计 96,969 条**,22 个分类,外加 2,156 条的精选起步包。
 
-数据源:`thewakingsands/ffxiv-datamining-cn`(国服客户端 SaintCoinach 解包 CSV)。
-重新生成:`python3 build_wordbank.py`(需先下载 raw/*.csv,详见脚本注释)。
+主体是 FF14 国服专有名词,数据源 `thewakingsands/ffxiv-datamining-cn`
+(国服客户端 SaintCoinach 解包 CSV)。
+重新生成:`python3 scripts/build_wordbank.py`(需先下载 raw/*.csv,详见脚本注释)。
+
+另有一个独立的 **`ff7`(最终幻想7)** 分类,141 条,数据源与构建脚本都和上面无关:
+取自 `V-Lipset/ao3-chinese` 的 `glossaries/最终幻想Ⅶ.txt`(**GPL-3.0**),
+一份人工维护的 FF7 官方中文译名对照表。
+重新生成:`python3 scripts/build_ff7_wordbank.py`。
+
+> ⚠ **两个脚本有先后顺序**:`index.json` 的主体由 `build_wordbank.py` 整体重写,
+> 会把 `ff7` 那一条冲掉。跑完 FF14 的构建脚本后,必须再跑一次
+> `build_ff7_wordbank.py` 把它并回去(该脚本是幂等的,重复跑不会产生重复条目)。
 
 ---
 
@@ -32,6 +42,7 @@
 | `weather.json` | 天气 | 92 | 92 | 蜃景、乱灵流、阈限… |
 | `worlds.json` | 服务器与大区 | 146 | 145 | 延夏、摩杜纳、水晶塔、妖精领… |
 | `music.json` | 乐曲 | 879 | 612 | |
+| `ff7.json` | 最终幻想7 | 141 | 128 | **不是 FF14 的**,单独数据源,见文首 |
 | **`starter.json`** | **精选起步包** | **2,156** | **2,156** | **游戏默认词库,见下** |
 
 `index.json` 是全部分类的索引,含每类的难度分布。

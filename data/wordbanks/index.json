@@ -1,5 +1,5 @@
 {
- "total": 96828,
+ "total": 96969,
  "starterCount": 2156,
  "source": "thewakingsands/ffxiv-datamining-cn",
  "categories": [
@@ -253,6 +253,18 @@
     "1": 153,
     "2": 488,
     "3": 238
+   }
+  },
+  {
+   "category": "ff7",
+   "label": "最终幻想7",
+   "count": 141,
+   "pure": 128,
+   "file": "ff7.json",
+   "byDifficulty": {
+    "1": 57,
+    "2": 74,
+    "3": 10
    }
   },
   {

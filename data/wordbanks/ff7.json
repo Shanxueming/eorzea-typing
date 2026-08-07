@@ -1,0 +1,1277 @@
+{
+ "category": "ff7",
+ "label": "最终幻想7",
+ "count": 141,
+ "source": "V-Lipset/ao3-chinese (GPL-3.0) glossaries/最终幻想Ⅶ.txt",
+ "entries": [
+  {
+   "id": "ff7_00001",
+   "text": "五台",
+   "typeText": "五台",
+   "reading": "wu tai",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00002",
+   "text": "亚祖",
+   "typeText": "亚祖",
+   "reading": "ya zu",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00003",
+   "text": "奥丁",
+   "typeText": "奥丁",
+   "reading": "ao ding",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00004",
+   "text": "威吉",
+   "typeText": "威吉",
+   "reading": "wei ji",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00005",
+   "text": "宝条",
+   "typeText": "宝条",
+   "reading": "bao tiao",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00006",
+   "text": "尤菲",
+   "typeText": "尤菲",
+   "reading": "you fei",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00007",
+   "text": "希德",
+   "typeText": "希德",
+   "reading": "xi de",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00008",
+   "text": "希瓦",
+   "typeText": "希瓦",
+   "reading": "xi wa",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00009",
+   "text": "星球",
+   "typeText": "星球",
+   "reading": "xing qiu",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00010",
+   "text": "星痕",
+   "typeText": "星痕",
+   "reading": "xing hen",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00011",
+   "text": "杰西",
+   "typeText": "杰西",
+   "reading": "jie xi",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00012",
+   "text": "玛琳",
+   "typeText": "玛琳",
+   "reading": "ma lin",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00013",
+   "text": "盖亚",
+   "typeText": "盖亚",
+   "reading": "gai ya",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00014",
+   "text": "神罗",
+   "typeText": "神罗",
+   "reading": "shen luo",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00015",
+   "text": "罗兹",
+   "typeText": "罗兹",
+   "reading": "luo zi",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00016",
+   "text": "蒂法",
+   "typeText": "蒂法",
+   "reading": "di fa",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00017",
+   "text": "路德",
+   "typeText": "路德",
+   "reading": "lu de",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00018",
+   "text": "里夫",
+   "typeText": "里夫",
+   "reading": "li fu",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00019",
+   "text": "雪崩",
+   "typeText": "雪崩",
+   "reading": "xue beng",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00020",
+   "text": "雷诺",
+   "typeText": "雷诺",
+   "reading": "lei nuo",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00021",
+   "text": "魔晄",
+   "typeText": "魔晄",
+   "reading": "mo huang",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00022",
+   "text": "魔石",
+   "typeText": "魔石",
+   "reading": "mo shi",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00023",
+   "text": "丹泽尔",
+   "typeText": "丹泽尔",
+   "reading": "dan ze er",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00024",
+   "text": "伊莉娜",
+   "typeText": "伊莉娜",
+   "reading": "yi li na",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00025",
+   "text": "克劳德",
+   "typeText": "克劳德",
+   "reading": "ke lao de",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00026",
+   "text": "凯特·西",
+   "typeText": "凯特西",
+   "reading": "kai te xi",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": false
+  },
+  {
+   "id": "ff7_00027",
+   "text": "卡达裘",
+   "typeText": "卡达裘",
+   "reading": "ka da qiu",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00028",
+   "text": "古代种",
+   "typeText": "古代种",
+   "reading": "gu dai zhong",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00029",
+   "text": "塔克斯",
+   "typeText": "塔克斯",
+   "reading": "ta ke si",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00030",
+   "text": "塞特拉",
+   "typeText": "塞特拉",
+   "reading": "sai te la",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00031",
+   "text": "复制人",
+   "typeText": "复制人",
+   "reading": "fu zhi ren",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00032",
+   "text": "大冰川",
+   "typeText": "大冰川",
+   "reading": "da bing chuan",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00033",
+   "text": "安吉尔",
+   "typeText": "安吉尔",
+   "reading": "an ji er",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00034",
+   "text": "巴雷特",
+   "typeText": "巴雷特",
+   "reading": "ba lei te",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00035",
+   "text": "帕尔默",
+   "typeText": "帕尔默",
+   "reading": "pa er mo",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00036",
+   "text": "扎克斯",
+   "typeText": "扎克斯",
+   "reading": "zha ke si",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00037",
+   "text": "文森特",
+   "typeText": "文森特",
+   "reading": "wen sen te",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00038",
+   "text": "朱农港",
+   "typeText": "朱农港",
+   "reading": "zhu nong gang",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00039",
+   "text": "杰诺瓦",
+   "typeText": "杰诺瓦",
+   "reading": "jie nuo wa",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00040",
+   "text": "查德利",
+   "typeText": "查德利",
+   "reading": "cha de li",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00041",
+   "text": "比格斯",
+   "typeText": "比格斯",
+   "reading": "bi ge si",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00042",
+   "text": "海德格",
+   "typeText": "海德格",
+   "reading": "hai de ge",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00043",
+   "text": "火箭村",
+   "typeText": "火箭村",
+   "reading": "huo jian cun",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00044",
+   "text": "爱丽丝",
+   "typeText": "爱丽丝",
+   "reading": "ai li si",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00045",
+   "text": "白魔石",
+   "typeText": "白魔石",
+   "reading": "bai mo shi",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00046",
+   "text": "破坏剑",
+   "typeText": "破坏剑",
+   "reading": "po huai jian",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00047",
+   "text": "米德加",
+   "typeText": "米德加",
+   "reading": "mi de jia",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00048",
+   "text": "纳纳奇",
+   "typeText": "纳纳奇",
+   "reading": "na na qi",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00049",
+   "text": "艾米娜",
+   "typeText": "艾米娜",
+   "reading": "ai mi na",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00050",
+   "text": "芬里尔",
+   "typeText": "芬里尔",
+   "reading": "fen li er",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00051",
+   "text": "路法斯",
+   "typeText": "路法斯",
+   "reading": "lu fa si",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00052",
+   "text": "陆行鸟",
+   "typeText": "陆行鸟",
+   "reading": "lu xing niao",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00053",
+   "text": "霍兰德",
+   "typeText": "霍兰德",
+   "reading": "huo lan de",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00054",
+   "text": "骨头村",
+   "typeText": "骨头村",
+   "reading": "gu tou cun",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00055",
+   "text": "魔晄炉",
+   "typeText": "魔晄炉",
+   "reading": "mo huang lu",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00056",
+   "text": "魔晄眼",
+   "typeText": "魔晄眼",
+   "reading": "mo huang yan",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00057",
+   "text": "黑魔石",
+   "typeText": "黑魔石",
+   "reading": "hei mo shi",
+   "category": "ff7",
+   "difficulty": 1,
+   "pure": true
+  },
+  {
+   "id": "ff7_00058",
+   "text": "伊弗利特",
+   "typeText": "伊弗利特",
+   "reading": "yi fu li te",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00059",
+   "text": "伊法露娜",
+   "typeText": "伊法露娜",
+   "reading": "yi fa lu na",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00060",
+   "text": "卡尔姆镇",
+   "typeText": "卡尔姆镇",
+   "reading": "ka er mu zhen",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00061",
+   "text": "召唤魔石",
+   "typeText": "召唤魔石",
+   "reading": "zhao huan mo shi",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00062",
+   "text": "围墙市场",
+   "typeText": "围墙市场",
+   "reading": "wei qiang shi chang",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00063",
+   "text": "大师魔石",
+   "typeText": "大师魔石",
+   "reading": "da shi mo shi",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00064",
+   "text": "太阳海岸",
+   "typeText": "太阳海岸",
+   "reading": "tai yang hai an",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00065",
+   "text": "宇宙峡谷",
+   "typeText": "宇宙峡谷",
+   "reading": "yu zhou xia gu",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00066",
+   "text": "宝条博士",
+   "typeText": "宝条博士",
+   "reading": "bao tiao bo shi",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00067",
+   "text": "尤菲·如月",
+   "typeText": "尤菲如月",
+   "reading": "you fei ru yue",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "ff7_00068",
+   "text": "巴哈姆特",
+   "typeText": "巴哈姆特",
+   "reading": "ba ha mu te",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00069",
+   "text": "布根哈根",
+   "typeText": "布根哈根",
+   "reading": "bu gen ha gen",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00070",
+   "text": "应许之地",
+   "typeText": "应许之地",
+   "reading": "ying xu zhi di",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00071",
+   "text": "指令魔石",
+   "typeText": "指令魔石",
+   "reading": "zhi ling mo shi",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00072",
+   "text": "支援魔石",
+   "typeText": "支援魔石",
+   "reading": "zhi yuan mo shi",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00073",
+   "text": "斯卡蕾特",
+   "typeText": "斯卡蕾特",
+   "reading": "si ka lei te",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00074",
+   "text": "斯特莱夫",
+   "typeText": "斯特莱夫",
+   "reading": "si te lai fu",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00075",
+   "text": "星球大洞",
+   "typeText": "星球大洞",
+   "reading": "xing qiu da dong",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00076",
+   "text": "星球意志",
+   "typeText": "星球意志",
+   "reading": "xing qiu yi zhi",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00077",
+   "text": "杰内西斯",
+   "typeText": "杰内西斯",
+   "reading": "jie nei xi si",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00078",
+   "text": "武器巨兽",
+   "typeText": "武器巨兽",
+   "reading": "wu qi ju shou",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00079",
+   "text": "治安警卫",
+   "typeText": "治安警卫",
+   "reading": "zhi an jing wei",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00080",
+   "text": "治愈泉水",
+   "typeText": "治愈泉水",
+   "reading": "zhi yu quan shui",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00081",
+   "text": "海底洞窟",
+   "typeText": "海底洞窟",
+   "reading": "hai di dong ku",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00082",
+   "text": "海温德号",
+   "typeText": "海温德号",
+   "reading": "hai wen de hao",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00083",
+   "text": "独立魔石",
+   "typeText": "独立魔石",
+   "reading": "du li mo shi",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00084",
+   "text": "生命之流",
+   "typeText": "生命之流",
+   "reading": "sheng ming zhi liu",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00085",
+   "text": "疗养小屋",
+   "typeText": "疗养小屋",
+   "reading": "liao yang xiao wu",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00086",
+   "text": "神罗公馆",
+   "typeText": "神罗公馆",
+   "reading": "shen luo gong guan",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00087",
+   "text": "神罗大厦",
+   "typeText": "神罗大厦",
+   "reading": "shen luo da sha",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00088",
+   "text": "神罗总裁",
+   "typeText": "神罗总裁",
+   "reading": "shen luo zong cai",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00089",
+   "text": "神罗战士",
+   "typeText": "神罗战士",
+   "reading": "shen luo zhan shi",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00090",
+   "text": "科雷尔镇",
+   "typeText": "科雷尔镇",
+   "reading": "ke lei er zhen",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00091",
+   "text": "精神能量",
+   "typeText": "精神能量",
+   "reading": "jing shen neng liang",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00092",
+   "text": "萨菲罗斯",
+   "typeText": "萨菲罗斯",
+   "reading": "sa fei luo si",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00093",
+   "text": "赤红十三",
+   "typeText": "赤红十三",
+   "reading": "chi hong shi san",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00094",
+   "text": "边缘之城",
+   "typeText": "边缘之城",
+   "reading": "bian yuan zhi cheng",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00095",
+   "text": "近海海域",
+   "typeText": "近海海域",
+   "reading": "jin hai hai yu",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00096",
+   "text": "遗忘之都",
+   "typeText": "遗忘之都",
+   "reading": "yi wang zhi du",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00097",
+   "text": "重聚理论",
+   "typeText": "重聚理论",
+   "reading": "chong ju li lun",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00098",
+   "text": "魔晄中毒",
+   "typeText": "魔晄中毒",
+   "reading": "mo huang zhong du",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00099",
+   "text": "魔晄改造",
+   "typeText": "魔晄改造",
+   "reading": "mo huang gai zao",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00100",
+   "text": "魔法魔石",
+   "typeText": "魔法魔石",
+   "reading": "mo fa mo shi",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00101",
+   "text": "魔石融合",
+   "typeText": "魔石融合",
+   "reading": "mo shi rong he",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00102",
+   "text": "一号魔晄炉",
+   "typeText": "一号魔晄炉",
+   "reading": "yi hao mo huang lu",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00103",
+   "text": "五号魔晄炉",
+   "typeText": "五号魔晄炉",
+   "reading": "wu hao mo huang lu",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00104",
+   "text": "兵器开发部",
+   "typeText": "兵器开发部",
+   "reading": "bing qi kai fa bu",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00105",
+   "text": "加斯特博士",
+   "typeText": "加斯特博士",
+   "reading": "jia si te bo shi",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00106",
+   "text": "北方大空洞",
+   "typeText": "北方大空洞",
+   "reading": "bei fang da kong dong",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00107",
+   "text": "古代种神殿",
+   "typeText": "古代种神殿",
+   "reading": "gu dai zhong shen dian",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00108",
+   "text": "宇宙开发部",
+   "typeText": "宇宙开发部",
+   "reading": "yu zhou kai fa bu",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00109",
+   "text": "安吉尔·修雷",
+   "typeText": "安吉尔修雷",
+   "reading": "an ji er xiu lei",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "ff7_00110",
+   "text": "尼布尔山脉",
+   "typeText": "尼布尔山脉",
+   "reading": "ni bu er shan mai",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00111",
+   "text": "尼布尔海姆",
+   "typeText": "尼布尔海姆",
+   "reading": "ni bu er hai mu",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00112",
+   "text": "希德·海温德",
+   "typeText": "希德海温德",
+   "reading": "xi de hai wen de",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "ff7_00113",
+   "text": "扎克斯·菲尔",
+   "typeText": "扎克斯菲尔",
+   "reading": "zha ke si fei er",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "ff7_00114",
+   "text": "星痕感染者",
+   "typeText": "星痕感染者",
+   "reading": "xing hen gan ran zhe",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00115",
+   "text": "杰诺瓦细胞",
+   "typeText": "杰诺瓦细胞",
+   "reading": "jie nuo wa xi bao",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00116",
+   "text": "杰诺瓦计划",
+   "typeText": "杰诺瓦计划",
+   "reading": "jie nuo wa ji hua",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00117",
+   "text": "爱丽丝教堂",
+   "typeText": "爱丽丝教堂",
+   "reading": "ai li si jiao tang",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00118",
+   "text": "科雷尔监狱",
+   "typeText": "科雷尔监狱",
+   "reading": "ke lei er jian yu",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00119",
+   "text": "路法斯·神罗",
+   "typeText": "路法斯神罗",
+   "reading": "lu fa si shen luo",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "ff7_00120",
+   "text": "都市建设部",
+   "typeText": "都市建设部",
+   "reading": "du shi jian she bu",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00121",
+   "text": "金碟游乐园",
+   "typeText": "金碟游乐园",
+   "reading": "jin die you le yuan",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00122",
+   "text": "陆行鸟农场",
+   "typeText": "陆行鸟农场",
+   "reading": "lu xing niao nong chang",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00123",
+   "text": "露克蕾西娅",
+   "typeText": "露克蕾西娅",
+   "reading": "lu ke lei xi ya",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00124",
+   "text": "巴雷特·华莱士",
+   "typeText": "巴雷特华莱士",
+   "reading": "ba lei te hua lai shi",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "ff7_00125",
+   "text": "文森特·瓦伦丁",
+   "typeText": "文森特瓦伦丁",
+   "reading": "wen sen te wa lun ding",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "ff7_00126",
+   "text": "旧米德加废墟",
+   "typeText": "旧米德加废墟",
+   "reading": "jiu mi de jia fei xu",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00127",
+   "text": "杰诺瓦分离体",
+   "typeText": "杰诺瓦分离体",
+   "reading": "jie nuo wa fen li ti",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00128",
+   "text": "深层地底部队",
+   "typeText": "深层地底部队",
+   "reading": "shen ceng di di bu dui",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00129",
+   "text": "神罗电力公司",
+   "typeText": "神罗电力公司",
+   "reading": "shen luo dian li gong si",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00130",
+   "text": "第七区贫民窟",
+   "typeText": "第七区贫民窟",
+   "reading": "di qi qu pin min ku",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": true
+  },
+  {
+   "id": "ff7_00131",
+   "text": "蒂法·洛克哈特",
+   "typeText": "蒂法洛克哈特",
+   "reading": "di fa luo ke ha te",
+   "category": "ff7",
+   "difficulty": 2,
+   "pure": false
+  },
+  {
+   "id": "ff7_00132",
+   "text": "克劳德·斯特莱夫",
+   "typeText": "克劳德斯特莱夫",
+   "reading": "ke lao de si te lai fu",
+   "category": "ff7",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "ff7_00133",
+   "text": "神罗公馆地下室",
+   "typeText": "神罗公馆地下室",
+   "reading": "shen luo gong guan di xia shi",
+   "category": "ff7",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ff7_00134",
+   "text": "米德加地下区域",
+   "typeText": "米德加地下区域",
+   "reading": "mi de jia di xia qu yu",
+   "category": "ff7",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ff7_00135",
+   "text": "萨菲罗斯复制体",
+   "typeText": "萨菲罗斯复制体",
+   "reading": "sa fei luo si fu zhi ti",
+   "category": "ff7",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ff7_00136",
+   "text": "萨菲罗斯思念体",
+   "typeText": "萨菲罗斯思念体",
+   "reading": "sa fei luo si si nian ti",
+   "category": "ff7",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ff7_00137",
+   "text": "露克蕾西娅洞穴",
+   "typeText": "露克蕾西娅洞穴",
+   "reading": "lu ke lei xi ya dong xue",
+   "category": "ff7",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ff7_00138",
+   "text": "海温德飞空艇甲板",
+   "typeText": "海温德飞空艇甲板",
+   "reading": "hai wen de fei kong ting jia ban",
+   "category": "ff7",
+   "difficulty": 3,
+   "pure": true
+  },
+  {
+   "id": "ff7_00139",
+   "text": "爱丽丝·盖恩斯巴勒",
+   "typeText": "爱丽丝盖恩斯巴勒",
+   "reading": "ai li si gai en si ba le",
+   "category": "ff7",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "ff7_00140",
+   "text": "杰内西斯·拉普索道斯",
+   "typeText": "杰内西斯拉普索道斯",
+   "reading": "jie nei xi si la pu suo dao si",
+   "category": "ff7",
+   "difficulty": 3,
+   "pure": false
+  },
+  {
+   "id": "ff7_00141",
+   "text": "露克蕾西亚·克蕾森特",
+   "typeText": "露克蕾西亚克蕾森特",
+   "reading": "lu ke lei xi ya ke lei sen te",
+   "category": "ff7",
+   "difficulty": 3,
+   "pure": false
+  }
+ ]
+}

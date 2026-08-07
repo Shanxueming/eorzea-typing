@@ -10,6 +10,11 @@ __pycache__/
 scripts/source-assets/
 scripts/qa-artifacts/
 
+# 词库构建的原始数据不进版本控制:FF14 的解包 CSV 体积极大,
+# FF7 的术语表则是 GPL-3.0 的第三方文件,不在本仓库里再分发一份。
+# 两个构建脚本的注释里都写了各自的下载方式,产物(data/wordbanks/*.json)才入库。
+scripts/raw/
+
 # BGM 音频不进版本控制、也不参与部署下发：体积大、且授权状态由放入者各自负责。
 # 玩家/开发者把自己的音频放进 assets/audio/ 即可本地生效,游戏缺文件时静默降级。
 assets/audio/*

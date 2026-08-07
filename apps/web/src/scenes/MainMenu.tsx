@@ -25,6 +25,17 @@ import {
   type InputMode,
 } from '../battle/constants';
 
+/**
+ * 非 FF14 本体的「客串」词库。
+ *
+ * ★ 这类分类**只能在自定义分类里手动勾选**:快速开始与无限模式用的都是
+ *   starter.json,而 starter.json 由 build_wordbank.py 生成、只含 FF14 的分类,
+ *   所以客串词库天然进不去那两条路径——不需要额外写排除逻辑,但改动 starter
+ *   的生成规则时要留意别把它们卷进去。
+ * ★ 列表里染成紫色,让玩家一眼看出「这不是 FF14 的词」。
+ */
+const GUEST_CATEGORIES: readonly string[] = ['ff7'];
+
 export interface SoloStartConfig {
   pool: WordEntry[];
   mode: TypingMode;
@@ -262,7 +273,11 @@ export function MainMenu({ onStartSolo, onGoCoop, victoryCount, coopAvailable, o
         {!index && <div className="menu__loading">词库索引加载中…</div>}
         <div className="menu__category-grid">
           {index?.categories.map((c) => (
-            <label key={c.category} className="menu__category-item">
+            <label
+              key={c.category}
+              className={`menu__category-item${
+                GUEST_CATEGORIES.includes(c.category) ? ' menu__category-item--guest' : ''}`}
+            >
               <input
                 type="checkbox"
                 checked={selected.has(c.category)}

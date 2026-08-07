@@ -3,11 +3,17 @@
  * 字段名与 data/wordbanks/*.json 严格一致,不要改动。
  */
 
+/**
+ * ★ 除 `ff7` 外都来自 FF14 国服客户端解包(见 data/wordbanks/README.md);
+ *   `ff7` 是另起的《最终幻想7》专有名词分类,数据源与构建脚本都独立
+ *   (scripts/build_ff7_wordbank.py)。加新分类要同时改这里、index.json
+ *   与词库文件,三者缺一前端就会拿不到或类型不过。
+ */
 export type WordCategory =
   | 'starter' | 'jobs' | 'actions' | 'craft_actions' | 'traits' | 'status'
   | 'characters' | 'monsters' | 'places' | 'duties' | 'quests' | 'items'
   | 'mounts' | 'minions' | 'emotes' | 'fates' | 'titles' | 'achievements'
-  | 'races' | 'weather' | 'worlds' | 'music';
+  | 'races' | 'weather' | 'worlds' | 'music' | 'ff7';
 
 export interface WordEntry {
   id: string;
