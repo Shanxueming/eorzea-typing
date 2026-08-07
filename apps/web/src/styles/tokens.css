@@ -35,6 +35,34 @@ button {
   font-family: inherit;
 }
 
+/*
+ * 全站统一的细滚动条,配色跟主题走——默认的系统滚动条是灰白色块,
+ * 在深色界面里非常抢眼(比如排行榜侧栏那种细长面板)。
+ * Firefox 用 scrollbar-width/-color,其余(Chromium/WebKit)用
+ * ::-webkit-scrollbar 系列,两套并存互不冲突。
+ */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(127, 216, 232, 0.35) transparent;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(127, 216, 232, 0.35);
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(127, 216, 232, 0.6);
+  background-clip: padding-box;
+}
+
 /* 移动端不再盖遮罩劝退,改为真正适配(单人)。整块 .mobile-warning 已移除。 */
 
 /* 触屏上不要因为双击缩放而吃掉第二次点击,打字游戏点得很快 */
