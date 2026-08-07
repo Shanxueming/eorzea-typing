@@ -181,6 +181,78 @@ export function getLeaderboard(
   }));
 }
 
+export interface PercentileResult {
+  /** 名次(比这局强的人数 + 1)。total===0 时恒为 1 */
+  rank: number;
+  /** 这条赛道、这一轮里参与比较的总人数 */
+  total: number;
+  /** 打败了百分之多少人,0~100 取整;total===0(没人可比)时为 null */
+  beatPercent: number | null;
+}
+
+/**
+ * 算这一局在「当前这条赛道 + 这一轮」里排第几、打败了多少人。
+ *
+ * ★ 只查 RANKED_DIFFICULTIES 的赛道才有意义——scores 表压根不收简单/普通的
+ *   成绩(见 api.ts 的 unranked_difficulty 校验),调用方要自己先过滤难度。
+ * ★ 比较口径必须和 orderClause / isBetter 完全一致:标准模式比 clear_ms
+ *   (越小越强),无限模式比 kills 再比 survived_ms(越大越强)。不能偷懒改用
+ *   通用的 score 字段——那不是榜单实际排序用的指标,算出来的名次会跟真榜对不上。
+ * ★ 沿用榜单同一套「3 天一轮」窗口(leaderboardPeriod),不然玩家会看到
+ *   「打败了 90% 的人」但翻开榜单一个熟悉的名字都没有——那些人早就不在这一轮了。
+ */
+export function getScorePercentile(
+  gameMode: GameMode,
+  difficulty: Difficulty,
+  inputMode: InputMode,
+  metric: { clearMs?: number; kills?: number; survivedMs?: number },
+  periodOffset = 0,
+): PercentileResult {
+  const { start, end } = leaderboardPeriod(periodOffset);
+  const db = getDb();
+  const base = `
+    FROM scores s JOIN players p ON p.id = s.player_id
+    WHERE s.game_mode = ? AND s.difficulty = ? AND s.input_mode = ?
+      AND s.hidden = 0 AND p.banned = 0 AND s.created_at >= ? AND s.created_at < ?
+  `;
+  const baseArgs = [gameMode, difficulty, inputMode, start, end];
+
+  const total = (db.prepare(`SELECT COUNT(*) AS n ${base}`).get(...baseArgs) as { n: number }).n;
+  if (total === 0) return { rank: 1, total: 0, beatPercent: null };
+
+  let betterClause: string;
+  let betterArgs: number[];
+  let worseClause: string;
+  let worseArgs: number[];
+  if (gameMode === 'endless') {
+    const kills = metric.kills ?? 0;
+    const survivedMs = metric.survivedMs ?? 0;
+    betterClause = 'AND (s.kills > ? OR (s.kills = ? AND s.survived_ms > ?))';
+    betterArgs = [kills, kills, survivedMs];
+    worseClause = 'AND (s.kills < ? OR (s.kills = ? AND s.survived_ms < ?))';
+    worseArgs = [kills, kills, survivedMs];
+  } else {
+    const clearMs = metric.clearMs ?? Number.POSITIVE_INFINITY;
+    betterClause = 'AND s.clear_ms < ?';
+    betterArgs = [clearMs];
+    worseClause = 'AND s.clear_ms > ?';
+    worseArgs = [clearMs];
+  }
+
+  const better = (db.prepare(`SELECT COUNT(*) AS n ${base} ${betterClause}`)
+    .get(...baseArgs, ...betterArgs) as { n: number }).n;
+  const worse = (db.prepare(`SELECT COUNT(*) AS n ${base} ${worseClause}`)
+    .get(...baseArgs, ...worseArgs) as { n: number }).n;
+
+  const rank = better + 1;
+  // ★ total 是库里已有的行数,不含「这一局」本身——每人每条赛道只留一条
+  //   最好成绩(见文件头注释),同一个人打了一局却没打破自己的纪录时,
+  //   这一局根本没有对应的行。这时如果只回原始 total,会出现
+  //   「第 2 名 / 共 1 人」这种名次比总数还大的怪现象。
+  //   把这一局也算作占了一个位置,保证 rank 永远不超过 total。
+  return { rank, total: Math.max(total, rank), beatPercent: Math.round((worse / total) * 100) };
+}
+
 /** 管理员下榜/恢复。不删记录,只翻 hidden 标记 —— 误操作可以还原 */
 export function setScoreHidden(scoreId: number, hidden: boolean): boolean {
   const info = getDb().prepare('UPDATE scores SET hidden = ? WHERE id = ?')

@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
 import { CHARACTER_LABEL, DIFFICULTY_LABEL, INPUT_MODE_LABEL, PLAYER_MAX_HP } from '../battle/constants';
 import { bestRecord, saveRecord, type GameRecord } from '../engine/records';
-import { submitScore, type Session } from '../engine/accountApi';
+import { fetchPercentile, submitScore, type PercentileResult, type Session } from '../engine/accountApi';
 import { RANKED_DIFFICULTIES } from '../battle/constants';
+import { shareResultImage } from '../engine/shareImage';
 import type { SoloResult } from './SoloBattle';
 
 export interface ResultsProps {
@@ -41,6 +42,61 @@ export function Results({ result, session, onGoAccount, onBackToMenu, onRetry }:
     && RANKED_DIFFICULTIES.includes(result.difficulty)
     && (result.gameMode === 'endless' || result.victory)
     && result.attempts.length > 0;
+
+  const { stats, endless } = result;
+  const isEndless = result.gameMode === 'endless';
+
+  /**
+   * 「超越了多少人」用的是排行榜同一套比较口径(标准比 clear_ms、无限比
+   * kills+survivedMs),所以能不能算这个和能不能上榜共用同一条件——不需要
+   * 登录(这是只读的公开统计,谁都能看自己这局排第几),但标准模式没通关
+   * 就没有 clearMs,无从比起。
+   */
+  const percentileEligible = RANKED_DIFFICULTIES.includes(result.difficulty)
+    && (result.gameMode === 'endless' || result.victory);
+  const [percentile, setPercentile] = useState<PercentileResult | null>(null);
+  useEffect(() => {
+    if (!percentileEligible) return;
+    let alive = true;
+    fetchPercentile({
+      gameMode: result.gameMode,
+      difficulty: result.difficulty,
+      inputMode: result.inputMode,
+      clearMs: result.gameMode === 'standard' ? result.stats.elapsedMs : undefined,
+      kills: endless?.kills,
+      survivedMs: endless?.survivedMs,
+    }).then((r) => { if (alive) setPercentile(r); }).catch(() => { /* 拿不到就不显示,不影响结算页其它内容 */ });
+    return () => { alive = false; };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [percentileEligible]);
+
+  const [shareState, setShareState] = useState<'idle' | 'busy' | 'copied' | 'downloaded' | 'error'>('idle');
+  const [shareMsg, setShareMsg] = useState<string | null>(null);
+  const doShare = async () => {
+    if (!session) return;
+    setShareState('busy');
+    setShareMsg(null);
+    const outcome = await shareResultImage({
+      displayId: session.displayId,
+      track: `${isEndless ? '无限模式' : '标准模式'} · ${DIFFICULTY_LABEL[result.difficulty]} · ${INPUT_MODE_LABEL[result.inputMode]}`,
+      durationText: formatDuration(stats.elapsedMs),
+      cpm: stats.cpm,
+      rank: percentile?.total ? percentile.rank : null,
+      total: percentile?.total ?? 0,
+      beatPercent: percentile?.beatPercent ?? null,
+    });
+    if (outcome.status === 'copied') {
+      setShareState('copied');
+      setShareMsg('已复制到剪贴板 ✓');
+    } else if (outcome.status === 'downloaded') {
+      setShareState('downloaded');
+      setShareMsg('这个浏览器不支持直接复制图片，已经改成下载');
+    } else {
+      setShareState('error');
+      setShareMsg(`生成失败：${outcome.message}`);
+    }
+    window.setTimeout(() => setShareState('idle'), 2400);
+  };
 
   const upload = async () => {
     if (!session) return;
@@ -84,9 +140,6 @@ export function Results({ result, session, onGoAccount, onBackToMenu, onRetry }:
       );
     }
   };
-
-  const { stats, endless } = result;
-  const isEndless = result.gameMode === 'endless';
 
   // 进结算页时把这一局落盘,并拿到「落盘之前」的历史最佳用于对比。
   // 用 ref 去重:React 18 StrictMode 会把没有清理函数的 effect 多跑一次,
@@ -283,6 +336,34 @@ export function Results({ result, session, onGoAccount, onBackToMenu, onRetry }:
               ? '只有困难和地狱难度会计入排行榜。'
               : '标准模式要通关才能上榜。'}
           </div>
+        )}
+      </div>
+
+      <div className="results__share">
+        {percentileEligible ? (
+          percentile && (
+            <div className="results__share-percentile">
+              {percentile.total > 0
+                ? <>本局超越了这条赛道本轮 <strong>{percentile.beatPercent}%</strong> 的玩家(第 {percentile.rank} / {percentile.total} 位)</>
+                : '本局是这条赛道本轮的第一位挑战者'}
+            </div>
+          )
+        ) : (
+          <div className="results__share-percentile results__share-percentile--dim">
+            困难/地狱难度且通关后，才会统计「超越了多少人」
+          </div>
+        )}
+
+        <button
+          className="results__share-btn"
+          disabled={!session || shareState === 'busy'}
+          onClick={() => void doShare()}
+        >
+          {shareState === 'busy' ? '生成中…' : '分享战绩截图'}
+        </button>
+        {!session && <span className="results__upload-hint">登录后才能生成截图(要放账号名)</span>}
+        {shareMsg && (
+          <span className={shareState === 'error' ? 'menu__error' : 'results__upload-ok'}>{shareMsg}</span>
         )}
       </div>
 

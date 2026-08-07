@@ -1835,6 +1835,36 @@ button:disabled {
   font-weight: 700;
 }
 
+/* 结算页的「超越多少人」+ 分享截图区,紧跟在上传区下面 */
+.results__share {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(127, 216, 232, 0.15);
+}
+.results__share-percentile {
+  font-size: 14px;
+  color: var(--color-text);
+}
+.results__share-percentile strong {
+  color: #ffd47f;
+  font-size: 16px;
+}
+.results__share-percentile--dim {
+  font-size: 12px;
+  color: var(--color-text-dim);
+}
+.results__share-btn {
+  border-color: #7fd8e8;
+  color: #7fd8e8;
+  background: rgba(127, 216, 232, 0.12);
+  padding: 9px 16px;
+  font-size: 14px;
+}
+
 @media (max-width: 720px), (pointer: coarse) and (max-width: 1024px) {
   /* 窄屏叠成一列:账号操作在最上面,榜单跟在后面 */
   .account {

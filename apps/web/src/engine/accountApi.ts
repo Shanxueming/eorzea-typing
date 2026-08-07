@@ -155,6 +155,41 @@ export async function fetchCoopLeaderboard(
 }
 
 /**
+ * 「这一局排第几、打败了多少人」——结算页分享用。只读,不用登录。
+ * total===0 时 beatPercent 为 null(这一轮这条赛道还没有别人的成绩可比)。
+ */
+export interface PercentileResult {
+  rank: number;
+  total: number;
+  beatPercent: number | null;
+}
+
+export async function fetchPercentile(params: {
+  gameMode: GameMode;
+  difficulty: Difficulty;
+  inputMode: InputMode;
+  clearMs?: number;
+  kills?: number;
+  survivedMs?: number;
+}): Promise<PercentileResult | null> {
+  const q = new URLSearchParams({
+    gameMode: params.gameMode, difficulty: params.difficulty, inputMode: params.inputMode,
+  });
+  if (params.gameMode === 'endless') {
+    q.set('kills', String(params.kills ?? 0));
+    q.set('survivedMs', String(params.survivedMs ?? 0));
+  } else {
+    if (params.clearMs === undefined) return null;
+    q.set('clearMs', String(params.clearMs));
+  }
+  const res = await fetch(`/api/leaderboard/percentile?${q}`);
+  if (!res.ok) return null;
+  const json = await res.json() as Partial<PercentileResult> & { ok?: boolean };
+  if (json.ok === false || typeof json.rank !== 'number' || typeof json.total !== 'number') return null;
+  return { rank: json.rank, total: json.total, beatPercent: json.beatPercent ?? null };
+}
+
+/**
  * 提交成绩。
  *
  * ★ 交上去的是**原始材料**(seed + 配置 + 逐词遥测),不是分数。

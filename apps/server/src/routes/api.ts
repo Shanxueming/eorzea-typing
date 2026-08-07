@@ -10,7 +10,7 @@ import type { FastifyInstance } from 'fastify';
 import type { WordEntry } from '@eorzea/shared/types';
 import {
   RANKED_DIFFICULTIES, MAX_LEADERBOARD_PERIODS_BACK, clampPeriod, getLeaderboard,
-  leaderboardPeriod, listScoresForAdmin, setScoreHidden, submitScore,
+  getScorePercentile, leaderboardPeriod, listScoresForAdmin, setScoreHidden, submitScore,
 } from '../db/scores.js';
 import { getCoopLeaderboard, listCoopScoresForAdmin, setCoopScoreHidden } from '../db/coopScores.js';
 import { getDailyStats, recordGameStart } from '../db/telemetry.js';
@@ -123,6 +123,44 @@ export async function registerApiRoutes(app: FastifyInstance): Promise<void> {
       hasEarlier: period < MAX_LEADERBOARD_PERIODS_BACK,
       rows: getCoopLeaderboard(gameMode, difficulty, inputMode, 50, period),
     };
+  });
+
+  /**
+   * 「这一局排第几、打败了多少人」——结算页分享用。只读、不需要登录,
+   * 谁都能查(前端在结算页给自己算,不代表能查到别人某一局的名次)。
+   *
+   * ★ 只收 clearMs 或 kills/survivedMs 其中一套,取决于 gameMode——
+   *   和 getScorePercentile 的比较口径完全对应,标准模式没打过 clearMs
+   *   就没法比(意味着没通关,本来也不该有名次)。
+   */
+  app.get('/api/leaderboard/percentile', async (req, reply) => {
+    const q = req.query as Record<string, string | undefined>;
+    const gameMode = q.gameMode === 'endless' ? 'endless' : 'standard';
+    const difficulty = q.difficulty === 'hell' ? 'hell' : 'hard';
+    const requested = q.inputMode === 'sequential' ? 'sequential' : 'composed';
+    if (!RANKED_DIFFICULTIES.includes(difficulty)) {
+      return reply.code(400).send({ ok: false, error: 'unranked_difficulty' });
+    }
+    const inputMode = resolveInputMode(difficulty, requested);
+
+    const metric: { clearMs?: number; kills?: number; survivedMs?: number } = {};
+    if (gameMode === 'endless') {
+      const kills = Number(q.kills);
+      const survivedMs = Number(q.survivedMs);
+      if (!Number.isFinite(kills) || !Number.isFinite(survivedMs)) {
+        return reply.code(400).send({ ok: false, error: 'bad_request' });
+      }
+      metric.kills = kills;
+      metric.survivedMs = survivedMs;
+    } else {
+      const clearMs = Number(q.clearMs);
+      if (!Number.isFinite(clearMs)) {
+        return reply.code(400).send({ ok: false, error: 'bad_request' });
+      }
+      metric.clearMs = clearMs;
+    }
+
+    return { ok: true, ...getScorePercentile(gameMode, difficulty, inputMode, metric) };
   });
 
   // ─────────────────────── 用量埋点 ───────────────────────
