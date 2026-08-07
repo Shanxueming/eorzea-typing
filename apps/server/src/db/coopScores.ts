@@ -8,7 +8,7 @@
  */
 import type { Difficulty, GameMode, InputMode } from '@eorzea/shared/battle';
 import { getDb } from './database.js';
-import { LEADERBOARD_WINDOW_MS } from './scores.js';
+import { leaderboardPeriod } from './scores.js';
 
 export interface CoopScoreSubmission {
   playerAId: string;
@@ -135,17 +135,19 @@ export function getCoopLeaderboard(
   difficulty: Difficulty,
   inputMode: InputMode,
   limit = 50,
+  periodOffset = 0,
 ): CoopScoreRow[] {
+  const { start, end } = leaderboardPeriod(periodOffset);
   // 两个搭档只要有一个被封禁,这条团队记录就不该再出现在榜上
   const rows = getDb().prepare(`
     SELECT cs.* FROM coop_scores cs
     JOIN players pa ON pa.id = cs.player_a_id
     JOIN players pb ON pb.id = cs.player_b_id
     WHERE cs.game_mode = ? AND cs.difficulty = ? AND cs.input_mode = ?
-      AND cs.hidden = 0 AND pa.banned = 0 AND pb.banned = 0 AND cs.created_at >= ?
+      AND cs.hidden = 0 AND pa.banned = 0 AND pb.banned = 0 AND cs.created_at >= ? AND cs.created_at < ?
     ORDER BY ${orderClause(gameMode)}
     LIMIT ?
-  `).all(gameMode, difficulty, inputMode, Date.now() - LEADERBOARD_WINDOW_MS, limit) as Array<Record<string, unknown>>;
+  `).all(gameMode, difficulty, inputMode, start, end, limit) as Array<Record<string, unknown>>;
 
   return rows.map((r, i) => rowToCoopScore(r, i + 1));
 }

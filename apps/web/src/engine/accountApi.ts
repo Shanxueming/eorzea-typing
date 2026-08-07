@@ -81,16 +81,37 @@ export interface LeaderboardRow {
   flags: string[];
 }
 
+/**
+ * 榜单按固定 3 天一段切分,period=0 是当前这一段,1 是上一段……
+ * periodStart/periodEnd 是服务端算出来的那一段的起止时间(毫秒),前端不用
+ * 自己重算——countdown 和历史标签都直接拿这两个数算,保证跟服务端一致。
+ */
+export interface LeaderboardResult {
+  rows: LeaderboardRow[];
+  period: number;
+  periodStart: number;
+  periodEnd: number;
+  /** 是不是还能再往前翻一轮 */
+  hasEarlier: boolean;
+}
+
 export async function fetchLeaderboard(
   gameMode: GameMode,
   difficulty: Difficulty,
   inputMode: InputMode,
-): Promise<LeaderboardRow[]> {
-  const params = new URLSearchParams({ gameMode, difficulty, inputMode });
+  period = 0,
+): Promise<LeaderboardResult> {
+  const params = new URLSearchParams({ gameMode, difficulty, inputMode, period: String(period) });
   const res = await fetch(`/api/leaderboard?${params}`);
-  if (!res.ok) return [];
-  const json = await res.json() as { rows?: LeaderboardRow[] };
-  return json.rows ?? [];
+  if (!res.ok) return { rows: [], period, periodStart: 0, periodEnd: 0, hasEarlier: false };
+  const json = await res.json() as Partial<LeaderboardResult> & { rows?: LeaderboardRow[] };
+  return {
+    rows: json.rows ?? [],
+    period,
+    periodStart: json.periodStart ?? 0,
+    periodEnd: json.periodEnd ?? 0,
+    hasEarlier: json.hasEarlier ?? false,
+  };
 }
 
 /** 联机团队榜的一条记录——两个人绑在一起,不是单人榜那种一人一条 */
@@ -106,16 +127,31 @@ export interface CoopLeaderboardRow {
   flags: string[];
 }
 
+export interface CoopLeaderboardResult {
+  rows: CoopLeaderboardRow[];
+  period: number;
+  periodStart: number;
+  periodEnd: number;
+  hasEarlier: boolean;
+}
+
 export async function fetchCoopLeaderboard(
   gameMode: GameMode,
   difficulty: Difficulty,
   inputMode: InputMode,
-): Promise<CoopLeaderboardRow[]> {
-  const params = new URLSearchParams({ gameMode, difficulty, inputMode });
+  period = 0,
+): Promise<CoopLeaderboardResult> {
+  const params = new URLSearchParams({ gameMode, difficulty, inputMode, period: String(period) });
   const res = await fetch(`/api/leaderboard/coop?${params}`);
-  if (!res.ok) return [];
-  const json = await res.json() as { rows?: CoopLeaderboardRow[] };
-  return json.rows ?? [];
+  if (!res.ok) return { rows: [], period, periodStart: 0, periodEnd: 0, hasEarlier: false };
+  const json = await res.json() as Partial<CoopLeaderboardResult> & { rows?: CoopLeaderboardRow[] };
+  return {
+    rows: json.rows ?? [],
+    period,
+    periodStart: json.periodStart ?? 0,
+    periodEnd: json.periodEnd ?? 0,
+    hasEarlier: json.hasEarlier ?? false,
+  };
 }
 
 /**

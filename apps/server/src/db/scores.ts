@@ -13,10 +13,32 @@ import { getDb } from './database.js';
 export const RANKED_DIFFICULTIES: readonly Difficulty[] = ['hard', 'hell'];
 
 /**
- * 榜单只看最近 3 天的成绩(用户明确要的滚动窗口)——旧成绩不删,只是查询时
- * 过滤掉,不在榜上显示。所有榜单(单机 + 联机)统一套用这一条,口径要一致。
+ * 榜单按固定的 3 天一段切分(从 Unix epoch 对齐,不是"从现在往回数"的滚动
+ * 窗口)——旧成绩不删,只是查询时按所在的那一段过滤。这样每一段都有确定的
+ * 起止时间,能有"下一轮几点几分整轮刷新"这个说法,也能回看之前几轮。
+ * 所有榜单(单机 + 联机)统一套用这一条,口径要一致。
+ *
+ * ★ 3 天是 24 小时的整数倍,所以每一段的边界换算成北京时间永远落在固定的
+ *   08:00,不会随着"现在几点"到处漂——这是刻意的,不是巧合。
  */
 export const LEADERBOARD_WINDOW_MS = 3 * 24 * 60 * 60 * 1000;
+
+/** 最多能往回翻几轮历史榜单(0 = 当前这一轮,不含) */
+export const MAX_LEADERBOARD_PERIODS_BACK = 3;
+
+/** offset=0 是当前这一段,1 是上一段,以此类推 */
+export function leaderboardPeriod(offset = 0): { start: number; end: number } {
+  const index = Math.floor(Date.now() / LEADERBOARD_WINDOW_MS) - offset;
+  const start = index * LEADERBOARD_WINDOW_MS;
+  return { start, end: start + LEADERBOARD_WINDOW_MS };
+}
+
+/** 请求里的 period 参数不可信:夹到 [0, MAX_LEADERBOARD_PERIODS_BACK] 之间 */
+export function clampPeriod(raw: unknown): number {
+  const n = Math.trunc(Number(raw));
+  if (!Number.isFinite(n) || n < 0) return 0;
+  return Math.min(n, MAX_LEADERBOARD_PERIODS_BACK);
+}
 
 export interface ScoreSubmission {
   playerId: string;
@@ -126,15 +148,17 @@ export function getLeaderboard(
   difficulty: Difficulty,
   inputMode: InputMode,
   limit = 50,
+  periodOffset = 0,
 ): ScoreRow[] {
+  const { start, end } = leaderboardPeriod(periodOffset);
   const rows = getDb().prepare(`
     SELECT s.*, p.display_id
     FROM scores s JOIN players p ON p.id = s.player_id
     WHERE s.game_mode = ? AND s.difficulty = ? AND s.input_mode = ?
-      AND s.hidden = 0 AND p.banned = 0 AND s.created_at >= ?
+      AND s.hidden = 0 AND p.banned = 0 AND s.created_at >= ? AND s.created_at < ?
     ORDER BY ${orderClause(gameMode)}
     LIMIT ?
-  `).all(gameMode, difficulty, inputMode, Date.now() - LEADERBOARD_WINDOW_MS, limit) as Array<Record<string, unknown>>;
+  `).all(gameMode, difficulty, inputMode, start, end, limit) as Array<Record<string, unknown>>;
 
   return rows.map((r, i) => ({
     rank: i + 1,

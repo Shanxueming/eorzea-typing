@@ -48,8 +48,9 @@ export interface MainMenuProps {
 }
 
 export function MainMenu({ onStartSolo, onGoCoop, victoryCount, coopAvailable, onShowChangelog, onGoAccount, session }: MainMenuProps) {
-  // 首页只放地狱榜和无限榜(需求 Q27);困难榜要单独点开
+  // 首页只放地狱榜和无限榜(需求 Q27);困难榜、联机组队榜都要单独点开
   const [showHardBoard, setShowHardBoard] = useState(false);
+  const [showCoopBoards, setShowCoopBoards] = useState(false);
   const [index, setIndex] = useState<WordbankIndex | null>(null);
   const [selected, setSelected] = useState<Set<string>>(new Set());
   const [mode, setMode] = useState<TypingMode>('hanzi');
@@ -288,10 +289,19 @@ export function MainMenu({ onStartSolo, onGoCoop, victoryCount, coopAvailable, o
               查看困难难度排行榜
             </button>}
         {coopAvailable && (
-          <>
-            <CoopLeaderboard gameMode="standard" difficulty="hell" inputMode="composed" />
-            <CoopLeaderboard gameMode="endless" difficulty="hard" inputMode="composed" />
-          </>
+          <div className="menu-layout__coop-section">
+            <button className="menu__coop-teaser" disabled type="button">
+              联机大厅 · 开发中
+            </button>
+            {showCoopBoards
+              ? <>
+                  <CoopLeaderboard gameMode="standard" difficulty="hell" inputMode="composed" />
+                  <CoopLeaderboard gameMode="endless" difficulty="hard" inputMode="composed" />
+                </>
+              : <button className="menu__changelog-link" onClick={() => setShowCoopBoards(true)}>
+                  查看联机组队排行榜
+                </button>}
+          </div>
         )}
       </aside>
     </div>

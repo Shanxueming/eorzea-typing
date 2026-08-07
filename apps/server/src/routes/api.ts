@@ -8,7 +8,10 @@
  */
 import type { FastifyInstance } from 'fastify';
 import type { WordEntry } from '@eorzea/shared/types';
-import { RANKED_DIFFICULTIES, getLeaderboard, listScoresForAdmin, setScoreHidden, submitScore } from '../db/scores.js';
+import {
+  RANKED_DIFFICULTIES, MAX_LEADERBOARD_PERIODS_BACK, clampPeriod, getLeaderboard,
+  leaderboardPeriod, listScoresForAdmin, setScoreHidden, submitScore,
+} from '../db/scores.js';
 import { getCoopLeaderboard, listCoopScoresForAdmin, setCoopScoreHidden } from '../db/coopScores.js';
 import {
   countPlayers, createPlayer, findPlayer, listPlayers, login,
@@ -81,7 +84,17 @@ export async function registerApiRoutes(app: FastifyInstance): Promise<void> {
     //   查询侧不收敛的话,请求它只会得到一个空榜,让人以为「没人上榜」。
     //   把实际用的赛道回给前端,免得界面标签和内容对不上。
     const inputMode = resolveInputMode(difficulty, requested);
-    return { ok: true, inputMode, rows: getLeaderboard(gameMode, difficulty, inputMode, 50) };
+    const period = clampPeriod(q.period);
+    const { start, end } = leaderboardPeriod(period);
+    return {
+      ok: true,
+      inputMode,
+      period,
+      periodStart: start,
+      periodEnd: end,
+      hasEarlier: period < MAX_LEADERBOARD_PERIODS_BACK,
+      rows: getLeaderboard(gameMode, difficulty, inputMode, 50, period),
+    };
   });
 
   /**
@@ -98,7 +111,17 @@ export async function registerApiRoutes(app: FastifyInstance): Promise<void> {
       return reply.code(400).send({ ok: false, error: 'unranked_difficulty' });
     }
     const inputMode = resolveInputMode(difficulty, requested);
-    return { ok: true, inputMode, rows: getCoopLeaderboard(gameMode, difficulty, inputMode, 50) };
+    const period = clampPeriod(q.period);
+    const { start, end } = leaderboardPeriod(period);
+    return {
+      ok: true,
+      inputMode,
+      period,
+      periodStart: start,
+      periodEnd: end,
+      hasEarlier: period < MAX_LEADERBOARD_PERIODS_BACK,
+      rows: getCoopLeaderboard(gameMode, difficulty, inputMode, 50, period),
+    };
   });
 
   /**
