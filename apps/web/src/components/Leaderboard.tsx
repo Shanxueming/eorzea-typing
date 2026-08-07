@@ -8,6 +8,8 @@ import { formatCountdown, formatPeriodRange, useTicker } from '../engine/useTick
 const POLL_INTERVAL_MS = 60_000;
 /** 倒计时显示的刷新粒度,不用跟到秒 */
 const TICK_INTERVAL_MS = 30_000;
+/** 默认只显示前 5 名,列表太长首页会被撑爆 */
+const VISIBLE_ROWS = 5;
 
 export interface LeaderboardProps {
   gameMode: GameMode;
@@ -42,12 +44,15 @@ export function Leaderboard({ gameMode, difficulty, inputMode, compact, title }:
   const track = resolveInputMode(difficulty, inputMode);
   const [period, setPeriod] = useState(0);
   const [result, setResult] = useState<LeaderboardResult | null>(null);
+  const [expanded, setExpanded] = useState(false);
   const now = useTicker(TICK_INTERVAL_MS);
 
-  // 赛道变了(切难度/模式)或者翻页了才需要清空重新显示"读取中"
+  // 赛道变了(切难度/模式)或者翻页了才需要清空重新显示"读取中",并且收起
+  // 展开状态——换了一批数据,之前展开的是另一批,不该继续摊开着。
   useEffect(() => {
     let alive = true;
     setResult(null);
+    setExpanded(false);
     fetchLeaderboard(gameMode, difficulty, track, period)
       .then((r) => { if (alive) setResult(r); })
       .catch(() => { if (alive) setResult({ rows: [], period, periodStart: 0, periodEnd: 0, hasEarlier: false }); });
@@ -72,6 +77,7 @@ export function Leaderboard({ gameMode, difficulty, inputMode, compact, title }:
     : `${gameMode === 'endless' ? '无限模式' : '标准模式'} · ${DIFFICULTY_LABEL[difficulty]} · ${INPUT_MODE_LABEL[track]}`;
 
   const rows = result?.rows ?? null;
+  const visibleRows = rows && !expanded ? rows.slice(0, VISIBLE_ROWS) : rows;
 
   return (
     <div className={`leaderboard${compact ? ' leaderboard--compact' : ''}`}>
@@ -108,9 +114,9 @@ export function Leaderboard({ gameMode, difficulty, inputMode, compact, title }:
         </div>
       )}
 
-      {rows && rows.length > 0 && (
+      {visibleRows && visibleRows.length > 0 && (
         <ol className="leaderboard__list">
-          {rows.map((row) => (
+          {visibleRows.map((row) => (
             <li key={`${row.rank}-${row.displayId}`} className="leaderboard__row">
               <span className={`leaderboard__rank leaderboard__rank--${row.rank <= 3 ? row.rank : 'n'}`}>
                 {row.rank}
@@ -129,6 +135,11 @@ export function Leaderboard({ gameMode, difficulty, inputMode, compact, title }:
             </li>
           ))}
         </ol>
+      )}
+      {rows && rows.length > VISIBLE_ROWS && (
+        <button type="button" className="leaderboard__expand" onClick={() => setExpanded((e) => !e)}>
+          {expanded ? '收起' : `展开全部 ${rows.length} 条`}
+        </button>
       )}
     </div>
   );

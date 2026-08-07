@@ -6,6 +6,7 @@ import { formatCountdown, formatPeriodRange, useTicker } from '../engine/useTick
 
 const POLL_INTERVAL_MS = 60_000;
 const TICK_INTERVAL_MS = 30_000;
+const VISIBLE_ROWS = 5;
 
 export interface CoopLeaderboardProps {
   gameMode: GameMode;
@@ -33,11 +34,13 @@ export function CoopLeaderboard({ gameMode, difficulty, inputMode, compact, titl
   const track = resolveInputMode(difficulty, inputMode);
   const [period, setPeriod] = useState(0);
   const [result, setResult] = useState<CoopLeaderboardResult | null>(null);
+  const [expanded, setExpanded] = useState(false);
   const now = useTicker(TICK_INTERVAL_MS);
 
   useEffect(() => {
     let alive = true;
     setResult(null);
+    setExpanded(false);
     fetchCoopLeaderboard(gameMode, difficulty, track, period)
       .then((r) => { if (alive) setResult(r); })
       .catch(() => { if (alive) setResult({ rows: [], period, periodStart: 0, periodEnd: 0, hasEarlier: false }); });
@@ -60,6 +63,7 @@ export function CoopLeaderboard({ gameMode, difficulty, inputMode, compact, titl
     : `${gameMode === 'endless' ? '无限模式' : '标准模式'} · ${DIFFICULTY_LABEL[difficulty]} · ${INPUT_MODE_LABEL[track]}`;
 
   const rows = result?.rows ?? null;
+  const visibleRows = rows && !expanded ? rows.slice(0, VISIBLE_ROWS) : rows;
 
   return (
     <div className={`leaderboard${compact ? ' leaderboard--compact' : ''}`}>
@@ -100,9 +104,9 @@ export function CoopLeaderboard({ gameMode, difficulty, inputMode, compact, titl
         </div>
       )}
 
-      {rows && rows.length > 0 && (
+      {visibleRows && visibleRows.length > 0 && (
         <ol className="leaderboard__list">
-          {rows.map((row) => (
+          {visibleRows.map((row) => (
             <li key={`${row.rank}-${row.playerAName}-${row.playerBName}`} className="leaderboard__row">
               <span className={`leaderboard__rank leaderboard__rank--${row.rank <= 3 ? row.rank : 'n'}`}>
                 {row.rank}
@@ -119,6 +123,11 @@ export function CoopLeaderboard({ gameMode, difficulty, inputMode, compact, titl
             </li>
           ))}
         </ol>
+      )}
+      {rows && rows.length > VISIBLE_ROWS && (
+        <button type="button" className="leaderboard__expand" onClick={() => setExpanded((e) => !e)}>
+          {expanded ? '收起' : `展开全部 ${rows.length} 条`}
+        </button>
       )}
     </div>
   );

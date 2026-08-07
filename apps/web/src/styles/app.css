@@ -1598,6 +1598,21 @@ button:disabled {
   flex-direction: column;
   gap: 6px;
 }
+.leaderboard__expand {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  padding: 4px 0;
+  font-size: 11px;
+  border: none;
+  background: transparent;
+  color: var(--color-crystal);
+  opacity: 0.75;
+}
+.leaderboard__expand:hover {
+  opacity: 1;
+  background: transparent;
+}
 .leaderboard__row {
   display: flex;
   align-items: center;
@@ -1961,7 +1976,7 @@ button:disabled {
   max-height: calc(100vh - 40px);
   overflow-y: auto;
 }
-.menu-layout__coop-section {
+.menu-layout__coop-boards {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -1973,31 +1988,39 @@ button:disabled {
   background: transparent;
   cursor: not-allowed;
   opacity: 0.65;
+  font-size: 12px;
+  padding: 4px 12px;
 }
 .menu__coop-teaser:hover {
   background: transparent;
 }
 
-/* 快速开始 + 联机对战并排。联机在移动端不渲染,这时按钮自己占满 */
+/* 快速开始 + 联机对战(含开发中占位)并排。联机在移动端不渲染,这时按钮自己占满 */
 .menu__start-row {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
   align-items: stretch;
 }
-.menu__start-row .menu__quick-start,
-.menu__start-row .menu__coop {
+.menu__start-row .menu__quick-start {
   align-self: auto;
   margin: 0;
 }
-.menu__start-row .menu__coop {
+.menu__coop-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.menu__coop-group .menu__coop {
+  align-self: auto;
+  margin: 0;
   font-size: 15px;
   padding: 12px 20px;
   border-color: rgba(127, 216, 232, 0.55);
   color: var(--color-crystal);
   background: rgba(127, 216, 232, 0.1);
 }
-.menu__start-row .menu__coop:hover:not(:disabled) {
+.menu__coop-group .menu__coop:hover:not(:disabled) {
   background: rgba(127, 216, 232, 0.22);
 }
 
@@ -2013,7 +2036,7 @@ button:disabled {
     overflow: visible;
   }
   .menu__start-row .menu__quick-start,
-  .menu__start-row .menu__coop {
+  .menu__start-row .menu__coop-group {
     flex: 1 1 auto;
     min-height: 48px;
   }

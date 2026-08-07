@@ -129,7 +129,7 @@ export function MainMenu({ onStartSolo, onGoCoop, victoryCount, coopAvailable, o
     <div className="menu-layout">
       <div className="menu">
       <img className="menu__title" src="/assets/logo-title.png" alt="最终幻想14打字通" />
-      <p className="menu__subtitle">键入词条,打倒泰坦</p>
+      <p className="menu__subtitle">魔光键影 泰坦绝境战</p>
       <div className="menu__record">本次记录 · 通关次数 <strong>{victoryCount}</strong></div>
       <div className="menu__account">
         {session
@@ -228,9 +228,14 @@ export function MainMenu({ onStartSolo, onGoCoop, victoryCount, coopAvailable, o
           快速开始(艾欧泽亚特色词库)
         </button>
         {coopAvailable && (
-          <button className="menu__coop" disabled={busy} onClick={onGoCoop}>
-            联机对战(2 人)
-          </button>
+          <div className="menu__coop-group">
+            <button className="menu__coop" disabled={busy} onClick={onGoCoop}>
+              联机对战(2 人)
+            </button>
+            <button className="menu__coop-teaser" disabled type="button">
+              联机大厅 · 开发中
+            </button>
+          </div>
         )}
       </div>
 
@@ -284,19 +289,24 @@ export function MainMenu({ onStartSolo, onGoCoop, victoryCount, coopAvailable, o
         <Leaderboard gameMode="standard" difficulty="hell" inputMode="composed" />
         <Leaderboard gameMode="endless" difficulty="hard" inputMode="composed" />
         {showHardBoard
-          ? <Leaderboard gameMode="standard" difficulty="hard" inputMode="composed" />
+          ? <>
+              <Leaderboard gameMode="standard" difficulty="hard" inputMode="composed" />
+              <button className="menu__changelog-link" onClick={() => setShowHardBoard(false)}>
+                收起困难难度排行榜
+              </button>
+            </>
           : <button className="menu__changelog-link" onClick={() => setShowHardBoard(true)}>
               查看困难难度排行榜
             </button>}
         {coopAvailable && (
-          <div className="menu-layout__coop-section">
-            <button className="menu__coop-teaser" disabled type="button">
-              联机大厅 · 开发中
-            </button>
+          <div className="menu-layout__coop-boards">
             {showCoopBoards
               ? <>
                   <CoopLeaderboard gameMode="standard" difficulty="hell" inputMode="composed" />
                   <CoopLeaderboard gameMode="endless" difficulty="hard" inputMode="composed" />
+                  <button className="menu__changelog-link" onClick={() => setShowCoopBoards(false)}>
+                    收起联机组队排行榜
+                  </button>
                 </>
               : <button className="menu__changelog-link" onClick={() => setShowCoopBoards(true)}>
                   查看联机组队排行榜
