@@ -111,8 +111,9 @@ export function CoopLeaderboard({ gameMode, difficulty, inputMode, compact, titl
               <span className={`leaderboard__rank leaderboard__rank--${row.rank <= 3 ? row.rank : 'n'}`}>
                 {row.rank}
               </span>
-              <span className="leaderboard__who">
-                <span className="leaderboard__name">{row.playerAName} & {row.playerBName}</span>
+              <span className="leaderboard__who leaderboard__who--coop">
+                <span className="leaderboard__name">{row.playerAName}</span>
+                <span className="leaderboard__name leaderboard__name--partner">& {row.playerBName}</span>
                 {!compact && row.trustScore < 70 && (
                   <span className="leaderboard__meta">
                     <span className="leaderboard__flag">待复核</span>

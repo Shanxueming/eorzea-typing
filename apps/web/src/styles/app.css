@@ -1186,11 +1186,36 @@ button:disabled {
   }
 }
 
-/* 队友那一份机制状态:三连桶两人位置独立,得能看见队友躲到哪了 */
+/*
+ * 机制区的展开/收起容器。用 grid-template-rows 在 0fr/1fr 间过渡——
+ * 不需要提前量出机制面板的精确高度就能做平滑动画,是 CSS 处理
+ * 「内容不定高、偶尔出现/消失」这类场景的标准写法。
+ * ★ 内层必须 min-height: 0 —— grid 子项默认 min-height:auto,行高收到 0fr
+ *   时如果子项自己不肯缩,折叠动画就是摆设,内容照样把外面顶开。
+ */
+.battle__mechanic-slot {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.18s ease-out;
+}
+.battle__mechanic-slot--active {
+  grid-template-rows: 1fr;
+}
+.battle__mechanic-slot-inner {
+  overflow: hidden;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* 队友那一份机制状态:三连桶两人位置独立,得能看见队友躲到哪了。
+   刻意做得比自己那份「轻」——虚线边框 + 半透明,一眼分得清哪块是自己在打的。 */
 .mechanic-teammate {
   border: 1px dashed rgba(255, 255, 255, 0.2);
   border-radius: 12px;
   padding: 8px 12px;
+  opacity: 0.7;
 }
 .mechanic-teammate__title {
   font-size: 12px;
@@ -1673,6 +1698,18 @@ button:disabled {
   min-width: 0;
   display: flex;
   flex-direction: column;
+}
+/*
+ * 联机组队榜:两个人的名字分两行显示,而不是拼成一行再省略号——
+ * FF14 的展示 ID 本来就长(「花容月貌的莫古力#417」这种),两个拼一起
+ * 几乎必然超出侧栏宽度,单行省略号会把后一个人的名字整个吃掉。
+ */
+.leaderboard__who--coop {
+  gap: 1px;
+}
+.leaderboard__name--partner {
+  font-size: 0.88em;
+  color: var(--color-text-dim);
 }
 .leaderboard__name {
   overflow: hidden;

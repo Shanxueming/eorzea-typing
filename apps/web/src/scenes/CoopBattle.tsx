@@ -442,23 +442,37 @@ export function CoopBattle(props: CoopBattleProps) {
         </div>
       </div>
 
-      {selfMechanic && (
-        <MechanicPanel
-          state={selfMechanic}
-          remainingMs={Math.max(0, (mechanicEndsAt ?? 0) - Date.now())}
-          totalMs={mechanicTotalMs}
-        />
-      )}
-      {/* 队友那一份:三连桶两人位置独立,得能看见队友躲到哪了 */}
-      {opponentMechanic && opponent && (
-        <div className="mechanic-teammate">
-          <div className="mechanic-teammate__title">
-            队友 {opponent.nick}
-            {mechanicDone.includes(opponent.playerId) ? ' · 已躲开 ✓' : ' · 进行中'}
-          </div>
-          <MechanicPanel state={opponentMechanic} remainingMs={0} totalMs={0} compact />
+      {/*
+        ★ 机制区用「网格折叠」而不是直接条件渲染:泰坦之怒是服务端异步推来的,
+        可能在玩家正打字时突然插进来,这块区域一冒出来就会把下面的 TypingField
+        瞬间顶下去——挪动的还是玩家视线焦点所在的输入框,很容易被看成是
+        队友那份机制状态,或者干脆没反应过来发生了什么(玩家反馈原话)。
+        改成 grid-template-rows 在 0fr/1fr 之间过渡,视觉上是平滑展开/收起,
+        而不是硬邦邦的一下子跳动。
+      */}
+      <div className={`battle__mechanic-slot${inMechanic || opponentMechanic ? ' battle__mechanic-slot--active' : ''}`}>
+        <div className="battle__mechanic-slot-inner">
+          {selfMechanic && (
+            <MechanicPanel
+              state={selfMechanic}
+              remainingMs={Math.max(0, (mechanicEndsAt ?? 0) - Date.now())}
+              totalMs={mechanicTotalMs}
+            />
+          )}
+          {/* 队友那一份:三连桶两人位置独立,得能看见队友躲到哪了。
+              样式上刻意做得比自己那份更轻(见 CSS 的 opacity),
+              一眼就能分清哪块是「我在打的」、哪块只是「队友的状态」。 */}
+          {opponentMechanic && opponent && (
+            <div className="mechanic-teammate">
+              <div className="mechanic-teammate__title">
+                队友 {opponent.nick}
+                {mechanicDone.includes(opponent.playerId) ? ' · 已躲开 ✓' : ' · 进行中'}
+              </div>
+              <MechanicPanel state={opponentMechanic} remainingMs={0} totalMs={0} compact />
+            </div>
+          )}
         </div>
-      )}
+      </div>
 
       <TypingField
         entry={entry}

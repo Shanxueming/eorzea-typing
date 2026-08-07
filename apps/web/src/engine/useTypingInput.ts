@@ -16,7 +16,7 @@
  * 判定逻辑抽成了下面的纯 reducer,可单独测试,不依赖 DOM。
  */
 
-import { useCallback, useEffect, useMemo, useRef, useReducer } from 'react';
+import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useReducer } from 'react';
 import type { KeystrokeEvent, WordEntry, TypingMode } from '@eorzea/shared/types';
 import { judgeInput } from '@eorzea/shared/scoring';
 import {
@@ -88,10 +88,20 @@ export function useTypingInput(opts: UseTypingInputOptions) {
   const targetsRef = useRef(targets);
   targetsRef.current = targets;
 
-  // 换词时重置。key 用所有候选的 id 拼起来 —— 多候选下任何一个换了都要重置,
-  // 只看 entry?.id 会漏掉「entry 没变但备选换了」的情况。
+  /**
+   * 换词时重置。key 用所有候选的 id 拼起来 —— 多候选下任何一个换了都要重置,
+   * 只看 entry?.id 会漏掉「entry 没变但备选换了」的情况。
+   *
+   * ★★ 必须用 useLayoutEffect,不能是 useEffect ——联机的机制是服务端异步推来的,
+   *   可能在玩家正打到一半时插进来:entry 从普通词换成机制词的那一刻,原生
+   *   <input> 的 DOM 值还没清空(这里是非受控输入,靠这个 effect 手动清)。
+   *   passive 的 useEffect 在浏览器绘制之后才跑,这段窗口期里如果玩家手快、
+   *   紧接着又按了一下键,那次 keydown/input 会拿着上一个词的残留文本去匹配
+   *   全新的机制目标——地狱难度下这就会被判成"机制一开始就打错",直接结算。
+   *   layout effect 是在 DOM 提交后、浏览器绘制前同步执行,能把这个窗口关掉。
+   */
   const targetsKey = targets.map((t) => t.id).join('|');
-  useEffect(() => {
+  useLayoutEffect(() => {
     dispatch({ type: 'RESET', now: now() });
     if (inputRef.current) inputRef.current.value = '';
   }, [targetsKey]);
