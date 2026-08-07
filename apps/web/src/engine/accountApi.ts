@@ -93,6 +93,31 @@ export async function fetchLeaderboard(
   return json.rows ?? [];
 }
 
+/** 联机团队榜的一条记录——两个人绑在一起,不是单人榜那种一人一条 */
+export interface CoopLeaderboardRow {
+  rank: number;
+  playerAName: string;
+  playerBName: string;
+  clearMs: number | null;
+  kills: number | null;
+  survivedMs: number | null;
+  score: number;
+  trustScore: number;
+  flags: string[];
+}
+
+export async function fetchCoopLeaderboard(
+  gameMode: GameMode,
+  difficulty: Difficulty,
+  inputMode: InputMode,
+): Promise<CoopLeaderboardRow[]> {
+  const params = new URLSearchParams({ gameMode, difficulty, inputMode });
+  const res = await fetch(`/api/leaderboard/coop?${params}`);
+  if (!res.ok) return [];
+  const json = await res.json() as { rows?: CoopLeaderboardRow[] };
+  return json.rows ?? [];
+}
+
 /**
  * 提交成绩。
  *

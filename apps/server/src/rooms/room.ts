@@ -35,9 +35,14 @@ import {
   PRIMAL_RELEASE_HEAL,
   PRIMAL_RELEASE_DAMAGE_MULTIPLIER,
   SKILL_COOLDOWN_MS,
+  ENDLESS_DIFFICULTY,
+  ENDLESS_BOSS_HP_GROWTH,
+  ENDLESS_TIMEOUT_SHRINK_PER_KILL_MS,
+  ENDLESS_MIN_WORD_TIMEOUT_MS,
   type WordQueue,
   type CharacterId,
   type Difficulty,
+  type GameMode,
   type InputMode,
   BOSS_MAX_HP,
   BATTLE_DURATION_MS,
@@ -67,7 +72,11 @@ import {
 } from '@eorzea/shared/mechanics';
 import { ALLOW_SYNTHETIC_INPUT } from '../devFlags.js';
 import { loadAllCategories, loadBank, loadBanks } from './wordbankStore.js';
-import { send, type ConnectedPlayer, type PlayerPublic, type PlayerTick, type S2C } from './protocol.js';
+import {
+  send, type ConnectedPlayer, type CoopLeaderboardOutcome, type PlayerPublic, type PlayerTick, type S2C,
+} from './protocol.js';
+import { RANKED_DIFFICULTIES } from '../db/scores.js';
+import { normalizePair, submitCoopScore } from '../db/coopScores.js';
 import type { WebSocket } from 'ws';
 
 interface PlayerBattleState {
@@ -149,6 +158,11 @@ export class Room {
   private normalWordTimeoutMs = DIFFICULTY_WORD_TIMEOUT_MS.normal;
   private difficulty: Difficulty = 'normal';
   private inputMode: InputMode = 'sequential';
+  private gameMode: GameMode = 'standard';
+  /** 房主开局时勾没勾"上传成绩到排行榜"——真正上不上还要看双方是否登录、成绩够不够格 */
+  private submitScoreRequested = false;
+  /** 无限模式:打倒了几只泰坦(标准模式恒为 0) */
+  private kills = 0;
   /**
    * 泰坦之怒保底计数器:距上次触发之后全房又结算了几个普通词。
    * **全房一份**,不是每人一份 —— 泰坦之怒本来就是全房共享的一次事件,
@@ -189,6 +203,7 @@ export class Room {
     // 第一个加入的玩家就是房主,不用额外存字段
     return this.players.map((p, i) => ({
       playerId: p.playerId, nick: p.nick, ready: p.ready, isHost: i === 0, character: p.character,
+      displayId: p.displayId,
     }));
   }
 
@@ -196,7 +211,7 @@ export class Room {
     for (const p of this.players) send(p.ws, msg);
   }
 
-  addPlayer(nick: string, ws: WebSocket): ConnectedPlayer {
+  addPlayer(nick: string, ws: WebSocket, account: { id: string; displayId: string } | null = null): ConnectedPlayer {
     if (this.players.length >= 2 || this.phase !== 'lobby') {
       throw new Error('room_full');
     }
@@ -206,6 +221,8 @@ export class Room {
       ws,
       ready: false,
       connected: true,
+      accountId: account?.id ?? null,
+      displayId: account?.displayId ?? null,
       disconnectTimer: null,
       eliminated: false,
       character: 'p1',
@@ -233,16 +250,20 @@ export class Room {
 
   /**
    * 房主专用:单人不能开始;必须凑够 2 人且非房主那位已经点了准备;
-   * 这局用哪档难度、哪种输入模式都由房主这次点开始时带的值决定,不商量。
+   * 这局用哪档难度、哪种输入模式、哪种玩法模式都由房主这次点开始时带的值决定,
+   * 不商量。submitScore 是房主"要不要上传成绩"的意愿,真正上不上还要看双方
+   * 是否都登录、成绩够不够格(见 attemptCoopLeaderboardSubmit)。
    */
-  handleStart(playerId: string, difficulty: Difficulty, inputMode: InputMode): void {
+  handleStart(
+    playerId: string, difficulty: Difficulty, inputMode: InputMode, gameMode: GameMode, submitScore: boolean,
+  ): void {
     if (this.phase !== 'lobby') return;
     const host = this.players[0];
     if (!host || host.playerId !== playerId) return;
     if (this.players.length < 2) return;
     const guest = this.players[1];
     if (!guest || !guest.ready) return;
-    void this.startBattle(difficulty, inputMode);
+    void this.startBattle(difficulty, inputMode, gameMode, submitScore);
   }
 
   handleDisconnect(playerId: string): void {
@@ -266,15 +287,22 @@ export class Room {
     }, 5000);
   }
 
-  private async startBattle(difficulty: Difficulty, inputMode: InputMode): Promise<void> {
+  private async startBattle(
+    difficulty: Difficulty, inputMode: InputMode, gameMode: GameMode, submitScore: boolean,
+  ): Promise<void> {
     this.phase = 'battle';
     this.seed = nanoid(12);
-    this.castDurationMs = DIFFICULTY_CAST_DURATION_MS[difficulty];
-    this.normalWordTimeoutMs = DIFFICULTY_WORD_TIMEOUT_MS[difficulty];
-    this.difficulty = difficulty;
+    this.gameMode = gameMode;
+    this.submitScoreRequested = submitScore;
+    this.kills = 0;
+    // 无限模式难度固定困难,排行榜才可比——不能指望客户端老实,服务端自己收敛。
+    const effectiveDifficulty = gameMode === 'endless' ? ENDLESS_DIFFICULTY : difficulty;
+    this.castDurationMs = DIFFICULTY_CAST_DURATION_MS[effectiveDifficulty];
+    this.normalWordTimeoutMs = DIFFICULTY_WORD_TIMEOUT_MS[effectiveDifficulty];
+    this.difficulty = effectiveDifficulty;
     // 地狱难度强制逐字:客户端理应也这么收敛,但输入模式决定判负规则,
     // 不能指望客户端老实,服务端自己再过一遍同一个函数。
-    this.inputMode = resolveInputMode(difficulty, inputMode);
+    this.inputMode = resolveInputMode(effectiveDifficulty, inputMode);
     this.wordsSinceWrath = 0;
 
     const allCategories = await loadAllCategories();
@@ -290,12 +318,13 @@ export class Room {
     }
     // 完整池留给打断词,普通词队列用按难度筛过的池
     this.interruptPool = pool;
-    this.pool = filterPoolByDifficulty(pool, difficulty);
+    this.pool = filterPoolByDifficulty(pool, effectiveDifficulty);
 
     this.config = {
       seed: this.seed,
       bossId: 'titan',
-      bossHp: bossHpFor(difficulty),
+      bossHp: bossHpFor(effectiveDifficulty),
+      // 无限模式没有狂暴倒计时,这个字段联机侧目前只用于 BattleConfig 的类型完整性
       durationMs: BATTLE_DURATION_MS,
       categories,
       pureOnly: true,
@@ -303,7 +332,7 @@ export class Room {
       mode: 'hanzi',
       castIntervalMs: CAST_INTERVAL_MS,
     };
-    this.bossMaxHp = bossHpFor(difficulty);
+    this.bossMaxHp = bossHpFor(effectiveDifficulty);
     this.bossHp = this.bossMaxHp;
     this.teamHp = PLAYER_MAX_HP;
     this.battleStartedAt = Date.now();
@@ -336,11 +365,15 @@ export class Room {
       t: 'battle_start',
       config: this.config,
       startAt: this.battleStartedAt,
-      difficulty,
+      difficulty: effectiveDifficulty,
       inputMode: this.inputMode,
+      gameMode: this.gameMode,
     });
     this.tickTimer = setInterval(() => this.tick(), 250);
-    this.endTimer = setTimeout(() => this.endBattle(), BATTLE_DURATION_MS);
+    // 无限模式没有狂暴倒计时,只有团队血量归零才结束,不排定这个兜底计时器。
+    if (this.gameMode !== 'endless') {
+      this.endTimer = setTimeout(() => this.endBattle(), BATTLE_DURATION_MS);
+    }
   }
 
   private drawNext(playerId: string): void {
@@ -359,9 +392,15 @@ export class Room {
   private scheduleWordTimeout(playerId: string, wordId: string): void {
     const bs = this.battleState.get(playerId);
     if (!bs) return;
-    const timeoutMs = bs.bloodbathWordsLeft > 0
-      ? Math.round(this.normalWordTimeoutMs * BLOODBATH_TIME_SCALE)
+    // 无限模式每打倒一只泰坦,限时先按 ENDLESS_TIMEOUT_SHRINK_PER_KILL_MS 缩一截
+    // (有下限),「浴血」的收紧在这个已经缩过的值上再乘一次——跟单机 SoloBattle
+    // 的 wordTimeoutFor 是同一套口径。
+    const base = this.gameMode === 'endless'
+      ? Math.max(ENDLESS_MIN_WORD_TIMEOUT_MS, this.normalWordTimeoutMs - this.kills * ENDLESS_TIMEOUT_SHRINK_PER_KILL_MS)
       : this.normalWordTimeoutMs;
+    const timeoutMs = bs.bloodbathWordsLeft > 0
+      ? Math.round(base * BLOODBATH_TIME_SCALE)
+      : base;
     bs.wordTimer = setTimeout(() => {
       const cur = this.battleState.get(playerId);
       if (!cur || this.ended || cur.isInterrupt || !cur.currentWord || cur.currentWord.id !== wordId) return;
@@ -440,7 +479,13 @@ export class Room {
       this.bossHp = Math.max(0, this.bossHp - dmg);
       if (primalArmed && !primalFullHp) this.healTeam(PRIMAL_RELEASE_HEAL);
       if (this.bossHp <= 0) {
-        this.endBattle(true);
+        // 标准模式到此结束;无限模式换下一只泰坦继续——新旧血量不是同一把尺子,
+        // 阈值机制这次不查,直接跳到下面推进队列。
+        if (!this.handleBossDefeated()) return;
+        this.wordsSinceWrath += 1;
+        if (bs.bloodbathWordsLeft > 0) bs.bloodbathWordsLeft -= 1;
+        this.drawNext(playerId);
+        if (!this.pendingMechanic) this.tryTriggerTitanWrath(TITAN_WRATH_ON_SUCCESS_CHANCE);
         return;
       }
     } else {
@@ -540,10 +585,8 @@ export class Room {
     // 独立型:自己这一份立刻结算、放回普通词,不用等队友
     this.settleIndividualMechanic(playerId, pm, true, hit);
     if (this.ended) return;
-    if (this.bossHp <= 0) {
-      this.endBattle(true);
-      return;
-    }
+    if (this.bossHp <= 0 && !this.handleBossDefeated()) return;
+    if (!this.pendingMechanic) return; // 无限模式换 Boss 时顺手把机制清空了,不用再往下查
     const alive = this.players.filter((x) => !x.eliminated);
     if (pm.resolvedEarly.size >= alive.length) this.resolveMechanic();
   }
@@ -615,6 +658,14 @@ export class Room {
     if (this.pendingMechanic || this.ended || this.bossMaxHp <= 0) return;
     const prevRatio = prevHp / this.bossMaxHp;
     const curRatio = curHp / this.bossMaxHp;
+    if (this.gameMode === 'endless') {
+      // 无限模式没有「打完这一只就结束」的节奏,固定阈值/机制会腻,
+      // 改成四个点各自掷骰子、两个独立型机制轮着来(跟单机 SoloBattle 一致)。
+      if (crossedThresholds(ENDLESS_MECHANIC_THRESHOLDS, prevRatio, curRatio).length === 0) return;
+      if (Math.random() >= ENDLESS_MECHANIC_CHANCE) return;
+      this.beginMechanic(this.kills % 2 === 0 ? 'three_barrels' : 'three_pierce');
+      return;
+    }
     const id = mechanicForHpDrop(prevRatio, curRatio, Math.random());
     if (id) this.beginMechanic(id);
   }
@@ -720,13 +771,42 @@ export class Room {
     this.broadcast({ t: 'mechanic_resolved', mechanicId: pm.mechanicId, clearedBy });
 
     if (this.bossHp <= 0) {
-      this.endBattle(true);
-      return;
+      if (!this.handleBossDefeated()) return;
+      return; // 换 Boss 了,新旧血量不是同一把尺子,这次不查阈值机制
     }
     // 机制伤害同样可能跨过下一档阈值,必须再查一次——独立型的伤害大多已经在
     // settleIndividualMechanic 里实时判过了,这里用机制开始时的血量兜底,
     // 保证不会因为拆成两处结算而漏判。
     this.tryTriggerHpMechanic(pm.bossHpAtStart, this.bossHp);
+  }
+
+  /**
+   * Boss 被打死。标准模式到此通关;无限模式立刻刷下一只、血量按
+   * ENDLESS_BOSS_HP_GROWTH 逐只加厚,直到团队血量归零才结束——不回血,
+   * 击杀奖励已经按用户要求去掉了(2026-08-06,理由同单机 SoloBattle)。
+   *
+   * @returns 战斗是否还要继续。false 表示已经结束,调用方应立即 return。
+   */
+  private handleBossDefeated(): boolean {
+    if (this.gameMode !== 'endless') {
+      this.endBattle(true);
+      return false;
+    }
+    // 换 Boss 那一刻如果还有人卡在机制里(比如三连桶只有一个人打完,
+    // 泰坦却被另一个人的普通词打死了),那份机制跟着旧 Boss 一起作废,
+    // 把还卡着的人放回普通词——不然他们的 isInterrupt 永远卡在 true。
+    if (this.pendingMechanic) {
+      if (this.mechanicTimer) {
+        clearTimeout(this.mechanicTimer);
+        this.mechanicTimer = null;
+      }
+      this.pendingMechanic = null;
+      for (const p of this.players) this.resumeNormalWord(p.playerId);
+    }
+    this.kills += 1;
+    this.bossMaxHp = Math.round(this.bossMaxHp * ENDLESS_BOSS_HP_GROWTH);
+    this.bossHp = this.bossMaxHp;
+    return true;
   }
 
   /**
@@ -787,7 +867,9 @@ export class Room {
         combo: bs.combo,
       };
     });
-    this.broadcast({ t: 'score_tick', scores, bossHp: this.bossHp, bossMaxHp: this.bossMaxHp, teamHp: this.teamHp });
+    this.broadcast({
+      t: 'score_tick', scores, bossHp: this.bossHp, bossMaxHp: this.bossMaxHp, teamHp: this.teamHp, kills: this.kills,
+    });
   }
 
   private endBattle(victory = false): void {
@@ -831,7 +913,54 @@ export class Room {
         flags,
       };
     });
-    this.broadcast({ t: 'battle_end', results, victory });
+    const leaderboard = this.attemptCoopLeaderboardSubmit(results, victory);
+    this.broadcast({ t: 'battle_end', results, victory, kills: this.kills, leaderboard });
     this.onEmpty();
+  }
+
+  /**
+   * 联机团队排行榜提交。跟单机的关键区别:这里**不需要重放校验**——
+   * 联机本来就是服务端权威判定每一次 word_attempt,战斗结束时 results
+   * 已经是服务端自己算出来的了,不存在"客户端报的数字要不要信"的问题。
+   *
+   * 资格:房主开局时勾了要传 + 双方都登录 + 难度困难/地狱
+   *   (无限模式已经在 startBattle 里强制收敛成困难了)
+   *   + 标准模式必须获胜(无限模式没有"通关"概念,一律可传)。
+   * 双方缺一不可,不接受"一人登录就半计"——两人合作打出来的成绩,
+   * 只认到一半没有意义。
+   */
+  private attemptCoopLeaderboardSubmit(results: PlayerResult[], victory: boolean): CoopLeaderboardOutcome | null {
+    if (!this.submitScoreRequested) return null; // 房主没打算传,不打扰玩家
+    if (this.players.length !== 2) return { status: 'ineligible', reason: 'need_two_players' };
+    const [pa, pb] = this.players;
+    if (!pa.accountId || !pb.accountId) return { status: 'ineligible', reason: 'not_both_logged_in' };
+    if (!RANKED_DIFFICULTIES.includes(this.difficulty)) {
+      return { status: 'ineligible', reason: 'unranked_difficulty' };
+    }
+    if (this.gameMode === 'standard' && !victory) {
+      return { status: 'ineligible', reason: 'not_cleared' };
+    }
+
+    const ra = results.find((r) => r.playerId === pa.playerId);
+    const rb = results.find((r) => r.playerId === pb.playerId);
+    if (!ra || !rb) return { status: 'ineligible', reason: 'missing_result' };
+
+    const pair = normalizePair(pa.accountId, pa.displayId ?? pa.nick, pb.accountId, pb.displayId ?? pb.nick);
+    const result = submitCoopScore({
+      playerAId: pair.aId,
+      playerAName: pair.aName,
+      playerBId: pair.bId,
+      playerBName: pair.bName,
+      gameMode: this.gameMode,
+      difficulty: this.difficulty,
+      inputMode: this.inputMode,
+      clearMs: this.gameMode === 'standard' ? this.now() : undefined,
+      kills: this.gameMode === 'endless' ? this.kills : undefined,
+      survivedMs: this.gameMode === 'endless' ? this.now() : undefined,
+      score: ra.score + rb.score,
+      trustScore: Math.min(ra.trustScore, rb.trustScore),
+      flags: Array.from(new Set([...ra.flags, ...rb.flags])),
+    });
+    return { status: result.status };
   }
 }

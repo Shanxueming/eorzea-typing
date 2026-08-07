@@ -1,9 +1,12 @@
 import { useEffect, useReducer, useRef } from 'react';
 import type { BattleConfig, PlayerResult } from '@eorzea/shared/types';
-import type { CharacterId, Difficulty, InputMode } from '@eorzea/shared/battle';
+import type { CharacterId, Difficulty, GameMode, InputMode } from '@eorzea/shared/battle';
 import type { MechanicId, MechanicState } from '@eorzea/shared/mechanics';
 import { audio } from '../engine/audio';
-import { coopSocketUrl, type C2S, type PlayerPublic, type PlayerTick, type S2C } from '../engine/coopProtocol';
+import type { Session } from '../engine/accountApi';
+import {
+  coopSocketUrl, type C2S, type CoopLeaderboardOutcome, type PlayerPublic, type PlayerTick, type S2C,
+} from '../engine/coopProtocol';
 import { Lobby } from './Lobby';
 import { CoopBattle } from './CoopBattle';
 import { CoopResults } from './CoopResults';
@@ -17,9 +20,12 @@ interface SessionState {
   startAt: number | null;
   difficulty: Difficulty;
   inputMode: InputMode;
+  gameMode: GameMode;
   bossHp: number;
   bossMaxHp: number;
   teamHp: number;
+  /** 无限模式:打倒了几只泰坦 */
+  kills: number;
   scores: PlayerTick[];
   /** 进行中的机制:自己的那一份状态 + 队友的那一份(队友区要显示对方位置) */
   mechanicId: MechanicId | null;
@@ -35,6 +41,8 @@ interface SessionState {
   lastAdvancedWord: { playerId: string; wordId: string } | null;
   results: PlayerResult[] | null;
   victory: boolean;
+  /** 上传团队排行榜的结果反馈,null 表示这局没提交(房主没勾,或不够格) */
+  leaderboard: CoopLeaderboardOutcome | null;
   errorMsg: string | null;
 }
 
@@ -47,9 +55,11 @@ const initialState: SessionState = {
   startAt: null,
   difficulty: 'normal',
   inputMode: 'sequential',
+  gameMode: 'standard',
   bossHp: 0,
   bossMaxHp: 0,
   teamHp: 0,
+  kills: 0,
   scores: [],
   mechanicId: null,
   mechanicShared: false,
@@ -62,6 +72,7 @@ const initialState: SessionState = {
   lastAdvancedWord: null,
   results: null,
   victory: false,
+  leaderboard: null,
   errorMsg: null,
 };
 
@@ -85,9 +96,11 @@ function reduce(s: SessionState, a: Action): SessionState {
         startAt: a.startAt,
         difficulty: a.difficulty,
         inputMode: a.inputMode,
+        gameMode: a.gameMode,
         bossHp: a.config.bossHp,
         bossMaxHp: a.config.bossHp,
         teamHp: 100,
+        kills: 0,
         scores: [],
         mechanicId: null,
         mechanicShared: false,
@@ -133,9 +146,11 @@ function reduce(s: SessionState, a: Action): SessionState {
     case 'word_advanced':
       return { ...s, lastAdvancedWord: { playerId: a.playerId, wordId: a.wordId } };
     case 'score_tick':
-      return { ...s, scores: a.scores, bossHp: a.bossHp, bossMaxHp: a.bossMaxHp, teamHp: a.teamHp };
+      return { ...s, scores: a.scores, bossHp: a.bossHp, bossMaxHp: a.bossMaxHp, teamHp: a.teamHp, kills: a.kills };
     case 'battle_end':
-      return { ...s, status: 'results', results: a.results, victory: a.victory };
+      return {
+        ...s, status: 'results', results: a.results, victory: a.victory, kills: a.kills, leaderboard: a.leaderboard,
+      };
     case 'error':
       return { ...s, errorMsg: a.msg };
     default:
@@ -144,11 +159,12 @@ function reduce(s: SessionState, a: Action): SessionState {
 }
 
 export interface CoopSessionProps {
+  session: Session | null;
   onExit: () => void;
   onVictory: () => void;
 }
 
-export function CoopSession({ onExit, onVictory }: CoopSessionProps) {
+export function CoopSession({ session, onExit, onVictory }: CoopSessionProps) {
   const wsRef = useRef<WebSocket | null>(null);
   const recordedVictoryRef = useRef(false);
   const [state, dispatch] = useReducer(reduce, initialState);
@@ -212,7 +228,17 @@ export function CoopSession({ onExit, onVictory }: CoopSessionProps) {
   }
 
   if (state.status === 'results' && state.results && state.playerId) {
-    return <CoopResults results={state.results} selfId={state.playerId} victory={state.victory} onExit={onExit} />;
+    return (
+      <CoopResults
+        results={state.results}
+        selfId={state.playerId}
+        victory={state.victory}
+        gameMode={state.gameMode}
+        kills={state.kills}
+        leaderboard={state.leaderboard}
+        onExit={onExit}
+      />
+    );
   }
 
   if (state.status === 'battle' && state.config && state.startAt !== null && state.playerId) {
@@ -224,8 +250,10 @@ export function CoopSession({ onExit, onVictory }: CoopSessionProps) {
         startAt={state.startAt}
         difficulty={state.difficulty}
         inputMode={state.inputMode}
+        gameMode={state.gameMode}
         bossHp={state.bossHp}
         teamHp={state.teamHp}
+        kills={state.kills}
         scores={state.scores}
         bossMaxHp={state.bossMaxHp}
         mechanicId={state.mechanicId}
@@ -251,10 +279,10 @@ export function CoopSession({ onExit, onVictory }: CoopSessionProps) {
       playerId={state.playerId}
       players={state.players}
       errorMsg={state.errorMsg}
-      onCreate={(nick) => send({ t: 'create_room', nick })}
-      onJoin={(code, nick) => send({ t: 'join_room', code, nick })}
+      onCreate={(nick) => send({ t: 'create_room', nick, session: session ?? undefined })}
+      onJoin={(code, nick) => send({ t: 'join_room', code, nick, session: session ?? undefined })}
       onReady={() => send({ t: 'ready' })}
-      onStart={(difficulty, inputMode) => send({ t: 'start', difficulty, inputMode })}
+      onStart={(difficulty, inputMode, gameMode, submitScore) => send({ t: 'start', difficulty, inputMode, gameMode, submitScore })}
       onSelectCharacter={(character: CharacterId) => send({ t: 'select_character', character })}
       onExit={onExit}
     />

@@ -12,6 +12,12 @@ import { getDb } from './database.js';
 /** 只有这三档收录成绩。简单/普通不进榜(需求 Q22) */
 export const RANKED_DIFFICULTIES: readonly Difficulty[] = ['hard', 'hell'];
 
+/**
+ * 榜单只看最近 3 天的成绩(用户明确要的滚动窗口)——旧成绩不删,只是查询时
+ * 过滤掉,不在榜上显示。所有榜单(单机 + 联机)统一套用这一条,口径要一致。
+ */
+export const LEADERBOARD_WINDOW_MS = 3 * 24 * 60 * 60 * 1000;
+
 export interface ScoreSubmission {
   playerId: string;
   gameMode: GameMode;
@@ -125,10 +131,10 @@ export function getLeaderboard(
     SELECT s.*, p.display_id
     FROM scores s JOIN players p ON p.id = s.player_id
     WHERE s.game_mode = ? AND s.difficulty = ? AND s.input_mode = ?
-      AND s.hidden = 0 AND p.banned = 0
+      AND s.hidden = 0 AND p.banned = 0 AND s.created_at >= ?
     ORDER BY ${orderClause(gameMode)}
     LIMIT ?
-  `).all(gameMode, difficulty, inputMode, limit) as Array<Record<string, unknown>>;
+  `).all(gameMode, difficulty, inputMode, Date.now() - LEADERBOARD_WINDOW_MS, limit) as Array<Record<string, unknown>>;
 
   return rows.map((r, i) => ({
     rank: i + 1,

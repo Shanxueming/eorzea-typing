@@ -1184,6 +1184,19 @@ button:disabled {
 .lobby__character {
   color: var(--color-crystal);
 }
+.lobby__account {
+  color: var(--color-crystal);
+}
+.lobby__account--guest {
+  color: rgba(230, 236, 245, 0.5);
+}
+.menu__submit-score {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  margin: 6px 0;
+}
 
 .results__trust-warn {
   color: #ffb44f;

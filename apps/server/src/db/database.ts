@@ -70,6 +70,36 @@ CREATE TABLE IF NOT EXISTS scores (
 CREATE INDEX IF NOT EXISTS idx_scores_track
   ON scores (game_mode, difficulty, input_mode, hidden);
 CREATE INDEX IF NOT EXISTS idx_scores_player ON scores (player_id);
+
+-- 联机团队成绩。一条记录代表"这一对搭档"的最好成绩,不是每人一条——
+-- player_a_id/player_b_id 写入前按字典序排过序,同一对人不管谁创房、
+-- 谁是 A 谁是 B,都会命中同一条记录,不会因为顺序不同而各记一份。
+CREATE TABLE IF NOT EXISTS coop_scores (
+  id            INTEGER PRIMARY KEY AUTOINCREMENT,
+  player_a_id   TEXT NOT NULL REFERENCES players(id),
+  player_a_name TEXT NOT NULL,
+  player_b_id   TEXT NOT NULL REFERENCES players(id),
+  player_b_name TEXT NOT NULL,
+  game_mode     TEXT NOT NULL,
+  difficulty    TEXT NOT NULL,
+  input_mode    TEXT NOT NULL,
+  -- 标准模式:讨伐耗时(毫秒)。无限模式为 NULL
+  clear_ms      INTEGER,
+  -- 无限模式:击杀数与存活时长。标准模式为 NULL
+  kills         INTEGER,
+  survived_ms   INTEGER,
+  -- 两人 PlayerResult.score 之和
+  score         INTEGER NOT NULL,
+  -- 两人里较低的那个 trustScore(取短板),flags 是两人的并集
+  trust_score   INTEGER NOT NULL,
+  flags         TEXT NOT NULL DEFAULT '[]',
+  hidden        INTEGER NOT NULL DEFAULT 0,
+  created_at    INTEGER NOT NULL
+);
+
+CREATE INDEX IF NOT EXISTS idx_coop_scores_track
+  ON coop_scores (game_mode, difficulty, input_mode, hidden);
+CREATE INDEX IF NOT EXISTS idx_coop_scores_pair ON coop_scores (player_a_id, player_b_id);
 `;
 
 export function getDb(): DatabaseSync {

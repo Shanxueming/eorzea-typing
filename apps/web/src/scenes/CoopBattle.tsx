@@ -4,7 +4,7 @@ import { selectPool } from '@eorzea/shared/wordbank';
 import {
   createWordQueue, filterFeaturedWordPool, filterPoolByDifficulty,
   SKILLS, SKILL_COOLDOWN_MS,
-  type WordQueue, type CharacterId, type Difficulty, type InputMode,
+  type WordQueue, type CharacterId, type Difficulty, type GameMode, type InputMode,
 } from '@eorzea/shared/battle';
 import {
   MECHANICS, currentMechanicWords,
@@ -33,6 +33,12 @@ import {
   SHATTER_MS,
 } from '../battle/constants';
 
+/** 把毫秒格式化成 m:ss,无限模式的存活时长要一直看着,得好读 */
+function formatDuration(ms: number): string {
+  const total = Math.floor(ms / 1000);
+  return `${Math.floor(total / 60)}:${String(total % 60).padStart(2, '0')}`;
+}
+
 export interface CoopBattleProps {
   selfId: string;
   players: PlayerPublic[];
@@ -41,10 +47,13 @@ export interface CoopBattleProps {
   difficulty: Difficulty;
   /** 服务端权威下发,已按难度收敛(地狱恒为 sequential) */
   inputMode: InputMode;
+  gameMode: GameMode;
   bossHp: number;
   bossMaxHp: number;
   /** 两人共用一条血条,不是各自一条 */
   teamHp: number;
+  /** 无限模式:打倒了几只泰坦(标准模式恒为 0) */
+  kills: number;
   scores: PlayerTick[];
   /** 进行中的机制。states 按 playerId 分开 —— 三连桶两人位置各自独立 */
   mechanicId: MechanicId | null;
@@ -76,9 +85,11 @@ export function CoopBattle(props: CoopBattleProps) {
     startAt,
     difficulty,
     inputMode,
+    gameMode,
     bossHp,
     bossMaxHp,
     teamHp,
+    kills,
     scores,
     mechanicId,
     mechanicShared,
@@ -94,6 +105,7 @@ export function CoopBattle(props: CoopBattleProps) {
 
   const showReading = DIFFICULTY_SHOW_READING[difficulty];
   const normalWordTimeoutMs = DIFFICULTY_WORD_TIMEOUT_MS[difficulty];
+  const isEndless = gameMode === 'endless';
 
   const [pool, setPool] = useState<WordEntry[] | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
@@ -158,10 +170,12 @@ export function CoopBattle(props: CoopBattleProps) {
 
   useEffect(() => {
     const id = window.setInterval(() => {
-      setRemainingMs(Math.max(0, config.durationMs - (Date.now() - startAt)));
+      const elapsed = Date.now() - startAt;
+      // 无限模式没有狂暴倒计时,这里复用同一个 state 存"已存活时长"用于展示
+      setRemainingMs(isEndless ? elapsed : Math.max(0, config.durationMs - elapsed));
     }, 250);
     return () => window.clearInterval(id);
-  }, [config.durationMs, startAt]);
+  }, [config.durationMs, startAt, isEndless]);
 
   // 机制结算的视觉反馈。
   //
@@ -390,7 +404,7 @@ export function CoopBattle(props: CoopBattleProps) {
   return (
     <div className={`battle${flash ? ' battle--flash' : ''}`}>
       <BossPanel
-        name={BOSS_NAME}
+        name={isEndless ? `${BOSS_NAME} · 第 ${kills + 1} 只` : BOSS_NAME}
         hp={bossHp}
         maxHp={bossMaxHp || config.bossHp}
         cast={
@@ -410,7 +424,13 @@ export function CoopBattle(props: CoopBattleProps) {
       <div className="battle__mid">
         <div className="battle__player-status">
           <HpBar value={teamHp} max={PLAYER_MAX_HP} variant="player" />
-          <CountdownBar label="狂暴倒计时" remainingMs={remainingMs} totalMs={config.durationMs} variant="enrage" />
+          {isEndless ? (
+            <div className="battle__endless-stat">
+              已存活 {formatDuration(remainingMs)} · 已击倒 <strong>{kills}</strong> 只
+            </div>
+          ) : (
+            <CountdownBar label="狂暴倒计时" remainingMs={remainingMs} totalMs={config.durationMs} variant="enrage" />
+          )}
           {!inMechanic && (
             <CountdownBar
               label="普通词倒计时"

@@ -82,7 +82,7 @@ export function ChangelogModal({ onClose }: ChangelogModalProps) {
         <div className="modal__body">
           <article className="changelog__entry">
             <div className="changelog__version">
-              艾欧泽亚打字修行 · 更新
+              最终幻想14打字通 · 更新
               <span className="changelog__date">{latest.version}</span>
             </div>
             <ChangelogEntryBody entry={latest} />

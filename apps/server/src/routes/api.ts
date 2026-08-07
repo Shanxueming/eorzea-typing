@@ -9,6 +9,7 @@
 import type { FastifyInstance } from 'fastify';
 import type { WordEntry } from '@eorzea/shared/types';
 import { RANKED_DIFFICULTIES, getLeaderboard, listScoresForAdmin, setScoreHidden, submitScore } from '../db/scores.js';
+import { getCoopLeaderboard, listCoopScoresForAdmin, setCoopScoreHidden } from '../db/coopScores.js';
 import {
   countPlayers, createPlayer, findPlayer, listPlayers, login,
   resetPassword, setBanned, verifyRoot,
@@ -81,6 +82,23 @@ export async function registerApiRoutes(app: FastifyInstance): Promise<void> {
     //   把实际用的赛道回给前端,免得界面标签和内容对不上。
     const inputMode = resolveInputMode(difficulty, requested);
     return { ok: true, inputMode, rows: getLeaderboard(gameMode, difficulty, inputMode, 50) };
+  });
+
+  /**
+   * 联机团队榜。查询参数与单机榜同名同义,只是查的是 coop_scores 表——
+   * 一条记录是"一对搭档",不是一个人,提交在 Room.attemptCoopLeaderboardSubmit
+   * 里完成,服务端权威分数,不走 replayAndScore。
+   */
+  app.get('/api/leaderboard/coop', async (req, reply) => {
+    const q = req.query as Record<string, string | undefined>;
+    const gameMode = q.gameMode === 'endless' ? 'endless' : 'standard';
+    const difficulty = q.difficulty === 'hell' ? 'hell' : 'hard';
+    const requested = q.inputMode === 'sequential' ? 'sequential' : 'composed';
+    if (!RANKED_DIFFICULTIES.includes(difficulty)) {
+      return reply.code(400).send({ ok: false, error: 'unranked_difficulty' });
+    }
+    const inputMode = resolveInputMode(difficulty, requested);
+    return { ok: true, inputMode, rows: getCoopLeaderboard(gameMode, difficulty, inputMode, 50) };
   });
 
   /**
@@ -216,6 +234,19 @@ export async function registerApiRoutes(app: FastifyInstance): Promise<void> {
       return reply.code(400).send({ ok: false, error: 'bad_request' });
     }
     if (!setScoreHidden(body.scoreId, body.hidden)) {
+      return reply.code(404).send({ ok: false, error: 'not_found' });
+    }
+    return { ok: true };
+  });
+
+  app.get('/api/admin/coop-scores', async () => ({ ok: true, rows: listCoopScoresForAdmin(100) }));
+
+  app.post('/api/admin/coop-score-visibility', async (req, reply) => {
+    const body = req.body as { scoreId?: unknown; hidden?: unknown } | undefined;
+    if (typeof body?.scoreId !== 'number' || typeof body?.hidden !== 'boolean') {
+      return reply.code(400).send({ ok: false, error: 'bad_request' });
+    }
+    if (!setCoopScoreHidden(body.scoreId, body.hidden)) {
       return reply.code(404).send({ ok: false, error: 'not_found' });
     }
     return { ok: true };

@@ -26,17 +26,32 @@
  */
 import type { WebSocket } from 'ws';
 import type { BattleConfig, PlayerResult, WordAttempt, WordEntry } from '@eorzea/shared/types';
-import type { CharacterId, Difficulty, InputMode } from '@eorzea/shared/battle';
+import type { CharacterId, Difficulty, GameMode, InputMode } from '@eorzea/shared/battle';
 import type { MechanicId, MechanicState } from '@eorzea/shared/mechanics';
 
+/**
+ * 登录态是可选的:带了就核对身份,核对通过后这个玩家在本局里就有账号 ——
+ * 上不上排行榜看这个;不带或者核对失败,照样能玩,只是不计入排行榜。
+ * 密码走明文传输是因为项目里本来就没有 token 机制(见 accountApi.ts 的
+ * Session),核对完立刻丢弃,不落库、不写日志。
+ */
+export interface SessionCreds {
+  displayId: string;
+  password: string;
+}
+
 export type C2S =
-  | { t: 'create_room'; nick: string }
-  | { t: 'join_room'; code: string; nick: string }
+  | { t: 'create_room'; nick: string; session?: SessionCreds }
+  | { t: 'join_room'; code: string; nick: string; session?: SessionCreds }
   | { t: 'ready' }
   /** 大厅里选角色。两人可以选同一个 —— 这是合作不是对战,没必要抢 */
   | { t: 'select_character'; character: CharacterId }
-  /** 房主开局:难度与输入模式都由房主定,不商量(输入模式影响判负规则,必须统一) */
-  | { t: 'start'; difficulty: Difficulty; inputMode: InputMode }
+  /**
+   * 房主开局:难度、输入模式、玩法模式都由房主定,不商量(输入模式影响判负
+   * 规则,必须统一)。submitScore 是房主对这一局"要不要上传成绩到排行榜"
+   * 的决定——双方都登录且成绩够格时才真的会上传,这里只是房主的意愿开关。
+   */
+  | { t: 'start'; difficulty: Difficulty; inputMode: InputMode; gameMode: GameMode; submitScore: boolean }
   | { t: 'word_attempt'; attempt: WordAttempt }
   | { t: 'skip_word'; wordId: string }
   | { t: 'use_skill' }
@@ -48,6 +63,8 @@ export interface PlayerPublic {
   ready: boolean;
   isHost: boolean;
   character: CharacterId;
+  /** 登录核对过的展示 ID,没登录就是 null——大厅里用来提示"这个人能上榜" */
+  displayId: string | null;
 }
 
 export interface PlayerTick {
@@ -59,10 +76,22 @@ export interface PlayerTick {
   combo: number;
 }
 
+/** 上传排行榜的结果反馈,只在双方都登录且房主开局时选了要传时才会有内容 */
+export type CoopLeaderboardOutcome =
+  | { status: 'inserted' | 'improved' | 'not_better' }
+  | { status: 'ineligible'; reason: string };
+
 export type S2C =
   | { t: 'room_joined'; code: string; playerId: string; players: PlayerPublic[] }
   | { t: 'room_update'; players: PlayerPublic[] }
-  | { t: 'battle_start'; config: BattleConfig; startAt: number; difficulty: Difficulty; inputMode: InputMode }
+  | {
+      t: 'battle_start';
+      config: BattleConfig;
+      startAt: number;
+      difficulty: Difficulty;
+      inputMode: InputMode;
+      gameMode: GameMode;
+    }
   /**
    * 机制开始。`states` 是**每个玩家各自的**初始状态 —— 三连桶要求两人有独立
    * 位置和独立判定,所以状态按 playerId 分开下发;泰坦之怒这种全房共享的机制,
@@ -85,8 +114,9 @@ export type S2C =
   | { t: 'skill_used'; playerId: string; character: CharacterId }
   /** 服务端主动判定普通词失败后,通知对应客户端消费词队列的下一项。 */
   | { t: 'word_advanced'; playerId: string; wordId: string }
-  | { t: 'score_tick'; scores: PlayerTick[]; bossHp: number; bossMaxHp: number; teamHp: number }
-  | { t: 'battle_end'; results: PlayerResult[]; victory: boolean }
+  /** 无限模式:打倒了几只泰坦,同 score_tick 一起广播,用来画击杀数 */
+  | { t: 'score_tick'; scores: PlayerTick[]; bossHp: number; bossMaxHp: number; teamHp: number; kills: number }
+  | { t: 'battle_end'; results: PlayerResult[]; victory: boolean; kills: number; leaderboard: CoopLeaderboardOutcome | null }
   | { t: 'error'; msg: string };
 
 export interface ConnectedPlayer {
@@ -95,6 +125,9 @@ export interface ConnectedPlayer {
   ws: WebSocket;
   ready: boolean;
   connected: boolean;
+  /** 登录核对通过的账号 id/展示 ID;没登录就是 null */
+  accountId: string | null;
+  displayId: string | null;
   disconnectTimer: ReturnType<typeof setTimeout> | null;
   eliminated: boolean;
   character: CharacterId;

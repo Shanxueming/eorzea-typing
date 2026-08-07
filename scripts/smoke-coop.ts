@@ -158,7 +158,7 @@ async function main(): Promise<void> {
     );
     // 逐字输入:脚本每次都提交完整正确答案,组合输入下的「错了再改」没法用
     // 这种一次性提交模拟,而且判负规则也不同。
-    a.send({ t: 'start', difficulty: 'normal', inputMode: 'sequential' });
+    a.send({ t: 'start', difficulty: 'normal', inputMode: 'sequential', gameMode: 'standard', submitScore: false });
 
     const startA = (await a.waitFor((m) => m.t === 'battle_start')) as Extract<S2C, { t: 'battle_start' }>;
     const startB = (await b.waitFor((m) => m.t === 'battle_start')) as Extract<S2C, { t: 'battle_start' }>;

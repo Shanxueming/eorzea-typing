@@ -2,9 +2,10 @@ import type { Server } from 'node:http';
 import { WebSocketServer, type WebSocket } from 'ws';
 import { customAlphabet } from 'nanoid';
 import type { WordAttempt } from '@eorzea/shared/types';
-import type { CharacterId, Difficulty, InputMode } from '@eorzea/shared/battle';
+import type { CharacterId, Difficulty, GameMode, InputMode } from '@eorzea/shared/battle';
+import { login } from '../db/players.js';
 import { Room } from './room.js';
-import { send, type C2S } from './protocol.js';
+import { send, type C2S, type SessionCreds } from './protocol.js';
 
 // 排除易混淆字符(0/O/1/I),房间码给人念/输的时候不容易出错
 const genCode = customAlphabet('ABCDEFGHJKLMNPQRSTUVWXYZ23456789', 6);
@@ -56,6 +57,26 @@ const INPUT_MODES: readonly InputMode[] = ['sequential', 'composed'];
 
 function isInputMode(value: unknown): value is InputMode {
   return typeof value === 'string' && (INPUT_MODES as readonly string[]).includes(value);
+}
+
+const GAME_MODES: readonly GameMode[] = ['standard', 'endless'];
+
+function isGameMode(value: unknown): value is GameMode {
+  return typeof value === 'string' && (GAME_MODES as readonly string[]).includes(value);
+}
+
+/**
+ * 登录态是可选的:带了就核对一次身份,核对通过就把账号信息带进房间——
+ * 不通过或者没带,照样能进房间玩,只是这个人不计入排行榜资格。
+ * 密码核对完立刻用完即弃,不在这个函数之外的任何地方出现。
+ */
+function resolveAccount(session: unknown): { id: string; displayId: string } | null {
+  if (!session || typeof session !== 'object') return null;
+  const s = session as SessionCreds;
+  if (typeof s.displayId !== 'string' || typeof s.password !== 'string') return null;
+  const result = login(s.displayId, s.password);
+  if (!result.ok) return null;
+  return { id: result.player.id, displayId: result.player.display_id };
 }
 
 /**
@@ -135,7 +156,7 @@ export function attachRoomServer(httpServer: Server): void {
         const finalCode = code;
         const room = new Room(finalCode, () => rooms.delete(finalCode));
         rooms.set(finalCode, room);
-        const player = room.addPlayer(nick, ws);
+        const player = room.addPlayer(nick, ws, resolveAccount(msg.session));
         ctx.room = room;
         ctx.playerId = player.playerId;
         send(ws, { t: 'room_joined', code: finalCode, playerId: player.playerId, players: room.publicPlayers() });
@@ -165,7 +186,7 @@ export function attachRoomServer(httpServer: Server): void {
           send(ws, { t: 'error', msg: 'room_full' });
           return;
         }
-        const player = room.addPlayer(nick, ws);
+        const player = room.addPlayer(nick, ws, resolveAccount(msg.session));
         ctx.room = room;
         ctx.playerId = player.playerId;
         send(ws, { t: 'room_joined', code: room.code, playerId: player.playerId, players: room.publicPlayers() });
@@ -193,7 +214,13 @@ export function attachRoomServer(httpServer: Server): void {
           send(ws, { t: 'error', msg: 'bad_input_mode' });
           return;
         }
-        if (ctx.room && ctx.playerId) ctx.room.handleStart(ctx.playerId, msg.difficulty, msg.inputMode);
+        if (!isGameMode(msg.gameMode)) {
+          send(ws, { t: 'error', msg: 'bad_game_mode' });
+          return;
+        }
+        if (ctx.room && ctx.playerId) {
+          ctx.room.handleStart(ctx.playerId, msg.difficulty, msg.inputMode, msg.gameMode, !!msg.submitScore);
+        }
         break;
       case 'word_attempt':
         if (!isWordAttempt(msg.attempt)) {

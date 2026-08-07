@@ -212,7 +212,13 @@ export default function App() {
         />
       )}
 
-      {scene === 'coop' && <CoopSession onExit={() => setScene('menu')} onVictory={() => setVictoryCount((count) => count + 1)} />}
+      {scene === 'coop' && (
+        <CoopSession
+          session={session}
+          onExit={() => setScene('menu')}
+          onVictory={() => setVictoryCount((count) => count + 1)}
+        />
+      )}
 
       {showChangelog && <ChangelogModal onClose={() => setShowChangelog(false)} />}
     </div>

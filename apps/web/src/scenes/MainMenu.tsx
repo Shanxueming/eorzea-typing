@@ -7,6 +7,7 @@ import { audio } from '../engine/audio';
 import { avatarSkinPath, rabbitStylePath } from '../engine/assets';
 import { SkinPicker } from '../components/SkinPicker';
 import { Leaderboard } from '../components/Leaderboard';
+import { CoopLeaderboard } from '../components/CoopLeaderboard';
 import type { Session } from '../engine/accountApi';
 import {
   CHARACTER_LABEL,
@@ -286,6 +287,12 @@ export function MainMenu({ onStartSolo, onGoCoop, victoryCount, coopAvailable, o
           : <button className="menu__changelog-link" onClick={() => setShowHardBoard(true)}>
               查看困难难度排行榜
             </button>}
+        {coopAvailable && (
+          <>
+            <CoopLeaderboard gameMode="standard" difficulty="hell" inputMode="composed" />
+            <CoopLeaderboard gameMode="endless" difficulty="hard" inputMode="composed" />
+          </>
+        )}
       </aside>
     </div>
   );

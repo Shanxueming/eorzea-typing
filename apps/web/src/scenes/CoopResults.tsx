@@ -1,11 +1,34 @@
 import type { PlayerResult } from '@eorzea/shared/types';
-import { verdictOf } from '@eorzea/shared/battle';
+import { verdictOf, type GameMode } from '@eorzea/shared/battle';
+import type { CoopLeaderboardOutcome } from '../engine/coopProtocol';
 
 export interface CoopResultsProps {
   results: PlayerResult[];
   selfId: string;
   victory: boolean;
+  gameMode: GameMode;
+  /** 无限模式:打倒了几只泰坦 */
+  kills: number;
+  leaderboard: CoopLeaderboardOutcome | null;
   onExit: () => void;
+}
+
+const LEADERBOARD_INELIGIBLE_LABELS: Record<string, string> = {
+  need_two_players: '房间里不足两人,没法组队上榜。',
+  not_both_logged_in: '双方都登录才能上团队榜,这局有人没登录。',
+  unranked_difficulty: '只有困难和地狱难度会计入排行榜。',
+  not_cleared: '标准模式只收通关的成绩。',
+  missing_result: '没能取到双方的结算数据。',
+};
+
+function leaderboardMessage(outcome: CoopLeaderboardOutcome): string {
+  switch (outcome.status) {
+    case 'inserted': return '团队成绩已上榜！';
+    case 'improved': return '刷新了你们团队自己的纪录！';
+    case 'not_better': return '这次没超过你们团队之前的成绩，榜上保留原来那条。';
+    case 'ineligible': return LEADERBOARD_INELIGIBLE_LABELS[outcome.reason] ?? '这局成绩没能上传排行榜。';
+    default: return '';
+  }
 }
 
 const FLAG_LABELS: Record<string, string> = {
@@ -25,15 +48,30 @@ const FLAG_LABELS: Record<string, string> = {
   disconnected: '对局中断线',
 };
 
-export function CoopResults({ results, selfId, victory, onExit }: CoopResultsProps) {
+export function CoopResults({ results, selfId, victory, gameMode, kills, leaderboard, onExit }: CoopResultsProps) {
   const sorted = [...results].sort((a, b) => b.score - a.score);
+  const isEndless = gameMode === 'endless';
 
   // rejected 的成绩仍然展示,但不计入排名号
   let rank = 0;
 
   return (
     <div className="results">
-      <h1 className="results__title">{victory ? '泰坦已讨伐' : '战斗结束'}</h1>
+      <h1 className="results__title">
+        {isEndless ? '无限模式结束' : victory ? '泰坦已讨伐' : '战斗结束'}
+      </h1>
+      {isEndless && (
+        <div className="results__endless">
+          <div className="results__endless-main">
+            团队打倒了 <strong>{kills}</strong> 只泰坦
+          </div>
+        </div>
+      )}
+      {leaderboard && (
+        <div className={leaderboard.status === 'ineligible' ? 'menu__error' : 'results__upload-ok'}>
+          {leaderboardMessage(leaderboard)}
+        </div>
+      )}
       {sorted.map((r) => {
         const verdict = verdictOf(r.trustScore);
         const rejected = verdict === 'rejected';
