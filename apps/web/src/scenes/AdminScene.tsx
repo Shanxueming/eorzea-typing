@@ -22,6 +22,14 @@ interface PlayerSummary {
   scoreCount: number;
 }
 
+interface DailyStat {
+  day: string;
+  dau: number;
+  soloGames: number;
+  coopGames: number;
+  totalGames: number;
+}
+
 interface AdminScore {
   id: number;
   displayId: string;
@@ -55,11 +63,12 @@ export function AdminScene({ onExit }: AdminSceneProps) {
   const [error, setError] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
 
-  const [tab, setTab] = useState<'players' | 'scores'>('players');
+  const [tab, setTab] = useState<'stats' | 'players' | 'scores'>('stats');
   const [keyword, setKeyword] = useState('');
   const [players, setPlayers] = useState<PlayerSummary[]>([]);
   const [total, setTotal] = useState(0);
   const [scores, setScores] = useState<AdminScore[]>([]);
+  const [stats, setStats] = useState<DailyStat[]>([]);
   const [notice, setNotice] = useState<string | null>(null);
 
   // 找回账号的工作区
@@ -92,7 +101,10 @@ export function AdminScene({ onExit }: AdminSceneProps) {
   const refresh = useCallback(async () => {
     if (!token) return;
     try {
-      if (tab === 'players') {
+      if (tab === 'stats') {
+        const j = await api('/api/admin/stats');
+        setStats(j.rows as DailyStat[]);
+      } else if (tab === 'players') {
         const j = await api(`/api/admin/players?keyword=${encodeURIComponent(keyword)}`);
         setPlayers(j.rows as PlayerSummary[]);
         setTotal(j.total as number);
@@ -211,6 +223,9 @@ export function AdminScene({ onExit }: AdminSceneProps) {
       <div className="admin__bar">
         <h1 className="admin__title">管理后台</h1>
         <div className="admin__tabs">
+          <button className={tab === 'stats' ? 'admin__tab--on' : ''} onClick={() => setTab('stats')}>
+            数据监控
+          </button>
           <button className={tab === 'players' ? 'admin__tab--on' : ''} onClick={() => setTab('players')}>
             账号（{total}）
           </button>
@@ -223,6 +238,35 @@ export function AdminScene({ onExit }: AdminSceneProps) {
 
       {notice && <div className="admin__notice">{notice}</div>}
       {error && <div className="menu__error">{error}</div>}
+
+      {tab === 'stats' && (
+        <section className="admin__panel">
+          <p className="account__hint">
+            设备数是按浏览器里存的匿名随机串去重的,不是精确的实名人数;联机一局
+            两个人各报一次开局,已经按房间码去重成"一局"。
+          </p>
+          <div className="admin__row">
+            <button onClick={() => void refresh()}>刷新</button>
+          </div>
+          <table className="admin__table">
+            <thead>
+              <tr><th>日期</th><th>玩过的设备数</th><th>单机局数</th><th>联机局数</th><th>合计局数</th></tr>
+            </thead>
+            <tbody>
+              {stats.map((s) => (
+                <tr key={s.day}>
+                  <td>{s.day}</td>
+                  <td>{s.dau}</td>
+                  <td>{s.soloGames}</td>
+                  <td>{s.coopGames}</td>
+                  <td>{s.totalGames}</td>
+                </tr>
+              ))}
+              {stats.length === 0 && <tr><td colSpan={5}>还没有数据</td></tr>}
+            </tbody>
+          </table>
+        </section>
+      )}
 
       {tab === 'players' && (
         <>

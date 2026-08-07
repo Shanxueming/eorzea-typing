@@ -100,6 +100,23 @@ CREATE TABLE IF NOT EXISTS coop_scores (
 CREATE INDEX IF NOT EXISTS idx_coop_scores_track
   ON coop_scores (game_mode, difficulty, input_mode, hidden);
 CREATE INDEX IF NOT EXISTS idx_coop_scores_pair ON coop_scores (player_a_id, player_b_id);
+
+-- 开局埋点,给管理后台的用量看板用:每开一局(单机/联机)客户端都会报一条。
+-- device_id 是纯匿名的本机随机串(存在 localStorage,不绑账号),只用来数
+-- "今天有多少台设备玩过"——联机一局两个人各报一条,所以按 device_id 去重
+-- 才是"人数",按 match_key 去重才是"局数"(match_key 是房间码,单机为 NULL,
+-- 单机每条都算一局不用去重)。
+CREATE TABLE IF NOT EXISTS game_starts (
+  id          INTEGER PRIMARY KEY AUTOINCREMENT,
+  device_id   TEXT NOT NULL,
+  mode        TEXT NOT NULL,
+  game_mode   TEXT NOT NULL,
+  difficulty  TEXT NOT NULL,
+  match_key   TEXT,
+  created_at  INTEGER NOT NULL
+);
+
+CREATE INDEX IF NOT EXISTS idx_game_starts_day ON game_starts (created_at);
 `;
 
 export function getDb(): DatabaseSync {

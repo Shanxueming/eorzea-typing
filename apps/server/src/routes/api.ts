@@ -13,6 +13,7 @@ import {
   leaderboardPeriod, listScoresForAdmin, setScoreHidden, submitScore,
 } from '../db/scores.js';
 import { getCoopLeaderboard, listCoopScoresForAdmin, setCoopScoreHidden } from '../db/coopScores.js';
+import { getDailyStats, recordGameStart } from '../db/telemetry.js';
 import {
   countPlayers, createPlayer, findPlayer, listPlayers, login,
   resetPassword, setBanned, verifyRoot,
@@ -122,6 +123,27 @@ export async function registerApiRoutes(app: FastifyInstance): Promise<void> {
       hasEarlier: period < MAX_LEADERBOARD_PERIODS_BACK,
       rows: getCoopLeaderboard(gameMode, difficulty, inputMode, 50, period),
     };
+  });
+
+  // ─────────────────────── 用量埋点 ───────────────────────
+
+  /**
+   * 开局上报。单机/联机开始一局各报一次,纯统计用途,不需要登录——
+   * 参数随便造假也不影响游戏本身,顶多是把管理后台的数字搅乱,
+   * 所以只做形状校验,不做防刷限流。
+   */
+  app.post('/api/telemetry/game-start', async (req, reply) => {
+    const body = req.body as Record<string, unknown> | undefined;
+    const deviceId = typeof body?.deviceId === 'string' ? body.deviceId.slice(0, 64) : null;
+    const mode = body?.mode === 'solo' || body?.mode === 'coop' ? body.mode : null;
+    const gameMode = body?.gameMode === 'standard' || body?.gameMode === 'endless' ? body.gameMode : null;
+    const difficulty = typeof body?.difficulty === 'string' ? body.difficulty.slice(0, 16) : null;
+    if (!deviceId || !mode || !gameMode || !difficulty) {
+      return reply.code(400).send({ ok: false, error: 'bad_request' });
+    }
+    const matchKey = typeof body?.matchKey === 'string' ? body.matchKey.slice(0, 32) : undefined;
+    recordGameStart({ deviceId, mode, gameMode, difficulty, matchKey });
+    return { ok: true };
   });
 
   /**
@@ -261,6 +283,9 @@ export async function registerApiRoutes(app: FastifyInstance): Promise<void> {
     }
     return { ok: true };
   });
+
+  /** 数据监控看板:最近 30 天,每天多少台设备玩过、开了多少把 */
+  app.get('/api/admin/stats', async () => ({ ok: true, rows: getDailyStats(30) }));
 
   app.get('/api/admin/coop-scores', async () => ({ ok: true, rows: listCoopScoresForAdmin(100) }));
 

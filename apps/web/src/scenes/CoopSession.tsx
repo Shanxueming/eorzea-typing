@@ -3,6 +3,7 @@ import type { BattleConfig, PlayerResult } from '@eorzea/shared/types';
 import type { CharacterId, Difficulty, GameMode, InputMode } from '@eorzea/shared/battle';
 import type { MechanicId, MechanicState } from '@eorzea/shared/mechanics';
 import { audio } from '../engine/audio';
+import { pingGameStart } from '../engine/telemetry';
 import type { Session } from '../engine/accountApi';
 import {
   coopSocketUrl, type C2S, type CoopLeaderboardOutcome, type PlayerPublic, type PlayerTick, type S2C,
@@ -167,6 +168,7 @@ export interface CoopSessionProps {
 export function CoopSession({ session, onExit, onVictory }: CoopSessionProps) {
   const wsRef = useRef<WebSocket | null>(null);
   const recordedVictoryRef = useRef(false);
+  const pingedBattleRef = useRef<string | null>(null);
   const [state, dispatch] = useReducer(reduce, initialState);
 
   useEffect(() => {
@@ -176,6 +178,16 @@ export function CoopSession({ session, onExit, onVictory }: CoopSessionProps) {
       onVictory();
     }
   }, [state.status, state.victory, onVictory]);
+
+  // 用量埋点:进战斗就报一次。用"房间码+起始时间"当去重键——同一局房间码
+  // 不变,但 StrictMode 下这个 effect 可能重跑,不能靠 status 变化去重。
+  useEffect(() => {
+    if (state.status !== 'battle' || !state.code || state.startAt === null) return;
+    const key = `${state.code}:${state.startAt}`;
+    if (pingedBattleRef.current === key) return;
+    pingedBattleRef.current = key;
+    pingGameStart('coop', state.gameMode, state.difficulty, state.code);
+  }, [state.status, state.code, state.startAt, state.gameMode, state.difficulty]);
 
   // 联机也和单机一样只在战斗期间播放 BGM；素材缺失时 AudioEngine 静默降级。
   useEffect(() => {

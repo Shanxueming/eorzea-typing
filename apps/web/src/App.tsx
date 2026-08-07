@@ -7,6 +7,7 @@ import { AccountScene } from './scenes/AccountScene';
 import { AdminScene } from './scenes/AdminScene';
 import { loadSession, type Session } from './engine/accountApi';
 import { audio } from './engine/audio';
+import { pingGameStart } from './engine/telemetry';
 import { ChangelogModal } from './components/ChangelogModal';
 import { hasSeenLatest } from './data/changelog';
 
@@ -154,6 +155,7 @@ export default function App() {
       {scene === 'menu' && (
         <MainMenu
           onStartSolo={(config) => {
+            pingGameStart('solo', config.gameMode, config.difficulty);
             setSoloConfig(config);
             setBattleKey((k) => k + 1);
             setScene('solo');
@@ -205,6 +207,7 @@ export default function App() {
           session={session}
           onGoAccount={() => setScene('account')}
           onRetry={() => {
+            pingGameStart('solo', soloConfig.gameMode, soloConfig.difficulty);
             setBattleKey((k) => k + 1);
             setScene('solo');
           }}
