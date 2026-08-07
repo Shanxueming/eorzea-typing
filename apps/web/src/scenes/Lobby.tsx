@@ -164,7 +164,9 @@ export function Lobby({ status, code, playerId, players, errorMsg, onCreate, onJ
           </div>
           {gameMode === 'standard' && (
             <div className="menu__mode">
-              {(Object.keys(DIFFICULTY_LABEL) as Difficulty[]).map((d) => (
+              {/* 练习难度只在单机开放:服务端联机难度校验表没收它,选了也会被拒绝(见
+                  packages/shared/src/battle.ts 里 Difficulty 类型上的说明) */}
+              {(Object.keys(DIFFICULTY_LABEL) as Difficulty[]).filter((d) => d !== 'practice').map((d) => (
                 <label key={d}>
                   <input
                     type="radio"

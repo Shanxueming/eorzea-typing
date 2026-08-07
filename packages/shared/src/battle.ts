@@ -21,6 +21,7 @@ export const BOSS_MAX_HP = 6000;
  * 拉开的是「能不能撑到最后」而不只是「手够不够快」。简单与普通维持基准值。
  */
 export const DIFFICULTY_BOSS_HP_MULTIPLIER: Record<Difficulty, number> = {
+  practice: 1,
   easy: 1,
   normal: 1,
   hard: 1.3,
@@ -51,6 +52,7 @@ export const CAST_WARNING_MS = 1000;
  *   下面这两张表,不要再引入新的推导关系。
  */
 export const DIFFICULTY_WORD_TIMEOUT_MS: Record<Difficulty, number> = {
+  practice: 25_000,
   easy: 25_000,
   normal: 16_000,
   hard: 12_000,
@@ -63,6 +65,7 @@ export const DIFFICULTY_WORD_TIMEOUT_MS: Record<Difficulty, number> = {
  * 留一个合理值只是为了让这张表在类型上完整、将来放开时不必现编。
  */
 export const DIFFICULTY_CAST_DURATION_MS: Record<Difficulty, number> = {
+  practice: 12_000,
   easy: 12_000,
   normal: 10_000,
   hard: 6_500,
@@ -71,6 +74,7 @@ export const DIFFICULTY_CAST_DURATION_MS: Record<Difficulty, number> = {
 
 /** 打错/超时一个普通词的扣血量,按难度递增。打断失败另算(PLAYER_DAMAGE_ON_FAIL)。 */
 export const DIFFICULTY_DAMAGE_ON_MISS: Record<Difficulty, number> = {
+  practice: 3,
   easy: 3,
   normal: 5,
   hard: 10,
@@ -84,9 +88,9 @@ export const DIFFICULTY_DAMAGE_ON_MISS: Record<Difficulty, number> = {
 export const TITAN_WRATH_ON_SUCCESS_CHANCE = 0.15;
 export const TITAN_WRATH_ON_FAILURE_CHANCE = 0.25;
 
-/** 简单难度是纯练手档:只打词、不躲技能,泰坦之怒一次都不会出现。 */
+/** 简单/练习是纯练手档:只打词、不躲技能,泰坦之怒一次都不会出现。 */
 export function hasTitanWrath(difficulty: Difficulty): boolean {
-  return difficulty !== 'easy';
+  return difficulty !== 'easy' && difficulty !== 'practice';
 }
 
 /**
@@ -160,6 +164,7 @@ export function filterFeaturedWordPool(pool: readonly WordEntry[]): WordEntry[] 
  * 而时限对熟练玩家几乎不构成压力。
  */
 export const DIFFICULTY_WORD_LENGTH: Record<Difficulty, readonly [number, number]> = {
+  practice: [1, 3],
   easy: [1, 3],
   normal: [1, 6],
   hard: [3, 7],
@@ -194,9 +199,16 @@ export function filterPoolByDifficulty(
  * 三档难度。只影响读条时长的倍数(CAST_DURATION_MS 是基准值);
  * 单机与联机(服务端权威决定这局用哪档)共用同一份倍数,不要出现两份数字。
  */
-export type Difficulty = 'easy' | 'normal' | 'hard' | 'hell';
+/**
+ * ★ practice(练习)只在单机开放:大厅/联机的难度校验表(见
+ *   apps/server/src/rooms/server.ts 的 DIFFICULTIES)故意没收它,选它发起联机
+ *   房间会被服务端拒绝——这是刻意的,不是漏加。练习档没有"没有时长限制"这条
+ *   在联机侧的对应实现,真放开会让联机房主选了却货不对板。
+ */
+export type Difficulty = 'practice' | 'easy' | 'normal' | 'hard' | 'hell';
 
 export const DIFFICULTY_CAST_MULTIPLIER: Record<Difficulty, number> = {
+  practice: 2.5,
   easy: 2.5,
   normal: 2,
   hard: 1.25,

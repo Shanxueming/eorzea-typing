@@ -34,6 +34,7 @@ import {
   DIFFICULTY_DAMAGE_ON_MISS,
   DIFFICULTY_WORD_TIMEOUT_MS,
   DIFFICULTY_SHOW_READING,
+  PINYIN_HINT_BUDGET,
   FLASH_MS,
   PLAYER_DAMAGE_ON_FAIL,
   PLAYER_HEAL_ON_INTERRUPT,
@@ -167,6 +168,10 @@ interface EngineState {
   bossMaxHp: number;
   /** 无限模式的排行指标之一,标准模式也顺手记着 */
   maxCombo: number;
+  /** 按 Q 键还能揭示几次拼音提示,0 表示这一局已经没有这个机会了 */
+  pinyinHintsLeft: number;
+  /** 当前这个词的拼音是不是已经被揭示过——换词/机制开始时要清掉 */
+  pinyinRevealed: boolean;
 }
 
 /** 把毫秒格式化成 m:ss,无限模式的存活时长要一直看着,得好读 */
@@ -175,7 +180,7 @@ function formatDuration(ms: number): string {
   return `${Math.floor(total / 60)}:${String(total % 60).padStart(2, '0')}`;
 }
 
-function initEngine(bossMaxHp: number): EngineState {
+function initEngine(bossMaxHp: number, pinyinHintsLeft: number): EngineState {
   return {
     bossHp: bossMaxHp,
     playerHp: PLAYER_MAX_HP,
@@ -200,6 +205,8 @@ function initEngine(bossMaxHp: number): EngineState {
     kills: 0,
     bossMaxHp,
     maxCombo: 0,
+    pinyinHintsLeft,
+    pinyinRevealed: false,
   };
 }
 
@@ -213,9 +220,13 @@ function initEngine(bossMaxHp: number): EngineState {
  */
 export function SoloBattle({ pool, mode, difficulty, inputMode, character, gameMode, categories, pureOnly, onFinish, onExit }: SoloBattleProps) {
   const isEndless = gameMode === 'endless';
+  // 练习难度和无限模式一样没有狂暴倒计时——区别是练习打死这一只泰坦就通关,
+  // 不会像无限模式那样立刻刷下一只。
+  const noDurationLimit = isEndless || difficulty === 'practice';
   // Boss 血量按难度加厚:困难 +30%、地狱 +100%
   const bossMaxHp = bossHpFor(difficulty);
-  const engineRef = useRef<EngineState>(initEngine(bossMaxHp));
+  const pinyinHintBudget = mode === 'hanzi' ? PINYIN_HINT_BUDGET[difficulty] : 0;
+  const engineRef = useRef<EngineState>(initEngine(bossMaxHp, pinyinHintBudget));
   const [, setVersion] = useState(0);
   const rerender = () => setVersion((n) => n + 1);
 
@@ -350,6 +361,7 @@ export function SoloBattle({ pool, mode, difficulty, inputMode, character, gameM
     e.currentWord = queueRef.current.next();
     e.mechanic = null;
     e.pendingNormalWord = null;
+    e.pinyinRevealed = false;
     wordDeadlineRef.current = now() + wordTimeoutFor(e.bloodbathWordsLeft > 0);
   }
 
@@ -368,6 +380,7 @@ export function SoloBattle({ pool, mode, difficulty, inputMode, character, gameM
     }
     e.currentWord = e.pendingNormalWord;
     e.pendingNormalWord = null;
+    e.pinyinRevealed = false;
     wordDeadlineRef.current = now() + wordTimeoutFor(e.bloodbathWordsLeft > 0);
   }
 
@@ -707,6 +720,23 @@ export function SoloBattle({ pool, mode, difficulty, inputMode, character, gameM
     wordDeadlineRef.current = null;
     e.mechanic = state;
     e.mechanicTotalMs = mechanicDurationMs(id, difficulty);
+    // 拼音提示只服务普通词——机制是短时挑战,不给这个机会,揭示状态也不该
+    // 从冻结前的普通词那里漏过来。
+    e.pinyinRevealed = false;
+    rerender();
+  }
+
+  /**
+   * 按 Q 揭示当前普通词的拼音,每局限量(PINYIN_HINT_BUDGET,按难度定)。
+   * 只对普通词生效——机制进行中不给用,理由同 useSkill 的注释:机制是围绕
+   * 短时挑战设计的,不该被普通词的辅助机制波及。
+   */
+  function revealPinyinHint(): void {
+    const e = engineRef.current;
+    if (e.ended || e.mechanic || !e.currentWord) return;
+    if (e.pinyinRevealed || e.pinyinHintsLeft <= 0) return;
+    e.pinyinHintsLeft -= 1;
+    e.pinyinRevealed = true;
     rerender();
   }
 
@@ -714,7 +744,7 @@ export function SoloBattle({ pool, mode, difficulty, inputMode, character, gameM
     const e = engineRef.current;
     if (e.ended) return;
     const elapsed = now();
-    e.remainingMs = isEndless ? elapsed : Math.max(0, BATTLE_DURATION_MS - elapsed);
+    e.remainingMs = noDurationLimit ? elapsed : Math.max(0, BATTLE_DURATION_MS - elapsed);
 
     if (e.mechanic && elapsed >= e.mechanic.deadline) {
       resolveMechanicFail();
@@ -725,9 +755,10 @@ export function SoloBattle({ pool, mode, difficulty, inputMode, character, gameM
       resolveNormalMiss();
       return;
     }
-    // 无限模式没有狂暴倒计时,只有血量归零才结束;上面那行 remainingMs 在
-    // 无限模式下被当成「已存活时长」用于展示,不参与结束判定。
-    if (!isEndless && e.remainingMs <= 0) {
+    // 无限模式、练习难度都没有狂暴倒计时;上面那行 remainingMs 这时被当成
+    // 「已用时」用于展示,不参与结束判定——无限模式只看血量归零,练习模式
+    // 只看泰坦有没有被打死。
+    if (!noDurationLimit && e.remainingMs <= 0) {
       e.ended = true;
       rerender();
       finish(false, 'time_up');
@@ -811,6 +842,15 @@ export function SoloBattle({ pool, mode, difficulty, inputMode, character, gameM
       return;
     }
 
+    // Q 揭示拼音提示。★ 只在汉字模式下拦截——拼音模式里 q 是玩家要打进输入框
+    // 的合法拼音字母(七/去/青……),抢在这里会直接打断输入。isComposing 判断
+    // 挡住的是中文输入法用拼音字母敲汉字候选的那一瞬间,理由同上面的 Tab。
+    if (mode === 'hanzi' && ev.key.toLowerCase() === 'q' && !ev.nativeEvent.isComposing) {
+      ev.preventDefault();
+      revealPinyinHint();
+      return;
+    }
+
     // 组合输入下 Enter 不做任何事:玩家可能刚打完一长串正要回头改,
     // 这时候把输入清掉是最气人的行为。
     if (inputMode === 'composed') return;
@@ -846,6 +886,8 @@ export function SoloBattle({ pool, mode, difficulty, inputMode, character, gameM
             <div className="battle__endless-stat">
               已存活 {formatDuration(e.remainingMs)} · 已击倒 <strong>{e.kills}</strong> 只
             </div>
+          ) : difficulty === 'practice' ? (
+            <div className="battle__endless-stat">已用时 {formatDuration(e.remainingMs)} · 不限时,慢慢打</div>
           ) : (
             <CountdownBar label="狂暴倒计时" remainingMs={e.remainingMs} totalMs={BATTLE_DURATION_MS} variant="enrage" />
           )}
@@ -876,9 +918,16 @@ export function SoloBattle({ pool, mode, difficulty, inputMode, character, gameM
         mode={mode}
         inputProps={{ ...inputProps, ref: inputRef, onKeyDown }}
         isInterrupt={!!e.mechanic}
-        showReading={showReading}
+        showReading={showReading || e.pinyinRevealed}
         inputMode={inputMode}
       />
+      {pinyinHintBudget > 0 && !e.mechanic && (
+        <div className="battle__pinyin-hint">
+          {e.pinyinHintsLeft > 0
+            ? <>按 <kbd>Q</kbd> 查看这个词的拼音 · 本局还剩 {e.pinyinHintsLeft}/{pinyinHintBudget} 次</>
+            : '拼音提示已经用完了'}
+        </div>
+      )}
       <div className="battle__actions">
         <SkillButton
           skill={skill}
