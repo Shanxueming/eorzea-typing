@@ -27,6 +27,23 @@ export type ShareOutcome =
 
 const FONT = "'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif";
 
+/** 艺术字标题:渐变填色 + 发光描边。用完必须清掉 shadowBlur,不然后面画的东西全带光晕 */
+function drawTitle(ctx: CanvasRenderingContext2D, text: string, x: number, y: number): void {
+  ctx.font = `900 30px ${FONT}`;
+  const width = ctx.measureText(text).width;
+  const gradient = ctx.createLinearGradient(x, 0, x + width, 0);
+  gradient.addColorStop(0, '#ffd47f');
+  gradient.addColorStop(0.5, '#ff9e6d');
+  gradient.addColorStop(1, '#7fd8e8');
+
+  ctx.save();
+  ctx.shadowColor = 'rgba(255, 212, 127, 0.55)';
+  ctx.shadowBlur = 14;
+  ctx.fillStyle = gradient;
+  ctx.fillText(text, x, y);
+  ctx.restore();
+}
+
 function drawCard(fields: ShareFields): HTMLCanvasElement {
   const scale = 2;
   const W = 720;
@@ -48,9 +65,7 @@ function drawCard(fields: ShareFields): HTMLCanvasElement {
   ctx.lineWidth = 2;
   ctx.strokeRect(10, 10, W - 20, H - 20);
 
-  ctx.fillStyle = '#ffd47f';
-  ctx.font = `bold 26px ${FONT}`;
-  ctx.fillText('最终幻想14打字通 · 战绩', 40, 60);
+  drawTitle(ctx, '最终幻想14打字通 · 战绩', 40, 62);
 
   ctx.fillStyle = '#8a97b5';
   ctx.font = `14px ${FONT}`;

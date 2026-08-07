@@ -1845,17 +1845,41 @@ button:disabled {
   padding-top: 10px;
   border-top: 1px solid rgba(127, 216, 232, 0.15);
 }
+/*
+ * 「本局超越了多少人」做成艺术字:渐变填色裁到文字形状(background-clip: text)
+ * 再叠一层同色 drop-shadow 当发光。★ strong 不能自己设 color——一旦它有
+ * 不透明色,就会盖住父级裁切出来的渐变、那一段文字变成纯色,和外层断层。
+ * 靠继承父级的 transparent,让整块文字用同一份渐变背景显色。
+ */
 .results__share-percentile {
-  font-size: 14px;
-  color: var(--color-text);
+  align-self: stretch;
+  text-align: center;
+  padding: 16px 12px;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.6;
+  background: linear-gradient(120deg, #ffd47f 0%, #ff9e6d 45%, #7fd8e8 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 0 10px rgba(255, 212, 127, 0.4));
 }
 .results__share-percentile strong {
-  color: #ffd47f;
-  font-size: 16px;
+  font-size: 32px;
+  font-weight: 900;
 }
 .results__share-percentile--dim {
-  font-size: 12px;
+  /* 非排名难度的提示只是个说明文字,不需要艺术字效果 */
+  background: none;
+  -webkit-background-clip: initial;
+  background-clip: initial;
   color: var(--color-text-dim);
+  filter: none;
+  text-align: left;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 400;
 }
 .results__share-btn {
   border-color: #7fd8e8;
