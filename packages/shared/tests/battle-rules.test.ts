@@ -108,11 +108,11 @@ describe('输入模式按难度收敛', () => {
 });
 
 describe('难度数值表', () => {
-  it('普通词限时逐档收紧:25s / 16s / 12s / 9s', () => {
+  it('普通词限时逐档收紧:25s / 16s / 10s / 6.66s', () => {
     expect(DIFFICULTY_WORD_TIMEOUT_MS.easy).toBe(25_000);
     expect(DIFFICULTY_WORD_TIMEOUT_MS.normal).toBe(16_000);
-    expect(DIFFICULTY_WORD_TIMEOUT_MS.hard).toBe(12_000);
-    expect(DIFFICULTY_WORD_TIMEOUT_MS.hell).toBe(9_000);
+    expect(DIFFICULTY_WORD_TIMEOUT_MS.hard).toBe(10_000);
+    expect(DIFFICULTY_WORD_TIMEOUT_MS.hell).toBe(6_660);
   });
 
   it('读条窗口逐档收紧:普通 10s / 困难 6.5s / 地狱 5s', () => {
@@ -196,16 +196,16 @@ describe('难度分布(按判定字符数筛)', () => {
 });
 
 describe('泰坦血量按难度加厚', () => {
-  it('简单/普通是基准值,困难 ×1.3,地狱 ×3', () => {
+  it('简单/普通是基准值,困难 ×1.625,地狱 ×3.75', () => {
     expect(DIFFICULTY_BOSS_HP_MULTIPLIER.easy).toBe(1);
     expect(DIFFICULTY_BOSS_HP_MULTIPLIER.normal).toBe(1);
-    expect(DIFFICULTY_BOSS_HP_MULTIPLIER.hard).toBeCloseTo(1.3, 10);
-    expect(DIFFICULTY_BOSS_HP_MULTIPLIER.hell).toBe(3);
+    expect(DIFFICULTY_BOSS_HP_MULTIPLIER.hard).toBeCloseTo(1.625, 10);
+    expect(DIFFICULTY_BOSS_HP_MULTIPLIER.hell).toBe(3.75);
   });
 
-  it('★ 2026-08-06:地狱在原先「翻倍」的基础上又提了 50%,bossHpFor 直接反映这个数', () => {
-    expect(bossHpFor('hell')).toBe(BOSS_MAX_HP * 3);
-    expect(bossHpFor('hell')).toBe(18_000);
+  it('★ 2026-08-07:困难/地狱在上一版基础上又各加了 25%,bossHpFor 直接反映这个数', () => {
+    expect(bossHpFor('hell')).toBe(BOSS_MAX_HP * 3.75);
+    expect(bossHpFor('hell')).toBe(22_500);
   });
 });
 

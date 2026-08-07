@@ -16,16 +16,16 @@ import { THRESHOLDS } from './anticheat';
 export const BOSS_MAX_HP = 6000;
 
 /**
- * Boss 血量按难度加厚。困难 +30%、地狱 +200%(在原先「+100%」的基础上
- * 又提了 50%,即 ×2 → ×3)—— 高难度不只是限时更紧,一局要打的总量也更大,
+ * Boss 血量按难度加厚。困难 ×1.625、地狱 ×3.75(在上一版「困难 +30%、地狱 ×3」
+ * 的基础上又各加了 25%)—— 高难度不只是限时更紧,一局要打的总量也更大,
  * 拉开的是「能不能撑到最后」而不只是「手够不够快」。简单与普通维持基准值。
  */
 export const DIFFICULTY_BOSS_HP_MULTIPLIER: Record<Difficulty, number> = {
   practice: 1,
   easy: 1,
   normal: 1,
-  hard: 1.3,
-  hell: 3,
+  hard: 1.625,
+  hell: 3.75,
 };
 
 export function bossHpFor(difficulty: Difficulty): number {
@@ -55,8 +55,8 @@ export const DIFFICULTY_WORD_TIMEOUT_MS: Record<Difficulty, number> = {
   practice: 25_000,
   easy: 25_000,
   normal: 16_000,
-  hard: 12_000,
-  hell: 9_000,
+  hard: 10_000,
+  hell: 6_660,
 };
 
 /**
