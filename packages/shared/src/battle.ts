@@ -351,6 +351,13 @@ export function verdictOf(trustScore: number): TrustVerdict {
 
 export interface WordQueue {
   next(): WordEntry;
+  /**
+   * 强制丢弃当前牌堆,下一次 next() 会重新洗一副全新的牌。
+   * 无限模式换 Boss 时用——保证"这一只怪物"从头到尾不重复,不被上一只
+   * 怪物用剩的半副牌堆污染;reset 不清 lastDrawn,换 Boss 那一刻的边界
+   * 依然会被下面的"防背靠背"逻辑保护到,玩家感觉不出这是两副牌接起来的。
+   */
+  reset(): void;
 }
 
 /**
@@ -362,6 +369,14 @@ export interface WordQueue {
  *
  *   现在换成一副真正跨批次持续的"牌堆":一次性洗好整个 pool,顺序发完才重新
  *   洗一次,保证同一个词至少要隔 pool.length 次才可能再出现。
+ *
+ * ★ 2026-08-08 补充修复:上面这条保证在**牌堆边界**上有个漏洞——每次重新洗牌
+ *   都是对整个 pool 独立做一次 Fisher-Yates,新牌堆和上一副牌堆的最后一张
+ *   完全没有关联。这意味着"上一副牌堆发出的最后一个词"和"新牌堆发出的第一个
+ *   词"有 1/pool.length 的概率是同一个词——池子越小(自定义分类、难度筛过之后
+ *   的窄词池)撞上的概率越高,玩家看到的就是"连续两次同一个词"这种很扎眼的
+ *   高频重复。现在洗完牌之后额外检查一次:如果新牌堆第一个要发的词和上一次
+ *   发出去的词撞了,就把它和牌堆里别的位置换一下,彻底堵死这个边界。
  */
 export function createWordQueue(pool: readonly WordEntry[], seed: string): WordQueue {
   if (pool.length === 0) {
@@ -369,6 +384,7 @@ export function createWordQueue(pool: readonly WordEntry[], seed: string): WordQ
   }
   const rng = createRng(seed);
   let bag: WordEntry[] = [];
+  let lastDrawn: WordEntry | null = null;
 
   function reshuffle(): void {
     bag = pool.slice();
@@ -376,12 +392,23 @@ export function createWordQueue(pool: readonly WordEntry[], seed: string): WordQ
       const j = rng.int(i + 1);
       [bag[i], bag[j]] = [bag[j], bag[i]];
     }
+    // pop() 从数组末尾取,所以刚洗好的这副牌"最先被发出去"的是 bag[bag.length - 1]。
+    const head = bag.length - 1;
+    if (lastDrawn && head > 0 && bag[head].id === lastDrawn.id) {
+      const swapWith = rng.int(head); // 0..head-1,不会选到 head 自己
+      [bag[head], bag[swapWith]] = [bag[swapWith], bag[head]];
+    }
   }
 
   return {
     next(): WordEntry {
       if (bag.length === 0) reshuffle();
-      return bag.pop() as WordEntry;
+      const word = bag.pop() as WordEntry;
+      lastDrawn = word;
+      return word;
+    },
+    reset(): void {
+      bag = [];
     },
   };
 }

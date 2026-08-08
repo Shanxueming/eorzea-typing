@@ -24,6 +24,7 @@ import {
   TITAN_WRATH_PITY_STEP,
   allowsComposedInput,
   bossHpFor,
+  createWordQueue,
   filterPoolByDifficulty,
   hasTitanWrath,
   resolveInputMode,
@@ -256,5 +257,62 @@ describe('打断词池不能按难度筛', () => {
     // 可选的打断词随之变少;自定义分类下完全可能一个都不剩,泰坦之怒就静默失效了。
     expect(shortInHard.length).toBeLessThan(shortInFull.length);
     expect(shortInFull.length).toBeGreaterThan(0);
+  });
+});
+
+describe('createWordQueue:牌堆不重复', () => {
+  it('一副牌堆(pool.length 次连续 next)之内绝不重复', () => {
+    const q = createWordQueue(POOL, 'seed-a');
+    const seen = new Set<string>();
+    for (let i = 0; i < POOL.length; i++) {
+      const id = q.next().id;
+      expect(seen.has(id)).toBe(false);
+      seen.add(id);
+    }
+  });
+
+  it('★ 2026-08-08:重新洗牌的边界不会背靠背出现同一个词', () => {
+    // 小词池(2 个词)让边界撞车的概率被放大很多倍,几千次跑下来只要漏一次就会挂,
+    // 足够暴露"两副牌独立洗、边界处 1/N 概率撞同词"这个漏洞。
+    const pool = [word('a', '甲', 1), word('b', '乙', 1)];
+    for (let s = 0; s < 200; s++) {
+      const q = createWordQueue(pool, `seed-${s}`);
+      let prev = q.next().id;
+      for (let i = 0; i < 500; i++) {
+        const cur = q.next().id;
+        expect(cur).not.toBe(prev);
+        prev = cur;
+      }
+    }
+  });
+
+  it('reset() 之后立刻重洗一副全新的牌,不会沿用上一副剩下的部分', () => {
+    const q = createWordQueue(POOL, 'seed-reset');
+    q.next();
+    q.next();
+    q.reset();
+    // reset 之后应该能重新走完一整轮 pool.length 次而不重复——
+    // 如果 reset 没有真的清空旧牌堆,这里会提前重复或提前触发一次意外的洗牌。
+    const seen = new Set<string>();
+    for (let i = 0; i < POOL.length; i++) {
+      const id = q.next().id;
+      expect(seen.has(id)).toBe(false);
+      seen.add(id);
+    }
+  });
+
+  it('同一个 seed 产生完全相同的序列——联机客户端/服务端各自独立调用也必须一致', () => {
+    const a = createWordQueue(POOL, 'shared-seed');
+    const b = createWordQueue(POOL, 'shared-seed');
+    const seqA = Array.from({ length: POOL.length * 3 }, () => a.next().id);
+    const seqB = Array.from({ length: POOL.length * 3 }, () => b.next().id);
+    expect(seqA).toEqual(seqB);
+  });
+
+  it('只有一个词的池子:允许连续重复(无法避免),不应该抛错或死循环', () => {
+    const q = createWordQueue([word('only', '独一', 1)], 'seed-single');
+    for (let i = 0; i < 5; i++) {
+      expect(q.next().id).toBe('only');
+    }
   });
 });

@@ -536,6 +536,7 @@ export function SoloBattle({ pool, mode, difficulty, inputMode, character, gameM
     }
     e.kills += 1;
     e.mechanic = null; // 换 Boss 时清掉进行中的机制,避免跨 Boss 悬着
+    queueRef.current.reset(); // 换新 Boss,单独重洗一副牌——保证"这一只"打过程中不重词
     e.bossMaxHp = Math.round(e.bossMaxHp * ENDLESS_BOSS_HP_GROWTH);
     e.bossHp = e.bossMaxHp;
     // ★ 玩家血量全程只有一条,不随击杀刷新——泰坦的血条换新是"下一只"天经地义,
