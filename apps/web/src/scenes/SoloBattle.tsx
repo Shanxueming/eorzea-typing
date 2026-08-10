@@ -2,7 +2,7 @@ import { useEffect, useRef, useState, type KeyboardEvent } from 'react';
 import type { AvatarState, TypingMode, WordAttempt, WordCategory, WordEntry } from '@eorzea/shared/types';
 import { computeDamage, computeScore, computeStats, targetOf, type SessionStats } from '@eorzea/shared/scoring';
 import { analyzeSession, checkAttempt } from '@eorzea/shared/anticheat';
-import { bossHpFor, createWordQueue, filterPoolByDifficulty } from '@eorzea/shared/battle';
+import { bossHpFor, createWordQueue, expandPinyinCandidates, filterPoolByDifficulty } from '@eorzea/shared/battle';
 import {
   ENDLESS_MECHANIC_CHANCE,
   ENDLESS_MECHANIC_THRESHOLDS,
@@ -614,7 +614,11 @@ export function SoloBattle({ pool, mode, difficulty, inputMode, character, gameM
     if (!e.currentWord) return;
     const word = e.currentWord;
     attemptsRef.current.push({ ...payload, wordId: word.id });
-    targetsRef.current.set(word.id, targetOf(word, mode));
+    // 打对了就把「实际打的这串」记成这个词的判定文本——拼音模式下玩家可能
+    // 命中的是某个多音字的容错读音变体(见 battle.ts 的 HIGH_RISK_POLYPHONES),
+    // 不一定是 targetOf 算出来的那个"标准答案",但 status===complete 已经
+    // 证明它是被接受的正确答案,直接拿它当参照最准确,不用再猜是哪个变体命中的。
+    targetsRef.current.set(word.id, payload.submitted);
     recordReview(word, 'correct');
 
     const prevBossHp = e.bossHp;
@@ -648,7 +652,8 @@ export function SoloBattle({ pool, mode, difficulty, inputMode, character, gameM
     const prevBossHp = e.bossHp;
     if (word) {
       attemptsRef.current.push({ ...payload, wordId: word.id });
-      targetsRef.current.set(word.id, targetOf(word, mode));
+      // 同上面普通词分支的理由:记实际命中的那一串,兼容拼音多音字容错变体
+      targetsRef.current.set(word.id, payload.submitted);
       applyDamage(word, true);
     }
     e.interruptsSucceeded += 1;
@@ -813,10 +818,16 @@ export function SoloBattle({ pool, mode, difficulty, inputMode, character, gameM
   // 否则打普通词。两者共用同一个输入框与同一套 IME 处理。
   const mechanicWords = e.mechanic ? currentMechanicWords(e.mechanic) : [];
   const activeEntry = mechanicWords[0] ?? e.currentWord;
+  // 拼音模式:词库读音是脚本批量生成的,生僻专名常猜错多音字——把「逻辑上的
+  // 目标词」展开成所有可接受的读音变体喂给 candidates,判定容错见 battle.ts
+  // 里 HIGH_RISK_POLYPHONES 的说明。汉字模式没有这个问题,不需要展开。
+  const logicalTargets = mechanicWords.length > 0 ? mechanicWords : e.currentWord ? [e.currentWord] : [];
+  const typingCandidates = mode === 'pinyin' ? expandPinyinCandidates(logicalTargets)
+    : mechanicWords.length > 0 ? mechanicWords : undefined;
 
   const { state: typingState, inputRef, inputProps, reset: resetTyping } = useTypingInput({
     entry: activeEntry,
-    candidates: mechanicWords.length > 0 ? mechanicWords : undefined,
+    candidates: typingCandidates,
     mode,
     now,
     onComplete: handleComplete,

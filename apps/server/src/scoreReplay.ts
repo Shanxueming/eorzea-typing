@@ -20,6 +20,7 @@ import type { WordAttempt, WordEntry, TypingMode } from '@eorzea/shared/types';
 import { computeDamage, computeScore, computeStats, targetOf } from '@eorzea/shared/scoring';
 import { analyzeSession, checkAttempt } from '@eorzea/shared/anticheat';
 import {
+  acceptedPinyinTargets,
   bossHpFor,
   createWordQueue,
   filterFeaturedWordPool,
@@ -63,6 +64,19 @@ export type ReplayVerdict =
       damage: number;
     }
   | { ok: false; reason: string; flags: string[] };
+
+/**
+ * 这个词在这局的判定模式下,所有能算「打对」的判定文本。
+ *
+ * ★ 拼音模式下必须和客户端(SoloBattle.tsx 的 expandPinyinCandidates)走
+ *   同一张 HIGH_RISK_POLYPHONES 表,否则客户端判过的多音字容错读音,服务端
+ *   重放核算时会判不过——好人的成绩因为一个多音字被 word_not_in_sequence
+ *   一类的理由拒收,比放过一次读音判定还伤。汉字模式没有这个问题,退回单一
+ *   canonical 判定文本即可。
+ */
+function acceptedTargetsFor(word: WordEntry, mode: TypingMode): string[] {
+  return mode === 'pinyin' ? acceptedPinyinTargets(word) : [targetOf(word, mode)];
+}
 
 /** 一局最多允许多少个 attempt。防止有人塞十万条把服务端 CPU 打满 */
 const MAX_ATTEMPTS = 2000;
@@ -137,15 +151,18 @@ export async function replayAndScore(payload: ReplayPayload): Promise<ReplayVerd
         // 但仍然要过一遍硬校验 —— 作弊者一样可以往机制词上做手脚。
         const mech = fullPool.find((w) => w.id === attempt.wordId);
         if (mech) {
-          const mechTarget = targetOf(mech, payload.mode);
-          targets.set(mech.id, mechTarget);
+          const mechTargets = acceptedTargetsFor(mech, payload.mode);
+          const mechHit = mechTargets.includes(attempt.submitted);
+          // 记进 targets 的是实际命中的那一串(拼音模式下可能是容错变体),
+          // 没命中就随便记 canonical 的那个——反正后面比对时反正对不上。
+          targets.set(mech.id, mechHit ? attempt.submitted : mechTargets[0]);
           const mechCheck = checkAttempt(
-            attempt, { wordId: mech.id, target: mechTarget }, attempt.submittedAt,
+            attempt, { wordId: mech.id, target: mechTargets[0] }, attempt.submittedAt,
           );
           if (!mechCheck.ok) mechCheck.flags.forEach((f) => hardFlags.add(f));
           // 机制通关按打断计:伤害带 INTERRUPT_BONUS,并计入打断成功数。
           // 不算的话服务端重算的分数会系统性低于客户端,好人全被判成虚报。
-          if (attempt.submitted === mechTarget) {
+          if (mechHit) {
             damage += computeDamage(mech.difficulty, combo, true);
             combo += 1;
             interrupts += 1;
@@ -160,16 +177,18 @@ export async function replayAndScore(payload: ReplayPayload): Promise<ReplayVerd
     // 窗口用掉一段就补一段,保证后面还有 WINDOW_AHEAD 个词可看
     while (window.length - cursor < WINDOW_AHEAD) window.push(queue.next());
 
-    const target = targetOf(word, payload.mode);
-    targets.set(word.id, target);
+    const wordTargets = acceptedTargetsFor(word, payload.mode);
+    const wordHit = wordTargets.includes(attempt.submitted);
+    // 记进 targets 的是实际命中的那一串,理由同上面机制词分支
+    targets.set(word.id, wordHit ? attempt.submitted : wordTargets[0]);
 
     // 硬校验:合成事件、时间线倒流、粘贴。
     // 单机没有服务端墙钟做基准,用 attempt 自己的 submittedAt —— 于是
     // clock_skew 这条在单机天然不成立,真正起作用的是其余三条。
-    const check = checkAttempt(attempt, { wordId: word.id, target }, attempt.submittedAt);
+    const check = checkAttempt(attempt, { wordId: word.id, target: wordTargets[0] }, attempt.submittedAt);
     if (!check.ok) check.flags.forEach((f) => hardFlags.add(f));
 
-    if (attempt.submitted === target) {
+    if (wordHit) {
       const dmg = computeDamage(word.difficulty, combo, false);
       damage += dmg;
       combo += 1;

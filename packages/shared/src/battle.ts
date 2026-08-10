@@ -12,6 +12,7 @@ import type { WordEntry } from './types';
 import { buildSequence } from './wordbank';
 import { createRng } from './rng';
 import { THRESHOLDS } from './anticheat';
+import { targetOf } from './scoring';
 
 export const BOSS_MAX_HP = 6000;
 
@@ -428,4 +429,86 @@ export function pickShortInterruptWord(pool: readonly WordEntry[], seed: string)
   const mid = short.filter((entry) => entry.difficulty === 2);
   const src = hard.length > 0 ? hard : mid.length > 0 ? mid : short;
   return src.length > 0 ? buildSequence(src, 1, seed)[0] : null;
+}
+
+/**
+ * 拼音模式的多音字容错。
+ *
+ * ★ 背景:词库的 `reading` 字段是 `pypinyin.lazy_pinyin` 批量生成的(见
+ *   scripts/build_wordbank.py),整词命中内置词组词典就准,命中不了就退化成
+ *   逐字取最常见读音、零上下文——FF14 的生造专有名词大量不在任何通用词典里,
+ *   算出来的读音时对时错,而且错误是稀疏、随机分布在 9.9 万条词里的,没法靠
+ *   人工审校或更强分词根治(见此前调查:仅 starter 分类就有 10% 的词含着至少
+ *   一个"两种读音都常见"的字)。
+ *
+ * ★ 思路不是"把拼音标对",而是"标错了也不致命":对这批高危字,判定时同时
+ *   接受它另一个常见读音,一个字打错了不该让玩家看着自己明明打对的东西被判负。
+ *   这张表只收"两个读音在中文里都够常见"的字,不是全部 1096 个多音字——
+ *   宽容要有边界,不能什么读音都收。
+ *
+ * ★ 只影响拼音模式的判定容忍度,不改词库数据本身、不改 reading 字段——
+ *   `data/wordbanks/*.json` 依然只读,这张表完全独立维护。以后如果攒够了
+ *   玩家实际打对却被判错的反馈(见结算页/管理后台的勘误信号),再往这里加字。
+ */
+export const HIGH_RISK_POLYPHONES: Readonly<Record<string, readonly string[]>> = {
+  长: ['chang', 'zhang'], 乐: ['le', 'yue'], 重: ['zhong', 'chong'], 都: ['dou', 'du'],
+  行: ['xing', 'hang'], 藏: ['cang', 'zang'], 血: ['xue', 'xie'], 传: ['chuan', 'zhuan'],
+  会: ['hui', 'kuai'], 没: ['mei', 'mo'], 数: ['shu', 'shuo'], 弹: ['dan', 'tan'],
+  调: ['diao', 'tiao'], 折: ['zhe', 'she'], 的: ['de', 'di'], 夹: ['jia', 'ga'],
+  度: ['du', 'duo'], 率: ['lv', 'shuai'], 称: ['cheng', 'chen'], 参: ['can', 'shen'],
+  系: ['xi', 'ji'], 薄: ['bao', 'bo'], 地: ['di', 'de'], 强: ['qiang', 'jiang'],
+  卡: ['ka', 'qia'], 着: ['zhao', 'zhe', 'zhuo'], 落: ['luo', 'la'], 给: ['gei', 'ji'],
+  削: ['xiao', 'xue'], 咽: ['yan', 'ye'], 露: ['lu', 'lou'], 茜: ['qian', 'xi'],
+  尉: ['wei', 'yu'], 奇: ['qi', 'ji'],
+};
+
+/** 单条候选最多展开这么多个读音变体——单个词撞上两个高危字已经极罕见,封顶避免组合爆炸 */
+const MAX_PINYIN_VARIANTS = 4;
+
+/**
+ * 给一个词生成拼音模式下所有可接受的读音变体(WordEntry 形态,方便直接喂给
+ * useTypingInput 现成的 candidates 通道——三连桶用的就是这条通道)。
+ *
+ * 只替换**单个**高危字的位置,不做多个高危字的笛卡尔积——真实词库里一个词
+ * 同时踩中两个高危字的情况极少,笛卡尔积只会不必要地拉长候选列表(每个候选
+ * 每次按键都要跑一遍 judgeInput)。返回数组第一项永远是原始 entry 本身。
+ */
+export function pinyinReadingVariants(entry: WordEntry): WordEntry[] {
+  const chars = Array.from(entry.typeText);
+  const syllables = entry.reading.split(' ');
+  // 字数对不上说明生成时出过岔子,不冒险生成变体,只用原始读音
+  if (chars.length !== syllables.length) return [entry];
+
+  const variants = new Map<string, WordEntry>([[entry.reading, entry]]);
+  for (let i = 0; i < chars.length && variants.size < MAX_PINYIN_VARIANTS; i++) {
+    const alts = HIGH_RISK_POLYPHONES[chars[i]];
+    if (!alts || !alts.includes(syllables[i])) continue;
+    for (const alt of alts) {
+      if (alt === syllables[i] || variants.size >= MAX_PINYIN_VARIANTS) continue;
+      const swapped = syllables.slice();
+      swapped[i] = alt;
+      const reading = swapped.join(' ');
+      if (!variants.has(reading)) variants.set(reading, { ...entry, reading });
+    }
+  }
+  return Array.from(variants.values());
+}
+
+/**
+ * 拼音模式下 useTypingInput 实际要用的候选列表:把「逻辑上的目标词」
+ * (普通词是 1 个,三连桶/三穿一是 2~3 个)逐个展开成读音变体再拼起来。
+ * 汉字模式不存在多音字判定问题,调用方不需要用这个函数。
+ */
+export function expandPinyinCandidates(words: readonly WordEntry[]): WordEntry[] {
+  return words.flatMap(pinyinReadingVariants);
+}
+
+/**
+ * 拼音模式下这个词所有可接受的判定文本(targetOf 的多读音版本)。
+ * 服务端重放核算(scoreReplay.ts)用它替代单一 targetOf 做「打的对不对」的判断——
+ * 必须和客户端 expandPinyinCandidates 走同一张 HIGH_RISK_POLYPHONES 表,
+ * 否则客户端判过的词服务端核算不过,好人的成绩会被 word 判错拒收。
+ */
+export function acceptedPinyinTargets(entry: WordEntry): string[] {
+  return pinyinReadingVariants(entry).map((w) => targetOf(w, 'pinyin'));
 }

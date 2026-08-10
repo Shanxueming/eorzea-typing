@@ -13,6 +13,7 @@ import {
   DIFFICULTY_WORD_TIMEOUT_MS,
   ENDLESS_MIN_WORD_TIMEOUT_MS,
   ENDLESS_TIMEOUT_SHRINK_PER_KILL_MS,
+  HIGH_RISK_POLYPHONES,
   MAX_INTERRUPT_WORD_LENGTH,
   PRIMAL_RELEASE_DAMAGE_MULTIPLIER,
   PRIMAL_RELEASE_HEAL,
@@ -22,11 +23,14 @@ import {
   TITAN_WRATH_ON_SUCCESS_CHANCE,
   TITAN_WRATH_PITY_CAP,
   TITAN_WRATH_PITY_STEP,
+  acceptedPinyinTargets,
   allowsComposedInput,
   bossHpFor,
   createWordQueue,
+  expandPinyinCandidates,
   filterPoolByDifficulty,
   hasTitanWrath,
+  pinyinReadingVariants,
   resolveInputMode,
   titanWrathChance,
 } from '../src/battle';
@@ -314,5 +318,67 @@ describe('createWordQueue:牌堆不重复', () => {
     for (let i = 0; i < 5; i++) {
       expect(q.next().id).toBe('only');
     }
+  });
+});
+
+/** 带 reading 字段的词条,拼音多音字容错测试专用 */
+function pinyinWord(id: string, typeText: string, reading: string): WordEntry {
+  return { id, text: typeText, typeText, reading, category: 'starter', difficulty: 1, pure: true };
+}
+
+describe('拼音模式多音字容错', () => {
+  it('★ 高危字命中时,变体第一项永远是原始 entry 本身', () => {
+    const w = pinyinWord('w1', '长城', 'chang cheng');
+    const variants = pinyinReadingVariants(w);
+    expect(variants[0]).toBe(w);
+    expect(variants.length).toBeGreaterThan(1);
+    // "长" 在表里还有 zhang 这个读音,应该出现一个 "zhang cheng" 的变体
+    expect(variants.map((v) => v.reading)).toContain('zhang cheng');
+  });
+
+  it('没踩中任何高危字:只返回原始 entry,不凭空生成变体', () => {
+    const w = pinyinWord('w2', '铁壁', 'tie bi');
+    expect(pinyinReadingVariants(w)).toEqual([w]);
+  });
+
+  it('变体和原词共用同一个 id——多候选判定靠 id 认出"打的是哪个词"', () => {
+    const w = pinyinWord('w3', '重要', 'zhong yao');
+    const variants = pinyinReadingVariants(w);
+    expect(variants.every((v) => v.id === 'w3')).toBe(true);
+  });
+
+  it('typeText 字数和 reading 音节数对不上时,不冒险生成变体', () => {
+    const w = pinyinWord('w4', '重要', 'zhong yao le'); // 人为制造错位
+    expect(pinyinReadingVariants(w)).toEqual([w]);
+  });
+
+  it('生僻表里没有的字不受影响,即使读音本身很怪', () => {
+    const w = pinyinWord('w5', '铁壁', 'xyz abc');
+    expect(pinyinReadingVariants(w)).toEqual([w]);
+  });
+
+  it('expandPinyinCandidates 把多个逻辑目标各自展开后拼在一起', () => {
+    const a = pinyinWord('a', '长', 'chang');
+    const b = pinyinWord('b', '铁壁', 'tie bi');
+    const expanded = expandPinyinCandidates([a, b]);
+    // a 有变体(chang/zhang 两个),b 没有变体(只有它自己)
+    expect(expanded.filter((v) => v.id === 'a').length).toBeGreaterThan(1);
+    expect(expanded.filter((v) => v.id === 'b')).toEqual([b]);
+  });
+
+  it('acceptedPinyinTargets 返回的判定文本和 judgeInput 的口径一致(空格已去除)', () => {
+    const w = pinyinWord('w6', '长城', 'chang cheng');
+    const targets = acceptedPinyinTargets(w);
+    expect(targets).toContain('changcheng');
+    expect(targets).toContain('zhangcheng');
+    expect(targets.every((t) => !t.includes(' '))).toBe(true);
+  });
+
+  it('★ 服务端(scoreReplay)和客户端(SoloBattle)必须共用同一张表——这里锁死几个已知案例', () => {
+    // 这几个字是之前玩家反馈/群里手工修过的真实案例,不能被后续改动误删
+    expect(HIGH_RISK_POLYPHONES['都']).toEqual(['dou', 'du']);
+    expect(HIGH_RISK_POLYPHONES['的']).toEqual(['de', 'di']);
+    expect(HIGH_RISK_POLYPHONES['长']).toContain('chang');
+    expect(HIGH_RISK_POLYPHONES['长']).toContain('zhang');
   });
 });

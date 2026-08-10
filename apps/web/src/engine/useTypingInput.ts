@@ -14,14 +14,24 @@
  *      这样中文玩家的节奏数据依然真实,反作弊才有判别依据。
  *
  * 判定逻辑抽成了下面的纯 reducer,可单独测试,不依赖 DOM。
+ *
+ * ★ 2026-08-10 新增「换词残留击键宽容」(见 FRESH_WORD_GRACE_MS):换词那一刻
+ *   (超时/机制/技能跳词都算),玩家手上可能还有一两个键是冲着上一个词打的,
+ *   落到全新词头上大概率对不上第一个字——地狱难度下这会被当场判负,组合输入
+ *   也会被误判成"一上来就打错"。真人看着新词反应过来至少要两三百毫秒,所以
+ *   把"这个词还一个字没打过、且离换词没多久"的第一次判错当噪音吃掉,过了这个
+ *   窗口(或已经打过至少一个字)一切照旧判定,不放松逐字难度本身的规则。
  */
 
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useReducer } from 'react';
 import type { KeystrokeEvent, WordEntry, TypingMode } from '@eorzea/shared/types';
-import { judgeInput } from '@eorzea/shared/scoring';
+import { judgeInput, type JudgeStatus } from '@eorzea/shared/scoring';
 import {
   typingReducer, initialTypingState, type TypingState,
 } from '@eorzea/shared/typingReducer';
+
+/** 见上面文件头「换词残留击键宽容」的说明 */
+const FRESH_WORD_GRACE_MS = 180;
 
 // ───────────────────────── React hook ─────────────────────────
 
@@ -71,6 +81,20 @@ function pickCandidate(
     if (r.status === 'progress' && !progress) progress = c;
   }
   return progress ?? candidates[0];
+}
+
+/**
+ * 这次判错是不是「换词残留击键」——见文件头「换词残留击键宽容」的说明。
+ * 三个条件缺一不可:这个词此前一个字都没打过(不然就是玩家已经在跟这个
+ * 词较劲了,打错就是真的打错)、离换词没多久、这次判定确实是 error。
+ */
+function isFreshWordResidualError(
+  inputBefore: string,
+  wordStartedAt: number,
+  nowMs: number,
+  status: JudgeStatus,
+): boolean {
+  return inputBefore === '' && nowMs - wordStartedAt < FRESH_WORD_GRACE_MS && status === 'error';
 }
 
 export function useTypingInput(opts: UseTypingInputOptions) {
@@ -140,8 +164,24 @@ export function useTypingInput(opts: UseTypingInputOptions) {
   const handleInput = useCallback((ev: React.FormEvent<HTMLInputElement>) => {
     if (disabled || targetsRef.current.length === 0) return;
     const value = ev.currentTarget.value;
-    dispatch({ type: 'INPUT', value, entry: pickCandidate(targetsRef.current, value, mode), mode });
-  }, [disabled, mode]);
+    const candidate = pickCandidate(targetsRef.current, value, mode);
+
+    // ★ 残留击键宽容,只在合成态之外生效——合成期间的 input 事件给的是拼音
+    //   候选串的中间态,拿它去 judgeInput 必然不匹配,会被误当成"残留"吃掉,
+    //   那就正好踩中文件头★★★警告的那个坑,中文玩家直接打不了字。
+    if (
+      !stateRef.current.isComposing
+      && isFreshWordResidualError(
+        stateRef.current.input, stateRef.current.wordStartedAt, now(),
+        judgeInput(candidate, value, mode).status,
+      )
+    ) {
+      ev.currentTarget.value = '';
+      return;
+    }
+
+    dispatch({ type: 'INPUT', value, entry: candidate, mode });
+  }, [disabled, mode, now]);
 
   const handleCompositionStart = useCallback(() => {
     dispatch({ type: 'COMPOSITION_START' });
@@ -150,13 +190,30 @@ export function useTypingInput(opts: UseTypingInputOptions) {
   const handleCompositionEnd = useCallback((ev: React.CompositionEvent<HTMLInputElement>) => {
     if (targetsRef.current.length === 0) return;
     const value = (ev.target as HTMLInputElement).value;
+    const candidate = pickCandidate(targetsRef.current, value, mode);
+
+    // 同 handleInput 的残留击键宽容:上屏这一刻如果这个词还没真正开始过、
+    // 且离换词没多久,直接判错大概率是上一个词的残留读音上屏,不是这个词
+    // 的真实失误。这里 isComposing 天然为 true(COMPOSITION_END 本身才是
+    // 让它变 false 的那一步),不需要像 handleInput 那样额外判断合成态。
+    if (
+      isFreshWordResidualError(
+        stateRef.current.input, stateRef.current.wordStartedAt, now(),
+        judgeInput(candidate, value, mode).status,
+      )
+    ) {
+      dispatch({ type: 'COMPOSITION_END', value: '', entry: candidate, mode });
+      if (ev.target) (ev.target as HTMLInputElement).value = '';
+      return;
+    }
+
     dispatch({
       type: 'COMPOSITION_END',
       value,
-      entry: pickCandidate(targetsRef.current, value, mode),
+      entry: candidate,
       mode,
     });
-  }, [mode]);
+  }, [mode, now]);
 
   const handleBlur = useCallback(() => dispatch({ type: 'BLUR', now: now() }), [now]);
   const handleFocus = useCallback(() => dispatch({ type: 'FOCUS', now: now() }), [now]);
