@@ -119,6 +119,38 @@ CREATE TABLE IF NOT EXISTS game_starts (
 );
 
 CREATE INDEX IF NOT EXISTS idx_game_starts_day ON game_starts (created_at);
+
+-- ★ 2026-08-10:登录玩家的每一局原始存档,不管有没有点"上传成绩到排行榜"。
+--   排行榜(scores 表)只留「这一轮最好的那条」,没点上传、或者点了但没打过
+--   历史最佳,原始材料就彻底没地方找了——这张表就是补这个口子:只要登录着,
+--   打完一局(不管输赢、要不要上榜)就整局原样存一份,7 天后自动清掉
+--   (见 db/playSessions.ts 的 cleanupOldPlaySessions)。纯粹是"万一榜单
+--   出问题/玩家想找回来"的兜底存档,不是排行榜数据源,不参与任何排名/统计。
+CREATE TABLE IF NOT EXISTS play_sessions (
+  id            INTEGER PRIMARY KEY AUTOINCREMENT,
+  player_id     TEXT NOT NULL REFERENCES players(id),
+  game_mode     TEXT NOT NULL,
+  difficulty    TEXT NOT NULL,
+  input_mode    TEXT NOT NULL,
+  character     TEXT NOT NULL,
+  mode          TEXT NOT NULL,
+  categories    TEXT NOT NULL,
+  pure_only     INTEGER NOT NULL,
+  seed          TEXT NOT NULL,
+  elapsed_ms    INTEGER NOT NULL,
+  victory       INTEGER NOT NULL,
+  reason        TEXT NOT NULL,
+  claimed_score INTEGER NOT NULL,
+  claimed_clear_ms INTEGER,
+  claimed_kills INTEGER,
+  claimed_survived_ms INTEGER,
+  -- 原始逐词遥测(WordAttempt[] 的 JSON),需要的话可以拿去重放核算——
+  -- 这是唯一留着"能重建这一局"的地方,scores 表只存重算之后的结论。
+  attempts      TEXT NOT NULL,
+  created_at    INTEGER NOT NULL
+);
+CREATE INDEX IF NOT EXISTS idx_play_sessions_player ON play_sessions (player_id, created_at);
+CREATE INDEX IF NOT EXISTS idx_play_sessions_created ON play_sessions (created_at);
 `;
 
 /**

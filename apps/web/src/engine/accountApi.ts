@@ -82,7 +82,8 @@ export interface LeaderboardRow {
 }
 
 /**
- * 榜单按固定 3 天一段切分,period=0 是当前这一段,1 是上一段……
+ * 榜单按固定 7 天一段切分(2026-08-10 之前是 3 天,见服务端 scores.ts 里
+ * WINDOW_TRANSITION_AT 的说明),period=0 是当前这一段,1 是上一段……
  * periodStart/periodEnd 是服务端算出来的那一段的起止时间(毫秒),前端不用
  * 自己重算——countdown 和历史标签都直接拿这两个数算,保证跟服务端一致。
  */
@@ -219,6 +220,26 @@ export interface SubmitResult {
 
 export function submitScore(session: Session, payload: SubmitPayload): Promise<SubmitResult> {
   return post('/api/score/submit', {
+    ...payload,
+    playerId: session.displayId,
+    password: session.password,
+  });
+}
+
+/**
+ * 登录玩家打完一局(不管有没有点"上传成绩到排行榜"、也不管上没上榜)就存一份
+ * 原始存档,7 天后服务端自动清理——排行榜(scores 表)只留每轮最好的那条,
+ * 没点上传或者没打破纪录的话原始材料就彻底没地方找了,这个接口补这个口子。
+ * ★ 静默失败:调用方(Results.tsx)catch 掉就行,不重试、不提示、不阻塞体验——
+ *   这只是个兜底存档,不是玩家正在等待的操作。
+ */
+export interface LogSessionPayload extends SubmitPayload {
+  victory: boolean;
+  reason: string;
+}
+
+export function logSession(session: Session, payload: LogSessionPayload): Promise<{ ok: true }> {
+  return post('/api/score/log-session', {
     ...payload,
     playerId: session.displayId,
     password: session.password,

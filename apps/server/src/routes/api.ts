@@ -7,13 +7,15 @@
  *   3. 管理接口全部要 Bearer 令牌,且后台没配环境变量时整体 404。
  */
 import type { FastifyInstance } from 'fastify';
-import type { WordEntry } from '@eorzea/shared/types';
+import type { WordAttempt, WordCategory, WordEntry, TypingMode } from '@eorzea/shared/types';
+import type { CharacterId, Difficulty, GameMode, InputMode } from '@eorzea/shared/battle';
 import {
   RANKED_DIFFICULTIES, MAX_LEADERBOARD_PERIODS_BACK, clampPeriod, getLeaderboard,
   getScorePercentile, leaderboardPeriod, listScoresForAdmin, setScoreHidden, submitScore,
 } from '../db/scores.js';
 import { getCoopLeaderboard, listCoopScoresForAdmin, setCoopScoreHidden } from '../db/coopScores.js';
 import { getDailyStats, recordGameStart } from '../db/telemetry.js';
+import { recordPlaySession } from '../db/playSessions.js';
 import {
   countPlayers, createPlayer, findPlayer, listPlayers, login,
   resetPassword, setBanned, verifyRoot,
@@ -231,6 +233,53 @@ export async function registerApiRoutes(app: FastifyInstance): Promise<void> {
       flags: verdict.flags,
     });
     return { ok: true, status: result.status, trustScore: verdict.trustScore, flags: verdict.flags };
+  });
+
+  /**
+   * 存一局原始存档,不管有没有点"上传成绩到排行榜"、有没有打破纪录——
+   * 排行榜只留每轮最好的那条,这个接口是给登录玩家做"万一榜单出问题/
+   * 想找回来"的兜底,7 天自动清理。★ 不跑 replayAndScore、不做防作弊判定——
+   * 这里只是存档,不是榜单入口,判定放在真正要用这份数据的时候再做。
+   */
+  app.post('/api/score/log-session', async (req, reply) => {
+    const body = req.body as Record<string, unknown> | undefined;
+    if (!body || typeof body.playerId !== 'string' || typeof body.password !== 'string') {
+      return reply.code(400).send({ ok: false, error: 'bad_request' });
+    }
+    const auth = login(body.playerId, body.password);
+    if (!auth.ok) return reply.code(401).send({ ok: false, error: auth.reason });
+
+    const claimed = body.claimed as Record<string, unknown> | undefined;
+    if (
+      typeof body.seed !== 'string' || typeof body.gameMode !== 'string'
+      || typeof body.difficulty !== 'string' || typeof body.inputMode !== 'string'
+      || typeof body.character !== 'string' || typeof body.mode !== 'string'
+      || !Array.isArray(body.categories) || typeof body.pureOnly !== 'boolean'
+      || !Array.isArray(body.attempts) || typeof body.elapsedMs !== 'number'
+      || typeof body.victory !== 'boolean' || typeof body.reason !== 'string'
+      || typeof claimed !== 'object' || claimed === null || typeof claimed.score !== 'number'
+    ) {
+      return reply.code(400).send({ ok: false, error: 'bad_request' });
+    }
+
+    const result = recordPlaySession({
+      playerId: auth.player.id,
+      gameMode: body.gameMode as GameMode,
+      difficulty: body.difficulty as Difficulty,
+      inputMode: body.inputMode as InputMode,
+      character: body.character as CharacterId,
+      mode: body.mode as TypingMode,
+      categories: body.categories as WordCategory[],
+      pureOnly: body.pureOnly,
+      seed: body.seed,
+      elapsedMs: body.elapsedMs,
+      victory: body.victory,
+      reason: body.reason,
+      attempts: body.attempts as WordAttempt[],
+      claimed: claimed as { score: number; kills?: number; survivedMs?: number; clearMs?: number },
+    });
+    if (!result.ok) return reply.code(422).send({ ok: false, error: result.reason });
+    return { ok: true };
   });
 
   // ─────────────────────── 管理后台 ───────────────────────

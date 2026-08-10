@@ -16,25 +16,65 @@ import { getSoloAttemptEstimate } from './telemetry.js';
 export const RANKED_DIFFICULTIES: readonly Difficulty[] = ['hard', 'hell'];
 
 /**
- * 榜单按固定的 3 天一段切分(从 Unix epoch 对齐,不是"从现在往回数"的滚动
- * 窗口)——旧成绩不删,只是查询时按所在的那一段过滤。这样每一段都有确定的
- * 起止时间,能有"下一轮几点几分整轮刷新"这个说法,也能回看之前几轮。
- * 所有榜单(单机 + 联机)统一套用这一条,口径要一致。
+ * 榜单按固定长度切分(从 Unix epoch 对齐,不是"从现在往回数"的滚动窗口)——
+ * 旧成绩不删,只是查询时按所在的那一段过滤。这样每一段都有确定的起止时间,
+ * 能有"下一轮几点几分整轮刷新"这个说法,也能回看之前几轮。所有榜单(单机 +
+ * 联机)统一套用这一条,口径要一致。
  *
- * ★ 3 天是 24 小时的整数倍,所以每一段的边界换算成北京时间永远落在固定的
- *   08:00,不会随着"现在几点"到处漂——这是刻意的,不是巧合。
+ * ★ 2026-08-10:段长从 3 天改成 7 天,但**不能动当前正在进行的那一轮**——
+ *   直接改常量会让 leaderboardPeriod 用新的段长重新对齐整条时间轴,连带把
+ *   "现在算第几轮"也算错,当前这一轮的起止时间会跟着挪位置。所以老规则
+ *   （3 天网格）只管到 WINDOW_TRANSITION_AT 这个时刻为止——这个值就是改动
+ *   当下"当前这一轮"原本该结束的时刻,硬编码成字面量,不能用运行时公式
+ *   重新推导(重新推导的话每次部署/重启都会算出不同的值,起不到"锚点"的
+ *   作用)。到了这个时刻之后,新一轮开始用 7 天网格,往后每一轮都以这个
+ *   时刻为起点顺延。
+ * ★ 3 天、7 天都是 24 小时的整数倍,所以每一段的边界换算成北京时间永远落在
+ *   固定的 08:00,不会随着"现在几点"到处漂——这是刻意的,不是巧合。
  */
-export const LEADERBOARD_WINDOW_MS = 3 * 24 * 60 * 60 * 1000;
+export const LEADERBOARD_WINDOW_MS = 7 * 24 * 60 * 60 * 1000;
+/** 切换前用的旧段长,只用来推算切换点之前的历史轮次边界 */
+const OLD_LEADERBOARD_WINDOW_MS = 3 * 24 * 60 * 60 * 1000;
+/** 2026-08-11 08:00 北京时间——切换前"当前这一轮"原本的结束时刻,见上面的说明 */
+const WINDOW_TRANSITION_AT = 1786406400000;
+
+function oldPeriodStart(index: number): number {
+  return index * OLD_LEADERBOARD_WINDOW_MS;
+}
+
+/**
+ * offset=0 是当前这一段,1 是上一段,以此类推。
+ *
+ * ★ 分段函数:WINDOW_TRANSITION_AT 之前完全沿用旧的 3 天网格(不管 now 是
+ *   在切换前调用、还是切换后回看切换前的历史轮次,这段时间轴上的边界永远
+ *   按旧网格算,结果不会变);到达/超过这个时刻之后,新一轮固定按 7 天网格
+ *   从这个锚点顺延。offset 往回翻,翻出新网格覆盖的范围就自动接上旧网格继续
+ *   往回数——这段过渡期(切换后头三轮,约 21 天)历史轮次的边界是新旧两种
+ *   网格拼起来的,之后 offset 能覆盖的范围就完全落在新网格里了。
+ */
+export function leaderboardPeriod(offset = 0): { start: number; end: number } {
+  const now = Date.now();
+  if (now >= WINDOW_TRANSITION_AT) {
+    const elapsedNewPeriods = Math.floor((now - WINDOW_TRANSITION_AT) / LEADERBOARD_WINDOW_MS);
+    const targetIndex = elapsedNewPeriods - offset;
+    if (targetIndex >= 0) {
+      const start = WINDOW_TRANSITION_AT + targetIndex * LEADERBOARD_WINDOW_MS;
+      return { start, end: start + LEADERBOARD_WINDOW_MS };
+    }
+    // offset 翻过了锚点,退回旧网格继续往回数——从锚点之前最后一个旧网格
+    // 边界起算,targetIndex 是负数,-targetIndex 就是还要往回翻几轮旧网格
+    const lastOldIndex = Math.floor((WINDOW_TRANSITION_AT - 1) / OLD_LEADERBOARD_WINDOW_MS);
+    const start = oldPeriodStart(lastOldIndex - (-targetIndex - 1));
+    return { start, end: start + OLD_LEADERBOARD_WINDOW_MS };
+  }
+  // 还没到切换点:完全沿用旧的 3 天网格,当前这一轮不受任何影响
+  const index = Math.floor(now / OLD_LEADERBOARD_WINDOW_MS) - offset;
+  const start = oldPeriodStart(index);
+  return { start, end: start + OLD_LEADERBOARD_WINDOW_MS };
+}
 
 /** 最多能往回翻几轮历史榜单(0 = 当前这一轮,不含) */
 export const MAX_LEADERBOARD_PERIODS_BACK = 3;
-
-/** offset=0 是当前这一段,1 是上一段,以此类推 */
-export function leaderboardPeriod(offset = 0): { start: number; end: number } {
-  const index = Math.floor(Date.now() / LEADERBOARD_WINDOW_MS) - offset;
-  const start = index * LEADERBOARD_WINDOW_MS;
-  return { start, end: start + LEADERBOARD_WINDOW_MS };
-}
 
 /** 请求里的 period 参数不可信:夹到 [0, MAX_LEADERBOARD_PERIODS_BACK] 之间 */
 export function clampPeriod(raw: unknown): number {
@@ -116,7 +156,7 @@ export type SubmitResult =
 export function submitScore(sub: ScoreSubmission): SubmitResult {
   const db = getDb();
   // ★ 2026-08-08 修复:「existing」必须限定在当前这一轮(period)内查找,不能
-  //   跨轮次全局比较——榜单本来就是按 3 天一轮各自独立的(getLeaderboard /
+  //   跨轮次全局比较——榜单本来就是按轮各自独立的(getLeaderboard /
   //   getScorePercentile 都按 period 过滤),但这里以前没有 created_at 的过滤
   //   条件,导致"每人每条赛道只留一条"实际上是"只留全站历史最好的那一条"。
   //   难度调整之后新纪录天然比旧纪录差,或者单纯运气差,都会让这一轮打出的
@@ -210,7 +250,7 @@ export interface PercentileResult {
  * ★ 比较口径必须和 orderClause / isBetter 完全一致:标准模式比 clear_ms
  *   (越小越强),无限模式比 kills 再比 survived_ms(越大越强)。不能偷懒改用
  *   通用的 score 字段——那不是榜单实际排序用的指标,算出来的名次会跟真榜对不上。
- * ★ 沿用榜单同一套「3 天一轮」窗口(leaderboardPeriod),不然玩家会看到
+ * ★ 沿用榜单同一套「按轮」窗口(leaderboardPeriod),不然玩家会看到
  *   「打败了 90% 的人」但翻开榜单一个熟悉的名字都没有——那些人早就不在这一轮了。
  * ★ 2026-08-08:分母不能只数 scores 表——那张表只收「点了上传、服务端重放
  *   核算也通过」的成绩,标准模式没通关根本没资格调那个接口,分母因此系统性

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { CHARACTER_LABEL, DIFFICULTY_LABEL, INPUT_MODE_LABEL } from '../battle/constants';
 import { bestRecord, saveRecord, type GameRecord } from '../engine/records';
-import { fetchPercentile, submitScore, type PercentileResult, type Session } from '../engine/accountApi';
+import { fetchPercentile, logSession, submitScore, type PercentileResult, type Session } from '../engine/accountApi';
 import { RANKED_DIFFICULTIES } from '../battle/constants';
 import { shareResultImage } from '../engine/shareImage';
 import type { SoloResult } from './SoloBattle';
@@ -173,6 +173,39 @@ export function Results({ result, session, onGoAccount, onBackToMenu, onRetry }:
       recordedAt: Date.now(),
     });
   }, [result, stats, endless]);
+
+  /**
+   * 登录了就自动存一份原始存档,不管这一局要不要上传/上不上得了榜——排行榜
+   * 只留每轮最好的那条,没点上传或者没打破纪录的话原始材料就彻底没地方找了
+   * (五音不全的多玛#729 那次就是这样丢的)。静默失败:这只是个兜底存档,
+   * 不是玩家在等的操作,失败了不重试、不提示,不能因为这个打扰结算页体验。
+   * 去重同上——StrictMode 下不加 ref 会存两遍。
+   */
+  const loggedRef = useRef(false);
+  useEffect(() => {
+    if (loggedRef.current || !session) return;
+    loggedRef.current = true;
+    void logSession(session, {
+      seed: result.seed,
+      gameMode: result.gameMode,
+      difficulty: result.difficulty,
+      inputMode: result.inputMode,
+      character: result.character,
+      mode: result.mode,
+      categories: result.categories,
+      pureOnly: result.pureOnly,
+      attempts: result.attempts,
+      elapsedMs: result.stats.elapsedMs,
+      victory: result.victory,
+      reason: result.reason,
+      claimed: {
+        score: result.score,
+        kills: result.endless?.kills,
+        survivedMs: result.endless?.survivedMs,
+        clearMs: result.gameMode === 'standard' && result.victory ? result.stats.elapsedMs : undefined,
+      },
+    }).catch(() => { /* 静默失败,不影响结算页 */ });
+  }, [session, result]);
 
   const brokeRecord = isEndless
     ? !!endless && (!previousBest || (endless.kills > (previousBest.kills ?? 0)))

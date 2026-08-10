@@ -7,6 +7,10 @@ import { attachRoomServer } from './rooms/server.js';
 import { registerApiRoutes } from './routes/api.js';
 import { getDb } from './db/database.js';
 import { printAdminSetup } from './auth/adminSession.js';
+import { cleanupOldPlaySessions } from './db/playSessions.js';
+
+/** 多久跑一次过期存档清理。不需要很勤,一天一次足够——7 天的保留期本来就是粗粒度的 */
+const PLAY_SESSION_CLEANUP_INTERVAL_MS = 24 * 60 * 60 * 1000;
 
 /** 构建 Fastify 实例并挂上 WebSocket 房间服务器,但不监听端口 —— 交给调用方决定端口。 */
 export async function buildApp(): Promise<FastifyInstance> {
@@ -16,6 +20,16 @@ export async function buildApp(): Promise<FastifyInstance> {
   // 而不是等第一个玩家来注册时才发现磁盘没挂上。
   getDb();
   printAdminSetup();
+
+  // 对局存档 7 天清理:启动时先跑一次(容器可能停了好几天,攒了不少过期的),
+  // 之后每天跑一次。unref 让这个定时器不拖着进程不退出——它只是个后台维护任务。
+  const cleaned = cleanupOldPlaySessions();
+  if (cleaned > 0) {
+    // eslint-disable-next-line no-console
+    console.log(`[play_sessions] 启动时清理了 ${cleaned} 条过期存档`);
+  }
+  setInterval(cleanupOldPlaySessions, PLAY_SESSION_CLEANUP_INTERVAL_MS).unref();
+
   await registerApiRoutes(app);
 
   /**
