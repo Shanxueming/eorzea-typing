@@ -3,11 +3,14 @@
  *
  * ★ 赛道 = 玩法 + 难度 + 输入模式。三者任一不同就不是同一条榜 ——
  *   组合输入允许反复退格,准确率天然低于逐字,混在一起比没有意义。
- * ★ 每人每条赛道只留一条(最好的那条)。写入时用「比现有的好才替换」的逻辑,
- *   而不是留一堆再查询时取最大 —— 库更小,查询也不用去重。
+ * ★ 每人每条赛道**每一轮(period)**只留一条(这一轮里最好的那条)。写入时用
+ *   「比现有的好才替换」的逻辑,而不是留一堆再查询时取最大 —— 库更小,查询
+ *   也不用去重。★ 这个"现有"必须限定在当前轮次内查找,不能跨轮次比较——
+ *   否则新一轮的成绩会被几轮之前的旧纪录挡住,见 submitScore 里的注释。
  */
 import type { CharacterId, Difficulty, GameMode, InputMode } from '@eorzea/shared/battle';
 import { getDb } from './database.js';
+import { getSoloAttemptEstimate } from './telemetry.js';
 
 /** 只有这三档收录成绩。简单/普通不进榜(需求 Q22) */
 export const RANKED_DIFFICULTIES: readonly Difficulty[] = ['hard', 'hell'];
@@ -112,10 +115,19 @@ export type SubmitResult =
 
 export function submitScore(sub: ScoreSubmission): SubmitResult {
   const db = getDb();
+  // ★ 2026-08-08 修复:「existing」必须限定在当前这一轮(period)内查找,不能
+  //   跨轮次全局比较——榜单本来就是按 3 天一轮各自独立的(getLeaderboard /
+  //   getScorePercentile 都按 period 过滤),但这里以前没有 created_at 的过滤
+  //   条件,导致"每人每条赛道只留一条"实际上是"只留全站历史最好的那一条"。
+  //   难度调整之后新纪录天然比旧纪录差,或者单纯运气差,都会让这一轮打出的
+  //   本轮最好成绩因为拼不过几轮之前的旧纪录而被判 not_better,永远进不了
+  //   这一轮的榜、也不会被本轮的 percentile 统计到。
+  const { start, end } = leaderboardPeriod(0);
   const existing = db.prepare(`
     SELECT id, clear_ms, kills, survived_ms FROM scores
     WHERE player_id = ? AND game_mode = ? AND difficulty = ? AND input_mode = ?
-  `).get(sub.playerId, sub.gameMode, sub.difficulty, sub.inputMode) as
+      AND created_at >= ? AND created_at < ?
+  `).get(sub.playerId, sub.gameMode, sub.difficulty, sub.inputMode, start, end) as
     { id: number; clear_ms: number | null; kills: number | null; survived_ms: number | null } | undefined;
 
   const flags = JSON.stringify(sub.flags);
@@ -200,6 +212,12 @@ export interface PercentileResult {
  *   通用的 score 字段——那不是榜单实际排序用的指标,算出来的名次会跟真榜对不上。
  * ★ 沿用榜单同一套「3 天一轮」窗口(leaderboardPeriod),不然玩家会看到
  *   「打败了 90% 的人」但翻开榜单一个熟悉的名字都没有——那些人早就不在这一轮了。
+ * ★ 2026-08-08:分母不能只数 scores 表——那张表只收「点了上传、服务端重放
+ *   核算也通过」的成绩,标准模式没通关根本没资格调那个接口,分母因此系统性
+ *   偏小、"超越了多少人"虚高。这里额外拿开局埋点(game_starts,按设备去重的
+ *   粗略估算)补上没能留下 scores 行的那部分人,一律当作"比你差"——没有验证
+ *   过的成绩没资格说自己比你强。这个估算不影响 rank/榜单本身,只影响这个
+ *   百分比的分母,所以不需要 scores 那套服务端重放的可信度。
  */
 export function getScorePercentile(
   gameMode: GameMode,
@@ -217,7 +235,12 @@ export function getScorePercentile(
   `;
   const baseArgs = [gameMode, difficulty, inputMode, start, end];
 
-  const total = (db.prepare(`SELECT COUNT(*) AS n ${base}`).get(...baseArgs) as { n: number }).n;
+  const scoredTotal = (db.prepare(`SELECT COUNT(*) AS n ${base}`).get(...baseArgs) as { n: number }).n;
+  // 开局埋点估算的"这条赛道大致有多少人打过";没能留下 scores 行的那部分人
+  // (未通关 / 没点上传 / 没通过重放核算)全部按"比你差"补进分母。
+  const attemptEstimate = getSoloAttemptEstimate(gameMode, difficulty, inputMode, start, end);
+  const unscored = Math.max(0, attemptEstimate - scoredTotal);
+  const total = scoredTotal + unscored;
   if (total === 0) return { rank: 1, total: 0, beatPercent: null };
 
   let betterClause: string;
@@ -241,13 +264,15 @@ export function getScorePercentile(
 
   const better = (db.prepare(`SELECT COUNT(*) AS n ${base} ${betterClause}`)
     .get(...baseArgs, ...betterArgs) as { n: number }).n;
-  const worse = (db.prepare(`SELECT COUNT(*) AS n ${base} ${worseClause}`)
+  const worseScored = (db.prepare(`SELECT COUNT(*) AS n ${base} ${worseClause}`)
     .get(...baseArgs, ...worseArgs) as { n: number }).n;
+  // 没留下 scores 行的那部分人,没有任何验证过的成绩可比,一律算作"比你差"
+  const worse = worseScored + unscored;
 
   const rank = better + 1;
-  // ★ total 是库里已有的行数,不含「这一局」本身——每人每条赛道只留一条
-  //   最好成绩(见文件头注释),同一个人打了一局却没打破自己的纪录时,
-  //   这一局根本没有对应的行。这时如果只回原始 total,会出现
+  // ★ total 是库里已有的行数(加上估算的未上榜人数),不含「这一局」本身——
+  //   每人每条赛道只留一条最好成绩(见文件头注释),同一个人打了一局却没打破
+  //   自己的纪录时,这一局根本没有对应的行。这时如果只回原始 total,会出现
   //   「第 2 名 / 共 1 人」这种名次比总数还大的怪现象。
   //   把这一局也算作占了一个位置,保证 rank 永远不超过 total。
   return { rank, total: Math.max(total, rank), beatPercent: Math.round((worse / total) * 100) };

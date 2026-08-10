@@ -155,7 +155,7 @@ export default function App() {
       {scene === 'menu' && (
         <MainMenu
           onStartSolo={(config) => {
-            pingGameStart('solo', config.gameMode, config.difficulty);
+            pingGameStart('solo', config.gameMode, config.difficulty, undefined, config.inputMode);
             setSoloConfig(config);
             setBattleKey((k) => k + 1);
             setScene('solo');
@@ -207,7 +207,7 @@ export default function App() {
           session={session}
           onGoAccount={() => setScene('account')}
           onRetry={() => {
-            pingGameStart('solo', soloConfig.gameMode, soloConfig.difficulty);
+            pingGameStart('solo', soloConfig.gameMode, soloConfig.difficulty, undefined, soloConfig.inputMode);
             setBattleKey((k) => k + 1);
             setScene('solo');
           }}

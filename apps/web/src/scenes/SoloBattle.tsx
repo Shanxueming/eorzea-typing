@@ -172,6 +172,11 @@ interface EngineState {
   pinyinHintsLeft: number;
   /** 当前这个词的拼音是不是已经被揭示过——换词/机制开始时要清掉 */
   pinyinRevealed: boolean;
+  /**
+   * 当前这次机制是什么时候开始的(相对本局毫秒),没在机制里时为 null。
+   * 只用来算 CPM 该扣掉多少"非打字时间"——见 endMechanicTiming。
+   */
+  mechanicStartedAt: number | null;
 }
 
 /** 把毫秒格式化成 m:ss,无限模式的存活时长要一直看着,得好读 */
@@ -207,6 +212,7 @@ function initEngine(bossMaxHp: number, pinyinHintsLeft: number): EngineState {
     maxCombo: 0,
     pinyinHintsLeft,
     pinyinRevealed: false,
+    mechanicStartedAt: null,
   };
 }
 
@@ -264,6 +270,8 @@ export function SoloBattle({ pool, mode, difficulty, inputMode, character, gameM
   const queueRef = useRef(createWordQueue(normalPoolRef.current, seedRef.current));
   const attemptsRef = useRef<WordAttempt[]>([]);
   const targetsRef = useRef(new Map<string, string>());
+  /** 累计花在机制上的真实时长(毫秒),结算时从 CPM 分母里扣掉——见 endMechanicTiming */
+  const nonTypingMsRef = useRef(0);
   /**
    * 词语复盘:按 word.id 去重,同一个词重复出现时最新结果覆盖旧的。
    * 用 Map 是因为 JS 的 Map.set 在 key 已存在时不会挪动插入位置 ——
@@ -297,8 +305,9 @@ export function SoloBattle({ pool, mode, difficulty, inputMode, character, gameM
     if (tickTimerRef.current) window.clearInterval(tickTimerRef.current);
     revertTimersRef.current.forEach((t) => window.clearTimeout(t));
     audio.stopBgm();
+    endMechanicTiming(); // 兜底:阵亡/通关有可能刚好卡在机制进行中,resumeNormalWord 走不到
     const elapsed = now();
-    const stats = computeStats(attemptsRef.current, elapsed, mode, targetsRef.current);
+    const stats = computeStats(attemptsRef.current, elapsed, mode, targetsRef.current, nonTypingMsRef.current);
     const score = computeScore(e.totalDamage, e.interruptsSucceeded, stats.accuracy);
 
     // ── 反作弊:单机也要跑,而且必须跑 ──
@@ -366,6 +375,19 @@ export function SoloBattle({ pool, mode, difficulty, inputMode, character, gameM
   }
 
   /**
+   * 机制(不管成功还是失败)结束时把这段真实耗时记进 nonTypingMsRef。
+   * ★ 必须在所有"机制结束"的出口都调用到,包括战斗中途结束(击败/阵亡)那种
+   *   没走到 resumeNormalWord 的情况——finish() 里也兜底调了一次,双重保险。
+   */
+  function endMechanicTiming() {
+    const e = engineRef.current;
+    if (e.mechanicStartedAt !== null) {
+      nonTypingMsRef.current += now() - e.mechanicStartedAt;
+      e.mechanicStartedAt = null;
+    }
+  }
+
+  /**
    * 打断结束,回到被冻结的那个普通词并重新起限时。
    * 与联机保持同一套语义(见 apps/server/src/rooms/room.ts 的 resumeNormalWord):
    * 泰坦之怒是插进来的一次挑战,不消耗普通词队列,打完接着打原来那个词。
@@ -373,6 +395,7 @@ export function SoloBattle({ pool, mode, difficulty, inputMode, character, gameM
   function resumeNormalWord() {
     const e = engineRef.current;
     if (e.ended) return;
+    endMechanicTiming();
     e.mechanic = null;
     if (!e.pendingNormalWord) {
       drawNext();
@@ -720,6 +743,7 @@ export function SoloBattle({ pool, mode, difficulty, inputMode, character, gameM
     e.pendingNormalWord = e.currentWord;
     wordDeadlineRef.current = null;
     e.mechanic = state;
+    e.mechanicStartedAt = now();
     e.mechanicTotalMs = mechanicDurationMs(id, difficulty);
     // 拼音提示只服务普通词——机制是短时挑战,不给这个机会,揭示状态也不该
     // 从冻结前的普通词那里漏过来。

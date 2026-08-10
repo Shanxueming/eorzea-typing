@@ -186,7 +186,7 @@ export function CoopSession({ session, onExit, onVictory }: CoopSessionProps) {
     const key = `${state.code}:${state.startAt}`;
     if (pingedBattleRef.current === key) return;
     pingedBattleRef.current = key;
-    pingGameStart('coop', state.gameMode, state.difficulty, state.code);
+    pingGameStart('coop', state.gameMode, state.difficulty, state.code, state.inputMode);
   }, [state.status, state.code, state.startAt, state.gameMode, state.difficulty]);
 
   // 联机也和单机一样只在战斗期间播放 BGM；素材缺失时 AudioEngine 静默降级。

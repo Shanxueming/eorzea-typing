@@ -80,10 +80,14 @@ export type CoopSubmitResult =
 
 export function submitCoopScore(sub: CoopScoreSubmission): CoopSubmitResult {
   const db = getDb();
+  // ★ 同 scores.ts 的修复:「existing」必须限定在当前这一轮内查找,不能跨轮次
+  //   全局比较,否则这一轮的新成绩会被几轮之前的旧纪录挡住,永远进不了这一轮的榜。
+  const { start, end } = leaderboardPeriod(0);
   const existing = db.prepare(`
     SELECT id, clear_ms, kills, survived_ms FROM coop_scores
     WHERE player_a_id = ? AND player_b_id = ? AND game_mode = ? AND difficulty = ? AND input_mode = ?
-  `).get(sub.playerAId, sub.playerBId, sub.gameMode, sub.difficulty, sub.inputMode) as
+      AND created_at >= ? AND created_at < ?
+  `).get(sub.playerAId, sub.playerBId, sub.gameMode, sub.difficulty, sub.inputMode, start, end) as
     { id: number; clear_ms: number | null; kills: number | null; survived_ms: number | null } | undefined;
 
   const flags = JSON.stringify(sub.flags);

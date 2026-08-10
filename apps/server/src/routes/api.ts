@@ -180,7 +180,8 @@ export async function registerApiRoutes(app: FastifyInstance): Promise<void> {
       return reply.code(400).send({ ok: false, error: 'bad_request' });
     }
     const matchKey = typeof body?.matchKey === 'string' ? body.matchKey.slice(0, 32) : undefined;
-    recordGameStart({ deviceId, mode, gameMode, difficulty, matchKey });
+    const inputMode = body?.inputMode === 'sequential' || body?.inputMode === 'composed' ? body.inputMode : undefined;
+    recordGameStart({ deviceId, mode, gameMode, difficulty, matchKey, inputMode });
     return { ok: true };
   });
 

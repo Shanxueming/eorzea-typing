@@ -100,12 +100,19 @@ export interface SessionStats {
  *
  * 注意 accuracy 用击键口径而非词口径:总击键中有多少不是退格。
  * 词口径会让一个词里改三次和改一次看起来一样,区分度太低。
+ *
+ * ★ 2026-08-08:新增 nonTypingMs——泰坦之怒/三连桶/三穿一这类机制进行期间,
+ *   玩家在处理机制挑战而不是打普通词,这段时间(尤其是打断失败,完全不产生
+ *   任何 attempt)算进 CPM 的分母只会把"打字速度"这个指标拖得虚低,机制越多
+ *   越明显。调用方把这段时间累加后传进来,从分母里扣掉;elapsedMs 本身
+ *   (给"本局时长"这类展示用)不受影响,还是整局真实时长。
  */
 export function computeStats(
   attempts: readonly WordAttempt[],
   elapsedMs: number,
   mode: TypingMode = 'hanzi',
   targets?: ReadonlyMap<string, string>,
+  nonTypingMs = 0,
 ): SessionStats {
   let completed = 0;
   let misses = 0;
@@ -126,7 +133,8 @@ export function computeStats(
     }
   }
 
-  const minutes = elapsedMs / 60000;
+  const typingMs = Math.max(0, elapsedMs - nonTypingMs);
+  const minutes = typingMs / 60000;
   const cpm = minutes > 0 ? chars / minutes : 0;
   // pinyin 模式按字母计,hanzi 模式按汉字计;WPM 统一用 5 字符 = 1 词折算
   const wpm = cpm / 5;

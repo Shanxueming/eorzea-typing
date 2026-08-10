@@ -83,6 +83,31 @@ describe('computeStats', () => {
     expect(s.accuracy).toBeCloseTo(0.9);
     expect(s.wordsCompleted).toBe(2);
   });
+
+  it('★ 2026-08-08:nonTypingMs 从 CPM/WPM 的分母里扣掉,但不影响 elapsedMs 本身', () => {
+    const mk = (submitted: string) => ({
+      wordId: submitted, startedAt: 0, submittedAt: 100, submitted,
+      keystrokes: [], backspaces: 0, compositionCommits: 0, focusLostMs: 0,
+    });
+    // 两个词共 4 个字,整局 2 分钟——不扣分母时 cpm = 4/2 = 2
+    const withoutDeduction = computeStats([mk('铁壁'), mk('斗狮')], 120_000);
+    expect(withoutDeduction.cpm).toBe(2);
+    expect(withoutDeduction.elapsedMs).toBe(120_000);
+
+    // 机制占了 1 分钟,分母应该缩到 1 分钟,cpm 翻倍到 4;elapsedMs 仍是整局时长
+    const withDeduction = computeStats([mk('铁壁'), mk('斗狮')], 120_000, 'hanzi', undefined, 60_000);
+    expect(withDeduction.cpm).toBe(4);
+    expect(withDeduction.elapsedMs).toBe(120_000);
+  });
+
+  it('nonTypingMs 超过 elapsedMs 时不会算出负数分母(钳到 0,cpm 恒为 0)', () => {
+    const mk = (submitted: string) => ({
+      wordId: submitted, startedAt: 0, submittedAt: 100, submitted,
+      keystrokes: [], backspaces: 0, compositionCommits: 0, focusLostMs: 0,
+    });
+    const s = computeStats([mk('铁壁')], 1000, 'hanzi', undefined, 5000);
+    expect(s.cpm).toBe(0);
+  });
 });
 
 describe('rng 可复现性', () => {

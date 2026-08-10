@@ -114,10 +114,24 @@ CREATE TABLE IF NOT EXISTS game_starts (
   difficulty  TEXT NOT NULL,
   match_key   TEXT,
   created_at  INTEGER NOT NULL
+  -- input_mode 是后加的列,见下面 addColumnIfMissing——老数据这一列是 NULL,
+  -- 查询时会自然被过滤掉,不影响"按赛道统计"的准确性,只是老数据不参与罢了。
 );
 
 CREATE INDEX IF NOT EXISTS idx_game_starts_day ON game_starts (created_at);
 `;
+
+/**
+ * 给已存在的表补一列,幂等——重复执行不报错。用 PRAGMA table_info 自己查有没有,
+ * 而不是 try/catch "ALTER TABLE ADD COLUMN 已存在"的报错,那种写法在不同 SQLite
+ * 版本上报错文案不一定一致,容易误吞别的错误。
+ */
+function addColumnIfMissing(database: DatabaseSync, table: string, column: string, definition: string): void {
+  const cols = database.prepare(`PRAGMA table_info(${table})`).all() as Array<{ name: string }>;
+  if (!cols.some((c) => c.name === column)) {
+    database.exec(`ALTER TABLE ${table} ADD COLUMN ${column} ${definition}`);
+  }
+}
 
 export function getDb(): DatabaseSync {
   if (db) return db;
@@ -128,6 +142,10 @@ export function getDb(): DatabaseSync {
   db.exec('PRAGMA journal_mode = WAL');
   db.exec('PRAGMA foreign_keys = ON');
   db.exec(SCHEMA);
+  // ★ 2026-08-08:game_starts 补 input_mode——赛道 = 玩法+难度+输入模式,
+  //   百分位统计要按赛道精确统计"这条赛道打了多少人",少这一列就只能按
+  //   玩法+难度粗略估算,组合输入和逐字输入会被混在一起数。
+  addColumnIfMissing(db, 'game_starts', 'input_mode', 'TEXT');
   // eslint-disable-next-line no-console
   console.log(`[db] SQLite 已就绪:${file}`);
   return db;
