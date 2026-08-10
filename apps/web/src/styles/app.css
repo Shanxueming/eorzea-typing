@@ -993,6 +993,19 @@ button:disabled {
   background: rgba(255, 212, 127, 0.22);
 }
 
+/* 突然死亡模式:红色警示配色,和无限模式的金色区分开——这个按钮点下去是真的一下就死 */
+.menu__sudden-death {
+  align-self: flex-start;
+  font-size: 15px;
+  padding: 11px 20px;
+  border-color: rgba(255, 90, 90, 0.6);
+  color: #ff8a8a;
+  background: rgba(255, 90, 90, 0.1);
+}
+.menu__sudden-death:hover:not(:disabled) {
+  background: rgba(255, 90, 90, 0.22);
+}
+
 /* 战斗中顶部那行「已存活 x:xx · 已击倒 n 只」,替代标准模式的狂暴倒计时 */
 .battle__endless-stat {
   text-align: center;

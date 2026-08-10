@@ -180,6 +180,8 @@ export default function App() {
           gameMode={soloConfig.gameMode}
           categories={soloConfig.categories}
           pureOnly={soloConfig.pureOnly}
+          maxHp={soloConfig.maxHp}
+          unranked={soloConfig.unranked}
           onExit={() => setScene('menu')}
           onFinish={(result) => {
             setSoloResult(result);

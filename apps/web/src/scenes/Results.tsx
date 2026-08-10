@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { CHARACTER_LABEL, DIFFICULTY_LABEL, INPUT_MODE_LABEL, PLAYER_MAX_HP } from '../battle/constants';
+import { CHARACTER_LABEL, DIFFICULTY_LABEL, INPUT_MODE_LABEL } from '../battle/constants';
 import { bestRecord, saveRecord, type GameRecord } from '../engine/records';
 import { fetchPercentile, submitScore, type PercentileResult, type Session } from '../engine/accountApi';
 import { RANKED_DIFFICULTIES } from '../battle/constants';
@@ -32,16 +32,19 @@ export function Results({ result, session, onGoAccount, onBackToMenu, onRetry }:
   const [reviewFilter, setReviewFilter] = useState<'all' | 'correct' | 'missed'>('all');
 
   /**
-   * 能不能上榜。四个条件缺一不可:
+   * 能不能上榜。五个条件缺一不可:
    *   1. 登录了 —— 榜单要有名字
    *   2. 难度是困难或地狱(需求 Q22)
    *   3. 标准模式必须通关;无限模式没有「通关」概念,一律可传
    *   4. 有原始遥测可交 —— 服务端要靠它重放核算
+   *   5. 不是突然死亡模式这类强制不计分的赛制——它复用了无限模式的引擎,
+   *      难度/玩法本身会满足前四条,必须专门加一道口子拦掉
    */
   const rankable = !!session
     && RANKED_DIFFICULTIES.includes(result.difficulty)
     && (result.gameMode === 'endless' || result.victory)
-    && result.attempts.length > 0;
+    && result.attempts.length > 0
+    && !result.unranked;
 
   const { stats, endless } = result;
   const isEndless = result.gameMode === 'endless';
@@ -53,7 +56,8 @@ export function Results({ result, session, onGoAccount, onBackToMenu, onRetry }:
    * 就没有 clearMs,无从比起。
    */
   const percentileEligible = RANKED_DIFFICULTIES.includes(result.difficulty)
-    && (result.gameMode === 'endless' || result.victory);
+    && (result.gameMode === 'endless' || result.victory)
+    && !result.unranked;
   const [percentile, setPercentile] = useState<PercentileResult | null>(null);
   useEffect(() => {
     if (!percentileEligible) return;
@@ -78,7 +82,7 @@ export function Results({ result, session, onGoAccount, onBackToMenu, onRetry }:
     setShareMsg(null);
     const outcome = await shareResultImage({
       displayId: session.displayId,
-      track: `${isEndless ? '无限模式' : '标准模式'} · ${DIFFICULTY_LABEL[result.difficulty]} · ${INPUT_MODE_LABEL[result.inputMode]}`,
+      track: `${result.unranked ? '突然死亡模式' : isEndless ? '无限模式' : '标准模式'} · ${DIFFICULTY_LABEL[result.difficulty]} · ${INPUT_MODE_LABEL[result.inputMode]}`,
       durationText: formatDuration(stats.elapsedMs),
       cpm: stats.cpm,
       rank: percentile?.total ? percentile.rank : null,
@@ -181,11 +185,11 @@ export function Results({ result, session, onGoAccount, onBackToMenu, onRetry }:
   return (
     <div className="results">
       <h1 className="results__title">
-        {isEndless ? '无限模式结束' : TITLE_BY_REASON[result.reason]}
+        {result.unranked ? '突然死亡结束' : isEndless ? '无限模式结束' : TITLE_BY_REASON[result.reason]}
       </h1>
       <div className="results__score">得分 {result.score}</div>
       <div className="results__track">
-        {isEndless ? '无限模式' : '标准模式'} · {DIFFICULTY_LABEL[result.difficulty]} ·{' '}
+        {result.unranked ? '突然死亡模式' : isEndless ? '无限模式' : '标准模式'} · {DIFFICULTY_LABEL[result.difficulty]} ·{' '}
         {INPUT_MODE_LABEL[result.inputMode]} · {CHARACTER_LABEL[result.character]}
       </div>
 
@@ -222,7 +226,7 @@ export function Results({ result, session, onGoAccount, onBackToMenu, onRetry }:
         </div>
         <div className="results__stat">
           <span className="results__stat-label">剩余血量</span>
-          <span className="results__stat-value">{result.playerHp} / {PLAYER_MAX_HP}</span>
+          <span className="results__stat-value">{result.playerHp} / {result.maxHp}</span>
         </div>
         <div className="results__stat">
           <span className="results__stat-label">总伤害</span>
@@ -332,7 +336,9 @@ export function Results({ result, session, onGoAccount, onBackToMenu, onRetry }:
         )}
         {session && !rankable && (
           <div className="results__upload-hint">
-            {!RANKED_DIFFICULTIES.includes(result.difficulty)
+            {result.unranked
+              ? '突然死亡模式是比赛用的规则，不计入排行榜。'
+              : !RANKED_DIFFICULTIES.includes(result.difficulty)
               ? '只有困难和地狱难度会计入排行榜。'
               : '标准模式要通关才能上榜。'}
           </div>
@@ -350,7 +356,9 @@ export function Results({ result, session, onGoAccount, onBackToMenu, onRetry }:
           )
         ) : (
           <div className="results__share-percentile results__share-percentile--dim">
-            困难/地狱难度且通关后，才会统计「超越了多少人」
+            {result.unranked
+              ? '突然死亡模式不参与排行榜统计'
+              : '困难/地狱难度且通关后，才会统计「超越了多少人」'}
           </div>
         )}
 

@@ -78,6 +78,10 @@ export interface SoloResult {
   score: number;
   /** 结算那一刻的剩余血量;血量归零判负时恒为 0 */
   playerHp: number;
+  /** 这一局的血量上限。突然死亡模式是 1,其余都是 PLAYER_MAX_HP */
+  maxHp: number;
+  /** 突然死亡模式专用:强制不计入排行榜,不管难度/玩法本来符不符合上榜条件 */
+  unranked: boolean;
   damage: number;
   interruptsSucceeded: number;
   interruptsFailed: number;
@@ -126,6 +130,17 @@ export interface SoloBattleProps {
   /** 这一局用了哪些分类、是否只要纯汉字 —— 服务端重放核算要靠它重建词池 */
   categories: WordCategory[];
   pureOnly: boolean;
+  /**
+   * 这一局的血量上限,不传就是 PLAYER_MAX_HP。突然死亡模式传 1——地狱难度
+   * 任何一次失误(打错/超时/机制打断失败)扣血都 ≥1,血量上限压到 1 之后
+   * 自然就是「打错一下就死」,不需要另开一套「即死」判定逻辑。
+   * ★ 这个值同时也是回血(原初的解放/泰坦之怒打断成功)的封顶——只压低
+   *   起始血量、不压低封顶的话,回几滴血就能吃掉一次失误,「打错就死」
+   *   这条规则会被回血机制悄悄破坏掉。
+   */
+  maxHp?: number;
+  /** 突然死亡模式专用:强制这一局不计入排行榜 */
+  unranked?: boolean;
   onFinish: (result: SoloResult) => void;
   onExit: () => void;
 }
@@ -185,10 +200,10 @@ function formatDuration(ms: number): string {
   return `${Math.floor(total / 60)}:${String(total % 60).padStart(2, '0')}`;
 }
 
-function initEngine(bossMaxHp: number, pinyinHintsLeft: number): EngineState {
+function initEngine(bossMaxHp: number, pinyinHintsLeft: number, maxHp: number): EngineState {
   return {
     bossHp: bossMaxHp,
-    playerHp: PLAYER_MAX_HP,
+    playerHp: maxHp,
     combo: 0,
     currentWord: null,
     mechanic: null,
@@ -224,7 +239,10 @@ function initEngine(bossMaxHp: number, pinyinHintsLeft: number): EngineState {
  * ★ 血量归零直接秒结(defeat),没有"倒地复活"这一套——那是联机才有的,
  *   单机死了就是死了。
  */
-export function SoloBattle({ pool, mode, difficulty, inputMode, character, gameMode, categories, pureOnly, onFinish, onExit }: SoloBattleProps) {
+export function SoloBattle({
+  pool, mode, difficulty, inputMode, character, gameMode, categories, pureOnly,
+  maxHp = PLAYER_MAX_HP, unranked = false, onFinish, onExit,
+}: SoloBattleProps) {
   const isEndless = gameMode === 'endless';
   // 练习难度和无限模式一样没有狂暴倒计时——区别是练习打死这一只泰坦就通关,
   // 不会像无限模式那样立刻刷下一只。
@@ -232,7 +250,7 @@ export function SoloBattle({ pool, mode, difficulty, inputMode, character, gameM
   // Boss 血量按难度加厚:困难 +30%、地狱 +100%
   const bossMaxHp = bossHpFor(difficulty);
   const pinyinHintBudget = mode === 'hanzi' ? PINYIN_HINT_BUDGET[difficulty] : 0;
-  const engineRef = useRef<EngineState>(initEngine(bossMaxHp, pinyinHintBudget));
+  const engineRef = useRef<EngineState>(initEngine(bossMaxHp, pinyinHintBudget, maxHp));
   const [, setVersion] = useState(0);
   const rerender = () => setVersion((n) => n + 1);
 
@@ -332,6 +350,8 @@ export function SoloBattle({ pool, mode, difficulty, inputMode, character, gameM
       reason,
       score,
       playerHp: e.playerHp,
+      maxHp,
+      unranked,
       damage: e.totalDamage,
       interruptsSucceeded: e.interruptsSucceeded,
       interruptsFailed: e.interruptsFailed,
@@ -625,10 +645,10 @@ export function SoloBattle({ pool, mode, difficulty, inputMode, character, gameM
     // 「原初的解放」的追加效果只结算这一次:满血翻倍伤害,没满血就回血。
     const primalArmed = e.primalReleaseArmed;
     e.primalReleaseArmed = false;
-    const primalFullHp = primalArmed && e.playerHp >= PLAYER_MAX_HP;
+    const primalFullHp = primalArmed && e.playerHp >= maxHp;
     applyDamage(word, false, primalFullHp ? PRIMAL_RELEASE_DAMAGE_MULTIPLIER : 1);
     if (primalArmed && !primalFullHp) {
-      e.playerHp = Math.min(PLAYER_MAX_HP, e.playerHp + PRIMAL_RELEASE_HEAL);
+      e.playerHp = Math.min(maxHp, e.playerHp + PRIMAL_RELEASE_HEAL);
     }
     audio.play('hit_slash');
 
@@ -660,7 +680,7 @@ export function SoloBattle({ pool, mode, difficulty, inputMode, character, gameM
     e.shattered = true;
     scheduleRevert({ shattered: false }, SHATTER_MS);
     audio.play('interrupt');
-    e.playerHp = Math.min(PLAYER_MAX_HP, e.playerHp + PLAYER_HEAL_ON_INTERRUPT);
+    e.playerHp = Math.min(maxHp, e.playerHp + PLAYER_HEAL_ON_INTERRUPT);
 
     if (e.bossHp <= 0 && !onBossDefeated()) return;
     resumeNormalWord();
@@ -917,7 +937,7 @@ export function SoloBattle({ pool, mode, difficulty, inputMode, character, gameM
 
       <div className="battle__mid">
         <div className="battle__player-status">
-          <HpBar value={e.playerHp} max={PLAYER_MAX_HP} variant="player" />
+          <HpBar value={e.playerHp} max={maxHp} variant="player" />
           {isEndless ? (
             <div className="battle__endless-stat">
               已存活 {formatDuration(e.remainingMs)} · 已击倒 <strong>{e.kills}</strong> 只

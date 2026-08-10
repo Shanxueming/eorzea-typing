@@ -45,6 +45,10 @@ export interface SoloStartConfig {
   gameMode: GameMode;
   categories: WordEntry['category'][];
   pureOnly: boolean;
+  /** 突然死亡模式专用:血量上限压到 1,详见 SoloBattle.tsx 的注释 */
+  maxHp?: number;
+  /** 突然死亡模式专用:强制不计入排行榜 */
+  unranked?: boolean;
 }
 
 export interface MainMenuProps {
@@ -113,6 +117,35 @@ export function MainMenu({ onStartSolo, onGoCoop, victoryCount, coopAvailable, o
   };
 
   const startQuick = () => startSolo('standard');
+
+  /**
+   * 突然死亡模式:准备给下次比赛用的一次性预设,不受上面的难度/输入模式/
+   * 打字模式单选框影响——固定地狱难度的数值(泰坦血量、限时、每次失误的
+   * 扣血)、固定拼音模式、固定血量上限 1(见 SoloBattle.tsx 里 maxHp 的注释,
+   * 地狱难度下任何一次失误扣血都 ≥1,压到 1 血自然就是「打错就死」,不用
+   * 另外发明一套即死判定)。结构复用无限模式(没有狂暴倒计时、泰坦打死一只
+   * 立刻刷下一只),但强制 unranked——比赛用的规则和正式排行榜的赛道不是
+   * 一回事,不该混进同一份榜单。
+   */
+  const startSuddenDeath = async () => {
+    audio.unlock();
+    setBusy(true);
+    setError(null);
+    try {
+      const bank = await loadBank('starter');
+      const pool = filterFeaturedWordPool(selectPool([bank], { categories: ['starter'], pureOnly: true }));
+      onStartSolo({
+        pool, mode: 'pinyin', difficulty: 'hell',
+        inputMode: resolveInputMode('hell', preferredInputMode),
+        character, gameMode: 'endless', categories: ['starter'], pureOnly: true,
+        maxHp: 1, unranked: true,
+      });
+    } catch (e) {
+      setError(String(e));
+    } finally {
+      setBusy(false);
+    }
+  };
 
   const startCustom = async () => {
     if (selected.size === 0) return;
@@ -252,6 +285,10 @@ export function MainMenu({ onStartSolo, onGoCoop, victoryCount, coopAvailable, o
 
       <button className="menu__endless" disabled={busy} onClick={() => void startSolo('endless')}>
         无限模式 · 困难规则,打到倒下为止
+      </button>
+
+      <button className="menu__sudden-death" disabled={busy} onClick={() => void startSuddenDeath()}>
+        突然死亡模式 · 地狱难度 + 拼音,1 滴血打错就死,不计入排行榜
       </button>
 
       <div className="menu__appearance">
