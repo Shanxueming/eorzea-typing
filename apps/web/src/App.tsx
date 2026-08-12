@@ -1,6 +1,8 @@
 import { useEffect, useMemo, useState } from 'react';
+import type { WordEntry } from '@eorzea/shared/types';
 import { buildChallengeScript } from '@eorzea/shared/challenge';
 import { MainMenu, type SoloStartConfig } from './scenes/MainMenu';
+import { TowerScene } from './scenes/TowerScene';
 import { SoloBattle, type SoloResult } from './scenes/SoloBattle';
 import { Results } from './scenes/Results';
 import { CoopSession } from './scenes/CoopSession';
@@ -12,7 +14,7 @@ import { pingGameStart } from './engine/telemetry';
 import { ChangelogModal } from './components/ChangelogModal';
 import { hasSeenLatest } from './data/changelog';
 
-type Scene = 'menu' | 'solo' | 'results' | 'coop' | 'account' | 'admin';
+type Scene = 'menu' | 'solo' | 'results' | 'coop' | 'account' | 'admin' | 'tower';
 
 /** 音乐与音效分开控制，偏好由 AudioEngine 存在浏览器本地。 */
 function AudioControls() {
@@ -123,6 +125,8 @@ export default function App() {
   // 有新版更新说明就自动弹一次;看过之后只能从主菜单再点开
   const [showChangelog, setShowChangelog] = useState(() => !hasSeenLatest());
   const [session, setSession] = useState<Session | null>(() => loadSession());
+  /** 爬塔用的完整词池(未按难度筛,每层自己按词长区间筛) */
+  const [towerPool, setTowerPool] = useState<WordEntry[] | null>(null);
 
   /**
    * 每日挑战的机制剧本。由 seed 直接算出来,所以不需要额外存状态,
@@ -171,6 +175,7 @@ export default function App() {
             setScene('solo');
           }}
           onGoCoop={() => setScene('coop')}
+          onStartTower={(pool) => { setTowerPool(pool); setScene('tower'); }}
           victoryCount={victoryCount}
           coopAvailable={!isMobile}
           onShowChangelog={() => setShowChangelog(true)}
@@ -229,6 +234,10 @@ export default function App() {
           }}
           onBackToMenu={() => setScene('menu')}
         />
+      )}
+
+      {scene === 'tower' && towerPool && (
+        <TowerScene pool={towerPool} onExit={() => setScene('menu')} />
       )}
 
       {scene === 'coop' && (

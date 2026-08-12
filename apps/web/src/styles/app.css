@@ -1138,6 +1138,112 @@ button:disabled {
   color: var(--color-text-dim);
 }
 
+/* 爬塔:紫色,和每日挑战的青、无限的金、突然死亡的红各自区分开 */
+.menu__tower {
+  align-self: flex-start;
+  font-size: 15px;
+  padding: 11px 20px;
+  border-color: rgba(178, 140, 255, 0.6);
+  color: #c4a4ff;
+  background: rgba(178, 140, 255, 0.1);
+}
+.menu__tower:hover:not(:disabled) {
+  background: rgba(178, 140, 255, 0.22);
+}
+
+/* ── 爬塔:选路 / 结算 ── */
+.tower {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  text-align: center;
+  padding: 24px 0;
+}
+.tower__title {
+  font-size: 24px;
+  margin: 0;
+}
+.tower__hp {
+  color: var(--color-text-dim);
+  font-size: 14px;
+}
+.tower__routes {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.tower__route {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-start;
+  text-align: left;
+  min-width: 190px;
+  max-width: 240px;
+  padding: 14px 16px;
+  border-color: rgba(178, 140, 255, 0.45);
+  background: rgba(178, 140, 255, 0.07);
+}
+.tower__route:hover:not(:disabled) {
+  background: rgba(178, 140, 255, 0.18);
+}
+.tower__route-name {
+  font-size: 17px;
+  font-weight: 700;
+  color: #c4a4ff;
+}
+.tower__route-blurb {
+  font-size: 13px;
+  color: var(--color-text);
+}
+.tower__route-stats {
+  font-size: 12px;
+  color: var(--color-text-dim);
+  font-variant-numeric: tabular-nums;
+}
+.tower__over-actions {
+  display: flex;
+  gap: 12px;
+}
+.tower__exit {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+/* 战斗上方那条「第几层 / 走的哪条路 / 打几个词过关」 */
+.tower-battle__banner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  background: rgba(178, 140, 255, 0.1);
+  font-size: 13px;
+  color: var(--color-text-dim);
+}
+.tower-battle__banner strong {
+  font-size: 18px;
+  color: #c4a4ff;
+}
+.tower-battle__boss {
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: rgba(255, 90, 90, 0.9);
+  color: #fff;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+.tower-battle__route {
+  color: #c4a4ff;
+  font-weight: 600;
+}
+
 /* 错题本:不是一个"模式",所以做成一行信息条而不是大按钮 */
 .menu__mistakes {
   display: flex;

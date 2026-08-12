@@ -63,6 +63,8 @@ export interface SoloStartConfig {
 export interface MainMenuProps {
   onStartSolo: (config: SoloStartConfig) => void;
   onGoCoop: () => void;
+  /** 起一轮爬塔。给的是**完整词池**,每层自己按词长区间筛 */
+  onStartTower: (pool: WordEntry[]) => void;
   victoryCount: number;
   /** 移动端不提供联机,入口整块藏掉而不是给个点了没反应的按钮 */
   coopAvailable: boolean;
@@ -71,7 +73,7 @@ export interface MainMenuProps {
   session: Session | null;
 }
 
-export function MainMenu({ onStartSolo, onGoCoop, victoryCount, coopAvailable, onShowChangelog, onGoAccount, session }: MainMenuProps) {
+export function MainMenu({ onStartSolo, onGoCoop, onStartTower, victoryCount, coopAvailable, onShowChangelog, onGoAccount, session }: MainMenuProps) {
   // 首页只放地狱榜和无限榜(需求 Q27);困难榜、联机组队榜都要单独点开
   const [showHardBoard, setShowHardBoard] = useState(false);
   const [showCoopBoards, setShowCoopBoards] = useState(false);
@@ -196,6 +198,25 @@ export function MainMenu({ onStartSolo, onGoCoop, victoryCount, coopAvailable, o
       pool, mode, difficulty, inputMode, character, gameMode: 'standard',
       categories: ['starter'], pureOnly: true, unranked: true, variant: 'mistake_practice',
     });
+  };
+
+  /**
+   * 起一轮爬塔。给的是**没按难度筛过的完整池** —— 每层的词长区间自己不一样
+   * (长句廊只出 5~7 字、疾风道什么长度都行),在这里先筛掉就没得挑了。
+   */
+  const startTower = async () => {
+    audio.unlock();
+    setBusy(true);
+    setError(null);
+    try {
+      const bank = await loadBank('starter');
+      const pool = filterFeaturedWordPool(selectPool([bank], { categories: ['starter'], pureOnly: true }));
+      onStartTower(pool);
+    } catch (e) {
+      setError(String(e));
+    } finally {
+      setBusy(false);
+    }
   };
 
   const startSuddenDeath = async () => {
@@ -362,6 +383,10 @@ export function MainMenu({ onStartSolo, onGoCoop, victoryCount, coopAvailable, o
 
       <button className="menu__daily" disabled={busy} onClick={() => void startDaily()}>
         每日挑战 · 全站同一批词,每天零点换,比谁快
+      </button>
+
+      <button className="menu__tower" disabled={busy} onClick={() => void startTower()}>
+        爬塔 · 100 层,每层选一条路,血量不回满,倒下就重来
       </button>
 
       <div className="menu__mistakes">

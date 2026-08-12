@@ -164,6 +164,37 @@ export interface SoloBattleProps {
   /** 玩法变体,原样带进结算结果供结算页显示 */
   variant?: SoloVariant;
   /**
+   * 开局血量。不传就是满血(maxHp)。爬塔用它把上一层剩下的血带进来 ——
+   * 血量跨层继承是爬塔的核心压力来源,每层回满就没有 roguelike 可言了。
+   */
+  startHp?: number;
+  /**
+   * 打对这么多个普通词就算通关(爬塔的「一层」)。
+   *
+   * ★ 实现方式是把 Boss 血量设成这个数、每个普通词固定造成 1 点伤害 ——
+   *   这样血条天然变成「还剩几个词」的进度条,胜利判定、机制、技能、计时
+   *   全都沿用现成的那一套,不需要在战斗引擎里另开一条通关路径。
+   *   不传就是正常的按 Boss 血量打。
+   */
+  clearAfterWords?: number;
+  /**
+   * 覆盖普通词限时 / 失手扣血。爬塔靠这两个把「路」的差异做出来 ——
+   * 不接这两个的话,疾风道和精英间就只剩词数不同,岔路选择也就没意义了。
+   * 不传就沿用难度表(DIFFICULTY_WORD_TIMEOUT_MS / DIFFICULTY_DAMAGE_ON_MISS)。
+   */
+  wordTimeoutMsOverride?: number;
+  damageOnMissOverride?: number;
+  /**
+   * 这一局要不要触发机制。只在爬塔里用得到,默认(不传)是开。
+   *
+   * ★ 爬塔的一层必须显式关掉,原因是血量阈值机制按「Boss 血量百分比」触发,
+   *   而爬塔把 Boss 血量当成了「还剩几个词」——一层 3 个词,打掉一个就是
+   *   剩 67%、再一个剩 33%,正好一路踩满 MECHANICS 里登记的两个阈值,
+   *   结果**每一层都必定强制两次机制**,三个词的小层能被扣掉 50 点血。
+   *   塔里机制应该是 Boss 层的事,普通层不该有。
+   */
+  enableMechanics?: boolean;
+  /**
    * 挑战赛道的机制剧本(每日挑战/赛事用)。传了就**完全接管机制触发**:
    * 在剧本指定的词序号触发指定机制,不再掷骰子、不看 pity、不看血量阈值。
    * 不传就是普通模式,机制照旧随机——手感一行不改。
@@ -244,10 +275,10 @@ function formatDuration(ms: number): string {
   return `${Math.floor(total / 60)}:${String(total % 60).padStart(2, '0')}`;
 }
 
-function initEngine(bossMaxHp: number, pinyinHintsLeft: number, maxHp: number): EngineState {
+function initEngine(bossMaxHp: number, pinyinHintsLeft: number, startHp: number): EngineState {
   return {
     bossHp: bossMaxHp,
-    playerHp: maxHp,
+    playerHp: startHp,
     combo: 0,
     currentWord: null,
     mechanic: null,
@@ -286,22 +317,27 @@ function initEngine(bossMaxHp: number, pinyinHintsLeft: number, maxHp: number): 
  */
 export function SoloBattle({
   pool, mode, difficulty, inputMode, character, gameMode, categories, pureOnly,
-  maxHp = PLAYER_MAX_HP, unranked = false, variant, challengeScript, fixedSeed, dailyDateKey,
-  onFinish, onExit,
+  maxHp = PLAYER_MAX_HP, unranked = false, variant, startHp, clearAfterWords,
+  wordTimeoutMsOverride, damageOnMissOverride, enableMechanics = true,
+  challengeScript, fixedSeed, dailyDateKey, onFinish, onExit,
 }: SoloBattleProps) {
   const isEndless = gameMode === 'endless';
+  /** 爬塔的一层:血条当「还剩几个词」用,见 clearAfterWords 的说明 */
+  const isFloor = typeof clearAfterWords === 'number' && clearAfterWords > 0;
   // 练习难度和无限模式一样没有狂暴倒计时——区别是练习打死这一只泰坦就通关,
   // 不会像无限模式那样立刻刷下一只。
-  const noDurationLimit = isEndless || difficulty === 'practice';
-  // Boss 血量按难度加厚:困难 +30%、地狱 +100%
-  const bossMaxHp = bossHpFor(difficulty);
+  // 爬塔的一层也不吃狂暴倒计时:一层就几个词,180 秒的压力尺度对不上
+  const noDurationLimit = isEndless || difficulty === 'practice' || isFloor;
+  // Boss 血量按难度加厚:困难 +30%、地狱 +100%。
+  // 爬塔的一层则直接把「要打几个词」当血量(每个词固定 1 点,见 applyDamage)
+  const bossMaxHp = isFloor ? (clearAfterWords as number) : bossHpFor(difficulty);
   const pinyinHintBudget = mode === 'hanzi' ? PINYIN_HINT_BUDGET[difficulty] : 0;
-  const engineRef = useRef<EngineState>(initEngine(bossMaxHp, pinyinHintBudget, maxHp));
+  const engineRef = useRef<EngineState>(initEngine(bossMaxHp, pinyinHintBudget, startHp ?? maxHp));
   const [, setVersion] = useState(0);
   const rerender = () => setVersion((n) => n + 1);
 
   const castDurationMs = DIFFICULTY_CAST_DURATION_MS[difficulty];
-  const baseWordTimeoutMs = DIFFICULTY_WORD_TIMEOUT_MS[difficulty];
+  const baseWordTimeoutMs = wordTimeoutMsOverride ?? DIFFICULTY_WORD_TIMEOUT_MS[difficulty];
   const showReading = DIFFICULTY_SHOW_READING[difficulty];
   const skill = SKILLS[character];
 
@@ -489,6 +525,20 @@ export function SoloBattle({
   /** extraMultiplier 目前只服务于「原初的解放」满血时的伤害翻倍,默认不生效 */
   function applyDamage(word: WordEntry, isInterrupt: boolean, extraMultiplier = 1) {
     const e = engineRef.current;
+    // 爬塔的一层:血条是「还剩几个词」,所以每个词固定扣 1,不吃词难度/连击/
+    // 增益的加成 —— 那些加成会让一层的长度随手速浮动,塔的关卡长度就没法设计了。
+    // (增益在爬塔里体现在别处:限时、扣血、词长)
+    if (isFloor) {
+      e.bossHp = Math.max(0, e.bossHp - 1);
+      e.combo += 1;
+      if (e.combo > e.maxCombo) e.maxCombo = e.combo;
+      const shown = computeDamage(word.difficulty, e.combo, isInterrupt);
+      e.totalDamage += shown; // 结算页的「总伤害」还是给个有意义的数
+      showCombatText('damage', shown);
+      e.avatarState = 'attack';
+      scheduleRevert({ avatarState: 'idle' }, AVATAR_PULSE_MS);
+      return shown;
+    }
     const base = computeDamage(word.difficulty, e.combo, isInterrupt);
     // 「浴血」把奖惩一起放大:这里是奖励侧,扣血侧在 damagePlayer 里
     const bloodbathDmg = e.bloodbathWordsLeft > 0 ? Math.round(base * BLOODBATH_MULTIPLIER) : base;
@@ -572,12 +622,12 @@ export function SoloBattle({
     e.avatarState = 'miss';
     scheduleRevert({ avatarState: 'idle' }, AVATAR_PULSE_MS);
     audio.play('miss');
-    damagePlayer(DIFFICULTY_DAMAGE_ON_MISS[difficulty]);
+    damagePlayer(damageOnMissOverride ?? DIFFICULTY_DAMAGE_ON_MISS[difficulty]);
     if (checkDeath()) return;
     consumeWordCounters();
     drawNext();
     // 同 handleComplete:挑战赛道只认剧本
-    if (!tryTriggerScheduledMechanic() && !challengeScript) {
+    if (!tryTriggerScheduledMechanic() && !challengeScript && enableMechanics) {
       tryTriggerTitanWrath(TITAN_WRATH_ON_FAILURE_CHANCE);
     }
     rerender();
@@ -727,7 +777,7 @@ export function SoloBattle({
     consumeWordCounters();
     drawNext();
     // 挑战赛道:机制完全按剧本,不走下面那两条依赖玩家表现的随机路径
-    if (!tryTriggerScheduledMechanic() && !challengeScript) {
+    if (!tryTriggerScheduledMechanic() && !challengeScript && enableMechanics) {
       // 先看这次掉血有没有跨过机制阈值,没有再掷泰坦之怒的骰子 ——
       // 阈值类机制是「剧情节点」,优先级高于随机插入的泰坦之怒。
       tryTriggerHpMechanic(prevBossHp, e.bossHp);
@@ -1022,6 +1072,13 @@ export function SoloBattle({
           {isEndless ? (
             <div className="battle__endless-stat">
               已存活 {formatDuration(e.remainingMs)} · 已击倒 <strong>{e.kills}</strong> 只
+            </div>
+          ) : isFloor ? (
+            // 爬塔的一层没有狂暴倒计时(noDurationLimit 里已经放行),这里 remainingMs
+            // 被当「已用时」用。仍套用 CountdownBar 的话标签会写着「狂暴倒计时」
+            // 却永远不会触发,是纯粹的误导。
+            <div className="battle__endless-stat">
+              已用时 {formatDuration(e.remainingMs)} · 还剩 <strong>{e.bossHp}</strong> 个词过关
             </div>
           ) : difficulty === 'practice' ? (
             <div className="battle__endless-stat">已用时 {formatDuration(e.remainingMs)} · 不限时,慢慢打</div>
