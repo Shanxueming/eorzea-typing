@@ -878,6 +878,83 @@ button:disabled {
   color: var(--color-text);
 }
 
+/* ── 联机大厅:正在等人的公开房间 ── */
+.lobby__visibility {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--color-text-dim);
+  cursor: pointer;
+  margin-top: -8px;
+}
+.lobby__rooms {
+  border: 1px solid rgba(230, 236, 245, 0.12);
+  border-radius: 10px;
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.02);
+}
+.lobby__rooms-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.lobby__rooms-count {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--color-text-dim);
+  border: 1px solid rgba(230, 236, 245, 0.2);
+  border-radius: 999px;
+  padding: 0 8px;
+}
+.lobby__rooms-empty {
+  font-size: 13px;
+  color: var(--color-text-dim);
+  line-height: 1.6;
+}
+.lobby__rooms-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  /* 房间多的时候不要把整页撑长,列表自己滚 */
+  max-height: 260px;
+  overflow-y: auto;
+}
+.lobby__rooms-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+}
+.lobby__rooms-host {
+  font-weight: 600;
+  /* 昵称是玩家自己起的,可能很长——挤压时先牺牲它,别把「加入」按钮顶掉 */
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.lobby__rooms-meta {
+  font-size: 12px;
+  color: var(--color-text-dim);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.lobby__rooms-row button {
+  padding: 4px 14px;
+  font-size: 13px;
+  flex-shrink: 0;
+}
+
 /* ───────────────────────── 移动端(单人) ─────────────────────────
  *
  * 断点跟 App.tsx 里的 MOBILE_QUERY 对齐:720px 以下,或者粗指针 + 1024px 以下
@@ -2119,18 +2196,18 @@ button:disabled {
   flex-direction: column;
   gap: 10px;
 }
+/* 大厅入口:样式比「联机对战」低一档(它俩进的是同一个场景),但已经不是占位了 */
 .menu__coop-teaser {
   border-style: dashed;
   border-color: rgba(230, 236, 245, 0.25);
   color: var(--color-text-dim);
   background: transparent;
-  cursor: not-allowed;
-  opacity: 0.65;
   font-size: 12px;
   padding: 4px 12px;
 }
-.menu__coop-teaser:hover {
-  background: transparent;
+.menu__coop-teaser:hover:not(:disabled) {
+  background: rgba(230, 236, 245, 0.08);
+  color: var(--color-text);
 }
 
 /* 快速开始 + 联机对战(含开发中占位)并排。联机在移动端不渲染,这时按钮自己占满 */

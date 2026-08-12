@@ -291,7 +291,7 @@ export function CoopSession({ session, onExit, onVictory }: CoopSessionProps) {
       playerId={state.playerId}
       players={state.players}
       errorMsg={state.errorMsg}
-      onCreate={(nick) => send({ t: 'create_room', nick, session: session ?? undefined })}
+      onCreate={(nick, isPublic) => send({ t: 'create_room', nick, session: session ?? undefined, isPublic })}
       onJoin={(code, nick) => send({ t: 'join_room', code, nick, session: session ?? undefined })}
       onReady={() => send({ t: 'ready' })}
       onStart={(difficulty, inputMode, gameMode, submitScore) => send({ t: 'start', difficulty, inputMode, gameMode, submitScore })}

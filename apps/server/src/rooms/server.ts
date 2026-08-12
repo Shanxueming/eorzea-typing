@@ -12,6 +12,29 @@ const genCode = customAlphabet('ABCDEFGHJKLMNPQRSTUVWXYZ23456789', 6);
 
 const rooms = new Map<string, Room>();
 
+/**
+ * 联机大厅列出的房间上限。大厅是不需要登录的公开接口,不封顶的话房间一多
+ * 每次刷新都在序列化整张表;而且大厅的用途是"找个人一起打",不是"看全站有多少房"。
+ */
+const MAX_LOBBY_ROOMS = 30;
+
+/**
+ * 联机大厅:还在等人的公开房间,新开的排前面。
+ *
+ * ★ 这是**不需要登录**的公开列表,所以只回 lobbyInfo() 那几个字段
+ *   (房间码/房主昵称/人数/开房时间),不带账号 ID —— 理由见 Room.lobbyInfo。
+ */
+export function listOpenRooms(): Array<ReturnType<Room['lobbyInfo']>> {
+  const open: Room[] = [];
+  for (const room of rooms.values()) {
+    if (room.isJoinableFromLobby()) open.push(room);
+  }
+  return open
+    .sort((a, b) => b.createdAt - a.createdAt)
+    .slice(0, MAX_LOBBY_ROOMS)
+    .map((room) => room.lobbyInfo());
+}
+
 /** 昵称长度上限,与 Room 里的截断口径一致 */
 const MAX_NICK_LENGTH = 16;
 /** 单条消息的字节上限。正常的 word_attempt 带几十个击键,几 KB 足够 */
@@ -155,6 +178,8 @@ export function attachRoomServer(httpServer: Server): void {
         while (rooms.has(code)) code = genCode();
         const finalCode = code;
         const room = new Room(finalCode, () => rooms.delete(finalCode));
+        // 不传就按公开处理:老客户端没这个字段,它们开的房也该能在大厅里被看到
+        room.isPublic = msg.isPublic !== false;
         rooms.set(finalCode, room);
         const player = room.addPlayer(nick, ws, resolveAccount(msg.session));
         ctx.room = room;

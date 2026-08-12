@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import type { PlayerPublic } from '../engine/coopProtocol';
+import { fetchOpenRooms, type OpenRoom } from '../engine/accountApi';
 import {
   CHARACTER_LABEL,
   SKILLS,
@@ -22,12 +23,23 @@ export interface LobbyProps {
   playerId: string | null;
   players: PlayerPublic[];
   errorMsg: string | null;
-  onCreate: (nick: string) => void;
+  onCreate: (nick: string, isPublic: boolean) => void;
   onJoin: (code: string, nick: string) => void;
   onReady: () => void;
   onStart: (difficulty: Difficulty, inputMode: InputMode, gameMode: GameMode, submitScore: boolean) => void;
   onSelectCharacter: (character: CharacterId) => void;
   onExit: () => void;
+}
+
+/** 大厅房间列表的刷新间隔。房间开开关关不算频繁,10 秒足够 */
+const LOBBY_POLL_INTERVAL_MS = 10_000;
+
+/** 「刚刚 / 3 分钟前」——房间列表里让人一眼看出这房挂了多久 */
+function openedAgo(createdAt: number): string {
+  const mins = Math.floor((Date.now() - createdAt) / 60_000);
+  if (mins < 1) return '刚刚';
+  if (mins < 60) return `${mins} 分钟前`;
+  return `${Math.floor(mins / 60)} 小时前`;
 }
 
 /**
@@ -37,6 +49,9 @@ export interface LobbyProps {
 export function Lobby({ status, code, playerId, players, errorMsg, onCreate, onJoin, onReady, onStart, onSelectCharacter, onExit }: LobbyProps) {
   const [nick, setNick] = useState(() => localStorage.getItem('eorzea-nick') ?? '');
   const [joinCode, setJoinCode] = useState('');
+  /** 开的房要不要挂到大厅列表上。默认公开——大厅要有房间才有意义 */
+  const [isPublic, setIsPublic] = useState(true);
+  const [openRooms, setOpenRooms] = useState<OpenRoom[] | null>(null);
   const [difficulty, setDifficulty] = useState<Difficulty>('normal');
   const [preferredInputMode, setPreferredInputMode] = useState<InputMode>(DEFAULT_INPUT_MODE);
   const [gameMode, setGameMode] = useState<GameMode>('standard');
@@ -50,6 +65,21 @@ export function Lobby({ status, code, playerId, players, errorMsg, onCreate, onJ
     setNick(v);
     localStorage.setItem('eorzea-nick', v);
   };
+
+  /**
+   * 大厅房间列表:进了房就不用再拉了(`code` 非空即已在房内)。
+   * 轮询而不是走 WebSocket 推送——房间列表变化不频繁,而且这个页面还没有
+   * 建立房间连接,为了列表单开一条长连接不划算。
+   */
+  const inRoom = !!code;
+  useEffect(() => {
+    if (inRoom) return;
+    let alive = true;
+    const pull = () => { void fetchOpenRooms().then((r) => { if (alive) setOpenRooms(r); }); };
+    pull();
+    const timer = setInterval(pull, LOBBY_POLL_INTERVAL_MS);
+    return () => { alive = false; clearInterval(timer); };
+  }, [inRoom]);
 
   const self = players.find((p) => p.playerId === playerId);
   const isHost = !!self?.isHost;
@@ -70,9 +100,13 @@ export function Lobby({ status, code, playerId, players, errorMsg, onCreate, onJ
           maxLength={16}
           onChange={(ev) => persistNick(ev.target.value)}
         />
-        <button disabled={status !== 'lobby' || !nick.trim()} onClick={() => onCreate(nick.trim())}>
+        <button disabled={status !== 'lobby' || !nick.trim()} onClick={() => onCreate(nick.trim(), isPublic)}>
           创建房间
         </button>
+        <label className="lobby__visibility">
+          <input type="checkbox" checked={isPublic} onChange={(ev) => setIsPublic(ev.target.checked)} />
+          挂到大厅让别人能看到(取消勾选就只能靠房间码进)
+        </label>
         <div className="lobby__row">
           <input
             className="lobby__input"
@@ -88,6 +122,41 @@ export function Lobby({ status, code, playerId, players, errorMsg, onCreate, onJ
             加入房间
           </button>
         </div>
+
+        <div className="lobby__rooms">
+          <div className="lobby__rooms-title">
+            联机大厅 · 正在等人的房间
+            {openRooms !== null && <span className="lobby__rooms-count">{openRooms.length}</span>}
+          </div>
+          {openRooms === null && <div className="lobby__rooms-empty">读取中…</div>}
+          {openRooms?.length === 0 && (
+            <div className="lobby__rooms-empty">
+              现在没有公开房间。你可以自己开一间等人来,或者把房间码发给朋友。
+            </div>
+          )}
+          {openRooms && openRooms.length > 0 && (
+            <ul className="lobby__rooms-list">
+              {openRooms.map((room) => (
+                <li key={room.code} className="lobby__rooms-row">
+                  <span className="lobby__rooms-host">{room.hostNick}</span>
+                  <span className="lobby__rooms-meta">
+                    {room.code} · {room.playerCount}/2 · {openedAgo(room.createdAt)}
+                  </span>
+                  <button
+                    disabled={status !== 'lobby' || !nick.trim()}
+                    onClick={() => onJoin(room.code, nick.trim())}
+                  >
+                    加入
+                  </button>
+                </li>
+              ))}
+            </ul>
+          )}
+          {openRooms && openRooms.length > 0 && !nick.trim() && (
+            <div className="lobby__rooms-empty">先在上面填个昵称,才能加入房间。</div>
+          )}
+        </div>
+
         {errorMsg && <div className="menu__error">{errorMsg}</div>}
         <button onClick={onExit}>返回主菜单</button>
       </div>

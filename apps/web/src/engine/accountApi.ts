@@ -245,3 +245,26 @@ export function logSession(session: Session, payload: LogSessionPayload): Promis
     password: session.password,
   });
 }
+
+// ─────────────────────────── 联机大厅 ───────────────────────────
+
+export interface OpenRoom {
+  code: string;
+  hostNick: string;
+  playerCount: number;
+  createdAt: number;
+}
+
+/**
+ * 还在等人的公开房间。不需要登录 —— 联机本来就不强制账号。
+ * 拿不到就当没有房间(返回空列表),大厅里照样能手动输房间码进。
+ */
+export async function fetchOpenRooms(): Promise<OpenRoom[]> {
+  try {
+    const res = await fetch('/api/coop/rooms');
+    const json = await res.json() as { ok?: boolean; rooms?: OpenRoom[] };
+    return json.ok && Array.isArray(json.rooms) ? json.rooms : [];
+  } catch {
+    return [];
+  }
+}

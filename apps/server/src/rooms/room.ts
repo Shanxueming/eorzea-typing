@@ -137,6 +137,10 @@ export class Room {
   readonly code: string;
   players: ConnectedPlayer[] = [];
   phase: 'lobby' | 'battle' | 'ended' = 'lobby';
+  /** 开房时刻。联机大厅按它排序,让刚开的房排在前面 */
+  readonly createdAt = Date.now();
+  /** 要不要出现在联机大厅列表里。私密房只能靠房间码进 */
+  isPublic = true;
 
   private onEmpty: () => void;
   private battleStartedAt = 0;
@@ -205,6 +209,29 @@ export class Room {
       playerId: p.playerId, nick: p.nick, ready: p.ready, isHost: i === 0, character: p.character,
       displayId: p.displayId,
     }));
+  }
+
+  /**
+   * 联机大厅列出这间房时用的公开信息。
+   *
+   * ★ 只暴露"要不要进这间房"所必需的东西:房间码、房主昵称、人数、开房时间。
+   *   **不带 displayId(账号 ID)** —— 大厅是不需要登录就能看的公开列表,把
+   *   账号 ID 摊在上面等于允许任何人枚举在线玩家的账号,登录接口就有了一份
+   *   现成的用户名字典。昵称是玩家自己随便起的,不构成这个问题。
+   */
+  lobbyInfo(): { code: string; hostNick: string; playerCount: number; createdAt: number } {
+    return {
+      code: this.code,
+      // 第一个加入的就是房主,口径同 publicPlayers
+      hostNick: this.players[0]?.nick ?? '',
+      playerCount: this.players.length,
+      createdAt: this.createdAt,
+    };
+  }
+
+  /** 还能不能被大厅列出来:公开、在大厅阶段、没满员、且确实还有人在里面 */
+  isJoinableFromLobby(): boolean {
+    return this.isPublic && this.phase === 'lobby' && this.players.length > 0 && this.players.length < 2;
   }
 
   broadcast(msg: S2C): void {

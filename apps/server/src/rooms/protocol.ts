@@ -41,7 +41,12 @@ export interface SessionCreds {
 }
 
 export type C2S =
-  | { t: 'create_room'; nick: string; session?: SessionCreds }
+  /**
+   * 开房。`isPublic` 决定这间房要不要出现在联机大厅的列表里 ——
+   * 不传按公开处理(老客户端没有这个字段,大厅刚上线时它们开的房也该能被看到)。
+   * 想只跟熟人打的,勾私密,那就只能靠房间码进。
+   */
+  | { t: 'create_room'; nick: string; session?: SessionCreds; isPublic?: boolean }
   | { t: 'join_room'; code: string; nick: string; session?: SessionCreds }
   | { t: 'ready' }
   /** 大厅里选角色。两人可以选同一个 —— 这是合作不是对战,没必要抢 */

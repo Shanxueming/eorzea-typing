@@ -40,7 +40,8 @@ export interface SessionCreds {
 }
 
 export type C2S =
-  | { t: 'create_room'; nick: string; session?: SessionCreds }
+  /** isPublic 决定这间房出不出现在联机大厅列表里,不传按公开处理 */
+  | { t: 'create_room'; nick: string; session?: SessionCreds; isPublic?: boolean }
   | { t: 'join_room'; code: string; nick: string; session?: SessionCreds }
   | { t: 'ready' }
   /** 大厅里选角色。两人可以选同一个 —— 这是合作不是对战,没必要抢 */

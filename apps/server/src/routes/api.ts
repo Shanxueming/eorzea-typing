@@ -26,6 +26,7 @@ import { buildNounPool } from '../auth/idGenerator.js';
 import { adminLogin, adminLogout, isAdminEnabled, secondFactorKind, verifyAdminToken } from '../auth/adminSession.js';
 import { replayAndScore, type ReplayPayload } from '../scoreReplay.js';
 import { loadBank } from '../rooms/wordbankStore.js';
+import { listOpenRooms } from '../rooms/server.js';
 
 /** 名词池只在首次用到时构建一次 —— 每次注册都读一遍词库太浪费 */
 let nounPool: string[] | null = null;
@@ -164,6 +165,15 @@ export async function registerApiRoutes(app: FastifyInstance): Promise<void> {
 
     return { ok: true, ...getScorePercentile(gameMode, difficulty, inputMode, metric) };
   });
+
+  /**
+   * 联机大厅:还在等人的公开房间。
+   *
+   * ★ 不需要登录 —— 联机本来就不强制账号(昵称是自己起的),大厅要是要求登录
+   *   反而把只想随便打一局的人挡在外面。返回的字段里没有账号 ID,理由见
+   *   Room.lobbyInfo 的注释。
+   */
+  app.get('/api/coop/rooms', async () => ({ ok: true, rooms: listOpenRooms() }));
 
   // ─────────────────────── 用量埋点 ───────────────────────
 

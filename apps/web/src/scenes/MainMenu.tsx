@@ -276,8 +276,10 @@ export function MainMenu({ onStartSolo, onGoCoop, victoryCount, coopAvailable, o
             <button className="menu__coop" disabled={busy} onClick={onGoCoop}>
               联机对战(2 人)
             </button>
-            <button className="menu__coop-teaser" disabled type="button">
-              联机大厅 · 开发中
+            {/* 大厅和「联机对战」进的是同一个场景——房间列表就在建房/加入的那一屏上,
+                单开一个入口只会让人以为是两个地方 */}
+            <button className="menu__coop-teaser" disabled={busy} type="button" onClick={onGoCoop}>
+              联机大厅 · 看看谁在等人
             </button>
           </div>
         )}
