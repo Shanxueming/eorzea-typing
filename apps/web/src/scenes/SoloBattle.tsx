@@ -67,15 +67,25 @@ import { HpBar } from '../components/HpBar';
 import { CountdownBar } from '../components/CountdownBar';
 import { BattleExitControl } from '../components/BattleExitControl';
 
-/** 词语复盘:这一局遇到过的词,打对了还是没打对(超时/跳过/放弃都算没打对) */
-export interface WordReviewEntry {
-  id: string;
-  /** 显示原文,可能含中点,如 "必杀剑·九天" */
-  text: string;
-  reading: string;
-  category: WordCategory;
+/**
+ * 词语复盘:这一局遇到过的词,打对了还是没打对(超时/跳过/放弃都算没打对)。
+ *
+ * ★ 直接带上整条 WordEntry 而不是只挑几个展示字段 —— 错题本要拿这些词
+ *   原样组成一个可以直接开打的词池(见 engine/mistakes.ts),少了 typeText /
+ *   difficulty / pure 就拼不出合法的 WordEntry,还得回词库里反查一次。
+ */
+export interface WordReviewEntry extends WordEntry {
   outcome: 'correct' | 'missed';
 }
+
+/**
+ * 单机的「玩法变体」。
+ *
+ * ★ 不要再用 `unranked` 反推玩法 —— 它只回答「这局算不算分」这一个问题,
+ *   突然死亡和错题本练习都不算分,拿它当标签用会把错题本的结算页写成
+ *   「突然死亡结束」。要区分玩法就用这个字段。
+ */
+export type SoloVariant = 'sudden_death' | 'mistake_practice';
 
 export interface SoloResult {
   victory: boolean;
@@ -86,8 +96,10 @@ export interface SoloResult {
   playerHp: number;
   /** 这一局的血量上限。突然死亡模式是 1,其余都是 PLAYER_MAX_HP */
   maxHp: number;
-  /** 突然死亡模式专用:强制不计入排行榜,不管难度/玩法本来符不符合上榜条件 */
+  /** 强制不计入排行榜,不管难度/玩法本来符不符合上榜条件 */
   unranked: boolean;
+  /** 玩法变体,决定结算页怎么称呼这一局。普通标准/无限局不带这个字段 */
+  variant?: SoloVariant;
   /** 每日挑战:非空表示这一局是当天的挑战,结算页要交到每日榜而不是正式榜 */
   dailyDateKey?: string;
   damage: number;
@@ -147,8 +159,10 @@ export interface SoloBattleProps {
    *   这条规则会被回血机制悄悄破坏掉。
    */
   maxHp?: number;
-  /** 突然死亡模式专用:强制这一局不计入排行榜 */
+  /** 强制这一局不计入排行榜 */
   unranked?: boolean;
+  /** 玩法变体,原样带进结算结果供结算页显示 */
+  variant?: SoloVariant;
   /**
    * 挑战赛道的机制剧本(每日挑战/赛事用)。传了就**完全接管机制触发**:
    * 在剧本指定的词序号触发指定机制,不再掷骰子、不看 pity、不看血量阈值。
@@ -272,7 +286,7 @@ function initEngine(bossMaxHp: number, pinyinHintsLeft: number, maxHp: number): 
  */
 export function SoloBattle({
   pool, mode, difficulty, inputMode, character, gameMode, categories, pureOnly,
-  maxHp = PLAYER_MAX_HP, unranked = false, challengeScript, fixedSeed, dailyDateKey,
+  maxHp = PLAYER_MAX_HP, unranked = false, variant, challengeScript, fixedSeed, dailyDateKey,
   onFinish, onExit,
 }: SoloBattleProps) {
   const isEndless = gameMode === 'endless';
@@ -330,9 +344,7 @@ export function SoloBattle({
    */
   const reviewRef = useRef(new Map<string, WordReviewEntry>());
   function recordReview(word: WordEntry, outcome: WordReviewEntry['outcome']) {
-    reviewRef.current.set(word.id, {
-      id: word.id, text: word.text, reading: word.reading, category: word.category, outcome,
-    });
+    reviewRef.current.set(word.id, { ...word, outcome });
   }
   const finishedRef = useRef(false);
   const castDeadlineRef = useRef<number | null>(null);
@@ -385,6 +397,7 @@ export function SoloBattle({
       playerHp: e.playerHp,
       maxHp,
       unranked,
+      variant,
       dailyDateKey,
       damage: e.totalDamage,
       interruptsSucceeded: e.interruptsSucceeded,

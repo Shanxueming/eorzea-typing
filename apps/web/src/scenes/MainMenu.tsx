@@ -4,6 +4,7 @@ import { selectPool } from '@eorzea/shared/wordbank';
 import { filterFeaturedWordPool } from '@eorzea/shared/battle';
 import { DAILY_CHALLENGE_CONFIG } from '@eorzea/shared/challenge';
 import { fetchDailyToday } from '../engine/accountApi';
+import { MIN_PRACTICE_WORDS, clearMistakes, mistakeCount, mistakePool } from '../engine/mistakes';
 import { loadBank, loadBanks, loadWordbankIndex, type WordbankIndex } from '../data/wordbankLoader';
 import { audio } from '../engine/audio';
 import { avatarSkinPath, rabbitStylePath } from '../engine/assets';
@@ -12,6 +13,7 @@ import { Leaderboard } from '../components/Leaderboard';
 import { CoopLeaderboard } from '../components/CoopLeaderboard';
 import { DailyLeaderboard } from '../components/DailyLeaderboard';
 import type { Session } from '../engine/accountApi';
+import type { SoloVariant } from './SoloBattle';
 import {
   CHARACTER_LABEL,
   DEFAULT_INPUT_MODE,
@@ -50,8 +52,10 @@ export interface SoloStartConfig {
   pureOnly: boolean;
   /** 突然死亡模式专用:血量上限压到 1,详见 SoloBattle.tsx 的注释 */
   maxHp?: number;
-  /** 突然死亡模式专用:强制不计入排行榜 */
+  /** 强制不计入排行榜 */
   unranked?: boolean;
+  /** 玩法变体,决定结算页怎么称呼这一局 */
+  variant?: SoloVariant;
   /** 每日挑战:固定 seed + 确定性机制剧本,详见 packages/shared/src/challenge.ts */
   challenge?: { seed: string; dateKey: string };
 }
@@ -86,6 +90,9 @@ export function MainMenu({ onStartSolo, onGoCoop, victoryCount, coopAvailable, o
   const [includeImpure, setIncludeImpure] = useState(false);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  // 错题本存在 localStorage,每次回到菜单都重新数一遍(刚打完一局可能又多了几个)
+  const [mistakes, setMistakes] = useState(() => mistakeCount());
+  useEffect(() => { setMistakes(mistakeCount()); }, []);
 
   useEffect(() => {
     loadWordbankIndex().then(setIndex).catch((e) => setError(String(e)));
@@ -170,6 +177,27 @@ export function MainMenu({ onStartSolo, onGoCoop, victoryCount, coopAvailable, o
     }
   };
 
+  /**
+   * 练错题:词池就是错题本里那些词,其余规则沿用玩家当前选的难度/模式。
+   *
+   * ★ 强制 unranked —— 自定义词池的成绩没法上榜:服务端重放核算要靠
+   *   categories + pureOnly 把词池原样重建出来,而错题本是本地攒的,
+   *   服务端根本重建不出来,交上去只会被判「词序核对失败」。
+   */
+  const startMistakePractice = () => {
+    audio.unlock();
+    setError(null);
+    const pool = mistakePool();
+    if (pool.length < MIN_PRACTICE_WORDS) {
+      setError(`错题本里至少要有 ${MIN_PRACTICE_WORDS} 个词才能开练。`);
+      return;
+    }
+    onStartSolo({
+      pool, mode, difficulty, inputMode, character, gameMode: 'standard',
+      categories: ['starter'], pureOnly: true, unranked: true, variant: 'mistake_practice',
+    });
+  };
+
   const startSuddenDeath = async () => {
     audio.unlock();
     setBusy(true);
@@ -181,7 +209,7 @@ export function MainMenu({ onStartSolo, onGoCoop, victoryCount, coopAvailable, o
         pool, mode: 'pinyin', difficulty: 'hell',
         inputMode: resolveInputMode('hell', preferredInputMode),
         character, gameMode: 'endless', categories: ['starter'], pureOnly: true,
-        maxHp: 1, unranked: true,
+        maxHp: 1, unranked: true, variant: 'sudden_death',
       });
     } catch (e) {
       setError(String(e));
@@ -335,6 +363,28 @@ export function MainMenu({ onStartSolo, onGoCoop, victoryCount, coopAvailable, o
       <button className="menu__daily" disabled={busy} onClick={() => void startDaily()}>
         每日挑战 · 全站同一批词,每天零点换,比谁快
       </button>
+
+      <div className="menu__mistakes">
+        <span className="menu__mistakes-text">
+          错题本 · <strong>{mistakes}</strong> 个词
+          {mistakes > 0 && <span className="menu__mistakes-hint">(连着打对 2 次就会自动移走)</span>}
+        </span>
+        <button
+          className="menu__mistakes-btn"
+          disabled={busy || mistakes < MIN_PRACTICE_WORDS}
+          onClick={startMistakePractice}
+        >
+          {mistakes < MIN_PRACTICE_WORDS ? `攒够 ${MIN_PRACTICE_WORDS} 个词才能练` : '只练我打错的词'}
+        </button>
+        {mistakes > 0 && (
+          <button
+            className="menu__changelog-link"
+            onClick={() => { clearMistakes(); setMistakes(0); }}
+          >
+            清空
+          </button>
+        )}
+      </div>
 
       <button className="menu__sudden-death" disabled={busy} onClick={() => void startSuddenDeath()}>
         突然死亡模式 · 地狱难度 + 拼音,1 滴血打错就死,不计入排行榜

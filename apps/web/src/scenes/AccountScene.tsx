@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Leaderboard } from '../components/Leaderboard';
+import { CareerPanel } from '../components/CareerPanel';
 import {
   clearSession, login, register, saveSession,
   type IssuedAccount, type Session,
@@ -160,15 +161,21 @@ export function AccountScene({ session, onSession, onExit }: AccountSceneProps) 
         <h1 className="account__title">玩家账号</h1>
 
         {session && !issued && (
-          <div className="account__logged-in">
-            <div className="account__logged-id">{session.displayId}</div>
-            <p className="account__hint">已登录。通关后可以在结算页把成绩传上榜。</p>
-            <button
-              onClick={() => { clearSession(); onSession(null); }}
-            >
-              退出登录
-            </button>
-          </div>
+          <>
+            <div className="account__logged-in">
+              <div className="account__logged-id">{session.displayId}</div>
+              <p className="account__hint">已登录。通关后可以在结算页把成绩传上榜。</p>
+              <button
+                onClick={() => { clearSession(); onSession(null); }}
+              >
+                退出登录
+              </button>
+            </div>
+            <div className="account__career">
+              <h2 className="account__section-title">我的生涯 · 最近对局</h2>
+              <CareerPanel session={session} />
+            </div>
+          </>
         )}
 
         {/* ── 刚申请完:展示三样凭证 ── */}

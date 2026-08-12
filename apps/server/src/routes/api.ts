@@ -15,7 +15,7 @@ import {
 } from '../db/scores.js';
 import { getCoopLeaderboard, listCoopScoresForAdmin, setCoopScoreHidden } from '../db/coopScores.js';
 import { getDailyStats, recordGameStart } from '../db/telemetry.js';
-import { recordPlaySession } from '../db/playSessions.js';
+import { listRecentSessionsForPlayer, recordPlaySession } from '../db/playSessions.js';
 import {
   countPlayers, createPlayer, findPlayer, listPlayers, login,
   resetPassword, setBanned, verifyRoot,
@@ -168,6 +168,23 @@ export async function registerApiRoutes(app: FastifyInstance): Promise<void> {
     }
 
     return { ok: true, ...getScorePercentile(gameMode, difficulty, inputMode, metric) };
+  });
+
+  /**
+   * 生涯:我最近的对局存档(7 天内)。
+   *
+   * ★ 用 POST 而不是 GET —— 这是要验身份的接口,凭证得放 body 里。GET 的话
+   *   密码会进 URL,跟着浏览器历史、日志、Referer 到处跑。
+   * ★ 只回自己的:playerId 取自校验通过的那个账号,不接受请求里另指一个人。
+   */
+  app.post('/api/account/sessions', async (req, reply) => {
+    const body = req.body as { playerId?: unknown; password?: unknown } | undefined;
+    if (!body || typeof body.playerId !== 'string' || typeof body.password !== 'string') {
+      return reply.code(400).send({ ok: false, error: 'bad_request' });
+    }
+    const auth = login(body.playerId, body.password);
+    if (!auth.ok) return reply.code(401).send({ ok: false, error: auth.reason });
+    return { ok: true, sessions: listRecentSessionsForPlayer(auth.player.id, 30) };
   });
 
   // ─────────────────────── 每日挑战 ───────────────────────

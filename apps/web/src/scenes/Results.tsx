@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { CHARACTER_LABEL, DIFFICULTY_LABEL, INPUT_MODE_LABEL } from '../battle/constants';
 import { bestRecord, saveRecord, type GameRecord } from '../engine/records';
+import { recordReviewOutcomes } from '../engine/mistakes';
 import {
   fetchPercentile, logSession, submitDailyScore, submitScore,
   type PercentileResult, type Session,
@@ -34,18 +35,32 @@ export function Results({ result, session, onGoAccount, onBackToMenu, onRetry }:
   const [showReview, setShowReview] = useState(false);
   const [reviewFilter, setReviewFilter] = useState<'all' | 'correct' | 'missed'>('all');
 
+  const { stats, endless } = result;
+  const isEndless = result.gameMode === 'endless';
+
+  /** 这一局是每日挑战 —— 交的是每日榜,不是正式榜 */
+  const isDaily = !!result.dailyDateKey;
+
+  /**
+   * 结算页怎么称呼这一局。按玩法变体判断,**不要拿 unranked 反推** ——
+   * 那个字段只回答「算不算分」,突然死亡和错题练习都不算分,用它当标签
+   * 会把错题练习写成「突然死亡模式」。
+   */
+  const trackLabel = isDaily ? `每日挑战 ${result.dailyDateKey}`
+    : result.variant === 'sudden_death' ? '突然死亡模式'
+    : result.variant === 'mistake_practice' ? '错题练习'
+    : isEndless ? '无限模式'
+    : '标准模式';
+
   /**
    * 能不能上榜。五个条件缺一不可:
    *   1. 登录了 —— 榜单要有名字
    *   2. 难度是困难或地狱(需求 Q22)
    *   3. 标准模式必须通关;无限模式没有「通关」概念,一律可传
    *   4. 有原始遥测可交 —— 服务端要靠它重放核算
-   *   5. 不是突然死亡模式这类强制不计分的赛制——它复用了无限模式的引擎,
+   *   5. 不是突然死亡/错题练习这类强制不计分的赛制——它们复用了正常引擎,
    *      难度/玩法本身会满足前四条,必须专门加一道口子拦掉
    */
-  /** 这一局是每日挑战 —— 交的是每日榜,不是正式榜 */
-  const isDaily = !!result.dailyDateKey;
-
   const rankable = !!session
     && RANKED_DIFFICULTIES.includes(result.difficulty)
     && (result.gameMode === 'endless' || result.victory)
@@ -54,9 +69,6 @@ export function Results({ result, session, onGoAccount, onBackToMenu, onRetry }:
 
   /** 每日挑战有自己的一套上榜条件:通关 + 登录就行(难度是固定的,不用再判) */
   const dailyUploadable = isDaily && !!session && result.victory && result.attempts.length > 0;
-
-  const { stats, endless } = result;
-  const isEndless = result.gameMode === 'endless';
 
   /**
    * 「超越了多少人」用的是排行榜同一套比较口径(标准比 clear_ms、无限比
@@ -94,7 +106,7 @@ export function Results({ result, session, onGoAccount, onBackToMenu, onRetry }:
     setShareMsg(null);
     const outcome = await shareResultImage({
       displayId: session.displayId,
-      track: `${result.unranked ? '突然死亡模式' : isEndless ? '无限模式' : '标准模式'} · ${DIFFICULTY_LABEL[result.difficulty]} · ${INPUT_MODE_LABEL[result.inputMode]}`,
+      track: `${trackLabel} · ${DIFFICULTY_LABEL[result.difficulty]} · ${INPUT_MODE_LABEL[result.inputMode]}`,
       durationText: formatDuration(stats.elapsedMs),
       cpm: stats.cpm,
       rank: percentile?.total ? percentile.rank : null,
@@ -166,6 +178,8 @@ export function Results({ result, session, onGoAccount, onBackToMenu, onRetry }:
   // 不去重的话同一局会被记两遍(这个坑在两个战斗场景里也踩过)。
   const savedRef = useRef(false);
   const [previousBest, setPreviousBest] = useState<GameRecord | null>(null);
+  /** 这一局新进错题本的词数,给下面的复盘面板做个提示 */
+  const [mistakesAdded, setMistakesAdded] = useState(0);
   useEffect(() => {
     if (savedRef.current) return;
     savedRef.current = true;
@@ -188,6 +202,9 @@ export function Results({ result, session, onGoAccount, onBackToMenu, onRetry }:
       maxCombo: endless?.maxCombo,
       recordedAt: Date.now(),
     });
+    // 错题本:打错的词记进去,打对的攒毕业进度(见 engine/mistakes.ts)。
+    // 纯本地,不登录也有,所以和上传成绩无关,进结算页就记。
+    setMistakesAdded(recordReviewOutcomes(result.wordsReview));
   }, [result, stats, endless]);
 
   /**
@@ -234,11 +251,14 @@ export function Results({ result, session, onGoAccount, onBackToMenu, onRetry }:
   return (
     <div className="results">
       <h1 className="results__title">
-        {result.unranked ? '突然死亡结束' : isEndless ? '无限模式结束' : TITLE_BY_REASON[result.reason]}
+        {result.variant === 'sudden_death' ? '突然死亡结束'
+          : result.variant === 'mistake_practice' ? '错题练习结束'
+          : isEndless ? '无限模式结束'
+          : TITLE_BY_REASON[result.reason]}
       </h1>
       <div className="results__score">得分 {result.score}</div>
       <div className="results__track">
-        {isDaily ? `每日挑战 ${result.dailyDateKey}` : result.unranked ? '突然死亡模式' : isEndless ? '无限模式' : '标准模式'} · {DIFFICULTY_LABEL[result.difficulty]} ·{' '}
+        {trackLabel} · {DIFFICULTY_LABEL[result.difficulty]} ·{' '}
         {INPUT_MODE_LABEL[result.inputMode]} · {CHARACTER_LABEL[result.character]}
       </div>
 
@@ -320,6 +340,11 @@ export function Results({ result, session, onGoAccount, onBackToMenu, onRetry }:
           >
             {showReview ? '收起' : '展开'} 词语复盘({result.wordsReview.length})
           </button>
+          {mistakesAdded > 0 && (
+            <div className="results__upload-hint">
+              有 {mistakesAdded} 个新词进了错题本，可以在主菜单单独练。
+            </div>
+          )}
           {showReview && (
             <>
               <div className="results__review-filters">
@@ -388,8 +413,10 @@ export function Results({ result, session, onGoAccount, onBackToMenu, onRetry }:
         )}
         {session && !isDaily && !rankable && (
           <div className="results__upload-hint">
-            {result.unranked
+            {result.variant === 'sudden_death'
               ? '突然死亡模式是比赛用的规则，不计入排行榜。'
+              : result.variant === 'mistake_practice'
+              ? '错题练习用的是你自己的错题本，服务端没法重建这个词池，所以不计入排行榜。'
               : !RANKED_DIFFICULTIES.includes(result.difficulty)
               ? '只有困难和地狱难度会计入排行榜。'
               : '标准模式要通关才能上榜。'}
@@ -408,8 +435,9 @@ export function Results({ result, session, onGoAccount, onBackToMenu, onRetry }:
           )
         ) : (
           <div className="results__share-percentile results__share-percentile--dim">
-            {result.unranked
-              ? '突然死亡模式不参与排行榜统计'
+            {isDaily ? '每日挑战看今日榜的名次，不参与这项统计'
+              : result.variant === 'sudden_death' ? '突然死亡模式不参与排行榜统计'
+              : result.variant === 'mistake_practice' ? '错题练习不参与排行榜统计'
               : '困难/地狱难度且通关后，才会统计「超越了多少人」'}
           </div>
         )}

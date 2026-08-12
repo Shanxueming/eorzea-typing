@@ -1070,6 +1070,100 @@ button:disabled {
   background: rgba(255, 212, 127, 0.22);
 }
 
+/* ── 生涯:账号页里的最近对局 ── */
+.account__career {
+  margin-top: 24px;
+}
+.account__section-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+.career__summary {
+  font-size: 13px;
+  color: var(--color-text-dim);
+  margin-bottom: 10px;
+}
+.career__summary strong {
+  color: var(--color-text);
+}
+.career__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  /* 30 条全铺开会把账号页拉得很长,自己滚 */
+  max-height: 320px;
+  overflow-y: auto;
+}
+.career__row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.03);
+  font-size: 13px;
+  /* 左边一道竖线标出通关的局,不用额外图标 */
+  border-left: 3px solid transparent;
+}
+.career__row--win {
+  border-left-color: rgba(120, 220, 160, 0.7);
+}
+.career__when {
+  color: var(--color-text-dim);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.career__track {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.career__outcome {
+  white-space: nowrap;
+}
+.career__words {
+  color: var(--color-text-dim);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.career__note {
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--color-text-dim);
+}
+
+/* 错题本:不是一个"模式",所以做成一行信息条而不是大按钮 */
+.menu__mistakes {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: var(--color-text-dim);
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.03);
+  align-self: flex-start;
+}
+.menu__mistakes-text strong {
+  color: var(--color-text);
+  font-size: 15px;
+}
+.menu__mistakes-hint {
+  margin-left: 6px;
+  opacity: 0.75;
+}
+.menu__mistakes-btn {
+  font-size: 13px;
+  padding: 5px 14px;
+}
+
 /* 每日挑战:青色,和无限模式的金色、突然死亡的红色各自区分开 */
 .menu__daily {
   align-self: flex-start;

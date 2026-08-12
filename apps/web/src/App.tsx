@@ -192,6 +192,7 @@ export default function App() {
           pureOnly={soloConfig.pureOnly}
           maxHp={soloConfig.maxHp}
           unranked={soloConfig.unranked}
+          variant={soloConfig.variant}
           fixedSeed={soloConfig.challenge?.seed}
           challengeScript={soloChallengeScript}
           dailyDateKey={soloConfig.challenge?.dateKey}

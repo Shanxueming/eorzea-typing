@@ -246,6 +246,35 @@ export function logSession(session: Session, payload: LogSessionPayload): Promis
   });
 }
 
+// ─────────────────────────── 生涯 ───────────────────────────
+
+export interface PlaySessionSummary {
+  id: number;
+  gameMode: GameMode;
+  difficulty: Difficulty;
+  inputMode: InputMode;
+  character: CharacterId;
+  mode: TypingMode;
+  elapsedMs: number;
+  victory: boolean;
+  reason: string;
+  claimedScore: number;
+  claimedClearMs: number | null;
+  claimedKills: number | null;
+  claimedSurvivedMs: number | null;
+  attemptCount: number;
+  createdAt: number;
+}
+
+/** 我最近的对局存档(服务端只留 7 天)。凭证走 body,不放 URL */
+export async function fetchMySessions(session: Session): Promise<PlaySessionSummary[]> {
+  const r = await post<{ ok: true; sessions: PlaySessionSummary[] }>('/api/account/sessions', {
+    playerId: session.displayId,
+    password: session.password,
+  });
+  return r.sessions;
+}
+
 // ─────────────────────────── 每日挑战 ───────────────────────────
 
 export interface DailyToday {
