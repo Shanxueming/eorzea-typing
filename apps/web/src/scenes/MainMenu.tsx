@@ -386,6 +386,7 @@ export function MainMenu({ onStartSolo, onGoCoop, onStartTower, victoryCount, co
       </button>
 
       <button className="menu__tower" disabled={busy} onClick={() => void startTower()}>
+        <span className="menu__tag">测试中</span>
         爬塔 · 100 层,每层选一条路,血量不回满,倒下就重来
       </button>
 

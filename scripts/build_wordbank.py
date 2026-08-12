@@ -195,8 +195,16 @@ CATEGORIES = OrderedDict([
 ])
 
 # starter 精选包的组成: (分类, 取多少条, 是否只要纯汉字)
+#
+# ★ 数字是上限不是实取: 取样按难度 1/2/3 三桶各取 cap//3, 桶不够就取多少算多少。
+#   actions 的难度3桶只有 15 条、craft_actions 只有 1 条, 所以 cap 要抬得比
+#   期望条数高不少。当前配比实取 actions 681 / craft_actions 61。
+# ★ 2026-08-12 把技能类的比重从约 14% 提到约 29%。
+#   ★★ 改这里之后要和 scripts/rebalance_starter.py 里的 STARTER 保持一致 ——
+#      那个脚本能在没有 raw/*.csv 的情况下单独重建 starter.json, 两处不同步
+#      就会出现"谁后跑谁说了算"的问题。
 STARTER = [
-    ('jobs', 44, True), ('actions', 400, True), ('craft_actions', 40, True),
+    ('jobs', 44, True), ('actions', 1000, True), ('craft_actions', 150, True),
     ('places', 300, True), ('monsters', 300, True), ('duties', 150, True),
     ('mounts', 150, True), ('minions', 150, True), ('status', 200, True),
     ('races', 24, True), ('weather', 60, True), ('worlds', 80, True),

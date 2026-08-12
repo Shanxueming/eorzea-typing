@@ -1138,6 +1138,20 @@ button:disabled {
   color: var(--color-text-dim);
 }
 
+/* 「测试中」小标:告诉玩家这个玩法还在调,数值和规则可能会变 */
+.menu__tag {
+  display: inline-block;
+  margin-right: 8px;
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+  color: var(--color-text);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  vertical-align: middle;
+}
+
 /* 爬塔:紫色,和每日挑战的青、无限的金、突然死亡的红各自区分开 */
 .menu__tower {
   align-self: flex-start;

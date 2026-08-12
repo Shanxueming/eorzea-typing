@@ -1,6 +1,6 @@
 {
  "total": 96969,
- "starterCount": 2156,
+ "starterCount": 2590,
  "source": "thewakingsands/ffxiv-datamining-cn",
  "categories": [
   {
@@ -270,8 +270,8 @@
   {
    "category": "starter",
    "label": "精选起步包",
-   "count": 2156,
-   "pure": 2156,
+   "count": 2590,
+   "pure": 2590,
    "file": "starter.json"
   }
  ]
