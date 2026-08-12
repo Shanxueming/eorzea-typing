@@ -21,6 +21,10 @@ import {
   resetPassword, setBanned, verifyRoot,
 } from '../db/players.js';
 import { resolveInputMode } from '@eorzea/shared/battle';
+import {
+  DAILY_CHALLENGE_CONFIG, dailyDateKey, dailyPeriod, dailySeed,
+} from '@eorzea/shared/challenge';
+import { getDailyLeaderboard, submitDailyScore } from '../db/dailyScores.js';
 import { formatForDisplay } from '../auth/credentials.js';
 import { buildNounPool } from '../auth/idGenerator.js';
 import { adminLogin, adminLogout, isAdminEnabled, secondFactorKind, verifyAdminToken } from '../auth/adminSession.js';
@@ -164,6 +168,96 @@ export async function registerApiRoutes(app: FastifyInstance): Promise<void> {
     }
 
     return { ok: true, ...getScorePercentile(gameMode, difficulty, inputMode, metric) };
+  });
+
+  // ─────────────────────── 每日挑战 ───────────────────────
+
+  /**
+   * 今天的题面。**seed 由服务端下发,客户端不要自己按本地时区推** ——
+   * 玩家的机器可能在任何时区、时间也可能不准,自己推出来的 seed 和服务端
+   * 对不上,提交时会被直接拒收。校验提交时服务端用同一个函数再算一遍。
+   */
+  app.get('/api/daily/today', async () => {
+    const now = Date.now();
+    const { end } = dailyPeriod(now);
+    return {
+      ok: true,
+      dateKey: dailyDateKey(now),
+      seed: dailySeed(now),
+      endsAt: end,
+      ...DAILY_CHALLENGE_CONFIG,
+    };
+  });
+
+  /** 某一天的每日挑战榜。不传 date 就是今天 */
+  app.get('/api/daily/leaderboard', async (req) => {
+    const q = req.query as { date?: unknown } | undefined;
+    const now = Date.now();
+    // 日期串不可信,只接受 YYYY-MM-DD 的形状,其余一律当成今天
+    const raw = typeof q?.date === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(q.date) ? q.date : null;
+    const dateKey = raw ?? dailyDateKey(now);
+    return { ok: true, dateKey, rows: getDailyLeaderboard(dateKey) };
+  });
+
+  /**
+   * 提交每日挑战成绩。
+   *
+   * ★★★ 和正式榜一样必须过 replayAndScore,而且**多一道 seed 校验**:
+   *   提交里的 seed 必须等于服务端自己算出来的今日 seed。少了这条,玩家可以
+   *   拿任意一个自己挑过的、词特别简单的 seed 来打,再当成今天的成绩交上来,
+   *   整个「所有人打同一批词」的前提就没了。
+   */
+  app.post('/api/daily/submit', async (req, reply) => {
+    const body = req.body as (ReplayPayload & { playerId?: unknown; password?: unknown }) | undefined;
+    if (!body || typeof body.playerId !== 'string' || typeof body.password !== 'string') {
+      return reply.code(400).send({ ok: false, error: 'bad_request' });
+    }
+    const auth = login(body.playerId, body.password);
+    if (!auth.ok) return reply.code(401).send({ ok: false, error: auth.reason });
+
+    const now = Date.now();
+    const expectedSeed = dailySeed(now);
+    if (body.seed !== expectedSeed) {
+      // 可能是玩家开着页面跨过了零点(题面换了),也可能是有人在换 seed 刷分。
+      // 两种都不收,让前端提示刷新拿新题。
+      return reply.code(409).send({ ok: false, error: 'daily_seed_expired' });
+    }
+    // 每日挑战的配置是固定的,提交里的配置也必须一致 —— 不然可以拿简单难度
+    // 的成绩来冒充今天的挑战
+    if (
+      body.gameMode !== DAILY_CHALLENGE_CONFIG.gameMode
+      || body.difficulty !== DAILY_CHALLENGE_CONFIG.difficulty
+      || body.inputMode !== DAILY_CHALLENGE_CONFIG.inputMode
+      || body.mode !== DAILY_CHALLENGE_CONFIG.mode
+      || body.pureOnly !== DAILY_CHALLENGE_CONFIG.pureOnly
+      || body.categories?.length !== DAILY_CHALLENGE_CONFIG.categories.length
+      || !body.categories.every((c, i) => c === DAILY_CHALLENGE_CONFIG.categories[i])
+    ) {
+      return reply.code(400).send({ ok: false, error: 'daily_config_mismatch' });
+    }
+    // 每日挑战按讨伐耗时排名,没通关就没有成绩可比
+    if (typeof body.claimed?.clearMs !== 'number') {
+      return reply.code(400).send({ ok: false, error: 'not_cleared' });
+    }
+
+    const verdict = await replayAndScore(body);
+    if (!verdict.ok) {
+      return reply.code(422).send({ ok: false, error: verdict.reason, flags: verdict.flags });
+    }
+
+    const result = submitDailyScore({
+      playerId: auth.player.id,
+      dateKey: dailyDateKey(now),
+      character: body.character,
+      clearMs: body.claimed.clearMs,
+      score: verdict.score,
+      accuracy: verdict.accuracy,
+      cpm: verdict.cpm,
+      words: verdict.words,
+      trustScore: verdict.trustScore,
+      flags: verdict.flags,
+    });
+    return { ok: true, status: result.status, trustScore: verdict.trustScore, flags: verdict.flags };
   });
 
   /**

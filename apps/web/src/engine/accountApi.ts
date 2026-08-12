@@ -246,6 +246,55 @@ export function logSession(session: Session, payload: LogSessionPayload): Promis
   });
 }
 
+// ─────────────────────────── 每日挑战 ───────────────────────────
+
+export interface DailyToday {
+  dateKey: string;
+  /** ★ 用服务端给的这个,不要自己按本地时区推 —— 推歪了提交会被拒 */
+  seed: string;
+  /** 这一轮结束的绝对时间戳(毫秒),用来显示「距换题还有多久」 */
+  endsAt: number;
+}
+
+export async function fetchDailyToday(): Promise<DailyToday | null> {
+  try {
+    const res = await fetch('/api/daily/today');
+    const json = await res.json() as { ok?: boolean } & DailyToday;
+    return json.ok ? { dateKey: json.dateKey, seed: json.seed, endsAt: json.endsAt } : null;
+  } catch {
+    return null;
+  }
+}
+
+export interface DailyRow {
+  rank: number;
+  displayId: string;
+  character: CharacterId;
+  clearMs: number;
+  cpm: number;
+  accuracy: number;
+  trustScore: number;
+}
+
+export async function fetchDailyLeaderboard(date?: string): Promise<{ dateKey: string; rows: DailyRow[] } | null> {
+  try {
+    const url = date ? `/api/daily/leaderboard?date=${encodeURIComponent(date)}` : '/api/daily/leaderboard';
+    const res = await fetch(url);
+    const json = await res.json() as { ok?: boolean; dateKey: string; rows: DailyRow[] };
+    return json.ok ? { dateKey: json.dateKey, rows: json.rows } : null;
+  } catch {
+    return null;
+  }
+}
+
+export function submitDailyScore(session: Session, payload: SubmitPayload): Promise<SubmitResult> {
+  return post('/api/daily/submit', {
+    ...payload,
+    playerId: session.displayId,
+    password: session.password,
+  });
+}
+
 // ─────────────────────────── 联机大厅 ───────────────────────────
 
 export interface OpenRoom {

@@ -90,3 +90,60 @@ export function challengeMechanicSeed(seed: string, wordIndex: number): string {
 export function challengeMechanicRoll(seed: string, wordIndex: number): number {
   return createRng(`${challengeMechanicSeed(seed, wordIndex)}:roll`).next();
 }
+
+// ─────────────────────────── 每日挑战 ───────────────────────────
+
+/**
+ * 每日挑战按北京时间 00:00 换一轮。
+ *
+ * ★ 不能直接 `Math.floor(now / 一天)` —— 那样对齐的是 UTC 零点,换算成北京
+ *   时间是早上 8 点换新题,凌晨还在打昨天的。这里先把时间轴整体平移 8 小时
+ *   再对齐,得到的就是北京时间的自然日。
+ */
+const BEIJING_UTC_OFFSET_MS = 8 * 60 * 60 * 1000;
+export const DAILY_WINDOW_MS = 24 * 60 * 60 * 1000;
+
+/** offset=0 是今天,1 是昨天,以此类推。返回的是绝对毫秒时间戳 */
+export function dailyPeriod(now: number, offset = 0): { start: number; end: number } {
+  const index = Math.floor((now + BEIJING_UTC_OFFSET_MS) / DAILY_WINDOW_MS) - offset;
+  const start = index * DAILY_WINDOW_MS - BEIJING_UTC_OFFSET_MS;
+  return { start, end: start + DAILY_WINDOW_MS };
+}
+
+/** 这一天的日期串(北京时区),形如 "2026-08-11"。同时用作 seed 和榜单的分组键 */
+export function dailyDateKey(now: number, offset = 0): string {
+  const { start } = dailyPeriod(now, offset);
+  // start 是北京时间当天 00:00,加回 8 小时之后取 UTC 的年月日就是北京日期
+  return new Date(start + BEIJING_UTC_OFFSET_MS).toISOString().slice(0, 10);
+}
+
+/**
+ * 这一天所有人共用的战斗 seed。
+ *
+ * ★★★ 这个值必须由**服务端**算出来发给客户端(见 /api/daily/today),客户端
+ *   不要自己按本地时区推 —— 玩家的机器可能在任何时区、时间也可能不准,自己
+ *   推出来的 seed 和服务端对不上,提交时会被直接拒收。服务端校验提交时也用
+ *   这个函数再算一遍,所以两边永远是同一个口径。
+ */
+export function dailySeed(now: number, offset = 0): string {
+  return `daily-${dailyDateKey(now, offset)}`;
+}
+
+/**
+ * 每日挑战的固定配置。
+ *
+ * ★★★ 这几项**不给玩家选**,而且服务端提交时会逐项核对 —— 只要有一项能改,
+ *   "所有人打的是同一局"就不成立了(挑个简单难度打完来冒充今天的成绩)。
+ *   困难 + 汉字 + 组合输入 + starter 纯汉字池 = 「快速开始」那套默认体验,
+ *   门槛不高但足够拉开差距;标准模式有 180 秒封顶,不会让每日挑战变成
+ *   一打二十分钟的体力活(那是无限模式的事)。
+ * ★ 客户端与服务端引用的是同一个常量,不存在两边配置写歪的可能。
+ */
+export const DAILY_CHALLENGE_CONFIG = {
+  gameMode: 'standard',
+  difficulty: 'hard',
+  inputMode: 'composed',
+  mode: 'hanzi',
+  categories: ['starter'],
+  pureOnly: true,
+} as const;

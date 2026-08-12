@@ -151,6 +151,32 @@ CREATE TABLE IF NOT EXISTS play_sessions (
 );
 CREATE INDEX IF NOT EXISTS idx_play_sessions_player ON play_sessions (player_id, created_at);
 CREATE INDEX IF NOT EXISTS idx_play_sessions_created ON play_sessions (created_at);
+
+-- ★ 2026-08-11:每日挑战。单独一张表而不是往 scores 里塞一个 game_mode='daily':
+--   1) scores 的轮次是 7 天,每日挑战是 1 天,period 语义根本不同;
+--   2) GameMode 这个类型是联机协议也在用的,给它加成员会波及一整条链路。
+--   分开之后两边互不干扰,每日挑战的规则以后想怎么改都不会碰到正式榜。
+--   date_key 是北京时区的自然日("2026-08-11"),既是分组键也是 seed 的一部分。
+CREATE TABLE IF NOT EXISTS daily_scores (
+  id          INTEGER PRIMARY KEY AUTOINCREMENT,
+  player_id   TEXT NOT NULL REFERENCES players(id),
+  date_key    TEXT NOT NULL,
+  character   TEXT NOT NULL,
+  -- 讨伐耗时(毫秒,越小越好)。每日挑战只收通关成绩,所以这一列不会是 NULL
+  clear_ms    INTEGER NOT NULL,
+  score       INTEGER NOT NULL,
+  accuracy    REAL NOT NULL,
+  cpm         INTEGER NOT NULL,
+  words       INTEGER NOT NULL,
+  trust_score INTEGER NOT NULL,
+  flags       TEXT NOT NULL DEFAULT '[]',
+  hidden      INTEGER NOT NULL DEFAULT 0,
+  created_at  INTEGER NOT NULL
+);
+-- 每人每天只留最好的一条,靠这个唯一索引兜底(应用层也会先查再更新)
+CREATE UNIQUE INDEX IF NOT EXISTS idx_daily_scores_player_day
+  ON daily_scores (player_id, date_key);
+CREATE INDEX IF NOT EXISTS idx_daily_scores_board ON daily_scores (date_key, hidden, clear_ms);
 `;
 
 /**

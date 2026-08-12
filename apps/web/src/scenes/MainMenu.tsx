@@ -2,12 +2,15 @@ import { useEffect, useState } from 'react';
 import type { TypingMode, WordEntry } from '@eorzea/shared/types';
 import { selectPool } from '@eorzea/shared/wordbank';
 import { filterFeaturedWordPool } from '@eorzea/shared/battle';
+import { DAILY_CHALLENGE_CONFIG } from '@eorzea/shared/challenge';
+import { fetchDailyToday } from '../engine/accountApi';
 import { loadBank, loadBanks, loadWordbankIndex, type WordbankIndex } from '../data/wordbankLoader';
 import { audio } from '../engine/audio';
 import { avatarSkinPath, rabbitStylePath } from '../engine/assets';
 import { SkinPicker } from '../components/SkinPicker';
 import { Leaderboard } from '../components/Leaderboard';
 import { CoopLeaderboard } from '../components/CoopLeaderboard';
+import { DailyLeaderboard } from '../components/DailyLeaderboard';
 import type { Session } from '../engine/accountApi';
 import {
   CHARACTER_LABEL,
@@ -49,6 +52,8 @@ export interface SoloStartConfig {
   maxHp?: number;
   /** 突然死亡模式专用:强制不计入排行榜 */
   unranked?: boolean;
+  /** 每日挑战:固定 seed + 确定性机制剧本,详见 packages/shared/src/challenge.ts */
+  challenge?: { seed: string; dateKey: string };
 }
 
 export interface MainMenuProps {
@@ -127,6 +132,44 @@ export function MainMenu({ onStartSolo, onGoCoop, victoryCount, coopAvailable, o
    * 立刻刷下一只),但强制 unranked——比赛用的规则和正式排行榜的赛道不是
    * 一回事,不该混进同一份榜单。
    */
+  /**
+   * 每日挑战:全站当天同一个 seed、同一份机制剧本,配置固定不给选
+   * (DAILY_CHALLENGE_CONFIG)。seed 一定要用服务端下发的那个——自己按本地
+   * 时区推,时区不对或者机器时间不准就会算出别的 seed,提交时被服务端拒收。
+   */
+  const startDaily = async () => {
+    audio.unlock();
+    setBusy(true);
+    setError(null);
+    try {
+      const today = await fetchDailyToday();
+      if (!today) {
+        setError('拿不到今天的题目,过一会儿再试试。');
+        return;
+      }
+      const bank = await loadBank('starter');
+      const pool = filterFeaturedWordPool(selectPool([bank], {
+        categories: [...DAILY_CHALLENGE_CONFIG.categories],
+        pureOnly: DAILY_CHALLENGE_CONFIG.pureOnly,
+      }));
+      onStartSolo({
+        pool,
+        mode: DAILY_CHALLENGE_CONFIG.mode,
+        difficulty: DAILY_CHALLENGE_CONFIG.difficulty,
+        inputMode: DAILY_CHALLENGE_CONFIG.inputMode,
+        character,
+        gameMode: DAILY_CHALLENGE_CONFIG.gameMode,
+        categories: [...DAILY_CHALLENGE_CONFIG.categories],
+        pureOnly: DAILY_CHALLENGE_CONFIG.pureOnly,
+        challenge: { seed: today.seed, dateKey: today.dateKey },
+      });
+    } catch (e) {
+      setError(String(e));
+    } finally {
+      setBusy(false);
+    }
+  };
+
   const startSuddenDeath = async () => {
     audio.unlock();
     setBusy(true);
@@ -289,6 +332,10 @@ export function MainMenu({ onStartSolo, onGoCoop, victoryCount, coopAvailable, o
         无限模式 · 困难规则,打到倒下为止
       </button>
 
+      <button className="menu__daily" disabled={busy} onClick={() => void startDaily()}>
+        每日挑战 · 全站同一批词,每天零点换,比谁快
+      </button>
+
       <button className="menu__sudden-death" disabled={busy} onClick={() => void startSuddenDeath()}>
         突然死亡模式 · 地狱难度 + 拼音,1 滴血打错就死,不计入排行榜
       </button>
@@ -340,6 +387,8 @@ export function MainMenu({ onStartSolo, onGoCoop, victoryCount, coopAvailable, o
         滑到底部选分类时也还看得见自己排第几。窄屏由媒体查询叠回单列。
       */}
       <aside className="menu-layout__boards">
+        {/* 每日榜放最上面:它一天一换,是最有时效性的那个 */}
+        <DailyLeaderboard />
         <Leaderboard gameMode="standard" difficulty="hell" inputMode="composed" />
         <Leaderboard gameMode="endless" difficulty="hard" inputMode="composed" />
         {showHardBoard

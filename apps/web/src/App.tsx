@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
+import { buildChallengeScript } from '@eorzea/shared/challenge';
 import { MainMenu, type SoloStartConfig } from './scenes/MainMenu';
 import { SoloBattle, type SoloResult } from './scenes/SoloBattle';
 import { Results } from './scenes/Results';
@@ -124,6 +125,15 @@ export default function App() {
   const [session, setSession] = useState<Session | null>(() => loadSession());
 
   /**
+   * 每日挑战的机制剧本。由 seed 直接算出来,所以不需要额外存状态,
+   * 也不会因为重开一局而变——同一个 seed 永远是同一份剧本。
+   */
+  const soloChallengeScript = useMemo(
+    () => (soloConfig?.challenge ? buildChallengeScript(soloConfig.challenge.seed) : undefined),
+    [soloConfig?.challenge?.seed],
+  );
+
+  /**
    * 管理后台只能靠手敲 #admin 进,菜单里不给入口 ——
    * 玩家永远用不到它,摆在那儿只会让人好奇去点。
    * 监听 hashchange 是为了让「地址栏改一下就进」这条路真的能走通。
@@ -182,6 +192,9 @@ export default function App() {
           pureOnly={soloConfig.pureOnly}
           maxHp={soloConfig.maxHp}
           unranked={soloConfig.unranked}
+          fixedSeed={soloConfig.challenge?.seed}
+          challengeScript={soloChallengeScript}
+          dailyDateKey={soloConfig.challenge?.dateKey}
           onExit={() => setScene('menu')}
           onFinish={(result) => {
             setSoloResult(result);

@@ -4,6 +4,12 @@ import { computeDamage, computeScore, computeStats, targetOf, type SessionStats 
 import { analyzeSession, checkAttempt } from '@eorzea/shared/anticheat';
 import { bossHpFor, createWordQueue, expandPinyinCandidates, filterPoolByDifficulty } from '@eorzea/shared/battle';
 import {
+  challengeMechanicRoll,
+  challengeMechanicSeed,
+  mechanicAt,
+  type ChallengeScript,
+} from '@eorzea/shared/challenge';
+import {
   ENDLESS_MECHANIC_CHANCE,
   ENDLESS_MECHANIC_THRESHOLDS,
   MECHANICS,
@@ -82,6 +88,8 @@ export interface SoloResult {
   maxHp: number;
   /** 突然死亡模式专用:强制不计入排行榜,不管难度/玩法本来符不符合上榜条件 */
   unranked: boolean;
+  /** 每日挑战:非空表示这一局是当天的挑战,结算页要交到每日榜而不是正式榜 */
+  dailyDateKey?: string;
   damage: number;
   interruptsSucceeded: number;
   interruptsFailed: number;
@@ -141,6 +149,23 @@ export interface SoloBattleProps {
   maxHp?: number;
   /** 突然死亡模式专用:强制这一局不计入排行榜 */
   unranked?: boolean;
+  /**
+   * 挑战赛道的机制剧本(每日挑战/赛事用)。传了就**完全接管机制触发**:
+   * 在剧本指定的词序号触发指定机制,不再掷骰子、不看 pity、不看血量阈值。
+   * 不传就是普通模式,机制照旧随机——手感一行不改。
+   *
+   * ★ 为什么挑战赛道必须这样:机制的随机触发依赖玩家表现(打对/打错用不同
+   *   基础概率、pity 计数器、血量阈值又取决于累计伤害),两个水平不同的人
+   *   哪怕同一个 seed 也会从第一次失误起分叉。详见 packages/shared/src/challenge.ts。
+   */
+  challengeScript?: ChallengeScript;
+  /**
+   * 挑战赛道要用的固定 seed。不传就还是每局随机生成——只有固定下来,
+   * 所有人才会拿到同一条词序列。
+   */
+  fixedSeed?: string;
+  /** 每日挑战的日期键,原样带进结算结果,让结算页知道该交到哪个榜 */
+  dailyDateKey?: string;
   onFinish: (result: SoloResult) => void;
   onExit: () => void;
 }
@@ -177,6 +202,11 @@ interface EngineState {
   bloodbathWordsLeft: number;
   /** 「原初的解放」的追加效果是否挂在下一个词上:打成功才结算,打错/超时就作废 */
   primalReleaseArmed: boolean;
+  /**
+   * 这一局已经结算过几个普通词(打对打错都算)。挑战赛道靠它对齐剧本的
+   * afterWord —— 机制在第几个词之后触发,和玩家打得怎么样无关。
+   */
+  normalWordsSettled: number;
   /** 无限模式:已经打倒几只泰坦 */
   kills: number;
   /** 无限模式:当前这只泰坦的血量上限(逐只加厚) */
@@ -219,6 +249,7 @@ function initEngine(bossMaxHp: number, pinyinHintsLeft: number, maxHp: number): 
     totalDamage: 0,
     combatTexts: [],
     wordsSinceWrath: 0,
+    normalWordsSettled: 0,
     skillReadyAt: 0,
     bloodbathWordsLeft: 0,
     primalReleaseArmed: false,
@@ -241,7 +272,8 @@ function initEngine(bossMaxHp: number, pinyinHintsLeft: number, maxHp: number): 
  */
 export function SoloBattle({
   pool, mode, difficulty, inputMode, character, gameMode, categories, pureOnly,
-  maxHp = PLAYER_MAX_HP, unranked = false, onFinish, onExit,
+  maxHp = PLAYER_MAX_HP, unranked = false, challengeScript, fixedSeed, dailyDateKey,
+  onFinish, onExit,
 }: SoloBattleProps) {
   const isEndless = gameMode === 'endless';
   // 练习难度和无限模式一样没有狂暴倒计时——区别是练习打死这一只泰坦就通关,
@@ -277,7 +309,8 @@ export function SoloBattle({
   const battleStartRef = useRef(performance.now());
   const now = () => performance.now() - battleStartRef.current;
 
-  const seedRef = useRef(`solo-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`);
+  // 挑战赛道传了固定 seed 就用它——所有人同一条词序列的前提
+  const seedRef = useRef(fixedSeed ?? `solo-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`);
   /**
    * 普通词池按难度分布筛过;打断词仍从传进来的完整 pool 里取 ——
    * 打断词必须是 ≤4 字的短词,而困难/地狱筛完最短就是 4 字,拿筛过的池去找短词
@@ -352,6 +385,7 @@ export function SoloBattle({
       playerHp: e.playerHp,
       maxHp,
       unranked,
+      dailyDateKey,
       damage: e.totalDamage,
       interruptsSucceeded: e.interruptsSucceeded,
       interruptsFailed: e.interruptsFailed,
@@ -475,7 +509,28 @@ export function SoloBattle({
   function consumeWordCounters(): void {
     const e = engineRef.current;
     e.wordsSinceWrath += 1;
+    e.normalWordsSettled += 1;
     if (e.bloodbathWordsLeft > 0) e.bloodbathWordsLeft -= 1;
+  }
+
+  /**
+   * 挑战赛道的机制触发:完全按剧本走,不掷任何骰子。
+   *
+   * 普通模式那两条路径(tryTriggerTitanWrath 掷概率+pity、tryTriggerHpMechanic
+   * 看血量阈值)在挑战赛道里一条都不走 —— 它们都依赖玩家表现,会让同一个
+   * seed 在不同人手里跑出不同的机制序列,挑战赛道就失去可比性了。
+   *
+   * @returns 有没有触发。调用方靠它决定要不要再走普通模式那套随机逻辑。
+   */
+  function tryTriggerScheduledMechanic(): boolean {
+    if (!challengeScript) return false;
+    const e = engineRef.current;
+    if (e.mechanic || e.ended) return false;
+    const id = mechanicAt(challengeScript, e.normalWordsSettled);
+    if (!id) return false;
+    beginMechanic(id);
+    if (engineRef.current.mechanic) e.wordsSinceWrath = 0;
+    return !!engineRef.current.mechanic;
   }
 
   /** 机制失败(超时或主动放弃):扣一份重伤害,回到被冻结的普通词 */
@@ -508,7 +563,10 @@ export function SoloBattle({
     if (checkDeath()) return;
     consumeWordCounters();
     drawNext();
-    tryTriggerTitanWrath(TITAN_WRATH_ON_FAILURE_CHANCE);
+    // 同 handleComplete:挑战赛道只认剧本
+    if (!tryTriggerScheduledMechanic() && !challengeScript) {
+      tryTriggerTitanWrath(TITAN_WRATH_ON_FAILURE_CHANCE);
+    }
     rerender();
   }
 
@@ -655,10 +713,13 @@ export function SoloBattle({
     if (e.bossHp <= 0 && !onBossDefeated()) return;
     consumeWordCounters();
     drawNext();
-    // 先看这次掉血有没有跨过机制阈值,没有再掷泰坦之怒的骰子 ——
-    // 阈值类机制是「剧情节点」,优先级高于随机插入的泰坦之怒。
-    tryTriggerHpMechanic(prevBossHp, e.bossHp);
-    if (!e.mechanic) tryTriggerTitanWrath(TITAN_WRATH_ON_SUCCESS_CHANCE);
+    // 挑战赛道:机制完全按剧本,不走下面那两条依赖玩家表现的随机路径
+    if (!tryTriggerScheduledMechanic() && !challengeScript) {
+      // 先看这次掉血有没有跨过机制阈值,没有再掷泰坦之怒的骰子 ——
+      // 阈值类机制是「剧情节点」,优先级高于随机插入的泰坦之怒。
+      tryTriggerHpMechanic(prevBossHp, e.bossHp);
+      if (!e.mechanic) tryTriggerTitanWrath(TITAN_WRATH_ON_SUCCESS_CHANCE);
+    }
     rerender();
   }
 
@@ -757,9 +818,16 @@ export function SoloBattle({
   function beginMechanic(id: MechanicId) {
     const e = engineRef.current;
     if (e.ended || e.mechanic) return;
-    const state = createMechanicState(
-      id, pool, difficulty, now(), `${seedRef.current}:${id}:${Math.floor(now())}`, Math.random(),
-    );
+    // ★ 挑战赛道下机制词和三连桶出生方向都必须由 seed + 第几个词推出来,
+    //   不能带墙钟时间和 Math.random —— 那样同一个 seed 每次跑出来的机制都不同,
+    //   正是挑战赛道要消除的东西。普通模式沿用原来的写法,手感不变。
+    const mechSeed = challengeScript
+      ? challengeMechanicSeed(seedRef.current, e.normalWordsSettled)
+      : `${seedRef.current}:${id}:${Math.floor(now())}`;
+    const mechRoll = challengeScript
+      ? challengeMechanicRoll(seedRef.current, e.normalWordsSettled)
+      : Math.random();
+    const state = createMechanicState(id, pool, difficulty, now(), mechSeed, mechRoll);
     if (!state) {
       rerender();
       return;

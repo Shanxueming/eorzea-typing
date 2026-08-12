@@ -1070,6 +1070,19 @@ button:disabled {
   background: rgba(255, 212, 127, 0.22);
 }
 
+/* 每日挑战:青色,和无限模式的金色、突然死亡的红色各自区分开 */
+.menu__daily {
+  align-self: flex-start;
+  font-size: 15px;
+  padding: 11px 20px;
+  border-color: rgba(120, 220, 232, 0.6);
+  color: #7fd9e8;
+  background: rgba(120, 220, 232, 0.1);
+}
+.menu__daily:hover:not(:disabled) {
+  background: rgba(120, 220, 232, 0.22);
+}
+
 /* 突然死亡模式:红色警示配色,和无限模式的金色区分开——这个按钮点下去是真的一下就死 */
 .menu__sudden-death {
   align-self: flex-start;

@@ -1,7 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
 import { CHARACTER_LABEL, DIFFICULTY_LABEL, INPUT_MODE_LABEL } from '../battle/constants';
 import { bestRecord, saveRecord, type GameRecord } from '../engine/records';
-import { fetchPercentile, logSession, submitScore, type PercentileResult, type Session } from '../engine/accountApi';
+import {
+  fetchPercentile, logSession, submitDailyScore, submitScore,
+  type PercentileResult, type Session,
+} from '../engine/accountApi';
 import { RANKED_DIFFICULTIES } from '../battle/constants';
 import { shareResultImage } from '../engine/shareImage';
 import type { SoloResult } from './SoloBattle';
@@ -40,11 +43,17 @@ export function Results({ result, session, onGoAccount, onBackToMenu, onRetry }:
    *   5. 不是突然死亡模式这类强制不计分的赛制——它复用了无限模式的引擎,
    *      难度/玩法本身会满足前四条,必须专门加一道口子拦掉
    */
+  /** 这一局是每日挑战 —— 交的是每日榜,不是正式榜 */
+  const isDaily = !!result.dailyDateKey;
+
   const rankable = !!session
     && RANKED_DIFFICULTIES.includes(result.difficulty)
     && (result.gameMode === 'endless' || result.victory)
     && result.attempts.length > 0
     && !result.unranked;
+
+  /** 每日挑战有自己的一套上榜条件:通关 + 登录就行(难度是固定的,不用再判) */
+  const dailyUploadable = isDaily && !!session && result.victory && result.attempts.length > 0;
 
   const { stats, endless } = result;
   const isEndless = result.gameMode === 'endless';
@@ -55,9 +64,12 @@ export function Results({ result, session, onGoAccount, onBackToMenu, onRetry }:
    * 登录(这是只读的公开统计,谁都能看自己这局排第几),但标准模式没通关
    * 就没有 clearMs,无从比起。
    */
+  // ★ 每日挑战不查这个:它有自己的今日榜,而正式榜的 percentile 统计的是
+  //   另一批人(7 天一轮的标准困难赛道),拿来给每日挑战显示只会是错的口径。
   const percentileEligible = RANKED_DIFFICULTIES.includes(result.difficulty)
     && (result.gameMode === 'endless' || result.victory)
-    && !result.unranked;
+    && !result.unranked
+    && !isDaily;
   const [percentile, setPercentile] = useState<PercentileResult | null>(null);
   useEffect(() => {
     if (!percentileEligible) return;
@@ -107,7 +119,7 @@ export function Results({ result, session, onGoAccount, onBackToMenu, onRetry }:
     setUploadState('sending');
     setUploadMsg(null);
     try {
-      const r = await submitScore(session, {
+      const payload = {
         seed: result.seed,
         gameMode: result.gameMode,
         difficulty: result.difficulty,
@@ -124,10 +136,12 @@ export function Results({ result, session, onGoAccount, onBackToMenu, onRetry }:
           survivedMs: result.endless?.survivedMs,
           clearMs: result.gameMode === 'standard' && result.victory ? result.stats.elapsedMs : undefined,
         },
-      });
+      };
+      // 每日挑战走自己的榜(一天一轮),不进 7 天一轮的正式榜
+      const r = isDaily ? await submitDailyScore(session, payload) : await submitScore(session, payload);
       setUploadState('done');
       setUploadMsg(
-        r.status === 'inserted' ? '已上榜！'
+        r.status === 'inserted' ? (isDaily ? '已上今日榜！' : '已上榜！')
           : r.status === 'improved' ? '刷新了你自己的纪录！'
           : '这次没超过你之前的成绩，榜上保留原来那条。',
       );
@@ -138,7 +152,9 @@ export function Results({ result, session, onGoAccount, onBackToMenu, onRetry }:
       setUploadMsg(
         msg.includes('score_overclaim') ? '服务端核算的分数与本地对不上，这次成绩不予收录。'
           : msg.includes('word_not_in_sequence') ? '词序核对失败，这次成绩不予收录。'
-          : msg.includes('not_cleared') ? '标准模式只收通关的成绩。'
+          : msg.includes('daily_seed_expired') ? '今天的题目已经换了(每天零点换题)，回主菜单重新开一局吧。'
+          : msg.includes('daily_config_mismatch') ? '每日挑战的规则是固定的，这局的配置对不上，不予收录。'
+          : msg.includes('not_cleared') ? (isDaily ? '每日挑战只收通关的成绩。' : '标准模式只收通关的成绩。')
           : msg.includes('unranked_difficulty') ? '只有困难和地狱难度会计入排行榜。'
           : `上传失败：${msg}`,
       );
@@ -222,7 +238,7 @@ export function Results({ result, session, onGoAccount, onBackToMenu, onRetry }:
       </h1>
       <div className="results__score">得分 {result.score}</div>
       <div className="results__track">
-        {result.unranked ? '突然死亡模式' : isEndless ? '无限模式' : '标准模式'} · {DIFFICULTY_LABEL[result.difficulty]} ·{' '}
+        {isDaily ? `每日挑战 ${result.dailyDateKey}` : result.unranked ? '突然死亡模式' : isEndless ? '无限模式' : '标准模式'} · {DIFFICULTY_LABEL[result.difficulty]} ·{' '}
         {INPUT_MODE_LABEL[result.inputMode]} · {CHARACTER_LABEL[result.character]}
       </div>
 
@@ -350,10 +366,10 @@ export function Results({ result, session, onGoAccount, onBackToMenu, onRetry }:
       )}
 
       <div className="results__upload">
-        {rankable && uploadState !== 'done' && (
+        {(isDaily ? dailyUploadable : rankable) && uploadState !== 'done' && (
           <>
             <button className="results__upload-btn" disabled={uploadState === 'sending'} onClick={() => void upload()}>
-              {uploadState === 'sending' ? '上传中…' : '上传成绩到排行榜'}
+              {uploadState === 'sending' ? '上传中…' : isDaily ? '上传成绩到今日榜' : '上传成绩到排行榜'}
             </button>
             <span className="results__upload-hint">上传后服务端会重新核算一遍，你可以选择不传</span>
           </>
@@ -367,7 +383,10 @@ export function Results({ result, session, onGoAccount, onBackToMenu, onRetry }:
             <button className="menu__changelog-link" onClick={onGoAccount}>申请 / 登录</button>
           </div>
         )}
-        {session && !rankable && (
+        {session && isDaily && !dailyUploadable && (
+          <div className="results__upload-hint">每日挑战要通关才能上今日榜。</div>
+        )}
+        {session && !isDaily && !rankable && (
           <div className="results__upload-hint">
             {result.unranked
               ? '突然死亡模式是比赛用的规则，不计入排行榜。'

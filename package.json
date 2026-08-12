@@ -3,10 +3,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "vitest run && tsx scripts/smoke-coop.ts && tsx scripts/smoke-lobby.ts && tsx scripts/smoke-account.ts",
+    "test": "vitest run && tsx scripts/smoke-coop.ts && tsx scripts/smoke-lobby.ts && tsx scripts/smoke-daily.ts && tsx scripts/smoke-account.ts",
     "test:unit": "vitest run",
     "test:coop": "tsx scripts/smoke-coop.ts",
     "test:lobby": "tsx scripts/smoke-lobby.ts",
+    "test:daily": "tsx scripts/smoke-daily.ts",
     "typecheck": "tsc --noEmit -p tsconfig.base.json && tsc --noEmit -p apps/server/tsconfig.json && tsc --noEmit -p apps/web/tsconfig.json",
     "build": "pnpm --filter @eorzea/web build",
     "start": "pnpm --filter @eorzea/server start",

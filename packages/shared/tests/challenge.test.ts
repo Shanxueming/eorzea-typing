@@ -9,9 +9,13 @@ import {
   CHALLENGE_MECHANIC_MAX_GAP,
   CHALLENGE_MECHANIC_MIN_GAP,
   CHALLENGE_SCRIPT_WORDS,
+  DAILY_WINDOW_MS,
   buildChallengeScript,
   challengeMechanicRoll,
   challengeMechanicSeed,
+  dailyDateKey,
+  dailyPeriod,
+  dailySeed,
   mechanicAt,
 } from '../src/challenge';
 import { MECHANICS } from '../src/mechanics';
@@ -110,5 +114,49 @@ describe('mechanicAt', () => {
     const script = buildChallengeScript('seed-oob');
     expect(mechanicAt(script, CHALLENGE_SCRIPT_WORDS + 100)).toBeNull();
     expect(mechanicAt(script, 0)).toBeNull();
+  });
+});
+
+describe('每日挑战:按北京时间自然日切分', () => {
+  /** 北京时间 2026-08-11 09:30 */
+  const morning = Date.parse('2026-08-11T09:30:00+08:00');
+  /** 同一天的深夜 23:59 —— 关键边界:它必须和上面算出同一天 */
+  const lateNight = Date.parse('2026-08-11T23:59:00+08:00');
+  /** 刚过零点,已经是新的一天了 */
+  const justAfterMidnight = Date.parse('2026-08-12T00:00:30+08:00');
+
+  it('★ 同一个北京自然日内,不管几点算出来都是同一个 seed', () => {
+    expect(dailySeed(morning)).toBe(dailySeed(lateNight));
+    expect(dailyDateKey(morning)).toBe('2026-08-11');
+    expect(dailyDateKey(lateNight)).toBe('2026-08-11');
+  });
+
+  it('★ 北京时间零点换题,不是 UTC 零点(那样会变成早上 8 点换)', () => {
+    expect(dailySeed(justAfterMidnight)).not.toBe(dailySeed(lateNight));
+    expect(dailyDateKey(justAfterMidnight)).toBe('2026-08-12');
+  });
+
+  it('一轮正好 24 小时,首尾相接没有空隙', () => {
+    const today = dailyPeriod(morning, 0);
+    const yesterday = dailyPeriod(morning, 1);
+    expect(today.end - today.start).toBe(DAILY_WINDOW_MS);
+    expect(yesterday.end).toBe(today.start);
+  });
+
+  it('区间起点确实是北京时间当天 00:00', () => {
+    const { start } = dailyPeriod(morning, 0);
+    expect(start).toBe(Date.parse('2026-08-11T00:00:00+08:00'));
+  });
+
+  it('offset 往回翻能拿到过去几天的 seed,且各不相同', () => {
+    const seeds = [0, 1, 2, 3].map((o) => dailySeed(morning, o));
+    expect(new Set(seeds).size).toBe(4);
+    expect(seeds[1]).toBe('daily-2026-08-10');
+  });
+
+  it('★ 每日 seed 喂给 buildChallengeScript 时,当天所有人拿到同一份剧本', () => {
+    const a = buildChallengeScript(dailySeed(morning));
+    const b = buildChallengeScript(dailySeed(lateNight));
+    expect(a).toEqual(b);
   });
 });
