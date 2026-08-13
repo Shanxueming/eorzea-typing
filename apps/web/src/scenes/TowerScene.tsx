@@ -6,6 +6,7 @@ import {
   type TowerFloor, type TowerRouteId,
 } from '@eorzea/shared/tower';
 import { SoloBattle, type SoloResult } from './SoloBattle';
+import { recordReviewOutcomes } from '../engine/mistakes';
 
 export interface TowerSceneProps {
   /** 完整词池(未按难度筛),每层再按自己的词长区间筛 */
@@ -51,15 +52,6 @@ export function TowerScene({ pool, onExit }: TowerSceneProps) {
     ? buildTowerFloor(runSeed, phase.floorNum, phase.route)
     : null;
 
-  /** 这一层实际能用的词池:按该层的词长区间筛 */
-  const floorPool = useMemo(() => {
-    if (!currentFloor) return pool;
-    const [min, max] = currentFloor.wordLength;
-    const filtered = pool.filter((w) => w.typeText.length >= min && w.typeText.length <= max);
-    // 筛空了就退回整池 —— 宁可这一层的词长不生效,也不能让塔卡在这里开不了局
-    return filtered.length > 0 ? filtered : pool;
-  }, [pool, currentFloor?.floor, currentFloor?.route]);
-
   const restart = () => {
     setRunSeed(newRunSeed());
     setHp(PLAYER_MAX_HP);
@@ -69,6 +61,9 @@ export function TowerScene({ pool, onExit }: TowerSceneProps) {
 
   const onFloorFinish = (result: SoloResult) => {
     if (!currentFloor) return;
+    // ★ 爬塔不经过结算页(Results),而错题本是在那里记的 —— 不在这里补一次的话,
+    //   塔里打错的词一个都进不了错题本,而塔恰恰是最容易碰到生词的地方。
+    recordReviewOutcomes(result.wordsReview);
     // 过了这一层就按该层规则回一点血(静室/精英才有),再夹回上限
     const healed = result.victory
       ? Math.min(PLAYER_MAX_HP, result.playerHp + currentFloor.healOnClear)
@@ -95,10 +90,17 @@ export function TowerScene({ pool, onExit }: TowerSceneProps) {
 
   // ── 选路 ──
   if (phase.kind === 'choose') {
+    // Boss 层不给选(routeChoicesFor 只回一条),这时标题不能还写「选一条路」
+    const isBossNext = phase.choices.length === 1;
     return (
       <div className="tower">
-        <h1 className="tower__title">第 {phase.nextFloor} 层 · 选一条路</h1>
-        <div className="tower__hp">当前血量 {hp} / {PLAYER_MAX_HP}</div>
+        <h1 className="tower__title">
+          {isBossNext ? `第 ${phase.nextFloor} 层 · BOSS` : `第 ${phase.nextFloor} 层 · 选一条路`}
+        </h1>
+        <div className="tower__hp">
+          当前血量 {hp} / {PLAYER_MAX_HP}
+          {isBossNext && ' · 每 10 层一个 Boss 层,没得绕'}
+        </div>
         <div className="tower__routes">
           {phase.choices.map((id) => {
             const def = TOWER_ROUTES[id];
@@ -150,7 +152,11 @@ export function TowerScene({ pool, onExit }: TowerSceneProps) {
       </div>
       <SoloBattle
         key={battleKey}
-        pool={floorPool}
+        // ★ 传完整池子,由 wordLengthOverride 去筛普通词 —— 在这里先筛掉的话,
+        //   机制词(要 ≤4 字的短词)就只能从筛过的池子里找,长句廊那种只留 5~7 字
+        //   的层会直接找不到打断词。
+        pool={pool}
+        wordLengthOverride={floor.wordLength}
         mode={floor.mode}
         difficulty={floor.difficulty}
         inputMode={floor.inputMode}

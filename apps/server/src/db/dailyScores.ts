@@ -93,11 +93,3 @@ export function getDailyLeaderboard(dateKey: string, limit = 50): DailyScoreRow[
     createdAt: r.created_at as number,
   }));
 }
-
-/** 这个玩家当天有没有成绩、是多少 —— 菜单上显示「你今天已经打过了」用 */
-export function getPlayerDailyEntry(playerId: string, dateKey: string): { clearMs: number } | null {
-  const row = getDb().prepare(
-    'SELECT clear_ms FROM daily_scores WHERE player_id = ? AND date_key = ? AND hidden = 0',
-  ).get(playerId, dateKey) as { clear_ms: number } | undefined;
-  return row ? { clearMs: row.clear_ms } : null;
-}

@@ -37,6 +37,15 @@ export interface GameRecord {
   kills?: number;
   survivedMs?: number;
   maxCombo?: number;
+  /**
+   * 玩法变体标记,用来把「同样是标准+困难+组合、但其实不是一回事」的局分开存。
+   *
+   * ★ 没有它的话:每日挑战(固定 standard/hard/composed)会和快速开始选困难+
+   *   组合掉进同一个桶,错题练习(自定义词池)也会掉进普通局的桶 —— 结算页的
+   *   「★ 新纪录」和「此前最佳」就会拿两种根本不同的局互相比。
+   * ★ 老记录没有这个字段(undefined),正好就代表「普通局」,不需要迁移。
+   */
+  variantKey?: 'daily' | 'mistake_practice';
   /** 记录产生的时刻(本机时钟,仅供展示排序) */
   recordedAt: number;
 }
@@ -67,16 +76,20 @@ export function saveRecord(record: GameRecord): void {
 }
 
 /**
- * 取同一「玩法 + 难度 + 输入模式」下的历史最佳,用来在结算页告诉玩家有没有破纪录。
- * 三个维度都要匹配才算同一条赛道 —— 拿组合输入的成绩去比逐字的纪录没有意义。
+ * 取同一「玩法 + 难度 + 输入模式 + 玩法变体」下的历史最佳,用来在结算页告诉
+ * 玩家有没有破纪录。四个维度都要匹配才算同一条赛道 —— 拿组合输入的成绩去比
+ * 逐字的纪录没有意义,拿每日挑战(固定题目)去比快速开始(随机词)也一样。
  */
 export function bestRecord(
   gameMode: GameMode,
   difficulty: Difficulty,
   inputMode: InputMode,
+  variantKey?: GameRecord['variantKey'],
 ): GameRecord | null {
   const sameTrack = readAll().filter(
-    (r) => r.gameMode === gameMode && r.difficulty === difficulty && r.inputMode === inputMode,
+    (r) => r.gameMode === gameMode && r.difficulty === difficulty && r.inputMode === inputMode
+      // 老记录没有 variantKey,undefined 正好等于「普通局」
+      && (r.variantKey ?? undefined) === variantKey,
   );
   if (sameTrack.length === 0) return null;
   // 无限模式比「击杀数 → 存活时长」,标准模式比分数

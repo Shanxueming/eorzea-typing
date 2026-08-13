@@ -29,6 +29,7 @@ import {
   createWordQueue,
   expandPinyinCandidates,
   filterPoolByDifficulty,
+  filterPoolByLength,
   hasTitanWrath,
   pinyinReadingVariants,
   resolveInputMode,
@@ -196,6 +197,38 @@ describe('难度分布(按判定字符数筛)', () => {
   it('不改动传入的数组', () => {
     const before = POOL.length;
     filterPoolByDifficulty(POOL, 'easy');
+    expect(POOL).toHaveLength(before);
+  });
+});
+
+describe('filterPoolByLength(爬塔按层筛词长用)', () => {
+  it('按判定字符数取闭区间', () => {
+    expect(lengthsOf(filterPoolByLength(POOL, [2, 4]))).toEqual([2, 3, 4]);
+    expect(lengthsOf(filterPoolByLength(POOL, [7, 9]))).toEqual([7, 9]);
+  });
+
+  it('★ 能取到 2 字词 —— 爬塔的短词路线靠这个,难度表里没有任何一档下限是 2', () => {
+    const short = filterPoolByLength(POOL, [2, 2]);
+    expect(short).toHaveLength(1);
+    expect(short[0].typeText).toBe('铁壁');
+    // 对照:所有难度档的下限都 ≥1 但困难/地狱是 3,直接用难度筛就丢了 2 字词
+    expect(filterPoolByDifficulty(POOL, 'hard').some((w) => w.typeText.length === 2)).toBe(false);
+  });
+
+  it('筛完为空时退回原池,不能让调用方拿到空池子(createWordQueue 会抛)', () => {
+    expect(filterPoolByLength(POOL, [50, 60])).toHaveLength(POOL.length);
+  });
+
+  it('filterPoolByDifficulty 就是它的一个特例,两者结果必须一致', () => {
+    for (const d of ['easy', 'normal', 'hard', 'hell'] as Difficulty[]) {
+      expect(filterPoolByDifficulty(POOL, d).map((w) => w.id))
+        .toEqual(filterPoolByLength(POOL, DIFFICULTY_WORD_LENGTH[d]).map((w) => w.id));
+    }
+  });
+
+  it('不改动传入的数组', () => {
+    const before = POOL.length;
+    filterPoolByLength(POOL, [2, 3]);
     expect(POOL).toHaveLength(before);
   });
 });

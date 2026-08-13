@@ -2,7 +2,9 @@ import { useEffect, useRef, useState, type KeyboardEvent } from 'react';
 import type { AvatarState, TypingMode, WordAttempt, WordCategory, WordEntry } from '@eorzea/shared/types';
 import { computeDamage, computeScore, computeStats, targetOf, type SessionStats } from '@eorzea/shared/scoring';
 import { analyzeSession, checkAttempt } from '@eorzea/shared/anticheat';
-import { bossHpFor, createWordQueue, expandPinyinCandidates, filterPoolByDifficulty } from '@eorzea/shared/battle';
+import {
+  bossHpFor, createWordQueue, expandPinyinCandidates, filterPoolByDifficulty, filterPoolByLength,
+} from '@eorzea/shared/battle';
 import {
   challengeMechanicRoll,
   challengeMechanicSeed,
@@ -185,6 +187,17 @@ export interface SoloBattleProps {
   wordTimeoutMsOverride?: number;
   damageOnMissOverride?: number;
   /**
+   * 直接指定普通词的字数区间,**取代**按难度筛(DIFFICULTY_WORD_LENGTH)。
+   *
+   * ★ 爬塔必须用这个:它每层有自己的字数区间,但难度固定挂 'hard'([3,7]),
+   *   不接管的话两层筛选会取交集 —— 声明 [2,6] 实际只剩 [3,6],起步包里
+   *   879 个 2 字词一个都抽不到,「疾风道(词少限时紧)」这条本该出短词的路
+   *   反而出不了短词。
+   * ★ 只影响普通词池;机制词仍从传进来的完整 pool 里取(它要的是 ≤4 字的短词,
+   *   本来就不能用筛过的池子,理由见 pickShortInterruptWord 的注释)。
+   */
+  wordLengthOverride?: readonly [number, number];
+  /**
    * 这一局要不要触发机制。只在爬塔里用得到,默认(不传)是开。
    *
    * ★ 爬塔的一层必须显式关掉,原因是血量阈值机制按「Boss 血量百分比」触发,
@@ -318,7 +331,7 @@ function initEngine(bossMaxHp: number, pinyinHintsLeft: number, startHp: number)
 export function SoloBattle({
   pool, mode, difficulty, inputMode, character, gameMode, categories, pureOnly,
   maxHp = PLAYER_MAX_HP, unranked = false, variant, startHp, clearAfterWords,
-  wordTimeoutMsOverride, damageOnMissOverride, enableMechanics = true,
+  wordTimeoutMsOverride, damageOnMissOverride, wordLengthOverride, enableMechanics = true,
   challengeScript, fixedSeed, dailyDateKey, onFinish, onExit,
 }: SoloBattleProps) {
   const isEndless = gameMode === 'endless';
@@ -367,7 +380,11 @@ export function SoloBattle({
    * 很容易一个都找不到,泰坦之怒会静默失效。理由同 packages/shared/src/battle.ts
    * 里 pickShortInterruptWord 的注释。
    */
-  const normalPoolRef = useRef(filterPoolByDifficulty(pool, difficulty));
+  const normalPoolRef = useRef(
+    wordLengthOverride
+      ? filterPoolByLength(pool, wordLengthOverride)
+      : filterPoolByDifficulty(pool, difficulty),
+  );
   const queueRef = useRef(createWordQueue(normalPoolRef.current, seedRef.current));
   const attemptsRef = useRef<WordAttempt[]>([]);
   const targetsRef = useRef(new Map<string, string>());

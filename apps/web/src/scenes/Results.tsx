@@ -71,6 +71,15 @@ export function Results({ result, session, onGoAccount, onBackToMenu, onRetry }:
   const dailyUploadable = isDaily && !!session && result.victory && result.attempts.length > 0;
 
   /**
+   * 本地纪录该记进哪个桶。每日挑战和错题练习虽然玩法/难度/输入模式的组合
+   * 和普通局一样,但打的根本不是一回事(固定题目 / 自定义词池),必须分开存,
+   * 否则「★ 新纪录」和「此前最佳」会拿两种局互相比。
+   */
+  const recordVariantKey: GameRecord['variantKey'] = isDaily ? 'daily'
+    : result.variant === 'mistake_practice' ? 'mistake_practice'
+    : undefined;
+
+  /**
    * 「超越了多少人」用的是排行榜同一套比较口径(标准比 clear_ms、无限比
    * kills+survivedMs),所以能不能算这个和能不能上榜共用同一条件——不需要
    * 登录(这是只读的公开统计,谁都能看自己这局排第几),但标准模式没通关
@@ -183,11 +192,12 @@ export function Results({ result, session, onGoAccount, onBackToMenu, onRetry }:
   useEffect(() => {
     if (savedRef.current) return;
     savedRef.current = true;
-    setPreviousBest(bestRecord(result.gameMode, result.difficulty, result.inputMode));
+    setPreviousBest(bestRecord(result.gameMode, result.difficulty, result.inputMode, recordVariantKey));
     saveRecord({
       gameMode: result.gameMode,
       difficulty: result.difficulty,
       inputMode: result.inputMode,
+      variantKey: recordVariantKey,
       character: result.character,
       score: result.score,
       damage: result.damage,

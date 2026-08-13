@@ -189,9 +189,21 @@ export function filterPoolByDifficulty(
   pool: readonly WordEntry[],
   difficulty: Difficulty,
 ): WordEntry[] {
-  const [min, max] = DIFFICULTY_WORD_LENGTH[difficulty];
-  // 用 typeText 而不是 text:玩家实际要敲的是判定文本,「必杀剑·九天」显示
-  // 六个字符但只需要打五个,按展示文本筛会让字数区间对不上手感。
+  return filterPoolByLength(pool, DIFFICULTY_WORD_LENGTH[difficulty]);
+}
+
+/**
+ * 按判定字符数筛词池。难度筛选是它的一个特例,爬塔则直接按每层自己的区间筛。
+ *
+ * 用 typeText 而不是 text:玩家实际要敲的是判定文本,「必杀剑·九天」显示
+ * 六个字符但只需要打五个,按展示文本筛会让字数区间对不上手感。
+ *
+ * 筛完为空时退回原池而不是抛错,理由同 filterPoolByDifficulty。
+ */
+export function filterPoolByLength(
+  pool: readonly WordEntry[],
+  [min, max]: readonly [number, number],
+): WordEntry[] {
   const filtered = pool.filter((entry) => entry.typeText.length >= min && entry.typeText.length <= max);
   return filtered.length > 0 ? filtered : [...pool];
 }
